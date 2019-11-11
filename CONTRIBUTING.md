@@ -21,13 +21,13 @@ There are some concepts you should be aware of to understand how your contributi
 
 The content is written in plain text using the common markdown syntax with extensions:
 
--   [Admonition][adminition] for block-styled side content (notes, tips, warnings, etc.)
+-   [Admonition][admonition] for block-styled side content (notes, tips, warnings, etc.)
 -   [CodeHilite][codehilite] for syntax highlighting
 -   [Metadata][metadata] for meta data (good for accessibility and SEO)
 
 ### Git and GitHub
 
-To organize the content we use Git which is a distributed version control system (DVCS). This allows us to track each change. The main goal of Git is to support software developers in their daily business but it is pretty useful for writing documentation as well. Our credo is: "Everything as code"
+To organize the content we use Git which is a distributed version control system (DVCS). This allows us to track each change. The main goal of Git is to support software developers in their daily business but to be pretty useful for writing documentation as well. Our credo is: "Everything as code"
 
 Our hosting platform for this project is GitHub.
 

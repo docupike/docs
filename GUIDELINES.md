@@ -6,7 +6,7 @@ If there is something missing please [raise an issue][issues].
 
 ## Language
 
-US American English.
+US-American English.
 
 ## Structure of any article
 

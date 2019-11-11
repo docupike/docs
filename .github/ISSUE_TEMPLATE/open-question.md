@@ -1,6 +1,6 @@
 ---
 name: Open question
-about: 'Docs only! Just ask a question'
+about: 'Docs: Ask a question or share your thoughts'
 title: ''
 labels: ''
 assignees: ''

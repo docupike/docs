@@ -12,9 +12,10 @@ i-doit ("I document IT") is a fully-featured Web application for CMDB (Configura
 
 ## What is the difference between i-doit pro and open?
 
-i-doit comes in two editions: [i-doit open][open] is the community edition. It is free and open source software.
+i-doit comes in two editions:
 
-[i-doit pro][website] is the commercial edition with enterprise features. See the differences in the [feature comparison][comparison].
+-   [i-doit open][open] is the community edition which is free and open source software.
+-   [i-doit pro][website] is the commercial edition with enterprise features. See the differences in the [feature comparison][comparison].
 
 ## I found a bug in i-doit. Who will resolve it?
 
@@ -50,7 +51,7 @@ Both versions `v1` and `v2` can be extended by add-ons. For `v1` add-ons refer t
 
 ## How can I develop my own i-doit `v2` add-on?
 
-Become a developing partner (it is free!) and read our [developer guide lines][docs].
+Become a developing partner (for free!) and read our [developer guide lines][docs].
 
 ## Where can I get consulting for/training for my documentation project?
 

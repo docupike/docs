@@ -15,7 +15,7 @@ i-doit ("I document IT") is a fully-featured Web application for CMDB (Configura
     i-doit 2 hasn't been released yet. There will be a public beta coming soon.
 
 !!! danger "Danger zone"
-    This Web site is just a prototype. Do not rely on any information provided here. The actual Web site will be launched with the public beta of i-doit 2.
+    This Web site is a prototype. Do not rely on any information provided here. The actual Web site will be launched with the public beta of i-doit 2.
 
 ## Administrator Guide
 
@@ -27,7 +27,7 @@ The [user guide](user/index.md) shows you how to start your documentation with i
 
 ## API
 
-Get the [essentials about i-doit's API](api/index.md). Or deep dive into the complete [API reference](api/reference/v1/index.html).
+Get the [essentials about i-doit's API](api/index.md). Or walk through the complete [API reference](api/reference/v1/index.html).
 
 ## Add-ons
 
@@ -35,4 +35,4 @@ i-doit is highly extentible by various add-ons. Standard add-ons maintained by s
 
 ## Developing
 
-Become a developer partner (it's free!) and [extend i-doit](dev/index.md) by hacking on your own add-ons.
+Become a developer partner (for free!) and [extend i-doit](dev/index.md) by hacking on your own add-ons.
