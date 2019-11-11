@@ -1,0 +1,3 @@
+allow:
+  # We use the technical term "host" a lot:
+  - host-hostess

@@ -1,0 +1,78 @@
+{
+    "name": "i-doit-docs",
+    "description": "Documentation of CMDB & IT documentation application i-doit",
+    "keywords": [
+        "i-doit",
+        "idoit",
+        "CMDB",
+        "IT documentation",
+        "asset management",
+        "documentation",
+        "docs"
+    ],
+    "version": "0.0.0-dev",
+    "homepage": "https://docs.i-doit.com/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bheisig/i-doit-docs"
+    },
+    "bugs": {
+        "url": "https://github.com/bheisig/i-doit-docs/issues"
+    },
+    "license": "CC-BY-SA-4.0",
+    "author": "synetics GmbH <info@i-doit.com> (https://i-doit.com/)",
+    "devDependencies": {
+        "alex": "^8.0.0",
+        "markdown-spellcheck": "^1.3.1",
+        "npm-run-all": "^4.1.5",
+        "redoc": "^2",
+        "remark-cli": "^7.0.0",
+        "remark-lint": "^6.0.5",
+        "remark-lint-match-punctuation": "^0.2.0",
+        "remark-lint-no-dead-urls": "^0.5.0",
+        "remark-lint-no-empty-sections": "^3.0.0",
+        "remark-lint-no-long-code": "^0.1.2",
+        "remark-lint-no-repeat-punctuation": "^0.1.3",
+        "remark-lint-no-trailing-spaces": "^2.0.1",
+        "remark-lint-write-good": "^1.2.0",
+        "remark-preset-lint-consistent": "^2.0.3",
+        "remark-preset-lint-recommended": "^3.0.3",
+        "yaml-lint": "^1.2.4"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/run-s test:*",
+        "test:markdown": "./node_modules/.bin/remark --ignore-path .gitignore . .github/",
+        "test:spelling": "./node_modules/.bin/mdspell --report --ignore-numbers --ignore-acronyms --en-us *.md .github/*.md",
+        "test:wording": "./node_modules/.bin/alex",
+        "test:yaml": "./node_modules/.bin/yamllint *.yml *.yaml .*.yml .*.yaml",
+        "sort-word-list": "sort .spelling | uniq > /tmp/.spelling && mv /tmp/.spelling .spelling"
+    },
+    "remarkConfig": {
+        "settings": {},
+        "plugins": [
+            "lint",
+            "lint-no-empty-sections",
+            "remark-lint-match-punctuation",
+            "remark-lint-no-dead-urls",
+            [
+                "remark-lint-no-long-code",
+                {
+                    "length": 100
+                }
+            ],
+            "remark-lint-no-repeat-punctuation",
+            "remark-lint-no-trailing-spaces",
+            [
+                "remark-lint-write-good",
+                [
+                    "warn",
+                    {
+                        "passive": false
+                    }
+                ]
+            ],
+            "remark-preset-lint-consistent",
+            "remark-preset-lint-recommended"
+        ]
+    }
+}

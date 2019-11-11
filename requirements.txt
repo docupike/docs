@@ -1,0 +1,4 @@
+pygments
+wheel
+mkdocs
+mkdocs-material
