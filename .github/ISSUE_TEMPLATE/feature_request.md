@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: 'Docs only! Suggest a new article'
 title: ''
 labels: ''
 assignees: ''

@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: 'Docs only! Report typos and misleading information'
 title: ''
 labels: ''
 assignees: ''

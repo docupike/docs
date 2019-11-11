@@ -1,6 +1,6 @@
 ---
 name: Open question
-about: Just ask a question
+about: 'Docs only! Just ask a question'
 title: ''
 labels: ''
 assignees: ''
@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 <!--
-Thanks for your feature request!
+Thanks for your question!
 
 We kindly ask you to…
 
