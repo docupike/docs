@@ -1,0 +1,23 @@
+blank_issues_enabled: false
+contact_links:
+  - name: i-doit Community
+    url: https://community.i-doit.com/
+    about: Get in touch with the i-doit community
+  - name: i-doit Customer Portal
+    url: https://login.i-doit.com
+    about: Download release packages and license keys
+  - name: i-doit docs
+    url: https://docs.i-doit.com
+    about: Documentation of i-doit v2 and its add-ons
+  - name: i-doit Help Center
+    url: https://help.i-doit.com/
+    about: Please report bug, make feature requests, ask questions and report security vulnerabilities here.
+  - name: i-doit Knowledge Base
+    url: https://kb.i-doit.com
+    about: Documentation of i-doit v1 and its add-ons (English/German)
+  - name: i-doit open
+    url: https://i-doit.org/
+    about: Download the community edition and compare between open and pro
+  - name: i-doit pro
+    url: https://i-doit.com/
+    about: Read about i-doit pro, pricing, partners, trainings and more
