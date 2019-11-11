@@ -14,10 +14,10 @@
     "homepage": "https://docs.i-doit.com/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/bheisig/i-doit-docs"
+        "url": "https://github.com/i-doit/docs"
     },
     "bugs": {
-        "url": "https://github.com/bheisig/i-doit-docs/issues"
+        "url": "https://github.com/i-doit/docs/issues"
     },
     "license": "CC-BY-SA-4.0",
     "author": "synetics GmbH <info@i-doit.com> (https://i-doit.com/)",

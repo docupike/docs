@@ -8,8 +8,7 @@ copyright: Copyright &copy; 2019
 #  - 'docs.i-doit.com'
 #repo_url: https://github.com/i-doit/docs/
 #edit_uri: edit/dev/docs/
-#edit_uri: https://github.com/i-doit/docs/edit/dev/docs/
-edit_uri: https://github.com/bheisig/i-doit-docs/edit/master/docs/
+edit_uri: https://github.com/i-doit/docs/edit/master/docs/
 strict: true
 theme:
   name: material
