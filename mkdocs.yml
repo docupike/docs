@@ -17,7 +17,7 @@ theme:
     primary: black
     accent: red
   font: false
-  logo: img/favicon.png
+  logo: img/i-doit-icon.png
   language: en
   favicon: img/favicon.png
   feature:
