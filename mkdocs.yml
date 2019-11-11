@@ -3,9 +3,9 @@ site_url: https://docs.i-doit.com/
 site_description: Documentation of CMDB & IT documentation application i-doit
 site_author: synetics GmbH
 copyright: Copyright &copy; 2019
-#google_analytics:
-#  - 'UA-12345678-9' # !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
-#  - 'docs.i-doit.com'
+google_analytics:
+  - 'UA-66601150-16'
+  - 'docs.i-doit.com'
 #repo_url: https://github.com/i-doit/docs/
 #edit_uri: edit/dev/docs/
 edit_uri: https://github.com/i-doit/docs/edit/master/docs/
