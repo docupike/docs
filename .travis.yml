@@ -1,0 +1,20 @@
+os: xenial
+
+language: node_js
+
+node_js:
+  - "lts/*"
+
+before_install:
+  - npm i -g npm@6
+  - npm install --save-dev
+
+script:
+  - npm doctor
+  - npm audit
+  - npm test
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
