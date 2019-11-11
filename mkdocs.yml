@@ -1,0 +1,106 @@
+site_name: IT documentation with i-doit
+site_url: https://docs.i-doit.com/
+site_description: Documentation of CMDB & IT documentation application i-doit
+site_author: synetics GmbH
+copyright: Copyright &copy; 2019
+#google_analytics:
+#  - 'UA-12345678-9' # !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+#  - 'docs.i-doit.com'
+#repo_url: https://github.com/i-doit/docs/
+#edit_uri: edit/dev/docs/
+#edit_uri: https://github.com/i-doit/docs/edit/dev/docs/
+edit_uri: https://github.com/bheisig/i-doit-docs/edit/master/docs/
+strict: true
+theme:
+  name: material
+  custom_dir: theme
+  palette:
+    primary: black
+    accent: red
+  font: false
+  logo: img/favicon.png
+  language: en
+  favicon: img/favicon.png
+  feature:
+    tabs: false
+plugins:
+  - search:
+      lang: ['en']
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - meta
+  - toc:
+      permalink: "#"
+extra:
+# https://developers.google.com/web/fundamentals/web-app-manifest/
+#  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'globe'
+      link: 'https://i-doit.com'
+    - type: 'comments'
+      link: 'https://community.i-doit.com'
+    - type: 'life-ring'
+      link: 'https://help.i-doit.com'
+    - type: 'play'
+      link: 'https://demo.i-doit.com'
+    - type: 'twitter'
+      link: 'https://twitter.com/i_doit'
+    - type: 'xing'
+      link: 'https://www.xing.com/communities/groups/i-doit-dokumentation-und-cmdb-1064322'
+    - type: 'youtube'
+      link: 'https://www.youtube.com/user/smartitsm'
+    - type: 'facebook'
+      link: 'https://facebook.com/itdokumentation/'
+use_directory_urls: false
+nav:
+  - Overview: index.md
+  - Administrator Guide:
+      - Introduction: admin/index.md
+      - Releases:
+          - Version history: admin/version-history.md
+          - Release Notes: admin/release-notes.md
+          - Changelogs: admin/changelogs.md
+      - Installation:
+          - System Requirements: admin/system-requirements.md
+          - Manual Instructions:
+              - Debian: admin/debian.md
+              - Red Hat Enterprise Linux (RHEL): admin/rhel.md
+              - Ubuntu: admin/ubuntu.md
+              - Suse Linux Enterprise Server (SLES): admin/sles.md
+              - Microsoft Windows Server: admin/windows.md
+              - OS Settings: admin/os-settings.md
+              - Setup: admin/setup.md
+          - Docker Container: admin/docker-container.md
+          - Virtual Appliance: admin/virtual-appliance.md
+      - Maintenance:
+          - Subscriptions: admin/subscriptions.md
+          - Cronjobs: admin/cronjobs.md
+          - Backup and Recovery: admin/backup-and-recovery.md
+          - Updates: admin/updates.md
+          - Security: admin/security.md
+          - Performance: admin/performance.md
+          - Maintenance Mode: admin/maintenance-mode.md
+      - Migration:
+          - Migrate from 1.x to 2.x: admin/migrate-from-1.x-to-2.x.md
+      - Command-line interface (CLI): admin/cli.md
+  - User Guide:
+      - Introduction: user/index.md
+      - First Login: user/first-login.md
+      - Dashboard: user/dashboard.md
+      - Finder: user/finder.md
+      - Customization: user/customization.md
+      - Imports: user/imports.md
+  - API:
+     - Introduction: api/index.md
+     - Examples: api/examples.md
+     - Reference v1: api/reference/v1/index.html
+  - Add-ons:
+     - Introduction: add-ons/index.md
+     - Documents:
+         - About: add-ons/documents/index.md
+         - Changelogs: add-ons/documents/changelogs.md
+  - Developing:
+     - Introduction: dev/index.md
