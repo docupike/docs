@@ -11,3 +11,5 @@ lang: en
     These **User** will now have assigned **Roles** to be authorized in *i-doit*.
 
 !!! warning "TEST"
+
+!!! danger "2nd Test"
