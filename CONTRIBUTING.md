@@ -9,7 +9,7 @@ Fork the repository, setup your environment, hack on the articles in your favori
 Whatever you want to contribute there are some base requirements:
 
 -   You need a [GitHub account][github]
--   You need commit rights on [our repository][repository]
+-   Either you need to fork [our repository][repository] or you need commit rights on it
 -   You need a basic understanding how to use the [common markdown syntax][commonmark]
 -   A basic understanding how [Git][gitbook] works is useful; [GitHub provides tutorials][githubHelp] about Git repositories and GitHub as a code hosting platform
 
