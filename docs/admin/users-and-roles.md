@@ -4,7 +4,7 @@ description: Users concept
 lang: en
 ---
 
-# Users and Roles
+### Users and Roles
 
 !!! danger "Changed concept of users and roles"
     **Users** are now separated from the class **Persons**.
