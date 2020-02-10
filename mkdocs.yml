@@ -25,6 +25,10 @@ theme:
 plugins:
   - search:
       lang: ['en']
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: iso_date
 markdown_extensions:
   - admonition
   - codehilite:
