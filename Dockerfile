@@ -4,6 +4,10 @@ WORKDIR /usr/src/app
 
 COPY . .
 
+RUN apk update; \
+    apk upgrade; \
+    apk add --no-cache git
+
 RUN python --version; \
     pip --version; \
     pip install --no-cache-dir -r requirements.txt
