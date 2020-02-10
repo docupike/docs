@@ -1,4 +1,4 @@
-os: xenial
+os: linux
 
 language: node_js
 
@@ -6,7 +6,7 @@ node_js:
   - "lts/*"
 
 before_install:
-  - npm i -g npm@6
+  - npm i -g npm
   - npm install --save-dev
 
 script:
