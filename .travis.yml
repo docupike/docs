@@ -11,6 +11,8 @@ before_install:
 
 script:
   - npm doctor
+  # TODO Check for out-dated packages without failing on markdown-spelling:
+  #- npm outdated
   - npm audit
   - npm test
 

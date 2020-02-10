@@ -1,18 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>i-doit API Reference v1</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <redoc spec-url="docs.json" hide-hostname="true" suppress-warnings="true" lazy-rendering></redoc>
-    <script src="redoc.standalone.js"> </script>
-  </body>
+    <head>
+        <title>i-doit API Reference v1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="module" src="rapidoc-min.js"></script>
+    </head>
+    <body>
+    <rapi-doc
+            spec-url="docs.json"
+            render-style="read"
+            layout="row"
+            show-header="false"
+            allow-spec-url-load="false"
+            allow-spec-file-load="false"
+            allow-try="false"
+            regular-font="Arial"
+    ></rapi-doc>
+    </body>
 </html>
