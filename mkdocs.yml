@@ -2,7 +2,7 @@ site_name: IT documentation with i-doit
 site_url: https://docs.i-doit.com/
 site_description: Documentation of CMDB & IT documentation application i-doit
 site_author: synetics GmbH
-copyright: Copyright &copy; 2019
+copyright: Copyright &copy; 2020
 google_analytics:
   - 'UA-66601150-16'
   - 'docs.i-doit.com'
@@ -58,10 +58,10 @@ nav:
   - Overview: index.md
   - User Guide:
       - Login: user/login.md
-#      - Dashboard: user/dashboard.md
+      # - Dashboard: user/dashboard.md
       - Objects:
           - Create and edit: user/objects/create-and-edit.md
-          - Archive, delete and purge: user/objects/archive-delete-and-purge.md
+          - Archive, delete, purge and restore: user/objects/archive-delete-purge-and-restore.md
           - History: user/objects/history.md
       - Documentation basics:
           - Collections: user/basics/collections.md
@@ -69,22 +69,22 @@ nav:
           - Objects: user/basics/objects.md
           - Categories and attributes: user/basics/categories-and-attributes.md
       - Finder:
-          - Views: user/finder/views.md
-          - Presets: user/finder/presets.md
-          - Search and filter: user/finder/search-and-filter.md
-          - Export and print: user/finder/export-and-print.md
+          - Views and presets: user/finder/views-and-presets.md
+          - Search filter and reports: user/finder/search-filter-and-reports.md
+          # - Export and print: user/finder/export-and-print.md
           - Inline editing: user/finder/inline-editing.md
+          - Multi editing: user/finder/multi-editing.md
       - Imports:
           - CSV: user/imports/csv.md
-      - User settings: user/settings.md
+      # - User settings: user/settings.md
 #      - Examples:
 #          - Server hardware: user/examples/server-hardware.md
   - Admin Guide:
       - Users and roles: admin/users-and-roles.md
-      - Documentation settings:
-          - Collections: admin/documentation-settings/collections.md
-          - Classes: admin/documentation-settings/classes.md
-          - Categories: admin/documentation-settings/categories.md
+      # - Documentation settings:
+      #     - Collections: admin/documentation-settings/collections.md
+      #     - Classes: admin/documentation-settings/classes.md
+      #     - Categories: admin/documentation-settings/categories.md
 #      - System settings: admin/system-settings.md
 #      - Distribution Center: admin/distribution-center.md
 #  - Installation:
@@ -112,7 +112,7 @@ nav:
 #      - Command-line interface (CLI): installation/cli.md
   - API:
      - Introduction: api/index.md
-     - Examples: api/examples.md
+     # - Examples: api/examples.md
      - Reference v1: api/reference/v1/index.html
 #  - Add-ons:
 #     - Introduction: add-ons/index.md
@@ -121,13 +121,13 @@ nav:
 #         - Changelogs: add-ons/documents/changelogs.md
 #  - Development Partners:
 #     - Introduction: dev/index.md
-  - Technical reference:
-      - Version history: ref/version-history.md
-      - Release Notes: ref/release-notes.md
-      - Changelogs: ref/changelogs.md
-      - System Requirements: ref/system-requirements.md
-      - License: ref/license.md
-      - Database schema: ref/database-schema.md
-      - List of collections: ref/list-of-collections.md
-      - List of classes: ref/list-of-classes.md
-      - List of categories: ref/list-of-categories.md
+  # - Technical reference:
+  #     - Version history: ref/version-history.md
+  #     - Release Notes: ref/release-notes.md
+  #     - Changelogs: ref/changelogs.md
+  #     - System Requirements: ref/system-requirements.md
+  #     - License: ref/license.md
+  #     - Database schema: ref/database-schema.md
+  #     - List of collections: ref/list-of-collections.md
+  #     - List of classes: ref/list-of-classes.md
+  #     - List of categories: ref/list-of-categories.md
