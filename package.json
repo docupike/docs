@@ -23,6 +23,7 @@
     "author": "synetics GmbH <info@i-doit.com> (https://i-doit.com/)",
     "devDependencies": {
         "alex": "^8.0.1",
+        "husky": "^4.2.1",
         "jsonlint": "^1.6.3",
         "markdown-spellcheck": "git+https://github.com/lukeapage/node-markdown-spellcheck.git",
         "npm-run-all": "^4.1.5",
@@ -51,6 +52,11 @@
         "test:spelling": "./node_modules/.bin/mdspell --report --ignore-numbers --ignore-acronyms --en-us *.md .github/*.md",
         "test:wording": "./node_modules/.bin/alex",
         "test:yaml": "./node_modules/.bin/yamllint *.yml *.yaml .*.yml .*.yaml"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm test"
+        }
     },
     "remarkConfig": {
         "settings": {},
