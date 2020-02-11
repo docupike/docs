@@ -125,11 +125,11 @@ nav:
 #         - Changelogs: add-ons/documents/changelogs.md
 #  - Development Partners:
 #     - Introduction: dev/index.md
-  # - Technical reference:
-  #     - Version history: ref/version-history.md
+  - Technical reference:
+      - Version history: ref/version-history.md
   #     - Release Notes: ref/release-notes.md
   #     - Changelogs: ref/changelogs.md
-  #     - System Requirements: ref/system-requirements.md
+      - System Requirements: ref/system-requirements.md
   #     - License: ref/license.md
   #     - Database schema: ref/database-schema.md
   #     - List of collections: ref/list-of-collections.md
