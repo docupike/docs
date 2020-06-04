@@ -36,8 +36,7 @@ markdown_extensions:
   - toc:
       permalink: "#"
 extra:
-# https://developers.google.com/web/fundamentals/web-app-manifest/
-#  manifest: 'manifest.webmanifest'
+  manifest: manifest.webmanifest
   social:
     - icon: fontawesome/solid/globe
       link: https://i-doit.com

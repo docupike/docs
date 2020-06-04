@@ -1,0 +1,28 @@
+{
+  "short_name": "i-doit docs",
+  "name": "IT documentation with i-doit",
+  "description": "Documentation of CMDB & IT documentation application i-doit",
+  "icons": [
+    {
+      "src": "/img/favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/img/favicon-180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/img/favicon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ff0000",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ff0000",
+  "shortcuts": []
+}
