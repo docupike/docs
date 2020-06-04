@@ -87,6 +87,7 @@ Before you start make sure all required tools are installed and configured prope
 
 -   [Git][git]
 -   Python **3** (2 does not work) with [PIP][pip]
+-   GCC to compile some required Python packages
 -   [NPM][npm]
 
 This works on a GNU/Linux or a MacOS host:

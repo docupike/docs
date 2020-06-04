@@ -6,7 +6,10 @@ COPY . .
 
 RUN apk update; \
     apk upgrade; \
-    apk add --no-cache git
+    apk add --no-cache \
+        gcc \
+        git \
+        musl-dev
 
 RUN python --version; \
     pip --version; \

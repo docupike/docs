@@ -6,9 +6,7 @@ copyright: Copyright &copy; 2020
 google_analytics:
   - 'UA-66601150-16'
   - 'docs.i-doit.com'
-#repo_url: https://github.com/i-doit/docs/
-#edit_uri: edit/dev/docs/
-edit_uri: https://github.com/i-doit/docs/edit/master/docs/
+repo_url: https://github.com/i-doit/docs
 strict: true
 theme:
   name: material
@@ -41,22 +39,22 @@ extra:
 # https://developers.google.com/web/fundamentals/web-app-manifest/
 #  manifest: 'manifest.webmanifest'
   social:
-    - type: 'globe'
-      link: 'https://i-doit.com'
-    - type: 'comments'
-      link: 'https://community.i-doit.com'
-    - type: 'life-ring'
-      link: 'https://help.i-doit.com'
-    - type: 'play'
-      link: 'https://demo.i-doit.com'
-    - type: 'twitter'
-      link: 'https://twitter.com/i_doit'
-    - type: 'xing'
-      link: 'https://www.xing.com/communities/groups/i-doit-dokumentation-und-cmdb-1064322'
-    - type: 'youtube'
-      link: 'https://www.youtube.com/user/smartitsm'
-    - type: 'facebook'
-      link: 'https://facebook.com/itdokumentation/'
+    - icon: fontawesome/solid/globe
+      link: https://i-doit.com
+    - icon: fontawesome/solid/comments
+      link: https://community.i-doit.com
+    - icon: fontawesome/regular/life-ring
+      link: https://help.i-doit.com
+    - icon: fontawesome/solid/play
+      link: https://demo.i-doit.com
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/i_doit
+    - icon: fontawesome/brands/xing
+      link: https://www.xing.com/communities/groups/i-doit-dokumentation-und-cmdb-1064322
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/user/smartitsm
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/itdokumentation/
 use_directory_urls: false
 nav:
   - Overview: index.md
