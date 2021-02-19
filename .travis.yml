@@ -1,3 +1,4 @@
+---
 os: linux
 
 language: node_js
@@ -12,9 +13,9 @@ before_install:
 script:
   - npm doctor
   # TODO Check for out-dated packages without failing on markdown-spelling:
-  #- npm outdated
+  # - npm outdated
   # TODO Audit often fails because of low-level sec flaws in sub-dependencies:
-  #- npm audit
+  # - npm audit
   - npm test
 
 notifications:

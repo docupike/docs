@@ -1,3 +1,4 @@
+---
 site_name: IT documentation with i-doit
 site_url: https://docs.i-doit.com/
 site_description: Documentation of CMDB & IT documentation application i-doit
@@ -78,16 +79,16 @@ nav:
       - Imports:
           - CSV: user/imports/csv.md
       # - User settings: user/settings.md
-#      - Examples:
-#          - Server hardware: user/examples/server-hardware.md
+      # - Examples:
+      #     - Server hardware: user/examples/server-hardware.md
   - Admin Guide:
       - Users and roles: admin/users-and-roles.md
       # - Documentation settings:
       #     - Collections: admin/documentation-settings/collections.md
       #     - Classes: admin/documentation-settings/classes.md
       #     - Categories: admin/documentation-settings/categories.md
-#      - System settings: admin/system-settings.md
-#      - Distribution Center: admin/distribution-center.md
+      # - System settings: admin/system-settings.md
+      # - Distribution Center: admin/distribution-center.md
 #  - Installation:
 #      - Installation:
 #          - Manual Instructions:
@@ -112,9 +113,9 @@ nav:
 #          - Migrate from 1.x to 2.x: installation/migrate-from-1.x-to-2.x.md
 #      - Command-line interface (CLI): installation/cli.md
   - API:
-     - Introduction: api/index.md
-     # - Examples: api/examples.md
-     - Reference v1: api/reference/v1/index.html
+      - Introduction: api/index.md
+      # - Examples: api/examples.md
+      - Reference v1: api/reference/v1/index.html
 #  - Add-ons:
 #     - Introduction: add-ons/index.md
 #     - Documents:
