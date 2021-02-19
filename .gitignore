@@ -1,4 +1,4 @@
-/node_modules/
-/package-lock.json
-/site/
-/_*
+_*
+node_modules/
+package-lock.json
+site/

@@ -4,9 +4,7 @@ WORKDIR /usr/src/app
 
 VOLUME /usr/src/app
 
-RUN apk update; \
-    apk upgrade; \
-    apk add --no-cache \
+RUN apk add --no-cache \
         gcc \
         git \
         musl-dev

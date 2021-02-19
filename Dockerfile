@@ -4,9 +4,7 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN apk update; \
-    apk upgrade; \
-    apk add --no-cache \
+RUN apk add --no-cache \
         gcc \
         git \
         musl-dev

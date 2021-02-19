@@ -1,0 +1,6 @@
+---
+ignored:
+  - DL3008
+  - DL3016
+  # Ignore version pinning in alpine's apk add:
+  - DL3018
