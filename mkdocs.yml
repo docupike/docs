@@ -3,7 +3,7 @@ site_name: IT documentation with i-doit
 site_url: https://docs.i-doit.com/
 site_description: Documentation of CMDB & IT documentation application i-doit
 site_author: synetics GmbH
-copyright: Copyright &copy; 2020
+copyright: Copyright &copy; 2019-21
 google_analytics:
   - 'UA-66601150-16'
   - 'docs.i-doit.com'
@@ -39,22 +39,42 @@ markdown_extensions:
 extra:
   manifest: manifest.webmanifest
   social:
-    - icon: fontawesome/solid/globe
-      link: https://i-doit.com
-    - icon: fontawesome/solid/comments
-      link: https://community.i-doit.com
-    - icon: fontawesome/regular/life-ring
-      link: https://help.i-doit.com
-    - icon: fontawesome/solid/play
-      link: https://demo.i-doit.com
-    - icon: fontawesome/brands/twitter
+    - name: i-doit website
+      link: https://i-doit.com/
+      icon: fontawesome/solid/globe
+    - name: i-doit Community forums
+      link: https://community.i-doit.com/
+      icon: fontawesome/solid/comments
+    - name: i-doit support center
+      link: https://help.i-doit.com/
+      icon: fontawesome/regular/life-ring
+    - name: i-doit on Twitter
       link: https://twitter.com/i_doit
-    - icon: fontawesome/brands/xing
-      link: https://www.xing.com/communities/groups/i-doit-dokumentation-und-cmdb-1064322
-    - icon: fontawesome/brands/youtube
+      icon: fontawesome/brands/twitter
+    - name: i-doit on YouTube (English)
+      link: https://www.youtube.com/channel/UC5wvDZjCslEWW2jE6R_5CUg
+      icon: fontawesome/brands/youtube
+    - name: i-doit on YouTube (German)
       link: https://www.youtube.com/user/smartitsm
-    - icon: fontawesome/brands/facebook
+      icon: fontawesome/brands/youtube
+    - name: i-doit on GitHub
+      link: https://github.com/i-doit
+      icon: fontawesome/brands/github
+    - name: i-doit on LinkedIn
+      link: https://www.linkedin.com/company/1097514/
+      icon: fontawesome/brands/linkedin
+    - name: i-doit on XING
+      link: https://www.xing.com/communities/groups/i-doit-dokumentation-und-cmdb-1064322
+      icon: fontawesome/brands/xing
+    - name: i-doit on Facebook
       link: https://facebook.com/itdokumentation/
+      icon: fontawesome/brands/facebook
+    - name: Create a review on Google
+      link: https://g.page/synetics-gmbh/review
+      icon: fontawesome/brands/google
+    - name: Demo of i-doit 1
+      link: https://demo.i-doit.com/
+      icon: fontawesome/solid/play
 use_directory_urls: false
 nav:
   - Overview: index.md
