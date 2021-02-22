@@ -1,22 +1,17 @@
 ---
-os: linux
-
-language: node_js
-
-node_js:
-  - "lts/*"
+dist: focal
 
 before_install:
-  - npm i -g npm
-  - npm install --save-dev
+  # Currently installed version of docker-compose is out-dated:
+  - pip install -U docker-compose
+  - pip install -U -r requirements.txt
+  - npm install
+  - sudo curl -fsSL https://github.com/hadolint/hadolint/releases/download/v1.22.1/hadolint-Linux-x86_64 -o /usr/local/bin/hadolint
+  - sudo chmod +x /usr/local/bin/hadolint
 
 script:
-  - npm doctor
-  # TODO Check for out-dated packages without failing on markdown-spelling:
-  # - npm outdated
-  # TODO Audit often fails because of low-level sec flaws in sub-dependencies:
-  # - npm audit
   - npm test
+  - mkdocs build
 
 notifications:
   email:
