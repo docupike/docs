@@ -95,8 +95,8 @@ This works on a GNU/Linux or a MacOS host:
 ~~~ {.bash}
 git clone git@github.com:i-doit/docs.git
 cd docs
-npm install --save-dev
-pip install --no-cache-dir -r requirements.txt
+npm install
+pip install -U -r requirements.txt
 ~~~
 
 ## Use a live system

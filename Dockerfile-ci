@@ -4,15 +4,12 @@ WORKDIR /usr/src/app
 
 VOLUME /usr/src/app
 
+COPY requirements.txt /usr/src/app/
+
 RUN apk add --no-cache \
         gcc \
         git \
-        musl-dev
-
-COPY requirements.txt /usr/src/app/
-
-RUN python --version; \
-    pip --version; \
-    pip install --no-cache-dir -r requirements.txt
+        musl-dev; \
+    pip install -U -r requirements.txt
 
 CMD ["mkdocs", "--help"]

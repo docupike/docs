@@ -7,11 +7,8 @@ COPY . .
 RUN apk add --no-cache \
         gcc \
         git \
-        musl-dev
-
-RUN python --version; \
-    pip --version; \
-    pip install --no-cache-dir -r requirements.txt
+        musl-dev; \
+    pip install -U -r requirements.txt
 
 RUN mkdocs build
 
