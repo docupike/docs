@@ -4,9 +4,6 @@ site_url: https://docs.i-doit.com/
 site_description: Documentation of CMDB & IT documentation application i-doit
 site_author: synetics GmbH
 copyright: Copyright &copy; 2019-21
-google_analytics:
-  - 'UA-66601150-16'
-  - 'docs.i-doit.com'
 repo_url: https://github.com/i-doit/docs
 strict: true
 theme:
@@ -19,11 +16,11 @@ theme:
   logo: img/i-doit-icon.png
   language: en
   favicon: img/favicon.png
-  feature:
-    tabs: false
+  features:
+    - search.suggest
 plugins:
   - search:
-      lang: ['en']
+      lang: en
   - minify:
       minify_html: true
   - git-revision-date-localized:
