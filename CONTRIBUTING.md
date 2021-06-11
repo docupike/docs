@@ -44,7 +44,7 @@ Whenever a change is submitted to our main repository this change will be tested
 -   [ ] Has the content a proper wording (avoid insensitive, inconsiderate writing)?
 -   [ ] Is every external link still accessible?
 
-Our continuous integration (CI) tools [Travis CI][travisCI] and [Jenkins][jenkins] try to find an answer to each above questions by running new builds. Only if each question is answered with an "yes!" the build will pass and everything is ready to merge the change.
+Our continuous integration (CI) tools try to find an answer to each above questions by running new builds. Only if each question is answered with an "yes!" the build will pass and everything is ready to merge the change.
 
 ### Static site generator
 
@@ -163,4 +163,3 @@ npm run info
 [metadata]: https://python-markdown.github.io/extensions/meta_data/
 [pip]: https://pypi.org/project/pip/
 [repository]: https://github.com/i-doit/docs
-[travisCI]: https://travis-ci.org/i-doit/docs
