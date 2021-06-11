@@ -12,22 +12,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Build container image
-        run: >
-          docker-compose
-            -f docker-compose-ci.yml
-            build
-            --pull
-            --build-arg USER_ID="${id -u}"
+        run: |
+          docker-compose \
+            -f docker-compose-ci.yml \
+            build \
+            --pull \
+            --build-arg USER_ID="${id -u}" \
             --build-arg GROUP_ID="${id -g}"
       - name: Install toolchain
-        run: >
-          docker-compose
-            -f docker-compose-ci.yml
-            run docs
+        run: |
+          docker-compose \
+            -f docker-compose-ci.yml \
+            run docs \
             npm install
       - name: Run tests
-        run: >
-          docker-compose
-            -f docker-compose-ci.yml
-            run docs
+        run: |
+          docker-compose \
+            -f docker-compose-ci.yml \
+            run docs \
             npm test
