@@ -33,7 +33,7 @@ Our hosting platform for this project is GitHub.
 
 ### Git workflow
 
-The `master` branch is always the state of truth. It means everything which is available in this branch goes public. Therefore, we have to handle this important branch with care. One safeguard is heavy testing (see next section). Another is we do not allow to commit changes directly into the `master` branch. However, what we allow is to create pull requests.
+The `main` branch is always the state of truth. It means everything which is available in this branch goes public. Therefore, we have to handle this important branch with care. One safeguard is heavy testing (see next section). Another is we do not allow to commit changes directly into the `main` branch. However, what we allow is to create pull requests.
 
 ### Continuous integration (CI)
 
@@ -54,7 +54,7 @@ MkDocs is a static site generator. Based on the [configuration](mkdocs.yml) it c
 
 ### Continuous deployment (CD)
 
-To deploy from the `master` branch to production we also use Jenkins to do this job. In this step Jenkins acts as a continuous deployment (CD) tool. The final result (remember: a bunch of HTML/images/CSS/JS) will be transferred to our production environment and is live immediately.
+To deploy from the `main` branch to production we also use Jenkins to do this job. In this step Jenkins acts as a continuous deployment (CD) tool. The final result (remember: a bunch of HTML/images/CSS/JS) will be transferred to our production environment and is live immediately.
 
 ## Hack on the documentation as an author
 
