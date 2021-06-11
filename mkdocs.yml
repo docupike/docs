@@ -132,7 +132,7 @@ nav:
   - API:
       - Introduction: api/index.md
       # - Examples: api/examples.md
-      - Reference v1: api/reference/v1/index.html
+      - Reference v2: api/reference/v2/index.html
 #  - Add-ons:
 #     - Introduction: add-ons/index.md
 #     - Documents:
