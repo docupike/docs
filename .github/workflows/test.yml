@@ -31,3 +31,9 @@ jobs:
             -f docker-compose-ci.yml \
             run docs \
             npm test
+      - name: Build docs
+        run: |
+          docker-compose \
+            -f docker-compose-ci.yml \
+            run docs \
+            npm run docs:build
