@@ -28,7 +28,7 @@
         "jsonlint": "^1.6.3",
         "markdown-spellcheck": "git+https://github.com/lukeapage/node-markdown-spellcheck.git",
         "npm-run-all": "^4.1",
-        "rapidoc": "^8.1.0",
+        "rapidoc": "^9",
         "remark-cli": "^9.0",
         "remark-frontmatter": "^3",
         "remark-lint": "^8.0",
