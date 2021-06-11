@@ -88,7 +88,8 @@ Before you start make sure all required tools are installed and configured prope
 -   [Git][git]
 -   Python **3** (2 does not work) with [PIP][pip]
 -   GCC to compile some required Python packages
--   [NPM][npm]
+-   [NPM](https://docs.npmjs.com/), version `>= 6.7.0`
+-   [Node.js](https://nodejs.org/en/docs/), version `>= 14.16.0`
 
 This works on a GNU/Linux or a MacOS host:
 
@@ -104,7 +105,7 @@ pip install -U -r requirements.txt
 MkDocs has a built-in Web server which keeps track of your changes. Whenever you add a new file or update an existing one your Web browser reloads the current page automatically. Start the Web server:
 
 ~~~ {.bash}
-mkdocs serve
+npm run docs:serve
 ~~~
 
 Open `http://localhost:8000` in your Web browser. You should see the home page.
@@ -114,7 +115,7 @@ Open `http://localhost:8000` in your Web browser. You should see the home page.
 Build the static website:
 
 ~~~ {.bash}
-mkdocs build
+npm run docs:build
 ~~~
 
 The result will be located within the `site/` directory.
@@ -137,20 +138,10 @@ Have you found misspellings, grammar mistakes, logical gaps? Have not you found 
 
 ## List of NPM scripts
 
-This project comes with some useful NPM scripts.
-
-| Command                   | Description                               |
-| ------------------------- | ----------------------------------------- |
-| `npm test`                | Run all commands with prefix `test:`      |
-| `npm run test:markdown`   | Lint markdown files                       |
-| `npm run test:yaml`       | Lint YAML files                           |
-| `npm run test:spelling`   | Check spelling                            |
-| `npm run test:wording`    | Catch insensitive, inconsiderate writing  |
-
-List of all them:
+This project comes with some useful NPM scripts. List all of them:
 
 ~~~ {.bash}
-npm run
+npm run info
 ~~~
 
 ## Further readings
@@ -170,7 +161,6 @@ npm run
 [mkdocs]: https://www.mkdocs.org/
 [materialForMkDocs]: https://squidfunk.github.io/mkdocs-material/
 [metadata]: https://python-markdown.github.io/extensions/meta_data/
-[npm]: https://www.npmjs.com/
 [pip]: https://pypi.org/project/pip/
 [repository]: https://github.com/i-doit/docs
 [travisCI]: https://travis-ci.org/i-doit/docs
