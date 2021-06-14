@@ -1,5 +1,5 @@
 ---
-name: Test, build and publish i-doit.cloud docs
+name: Main workflow
 
 on:
   - push
