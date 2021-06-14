@@ -6,15 +6,13 @@ on:
   - pull_request
 
 jobs:
-  test:
+
+  setup:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Install latest LTS version of Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
       - name: Re-use NPM cache
         uses: actions/cache@v2
         with:
@@ -43,15 +41,45 @@ jobs:
             -f docker-compose-ci.yml \
             run docs \
             npm install
+
+  test:
+    name: Test
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
       - name: Run tests
         run: |
           docker-compose \
             -f docker-compose-ci.yml \
             run docs \
             npm test
+
+  build:
+    name: Build
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
       - name: Build docs
         run: |
           docker-compose \
             -f docker-compose-ci.yml \
             run docs \
             npm run docs:build
+
+  publish:
+    name: Publish
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy files
+        uses: appleboy/scp-action@v0.1.1
+        with:
+          host: ${{ secrets.HOST }}
+          fingerprint: ${{ secrets.FINGERPRINT }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PRIVATE_KEY_PASSPHRASE }}
+          port: ${{ secrets.PORT }}
+          source: "site/*"
+          target: ${{ secrets.PATH }}
