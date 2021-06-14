@@ -1,5 +1,5 @@
 ---
-name: Test docs
+name: Test, build and publish i-doit.cloud docs
 
 on:
   - push
@@ -7,8 +7,8 @@ on:
 
 jobs:
 
-  setup:
-    name: Build
+  docs:
+    name: Docs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -41,38 +41,20 @@ jobs:
             -f docker-compose-ci.yml \
             run docs \
             npm install
-
-  test:
-    name: Test
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run tests
+      - name: Test
         run: |
           docker-compose \
             -f docker-compose-ci.yml \
             run docs \
             npm test
-
-  build:
-    name: Build
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build docs
+      - name: Build
         run: |
           docker-compose \
             -f docker-compose-ci.yml \
             run docs \
             npm run docs:build
-
-  publish:
-    name: Publish
-    needs: build
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Copy files
+      - name: Publish
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: appleboy/scp-action@v0.1.1
         with:
           host: ${{ secrets.HOST }}
