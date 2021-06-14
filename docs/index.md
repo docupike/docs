@@ -1,12 +1,12 @@
 ---
-title: IT documentation with i-doit
+title: Documentation of things with i-doit.cloud
 description: Overview
 lang: en
 ---
 
-# IT documentation with i-doit
+# Documentation of things with i-doit.cloud
 
-i-doit ("I document IT") is a fully-featured Web application for CMDB (Configuration Management Databases), IT asset management (ITAM) and IT documentation. i-doit is maintained by the company synetics GmbH, located in Düsseldorf/Germany.
+With i-doit.cloud, you can document all technical and administrative information in your organization together in one place. One documentation for all use cases to optimize and automate critical processes. Create the digital twin of all things that matter to your business and ensure interoperability between platforms and systems on the basis of a well structured documentation system! i-doit.cloud is operated by synetics GmbH,  located in Düsseldorf/Germany.
 
-!!! info "i-doit `v1` vs. `v2`"
-    This Web site is all about version `2` of i-doit. If you're looking for the documentation of version `1` please visit our [knowledge base](https://kb.i-doit.com/display/en/).
+!!! info "i-doit.cloud vs. i-doit `v1`"
+    This Web site is all about i-doit.cloud. If you're looking for the documentation of i-doit `v1` please visit our [knowledge base](https://kb.i-doit.com/display/en/).

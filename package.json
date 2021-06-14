@@ -1,6 +1,6 @@
 {
     "name": "i-doit-docs",
-    "description": "Documentation of CMDB & IT documentation application i-doit",
+    "description": "Documentation of things with i-doit.cloud",
     "keywords": [
         "i-doit",
         "idoit",
@@ -8,7 +8,9 @@
         "IT documentation",
         "asset management",
         "documentation",
-        "docs"
+        "docs",
+        "documentation of things",
+        "i-doit.cloud"
     ],
     "version": "0.0.0-dev",
     "homepage": "https://docs.i-doit.com/",
@@ -53,7 +55,7 @@
         "?install": "Install dependencies",
         "install": "run-s install:*",
         "install:api-reference": "Copy code for API reference",
-        "install:api-reference": "cp ./node_modules/rapidoc/dist/rapidoc-min.js ./docs/api/reference/v1/",
+        "install:api-reference": "cp ./node_modules/rapidoc/dist/rapidoc-min.js ./docs/api/reference/v2/",
         "?pre-commit": "Run pre-commit hooks",
         "pre-commit": "run-s pre-commit:*",
         "?pre-commit:no-main-branches": "Prevent direct commits to main branches",
