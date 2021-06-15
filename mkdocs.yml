@@ -10,14 +10,28 @@ theme:
   name: material
   custom_dir: theme
   palette:
-    primary: black
-    accent: red
+    - scheme: default
+      primary: black
+      accent: red
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: red
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
   font: false
   logo: img/i-doit-icon.png
   language: en
   favicon: img/favicon.png
   features:
     - search.suggest
+    - navigation.sections
+    - navigation.top
 plugins:
   - search:
       lang: en
@@ -27,12 +41,16 @@ plugins:
       type: iso_date
 markdown_extensions:
   - admonition
-  - codehilite:
-      guess_lang: false
-      linenums: true
   - meta
   - toc:
       permalink: "#"
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: table
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      check_paths: true
 extra:
   manifest: manifest.webmanifest
   social:
