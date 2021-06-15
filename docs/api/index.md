@@ -10,4 +10,4 @@ Access the i-doit REST API
 
 ## Auto-generated documentation
 
-`http://localhost:8000/api/v1/docs.html`
+`https://<your_subdomain>.i-doit.cloud/api/v2/docs.html`
