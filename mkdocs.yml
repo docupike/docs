@@ -5,6 +5,7 @@ site_description: Documentation of things with i-doit.cloud
 site_author: synetics GmbH
 copyright: Copyright &copy; 2019-21
 repo_url: https://github.com/i-doit/docs
+edit_uri: edit/main/docs/
 strict: true
 theme:
   name: material
