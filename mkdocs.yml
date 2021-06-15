@@ -72,12 +72,12 @@ extra:
 use_directory_urls: false
 nav:
   - Overview: index.md
-  - User Guide:
+  - User guide:
       - Login: user/login.md
       # - Dashboard: user/dashboard.md
       - Objects:
           - Create and edit: user/objects/create-and-edit.md
-          - Archive, delete, purge and restore: user/objects/archive-delete-purge-and-restore.md
+          - Archive, delete and restore: user/objects/archive-delete-purge-and-restore.md
           - History: user/objects/history.md
       - Documentation basics:
           - Collections: user/basics/collections.md
@@ -95,7 +95,7 @@ nav:
       # - User settings: user/settings.md
       # - Examples:
       #     - Server hardware: user/examples/server-hardware.md
-  - Admin Guide:
+  - Admin guide:
       - Users and roles: admin/users-and-roles.md
       # - Documentation settings:
       #     - Collections: admin/documentation-settings/collections.md
@@ -139,10 +139,10 @@ nav:
 #     - Introduction: dev/index.md
   - Technical reference:
       - Version history: ref/version-history.md
-      - Release Notes:
+      - Release notes:
           - v2.0.0: ref/release-notes/v2.0.0.md
       - Changelog: ref/changelog.md
-      - System Requirements: ref/system-requirements.md
+      - System requirements: ref/system-requirements.md
   #     - License: ref/license.md
   #     - Database schema: ref/database-schema.md
   #     - List of collections: ref/list-of-collections.md
