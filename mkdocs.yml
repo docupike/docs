@@ -90,8 +90,8 @@ nav:
           # - Export and print: user/finder/export-and-print.md
           - Inline editing: user/finder/inline-editing.md
           - Multi editing: user/finder/multi-editing.md
-      - Imports:
-          - CSV: user/imports/csv.md
+      # - Imports:
+      #     - CSV: user/imports/csv.md
       # - User settings: user/settings.md
       # - Examples:
       #     - Server hardware: user/examples/server-hardware.md
