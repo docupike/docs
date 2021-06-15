@@ -139,8 +139,9 @@ nav:
 #     - Introduction: dev/index.md
   - Technical reference:
       - Version history: ref/version-history.md
-  #     - Release Notes: ref/release-notes.md
-  #     - Changelogs: ref/changelogs.md
+      - Release Notes:
+          - v2.0.0: ref/release-notes/v2.0.0.md
+      - Changelog: ref/changelog.md
       - System Requirements: ref/system-requirements.md
   #     - License: ref/license.md
   #     - Database schema: ref/database-schema.md
