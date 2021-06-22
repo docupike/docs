@@ -6,12 +6,18 @@ lang: en
 
 # Views and presets
 
-The `Finder` generates tables that offer different views on the documented data. The views can be sorted by the different columns and the columns can be resized to the users needs.
+The `Finder` shows your documentation in the form of customized tables. These tables offer different views on the documented data. The current view on the data can be adjusted by adding, removing or re-arranging [attribute](../basics/categories-and-attributes.md) columns.
 
-Which columns are shown is defined by the `View presets`. `View presets` have either a class or a global context.
+Once you are happy with your set of columns, you can save it as a `View preset`. `View presets` have either a class or a global context.
 
-A class context means that the user can e.g. have a specific `View preset` for servers, that maybe show IP addresses and hard disks and on the other hand have another `View preset` for contact persons that show names and e-mail addresses.
+## Class context
 
-If a `View preset` has a global context, it can be used to list objects of all classes together. This is useful for example for showing search results.
+A class context means that the user can have a specific `View preset` for a certain [object class](../basics/classes.md), e.g. a `View preset` for servers shows IP addresses and hard drives while a `View preset` for persons shows full names and e-mail addresses.
 
-On the left side of the `Finder` tables is a navigation element that gives you the possibility to navigate through either object classes or physical locations. These are navigation switch views, but they do not count as filters and do not show up as search bubbles in the search bar.
+## Global context
+
+If a `View preset` has a global context it can be used for all object classes or if you look at objects from different object classes. This is useful for showing [search results](search-filters-and-reports.md).
+
+## Classes or locations
+
+On the left sidebar navigation you can select either object classes or physical locations. This switch completely changes the way you are navigating through your information.
