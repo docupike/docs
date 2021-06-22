@@ -16,7 +16,7 @@ In the first section you define the output format of the report where you select
 
 !!! info "Example"
 
-    Let’s say you want to report all company cars and their owners' addresses. You select the attributes `Vendor` and `Model` from the category `Model`. To get the contact addresses from their owners you first select the attribute `Name` from the category `Contact`. Then, you press the button `+` to select the attributes `Street address`, `City` and `Postcode` from the category `Address and contact`.
+    Let's say you want to report all company cars and their owners' addresses. You select the attributes `Vendor` and `Model` from the category `Model`. To get the contact addresses from their owners you first select the attribute `Name` from the category `Contact`. Then, you press the button `+` to select the attributes `Street address`, `City` and `Postcode` from the category `Address and contact`.
 
 
 ## Conditions
