@@ -84,9 +84,10 @@ RUN curl -OfsSL \
         bin/
 
 # Upgrade pip:
+# WORKAROUND Pin setuptools until https://github.com/byrnereese/mkdocs-minify-plugin/issues/15 is fixed:
 RUN pip3 install --upgrade --no-cache-dir \
         pip \
-        setuptools \
+        setuptools==57.5.0 \
         wheel \
     ; \
     apt-get remove -y \
