@@ -157,7 +157,6 @@ npm run info
 [github]: https://github.com/
 [githubHelp]: https://help.github.com/
 [issues]: https://github.com/i-doit/docs/issues
-[jenkins]: https://jenkins.io/
 [mkdocs]: https://www.mkdocs.org/
 [materialForMkDocs]: https://squidfunk.github.io/mkdocs-material/
 [metadata]: https://python-markdown.github.io/extensions/meta_data/

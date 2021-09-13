@@ -79,77 +79,28 @@ nav:
   - Overview: index.md
   - User guide:
       - Login: user/login.md
-      # - Dashboard: user/dashboard.md
-      - Objects:
-          - Create and edit: user/objects/create-and-edit.md
-          - Archive, delete and restore: user/objects/archive-delete-purge-and-restore.md
-          - History: user/objects/history.md
       - Documentation basics:
-          - Collections: user/basics/collections.md
-          - Classes: user/basics/classes.md
           - Objects: user/basics/objects.md
+          - Classes: user/basics/classes.md
+          - Collections: user/basics/collections.md
           - Categories and attributes: user/basics/categories-and-attributes.md
       - Finder:
           - Views and presets: user/finder/views-and-presets.md
-          - Search filter and reports: user/finder/search-filter-and-reports.md
-          # - Export and print: user/finder/export-and-print.md
+          - Search filters and reports: user/finder/search-filters-and-reports.md
           - Inline editing: user/finder/inline-editing.md
           - Multi editing: user/finder/multi-editing.md
+          - Widgets: user/finder/widgets.md
+      - Reporting: user/reporting.md
       # - Imports:
       #     - CSV: user/imports/csv.md
-      # - User settings: user/settings.md
-      # - Examples:
-      #     - Server hardware: user/examples/server-hardware.md
   - Admin guide:
-      - Users and roles: admin/users-and-roles.md
-      # - Documentation settings:
-      #     - Collections: admin/documentation-settings/collections.md
-      #     - Classes: admin/documentation-settings/classes.md
-      #     - Categories: admin/documentation-settings/categories.md
-      # - System settings: admin/system-settings.md
-      # - Distribution Center: admin/distribution-center.md
-#  - Installation:
-#      - Installation:
-#          - Manual Instructions:
-#              - Debian: installation/debian.md
-#              - Red Hat Enterprise Linux (RHEL): installation/rhel.md
-#              - Ubuntu: installation/ubuntu.md
-#              - Suse Linux Enterprise Server (SLES): installation/sles.md
-#              - Microsoft Windows Server: installation/windows.md
-#              - OS Settings: installation/os-settings.md
-#              - Setup: installation/setup.md
-#          - Docker Container: installation/docker-container.md
-#          - Virtual Appliance: installation/virtual-appliance.md
-#      - Maintenance:
-#          - Subscriptions: installation/subscriptions.md
-#          - Cronjobs: installation/cronjobs.md
-#          - Backup and Recovery: installation/backup-and-recovery.md
-#          - Updates: installation/updates.md
-#          - Security: installation/security.md
-#          - Performance: installation/performance.md
-#          - Maintenance Mode: installation/maintenance-mode.md
-#      - Migration:
-#          - Migrate from 1.x to 2.x: installation/migrate-from-1.x-to-2.x.md
-#      - Command-line interface (CLI): installation/cli.md
-  - API:
-      - Introduction: api/index.md
-      # - Examples: api/examples.md
-      - Reference v2: api/reference/v2/index.html
-#  - Add-ons:
-#     - Introduction: add-ons/index.md
-#     - Documents:
-#         - About: add-ons/documents/index.md
-#         - Changelogs: add-ons/documents/changelogs.md
-#  - Development Partners:
-#     - Introduction: dev/index.md
+      - Users, groups and roles: admin/users-groups-roles.md
+      - Rights and permissions: admin/rights-and-permissions.md
+  - Developer guide:
+      - API: dev/api.md
   - Technical reference:
       - Version history: ref/version-history.md
       - Release notes:
           - v2.0.0: ref/release-notes/v2.0.0.md
       - Changelog: ref/changelog.md
       - System requirements: ref/system-requirements.md
-  #     - License: ref/license.md
-  #     - Database schema: ref/database-schema.md
-  #     - List of collections: ref/list-of-collections.md
-  #     - List of classes: ref/list-of-classes.md
-  #     - List of categories: ref/list-of-categories.md

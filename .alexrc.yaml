@@ -5,3 +5,7 @@ allow:
   - hostesses-hosts
   # It's about the language:
   - german
+  - execute
+  - executed
+  - special
+  - simple

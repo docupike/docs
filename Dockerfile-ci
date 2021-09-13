@@ -48,7 +48,7 @@ RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     npm install -g npm@latest
 
 # hadolint:
-ARG HADOLINT_VERSION=2.5.0
+ARG HADOLINT_VERSION=2.6.0
 RUN curl -fsSL \
         "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64" \
         -o /usr/local/bin/hadolint; \
@@ -84,9 +84,10 @@ RUN curl -OfsSL \
         bin/
 
 # Upgrade pip:
+# WORKAROUND Pin setuptools until https://github.com/byrnereese/mkdocs-minify-plugin/issues/15 is fixed:
 RUN pip3 install --upgrade --no-cache-dir \
         pip \
-        setuptools \
+        setuptools==57.5.0 \
         wheel \
     ; \
     apt-get remove -y \
