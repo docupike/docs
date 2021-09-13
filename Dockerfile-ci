@@ -48,7 +48,7 @@ RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     npm install -g npm@latest
 
 # hadolint:
-ARG HADOLINT_VERSION=2.5.0
+ARG HADOLINT_VERSION=2.6.0
 RUN curl -fsSL \
         "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64" \
         -o /usr/local/bin/hadolint; \
