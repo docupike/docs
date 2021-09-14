@@ -100,7 +100,4 @@ nav:
       - API: dev/api.md
   - Technical reference:
       - Version history: ref/version-history.md
-      - Release notes:
-          - v2.0.0: ref/release-notes/v2.0.0.md
-      - Changelog: ref/changelog.md
       - System requirements: ref/system-requirements.md
