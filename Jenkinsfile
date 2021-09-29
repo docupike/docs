@@ -24,10 +24,8 @@ pipeline {
             }
         }
         stage('Install') {
-            stage('Install NPM dependencies') {
-                steps {
-                    sh('docker-compose -f docker-compose-ci.yml run docs npm install')
-                }
+            steps {
+                sh('docker-compose -f docker-compose-ci.yml run docs npm install')
             }
         }
         stage('Build') {
