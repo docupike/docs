@@ -13,14 +13,14 @@ theme:
   palette:
     - scheme: default
       primary: black
-      accent: red
+      accent: blue
       media: "(prefers-color-scheme: light)"
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: slate
       primary: black
-      accent: red
+      accent: blue
       media: "(prefers-color-scheme: dark)"
       toggle:
         icon: material/weather-night
