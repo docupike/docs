@@ -26,7 +26,7 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
   font: false
-  logo: img/i-doit-icon.png
+  logo: img/logo.svg
   language: en
   favicon: img/favicon.png
   features:
