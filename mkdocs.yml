@@ -38,8 +38,6 @@ plugins:
       lang: en
   - minify:
       minify_html: true
-  - git-revision-date-localized:
-      type: iso_date
   - rss:
       pretty_print: true
       match_path: "ref/release-notes/.*"
