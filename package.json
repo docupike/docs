@@ -27,16 +27,17 @@
     "license": "CC-BY-SA-4.0",
     "author": "synetics GmbH <info@i-doit.com> (https://i-doit.com/)",
     "devDependencies": {
-        "alex": "^9.1",
-        "husky": "^4.3.8",
+        "alex": "^10",
+        "husky": "^7",
         "jscpd": "^3.3.25",
         "jsonlint": "^1.6.3",
         "markdown-spellcheck": "git+https://github.com/lukeapage/node-markdown-spellcheck.git",
         "npm-run-all": "^4.1",
+        "npm-scripts-info": "^0.3.9",
         "rapidoc": "^9",
         "remark-cli": "^10.0",
         "remark-frontmatter": "^4",
-        "remark-gfm": "^2",
+        "remark-gfm": "^3",
         "remark-lint": "^9.0",
         "remark-lint-match-punctuation": "^0.2.0",
         "remark-lint-no-dead-urls": "^1.1.0",
@@ -72,6 +73,8 @@
         "pre-push:system": "npm run system",
         "?pre-push:test": "Run tests locally",
         "pre-push:test": "npm test",
+        "?prepare": "Install husky",
+        "prepare": "husky install",
         "?sort-word-list": "Sort words in custom dictionary",
         "sort-word-list": "sort .spelling | uniq > /tmp/.spelling && mv /tmp/.spelling .spelling",
         "?stats:cloc": "Count lines of code",
@@ -108,12 +111,6 @@
         "test:dockerfile": "git ls-files | grep -e 'Dockerfile$' | xargs hadolint --config .hadolint.yaml",
         "?wtf": "Find open issues",
         "wtf": "git grep --line-number --column --heading -E '(WORKAROUND|TODO|FIXME) '"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run pre-commit",
-            "pre-push": "npm run pre-push"
-        }
     },
     "os": [
         "darwin",
