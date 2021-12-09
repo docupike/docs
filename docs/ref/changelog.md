@@ -9,6 +9,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.1.0 – 2021-12-08
+
+### Added
+
+-   API: Support all request types in batch request (`ID2-2623`)
+-   CQRS: Add source into event meta data to filter by source (`ID2-2626`)
+-   CSV Import: Validate data from CSV file (`ID2-2161`)
+-   CSV Import: Import related category attributes or entries (`ID2-2162`)
+-   CSV Import: Upload CSV file (`ID2-2246`)
+-   CSV Import: Select CSV file format options (`ID2-2248`)
+-   CSV Import: Select general object class (`ID2-2249`)
+-   CSV Import: Map CSV columns to object attributes (`ID2-2251`)
+-   CSV Import: Update existing objects while importing from CSV file (`ID2-2252`)
+-   CSV Import: Preview result before importing data from CSV (`ID2-2253`)
+-   CSV Import: Perform CSV import (`ID2-2254`)
+-   CSV Import: Delete CSV file (`ID2-2255`)
+-   CSV Import: Reload Finder page after import (`ID2-2386`)
+-   Setup/update: Introduce new setting for URL configuration (`ID2-2585`)
+
+### Changed
+
+-   Add-ons: Rename add-on "install" and "uninstall" commands to "register" and "unregister" (`ID2-2609`)
+-   Development/maintenance: Bump version of Symfony to 5.3 (`ID2-2590`)
+
+### Fixed
+
+-   Categories and attributes: Save number of CPU cores correctly (`ID2-2363`)
+-   Categories and attributes: Allow to overwrite default values in category "form factor" (`ID2-2584`)
+-   Class and attribute favorites: Ensure button icons are always shown (`ID2-2313`)
+-   CMDB CRUD: Show validation errors in inline edit context (`ID2-2662`)
+-   Edit: Load columns on any MV table on edit mask (`ID2-2603`)
+-   History: Fix unexpected error when opening object history (`ID2-2658`)
+-   Object details: Allow user to reload page inside an object (`ID2-2677`)
+-   Object search and filter: Allow to close search bar modal (`ID2-2257`)
+-   Object search and filter: Allow to filter and sort by referenced dynamic attributes (`ID2-2411`)
+-   Object search and filter: Fix error while filtering/sorting by automatically calculated values (`ID2-2412`)
+-   Object search and filter: Add date/time values to search index (`ID2-2539`)
+-   Object search and filter: Allow to search over all collections (`ID2-2640`)
+-   Presets: Close preset dropdown menu when not used (`ID2-2327`)
+-   Reports: Make all location objects to be selected as a report condition (`ID2-2560`)
+-   Setup/update: Run presets migration command only when needed (`ID2-2579`)
+-   Setup/update: Handle unavailable tables during update (`ID2-2598`)
+
 ## 2.0.3 – 2021-09-10
 
 ### Fixed
