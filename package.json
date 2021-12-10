@@ -16,7 +16,7 @@
         "i-doit.cloud"
     ],
     "version": "0.0.0-dev",
-    "homepage": "https://docs.i-doit.com/",
+    "homepage": "https://docs.i-doit.cloud/",
     "repository": {
         "type": "git",
         "url": "https://github.com/i-doit/docs"
@@ -28,6 +28,7 @@
     "author": "synetics GmbH <info@i-doit.com> (https://i-doit.com/)",
     "devDependencies": {
         "alex": "^10",
+        "cloc": "^2.8.0",
         "husky": "^7",
         "jscpd": "^3.3.25",
         "jsonlint": "^1.6.3",
@@ -73,8 +74,10 @@
         "pre-push:system": "npm run system",
         "?pre-push:test": "Run tests locally",
         "pre-push:test": "npm test",
-        "?prepare": "Install husky",
-        "prepare": "husky install",
+        "?prepare": "Prepare dependencies",
+        "prepare": "run-s prepare:*",
+        "?prepare:husky": "Install husky",
+        "prepare:husky": "husky install",
         "?sort-word-list": "Sort words in custom dictionary",
         "sort-word-list": "sort .spelling | uniq > /tmp/.spelling && mv /tmp/.spelling .spelling",
         "?stats:cloc": "Count lines of code",
