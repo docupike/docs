@@ -2,7 +2,8 @@
     "ignore": [
         "**/node_modules/**",
         "**/_*/**",
-        "**/_*"
+        "**/_*",
+        "**/site/**"
     ],
     "reporters": [
         "console"
