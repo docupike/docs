@@ -3,7 +3,7 @@ site_name: i-doit.cloud docs
 site_url: https://docs.i-doit.cloud/
 site_description: Documentation of things with i-doit.cloud
 site_author: synetics GmbH
-copyright: Copyright &copy; 2019-21
+copyright: Copyright &copy; 2019-21 <a href="https://i-doit.com" target="_blank" rel="noopener">synetics GmbH</a>
 repo_url: https://github.com/i-doit/docs
 edit_uri: edit/main/docs/
 strict: true
@@ -50,11 +50,13 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: true
       linenums_style: table
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.superfences
   - pymdownx.snippets:
       check_paths: true
 extra:
+  generator: false
   manifest: manifest.webmanifest
   social:
     - name: i-doit on Twitter
