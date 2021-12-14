@@ -3,7 +3,7 @@ site_name: i-doit.cloud docs
 site_url: https://docs.i-doit.cloud/
 site_description: Documentation of things with i-doit.cloud
 site_author: synetics GmbH
-copyright: Copyright &copy; 2019-21 <a href="https://i-doit.com" target="_blank" rel="noopener">synetics GmbH</a>
+copyright: Copyright &copy; 2019-21
 repo_url: https://github.com/i-doit/docs
 edit_uri: edit/main/docs/
 strict: true
@@ -13,20 +13,20 @@ theme:
   palette:
     - scheme: default
       primary: black
-      accent: blue
+      accent: red
       media: "(prefers-color-scheme: light)"
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: slate
       primary: black
-      accent: blue
+      accent: red
       media: "(prefers-color-scheme: dark)"
       toggle:
         icon: material/weather-night
         name: Switch to light mode
   font: false
-  logo: img/logo.svg
+  logo: img/i-doit-icon.png
   language: en
   favicon: img/favicon.png
   features:
@@ -38,6 +38,8 @@ plugins:
       lang: en
   - minify:
       minify_html: true
+  - git-revision-date-localized:
+      type: iso_date
   - rss:
       pretty_print: true
       match_path: "ref/release-notes/.*"
@@ -50,13 +52,11 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: true
       linenums_style: table
-  - pymdownx.tabbed:
-      alternate_style: true
+  - pymdownx.tabbed
   - pymdownx.superfences
   - pymdownx.snippets:
       check_paths: true
 extra:
-  generator: false
   manifest: manifest.webmanifest
   social:
     - name: i-doit on Twitter
@@ -91,8 +91,8 @@ nav:
           - Multi editing: user/finder/multi-editing.md
           - Widgets: user/finder/widgets.md
       - Reporting: user/reporting.md
-      # - Imports:
-      #     - CSV: user/imports/csv.md
+      - Imports:
+          - CSV: user/imports/csv.md
   - Admin guide:
       - Users, groups and roles: admin/users-groups-roles.md
       - Rights and permissions: admin/rights-and-permissions.md
