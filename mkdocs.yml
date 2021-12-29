@@ -93,7 +93,7 @@ nav:
       - Reporting: user/reporting.md
       # - Imports:
       #     - CSV: user/imports/csv.md
-      - Use cases: 
+      - Use cases 
           - Locations: user/usecases/locations.md
   - Admin guide:
       - Users, groups and roles: admin/users-groups-roles.md
