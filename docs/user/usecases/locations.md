@@ -31,7 +31,7 @@ Beside these classes there is a category for each object where you can store the
 
 After documenting all of the needed objects, you are able to assign them to the objects from the corresponding classes. This can be done within the category "location" to build up the location tree.
 
-As soon as the assignment of these objects is done, you can change the finder's view to "location" and see a cascadic view of your locations. This can be opened until you reach your desired object within this tree.
+As soon as the assignment of these objects is done, you can change the finder's view to "location" and see a cascade view of your locations. This can be opened until you reach your desired object within this tree.
 
 An example for a location path within your location tree looks like this:
 
