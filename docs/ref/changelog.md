@@ -8,6 +8,74 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 _tbd_
+## 2.2.0 – 2022-02-18
+
+### Changed
+
+-   Caching: Encrypt cached data (`ID2-2054`)
+-   CQRS: Use separate database for CQRS events (`ID2-2665`)
+
+### Fixed
+
+-   Bugs - UI Modals & Components: Make all checkboxes to be selected with a single click on Multi Select Combobox (`ID2-2938`)
+-   Categories and attributes: Prevent category page from scrolling to top after a dropdown is opened (`ID2-1733`)
+-   CSV Import (Fixing and Performance): Hide overlapping tooltip when starting/executing CSV import  (`ID2-2675`)
+-   Navigation: Keep bar layout in place when clicking on settings button (`ID2-2883`)
+-   Object ranking: Redirect from linked edit page when object is archived (`ID2-2953`)
+-   Object search and filter: Show recently searched values in search bar after search for text (`ID2-2366`)
+-   Object search and filter: Produce new filter tag when select class after global search (`ID2-2661`)
+-   Presets: Do not always highlight name of preset in settings area (`ID2-2509`)
+-   QA offensive - CSV Import : Prevent crash on saving without selecting an attribute when mapping a CSV import (`ID2-2912`)
+-   QA offensive - CSV Import : Map life-cycle attribute correctly in CSV-Import (`ID2-2915`)
+-   QA offensive - Finder: Pre-select "All classes" after selecting a specific collection (`ID2-2374`)
+-   QA offensive - Finder: Redirect the user to the selected collection  (`ID2-2631`)
+-   QA offensive - Finder: Enable user to write inside table pagination (`ID2-2966`)
+-   QA offensive - Object details: Allow to delete an object from its detail page (`ID2-2997`)
+-   UI tooltips: Remove tooltip from scope input field in permission modal (`ID2-2261`)
+-   User Management: Show error when accessing unknown user settings (`ID2-2629`)
+
+### Security
+
+-   Session timeout works as expected: Ensure inactive user session expires (`ID2-2921`)
+
+## 2.1.1 – 2022-01-31
+
+### Added
+
+-   CMDB configuration: Customize attribute order (`ID2-2643`)
+-   CMDB configuration: Activate/deactivate attributes (`ID2-2644`)
+-   CQRS Export: Export data (`ID2-2265`)
+-   CQRS Export: Grant right to export data (`ID2-2266`)
+-   Create new object: Show info with link to show new all objects (`ID2-1017`)
+-   Edit: Select all objects at once to edit them (`ID2-2653`)
+-   Object ranking: Grant permission on archived object (`ID2-2691`)
+
+### Changed
+
+-   Caching: Encrypt cached data (`ID2-2054`)
+-   CMDB configuration: Sort classes linked to a collection alphabetically (`ID2-2296`)
+-   CMDB configuration: Add category "Contact" to default categories of the class "Printer" (`ID2-2308`)
+-   CMDB configuration: Remove default category "Contacts (linked objects)" from class "Server" (`ID2-2311`)
+-   Create new object: Re-style behavior to create one new object (`ID2-2176`)
+-   Development/maintenance: Upgrade to RoadRunner v2 (`ID2-2036`)
+-   Development/maintenance: Update frontend-related 3rd-party libraries (`ID2-2591`)
+-   Framework: Notify about backend errors (HTTP status codes 5xx) (`ID2-2234`)
+-   IP networking: Allow prefixed forward slash in IPv4 subnetmask (`ID2-2538`)
+
+### Removed
+
+-   Object ranking: Remove archive/restore permission for categories and attributes (`ID2-2312`)
+
+### Fixed
+
+-   Create new object: Remove hint with limited permissions after deleting an object (`ID2-2491`)
+-   Edit: Disable attribute "Model" in category "CPU" (`ID2-2262`)
+-   Edit: Require the attribute "Warranty period amount" in category "Warranty" (`ID2-2627`)
+-   Object browser: Close searchbar dropdown automatically inside object browser (`ID2-2759`)
+-   Object ranking: Allow user to see filter tag when filtering for archived objects (`ID2-2686`)
+-   Object search and filter: Remove unnecessary documentation states "created", "removed" and "deleted" (`ID2-2634`)
+-   Object search and filter: Fix "No Permission" text on document state archived filter (`ID2-2739`)
+-   UI notifications: Fix notification on archive/restore an object (`ID2-2736`)
 
 ## 2.1.0 – 2021-12-08
 
