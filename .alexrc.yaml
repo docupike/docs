@@ -9,3 +9,5 @@ allow:
   - executed
   - special
   - simple
+  - crash
+  - period
