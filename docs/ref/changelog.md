@@ -25,8 +25,8 @@ _tbd_
 
 -   QA offensive - Categories: Allow user to be able to remove values from a date field (`ID2-3061`)
 -   QA offensive - Categories: Remove Storage device, Application and Blade server from the list of default Contacts (linked objects) classes (`ID2-3065`)
--   QA offensive - Categories: Add space between new ip address buttons (`ID2-3079`)
--   QA offensive - Categories: Remove "Select next free ip address" from multi-value view page (`ID2-3081`)
+-   QA offensive - Categories: Add space between new IP address buttons (`ID2-3079`)
+-   QA offensive - Categories: Remove "Select next free IP address" from multi-value view page (`ID2-3081`)
 -   QA offensive - Categories: Do not show all existing objects in object filter fields (`ID2-3089`)
 -   QA offensive - Categories: Allow to document same IP address in IP List (`ID2-3093`)
 -   QA offensive - Categories: Remove the "Model" value as soon as the parent "Vendor" value is removed (`ID2-3094`)
@@ -44,9 +44,9 @@ _tbd_
 -   QA Offensive - Reports: Extend and uniform feedback messages in Reports section (`ID2-3206`)
 -   QA offensive - Settings: Abbreviate collection name in Finder (`ID2-3131`)
 -   QA offensive - Settings: Hide the remove button from General category in CMDB settings (`ID2-3132`)
--   QA offensive - Settings: Do not allow user to remove his own role and save it (`ID2-3175`)
+-   QA offensive - Settings: Do not allow user to remove own role and save it (`ID2-3175`)
 -   QA offensive - Settings: Fix the error of custom View Presets (`ID2-3255`)
--   Setup/update: Allow to update from 2.2.0 to 2.2.1 after deleting the classes of VLan, Printer or Daemon (`ID2-3241`)
+-   Setup/update: Allow to update from `2.2.0` to `2.2.1` after deleting the classes of `VLAN`, `Printer` or `Daemon` (`ID2-3241`)
 
 ## 2.2.1 – 2022-03-29
 
@@ -81,7 +81,7 @@ _tbd_
 -   QA offensive - Categories: Rename modal "my attributes" to "Edit attributes"  (`ID2-3044`)
 -   QA offensive - Categories: Show tooltips of mail and phone form fields (`ID2-3064`)
 -   QA offensive - Categories: Do not show "more" section in modal to create new entry (`ID2-3067`)
--   QA offensive - Categories: Add whitespace at the bottom of the page of single value edit and object details view  (`ID2-3071`)
+-   QA offensive - Categories: Add spaces at the bottom of the page of single value edit and object details view  (`ID2-3071`)
 -   QA offensive - Categories: Do not remove employee data when employees entry is removed (`ID2-3073`)
 -   QA offensive - Categories: Rename the category Employees to Employees (linked objects) (`ID2-3075`)
 -   QA offensive - Categories: Add required label to attribute warranty period amount (`ID2-3076`)
