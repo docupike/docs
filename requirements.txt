@@ -1,8 +1,12 @@
+cryptography
+Jinja2
+Markdown
 mkdocs
 mkdocs-git-revision-date-localized-plugin
 mkdocs-material
 mkdocs-minify-plugin
 mkdocs-rss-plugin
 pygments
+pyOpenSSL
 wheel
 yamllint
