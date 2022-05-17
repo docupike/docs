@@ -97,7 +97,6 @@ RUN pip3 install --upgrade --no-cache-dir \
         wheel \
     ; \
     apt-get remove -y \
-        python3-cryptography \
         python3-pip \
         python3-setuptools \
         python3-wheel \
