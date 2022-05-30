@@ -6,9 +6,11 @@ backend
 Behat
 Bitbucket
 changelog
+checkbox
 checkboxes
 CMDB
 CodeHilite
+combobox
 Combobox
 comboboxes
 CSS
@@ -24,6 +26,7 @@ GitHub
 GmbH
 GPG
 i-doit
+ip
 IPv4
 IPv6
 ITAM
@@ -66,4 +69,9 @@ v2
 versioning
 VSCode
 YAML
- - changelog.md
+behaviour
+UI-KIT
+scrollable
+VLan
+whitespace
+unselect
