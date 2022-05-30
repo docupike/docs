@@ -1,5 +1,4 @@
-# FROM ubuntu:rolling
-FROM ubuntu:21.10
+FROM ubuntu:rolling
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -49,7 +48,7 @@ RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     npm install -g npm@latest
 
 # hadolint:
-ARG HADOLINT_VERSION=2.8.0
+ARG HADOLINT_VERSION=2.10.0
 RUN curl -fsSL \
         "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64" \
         -o /usr/local/bin/hadolint; \
@@ -75,7 +74,7 @@ RUN curl -fsSL \
     rm -rf /var/lib/apt/lists/*
 
 # Docker Compose:
-ARG DOCKER_COMPOSE_VERSION=2.2.2
+ARG DOCKER_COMPOSE_VERSION=2.5.0
 RUN curl -fsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64" \
         -o /usr/libexec/docker/cli-plugins/docker-compose; \
