@@ -77,6 +77,201 @@ _tbd_
 -   Object search and filter: Fix "No Permission" text on document state archived filter (`ID2-2739`)
 -   UI notifications: Fix notification on archive/restore an object (`ID2-2736`)
 
+## 2.2.2 – 2022-04-11
+
+### Changed
+
+-   Archiving Refactoring: Do not show Documentation state in Object browser filter (`ID2-3141`)
+-   QA offensive - Categories: Show buttons always in multi-value entry (`ID2-3060`)
+-   QA offensive - Categories: Allow user to select existing devices by their names inside category Volumes (`ID2-3088`)
+-   QA offensive - Categories: Add "Required" label to attribute Lifecycle stage (`ID2-3103`)
+-   QA offensive - Object browser: Prevent inline editing inside Object browser (`ID2-3105`)
+-   QA offensive - Object browser: Allow user to use table column filters in Object browser (`ID2-3108`)
+-   QA offensive - Settings: Sort classes in Add class modal alphabetically (`ID2-3130`)
+
+### Fixed
+
+-   QA offensive - Categories: Allow user to be able to remove values from a date field (`ID2-3061`)
+-   QA offensive - Categories: Remove Storage device, Application and Blade server from the list of default Contacts (linked objects) classes (`ID2-3065`)
+-   QA offensive - Categories: Add space between new IP address buttons (`ID2-3079`)
+-   QA offensive - Categories: Remove "Select next free IP address" from multi-value view page (`ID2-3081`)
+-   QA offensive - Categories: Do not show all existing objects in object filter fields (`ID2-3089`)
+-   QA offensive - Categories: Allow to document same IP address in IP List (`ID2-3093`)
+-   QA offensive - Categories: Remove the "Model" value as soon as the parent "Vendor" value is removed (`ID2-3094`)
+-   QA offensive - Categories: Add missing attribute "Academic degree" to Employee category (`ID2-3095`)
+-   QA offensive - Categories: Show assigned controllers on multi-value view page (`ID2-3096`)
+-   QA offensive - Categories: Show only Contracts objects in Contracts Object browser (`ID2-3097`)
+-   QA offensive - Categories: Show Contract type in Contracts category (`ID2-3098`)
+-   QA offensive - Categories: Unify the empty state of form fields (`ID2-3101`)
+-   QA offensive - Categories: Prevent dropdown from going over the modal (`ID2-3102`)
+-   QA offensive - Finder: Fix wrong pagination when no objects are found (`ID2-3120`)
+-   QA offensive - Location view: Show text abbreviations and nested list in location view sidebar correctly (`ID2-3193`)
+-   QA offensive - Location view: Show used filters as recent entries in Location View (`ID2-3196`)
+-   QA offensive - Object browser: Allow user to click on recent searched entries in Object browser (`ID2-3106`)
+-   QA offensive - Object browser: Sort values in multi-select Object browser field alphabetically (`ID2-3111`)
+-   QA Offensive - Reports: Extend and uniform feedback messages in Reports section (`ID2-3206`)
+-   QA offensive - Settings: Abbreviate collection name in Finder (`ID2-3131`)
+-   QA offensive - Settings: Hide the remove button from General category in CMDB settings (`ID2-3132`)
+-   QA offensive - Settings: Do not allow user to remove own role and save it (`ID2-3175`)
+-   QA offensive - Settings: Fix the error of custom View Presets (`ID2-3255`)
+-   Setup/update: Allow to update from `2.2.0` to `2.2.1` after deleting the classes of `VLAN`, `Printer` or `Daemon` (`ID2-3241`)
+
+## 2.2.1 – 2022-03-29
+
+### Added
+
+-   Edit: Give feedback when trying to save changes on deleted objects (`ID2-2624`)
+
+### Changed
+
+-   Development/maintenance: Update Symfony dependencies (`ID2-3047`)
+-   Finder UI Improvements: Change "Configure" title to "Collections" in collection configure modal and add "Cancel" button to close the modal (`ID2-2977`)
+-   Object Browser Additional Features: Open Object browser on Click on form field (`ID2-3069`)
+-   Object details: Add abbreviation to long object and class names in object details page  (`ID2-3056`)
+-   QA offensive - Categories: Rename copy action button to duplicate (`ID2-3070`)
+-   QA offensive - Categories: Rework the validation of an IPv6 network address (`ID2-3092`)
+-   QA offensive - Finder: Use icons for classes Printer, Daemon and VLAN (`ID2-2948`)
+-   QA offensive - Finder: Switch back to default preset when the user deletes active preset (`ID2-3006`)
+-   QA offensive - Object details: Hide e-mail and status of user in "created by" history field  (`ID2-2998`)
+-   QA offensive - Object details: Sort categories in category dropdown alphabetically (`ID2-3002`)
+-   Restyle single value entries: Replace Single Value Entries with new Design (`ID2-2957`)
+-   Restyle single value entries: Replace Single Value Entries in Edit Mask with new Design (`ID2-2960`)
+-   UI basics: Add string/text abbreviation in application (`ID2-2992`)
+-   UI sidebar: Add object ranking for archived objects on object details page (`ID2-2838`)
+
+### Fixed
+
+-   Categories and attributes: Fix sorting of pre-defined values (`ID2-1715`)
+-   Categories and attributes: Allow float values in attributes latitude/longitude (`ID2-2841`)
+-   Duplicate objects: Ignore category "Location assigned" while duplicating an object (`ID2-1655`)
+-   Object Browser Additional Features: Preserve object selection when the class changes in object browser (`ID2-2853`)
+-   Object search and filter: Add missing translations for object filters (`ID2-2790`)
+-   QA offensive - Categories: Rename modal "my attributes" to "Edit attributes"  (`ID2-3044`)
+-   QA offensive - Categories: Show tooltips of mail and phone form fields (`ID2-3064`)
+-   QA offensive - Categories: Do not show "more" section in modal to create new entry (`ID2-3067`)
+-   QA offensive - Categories: Add spaces at the bottom of the page of single value edit and object details view  (`ID2-3071`)
+-   QA offensive - Categories: Do not remove employee data when employees entry is removed (`ID2-3073`)
+-   QA offensive - Categories: Rename the category Employees to Employees (linked objects) (`ID2-3075`)
+-   QA offensive - Categories: Add required label to attribute warranty period amount (`ID2-3076`)
+-   QA offensive - Categories: Remove warranty ends from edit view (`ID2-3077`)
+-   QA offensive - Categories: Allow user to filter for a subnetmask (`ID2-3082`)
+-   QA offensive - Categories: Prevent in-line editing inside category "IP list" (`ID2-3083`)
+-   QA offensive - Categories: Disable inline editing of attribute "Type" in category "Network definition" (`ID2-3090`)
+-   QA offensive - Categories: Remove attributes "size" and "used" from the UI screens (`ID2-3091`)
+-   QA offensive - CSV Import : Prevent creating data out of empty CSV file cells (`ID2-2994`)
+-   QA offensive - CSV Import : Fix permission errors during CSV import (`ID2-3121`)
+-   QA offensive - CSV Import : Do not close the browser tab when CSV import modal is closed (`ID2-3135`)
+-   QA offensive - Edit Mask: Allow user to save and close after a single save (`ID2-3045`)
+-   QA offensive - Finder: Allow to unselect inline editable field  (`ID2-2849`)
+-   QA offensive - Finder: Show visible collections as marked (`ID2-2925`)
+-   QA offensive - Finder: Make collection view content scrollable (`ID2-2946`)
+-   QA offensive - Finder: Allow the user to edit saved filters (`ID2-2950`)
+-   QA offensive - Finder: Show correct success message after deleting saved filter (`ID2-2951`)
+-   QA offensive - Finder: Replace link button in finder collection (`ID2-2955`)
+-   QA offensive - Finder: Fix cut off preset button with long name (`ID2-2956`)
+-   QA offensive - Finder: Align fields in manage presets modal (`ID2-2961`)
+-   QA offensive - Finder: Fix preset modal layout with a long name (`ID2-2963`)
+-   QA offensive - Finder: Adjust the object selection message handling (`ID2-2965`)
+-   QA offensive - Finder: Show correct number of objects selected inside a class with select all (`ID2-2967`)
+-   QA offensive - Finder: Make Cancel button of inline editing opaque in finder table (`ID2-2969`)
+-   QA offensive - Finder: Keep widgets switched off (`ID2-2971`)
+-   QA offensive - Finder: Show list of classes inside create new preset modal (`ID2-3007`)
+-   QA offensive - Finder: Show selected items when Select all is selected (`ID2-3024`)
+-   QA offensive - Finder: Allow user to open filters modal (`ID2-3188`)
+-   QA offensive - Object browser: Allow to select multiple values in multi-value object browser in inline editing (`ID2-3112`)
+-   QA offensive - Object browser: Allow user to change the page limit inside the object browser (`ID2-3119`)
+-   QA offensive - Object browser: Do not relate renamed objects with their old names to connected objects (`ID2-3213`)
+-   QA offensive - Object details: Do not allow user to add object tools to favorite page (`ID2-2996`)
+-   QA offensive - Object details: Show filter tag after selecting filter on history tool page (`ID2-2999`)
+-   QA offensive - Object details: Replace "Open" button with arrow icon and tooltip in multi-value table (`ID2-3031`)
+-   QA offensive - Object details: Do not display more section on favorite page (`ID2-3034`)
+-   QA offensive - Object details: Set focus in searchbar after clicking search button (`ID2-3036`)
+-   QA offensive - Object details: Open multi-value entry in view mode after clicking suggestion in searchbar (`ID2-3037`)
+-   QA offensive - Object details: Shorten names before open arrow in search dropdown (`ID2-3038`)
+-   QA offensive - Object details: Show page limit on favorite category when limit is changed (`ID2-3139`)
+-   QA Offensive - Reports: Replace language constant with hint in report filter modal (`ID2-3205`)
+-   QA Offensive - Reports: Disallow empty values in report (`ID2-3209`)
+-   QA offensive - Search & Filters: Close search bar when quick search is opened (`ID2-3019`)
+-   QA offensive - Search & Filters: Include filter values to the filter range (`ID2-3063`)
+-   QA offensive - Search & Filters: Compare number values instead of strings in filter range (`ID2-3066`)
+-   QA offensive - Settings: Redirect logged in user to finder page (`ID2-3179`)
+-   QA offensive - Settings: Show user no right page when user lands on a user link without right (`ID2-3192`)
+-   Reports Main Feature: Remove category `idoit.basic.search` from reports page (`ID2-2840`)
+-   UI components: Save dates like "2020-4-4" with "enter" key  (`ID2-2362`)
+
+### Security
+
+-   Development/maintenance: Update PHP dependency twig/twig to fix security vulnerability (`ID2-3173`)
+
+## 2.2.0 – 2022-02-18
+
+### Changed
+
+-   Caching: Encrypt cached data (`ID2-2054`)
+-   CQRS: Use separate database for CQRS events (`ID2-2665`)
+
+### Fixed
+
+-   Bugs - UI Modals & Components: Make all checkboxes to be selected with a single click on Multi Select Combobox (`ID2-2938`)
+-   Categories and attributes: Prevent category page from scrolling to top after a dropdown is opened (`ID2-1733`)
+-   CSV Import (Fixing and Performance): Hide overlapping tooltip when starting/executing CSV import  (`ID2-2675`)
+-   Navigation: Keep bar layout in place when clicking on settings button (`ID2-2883`)
+-   Object ranking: Redirect from linked edit page when object is archived (`ID2-2953`)
+-   Object search and filter: Show recently searched values in search bar after search for text (`ID2-2366`)
+-   Object search and filter: Produce new filter tag when select class after global search (`ID2-2661`)
+-   Presets: Do not always highlight name of preset in settings area (`ID2-2509`)
+-   QA offensive - CSV Import : Prevent crash on saving without selecting an attribute when mapping a CSV import (`ID2-2912`)
+-   QA offensive - CSV Import : Map life-cycle attribute correctly in CSV-Import (`ID2-2915`)
+-   QA offensive - Finder: Pre-select "All classes" after selecting a specific collection (`ID2-2374`)
+-   QA offensive - Finder: Redirect the user to the selected collection  (`ID2-2631`)
+-   QA offensive - Finder: Enable user to write inside table pagination (`ID2-2966`)
+-   QA offensive - Object details: Allow to delete an object from its detail page (`ID2-2997`)
+-   UI tooltips: Remove tooltip from scope input field in permission modal (`ID2-2261`)
+-   User Management: Show error when accessing unknown user settings (`ID2-2629`)
+
+### Security
+
+-   Session timeout works as expected: Ensure inactive user session expires (`ID2-2921`)
+
+## 2.1.1 – 2022-01-31
+
+### Added
+
+-   CMDB configuration: Customize attribute order (`ID2-2643`)
+-   CMDB configuration: Activate/deactivate attributes (`ID2-2644`)
+-   CQRS Export: Export data (`ID2-2265`)
+-   CQRS Export: Grant right to export data (`ID2-2266`)
+-   Create new object: Show info with link to show new all objects (`ID2-1017`)
+-   Edit: Select all objects at once to edit them (`ID2-2653`)
+-   Object ranking: Grant permission on archived object (`ID2-2691`)
+
+### Changed
+
+-   Caching: Encrypt cached data (`ID2-2054`)
+-   CMDB configuration: Sort classes linked to a collection alphabetically (`ID2-2296`)
+-   CMDB configuration: Add category "Contact" to default categories of the class "Printer" (`ID2-2308`)
+-   CMDB configuration: Remove default category "Contacts (linked objects)" from class "Server" (`ID2-2311`)
+-   Create new object: Re-style behavior to create one new object (`ID2-2176`)
+-   Development/maintenance: Upgrade to RoadRunner v2 (`ID2-2036`)
+-   Development/maintenance: Update frontend-related 3rd-party libraries (`ID2-2591`)
+-   Framework: Notify about backend errors (HTTP status codes 5xx) (`ID2-2234`)
+-   IP networking: Allow prefixed forward slash in IPv4 subnetmask (`ID2-2538`)
+
+### Removed
+
+-   Object ranking: Remove archive/restore permission for categories and attributes (`ID2-2312`)
+
+### Fixed
+
+-   Create new object: Remove hint with limited permissions after deleting an object (`ID2-2491`)
+-   Edit: Disable attribute "Model" in category "CPU" (`ID2-2262`)
+-   Edit: Require the attribute "Warranty period amount" in category "Warranty" (`ID2-2627`)
+-   Object browser: Close searchbar dropdown automatically inside object browser (`ID2-2759`)
+-   Object ranking: Allow user to see filter tag when filtering for archived objects (`ID2-2686`)
+-   Object search and filter: Remove unnecessary documentation states "created", "removed" and "deleted" (`ID2-2634`)
+-   Object search and filter: Fix "No Permission" text on document state archived filter (`ID2-2739`)
+-   UI notifications: Fix notification on archive/restore an object (`ID2-2736`)
+
 ## 2.1.0 – 2021-12-08
 
 ### Added

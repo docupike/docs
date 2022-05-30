@@ -29,7 +29,7 @@
     "devDependencies": {
         "alex": "^10",
         "cloc": "^2.8.0",
-        "husky": "^7",
+        "husky": "^8",
         "jscpd": "^3.3.25",
         "jsonlint": "^1.6.3",
         "markdown-spellcheck": "git+https://github.com/lukeapage/node-markdown-spellcheck.git",
