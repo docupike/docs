@@ -8,74 +8,90 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 _tbd_
-## 2.2.0 – 2022-02-18
+
+## 2.2.4 – 2022-05-31
 
 ### Changed
 
--   Caching: Encrypt cached data (`ID2-2054`)
--   CQRS: Use separate database for CQRS events (`ID2-2665`)
+-   Bugs - UI Modals & Components: Change the sorting of selected objects differently in list view and active field (`ID2-3251`)
+-   Development/maintenance: Require PHP 8.1 (`ID2-2914`)
+-   QA offensive - Settings: Add timestamp to custom category name (`ID2-3153`)
+-   QA offensive - Settings: Change container class wording and component (`ID2-3187`)
+-   QA offensive - Settings: Disable Permissions modal fields when no dependency is selected (`ID2-3236`)
 
 ### Fixed
 
--   Bugs - UI Modals & Components: Make all checkboxes to be selected with a single click on Multi Select Combobox (`ID2-2938`)
--   Categories and attributes: Prevent category page from scrolling to top after a dropdown is opened (`ID2-1733`)
--   CSV Import (Fixing and Performance): Hide overlapping tooltip when starting/executing CSV import  (`ID2-2675`)
--   Navigation: Keep bar layout in place when clicking on settings button (`ID2-2883`)
--   Object ranking: Redirect from linked edit page when object is archived (`ID2-2953`)
--   Object search and filter: Show recently searched values in search bar after search for text (`ID2-2366`)
--   Object search and filter: Produce new filter tag when select class after global search (`ID2-2661`)
--   Presets: Do not always highlight name of preset in settings area (`ID2-2509`)
--   QA offensive - CSV Import : Prevent crash on saving without selecting an attribute when mapping a CSV import (`ID2-2912`)
--   QA offensive - CSV Import : Map life-cycle attribute correctly in CSV-Import (`ID2-2915`)
--   QA offensive - Finder: Pre-select "All classes" after selecting a specific collection (`ID2-2374`)
--   QA offensive - Finder: Redirect the user to the selected collection  (`ID2-2631`)
--   QA offensive - Finder: Enable user to write inside table pagination (`ID2-2966`)
--   QA offensive - Object details: Allow to delete an object from its detail page (`ID2-2997`)
--   UI tooltips: Remove tooltip from scope input field in permission modal (`ID2-2261`)
--   User Management: Show error when accessing unknown user settings (`ID2-2629`)
+-   Categories and attributes: Save all duplicated category entries (`ID2-3296`)
+-   Categories and attributes: Allow the user to see the content of a multi-value category (`ID2-3357`)
+-   Location view: Update page navigation info when another location is selected (`ID2-3306`)
+-   QA offensive - Finder: Close searchbar modal when suggestion is clicked (`ID2-3195`)
+-   QA offensive - Search & Filters: Fix the order of relevant results in searchbar dropdown (`ID2-3051`)
+-   QA offensive - Search & Filters: Correct sorting of values in multi-select combobox  (`ID2-3287`)
+-   QA offensive - Settings: Show default disabled attributes in Settings area (`ID2-3181`)
+-   QA offensive - Settings: Show both unaccepted password and not matching password errors (`ID2-3191`)
+-   QA offensive - Settings: Adjust the error banner for inline editing in settings (`ID2-3221`)
+-   QA offensive - Settings: Remove language constants from list of available categories and attributes (`ID2-3228`)
+-   QA offensive - Settings: Add name filter tag in field when filtering for new user (`ID2-3325`)
+-   Reports UI is improved: Correct search pattern in Front End Search of Reports Modal (`ID2-2959`)
+-   Rights & Permissions Refactoring: Allow to read objects when permission to read category and attributes is given (`ID2-3283`)
+-   UI replace table component: Do not allow to enter more than 255 characters in a text field  (`ID2-2365`)
 
-### Security
-
--   Session timeout works as expected: Ensure inactive user session expires (`ID2-2921`)
-
-## 2.1.1 – 2022-01-31
+## 2.2.3 – 2022-05-12
 
 ### Added
 
--   CMDB configuration: Customize attribute order (`ID2-2643`)
--   CMDB configuration: Activate/deactivate attributes (`ID2-2644`)
--   CQRS Export: Export data (`ID2-2265`)
--   CQRS Export: Grant right to export data (`ID2-2266`)
--   Create new object: Show info with link to show new all objects (`ID2-1017`)
--   Edit: Select all objects at once to edit them (`ID2-2653`)
--   Object ranking: Grant permission on archived object (`ID2-2691`)
+-   QA offensive - Location view: Add pagination to location view (`ID2-3200`)
 
 ### Changed
 
--   Caching: Encrypt cached data (`ID2-2054`)
--   CMDB configuration: Sort classes linked to a collection alphabetically (`ID2-2296`)
--   CMDB configuration: Add category "Contact" to default categories of the class "Printer" (`ID2-2308`)
--   CMDB configuration: Remove default category "Contacts (linked objects)" from class "Server" (`ID2-2311`)
--   Create new object: Re-style behavior to create one new object (`ID2-2176`)
--   Development/maintenance: Upgrade to RoadRunner v2 (`ID2-2036`)
--   Development/maintenance: Update frontend-related 3rd-party libraries (`ID2-2591`)
--   Framework: Notify about backend errors (HTTP status codes 5xx) (`ID2-2234`)
--   IP networking: Allow prefixed forward slash in IPv4 subnetmask (`ID2-2538`)
-
-### Removed
-
--   Object ranking: Remove archive/restore permission for categories and attributes (`ID2-2312`)
+-   QA offensive - Location view: Add class icons to location view (`ID2-3198`)
+-   QA offensive - Location view: Display success message when object is archived (`ID2-3201`)
+-   QA offensive - Search & Filters: Rework saved filters modal (`ID2-3099`)
+-   QA offensive - Settings: Enable the user to edit the title of a custom category (`ID2-3149`)
+-   QA offensive - Settings: Do not show success message for every added attribute in presets settings (`ID2-3150`)
+-   QA offensive - Settings: Move export right to own section (`ID2-3185`)
+-   QA offensive - Settings: Change live validation of repeat password to validation after confirm (`ID2-3242`)
+-   QA offensive - Settings: Change the behaviour of "Create" in Categories and Attributes Entries permission (`ID2-3263`)
+-   Restyle single value entries: Update Single-Value view in UI-KIT (`ID2-3277`)
 
 ### Fixed
 
--   Create new object: Remove hint with limited permissions after deleting an object (`ID2-2491`)
--   Edit: Disable attribute "Model" in category "CPU" (`ID2-2262`)
--   Edit: Require the attribute "Warranty period amount" in category "Warranty" (`ID2-2627`)
--   Object browser: Close searchbar dropdown automatically inside object browser (`ID2-2759`)
--   Object ranking: Allow user to see filter tag when filtering for archived objects (`ID2-2686`)
--   Object search and filter: Remove unnecessary documentation states "created", "removed" and "deleted" (`ID2-2634`)
--   Object search and filter: Fix "No Permission" text on document state archived filter (`ID2-2739`)
--   UI notifications: Fix notification on archive/restore an object (`ID2-2736`)
+-   QA offensive - Categories: Missing success-notification after saving in category (`ID2-1666`)
+-   QA offensive - Categories: Fix the warranty end date calculation logic (`ID2-3210`)
+-   QA offensive - Categories: Allow user to save and close after duplicating multiple entries (`ID2-3247`)
+-   QA offensive - Finder: Do not allow user to remove a name from a preset (`ID2-3178`)
+-   QA offensive - Finder: Make content of "More" section in collection modal scrollable (`ID2-3217`)
+-   QA offensive - Finder: Adjust saved views modal for 1280 x 800 resolution (`ID2-3289`)
+-   QA offensive - Location view: Do not show object class icon in location sidebar when object is deleted (`ID2-3202`)
+-   QA offensive - Object browser: Allow user to use a saved filter in the object browser (`ID2-3107`)
+-   QA offensive - Object details: Do not show "Delete" and "Delete forever" on history page (`ID2-3001`)
+-   QA Offensive - Reports: Hide logbook category in reports context (`ID2-3203`)
+-   QA Offensive - Reports: Fix checkbox behaviour in Reports (`ID2-3252`)
+-   QA Offensive - Reports: Do Not Overwrite selected Attributes (`ID2-3269`)
+-   QA offensive - Settings: Move cut off search fields under title and buttons in Settings (`ID2-3128`)
+-   QA offensive - Settings: Do not show system attributes in custom categories (`ID2-3138`)
+-   QA offensive - Settings: Do not automatically open color picker for inline editing (`ID2-3140`)
+-   QA offensive - Settings: Uniform modal and button names (`ID2-3144`)
+-   QA offensive - Settings: Uniform success messages in settings area (`ID2-3145`)
+-   QA offensive - Settings: Do not allow user to edit the name of the default presets (`ID2-3148`)
+-   QA offensive - Settings: Fix focus state in set token modal  (`ID2-3152`)
+-   QA offensive - Settings: Custom categories should be sorted in the list of all categories (`ID2-3155`)
+-   QA offensive - Settings: Abbreviate longer class name on class settings page (`ID2-3156`)
+-   QA offensive - Settings: Show 404 error page when landed on unknown object page (`ID2-3162`)
+-   QA offensive - Settings: Abbreviate user group description in user groups table (`ID2-3163`)
+-   QA offensive - Settings: Do not allow user to remove his own role and save it (`ID2-3175`)
+-   QA offensive - Settings: Mark repeat password field also with error banner when saving not successful (`ID2-3176`)
+-   QA offensive - Settings: Do not allow user to remove the icon from a class (`ID2-3186`)
+-   QA offensive - Settings: Remove language constants from list of available categories and attributes (`ID2-3228`)
+-   QA offensive - Settings: Remove listed permission as soon as the user is removed (`ID2-3229`)
+-   QA offensive - Settings: Correct the wordings of Permissions modal (`ID2-3232`)
+-   QA offensive - Settings: Give admin rights to a user who is in admin group (`ID2-3238`)
+-   QA offensive - Settings: Fix behaviour of deleting custom class which contains objects (`ID2-3278`)
+-   QA offensive - Settings: Allow user to open user settings page (`ID2-3288`)
+-   Rights and permissions: List selected permissions in permissions table (`ID2-3304`)
+-   UI Form Field Pulldown: Fix multiple issues with multi select pulldown component (`ID2-2974`)
+-   UI Form Field Pulldown: Fix single select combobox component (`ID2-2975`)
+-   User Management: Assign selected user group when creating the user (`ID2-3271`)
 
 ## 2.2.2 – 2022-04-11
 
@@ -93,8 +109,8 @@ _tbd_
 
 -   QA offensive - Categories: Allow user to be able to remove values from a date field (`ID2-3061`)
 -   QA offensive - Categories: Remove Storage device, Application and Blade server from the list of default Contacts (linked objects) classes (`ID2-3065`)
--   QA offensive - Categories: Add space between new IP address buttons (`ID2-3079`)
--   QA offensive - Categories: Remove "Select next free IP address" from multi-value view page (`ID2-3081`)
+-   QA offensive - Categories: Add space between new ip address buttons (`ID2-3079`)
+-   QA offensive - Categories: Remove "Select next free ip address" from multi-value view page (`ID2-3081`)
 -   QA offensive - Categories: Do not show all existing objects in object filter fields (`ID2-3089`)
 -   QA offensive - Categories: Allow to document same IP address in IP List (`ID2-3093`)
 -   QA offensive - Categories: Remove the "Model" value as soon as the parent "Vendor" value is removed (`ID2-3094`)
@@ -112,9 +128,9 @@ _tbd_
 -   QA Offensive - Reports: Extend and uniform feedback messages in Reports section (`ID2-3206`)
 -   QA offensive - Settings: Abbreviate collection name in Finder (`ID2-3131`)
 -   QA offensive - Settings: Hide the remove button from General category in CMDB settings (`ID2-3132`)
--   QA offensive - Settings: Do not allow user to remove own role and save it (`ID2-3175`)
+-   QA offensive - Settings: Do not allow user to remove his own role and save it (`ID2-3175`)
 -   QA offensive - Settings: Fix the error of custom View Presets (`ID2-3255`)
--   Setup/update: Allow to update from `2.2.0` to `2.2.1` after deleting the classes of `VLAN`, `Printer` or `Daemon` (`ID2-3241`)
+-   Setup/update: Allow to update from 2.2.0 to 2.2.1 after deleting the classes of VLan, Printer or Daemon (`ID2-3241`)
 
 ## 2.2.1 – 2022-03-29
 
@@ -149,7 +165,7 @@ _tbd_
 -   QA offensive - Categories: Rename modal "my attributes" to "Edit attributes"  (`ID2-3044`)
 -   QA offensive - Categories: Show tooltips of mail and phone form fields (`ID2-3064`)
 -   QA offensive - Categories: Do not show "more" section in modal to create new entry (`ID2-3067`)
--   QA offensive - Categories: Add spaces at the bottom of the page of single value edit and object details view  (`ID2-3071`)
+-   QA offensive - Categories: Add whitespace at the bottom of the page of single value edit and object details view  (`ID2-3071`)
 -   QA offensive - Categories: Do not remove employee data when employees entry is removed (`ID2-3073`)
 -   QA offensive - Categories: Rename the category Employees to Employees (linked objects) (`ID2-3075`)
 -   QA offensive - Categories: Add required label to attribute warranty period amount (`ID2-3076`)
