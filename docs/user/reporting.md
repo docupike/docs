@@ -6,13 +6,13 @@ lang: en
 
 # Reporting
 
-A report allows you to compile documentation data filtered in a targeted manner. It is in many ways similar to the [finder's search and filter](finder/search-filters-and-reports.md) but it offers more power to combine conditions with the formatted output.
+A report allows you to compile documentation data filtered in a targeted manner, which resembles the [finder's search and filter](finder/search-filters-and-reports.md) but it offers more power to combine conditions with the formatted output.
 
 Reports are available in the main navigation bar.
 
 ## Columns
 
-In the first section you define the output format of the report where you select the attributes that will be displayed later as columns in the report. On attributes that link to other objects you can find a `+` button at the end of the line. This enables you to build a chain of linked attribute information.
+In the first section you define the output format of the report where you select the attributes, later displayed as columns in the report. On attributes that link to other objects you can find a `+` button at the end of the line. This enables you to build a chain of linked attribute information.
 
 !!! info "Example"
 
@@ -21,24 +21,24 @@ In the first section you define the output format of the report where you select
 
 ## Conditions
 
-To narrow down the result set, you can define conditions in the second section. A condition always consists of an attribute, an operator and a value. Multiple conditions can be combined with logical `AND` or `OR` operators.
+To narrow down the result set, you can define conditions in the second section. A condition always consists of an attribute, an operator and a value. Conditions are combinable with logical `AND` or `OR` operators.
 
-You choose an attribute that you want to match against a given value. The operator gives you some flexibility on how the condition should exactly be matched.
+You choose an attribute that you want to match against a given value. The operator gives you some flexibility on how the condition should be preceisely matched.
 
 | Operator              | Description                                                               |
 | --------------------- | ------------------------------------------------------------------------- |
-| `is`                  | Matches exactly against the given value; case insensitive                 |
-| `is not`              | Matches if the value is exactly not found; case insensitive               |
+| `is`                  | Matches precisely against the given value; case insensitive                 |
+| `is not`              | Matches if the exact value is not found; case insensitive               |
 | `in list`             | Matches against a list of values                                          |
 | `not in list`         | Matches if the value is not in the list of given values                   |
 | `like`                | Matches against the text in the value, but with wildcards, e.g. `cd` matches against `abcdefg`    |
 | `not like`            | Matches if the value is not found, but with wildcards                     |
-| `earlier than`        | Matches if the point in time was earlier than the given value             |
-| `not earlier than`    | Matches if the point in time was not earlier than the given value         |
-| `later than`          | Matches if the point in time was later than the given value               |
-| `not later than`      | Matches if the point in time was not later than the given value           |
-| `in range`            | Matches if the point in time was within a range                           |
+| `earlier than`        | Matches if the time was earlier than the given value             |
+| `not earlier than`    | Matches if the time was not earlier than the given value         |
+| `later than`          | Matches if the time was later than the given value               |
+| `not later than`      | Matches if the time was not later than the given value           |
+| `in range`            | Matches if the time was within a range                           |
 
 ## Result
 
-When you execute a report a table is shown with your selected attributes as table columns. The list of objects is filtered by your selected conditions. Each row in the table represents an object.
+When you execute a report, a table is shown with your selected attributes as table columns. The list of objects is filtered by your selected conditions. Each row in the table represents an object.
