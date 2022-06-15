@@ -9,6 +9,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.2.4 – 2022-05-31
+
+### Changed
+
+-   Bugs - UI Modals & Components: Change the sorting of selected objects differently in list view and active field (`ID2-3251`)
+-   Development/maintenance: Require PHP 8.1 (`ID2-2914`)
+-   QA offensive - Settings: Add timestamp to custom category name (`ID2-3153`)
+-   QA offensive - Settings: Change container class wording and component (`ID2-3187`)
+-   QA offensive - Settings: Disable Permissions modal fields when no dependency is selected (`ID2-3236`)
+
+### Fixed
+
+-   Categories and attributes: Save all duplicated category entries (`ID2-3296`)
+-   Categories and attributes: Allow the user to see the content of a multi-value category (`ID2-3357`)
+-   Location view: Update page navigation info when another location is selected (`ID2-3306`)
+-   QA offensive - Finder: Close searchbar modal when suggestion is clicked (`ID2-3195`)
+-   QA offensive - Search & Filters: Fix the order of relevant results in searchbar dropdown (`ID2-3051`)
+-   QA offensive - Search & Filters: Correct sorting of values in multi-select combobox  (`ID2-3287`)
+-   QA offensive - Settings: Show default disabled attributes in Settings area (`ID2-3181`)
+-   QA offensive - Settings: Show both unaccepted password and not matching password errors (`ID2-3191`)
+-   QA offensive - Settings: Adjust the error banner for inline editing in settings (`ID2-3221`)
+-   QA offensive - Settings: Remove language constants from list of available categories and attributes (`ID2-3228`)
+-   QA offensive - Settings: Add name filter tag in field when filtering for new user (`ID2-3325`)
+-   Reports UI is improved: Correct search pattern in Front End Search of Reports Modal (`ID2-2959`)
+-   Rights & Permissions Refactoring: Allow to read objects when permission to read category and attributes is given (`ID2-3283`)
+-   UI replace table component: Do not allow to enter more than 255 characters in a text field  (`ID2-2365`)
+
 ## 2.2.3 – 2022-05-12
 
 ### Added
