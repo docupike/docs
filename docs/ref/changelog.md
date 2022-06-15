@@ -9,6 +9,63 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.2.3 – 2022-05-12
+
+### Added
+
+-   QA offensive - Location view: Add pagination to location view (`ID2-3200`)
+
+### Changed
+
+-   QA offensive - Location view: Add class icons to location view (`ID2-3198`)
+-   QA offensive - Location view: Display success message when object is archived (`ID2-3201`)
+-   QA offensive - Search & Filters: Rework saved filters modal (`ID2-3099`)
+-   QA offensive - Settings: Enable the user to edit the title of a custom category (`ID2-3149`)
+-   QA offensive - Settings: Do not show success message for every added attribute in presets settings (`ID2-3150`)
+-   QA offensive - Settings: Move export right to own section (`ID2-3185`)
+-   QA offensive - Settings: Change live validation of repeat password to validation after confirm (`ID2-3242`)
+-   QA offensive - Settings: Change the behaviour of "Create" in Categories and Attributes Entries permission (`ID2-3263`)
+-   Restyle single value entries: Update Single-Value view in UI-KIT (`ID2-3277`)
+
+### Fixed
+
+-   QA offensive - Categories: Missing success-notification after saving in category (`ID2-1666`)
+-   QA offensive - Categories: Fix the warranty end date calculation logic (`ID2-3210`)
+-   QA offensive - Categories: Allow user to save and close after duplicating multiple entries (`ID2-3247`)
+-   QA offensive - Finder: Do not allow user to remove a name from a preset (`ID2-3178`)
+-   QA offensive - Finder: Make content of "More" section in collection modal scrollable (`ID2-3217`)
+-   QA offensive - Finder: Adjust saved views modal for 1280 x 800 resolution (`ID2-3289`)
+-   QA offensive - Location view: Do not show object class icon in location sidebar when object is deleted (`ID2-3202`)
+-   QA offensive - Object browser: Allow user to use a saved filter in the object browser (`ID2-3107`)
+-   QA offensive - Object details: Do not show "Delete" and "Delete forever" on history page (`ID2-3001`)
+-   QA Offensive - Reports: Hide logbook category in reports context (`ID2-3203`)
+-   QA Offensive - Reports: Fix checkbox behaviour in Reports (`ID2-3252`)
+-   QA Offensive - Reports: Do Not Overwrite selected Attributes (`ID2-3269`)
+-   QA offensive - Settings: Move cut off search fields under title and buttons in Settings (`ID2-3128`)
+-   QA offensive - Settings: Do not show system attributes in custom categories (`ID2-3138`)
+-   QA offensive - Settings: Do not automatically open color picker for inline editing (`ID2-3140`)
+-   QA offensive - Settings: Uniform modal and button names (`ID2-3144`)
+-   QA offensive - Settings: Uniform success messages in settings area (`ID2-3145`)
+-   QA offensive - Settings: Do not allow user to edit the name of the default presets (`ID2-3148`)
+-   QA offensive - Settings: Fix focus state in set token modal  (`ID2-3152`)
+-   QA offensive - Settings: Custom categories should be sorted in the list of all categories (`ID2-3155`)
+-   QA offensive - Settings: Abbreviate longer class name on class settings page (`ID2-3156`)
+-   QA offensive - Settings: Show 404 error page when landed on unknown object page (`ID2-3162`)
+-   QA offensive - Settings: Abbreviate user group description in user groups table (`ID2-3163`)
+-   QA offensive - Settings: Do not allow user to remove his own role and save it (`ID2-3175`)
+-   QA offensive - Settings: Mark repeat password field also with error banner when saving not successful (`ID2-3176`)
+-   QA offensive - Settings: Do not allow user to remove the icon from a class (`ID2-3186`)
+-   QA offensive - Settings: Remove language constants from list of available categories and attributes (`ID2-3228`)
+-   QA offensive - Settings: Remove listed permission as soon as the user is removed (`ID2-3229`)
+-   QA offensive - Settings: Correct the wordings of Permissions modal (`ID2-3232`)
+-   QA offensive - Settings: Give admin rights to a user who is in admin group (`ID2-3238`)
+-   QA offensive - Settings: Fix behaviour of deleting custom class which contains objects (`ID2-3278`)
+-   QA offensive - Settings: Allow user to open user settings page (`ID2-3288`)
+-   Rights and permissions: List selected permissions in permissions table (`ID2-3304`)
+-   UI Form Field Pulldown: Fix multiple issues with multi select pulldown component (`ID2-2974`)
+-   UI Form Field Pulldown: Fix single select combobox component (`ID2-2975`)
+-   User Management: Assign selected user group when creating the user (`ID2-3271`)
+
 ## 2.2.2 – 2022-04-11
 
 ### Changed
