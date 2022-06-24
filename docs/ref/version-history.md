@@ -6,6 +6,8 @@ lang: en
 
 # Version history
 
+[:material-rss: Subscribe](/releases.atom)
+
 | Version           | Date          | Release Notes                             | Changelog                                 |
 | ----------------- | ------------- | ----------------------------------------- | ----------------------------------------- |
 | `2.2.4`           | 2022-05-31    | [Release notes](release-notes/v2.2.4.md)  | [Changelog](changelog.md#224-2022-05-31)  |

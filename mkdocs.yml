@@ -26,7 +26,7 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
   font: false
-  logo: img/i-doit-icon.png
+  logo: img/logo.svg
   language: en
   favicon: img/favicon.png
   features:
@@ -46,9 +46,13 @@ plugins:
       image: "https://docs.i-doit.cloud/img/favicon-32x32.png"
 markdown_extensions:
   - admonition
+  - attr_list
   - meta
   - toc:
       permalink: "#"
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
       linenums: true
       linenums_style: table
