@@ -14,7 +14,7 @@ You can access your i-doit.cloud instance with the following URL schema:
 https://<your_subdomain>.i-doit.cloud/
 ~~~
 
-Your subdomain is initially requested by your administrator when ordering i-doit.cloud and is assigned at the time of installation and usually matches your organization's name. If you don't know your organization's subdomain contact your administrator or the [i-doit.cloud support][helpdesk].
+Your subdomain is initially requested by your administrator when ordering i-doit.cloud and is assigned at the time of installation and matches your organization's name. If you don't know your organization's subdomain contact your administrator or the [i-doit.cloud support][helpdesk].
 
 Point your Web browser to the Web UI of i-doit to see the login screen:
 

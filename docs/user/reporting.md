@@ -21,9 +21,9 @@ In the first section you define the output format of the report where you select
 
 ## Conditions
 
-To narrow down the result set, you can define conditions in the second section. A condition always consists of an attribute, an operator and a value. Conditions are combinable with logical `AND` or `OR` operators.
+To narrow down the result set, you can define conditions in the second section. A condition always consists of an attribute, an operator and a value. Conditions are Combinable with logical `AND` or `OR` operators.
 
-You choose an attribute that you want to match against a given value. The operator gives you some flexibility on how the condition should be preceisely matched.
+You choose an attribute that you want to match against a given value. The operator gives you some flexibility on how the condition should be precisely matched.
 
 | Operator              | Description                                                               |
 | --------------------- | ------------------------------------------------------------------------- |
