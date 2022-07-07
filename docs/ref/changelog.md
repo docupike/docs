@@ -9,6 +9,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.2.5 – 2022-07-05
+
+### Added
+
+-   Development/maintenance: Create an API end-point to work with the object data with assigned category data (`ID2-1391`)
+-   QA offensive - Settings: Allow user to filter for boolean fields (`ID2-3146`)
+
+### Changed
+
+-   Environment variable based installation / update procedure: Make InitCommand and creation of .env optional (`ID2-3347`)
+-   Navigation: Move views to Finder menu (`ID2-3350`)
+-   Object ranking: Change Archived state in Object details page  (`ID2-3394`)
+-   QA Offensive - Reports: Update action buttons in Reports Add attribute list items (`ID2-1695`)
+-   Rights & Permissions Refactoring: Remove Purge right  (`ID2-3363`)
+-   UT - 20220321 Create new Class with Categories: Show Category General as default in object details (`ID2-3313`)
+
+### Fixed
+
+-   Categories and attributes: Allow user to fill out category Invoices (`ID2-3312`)
+-   Categories and attributes: Hide hidden attribute columns in multi-value category (`ID2-3359`)
+-   Navigation: Correct redirection from Locations view (`ID2-3387`)
+-   Object search and filter: Fix filtering by dynamic properties (`ID2-2537`)
+-   QA offensive - Export Data: Record correct timestamp in Export file name (`ID2-3182`)
+-   QA offensive - Finder: Unify Widget Button (`ID2-3293`)
+-   QA offensive - Object browser: Do not show "Open link" and context menu buttons in object reference field when user has no read right (`ID2-3377`)
+-   QA Offensive - Reports: Add missing attribute "Class" in Reports "Add Attribute" Modal (`ID2-3358`)
+-   QA offensive - Settings: Do not allow user with only delete right to open create / edit modals (`ID2-3164`)
+-   Rights & Permissions Refactoring: Do not display "Loading.." when user with limited permission opens category with linked object
+ (`ID2-3314`)
+-   Rights & Permissions Refactoring: Allow user with own created objects permission to create multi-value entries (`ID2-3318`)
+-   Rights & Permissions Refactoring: Allow user to access Permissions modal when user does not have edit users/roles/user-groups right
+ (`ID2-3320`)
+-   Rights & Permissions Refactoring: Delete Object option from Scope Details filter (`ID2-3369`)
+-   UI basics: Unify spacing of "Add" and "New" buttons to headline in Settings area (`ID2-3267`)
+
 ## 2.2.4 – 2022-05-31
 
 ### Changed
