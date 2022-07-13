@@ -3,10 +3,11 @@ Jinja2
 Markdown
 mkdocs
 mkdocs-git-revision-date-localized-plugin
+mkdocs-macros-plugin
 mkdocs-material
 mkdocs-minify-plugin
-mkdocs-rss-plugin
 pygments
+pymdown-extensions
 pyOpenSSL
 wheel
 yamllint
