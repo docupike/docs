@@ -40,10 +40,10 @@ plugins:
       minify_html: true
   - git-revision-date-localized:
       type: iso_date
-  - rss:
-      pretty_print: true
-      match_path: "ref/release-notes/.*"
-      image: "https://docs.i-doit.cloud/img/favicon-32x32.png"
+  - macros:
+      module_name: announcements
+      include_yaml:
+        - data/announcements.yml
 markdown_extensions:
   - admonition
   - attr_list
@@ -79,6 +79,11 @@ extra:
       link: https://github.com/i-doit
       icon: fontawesome/brands/github
 use_directory_urls: false
+watch:
+  - data
+  - docs
+  - templates
+  - theme
 nav:
   - Overview: index.md
   - User guide:
@@ -107,3 +112,4 @@ nav:
   - Technical reference:
       - Version history: ref/version-history.md
       - System requirements: ref/system-requirements.md
+  - Announcements: announcements.md
