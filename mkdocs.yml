@@ -102,6 +102,7 @@ nav:
   - Admin guide:
       - Users, groups and roles: admin/users-groups-roles.md
       - Rights and permissions: admin/rights-and-permissions.md
+      - Export Data: admin/export-data.md
   - Developer guide:
       - API: dev/api.md
   - Technical reference:
