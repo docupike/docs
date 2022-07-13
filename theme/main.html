@@ -3,7 +3,8 @@
 {% block extrahead %}
     <meta name="robots" content="index, follow">
 
-    <link rel="alternate" type="application/rss+xml" title="RSS feed of release notes" href="{{ config.site_url }}feed_rss_created.xml">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed of release notes" href="{{ config.site_url }}releases.atom">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed of announcenments" href="{{ config.site_url }}announcements.atom">
 
     <meta name="dc.creator" content="{{ config.site_author }}">
     <meta name="dc.description" content="{{ config.site_description }}">

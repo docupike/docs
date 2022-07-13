@@ -1,0 +1,10 @@
+---
+# Announcements must be sorted from newest to oldest.
+# "date" is optional and defaults to last build date.
+# "title" is optional and defaults to first characters of "content".
+# "content" is required and will be parsed from Markdown.
+announcements:
+  - date: 2021-06-01
+    title: Open public beta
+    content: >
+      [Registration](https://i-doit.cloud/) for our beta cloud is open.
