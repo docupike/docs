@@ -6,7 +6,7 @@ lang: en
 
 # Attribute order customization
 
-You are able to customise the order of the Attributes under Categories so that all users in your organisation see first the most relevant attributes to your work. Also the attributes appear everywhere (object details, Finder, Favorites etc.) in the same order.
+You are able to customize the order of the Attributes under Categories so that all users in your organization see first the most relevant attributes to your work. Also the attributes appear everywhere (object details, Finder, Favorites etc.) in the same order.
 
 ## Requirements
 
