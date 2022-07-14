@@ -17,4 +17,4 @@ You need to have the [right to `Manage Categories`](rights-and-permissions.md) s
 Go to `Settings > CMDB Configuration > Categories`, select a category and click `Manage attributes` button to manage Attribute order.
 Now you can drag and drop the attribute to the desired position in the category.
 
-![Customize attribute order](../img/screenshots/admin/om-5-customize-attribute-order.gif)
+[![Customize attribute order](../img/screenshots/admin/om-5-customize-attribute-order.gif)](../img/screenshots/admin/om-5-customize-attribute-order.gif)
