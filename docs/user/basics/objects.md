@@ -34,7 +34,7 @@ Objects can be created in the main screen of the `Finder`. You choose an object 
 
 Editing an object can be done in multiple ways. The easiest way is to open up a single object and press the `Edit` button on any of the categories. There is also in-line editing and multi-editing functions that are explained in the `Finder` section.
 
-## Archive, delete, restore and purge objects
+## Archive, delete and restore objects
 
 Objects have different stages that define the condition in their documentation existence. The stages are `active`, `archived` and `deleted`. A typical life-cycle could be:
 
@@ -42,10 +42,6 @@ Objects have different stages that define the condition in their documentation e
 -   If you don't want to actively work with an object anymore but you want to keep it for documentary reasons you can `archive` it. For example, a server that is not being used anymore but still physically kept because it is not depreciated in accounting.
 -   You can `restore` an object from its `archived` state back to `active`.
 -   `Delete` an object which you do not use anymore and which is not needed for documentary reasons. You might have to preserve its history to be compliant with certain legal rules, certification standards or internal processes. Deleting an object will remove it from any view and relation but the history will be kept.
--   A special operation is to `purge` an object. This removes it completely from any view and history. It looks like it has never existed in your documentation.
-
-!!! warning "Don't lose you data!"
-    To purge an object removes it permanently and irrevocably from i-doit. A purge operation cannot be undone. You need a dedicated [right](../../admin/rights-and-permissions.md) do this operation.
 
 ## History
 
