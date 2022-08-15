@@ -20,4 +20,5 @@ If a `View preset` has a global context it can be used for all object classes or
 
 ## Classes or locations
 
-On the left sidebar navigation you can select either object classes or physical locations. This switch completely changes the way you are navigating through your information.
+In the navigation bar at the top you can switch between the `Finder` and the `Locations` view. This switch completely changes the way you are navigating through your information.  
+For both views, you can use a pagination at the bottom. Here, you are able to define the results per page and easily select the desired page.
