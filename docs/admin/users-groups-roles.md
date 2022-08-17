@@ -10,6 +10,8 @@ Users, groups and Roles can be managed in the `Settings`. Groups and Roles are c
 
 i-doit is shipped with two pre-defined roles: `admin` and `user`. While the `admin` role has all rights and permissions, the `user` role has no rights at all but all permissions.
 
-## Change user password
+## Set or change user password
 
-Changing a user's password is possible in the `Settings`, too. At `Security`you can set a new password, linked to that user. This needs to be typed twice for verification purposes. 
+When you create a new user or if you want to change the password of an existing user, you can do so in the settings>user section of i-doit.
+
+At Security you can set a new password, linked to that user. This needs to be typed twice for verification purposes. The password must have at least 8 characters (max. 64), and must contain at least one number and a mix of upper- and lowercase letters. Add special characters for an even stronger password.
