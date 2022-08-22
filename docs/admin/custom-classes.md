@@ -12,7 +12,7 @@ Classes in i-doit are the basis of your it documentation. i-doit is delivered wi
 # Add Custom Classes
 But we give you the possibility to define your own classes.
 
-Go to `Settings>CMDB Configuration > Classes` and click on the New Class button.
+Go to `Settings > CMDB Configuration > Classes` and click on the New Class button.
 
 In the mask that opens, you can now enter a name for the new class and confirm with `Save`.
 After that the new class is available and can be used.
