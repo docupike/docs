@@ -14,6 +14,6 @@ i-doit is shipped with two pre-defined roles: `admin` and `user`. While the `adm
 
 When you create a new user you are asked for the new users password. If you want to change the password of an existing user, you can do so in the `settings > user` section of i-doit.
 
-At `Security` you can set a new password, linked to that user. This needs to be typed twice for verification purposes. 
+At `security` you can set a new password, linked to that user. This needs to be typed twice for verification purposes. 
 
 Passwords in i-doit must have at least 8 characters (max. 64), and must contain at least one number and a mix of upper- and lowercase letters. Add special characters for an even stronger password.
