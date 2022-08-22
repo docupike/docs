@@ -34,22 +34,30 @@ Objects can be created in the main screen of the `Finder`. You choose an object 
 
 Editing an object can be done in multiple ways. The easiest way is to open up a single object and press the `Edit` button on any of the categories. There is also in-line editing and multi-editing functions that are explained in the `Finder` section.
 
-## Archive, delete, restore and purge objects
+## Documentation States of Objects
 
-Objects have different stages that define the condition in their documentation existence. The stages are `active`, `archived` and `deleted`. A typical life-cycle could be:
+Objects have different states that define the condition in their documentation existence. The states are `active`, `archived` or `deleted`. A typical life-cycle could be:
 
 -   When an object is created its default stage is `active`. You can actively work with it and relate it to other objects.
 -   If you don't want to actively work with an object anymore but you want to keep it for documentary reasons you can `archive` it. For example, a server that is not being used anymore but still physically kept because it is not depreciated in accounting.
 -   You can `restore` an object from its `archived` state back to `active`.
--   `Delete` an object which you do not use anymore and which is not needed for documentary reasons. You might have to preserve its history to be compliant with certain legal rules, certification standards or internal processes. Deleting an object will remove it from any view and relation but the history will be kept.
--   A special operation is to `purge` an object. This removes it completely from any view and history. It looks like it has never existed in your documentation.
+-   `Delete` an object which you do not use anymore and which is not needed for documentary reasons. You might have to preserve its history to be compliant with certain legal rules, certification standards or internal processes.
 
 !!! warning "Don't lose you data!"
-    To purge an object removes it permanently and irrevocably from i-doit. A purge operation cannot be undone. You need a dedicated [right](../../admin/rights-and-permissions.md) do this operation.
+
+    Deleted objects are purged and cannot be brought back. The only way to bring back a deleted object is using a previous backup of the database, which includes this object.
+
+If an object is archived, it’s not shown in CMDB. Archived objects cannot be changed or connected with other objects. To change or connect an archived object, it has to be restored back to active state.
+
+Archived objects can be accessed / viewed through search filters by filtering by category: `General → attribute: Documentation State → value: Archived.`
+
+When an object already has relationships with other objects and then is archived, these relationships are also archived and not shown in CMDB.
+
+When an archived object with archived relationships is restored, these relationships are also restored, given the related objects are still active in CMDB.
 
 ## History
 
-Each object has a history that keeps track of all events that happen to an object. Events can be either `create`, `update`, `archive`, `delete` or `restore` operations.
+Each object has a history that keeps track of all events that happen to an object. Events can be either `create`, `change`, `archive` or `restore` operations.
 
 Every event that affects an object is being saved in the history, complemented with a timestamp and information about the initiator of the event as well as technically more detailed information about the event.
 

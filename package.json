@@ -36,7 +36,7 @@
         "npm-run-all": "^4.1",
         "npm-scripts-info": "^0.3.9",
         "rapidoc": "^9",
-        "remark-cli": "^10.0",
+        "remark-cli": "^11.0",
         "remark-frontmatter": "^4",
         "remark-gfm": "^3",
         "remark-lint": "^9.0",

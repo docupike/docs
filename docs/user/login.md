@@ -24,3 +24,6 @@ Point your Web browser to the Web UI of i-doit to see the login screen:
 
 !!! info "No default login"
     i-doit has no default login like an admin user called `admin` with a trivial password like `admin`. Instead, during the installation the first individual user will be created automatically. This user has the admin role with all rights and permissions.
+
+!!! info "Reset password"
+    If you forgot your password or simply need to change it, you can contact our support. If wrong credentials are used for login, you will also be shown a link to contact our support, who will be pleased to help you.
