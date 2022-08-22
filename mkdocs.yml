@@ -107,6 +107,7 @@ nav:
   - Admin guide:
       - Users, groups and roles: admin/users-groups-roles.md
       - Rights and permissions: admin/rights-and-permissions.md
+      - Attribute order customization: admin/customize-attribute-order.md
   - Developer guide:
       - API: dev/api.md
   - Technical reference:
