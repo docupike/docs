@@ -9,6 +9,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.2.6 – 2022-08-23
+
+### Added
+
+-   Categories and attributes: Show a hint if an attribute can not be deactivated (`ID2-2943`)
+-   Object details: Add Button for showing/hiding attributes displayed in MV categories of object details page (`ID2-2288`)
+-   UT 20210317 Find, Create, Connect: Add real-time search to sidebar (`ID2-3391`)
+-   UT 20210317 Find, Create, Connect: Show / Hide Categories in Sidebar (`ID2-3392`)
+-   UT - 20220321 Create and Connect Infrastructure: Apply resizeable Sidebar to Location View (`ID2-3378`)
+-   UT - 20220321 Create new Class with Categories: Add Collection option to "Add Class" Modal (`ID2-3315`)
+
+### Changed
+
+-   UT 20210317 Find, Create, Connect: Add Nested List to Sidebar on Object Details Page (`ID2-3389`)
+
+### Fixed
+
+-   Bugs - UI Modals & Components: Sort collections correctly in configuration modal (`ID2-3273`)
+-   CMDB configuration: Allow user to create a collection (`ID2-3535`)
+-   Navigation: Make all objects class string bold again (`ID2-3416`)
+-   Object browser: Do not allow to edit a connection data if user does not have permission for both end-objects (`ID2-3464`)
+-   Object browser: Show No permission message in category IP networking (`ID2-3465`)
+-   Object search and filter: Add proper spacing between the range fields in the searchbar dropdown (`ID2-3434`)
+
 ## 2.2.5 – 2022-07-05
 
 ### Added
@@ -18,7 +42,7 @@ _tbd_
 
 ### Changed
 
--   Environment variable based installation / update procedure: Make `InitCommand` and creation of `.env` optional (`ID2-3347`)
+-   Environment variable based installation / update procedure: Make InitCommand and creation of .env optional (`ID2-3347`)
 -   Navigation: Move views to Finder menu (`ID2-3350`)
 -   Object ranking: Change Archived state in Object details page  (`ID2-3394`)
 -   QA Offensive - Reports: Update action buttons in Reports Add attribute list items (`ID2-1695`)
@@ -36,9 +60,11 @@ _tbd_
 -   QA offensive - Object browser: Do not show "Open link" and context menu buttons in object reference field when user has no read right (`ID2-3377`)
 -   QA Offensive - Reports: Add missing attribute "Class" in Reports "Add Attribute" Modal (`ID2-3358`)
 -   QA offensive - Settings: Do not allow user with only delete right to open create / edit modals (`ID2-3164`)
--   Rights & Permissions Refactoring: Do not display "Loading.." when user with limited permission opens category with linked object (`ID2-3314`)
+-   Rights & Permissions Refactoring: Do not display "Loading.." when user with limited permission opens category with linked object
+ (`ID2-3314`)
 -   Rights & Permissions Refactoring: Allow user with own created objects permission to create multi-value entries (`ID2-3318`)
--   Rights & Permissions Refactoring: Allow user to access Permissions modal when user does not have edit users/roles/user-groups right (`ID2-3320`)
+-   Rights & Permissions Refactoring: Allow user to access Permissions modal when user does not have edit users/roles/user-groups right
+ (`ID2-3320`)
 -   Rights & Permissions Refactoring: Delete Object option from Scope Details filter (`ID2-3369`)
 -   UI basics: Unify spacing of "Add" and "New" buttons to headline in Settings area (`ID2-3267`)
 
