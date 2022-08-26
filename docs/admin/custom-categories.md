@@ -11,7 +11,7 @@ Besides having standard Categories i-doit.cloud makes it possible to create cust
 ## Rights
 
 To create new custom Categories you need to have the `Rights > CMDB > Manage Categories` right.
-To assign new custom Categories to Clases you need to have `Rights > CMDB > Manage Classes`right.
+To assign new custom Categories to Classes you need to have `Rights > CMDB > Manage Classes`right.
 
 ## How to create a custom Category
 
