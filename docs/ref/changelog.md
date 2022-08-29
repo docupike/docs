@@ -17,7 +17,7 @@ _tbd_
 -   Object details: Add Button for showing/hiding attributes displayed in MV categories of object details page (`ID2-2288`)
 -   UT 20210317 Find, Create, Connect: Add real-time search to sidebar (`ID2-3391`)
 -   UT 20210317 Find, Create, Connect: Show / Hide Categories in Sidebar (`ID2-3392`)
--   UT - 20220321 Create and Connect Infrastructure: The location view sidebar is resizable (`ID2-3378`)
+-   UT - 20220321 Create and Connect Infrastructure: The location view sidebar is adjustable (`ID2-3378`)
 -   UT - 20220321 Create new Class with Categories: Add Collection option to "Add Class" Modal (`ID2-3315`)
 
 ### Changed
