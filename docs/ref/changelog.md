@@ -42,7 +42,7 @@ _tbd_
 
 ### Changed
 
--   Environment variable based installation / update procedure: Make `InitCommand` and creation of `.env optional (`ID2-3347`)
+-   Environment variable based installation / update procedure: Make `InitCommand` and creation of `.env` optional (`ID2-3347`)
 -   Navigation: Move views to Finder menu (`ID2-3350`)
 -   Object ranking: Change Archived state in Object details page  (`ID2-3394`)
 -   QA Offensive - Reports: Update action buttons in Reports Add attribute list items (`ID2-1695`)
