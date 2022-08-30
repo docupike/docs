@@ -113,7 +113,7 @@
         "?test:dockerfile": "Lint Docker files",
         "test:dockerfile": "git ls-files | grep -e 'Dockerfile$' | xargs hadolint --config .hadolint.yaml",
         "?wtf": "Find open issues",
-        "wtf": "git grep --line-number --column --heading -E '(WORKAROUND|TODO|FIXME) '"
+        "wtf": "! git grep --line-number --column --heading -E '(WORKAROUND|TODO|FIXME) '"
     },
     "os": [
         "darwin",
