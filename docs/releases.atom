@@ -3,8 +3,19 @@
     <link type="text/html" rel="alternate" href="https://docs.i-doit.cloud/ref/version-history.html"/>
     <link type="application/atom+xml" rel="self" href="https://docs.i-doit.cloud/releases.atom"/>
     <title>i-doit.cloud Releases</title>
-    <updated>2022-07-07T07:55:57Z</updated>
+    <updated>2022-08-24T13:25:28Z</updated>
     <id>releases.i-doit.cloud:i-doit</id>
+    <entry>
+        <updated>2022-08-23T00:00:00+00:00</updated>
+        <link rel="alternate" type="text/html" href="https://docs.i-doit.cloud/ref/release-notes/v2.2.6.html"/>
+        <title>v2.2.6</title>
+        <content type="html">&lt;a href=&#34;https://docs.i-doit.cloud/ref/changelog.html#226-2022-08-23&#34;&gt;Changelog&lt;/a&gt;</content>
+        <author>
+            <name>i-doit team</name>
+        </author>
+        <media:thumbnail height="32" width="32" url="https://docs.i-doit.cloud/img/favicon-32x32.png"/>
+        <id>releases.i-doit.cloud:i-doit:v2.2.6</id>
+    </entry>
     <entry>
         <updated>2022-07-05T00:00:00+00:00</updated>
         <link rel="alternate" type="text/html" href="https://docs.i-doit.cloud/ref/release-notes/v2.2.5.html"/>
@@ -103,16 +114,5 @@
         </author>
         <media:thumbnail height="32" width="32" url="https://docs.i-doit.cloud/img/favicon-32x32.png"/>
         <id>releases.i-doit.cloud:i-doit:v2.0.3</id>
-    </entry>
-    <entry>
-        <updated>2021-09-02T00:00:00+00:00</updated>
-        <link rel="alternate" type="text/html" href="https://docs.i-doit.cloud/ref/release-notes/v2.0.2.html"/>
-        <title>v2.0.2</title>
-        <content type="html">&lt;a href=&#34;https://docs.i-doit.cloud/ref/changelog.html#202-2021-09-02&#34;&gt;Changelog&lt;/a&gt;</content>
-        <author>
-            <name>i-doit team</name>
-        </author>
-        <media:thumbnail height="32" width="32" url="https://docs.i-doit.cloud/img/favicon-32x32.png"/>
-        <id>releases.i-doit.cloud:i-doit:v2.0.2</id>
     </entry>
 </feed>

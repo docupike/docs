@@ -113,14 +113,14 @@
         "?test:dockerfile": "Lint Docker files",
         "test:dockerfile": "git ls-files | grep -e 'Dockerfile$' | xargs hadolint --config .hadolint.yaml",
         "?wtf": "Find open issues",
-        "wtf": "git grep --line-number --column --heading -E '(WORKAROUND|TODO|FIXME) '"
+        "wtf": "! git grep --line-number --column --heading -E '(WORKAROUND|TODO|FIXME) '"
     },
     "os": [
         "darwin",
         "linux"
     ],
     "engines": {
-        "node": ">=14.16.0",
-        "npm": ">=6.7.0"
+        "node": ">=16.15.0",
+        "npm": ">=8.8.0"
     }
 }
