@@ -33,6 +33,10 @@ theme:
     - search.suggest
     - navigation.sections
     - navigation.top
+extra_javascript:
+  - js/status.js
+extra_css:
+  - css/status.css
 plugins:
   - search:
       lang: en
