@@ -1,4 +1,5 @@
 cryptography
+cyclonedx-bom
 Jinja2
 Markdown
 mkdocs

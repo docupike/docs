@@ -27,6 +27,7 @@
     "license": "CC-BY-SA-4.0",
     "author": "synetics GmbH <info@i-doit.com> (https://i-doit.com/)",
     "devDependencies": {
+        "@cyclonedx/bom": "^3.10.4",
         "alex": "^10",
         "cloc": "^2.8.0",
         "husky": "^8",
@@ -115,7 +116,15 @@
         "?test:dockerfile": "Lint Docker files",
         "test:dockerfile": "git ls-files | grep -e 'Dockerfile$' | xargs hadolint --config .hadolint.yaml",
         "?wtf": "Find open issues",
-        "wtf": "! git grep --line-number --column --heading -E '(WORKAROUND|TODO|FIXME) '"
+        "wtf": "! git grep --line-number --column --heading -E '(WORKAROUND|TODO|FIXME) '",
+        "?sbom": "Generate SBOM",
+        "sbom": "run-s sbom:*",
+        "?sbom:dir": "Ensure SBOM directory exists",
+        "sbom:dir": "mkdir -p _sbom/",
+        "?sbom:npm": "Generate SBOM for NPM dependencies",
+        "sbom:npm": "cyclonedx-node --output _sbom/npm.json --include-dev",
+        "?sbom:pip": "Generate SBOM for Python dependencies",
+        "sbom:pip": "/usr/local/bin/cyclonedx-bom --environment --format json --output _sbom/pip.json --force"
     },
     "os": [
         "darwin",
