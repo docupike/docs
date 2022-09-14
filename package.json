@@ -90,6 +90,8 @@
         "system:npm-doctor": "npm doctor",
         "?system:npm-outdated": "List out-dated NPM packages",
         "system:npm-outdated": "npm outdated || exit 0",
+        "?system:pip-audit": "Audit `pip` packages",
+        "system:pip-audit": "pip-audit --requirement requirements.txt --progress-spinner off --strict",
         "?system:pip-outdated": "List out-dated `pip` packages",
         "system:pip-outdated": "pip list --outdated",
         "?test": "Run tests locally",
