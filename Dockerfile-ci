@@ -104,13 +104,13 @@ RUN pip3 install --upgrade --no-cache-dir \
     ; \
     apt-get autoremove -y
 
-USER docs
-
-ENV PATH="/home/docs/.local/bin:${PATH}"
-
 # pip (common):
 COPY requirements.txt /tmp/
 RUN pip3 install --upgrade --no-cache-dir --requirement /tmp/requirements.txt
+
+USER docs
+
+ENV PATH="/home/docs/.local/bin:${PATH}"
 
 WORKDIR /docs
 
