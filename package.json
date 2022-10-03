@@ -31,7 +31,7 @@
         "alex": "^10",
         "cloc": "^2.8.0",
         "husky": "^8",
-        "jscpd": "^3.3.25",
+        "jscpd": "^3.5.0",
         "jsonlint": "^1.6.3",
         "markdown-spellcheck": "git+https://github.com/lukeapage/node-markdown-spellcheck.git",
         "npm-run-all": "^4.1",
