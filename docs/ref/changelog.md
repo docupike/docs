@@ -23,7 +23,7 @@ _tbd_
 
 -   Categories and attributes: Allow to delete container object with multi value assignment (`ID2-3342`)
 -   Categories and attributes: Do not allow user to disable system attributes with a right click (`ID2-3496`)
--   Categories and attributes: Expand all categories while using realtime search  (`ID2-3497`)
+-   Categories and attributes: Expand all categories while using real-time search  (`ID2-3497`)
 -   Categories and attributes: Remove unit type of Rack units  (`ID2-3580`)
 -   Categories and attributes: Fix multi-select object browser field error in "Purchased at" (`ID2-3591`)
 -   Categories and attributes: Fix server error inside Devices and volumes category (`ID2-3721`)
@@ -41,7 +41,7 @@ _tbd_
 -   Rights and permissions: Allow users to edit attributes if they have permission  (`ID2-3452`)
 -   Rights & Permissions Refactoring: Allow user to carry out tasks they have a right to (`ID2-3355`)
 -   UI Basic data table: Fix column sorting arrow direction (`ID2-3492`)
--   UI components: Allow user resize container with resize button (`ID2-3569`)
+-   UI components: Allow user to re-size container with resizing button (`ID2-3569`)
 -   UI Form Field Times and Dates: Adjust Inline Edit specific keyboard controls for Inline Form Field Calendar (`ID2-1263`)
 -   Widgets: Allow user to open widgets (`ID2-3722`)
 
