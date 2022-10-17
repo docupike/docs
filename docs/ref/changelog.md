@@ -9,6 +9,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.2.7 – 2022-10-14
+
+### Added
+
+-   Development/maintenance: Extend API to update object to handle assigned category entries (`ID2-2628`)
+
+### Changed
+
+-   Navigation: Make Finder button in CMDB menu clickable (`ID2-3578`)
+
+### Fixed
+
+-   Categories and attributes: Allow to delete container object with multi value assignment (`ID2-3342`)
+-   Categories and attributes: Do not allow user to disable system attributes with a right click (`ID2-3496`)
+-   Categories and attributes: Expand all categories while using realtime search  (`ID2-3497`)
+-   Categories and attributes: Remove unit type of Rack units  (`ID2-3580`)
+-   Categories and attributes: Fix multi-select object browser field error in "Purchased at" (`ID2-3591`)
+-   Categories and attributes: Fix server error inside Devices and volumes category (`ID2-3721`)
+-   CMDB CRUD: Fix duplicate tag assignment (`ID2-3643`)
+-   Duplicate objects: Do not show deleted category entries after object duplication (`ID2-3594`)
+-   Login: Do not display "An error has occurred" after the session is expired (`ID2-3630`)
+-   Object browser: Allow user to link objects with the object browser (`ID2-3610`)
+-   Object details: Show only favorite attributes in Favorites (`ID2-3563`)
+-   Object search and filter: Close the modal of searchbar after selecting a saved filter (`ID2-3435`)
+-   Object search and filter: Fix the filtering in new object success notification (`ID2-3642`)
+-   Presets: Class selection is ignored when a preset is created (`ID2-3536`)
+-   Presets: Fix modal layout in presets (`ID2-3583`)
+-   Presets: Allow user to hover over tooltips in preset area (`ID2-3585`)
+-   QA offensive - Settings: Fix dropdown fields width and layout properly (`ID2-3180`)
+-   Rights and permissions: Allow users to edit attributes if they have permission  (`ID2-3452`)
+-   Rights & Permissions Refactoring: Allow user to carry out tasks they have a right to (`ID2-3355`)
+-   UI Basic data table: Fix column sorting arrow direction (`ID2-3492`)
+-   UI components: Allow user resize container with resize button (`ID2-3569`)
+-   UI Form Field Times and Dates: Adjust Inline Edit specific keyboard controls for Inline Form Field Calendar (`ID2-1263`)
+-   Widgets: Allow user to open widgets (`ID2-3722`)
+
 ## 2.2.6 – 2022-08-23
 
 ### Added
