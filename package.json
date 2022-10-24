@@ -27,7 +27,7 @@
     "license": "CC-BY-SA-4.0",
     "author": "synetics GmbH <info@i-doit.com> (https://i-doit.com/)",
     "devDependencies": {
-        "@cyclonedx/bom": "^3.10.4",
+        "@cyclonedx/bom": "^4.0.2",
         "alex": "^10",
         "cloc": "^2.8.0",
         "husky": "^8",
