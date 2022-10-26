@@ -122,7 +122,7 @@
         "?sbom:dir": "Ensure SBOM directory exists",
         "sbom:dir": "mkdir -p _sbom/",
         "?sbom:npm": "Generate SBOM for NPM dependencies",
-        "sbom:npm": "cyclonedx-node --output _sbom/npm.json --include-dev",
+        "sbom:npm": "cyclonedx-npm --output-format JSON --output-file _sbom/npm.json",
         "?sbom:pip": "Generate SBOM for Python dependencies",
         "sbom:pip": "/usr/local/bin/cyclonedx-bom --environment --format json --output _sbom/pip.json --force"
     },
