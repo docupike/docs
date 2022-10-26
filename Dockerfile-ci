@@ -1,4 +1,4 @@
-FROM ubuntu:rolling
+FROM ubuntu:22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -41,30 +41,32 @@ RUN groupadd -g "${GROUP_ID}" docs; \
 
 WORKDIR /tmp/
 
-# Node.js LTS and latest NPM:
-RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
-    -o /usr/local/bin/n; \
-    chmod 0755 /usr/local/bin/n; \
+# Node.js and NPM:
+RUN curl -OfsSL \
+        https://raw.githubusercontent.com/tj/n/master/bin/n; \
+    install -m 0755 -o root -g root n /usr/local/bin/; \
+    rm n; \
     n lts; \
     npm install -g npm@latest
 
 # hadolint:
 ARG HADOLINT_VERSION=2.10.0
-RUN curl -fsSL \
-        "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64" \
-        -o /usr/local/bin/hadolint; \
-    chmod +x /usr/local/bin/hadolint
+RUN curl -OfsSL \
+        "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64"; \
+    install -m 0755 -o root -g root hadolint-Linux-x86_64 /usr/local/bin/hadolint; \
+    rm hadolint-Linux-x86_64
 
 # Docker:
 RUN curl -fsSL \
         https://download.docker.com/linux/ubuntu/gpg | \
-        gpg --dearmor > /usr/share/keyrings/docker.gpg; \
-    echo \
-        "deb \
-        [arch=amd64 signed-by=/usr/share/keyrings/docker.gpg] \
-        https://download.docker.com/linux/ubuntu \
-        $(lsb_release -cs) \
-        stable" > /etc/apt/sources.list.d/docker.list; \
+        gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
+    echo "Enabled: yes" >> /etc/apt/sources.list.d/docker.sources; \
+    echo "Types: deb" >> /etc/apt/sources.list.d/docker.sources; \
+    echo "Architectures: amd64" >> /etc/apt/sources.list.d/docker.sources; \
+    echo "URIs: https://download.docker.com/linux/ubuntu" >> /etc/apt/sources.list.d/docker.sources; \
+    echo "Suites: $(lsb_release -cs)" >> /etc/apt/sources.list.d/docker.sources; \
+    echo "Components: stable" >> /etc/apt/sources.list.d/docker.sources; \
+    echo "Signed-By: /etc/apt/keyrings/docker.gpg" >> /etc/apt/sources.list.d/docker.sources; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
         docker-ce \
@@ -75,18 +77,24 @@ RUN curl -fsSL \
     rm -rf /var/lib/apt/lists/*
 
 # Docker Compose:
-ARG DOCKER_COMPOSE_VERSION=2.11.0
-RUN curl -fsSL \
-        "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64" \
-        -o /usr/libexec/docker/cli-plugins/docker-compose; \
-    chmod +x /usr/libexec/docker/cli-plugins/docker-compose
+ARG DOCKER_COMPOSE_VERSION=2.12.2
+RUN curl -OfsSL \
+        "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
+    curl -OfsSL \
+        "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/checksums.txt"; \
+    sha256sum --check --strict --ignore-missing \
+        checksums.txt; \
+    install -m 755 -o root -g root docker-compose-linux-x86_64 /usr/libexec/docker/cli-plugins/docker-compose; \
+    rm \
+        docker-compose-linux-x86_64 \
+        checksums.txt
 
 # editorconfig-checker (ec):
-ENV EC_VERSION 2.6.0
+ARG EC_VERSION=2.6.0
 RUN curl -OfsSL \
         "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/${EC_VERSION}/ec-linux-amd64.tar.gz"; \
     tar -xzf ec-linux-amd64.tar.gz; \
-    mv bin/ec-linux-amd64 /usr/local/bin/ec; \
+    install -m 755 -o root -g root bin/ec-linux-amd64 /usr/local/bin/ec; \
     rm -r \
         ec-linux-amd64.tar.gz \
         bin/
@@ -106,7 +114,8 @@ RUN pip3 install --upgrade --no-cache-dir \
 
 # pip (common):
 COPY requirements.txt /tmp/
-RUN pip3 install --upgrade --no-cache-dir --requirement /tmp/requirements.txt
+RUN pip3 install --upgrade --no-cache-dir --requirement requirements.txt; \
+    rm requirements.txt
 
 USER docs
 
