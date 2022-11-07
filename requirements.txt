@@ -7,7 +7,7 @@ mkdocs-git-revision-date-localized-plugin
 mkdocs-macros-plugin
 mkdocs-material==8.5.7
 mkdocs-minify-plugin
-pip-audit==2.4.4
+pip-audit==2.4.5
 pygments
 pymdown-extensions
 pyOpenSSL
