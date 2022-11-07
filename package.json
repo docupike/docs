@@ -28,7 +28,7 @@
     "author": "synetics GmbH <info@i-doit.com> (https://i-doit.com/)",
     "devDependencies": {
         "@cyclonedx/bom": "^4.0.2",
-        "alex": "^10",
+        "alex": "^11",
         "cloc": "^2.8.0",
         "husky": "^8",
         "jscpd": "^3.5.0",
