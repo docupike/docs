@@ -7,7 +7,7 @@
 
 _Note: This repository is the source of the i-doit.cloud docs._
 
-![Build status](https://github.com/i-doit/docs/actions/workflows/main.yml/badge.svg?branch=main)
+[![Build status](https://github.com/i-doit/docs/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/i-doit/docs/actions)
 [![Creative Commons Attribution-ShareAlike 4.0 International](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
 ## What is i-doit.cloud?
