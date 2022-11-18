@@ -1,5 +1,10 @@
 FROM ubuntu:22.04
 
+LABEL org.opencontainers.image.vendor="synetics GmbH"
+LABEL org.opencontainers.image.title="i-doit.cloud docs"
+LABEL org.opencontainers.image.description="Dev environment"
+LABEL org.opencontainers.image.documentation="https://docs.i-doit.cloud/"
+
 ARG DEBIAN_FRONTEND=noninteractive
 
 SHELL ["/bin/bash", "-euxo", "pipefail", "-c"]
@@ -50,7 +55,7 @@ RUN curl -OfsSL \
     npm install -g npm@latest
 
 # hadolint:
-ARG HADOLINT_VERSION=2.10.0
+ARG HADOLINT_VERSION=2.12.0
 RUN curl -OfsSL \
         "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64"; \
     install -m 0755 -o root -g root hadolint-Linux-x86_64 /usr/local/bin/hadolint; \
