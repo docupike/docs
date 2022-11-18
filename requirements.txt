@@ -1,5 +1,5 @@
 cryptography
-cyclonedx-bom==3.6.3
+cyclonedx-bom==3.7.2
 Jinja2
 Markdown
 mkdocs==1.4.2
