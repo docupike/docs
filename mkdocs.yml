@@ -111,9 +111,11 @@ nav:
   - Admin guide:
       - Users, groups and roles: admin/users-groups-roles.md
       - Rights and permissions: admin/rights-and-permissions.md
+      - Createing custom Categories: admin/custom-categories.md
       - Create custom classes: admin/custom-classes.md
       - Export Data: admin/export-data.md
       - Attribute order customization: admin/customize-attribute-order.md
+      - Export Data: admin/export-data.md
   - Developer guide:
       - API: dev/api.md
   - Technical reference:
