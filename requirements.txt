@@ -1,13 +1,15 @@
-cryptography
-Jinja2
-Markdown
-mkdocs
-mkdocs-git-revision-date-localized-plugin
-mkdocs-macros-plugin
-mkdocs-material
-mkdocs-minify-plugin
-pygments
-pymdown-extensions
-pyOpenSSL
-wheel
-yamllint
+cryptography ~= 38.0.3
+cyclonedx-bom == 3.7.2
+Jinja2 ~= 3.1.2
+Markdown ~= 3.3.7
+mkdocs == 1.4.2
+mkdocs-git-revision-date-localized-plugin ~= 1.1.0
+mkdocs-macros-plugin ~= 0.7.0
+mkdocs-material == 8.5.10
+mkdocs-minify-plugin ~= 0.6.1
+pip-audit == 2.4.7
+Pygments ~= 2.13.0
+pymdown-extensions ~= 9.8
+PyOpenSSL ~= 22.1.0
+wheel ~= 0.38.3
+yamllint == 1.28.0

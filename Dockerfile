@@ -1,9 +1,5 @@
 FROM python:3-bullseye AS i-doit-docs-build
 
-WORKDIR /usr/src/app
-
-COPY . .
-
 RUN apt-get update && \
     apt-get full-upgrade -y && \
     apt-get install -y --no-install-recommends \
@@ -11,8 +7,13 @@ RUN apt-get update && \
         git \
     && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/* && \
-    pip install -U --no-cache-dir -r requirements.txt && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN pip install -U --no-cache-dir -r requirements.txt && \
     mkdocs build
 
 FROM nginx:alpine AS i-doit-docs-web

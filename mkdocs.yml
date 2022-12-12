@@ -33,6 +33,10 @@ theme:
     - search.suggest
     - navigation.sections
     - navigation.top
+extra_javascript:
+  - js/status.js
+extra_css:
+  - css/status.css
 plugins:
   - search:
       lang: en
@@ -108,6 +112,8 @@ nav:
       - Users, groups and roles: admin/users-groups-roles.md
       - Rights and permissions: admin/rights-and-permissions.md
       - Createing custom Categories: admin/custom-categories.md
+      - Create custom classes: admin/custom-classes.md
+      - Export Data: admin/export-data.md
       - Attribute order customization: admin/customize-attribute-order.md
       - Export Data: admin/export-data.md
   - Developer guide:

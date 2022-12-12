@@ -1,0 +1,9 @@
+[data-md-component="announce"] .issueDisrupted {
+    background-color: #24478f;
+}
+[data-md-component="announce"] .issueDown {
+    background-color: #e60000;
+}
+[data-md-component="announce"] .issueNotice {
+    background-color: #cc4400;
+}
