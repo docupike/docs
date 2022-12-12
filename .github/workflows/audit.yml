@@ -37,7 +37,7 @@ jobs:
             -f docker-compose-ci.yml \
             pull
       - name: Re-use container image layers
-        uses: jpribyl/action-docker-layer-caching@v0.1.0
+        uses: jpribyl/action-docker-layer-caching@v0.1.1
         continue-on-error: true
       - name: Build container image
         run: |
