@@ -6,7 +6,7 @@ lang: en
 
 # Custom Categories
 
-Besides having standard Categories i-doit.cloud makes it possible to create custom Categories in order to document additional Attributes, which are not included in standard Categories.
+Besides having standard Categories docupike makes it possible to create custom Categories in order to document additional Attributes, which are not included in standard Categories.
 
 ## Rights
 

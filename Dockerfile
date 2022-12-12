@@ -1,4 +1,4 @@
-FROM python:3-bullseye AS i-doit-docs-build
+FROM python:3-bullseye AS docupike-docs-build
 
 RUN apt-get update && \
     apt-get full-upgrade -y && \
@@ -16,9 +16,9 @@ COPY . .
 RUN pip install -U --no-cache-dir -r requirements.txt && \
     mkdocs build
 
-FROM nginx:alpine AS i-doit-docs-web
+FROM nginx:alpine AS docupike-docs-web
 
-COPY --from=i-doit-docs-build /usr/src/app/site /usr/share/nginx/html
+COPY --from=docupike-docs-build /usr/src/app/site /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 WORKDIR /usr/share/nginx/html

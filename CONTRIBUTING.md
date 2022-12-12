@@ -94,7 +94,7 @@ Before you start make sure all required tools are installed and configured prope
 This works on a GNU/Linux or a MacOS host:
 
 ~~~ {.bash}
-git clone git@github.com:i-doit/docs.git
+git clone git@github.com:docupike/docs.git
 cd docs
 npm install
 pip install -U -r requirements.txt
@@ -151,14 +151,14 @@ npm run info
 [admonition]: https://python-markdown.github.io/extensions/admonition/
 [codehilite]: https://python-markdown.github.io/extensions/code_hilite/
 [commonmark]: https://commonmark.org/
-[docs]: https://docs.i-doit.com/
+[docs]: https://docs.docupike.com/
 [git]: https://git-scm.com/
 [gitbook]: https://git-scm.com/book/en/v2
 [github]: https://github.com/
 [githubHelp]: https://help.github.com/
-[issues]: https://github.com/i-doit/docs/issues
+[issues]: https://github.com/docupike/docs/issues
 [mkdocs]: https://www.mkdocs.org/
 [materialForMkDocs]: https://squidfunk.github.io/mkdocs-material/
 [metadata]: https://python-markdown.github.io/extensions/meta_data/
 [pip]: https://pypi.org/project/pip/
-[repository]: https://github.com/i-doit/docs
+[repository]: https://github.com/docupike/docs

@@ -35,7 +35,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh('scp -r site/* docs.i-doit.cloud:/var/www/docs')
+                sh('scp -r site/* docs.docupike.com:/var/www/docs')
             }
         }
     }
@@ -44,22 +44,15 @@ pipeline {
             deleteDir()
         }
         failure {
-            bitbucketStatusNotify(buildState: 'FAILED', commitId: "${env.GIT_COMMIT}")
             slackSend(channel: '#jenkins', color: 'danger', message: "FAILED - ${env.BUILD_URL}")
         }
         unstable {
-            bitbucketStatusNotify(buildState: 'SUCCESSFUL', commitId: "${env.GIT_COMMIT}")
             slackSend(channel: '#jenkins', color: 'warning', message: "UNSTABLE - ${env.BUILD_URL}")
         }
-        success {
-            bitbucketStatusNotify(buildState: 'SUCCESSFUL', commitId: "${env.GIT_COMMIT}")
-        }
         aborted {
-            bitbucketStatusNotify(buildState: 'FAILED', commitId: "${env.GIT_COMMIT}")
             slackSend(channel: '#jenkins', color: 'danger', message: "ABORTED - ${env.BUILD_URL}")
         }
         fixed {
-            bitbucketStatusNotify(buildState: 'SUCCESSFUL', commitId: "${env.GIT_COMMIT}")
             slackSend(channel: '#jenkins', color: 'good', message: "BACK TO NORMAL - ${env.BUILD_URL}")
         }
     }
