@@ -1,4 +1,4 @@
-const statusPageIssues = 'https://status.i-doit.cloud/index.json';
+const statusPageIssues = 'https://status.docupike.com/index.json';
 const announcementSection = document.querySelector('[data-md-component="announce"]');
 
 fetch(statusPageIssues)

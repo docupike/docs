@@ -1,24 +1,36 @@
 ---
 blank_issues_enabled: false
 contact_links:
-  - name: i-doit Community
-    url: https://community.i-doit.com/
-    about: Get in touch with the i-doit community
-  - name: i-doit Customer Portal
-    url: https://login.i-doit.com/
-    about: Download release packages and license keys
-  - name: i-doit docs
-    url: https://docs.i-doit.com/
-    about: Documentation of i-doit v2 and its add-ons
-  - name: i-doit Help Center
-    url: https://help.i-doit.com/
-    about: "i-doit and its add-ons: Report bugs/security vulnerabilities, make feature requests or ask questions"
-  - name: i-doit Knowledge Base
-    url: https://kb.i-doit.com/
-    about: Read the documentation of i-doit v1 and its add-ons (English/German)
-  - name: i-doit open
-    url: https://i-doit.org/
-    about: Download the community edition and compare between open and pro
-  - name: i-doit pro
-    url: https://i-doit.com/
-    about: Read about i-doit pro, pricing, partners, trainings and more
+  - name: Website
+    url: https://docupike.com/
+    about: Documentation of things with docupike
+  - name: Docs
+    url: https://docs.docupike.com/
+    about: Documentation of things with docupike
+  - name: Status
+    url: https://status.docupike.com/
+    about: Status page
+  - name: Support
+    url: mailto:help@docupike.com
+    about: Customer support
+  - name: Imprint
+    url: https://docupike.com/legal/imprint
+    about: Legal
+  - name: Data protection
+    url: https://docupike.com/legal/data-protection
+    about: Legal
+  - name: Terms & Conditions
+    url: https://docupike.com/legal/terms-conditions
+    about: Legal
+  - name: GDPR
+    url: https://docupike.com/legal/gdpr
+    about: Legal
+  - name: SLA
+    url: https://docupike.com/legal/sla
+    about: Legal
+  - name: Services
+    url: https://docupike.com/legal/services
+    about: Legal
+  - name: Security Policy
+    url: https://docs.docupike.com/security.html
+    about: Legal

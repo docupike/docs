@@ -1,13 +1,13 @@
 ---
 
-title: create custom classes  
-description: customize i-doit and create custom classes  
+title: create custom classes
+description: customize docupike and create custom classes
 lang: en
 
 ---
 
-# Custom Classes  
-Classes in i-doit are the basis of your it documentation. i-doit is delivered with a number of predefined classes, which should help you to get started quickly with it documentation.
+# Custom Classes
+Classes in docupike are the basis of your it documentation. docupike is delivered with a number of predefined classes, which should help you to get started quickly with it documentation.
 
 # Add Custom Classes
 But we give you the possibility to define your own classes.
@@ -20,14 +20,14 @@ After that the new class is available and can be used.
 # Customizing Custom Classes
 Under `Settings > CMDB Configuration > Classes > New class name` you can make further adjustments to the created class:
 
-`Title`  
+`Title`
 Here you can change the name of the class
 
-`Icon`  
+`Icon`
 Here you can select another icon for the class
 
-`Location Class`  
+`Location Class`
 Here you can change the class to a location class. This way objects of this class type become locations and can be used in the location tree.
 
-`Containing categories`  
+`Containing categories`
 Here you can further define the class and add categories to this class.

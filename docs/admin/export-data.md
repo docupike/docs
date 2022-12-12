@@ -24,4 +24,4 @@ After clicking the Export button have to Confirm that you want to start exportin
 After the export file is created you are able to Download the file via the `Download file` button.
 You can delete the file if you click in the `Delete file` button
 
-The File will be a ZIP File named like `i-doit_export_<date+time>.zip` e.g. `i-doit_export_2022-07-13_12-55-50_UTC.zip`.
+The File will be a ZIP File named like `docupike_export_<date+time>.zip` e.g. `docupike_export_2022-07-13_12-55-50_UTC.zip`.

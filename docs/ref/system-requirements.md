@@ -1,16 +1,16 @@
 ---
 title: System requirements
-description: Server-side and client-side hardware/software requirements of i-doit
+description: Server-side and client-side hardware/software requirements of docupike
 lang: en
 ---
 
 # System requirements
 
-For the best user experience please ensure all your clients meet i-doit's software requirements.
+For the best user experience please ensure all your clients meet docupike's software requirements.
 
 ## Supported Web browsers
 
-i-doit is a typical modern Web application. Therefore, you need a Web browser on all clients.
+docupike is a typical modern Web application. Therefore, you need a Web browser on all clients.
 
 Common requirements:
 

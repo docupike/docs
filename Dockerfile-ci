@@ -1,9 +1,9 @@
 FROM ubuntu:22.04
 
 LABEL org.opencontainers.image.vendor="synetics GmbH"
-LABEL org.opencontainers.image.title="i-doit.cloud docs"
-LABEL org.opencontainers.image.description="Dev environment"
-LABEL org.opencontainers.image.documentation="https://docs.i-doit.cloud/"
+LABEL org.opencontainers.image.title="docupike docs"
+LABEL org.opencontainers.image.description="DevOps environment"
+LABEL org.opencontainers.image.documentation="https://docs.docupike.com/"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -82,7 +82,7 @@ RUN curl -fsSL \
     rm -rf /var/lib/apt/lists/*
 
 # Docker Compose:
-ARG DOCKER_COMPOSE_VERSION=2.12.2
+ARG DOCKER_COMPOSE_VERSION=2.14.0
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \

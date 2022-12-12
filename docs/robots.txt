@@ -1,3 +1,3 @@
-Sitemap: https://docs.i-doit.com/sitemap.xml.gz
+Sitemap: https://docs.docupike.com/sitemap.xml.gz
 User-agent: *
 Disallow:

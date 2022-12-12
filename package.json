@@ -1,9 +1,9 @@
 {
-    "name": "i-doit-docs",
-    "description": "Documentation of things with i-doit.cloud",
+    "name": "docupike-docs",
+    "description": "Documentation of things with docupike",
     "keywords": [
-        "i-doit",
-        "idoit",
+        "docupike",
+        "docupike.cloud",
         "CMDB",
         "IT documentation",
         "it assets",
@@ -12,20 +12,19 @@
         "documentation",
         "docs",
         "documentation of things",
-        "configuration items",
-        "i-doit.cloud"
+        "configuration items"
     ],
     "version": "0.0.0-dev",
-    "homepage": "https://docs.i-doit.cloud/",
+    "homepage": "https://docs.docupike.com/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/i-doit/docs"
+        "url": "https://github.com/docupike/docs"
     },
     "bugs": {
-        "url": "https://github.com/i-doit/docs/issues"
+        "url": "https://github.com/docupike/docs/issues"
     },
     "license": "CC-BY-SA-4.0",
-    "author": "synetics GmbH <info@i-doit.com> (https://i-doit.com/)",
+    "author": "synetics GmbH <info@i-doit.com> (https://docupike.com/)",
     "devDependencies": {
         "@cyclonedx/bom": "^4.0.2",
         "alex": "^11",

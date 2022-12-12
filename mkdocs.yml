@@ -1,10 +1,10 @@
 ---
-site_name: i-doit.cloud docs
-site_url: https://docs.i-doit.cloud/
-site_description: Documentation of things with i-doit.cloud
+site_name: docupike docs
+site_url: https://docs.docupike.com/
+site_description: Documentation of things with docupike
 site_author: synetics GmbH
-copyright: Copyright &copy; 2019-21
-repo_url: https://github.com/i-doit/docs
+copyright: Copyright &copy; 2019-22 synetics GmbH
+repo_url: https://github.com/docupike/docs
 edit_uri: edit/main/docs/
 strict: true
 theme:
@@ -28,7 +28,7 @@ theme:
   font: false
   logo: img/logo.svg
   language: en
-  favicon: img/favicon.png
+  favicon: favicon.ico
   features:
     - search.suggest
     - navigation.sections

@@ -3,7 +3,7 @@
 
 /* TEAM */
 Owned by: synetics GmbH
-Contact: https://i-doit.com/
+Contact: https://docupike.com/
 Location: Düsseldorf, Europe
 
 /* SITE */
