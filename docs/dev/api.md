@@ -1,16 +1,16 @@
 ---
 title: API
-description: Access the i-doit REST API
+description: Access the docupike REST API
 lang: en
 ---
 
 # API
 
-Access the i-doit REST API
+Access the docupike REST API
 
 ## Format
 
-i-doit has a RESTful API following the [OpenAPI `v3` standard](https://www.openapis.org/). HTTP requests must include the HTTP header `Content-Type: application/json`.
+docupike has a RESTful API following the [OpenAPI `v3` standard](https://www.openapis.org/). HTTP requests must include the HTTP header `Content-Type: application/json`.
 
 ## Versioning and support
 
@@ -24,22 +24,22 @@ Each user account can have multiple API tokens at once. You can manage API token
 
 ## Auto-generated reference
 
-Each i-doit instance is shipped with a built-in reference. Because of security reasons you must be authenticated to access it. The reference comes in two formats:
+Each docupike instance is shipped with a built-in reference. Because of security reasons you must be authenticated to access it. The reference comes in two formats:
 
 === "HTML"
 
-    `https://<your_subdomain>.i-doit.cloud/api/v2/docs.html`
+    `https://<your_subdomain>.docupike.cloud/api/v2/docs.html`
 
 
 === "JSON"
 
-    `https://<your_subdomain>.i-doit.cloud/api/v2/docs.json`
+    `https://<your_subdomain>.docupike.cloud/api/v2/docs.json`
 
 The reference is auto-generated and always up-to-date.
 
 ## Public API reference
 
-This Website provides a public API reference for the [latest stable version of i-doit](../ref/version-history.md) with no customization. Authentication to access it is not required.
+This Website provides a public API reference for the [latest stable version of docupike](../ref/version-history.md) with no customization. Authentication to access it is not required.
 
 === "HTML"
 

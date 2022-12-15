@@ -1,6 +1,6 @@
 ---
 title: Search filters and reports
-description: Search filters and reports in the i-doit Finder
+description: Search filters and reports in the docupike Finder
 lang: en
 ---
 

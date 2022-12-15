@@ -1,6 +1,6 @@
 ---
 title: Classes
-description: Documentation basics about classes in i-doit
+description: Documentation basics about classes in docupike
 lang: en
 ---
 
@@ -17,4 +17,4 @@ They serve two purposes:
 
     Use the object class `Person` to document address data, telephone numbers and e-mail addresses.
 
-Since you can extend and adjust the documentation to your needs, an object class can be whatever you define it to be. But i-doit for sure comes with a standard set of object classes that is suited to fit most users' needs.
+Since you can extend and adjust the documentation to your needs, an object class can be whatever you define it to be. But docupike for sure comes with a standard set of object classes that is suited to fit most users' needs.
