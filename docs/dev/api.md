@@ -35,16 +35,9 @@ Each docupike instance is shipped with a built-in reference. Because of security
 
     `https://<your_subdomain>.docupike.cloud/api/v2/docs.json`
 
+
+=== "YAML"
+
+    `https://<your_subdomain>.docupike.cloud/api/v2/docs.yaml`
+
 The reference is auto-generated and always up-to-date.
-
-## Public API reference
-
-This Website provides a public API reference for the [latest stable version of docupike](../ref/version-history.md) with no customization. Authentication to access it is not required.
-
-=== "HTML"
-
-    [Link to HTML reference](api/v2/docs.html)
-
-=== "JSON"
-
-    [Link to JSON reference](api/v2/docs.json)
