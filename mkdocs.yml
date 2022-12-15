@@ -66,22 +66,22 @@ markdown_extensions:
       check_paths: true
 extra:
   manifest: manifest.webmanifest
-  social:
-    - name: i-doit on Twitter
-      link: https://twitter.com/i_doit
-      icon: fontawesome/brands/twitter
-    - name: i-doit on YouTube (English)
-      link: https://www.youtube.com/channel/UC5wvDZjCslEWW2jE6R_5CUg
-      icon: fontawesome/brands/youtube
-    - name: i-doit on LinkedIn
-      link: https://www.linkedin.com/company/1097514/
-      icon: fontawesome/brands/linkedin
-    - name: i-doit on Facebook
-      link: https://facebook.com/itdokumentation/
-      icon: fontawesome/brands/facebook
-    - name: i-doit on GitHub
-      link: https://github.com/i-doit
-      icon: fontawesome/brands/github
+  # social:
+  #   - name: i-doit on Twitter
+  #     link: https://twitter.com/i_doit
+  #     icon: fontawesome/brands/twitter
+  #   - name: i-doit on YouTube (English)
+  #     link: https://www.youtube.com/channel/UC5wvDZjCslEWW2jE6R_5CUg
+  #     icon: fontawesome/brands/youtube
+  #   - name: i-doit on LinkedIn
+  #     link: https://www.linkedin.com/company/1097514/
+  #     icon: fontawesome/brands/linkedin
+  #   - name: i-doit on Facebook
+  #     link: https://facebook.com/itdokumentation/
+  #     icon: fontawesome/brands/facebook
+  #   - name: i-doit on GitHub
+  #     link: https://github.com/i-doit
+  #     icon: fontawesome/brands/github
 use_directory_urls: false
 watch:
   - data
