@@ -6,7 +6,7 @@ Thank you for taking time reading the following information carefully. Your cont
 
 ## Scope
 
-This security policy is related to i-doit incl. all its sub-projects and public systems.
+This security policy is related to docupike incl. all its sub-projects and public systems.
 
 ## Supported versions
 
@@ -14,14 +14,14 @@ Please ensure that your findings affect the latest stable release of our softwar
 
 ## About us
 
-i-doit is maintained by the [synetics GmbH](https://i-doit.com/), located in Düsseldorf/Germany. You can contact us in both English and German.
+docupike is maintained by the [synetics GmbH](https://www.docupike.com/), located in Düsseldorf/Germany. You can contact us in both English and German.
 
 ## What are security-related issues?
 
 These are examples for security-related issues:
 
 -   Vulnerability in one of our public systems, e.g. our websites
--   Vulnerability in one of our software applications, e.g. i-doit
+-   Vulnerability in one of our software applications, e.g. docupike
 -   Disclosure of private information, e.g. user data and secrets
 
 These issues affect the availability, confidentiality and/or integrity of our systems, software applications and the data we must protect.
@@ -41,6 +41,6 @@ A [CVE](https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures) is v
 
 ## Contact us
 
-Contact us directly via e-mail: [`security@i-doit.com`](mailto:security@i-doit.com)
+Contact us directly via e-mail: [`security@docupike.com`](mailto:security@docupike.com)
 
-We highly recommend to sign and encrypt your e-mail with GPG/OpenPGP. Our public key is available on [`keys.openpgp.org`](https://keys.openpgp.org/) and can be downloaded from [`i-doit.cloud/security_key.asc`](https://i-doit.cloud/security_key.asc).
+We highly recommend to sign and encrypt your e-mail with GPG/OpenPGP. Our public key is available on [`keys.openpgp.org`](https://keys.openpgp.org/) and can be downloaded from [`docupike.cloud/security_key.asc`](https://docupike.cloud/security_key.asc).
