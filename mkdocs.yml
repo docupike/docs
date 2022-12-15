@@ -15,17 +15,16 @@ theme:
       primary: black
       accent: red
       media: "(prefers-color-scheme: light)"
-# Dark mode disabled
-#      toggle:
-#        icon: material/weather-sunny
-#        name: Switch to dark mode
-#    - scheme: slate
-#      primary: black
-#      accent: red
-#      media: "(prefers-color-scheme: dark)"
-#      toggle:
-#        icon: material/weather-night
-#        name: Switch to light mode
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: red
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
   font: false
   logo: img/logo.svg
   language: en
