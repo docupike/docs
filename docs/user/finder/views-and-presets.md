@@ -1,6 +1,6 @@
 ---
 title: Views and presets
-description: Views and presets in the i-doit Finder
+description: Views and presets in the docupike Finder
 lang: en
 ---
 

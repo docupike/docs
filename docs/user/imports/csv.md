@@ -6,7 +6,7 @@ lang: en
 
 # CSV import
 
-The CSV import allows you to upload and import any CSV files into i-doit. CSV stands for "comma separated value".
+The CSV import allows you to upload and import any CSV files into docupike. CSV stands for "comma separated value".
 
 In the toolbar you will find the `Import from CSV file` icon which opens the CSV import dialog.
 This dialog guides you through the import process via six steps.
@@ -36,7 +36,7 @@ Now you pick the corresponding attribute via the `radio button` and click save t
 
 ## Step #5
 
-Here you can optionally choose if you want to `update` already existing objects or only `create new objects`. When you want to update objects you should add one or more `identifiers` for matching existing objects by a qualified assigned attribute. Now you have to choose if you want to `keep` or `delete` existing values in i-doit. At last you define if multi-value category entries are `added` or completely `replace` the existing content.
+Here you can optionally choose if you want to `update` already existing objects or only `create new objects`. When you want to update objects you should add one or more `identifiers` for matching existing objects by a qualified assigned attribute. Now you have to choose if you want to `keep` or `delete` existing values in docupike. At last you define if multi-value category entries are `added` or completely `replace` the existing content.
 
 ## Step #6
 

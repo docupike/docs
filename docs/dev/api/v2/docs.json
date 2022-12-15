@@ -1,9 +1,9 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "i-doit API",
+        "title": "docupike API",
         "contact": {
-            "email": "help@i-doit.cloud"
+            "email": "help@docupike.com"
         },
         "version": "v2"
     },
@@ -100,7 +100,7 @@
                 "description": "Login",
                 "operationId": "SecurityController::loginAction",
                 "requestBody": {
-                    "description": "Log in into i-doit",
+                    "description": "Log in into docupike",
                     "content": {
                         "application/json": {
                             "schema": {
