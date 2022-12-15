@@ -17,5 +17,5 @@ Common requirements:
 -   JavaScript and Cookies _must_ be enabled.
 -   All modern Web browsers _should_ work.
 -   Desktop variants of Google Chrome and Mozilla Firefox are actively supported (current version and latest long-term supported version).
--   The more information you like to see at the same time the higher the display resolution should be. Minimal Resolution should be FullHD (`1920x1080`).
+-   The more information you like to see at the same time the higher the display resolution should be. Minimal Resolution should be full HD (`1920x1080`) pixel.
 -   Operating platform does not matter.
