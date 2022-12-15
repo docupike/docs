@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
-## 2.2.7 – 2022-10-14
+## 0.2.7 – 2022-10-14
 
 ### Added
 
@@ -45,7 +45,7 @@ _tbd_
 -   UI Form Field Times and Dates: Adjust Inline Edit specific keyboard controls for Inline Form Field Calendar (`ID2-1263`)
 -   Widgets: Allow user to open widgets (`ID2-3722`)
 
-## 2.2.6 – 2022-08-23
+## 0.2.6 – 2022-08-23
 
 ### Added
 
@@ -69,7 +69,7 @@ _tbd_
 -   Object browser: Show No permission message in category IP networking (`ID2-3465`)
 -   Object search and filter: Add proper spacing between the range fields in the searchbar dropdown (`ID2-3434`)
 
-## 2.2.5 – 2022-07-05
+## 0.2.5 – 2022-07-05
 
 ### Added
 
@@ -102,7 +102,7 @@ _tbd_
 -   Rights & Permissions: Delete Object option from Scope Details filter (`ID2-3369`)
 -   UI basics: Unify spacing of "Add" and "New" buttons to headline in Settings area (`ID2-3267`)
 
-## 2.2.4 – 2022-05-31
+## 0.2.4 – 2022-05-31
 
 ### Changed
 
@@ -129,7 +129,7 @@ _tbd_
 -   Rights & Permissions Refactoring: Allow to read objects when permission to read category and attributes is given (`ID2-3283`)
 -   UI replace table component: Do not allow to enter more than 255 characters in a text field (`ID2-2365`)
 
-## 2.2.3 – 2022-05-12
+## 0.2.3 – 2022-05-12
 
 ### Added
 
@@ -186,7 +186,7 @@ _tbd_
 -   UI Form Field Pulldown: Fix single select combobox component (`ID2-2975`)
 -   User Management: Assign selected user group when creating the user (`ID2-3271`)
 
-## 2.2.2 – 2022-04-11
+## 0.2.2 – 2022-04-11
 
 ### Changed
 
@@ -225,7 +225,7 @@ _tbd_
 -   Settings: Fix the error of custom View Presets (`ID2-3255`)
 -   Setup/update: Allow to update from `2.2.0` to `2.2.1` after deleting the classes of VLAN, Printer or Daemon (`ID2-3241`)
 
-## 2.2.1 – 2022-03-29
+## 0.2.1 – 2022-03-29
 
 ### Added
 
@@ -312,7 +312,7 @@ _tbd_
 
 -   Development/maintenance: Update PHP dependency twig/twig to fix security vulnerability (`ID2-3173`)
 
-## 2.2.0 – 2022-02-18
+## 0.2.0 – 2022-02-18
 
 ### Changed
 
@@ -342,7 +342,7 @@ _tbd_
 
 -   Session timeout works as expected: Ensure inactive user session expires (`ID2-2921`)
 
-## 2.1.1 – 2022-01-31
+## 0.1.1 – 2022-01-31
 
 ### Added
 
@@ -381,7 +381,7 @@ _tbd_
 -   Object search and filter: Fix "No Permission" text on document state archived filter (`ID2-2739`)
 -   UI notifications: Fix notification on archive/restore an object (`ID2-2736`)
 
-## 2.1.0 – 2021-12-08
+## 0.1.0 – 2021-12-08
 
 ### Added
 
@@ -424,7 +424,7 @@ _tbd_
 -   Setup/update: Run presets migration command only when needed (`ID2-2579`)
 -   Setup/update: Handle unavailable tables during update (`ID2-2598`)
 
-## 2.0.3 – 2021-09-10
+## 0.0.3 – 2021-09-10
 
 ### Fixed
 
@@ -432,13 +432,13 @@ _tbd_
 -   Setup/update: Abort update command on error (`ID2-2568`)
 -   Setup/update: Fix update errors related to class domain (`ID2-2573`)
 
-## 2.0.2 – 2021-09-02
+## 0.0.2 – 2021-09-02
 
 ### Fixed
 
--   Setup/update: Fix problems while updating i-doit from `v2.0.0` to `v2.0.1` (`ID2-2527`)
+-   Setup/update: Fix problems while updating from `v0.0.0` to `v0.0.1` (`ID2-2527`)
 
-## 2.0.1 – 2021-08-19
+## 0.0.1 – 2021-08-19
 
 ### Added
 
@@ -496,12 +496,12 @@ _tbd_
 -   Rights and permissions: Fix to click on checkboxes when creating a new right (`ID2-2295`)
 -   Rights and permissions: Do not show "No permission" to user with permission for specific location object (`ID2-2328`)
 -   Security: Fix CSP violations in auto-generated API docs (`ID2-2214`)
--   Setup/update: Fix i-doit update when handling non-unique users/user groups/roles (`ID2-2285`)
+-   Setup/update: Fix update when handling non-unique users/user groups/roles (`ID2-2285`)
 -   UI components: Show selected value in pulldown menu (`ID2-1973`)
 -   UI components: Don't overwrite user input in calendar while typing (`ID2-1977`)
 -   UI components: Prevent tags overlapping the input box (`ID2-2149`)
 -   Users: Fix button to delete a user (`ID2-2264`)
 
-## 2.0.0 – 2021-05-28
+## 0.0.0 – 2021-05-28
 
 Initial release!
