@@ -94,15 +94,15 @@ nav:
   - User guide:
       - Login: user/login.md
       - Documentation basics:
-          - Objects: user/basics/objects.md
           - Classes: user/basics/classes.md
           - Collections: user/basics/collections.md
           - Categories and attributes: user/basics/categories-and-attributes.md
+          - Objects: user/basics/objects.md
       - Finder:
-          - Views and presets: user/finder/views-and-presets.md
-          - Search filters and reports: user/finder/search-filters-and-reports.md
           - Inline editing: user/finder/inline-editing.md
           - Multi editing: user/finder/multi-editing.md
+          - Search filters and reports: user/finder/search-filters-and-reports.md
+          - Views and presets: user/finder/views-and-presets.md
           - Widgets: user/finder/widgets.md
       - Reporting: user/reporting.md
       - Imports:
@@ -110,16 +110,14 @@ nav:
       - Use cases:
           - Locations: user/usecases/locations.md
   - Admin guide:
-      - Users, groups and roles: admin/users-groups-roles.md
-      - Rights and permissions: admin/rights-and-permissions.md
       - Createing custom Categories: admin/custom-categories.md
       - Create custom classes: admin/custom-classes.md
       - Export Data: admin/export-data.md
-      - Attribute order customization: admin/customize-attribute-order.md
-      - Export Data: admin/export-data.md
+      - Rights and permissions: admin/rights-and-permissions.md
+      - Users, groups and roles: admin/users-groups-roles.md
   - Developer guide:
       - API: dev/api.md
   - Technical reference:
-      - Version history: ref/version-history.md
       - System requirements: ref/system-requirements.md
+      - Version history: ref/version-history.md
   - Announcements: announcements.md
