@@ -37,7 +37,3 @@ Available field types are:
 | Boolean | The `Boolean` field is for selecting yes or no |
 | Password | In the `Password` field is a masked field |
 | Color | With the `Color` field you are able to insert a hex color code or select a color via the color picker by clicking on the palette within the edit mode |
-
-## Create a custom Category and a attribute Field
-
-[![Create a custom Category and a attribute Field](../img/screenshots/admin/om-22-create-category-and-attribute.gif)](../img/screenshots/admin/om-22-create-category-and-attribute.gif)
