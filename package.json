@@ -26,7 +26,7 @@
     "license": "CC-BY-SA-4.0",
     "author": "synetics GmbH <info@i-doit.com> (https://docupike.com/)",
     "devDependencies": {
-        "@cyclonedx/bom": "^4.0.2",
+        "@cyclonedx/bom": "^4.0.3",
         "alex": "^11",
         "cloc": "^2.8.0",
         "husky": "^8",
