@@ -13,5 +13,3 @@ Using the csv import allows you to import data comfortably, for example, from Mi
 
 File ending with _.csv_ - **max. 128 MB**.
 The csv file should contain **less than 250 rows**.
-
-
