@@ -109,7 +109,7 @@ nav:
           - CSV: user/imports/csv.md
       - Use cases:
           - Locations: user/usecases/locations.md
-          - Full workplace documentation: user/usecases/create-buildings-rooms-and-workplaces.md
+          - Workplace documentation: user/usecases/workplace-documentation.md
   - Admin guide:
       - Createing custom Categories: admin/custom-categories.md
       - Create custom classes: admin/custom-classes.md

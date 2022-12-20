@@ -1,10 +1,10 @@
 ---
-title: Creation of buildings, rooms and workplaces
+title: Workplace documentation
 description: How to document a complete workplace
 lang: en
 ---
 
-# Creation of buildings, rooms and workplaces
+# A complete Workplace documentation
 
 In this use case, we will create a building, assign different rooms to this building and fully document an employee's workplace.
 
