@@ -109,6 +109,7 @@ nav:
           - CSV: user/imports/csv.md
       - Use cases:
           - Locations: user/usecases/locations.md
+          - Rights assignment: user/usecases/rights-assignment.md
   - Admin guide:
       - Createing custom Categories: admin/custom-categories.md
       - Create custom classes: admin/custom-classes.md
