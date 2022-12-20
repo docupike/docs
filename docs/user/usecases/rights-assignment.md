@@ -22,7 +22,7 @@ In group 3, the **application**  **admins** should only be able to edit objects 
 
 # Case 1: Determine access to data
 
-Permissions can be assigned for individual users, for defined roles and groups. Combinations of roles and groups are also possible. Both roles and groups are just containers to which users can be added and for which **different permissions** can be assigned.
+Permissions can be assigned for individual users, for defined roles and groups. Combinations of roles and groups are also possible. Both roles and groups are containers to which users can be added and for which **different permissions** can be assigned.
 
 
 We will now create a new group and person who will have read access to all objects, but will only see and be able to edit entries in the Accounting category.
@@ -67,7 +67,7 @@ With this we are done with the configuration for the user group "Accounting" and
 
 The easiest way to test the permissions is to create a new user, add it to the respective user group and log in with it.
 
-We log in with our just created user "Alex Accounting".
+We log in with our created user "Alex Accounting".
 
 [![Login via new user](/docs/img/screenshots/rights-assignment/test-permissions.png)](/docs/img/screenshots/rights-assignment/test-permissions.png)
 
@@ -120,7 +120,7 @@ Here we **create a new permission** for the group "Application admin" via the bu
 
 # Configure access to functions
 
-As you have probably already noticed, the new user has no access to reports. This is of course due to the fact that we have not yet granted authorization for this. We switch back to the settings and go to the menu item **"Rights"** in the user management. Here we go to the item "Reports" and create a new right.
+As you have probably already noticed, the new user has no access to reports. This is due to the fact that we have not yet granted authorization for this. We switch back to the settings and go to the menu item **"Rights"** in the user management. Here we go to the item "Reports" and create a new right.
 
 Again we select our group "Accounting" and activate all rights.
 
