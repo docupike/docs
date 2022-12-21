@@ -24,14 +24,13 @@ In group 3, the **application**  **admins** should only be able to edit objects 
 
 Permissions can be assigned for individual users, for defined roles and groups. Combinations of roles and groups are also possible. Both roles and groups are containers to which users can be added and for which **different permissions** can be assigned.
 
-
 We will now create a new group and person who will have read access to all objects, but will only see and be able to edit entries in the Accounting category.
 
 We switch to the Settings and create a new group named **"Accounting"** under User management -\> User groups. Here we will later add all users who work in accounting.
 
 Now we create a **new user** under User management -\> Users.
 
-[![Create a User](/docs/img/screenshots/rights-assignment/create-new-user.png)](/docs/img/screenshots/rights-assignment/create-new-user.png)
+[![Create a User](/img/screenshots/rights-assignment/create-new-user.png)](/img/screenshots/rights-assignment/create-new-user.png)
 
 Now we configure the permissions under User management -\> Permissions
 
@@ -41,7 +40,7 @@ The first step is to define the basic access to assets. For this purpose, we cre
 
 Here we grant read access to all objects in the "General" category. This is necessary so that basic asset information such as the name is visible.
 
-[![Create permissions](/docs/img/screenshots/rights-assignment/create-new-permission-accounting.png)](/docs/img/screenshots/rights-assignment/create-new-permission-accounting.png)
+[![Create permissions](/img/screenshots/rights-assignment/create-new-permission-accounting.png)](/img/screenshots/rights-assignment/create-new-permission-accounting.png)
 
 We create a new permission that applies to "Category and attribute entries".
 
@@ -51,17 +50,17 @@ We select "Accounting" as the user group and specify "All Objects" as the scope.
 
 Now we grant for the category accounting on all attributes permissions for create, read and edit. Existing data should not be deleted.
 
-[![Create permissions](/docs/img/screenshots/rights-assignment/create-new-permission-accounting-2.png)](/docs/img/screenshots/rights-assignment/create-new-permission-accounting-2.png)
+[![Create permissions](/img/screenshots/rights-assignment/create-new-permission-accounting-2.png)](/img/screenshots/rights-assignment/create-new-permission-accounting-2.png)
 
 # Configure access to location
 
 Finally, we would also like to grant read permission for the location of devices. This is not insignificant, as accounting staff also need to check where devices are located.
 
-[![Create permissions](/docs/img/screenshots/rights-assignment/create-new-permission-location.png)](/docs/img/screenshots/rights-assignment/rights-assignment/create-new-permission-location.png)
+[![Create permissions](/img/screenshots/rights-assignment/create-new-permission-location.png)](/img/screenshots/rights-assignment/rights-assignment/create-new-permission-location.png)
 
 With this we are done with the configuration for the user group "Accounting" and can now test the permissions.
 
-[![Create permissions](/docs/img/screenshots/rights-assignment/permissions-config-accounting.gif)](/docs/img/screenshots/rights-assignment/permissions-config-accounting.gif)
+[![Create permissions](/img/screenshots/rights-assignment/permissions-config-accounting.gif)](/img/screenshots/rights-assignment/permissions-config-accounting.gif)
 
 # Test permissions
 
@@ -69,12 +68,12 @@ The easiest way to test the permissions is to create a new user, add it to the r
 
 We log in with our created user "Alex Accounting".
 
-[![Login via new user](/docs/img/screenshots/rights-assignment/test-permissions.png)](/docs/img/screenshots/rights-assignment/test-permissions.png)
+[![Login via new user](/img/screenshots/rights-assignment/test-permissions.png)](/img/screenshots/rights-assignment/test-permissions.png)
 
 | **Test** | **Result** |
 | --- | --- |
-| Attempting to create or delete a new object in any class displays the message that you do not have sufficient permissions for this action. | [![TEXT](/docs/img/screenshots//rights-assignment/limited-permissions.png)](/docs/img/screenshots/rights-assignment/limited-permissions.png) |
-| When calling an object, only the categories General, Accounting and Location should now display information. When trying to edit the category Location, it should be displayed that the user does not have sufficient permissions. | [![TEXT](/docs/img/screenshots/rights-assignment/no-permissions.png)](/docs/img/screenshots/rights-assignment/no-permissions.png)|
+| Attempting to create or delete a new object in any class displays the message that you do not have sufficient permissions for this action. | [![TEXT](/img/screenshots//rights-assignment/limited-permissions.png)](/img/screenshots/rights-assignment/limited-permissions.png) |
+| When calling an object, only the categories General, Accounting and Location should now display information. When trying to edit the category Location, it should be displayed that the user does not have sufficient permissions. | [![TEXT](/img/screenshots/rights-assignment/no-permissions.png)](/img/screenshots/rights-assignment/no-permissions.png)|
 
 !!!info
     **Difference between Rights and Permissions** 
@@ -86,7 +85,7 @@ We log in with our created user "Alex Accounting".
 
 When accessing categories for which no permissions have been configured, only the "No permission" message is displayed instead of the information.
 
-[![TEXT](/docs/img/screenshots/rights-assignment/display-with-no-permission.png)](/docs/img/screenshots/rights-assignment/display-with-no-permission.png)
+[![TEXT](/img/screenshots/rights-assignment/display-with-no-permission.png)](/img/screenshots/rights-assignment/display-with-no-permission.png)
 
 # Case-2: Share access to information with external parties
 
@@ -94,7 +93,7 @@ In some cases you may want to give external service providers or other companies
 
 We create a new group for "External" in User groups.
 
-[![TEXT](/docs/img/screenshots/rights-assignment/create-new-user-group.png)](/docs/img/screenshots/rights-assignment/create-new-user-group.png)
+[![TEXT](/img/screenshots/rights-assignment/create-new-user-group.png)](/img/screenshots/rights-assignment/create-new-user-group.png)
 
 Now we will configure the permission for this new user group. To do this, we change to the menu item Permission.
 
@@ -102,7 +101,7 @@ Here we **create a new permission** for the group External via the button "New P
 
 You can select a specific location and then configure whether all sub-locations should also be included (e.g. branch office + all associated rooms).
 
-[![TEXT](/docs/img/screenshots/rights-assignment/create-new-user-group.png)](/docs/img/screenshots/rights-assignment/create-new-user-group.png)
+[![TEXT](/img/screenshots/rights-assignment/create-new-user-group.png)](/img/screenshots/rights-assignment/create-new-user-group.png)
 
 # Case 3: Access to specific classes
 
@@ -110,13 +109,13 @@ In some cases, you may want people or groups to have access only to certain clas
 
 Create a new user group, in our case we will call it Application admin.
 
-[![TEXT](/docs/img/screenshots/rights-assignment/edit-user-group.png)](/docs/img/screenshots/rights-assignment/edit-user-group.png)
+[![TEXT](/img/screenshots/rights-assignment/edit-user-group.png)](/img/screenshots/rights-assignment/edit-user-group.png)
 
 Now we will configure the permission for this new user group. To do this, we change to the menu item Permission.
 
 Here we **create a new permission** for the group "Application admin" via the button "New Permission".
 
-[![TEXT](/docs/img/screenshots/rights-assignment/edit-user-group.png)](/docs/img/screenshots/rights-assignment/edit-user-group.png)
+[![TEXT](/img/screenshots/rights-assignment/edit-user-group.png)](/img/screenshots/rights-assignment/edit-user-group.png)
 
 # Configure access to functions
 

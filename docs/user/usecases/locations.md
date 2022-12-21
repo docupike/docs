@@ -23,7 +23,7 @@ The default installation docupike already supplies classes which are suitable fo
 
     You can also use other classes as a location by setting them to "container class" in the settings.
 
-Beside these classes there is a category for each object where you can store the location: 
+Beside these classes there is a category for each object where you can store the location:
 
 - **Location**
 
@@ -36,7 +36,7 @@ As soon as the assignment of these objects is done, you can change the finder's 
 An example for a location path within your location tree looks like this:
 
     Country → City → Building → Floor → Room → Rack → Server
-    
+
 Geographical Coordinates
 
 In the Location category you can store geographical coordinates with latitude and longitude to identify the exact location on a map.
