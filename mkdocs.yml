@@ -108,6 +108,7 @@ nav:
       - Imports:
           - CSV: user/imports/csv.md
       - Use cases:
+          - Quick Edit in Lists: user/usecases/quick-edit-in-lists.md
           - Locations: user/usecases/locations.md
   - Admin guide:
       - Createing custom Categories: admin/custom-categories.md
