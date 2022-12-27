@@ -1,0 +1,50 @@
+
+# How do I get existing data imported
+
+The actual way to import existing Data into docupike is to use the CSV Import.
+
+## Requirements
+
+A .csv file must not be greater than 128MB in size.
+A .csv file should contain less than 250 rows.
+One object Class per CSV File.
+The right to Import.
+
+## Upload csv file
+
+In the object view, you will see the _Import from CSV file_ icon in the header menu.
+
+[![Import from CSV file button](/img/screenshots/import-data-via-csv/button-import-csv.png.png)](/img/screenshots/import-data-via-csv/button-import-csv.png.png)
+
+Here we are able to select and upload a valid CSV file. After a successful upload we can continue.
+
+## Column header mapping
+
+The second step allows to define if a column header exists in your CSV file. Furthermore, we can specify if our CSV file uses `Semicolon` [;] or `Comma` [,] as separator.
+A small preview allows you to review your settings.
+
+[![TEXT](/img/screenshots/import-data-via-csv/FILENAME.png)](/img/screenshots/import-data-via-csv/FILENAME.png)
+
+## Class selection
+
+At the third step we declare the `object class`. Only one class can be selected for each import.
+
+[![TEXT](/img/screenshots/import-data-via-csv/class-selection.png.png)](/img/screenshots/import-data-via-csv/class-selection.png.png)
+
+## Attribute mapping
+
+During this step each column gets its own row in the mapping. Thus, each row of the CSV file can be linked to an attribute. After clicking on the `Add` button, the appropriate attribute can selected from the extended dialog menu or its name can be entered directly into the search bar to have suitable attributes suggested.
+
+[![TEXT](/img/screenshots/import-data-via-csv/header-mapping.png.png)](/img/screenshots/import-data-via-csv/header-mapping.png.png)
+
+Now you pick the corresponding attribute via the `radio button` and click save to confirm the selection. This way, each column is assigned until all assignments are complete. Assignments can be solved later. Columns without assignment will be ignored during the import.
+
+
+## Step #5
+
+Here you can optionally choose if you want to `update` already existing objects or only `create new objects`. When you want to update objects you should add one or more `identifiers` for matching existing objects by a qualified assigned attribute. Now you have to choose if you want to `keep` or `delete` existing values in docupike. At last you define if multi-value category entries are `added` or completely `replace` the existing content.
+
+## Step #6
+
+The last step displays a `preview` of the import mapping. If everything is in order you can `start the import`. Otherwise you can go back and change the necessary settings.
+
