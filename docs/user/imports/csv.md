@@ -13,7 +13,10 @@ This dialog guides you through the import process via six steps.
 
 ## Requirements
 
-The CSV file has to be less than 128MB in size with UTF-8 encoding.
+A CSV file must not be greater than 128MB in size.
+A CSV file should contain less than 250 rows.
+One object Class per CSV File.
+The right to Import.
 
 ## Step #1
 
