@@ -52,7 +52,7 @@ Let’s start with a quote:
 
 _You only see what you know._
 
-Does this sound familiar? You are right; this is a quote by _Johann Wolfgang von Goethe. In connection with this article, it means that administration and management will find it difficult to keep an overview of the IT infrastructure without documentation which is in sufficient detail and up-to-date.
+Does this sound familiar? You are right; this is a quote by _Johann Wolfgang von Goethe_. In connection with this article, it means that administration and management will find it difficult to keep an overview of the IT infrastructure without documentation which is in sufficient detail and up-to-date.
 
 n this context, the aim is to bridge the gap between richness of detail and abstraction. When you have to decide whether new information should be included in the IT documentation or not, ask yourself the following question: What would be the benefits of recording these details in this way, preserving them and making them available to others? Documentation which is too detailed bears the risk of becoming too much for the reader and seems to be unusable. Does every cable in the computer center have to be recorded with details about length and color? Or is it sufficient to record the port connections between active network components?
 
