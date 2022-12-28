@@ -108,6 +108,7 @@ nav:
       - Imports:
           - CSV: user/imports/csv.md
       - Use cases:
+          - IP address management: user/usecases/ipam.md
           - Quick Edit in Lists: user/usecases/quick-edit-in-lists.md
           - Locations: user/usecases/locations.md
           - Rights assignment: user/usecases/rights-assignment.md
