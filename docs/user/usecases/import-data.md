@@ -1,18 +1,18 @@
 
 # How do I get existing data imported
 
-The way to import existing Data into docupike is to use the CSV Import.
+The way to import existing Data into docupike is to use the CSV Import. Before you start, you should know what Informations you want to import and whether the attribute can be documented in a category.
 
 ## Requirements
 
-A CSV file must not be greater than 128MB in size.
-A CSV file should contain less than 250 rows.
-One object Class per CSV File.
-The right to Import.
+- A CSV file must not be greater than 128MB in size.
+- A CSV file should contain less than 250 rows.a
+- One object Class per CSV File.
+- The right to Import.
 
 ## Upload CSV file
 
-In the object view, you will see the _Import from CSV file_ icon in the header menu.
+In the object view, you will see the `Import from CSV file` icon in the header menu.
 
 [![Import from CSV file button](/img/screenshots/import-data-via-csv/button-import-csv.png)](/img/screenshots/import-data-via-csv/button-import-csv.png)
 
