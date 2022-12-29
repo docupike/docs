@@ -1,21 +1,21 @@
 # IP Address Management with Docupike
 
 An essential part of an IT documentation is the maintenance of IP networks, IP addresses and various network components, the so-called IP Address Management (IPAM).
-You can document IP addresses, Subnetsworks, Supernetworks and configuration. Also you can browse, filter and manage them conveniently.
+You can document IP addresses, Subnetworks, Supernetworks and configuration. Also you can browse, filter and manage them conveniently.
 
 ## Overview
 
 The main value is that you:
 
-- can document and browse through IPv4 Super- and Subnetsworks
+- can document and browse through IPv4 Super- and Subnetworks
 - have a detailed and editable overview of an IP-subnetworks and IP-supernetworks
 - can generate IP-subnet statistics
-- can document networking details to a subnet
+- can document networking details to a Subnetwork
 - can quickly get and assign a free IP-address
 - will be alerted if there are IP-address conflicts
 
 Also docupike already provides all object types and categories in order to cover precisely your needs.
-These include amongst others the following object types:
+These include, among others, the following object types:
 
 - Network
 - Segmented subnetwork
@@ -116,7 +116,7 @@ The overview for a `Section` displays the IP addresses usage details for the net
 
 [![TEXT](/img/screenshots/ipam/sec-overview.png)](/img/screenshots/ipam/sec-overview.png)
 
-The overview for a `Network` will display the usage detail details for the selected network, a donut chart and the IP addresses.
+The overview for a `Network` will display the usage detail details for the selected network, a Donut chart and the IP addresses.
 
 [![TEXT](/img/screenshots/ipam/net-overview.png)](/img/screenshots/ipam/net-overview.png)
 
