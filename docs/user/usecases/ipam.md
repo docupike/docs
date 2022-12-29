@@ -19,7 +19,6 @@ These include, among others, the following object types:
 
 - Network
 - Segmented subnetwork
-- Supernet
 - Supernetwork
 - VLAN
 
@@ -39,9 +38,9 @@ To get a better overview you use the [Network collection](../basics/collections.
 [![Network collection](/img/screenshots/ipam/network-finder.png)](/img/screenshots/ipam/network-finder.png)
 
 Now you can focus on creating networks. You will start with a `Supernetwork`.
-After the creation of the `Supernetwork` you edit the `Network definition` category. Here you define that this Supernet uses IPv4, the `Network address` and a `Subnetmask`. If you already created a Router object, you can set it here as `Default router` for the Supernetwork.
+After the creation of the `Supernetwork` you edit the `Network definition` category. Here you define that this Supernetwork uses IPv4, the `Network address` and a `Subnetmask`. If you already created a Router object, you can set it here as `Default router` for the Supernetwork.
 
-[![Create a Supernet](/img/screenshots/ipam/create-supernet.png)](/img/screenshots/ipam/create-supernet.png)
+[![Create a Supernetwork](/img/screenshots/ipam/create-supernet.png)](/img/screenshots/ipam/create-supernet.png)
 
 !!!tip
     You can either type the _dotted decimal notation_ `255.255.0.0` or the _suffix_ `8` into the Subnetmask field
@@ -49,7 +48,8 @@ After the creation of the `Supernetwork` you edit the `Network definition` categ
 ## 2. Create a Network
 
 There are two ways of creating a Network object:
-can document their Ip-addresses, subnets, supernets and configurations, and can browse, filter and manage them conveniently
+can document their IP addresses, Subnetworks, Supernetworks and configurations, and can browse, filter and manage them conveniently
+
 - Create it via the [Network class](../basics/classes.md)
 - Create it via the `Supernetwork category -> Subnetworks`
 
