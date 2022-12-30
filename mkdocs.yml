@@ -97,6 +97,7 @@ nav:
           - Classes: user/basics/classes.md
           - Collections: user/basics/collections.md
           - Categories and attributes: user/basics/categories-and-attributes.md
+          - Menubar: user/basics/menubar.md
           - Objects: user/basics/objects.md
       - Finder:
           - Inline editing: user/finder/inline-editing.md
