@@ -8,15 +8,19 @@ lang: en
 
 The CSV import allows you to upload and import any CSV files into docupike. CSV stands for "comma separated value".
 
-In the toolbar you will find the `Import from CSV file` icon which opens the CSV import dialog.
-This dialog guides you through the import process via six steps.
+
 
 ## Requirements
 
-The CSV file has to be less than 128MB in size with UTF-8 encoding.
+- A CSV file must not be greater than 128MB in size.
+- A CSV file should contain less than 250 rows.
+- One object Class per CSV File.
+- The right to Import.
 
 ## Step #1
 
+In the toolbar you will find the `Import from CSV file` icon which opens the CSV import dialog.
+This dialog guides you through the import process via six steps.
 Here you are able to select and upload a valid CSV file. After a successful upload you can continue to step #2.
 
 ## Step #2
