@@ -11,3 +11,4 @@ allow:
   - simple
   - crash
   - period
+  - color
