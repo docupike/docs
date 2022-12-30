@@ -111,6 +111,7 @@ nav:
           - Quick Edit in Lists: user/usecases/quick-edit-in-lists.md
           - Locations: user/usecases/locations.md
           - Rights assignment: user/usecases/rights-assignment.md
+          - Reports: user/usescases/reports.md
           - Workplace documentation: user/usecases/workplace-documentation.md
   - Admin guide:
       - Createing custom Categories: admin/custom-categories.md
