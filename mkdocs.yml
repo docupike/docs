@@ -98,6 +98,7 @@ nav:
           - Collections: user/basics/collections.md
           - Categories and attributes: user/basics/categories-and-attributes.md
           - Enable or disable attributes: user/basics/enable-disable-attributes.md
+          - Menu bar: user/basics/menubar.md
           - Objects: user/basics/objects.md
       - Finder:
           - Inline editing: user/finder/inline-editing.md
