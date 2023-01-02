@@ -10,7 +10,7 @@ Clicking on the inventory button, you can see 3 options.
 
 The finder lets you select from your collections, that display all objects, that you defined in your collection.
 The locations show all documented location objects and objects that are assigned to a location.
-Network shows all networks and the usage of their ipv4 and ipv6 adresses.
+Network shows all networks and the usage of their IPv4 and IPv6 addresses.
 
 ## Reports
 
@@ -23,4 +23,4 @@ The history shows you the history of your latest changes. By opening the complet
 ## Settings
 
 By pressing on your profile picture, you can open the settings.
-This is where you can configure everything about the classes and categories but also manage your users and administrate billing and supscription.
+This is where you can configure everything about the classes and categories but also manage your users and administrate billing and subscription.
