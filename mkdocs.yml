@@ -30,9 +30,12 @@ theme:
   language: en
   favicon: favicon.ico
   features:
-    - search.suggest
+    - content.action.edit
+    - content.code.copy
+    - navigation.footer
     - navigation.sections
     - navigation.top
+    - search.suggest
 extra_javascript:
   - js/status.js
 extra_css:

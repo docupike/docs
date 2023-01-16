@@ -82,7 +82,7 @@ RUN curl -fsSL \
     rm -rf /var/lib/apt/lists/*
 
 # Docker Compose:
-ARG DOCKER_COMPOSE_VERSION=2.14.2
+ARG DOCKER_COMPOSE_VERSION=2.15.1
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \
@@ -95,7 +95,7 @@ RUN curl -OfsSL \
         checksums.txt
 
 # editorconfig-checker (ec):
-ARG EC_VERSION=2.6.0
+ARG EC_VERSION=2.7.0
 RUN curl -OfsSL \
         "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/${EC_VERSION}/ec-linux-amd64.tar.gz"; \
     tar -xzf ec-linux-amd64.tar.gz; \
