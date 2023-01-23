@@ -1,13 +1,13 @@
-cryptography ~= 38.0.4
+cryptography ~= 39.0.0
 cyclonedx-bom == 3.10.1
 Jinja2 ~= 3.1.2
 Markdown ~= 3.3.7
 mkdocs == 1.4.2
 mkdocs-git-revision-date-localized-plugin ~= 1.1.0
 mkdocs-macros-plugin ~= 0.7.0
-mkdocs-material == 9.0.5
+mkdocs-material == 9.0.6
 mkdocs-minify-plugin ~= 0.6.2
-pip-audit == 2.4.13
+pip-audit == 2.4.14
 Pygments ~= 2.14.0
 pymdown-extensions ~= 9.9
 PyOpenSSL ~= 23.0.0
