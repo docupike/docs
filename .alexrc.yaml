@@ -12,3 +12,4 @@ allow:
   - crash
   - period
   - color
+  - easy
