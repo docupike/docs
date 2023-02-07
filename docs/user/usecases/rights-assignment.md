@@ -1,6 +1,6 @@
 ---
 title: Rights assignment
-description: How to assign Rights to different user groups
+description: How to assign rights to different user groups
 lang: en
 ---
 
@@ -77,7 +77,7 @@ We log in with our created user "Alex Accounting".
 
 !!!info
     **Difference between Rights and Permissions** 
-    i-doit distinguishes between functional _rights_ and _permissions_ to access specific information in the documentation.
+    docupike distinguishes between functional _rights_ and _permissions_ to access specific information in the documentation.
 
     **Rights:** A right allows a user to use a certain function or to define administrative settings.
 
