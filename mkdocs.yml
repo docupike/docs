@@ -122,7 +122,7 @@ nav:
           - Reports: user/usecases/reports.md
           - Workplace documentation: user/usecases/workplace-documentation.md
   - Admin guide:
-      - Createing custom Categories: admin/custom-categories.md
+      - Creating custom Categories: admin/custom-categories.md
       - Create custom classes: admin/custom-classes.md
       - Export Data: admin/export-data.md
       - Rights and permissions: admin/rights-and-permissions.md
