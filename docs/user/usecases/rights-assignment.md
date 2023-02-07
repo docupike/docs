@@ -78,6 +78,7 @@ We log in with our created user "Alex Accounting".
 !!!info
 
     **Difference between Rights and Permissions:** docupike distinguishes between functional _rights_ and _permissions_ to access specific information in the documentation.
+
     **Rights:** A right allows a user to use a certain function or to define administrative settings.
 
     **Permission:** A permission grants a user access to a specific set of documented information. |
