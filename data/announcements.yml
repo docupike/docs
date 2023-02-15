@@ -4,7 +4,11 @@
 # "title" is optional and defaults to first characters of "content".
 # "content" is required and will be parsed from Markdown.
 announcements:
+  - date: 2023-01-19
+    title: General availability
+    content: >
+      [Registration](https://docupike.com/) for cloud is open.
   - date: 2021-06-01
     title: Open public beta
     content: >
-      [Registration](https://docupike.com/) for our beta cloud is open.
+      [Registration](https://docupike.com/) for our beta program is open.
