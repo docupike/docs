@@ -1,4 +1,4 @@
-# Documentation of things with docupike
+# docupike – The easy cloud based documentation
 
 [`docs.docupike.com`](https://docs.docupike.com/)
 
@@ -9,10 +9,9 @@
 
 ## What is docupike?
 
-With docupike, you can document all technical and administrative information in your organization together in one place.
-One documentation for all use cases to optimize and automate critical processes.
-Create the digital twin of all things that matter to your business and ensure interoperability between platforms and systems on the basis of a well structured documentation system.
-docupike is operated by synetics GmbH, located in Düsseldorf/Germany.
+docupike is the easy cloud based documentation that holds all technical and administrative information in your organization in one place.
+It thus serves as the single source of truth when it comes to optimizing and automating your business processes.
+docupike is operated on secure cloud servers by synetics GmbH, located in Düsseldorf/Germany.
 
 ## Contribute!
 
