@@ -3,7 +3,7 @@ site_name: docupike docs
 site_url: https://docs.docupike.com/
 site_description: The easy cloud based documentation
 site_author: synetics GmbH
-copyright: Copyright &copy; 2019-22 synetics GmbH
+copyright: Copyright &copy; 2019-23 synetics GmbH
 repo_url: https://github.com/docupike/docs
 edit_uri: edit/main/docs/
 strict: true

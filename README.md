@@ -23,6 +23,6 @@ Do you like to [get in touch with us](SUPPORT.md)?
 
 ## Copyright & License
 
-Copyright (C) 2019-22 [synetics GmbH](https://docupike.com/)
+Copyright (C) 2019-23 [synetics GmbH](https://docupike.com/)
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
