@@ -1,11 +1,10 @@
 ---
-title: Documentation of things with docupike
+title: The easy cloud based documentation
 description: Overview
 lang: en
-ᴴₒᴴₒᴴₒ: false
 ---
 
-# Documentation of things with docupike
+# docupike – The easy cloud based documentation
 
 This is the online manual to your docupike.
 Here you will find the guidelines for users, administrators and developers plus some technical references.
