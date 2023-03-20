@@ -13,11 +13,11 @@ jobs:
       fail-fast: false
       matrix:
         script:
-          - system:npm-audit
-          - system:npm-doctor
-          - system:npm-outdated
-          - system:pip-audit
-          - system:pip-outdated
+          - system:npm:audit
+          - system:npm:doctor
+          - system:npm:outdated
+          - system:pip:audit
+          - system:pip:outdated
           - wtf
     runs-on: ubuntu-latest
     continue-on-error: true
@@ -34,7 +34,6 @@ jobs:
       - name: Pull container base image
         run: |
           docker-compose \
-            -f docker-compose-ci.yml \
             pull
       - name: Re-use container image layers
         uses: jpribyl/action-docker-layer-caching@v0.1.1
@@ -42,19 +41,16 @@ jobs:
       - name: Build container image
         run: |
           docker-compose \
-            -f docker-compose-ci.yml \
             build \
             --build-arg USER_ID="$(id -u)" \
             --build-arg GROUP_ID="$(id -g)"
       - name: Install toolchain
         run: |
           docker-compose \
-            -f docker-compose-ci.yml \
             run docs \
               npm ci
       - name: Run script
         run: |
           docker-compose \
-            -f docker-compose-ci.yml \
             run docs \
               npm run ${{ matrix.script }}
