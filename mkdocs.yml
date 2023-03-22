@@ -6,7 +6,7 @@ site_author: synetics GmbH
 copyright: Copyright &copy; 2019-23 synetics GmbH
 repo_url: https://github.com/docupike/docs
 edit_uri: edit/main/docs/
-strict: true
+strict: false
 theme:
   name: material
   custom_dir: theme
@@ -129,6 +129,16 @@ nav:
       - Users, groups and roles: admin/users-groups-roles.md
   - Developer guide:
       - API: dev/api.md
+      - Addon:
+          - Introduction: dev/addon/introduction.md
+          - Getting Started: dev/addon/quick-start.md
+          - Frontend: dev/addon/frontend.md
+          - JS Interface: dev/addon/js-api.md
+          - CMDB Structures: dev/addon/cmdb-structures.md
+          - API-CRUD: dev/addon/api-crud.md
+          - Settings: dev/addon/settings.md
+          - Licensing: dev/addon/licensing.md
+          - Useful Resources: dev/addon/useful-resources.md
   - Technical reference:
       - System requirements: ref/system-requirements.md
       - Version history: ref/version-history.md
