@@ -1,24 +1,146 @@
-FROM python:3-bullseye AS docupike-docs-build
+FROM ubuntu:22.10
 
-RUN apt-get update && \
-    apt-get full-upgrade -y && \
+LABEL org.opencontainers.image.vendor="synetics GmbH"
+LABEL org.opencontainers.image.title="docs/environment"
+LABEL org.opencontainers.image.description="Docs environment"
+LABEL org.opencontainers.image.documentation="https://docs.docupike.com/"
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+SHELL ["/bin/bash", "-euxo", "pipefail", "-c"]
+
+RUN apt-get update; \
+    apt-get full-upgrade -y; \
     apt-get install -y --no-install-recommends \
-        gcc \
+        apt-transport-https \
+        ca-certificates \
+        curl \
         git \
-    && \
-    apt-get clean && \
+        gnupg \
+        locales \
+        lsb-release \
+        openssl \
+        python3 \
+        python3-apt \
+        python3-dev \
+        python3-pip \
+        python3-setuptools \
+        python3-venv \
+        tar \
+    ;\
+    apt-get clean; \
     rm -rf /var/lib/apt/lists/*
 
-WORKDIR /usr/src/app
+RUN locale-gen en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
 
-COPY . .
+# Run this container as current host user:
+ARG USER_ID
+ARG GROUP_ID
+RUN groupadd -g "${GROUP_ID}" runner; \
+    useradd -l -u "${USER_ID}" -g runner runner; \
+    install -d -m 0750 -o runner -g runner /home/runner; \
+    chown "${USER_ID}":"${GROUP_ID}" -R /home/runner
 
-RUN pip install -U --no-cache-dir -r requirements.txt && \
-    mkdocs build
+WORKDIR /tmp/
 
-FROM nginx:alpine AS docupike-docs-web
+# Node.js and NPM:
+RUN curl -OfsSL \
+        https://raw.githubusercontent.com/tj/n/master/bin/n; \
+    install -m 0755 -o root -g root n /usr/local/bin/; \
+    rm n; \
+    n lts; \
+    npm install -g npm@latest
 
-COPY --from=docupike-docs-build /usr/src/app/site /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# hadolint:
+ARG HADOLINT_VERSION=2.12.0
+RUN curl -OfsSL \
+        "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64"; \
+    install -m 0755 -o root -g root hadolint-Linux-x86_64 /usr/local/bin/hadolint; \
+    rm hadolint-Linux-x86_64
 
-WORKDIR /usr/share/nginx/html
+# Docker:
+ARG DOCKER_VERSION_BRANCH=23
+ARG DOCKER_GROUP_ID=998
+RUN groupadd -g "${DOCKER_GROUP_ID}" docker; \
+    curl -fsSL \
+        https://download.docker.com/linux/ubuntu/gpg | \
+        gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
+    { \
+        echo "Enabled: yes"; \
+        echo "Types: deb"; \
+        echo "Architectures: amd64"; \
+        echo "URIs: https://download.docker.com/linux/ubuntu"; \
+        echo "Suites: $(lsb_release -cs)"; \
+        echo "Components: stable"; \
+        echo "Signed-By: /etc/apt/keyrings/docker.gpg"; \
+    } >> /etc/apt/sources.list.d/docker.sources; \
+    apt-get update; \
+    apt-get install -y --no-install-recommends \
+        docker-ce \
+        docker-ce-cli \
+        containerd.io \
+    ;\
+    { \
+        echo "Package: docker-ce*"; \
+        echo "Pin: version ${DOCKER_VERSION_BRANCH}.*"; \
+        echo "Pin-Priority: 999"; \
+    } >> /etc/apt/preferences.d/docker; \
+    apt-get clean; \
+    rm -rf /var/lib/apt/lists/*; \
+    usermod -a -G docker runner; \
+    touch /var/run/docker.sock; \
+    chown root:docker /var/run/docker.sock
+
+# Docker Compose:
+ARG DOCKER_COMPOSE_VERSION=2.16.0
+RUN curl -OfsSL \
+        "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
+    curl -OfsSL \
+        "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/checksums.txt"; \
+    sha256sum --check --strict --ignore-missing \
+        checksums.txt; \
+    mkdir -p /usr/libexec/docker/cli-plugins/; \
+    chmod 0755 /usr/libexec/docker/cli-plugins/; \
+    install -m 0755 -o root -g root docker-compose-linux-x86_64 /usr/libexec/docker/cli-plugins/docker-compose; \
+    rm \
+        docker-compose-linux-x86_64 \
+        checksums.txt
+
+# editorconfig-checker (ec):
+ARG EC_VERSION=2.7.0
+RUN curl -OfsSL \
+        "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/${EC_VERSION}/ec-linux-amd64.tar.gz"; \
+    tar -xzf ec-linux-amd64.tar.gz; \
+    install -m 755 -o root -g root bin/ec-linux-amd64 /usr/local/bin/ec; \
+    rm -r \
+        ec-linux-amd64.tar.gz \
+        bin/
+
+# Upgrade pip:
+RUN pip3 install --upgrade --no-cache-dir \
+        pip \
+        setuptools \
+        wheel \
+    ; \
+    apt-get remove -y \
+        python3-pip \
+        python3-setuptools \
+        python3-wheel \
+    ; \
+    apt-get autoremove -y
+
+# pip (common):
+COPY requirements.txt /tmp/
+RUN pip3 install --upgrade --no-cache-dir --requirement requirements.txt; \
+    rm requirements.txt
+
+USER runner
+
+ENV PATH="/home/runner/.local/bin:${PATH}"
+
+WORKDIR /runner
+
+CMD ["bash"]

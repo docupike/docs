@@ -15,7 +15,6 @@ pipeline {
             steps {
                 bitbucketStatusNotify(buildState: 'INPROGRESS')
                 sh("docker-compose \
-                    -f docker-compose-ci.yml \
                     build \
                     --pull \
                     --build-arg USER_ID=${env.USER_ID} \
@@ -25,12 +24,12 @@ pipeline {
         }
         stage('Install') {
             steps {
-                sh('docker-compose -f docker-compose-ci.yml run docs npm install')
+                sh('docker-compose run docs npm install')
             }
         }
         stage('Build') {
             steps {
-                sh('docker-compose -f docker-compose-ci.yml run docs npm run docs:build')
+                sh('docker-compose run docs npm run docs:build')
             }
         }
         stage('Deploy') {
