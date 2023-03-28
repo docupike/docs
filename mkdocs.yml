@@ -129,7 +129,7 @@ nav:
       - Users, groups and roles: admin/users-groups-roles.md
   - Developer guide:
       - API: dev/api.md
-      - Addon:
+      - Add-ons:
           - Introduction: dev/addon/introduction.md
           - Getting Started: dev/addon/quick-start.md
           - Frontend: dev/addon/frontend.md
@@ -137,6 +137,7 @@ nav:
           - CMDB Structures: dev/addon/cmdb-structures.md
           - API-CRUD: dev/addon/api-crud.md
           - Settings: dev/addon/settings.md
+          - Add-on Endpoints: dev/addon/addon-endpoints.md
           - Licensing: dev/addon/licensing.md
           - Useful Resources: dev/addon/useful-resources.md
   - Technical reference:
