@@ -4,31 +4,31 @@ Add-ons are supposed to be multi tenant capable so these settings with the tenan
 
 ## How to define the settings?
 
-In order to specify the possible settings of the add-on, you should declare the `settings` block in your `addon.json.
+In order to specify the possible settings of the add-on, you should declare the `settings` block in your `addon.json`.
 
 You can define the following types for your settings:
 
-* `string` - contains the textual setting
-* `int` - contains the number setting
+*   `string`: contains the textual setting
+*   `int`: contains the number setting
 
 For example, let's create some settings for our add-on:
 
 ```json
 {
-  "settings": [
-    {
-      "type": "string",
-      "id": "locale",
-      "name": "Preferred locale",
-      "default": "en-US"
-    },
-    {
-      "type": "int",
-      "id": "counter",
-      "name": "Current counter",
-      "default": 0
-    }
-  ]
+    "settings": [
+        {
+            "type": "string",
+            "id": "locale",
+            "name": "Preferred locale",
+            "default": "en-US"
+        },
+        {
+            "type": "int",
+            "id": "counter",
+            "name": "Current counter",
+            "default": 0
+        }
+    ]
 }
 ```
 
@@ -61,9 +61,9 @@ Let's extract the settings from this data:
 <details>
     <summary>Node.js + Express</summary>
 
-Adjust your index.js file to extract data from the `DATA` header and write it down to the response.
+Adjust your `index.js` file to extract data from the `DATA` header and write it down to the response.
 
-Let's create a helper function to extract the data from the header and use it in our endpoint
+Let's create a helper function to extract the data from the header and use it in our endpoint:
 
 ```js
 const express = require('express');
@@ -101,7 +101,7 @@ echo json_encode($settings);
 ```
 </details>
 
-Now, when we log in into docupike and call some add-on URL (for example, `/a/your-company/myapp/`), we will see the response
+Now, when we log in into docupike and call some add-on URL (for example, `/a/your-company/myapp/`), we will see the response:
 
 ```json
 {
@@ -110,7 +110,7 @@ Now, when we log in into docupike and call some add-on URL (for example, `/a/you
 }
 ```
 
-This way, you can adjust the behaviour of your service according to the user's needs.
+This way, you can adjust the behavior of your service according to the user's needs.
 
 ## Set the settings
 

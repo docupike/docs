@@ -13,3 +13,7 @@ allow:
   - period
   - color
   - easy
+  # Development-related:
+  - hook
+  - hooks
+  - spa

@@ -11,7 +11,7 @@ Features can be anything and fully depend on the use-case:
 
 ## What is an add-on?
 
-An add-on is a service that can be registered into docupike in order to extend the application with additional 
+An add-on is a service that can be registered into docupike in order to extend the application with additional
 functions or information. That means any add-on can provide a range of CMDB structures, like
 
 - Collections
@@ -22,7 +22,7 @@ functions or information. That means any add-on can provide a range of CMDB stru
 Additionally any add-on can access CMDB-data through our REST-API. It is also possible to implement your own UI in docupike.
 
 Each docupike add-on is a standalone application which can be registered. The only requirement is that
-it is reachable via HTTP(S) and provides a `manifest file.
+it is reachable via HTTP(S) and provides a `manifest` file.
 
 ### Possibilities of an add-on
 
@@ -39,7 +39,7 @@ do the following things:
 
 #### What can an add-on not do
 
-Every docupike add-on is a standalone application which is not necessarily located on the same server. Due to this 
+Every docupike add-on is a standalone application which is not necessarily located on the same server. Due to this
 strict separation an add-on **can not** modify any docupike files or directly access any code (both front- and backend).
 An add-on can thereby not:
 
@@ -76,13 +76,13 @@ The manifest file needs be named `addon.json` and has to look like this by defau
 
 ```json
 {
-  "title": "Add-on name",
-  "identifier": "example",
-  "product": "example-addon",
-  "vendor": "synetics",
-  "author": "Synetics HmbH",
-  "version": "1.0.0",
-  "description": "Example add-on that demonstrates the possibilities of add-ons"
+    "title": "Add-on name",
+    "identifier": "example",
+    "product": "example-addon",
+    "vendor": "synetics",
+    "author": "Synetics HmbH",
+    "version": "1.0.0",
+    "description": "Example add-on that demonstrates the possibilities of add-ons"
 }
 ```
 
@@ -97,16 +97,16 @@ For this you will need to put a `cmdb` section into your manifest file, like thi
 
 ```json
 {
-  "cmdb": {
-    "categories": [
-      {
-        "id": "host_status",
-        "title": "Host status",
-        "multivalue": true,
-        "properties": [ ... ]
-      }
-    ]
-  }
+    "cmdb": {
+        "categories": [
+            {
+                "id": "host_status",
+                "title": "Host status",
+                "multivalue": true,
+                "properties": […]
+            }
+        ]
+    }
 }
 ```
 
@@ -115,27 +115,26 @@ Check out [CMDB Structures](/dev/addon/cmdb-structures.html) for further informa
 #### Settings
 
 Another important part of the `addon.json` file is the possibility to include add-on specific settings that will be registered into
-docupike. These settings (and their values) will then be passed to the add-on via proxy request, just as the docupike
-URL and API key.
+docupike. These settings (and their values) will then be passed to the add-on via proxy request like the docupike URL and API key.
 
 Registering settings within the manifest file can look like this:
 
 ```json
 {
-  "settings": [
-    {
-      "type": "string",
-      "id": "locale",
-      "name": "Preferred locale",
-      "default": "en-US"
-    },
-    {
-      "type": "int",
-      "id": "counter",
-      "name": "Current counter",
-      "default": 0
-    }
-  ]
+    "settings": [
+        {
+            "type": "string",
+            "id": "locale",
+            "name": "Preferred locale",
+            "default": "en-US"
+        },
+        {
+            "type": "int",
+            "id": "counter",
+            "name": "Current counter",
+            "default": 0
+        }
+    ]
 }
 ```
 
@@ -157,7 +156,7 @@ Check out [Frontend > SPA](/dev/addon/frontend.html#how-to-add-new-frontend-rout
 
 #### Implement a page via IFRAME
 
-The IFRAME option can be used if you would like to use your own combination of backend and frontend. In this case 
+The IFRAME option can be used if you would like to use your own combination of backend and frontend. In this case
 docupike will embed an IFRAME with your add-on application. This solution gives you the most freedom of choice regarding
 your technology stack.
 

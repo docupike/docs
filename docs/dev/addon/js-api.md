@@ -8,7 +8,7 @@ The methods described below are available for all model types.
 
 ### Create
 
-`Create method allows you to create an entry of the selected model.
+Create method allows you to create an entry of the selected model.
 Usually, it receives an object as argument with fields of the model.
 Result of the call is a promise with the created entry. If there are some validation errors, promise will be declined.
 For example, if we want to create a category, we can call:
@@ -25,7 +25,7 @@ const object = await docu.Model.object.create(title:string, classId: string)
 console.log({ object });
 ```
 
-To find currenty existing classifications we can call:
+To find existing classifications we can call:
 ```
 const classification = await docu.Model.classification.find()
 
@@ -64,7 +64,7 @@ console.log({ category });
 ### Load
 
 Load method always load the current state of the model from backend and overwrites it in the local state of the application.
-It takes an `id of the entry to load as an argument and returns a promise with loaded entry.
+It takes the `id` of the entry to load as an argument and returns a promise with loaded entry.
 ```
 const category = await docu.Model.categoryInfo.load(id:string)
 

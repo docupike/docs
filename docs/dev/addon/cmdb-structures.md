@@ -1,5 +1,5 @@
-`CMDB Structures` is a useful feature of docupike's add-on architecture. It allows add-ons to require several CMDB structures to function correctly
-without the necessity to fire the corresponding API calls manually.
+`CMDB Structures` is a useful feature of docupike's add-on architecture.
+It allows add-ons to require several CMDB structures to function correctly without the necessity to send the corresponding API calls manually.
 
 ## Advantages
 
@@ -25,13 +25,13 @@ If docupike finds a `cmdb` section it will start a procedure to reflect these de
 
 ```json
 {
-  "title": "My special add-on",
-  "identifier": "my-special-addon",
-  [...]
-  "cmdb": {
-    # Definition of add-on specific cmdb structures
-    [...]
-  }
+    "title": "My special add-on",
+    "identifier": "my-special-addon",
+    […]
+    "cmdb": {
+        # Definition of add-on specific cmdb structures
+        […]
+    }
 }
 ```
 
@@ -61,11 +61,11 @@ Categories will be defined in `categories` key. The following is an example defi
                         # Type of property
                         "type": "text"
                     },
-                    [...]
+                    […]
                 ]
             },
-            # more categories...
-            [...]
+            # more categories…
+            […]
         ]
     }
 }
@@ -178,6 +178,6 @@ of the collection. You can get a list of all collection's and their ids over the
 
 #### Limitations
 
-Unfortunately there are some limitations which might require to use the API:
+There are some limitations which might require to use the API:
 
-* You cannot reference custom classes
+*   You cannot reference custom classes

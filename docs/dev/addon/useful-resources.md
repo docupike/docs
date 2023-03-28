@@ -3,7 +3,7 @@ The following document includes useful resources to extend your knowledge about 
 ## Add-on: Link Checker
 
 If you want to know how a simple add-on can look like to get a general understanding how things are linked together
-or just play around with the code you can use our [Link Checker add-on](https://bitbucket.org/synetics/addon-link-health-checker/src/main/).
+or play around with the code you can use our [Link Checker add-on](https://bitbucket.org/synetics/addon-link-health-checker/src/main/).
 
 This add-on allows you to simply check the URLs documented in the `Access` category for their availability.
 Therefore, it implements several features and makes use of a wide variety of possibilities. It can perfectly serve you as starting point

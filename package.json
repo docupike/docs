@@ -101,7 +101,7 @@
         "?test:spelling": "Check spelling",
         "test:spelling": "git ls-files | grep -e '\\.md$' | xargs mdspell --report --ignore-numbers --ignore-acronyms --en-us",
         "?test:wording": "Catch insensitive, inconsiderate writing",
-        "test:wording": "git ls-files | grep -e '\\.md$' | grep -v CODE_OF_CONDUCT changelog | xargs alex",
+        "test:wording": "alex",
         "?test:ec": "Verify that files are in harmony with .editorconfig",
         "test:ec": "ec",
         "?test:json": "Lint JSON files",
