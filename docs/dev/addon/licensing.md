@@ -72,4 +72,4 @@ Unsufficient license to register add-on.
 
 The same flow also applies to `enable` hook:
 
-![Register/Enable add-ons](licensing-1.png)
+![Register/Enable add-ons](/img/dev/addon/licensing-1.png)
