@@ -1,10 +1,3 @@
----
-id: addon-endpoints
-title: Add-on endpoints following REST
----
-
-## General Information
-
 An add-on is able to hook on specific add-on endpoints from the main application.
 These endpoints can then perform their own actions inside the add-on.
 

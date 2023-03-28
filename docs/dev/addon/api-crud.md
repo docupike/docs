@@ -1,10 +1,3 @@
----
-id: crud-docupike-api
-title: How to interact with docupike API
----
-
-## Introduction
-
 In general all add-ons have the ability to access the docupike API.
 With the API it is possible to interact or change the data of the application.
 In this section we will describe how the add-on can gain access to it.
