@@ -59,7 +59,7 @@ Here are some examples, how you can run the web server. You are free to use the 
 **Start server**
 
 <details>
-  <summary>PHP built-in Server</summary>
+    <summary>PHP built-in Server</summary>
 
 For development purpose, you can run the built-in PHP server using the following snippet
 
@@ -70,7 +70,7 @@ php -S 127.0.0.1:9000 -t public
 </details>
 
 <details>
-  <summary>Node.js + Express</summary>
+    <summary>Node.js + Express</summary>
 
 Init the node project:
 
