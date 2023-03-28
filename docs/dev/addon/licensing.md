@@ -21,32 +21,32 @@ The content is JSON encoded and should be decoded before accessing it:
 
 ```json
 {
-  "settings": [],
-  "docu": {
-      "url": "http://url-to-docupike.cloud/api",
-      "apikey": "ey...."
-  }, 
-  "license": [
-      {
-          "title": "Prod 1",
-          "objects": 100,
-          "attributes": {
-              "prop1": "value1",
-              "prop2": "value2",
-              [...]
-          }
-      },
-      {
-          "title": "Prod 2",
-          "objects": 100,
-          "attributes": {
-              "prop1": "value1",
-              "prop2": "value2",
-              [...]
-          }
-      },
-      [...]
-  ]
+    "settings": [],
+    "docu": {
+        "url": "http://url-to-docupike.cloud/api",
+        "apikey": "ey...."
+    },
+    "license": [
+        {
+            "title": "Prod 1",
+            "objects": 100,
+            "attributes": {
+                "prop1": "value1",
+                "prop2": "value2",
+                […]
+            }
+        },
+        {
+            "title": "Prod 2",
+            "objects": 100,
+            "attributes": {
+                "prop1": "value1",
+                "prop2": "value2",
+                […]
+            }
+        },
+        […]
+    ]
 }
 ```
 

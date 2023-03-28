@@ -22,13 +22,13 @@ Here is an example of the `addon.json` that you can copy to `public/addon.json` 
 
 ```json
 {
-  "author": "Your company Ltd",
-  "title": "Example add-on",
-  "description": "",
-  "identifier": "myapp",
-  "vendor": "your-company",
-  "product": "your-product",
-  "version": "1.0.0"
+    "author": "Your company Ltd",
+    "title": "Example add-on",
+    "description": "",
+    "identifier": "myapp",
+    "vendor": "your-company",
+    "product": "your-product",
+    "version": "1.0.0"
 }
 ```
 
@@ -83,18 +83,18 @@ Put the following content and adjust it with your information.
 
 ```json
 {
-  "name": "myapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+    "name": "myapp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2"
+    }
 }
 ```
 
@@ -145,9 +145,9 @@ bin/console docu:addons:register http://127.0.0.1:9000
 
 As result, you should receive a success message:
 
-```shell
+```
 
- [OK] Addon your-company.myapp is successfully registered.
+    [OK] Addon your-company.myapp is successfully registered.
 
 ```
 

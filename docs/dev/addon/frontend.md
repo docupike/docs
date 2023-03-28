@@ -3,9 +3,9 @@ Add-ons can extend UI of docupike.
 
 Add-on can define the frontend routes, create own pages and seamlessly add new functionality into docupike.
 
-## How to add new frontend routes? 
+## How to add new frontend routes?
 
-You can define your pages in the `routes` property of your `addon.json.
+You can define your pages in the `routes` property of your `addon.json`.
 
 Each item defines a frontend page of the application.
 
@@ -13,36 +13,39 @@ Each item defines a frontend page of the application.
 
 ```json
 {
-  "routes": [
-    {
-      "type": "spa",
-      "path": "",
-      "name": "index",
-      "component": "docu.addon.my-vendor.my-addon.Page",
-      "resources": [
-        "/frontend/assets/index.js",
-        "/frontend/assets/index.css"
-      ],
-      "menu": "My Add-on"
-    },
-    {
-      "path": "detail/{id}",
-      "name": "details",
-      "type": "spa",
-      "component": "docu.addon.my-vendor.my-addon.Details",
-      "resources": ["/frontend/assets/index.js", "/frontend/assets/index.css"]
-    }
-  ]
+    "routes": [
+        {
+            "type": "spa",
+            "path": "",
+            "name": "index",
+            "component": "docu.addon.my-vendor.my-addon.Page",
+            "resources": [
+                "/frontend/assets/index.js",
+                "/frontend/assets/index.css"
+            ],
+            "menu": "My Add-on"
+        },
+        {
+            "path": "detail/{id}",
+            "name": "details",
+            "type": "spa",
+            "component": "docu.addon.my-vendor.my-addon.Details",
+            "resources": [
+                "/frontend/assets/index.js",
+                "/frontend/assets/index.css"
+            ]
+        }
+    ]
 }
 ```
 
 You can define the following fields:
 
-`path` - defines the URL of your page. All URLs are relative to your add-on root path. For example, if you define an empty string as a path, the url to this page will be `/a/{vendor}/{addon}`.
+`path` - defines the URL of your page. All URLs are relative to your add-on root path. For example, if you define an empty string as a path, the URL to this page will be `/a/{vendor}/{addon}`.
 If you define a `subpage`, it will be `/a/{vendor}/{addon}/subpage`
 
 You can use the placeholders for variables in your path definition. Corresponding values will be passed to your component via props.
-For example, if you define `detail/{id}`, your component will receive a `params` object with `id inside. `/a/my-company/my-addon/details/123` will pass `params` `{ id: '123' }` to your component.
+For example, if you define `detail/{id}`, your component will receive a `params` object with `id` inside. `/a/my-company/my-addon/details/123` will pass `params` `{ id: '123' }` to your component.
 
 `name` - unique name of the route. Each defined route creates a unique route name like `addons.{my-company}.{addon}.{name}`.
 For example, if you define an `index` as the name of your route, the corresponding `addons.my-company.my-addon.index` route will be created.
@@ -75,7 +78,7 @@ Your JS file(s) should be built as UMD. React/ReactDOM should be used as externa
 
 The components in docupike add-ons should be standard React components.
 
-In order to register components, you should call: 
+In order to register components, you should call:
 ```
 docu.Registry.registerComponent(uniqueName: string, component: ComponentType)
 ```
@@ -89,7 +92,7 @@ In order to navigate through the application without reloading the page, you sho
 
 `docu.Routing.goto(routeName: string, params: Record<string, any>)` - navigate to the other page by route name and applied parameters to the route.
 
-For example, when you want to open your defined details page with some specific `id`, you can call: 
+For example, when you want to open your defined details page with some specific `id`, you can call:
 ```
 docu.Routing.goto('addons.my-company.my-addon.details', { id: 'some-id' })
 ```
