@@ -7,7 +7,7 @@ mkdocs-git-revision-date-localized-plugin ~= 1.2.0
 mkdocs-macros-plugin ~= 0.7.0
 mkdocs-material == 9.1.4
 mkdocs-minify-plugin ~= 0.6.4
-pip-audit == 2.5.3
+pip-audit == 2.5.4
 Pygments ~= 2.14.0
 pymdown-extensions ~= 9.10
 PyOpenSSL ~= 23.1.1
