@@ -95,16 +95,16 @@ In this example, we will import the following list of people.
 
 | **Employee ID** | **Name** | **Job Title** | **Business e-mail** | **Telephone** |
 | --- | --- | --- | --- | --- |
-| E001 | Ambrose Tretgall | CEO | tretgall@docupike.com | +49211699310 |
-| E002 | Audrey Blondcrew | CFO | blondcrew@docupike.com | +49211699310 |
-| E003 | Channing Wheatend | CMO | wheatend@docupike.com | +49211699310 |
-| E004 | Clarissa Baudstaff | IT Manager | baudstaff@docupike.com | +49211699310 |
-| E005 | Davin Silvercocke | Sales Accountant | silvercocke@docupike.com | +49211699310 |
-| E006 | Dorian Glewrodger | Sales Accountant | glewrodger@docupike.com | +49211699310 |
-| E007 | Ethan Groomstone | Sales Accountant | groomstone@docupike.com | +49211699310 |
-| E008 | George Smith | Senior IT Engineer | smith@docupike.com | +49211699310 |
-| E009 | Fabian Prickflour | IT Engineer | prickflour@docupike.com | +49211699310 |
-| E010 | Fenton Wrightley | Sales Accountant | wrightley@docupike.com | +49211699310 |
+| `E001` | `Ambrose Tretgall` | CEO | `tretgall@docupike.com` | `+49211699310` |
+| `E002` | `Audrey Blondcrew` | CFO | `blondcrew@docupike.com` | `+49211699310` |
+| `E003` | `Channing Wheatend` | CMO | `wheatend@docupike.com` | `+49211699310` |
+| `E004` | `Clarissa Baudstaff` | IT Manager | `baudstaff@docupike.com` | `+49211699310` |
+| `E005` | `Davin Silvercocke` | Sales Accountant | `silvercocke@docupike.com` | `+49211699310` |
+| `E006` | `Dorian Glewrodger` | Sales Accountant | `glewrodger@docupike.com` | `+49211699310` |
+| `E007` | `Ethan Groomstone` | Sales Accountant | `groomstone@docupike.com` | `+49211699310` |
+| `E008` | `George Smith` | Senior IT Engineer | `smith@docupike.com` | `+49211699310` |
+| `E009` | `Fabian Prickflour` | IT Engineer | `prickflour@docupike.com` | `+49211699310` |
+| `E010` | `Fenton Wrightley` | Sales Accountant | `wrightley@docupike.com` | `+49211699310` |
 
 ### Create persons via CSV import
 
@@ -130,7 +130,7 @@ The next step is to map the columns to the data fields. To do this, we now map t
 
 A new workstation can now be created via the "Workplace" class. Alternatively, a workstation can also be created directly in the respective room via the Location view. To do this, navigate to one of the created rooms and click on the "New object" button.
 
-[![Create new object from Location vew](/img/screenshots/create-buildings-rooms-and-workplaces/image017.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image017.png)
+[![Create new object from Location view](/img/screenshots/create-buildings-rooms-and-workplaces/image017.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image017.png)
 
 The Workplace is now automatically linked to the room. In the left navigation we now select the category "Contacts". In this category, users, administrators and other important contacts can be entered.
 

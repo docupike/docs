@@ -12,6 +12,7 @@ CMDB
 CodeHilite
 combobox
 comboboxes
+CQRS
 CSS
 CSV
 CVE
@@ -33,6 +34,7 @@ iframe
 IPv4
 IPv6
 ITAM
+ITSM
 JBoss
 JS
 LAP-123
@@ -72,6 +74,7 @@ timestamp
 tl
 tooltip
 tooltips
+UMD
 unregister
 unselect
 UTF-8
