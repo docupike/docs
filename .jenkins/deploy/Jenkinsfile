@@ -24,12 +24,12 @@ pipeline {
         }
         stage('Install') {
             steps {
-                sh('docker-compose run docs npm install')
+                sh('docker-compose run env npm install')
             }
         }
         stage('Build') {
             steps {
-                sh('docker-compose run docs npm run docs:build')
+                sh('docker-compose run env npm run docs:build')
             }
         }
         stage('Deploy') {
