@@ -95,7 +95,7 @@ RUN groupadd -g "${DOCKER_GROUP_ID}" docker; \
     chown root:docker /var/run/docker.sock
 
 # Docker Compose:
-ARG DOCKER_COMPOSE_VERSION=2.16.0
+ARG DOCKER_COMPOSE_VERSION=2.17.2
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \
