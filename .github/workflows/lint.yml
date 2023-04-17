@@ -20,6 +20,7 @@ jobs:
           - cpd
           - docker-compose
           - dockerfile
+          - jenkinsfile
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
