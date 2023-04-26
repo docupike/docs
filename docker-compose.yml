@@ -14,6 +14,9 @@ services:
       - home:/home/runner
     cap_drop:
       - ALL
+    privileged: false
+    group_add:
+      - ${DOCKER_GID:-998}
     read_only: true
     tmpfs:
       - /tmp
