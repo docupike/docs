@@ -1,4 +1,4 @@
-FROM ubuntu:22.10
+FROM ubuntu:23.04
 
 LABEL org.opencontainers.image.vendor="synetics GmbH"
 LABEL org.opencontainers.image.title="docs/environment"
@@ -31,7 +31,7 @@ RUN apt-get update; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/*
 
-RUN locale-gen en_US.UTF-8
+RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
@@ -39,7 +39,10 @@ ENV LC_ALL en_US.UTF-8
 # Run this container as current host user:
 ARG USER_ID
 ARG GROUP_ID
-RUN groupadd -g "${GROUP_ID}" runner; \
+RUN touch /var/mail/ubuntu; \
+    chown ubuntu /var/mail/ubuntu; \
+    userdel -r ubuntu; \
+    groupadd -g "${GROUP_ID}" runner; \
     useradd -l -u "${USER_ID}" -g runner runner; \
     install -d -m 0750 -o runner -g runner /home/runner; \
     chown "${USER_ID}":"${GROUP_ID}" -R /home/runner
@@ -63,9 +66,7 @@ RUN curl -OfsSL \
 
 # Docker:
 ARG DOCKER_VERSION_BRANCH=23
-ARG DOCKER_GROUP_ID=998
-RUN groupadd -g "${DOCKER_GROUP_ID}" docker; \
-    curl -fsSL \
+RUN curl -fsSL \
         https://download.docker.com/linux/ubuntu/gpg | \
         gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
     { \
@@ -90,12 +91,10 @@ RUN groupadd -g "${DOCKER_GROUP_ID}" docker; \
     } >> /etc/apt/preferences.d/docker; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/*; \
-    usermod -a -G docker runner; \
-    touch /var/run/docker.sock; \
-    chown root:docker /var/run/docker.sock
+    usermod -a -G docker runner
 
 # Docker Compose:
-ARG DOCKER_COMPOSE_VERSION=2.17.2
+ARG DOCKER_COMPOSE_VERSION=2.17.3
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \
@@ -120,7 +119,7 @@ RUN curl -OfsSL \
         bin/
 
 # Upgrade pip:
-RUN pip3 install --upgrade --no-cache-dir \
+RUN pip3 install --upgrade --no-cache-dir --break-system-packages \
         pip \
         setuptools \
         wheel \
@@ -132,9 +131,12 @@ RUN pip3 install --upgrade --no-cache-dir \
     ; \
     apt-get autoremove -y
 
-# pip (common):
+# pip:
 COPY requirements.txt /tmp/
-RUN pip3 install --upgrade --no-cache-dir --requirement requirements.txt; \
+RUN pip3 install \
+        --upgrade --no-cache-dir --break-system-packages \
+        --requirement requirements.txt \
+    ; \
     rm requirements.txt
 
 USER runner
