@@ -1,4 +1,4 @@
-FROM ubuntu:23.04
+FROM ubuntu:23.10
 
 LABEL org.opencontainers.image.vendor="synetics GmbH"
 LABEL org.opencontainers.image.title="docs/environment"
