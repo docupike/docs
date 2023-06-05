@@ -1,6 +1,6 @@
 # IP Address Management with Docupike
 
-An essential part of an IT documentation is the maintenance of IP networks, IP addresses and various network components, the so-called IP Address Management (IPAM).
+An essential part of an IT documentation is the maintenance of IP networks, IP addresses and various network components, the so-called IP Address Management (IPAM).<br>
 You can document IP addresses, Subnetworks, Supernetworks and configuration. Also you can browse, filter and manage them conveniently.
 
 ## Overview
@@ -37,39 +37,42 @@ To get a better overview you use the [Network collection](../basics/collections.
 
 [![Network collection](/img/screenshots/ipam/network-finder.png)](/img/screenshots/ipam/network-finder.png)
 
-Now you can focus on creating networks. You will start with a `Supernetwork`.
-After the creation of the `Supernetwork` you edit the `Network definition` category. Here you define that this Supernetwork uses IPv4, the `Network address` and a `Subnetmask`. If you already created a Router object, you can set it here as `Default router` for the Supernetwork.
+Now you can focus on creating networks. You will start with a `Supernetwork`.<br>
 
 [![Create a Supernetwork](/img/screenshots/ipam/create-supernet.png)](/img/screenshots/ipam/create-supernet.png)
 
-!!!tip
+After creating the `Supernetwork` edit the category `Network definition`. Here you define the attributes like in which [Section](#network-section) this supernetwork will be placed or the `IP version` e.g. `IPv4`, the `Network address` and a `Subnetmask`. If you already created a Router object, you can set it here as `Default router` for the Supernetwork.
+
+[![Create a Supernetwork](/img/screenshots/ipam/network-definition.png)](/img/screenshots/ipam/network-definition.png)
+
+
+!!! tip
     You can either type the _dotted decimal notation_ `255.255.0.0` or the _suffix_ `8` into the Subnetmask field
 
 ## 2. Create a Network
 
-There are two ways of creating a Network object:
-can document their IP addresses, Subnetworks, Supernetworks and configurations, and can browse, filter and manage them conveniently
+There are two ways of creating a Network object:<br>
 
 - Create it via the [Network class](../basics/classes.md)
 - Create it via the `Supernetwork category -> Subnetworks`
 
-You will create it via the `Supernetwork category -> Subnetworks`.
+You will create it via the `Supernetwork category -> Subnetworks`.<br>
 Here you type in the Network `Name`, select the IP `Version`, insert the `Network address` and `Subnetmask`. Also you can assign a `Default router` if available.
 
 [![Create Network via Supernetwork](/img/screenshots/ipam/subnetwork-via-supernet-filled.png)](/img/screenshots/ipam/subnetwork-via-supernet-filled.png)
 
 Now the Network will appear in the Subnetworks list of the Supernetwork.
 
-TODO [![Subnetworks of Supernetwork](/img/screenshots/ipam/FILENAME.png)](/img/screenshots/ipam/FILENAME.png)
+[![Subnetworks of Supernetwork](/img/screenshots/ipam/subnetwork-via-supernet-list.png)](/img/screenshots/ipam/subnetwork-via-supernet-list.png)
 
 ## 3. Define a DHCP scope
 
-In the Network definition category you document the IP `Version`, the `Network address` and `Subnetmask`. Also you can assign a `Default router` if available.
+In the Network definition category you document the IP `Version`, the `Network address` and `Subnetmask`. Also you can assign a `Default router` if available.<br>
 In the `Network object` you can configure `DHCP scopes`. You will define a DHCP scope for Clients.
 
 [![Create a DHCP scope](/img/screenshots/ipam/dhcp-client.png)](/img/screenshots/ipam/dhcp-client.png)
 
-To set a `IP range` you click into the field or on the Edit button after the field.
+To set a `IP range` you click into the field or on the Edit button after the field.<br>
 Now you will specify the `IP range` there are different ways to do this.
 
 The first way is to use the `List view`. Here you can either `enter the IP address` into the `IP range from` and `IP range to` fields or select a `IP range` via clicking on the wanted `IP address`. For this you also need to select a IP address for the field `IP range from` and for`IP range to`.
@@ -87,8 +90,8 @@ Now you can save the entry. The list displays the `Title`, the `IP range` with `
 
 ## 4. Assign Clients to IP addresses
 
-Since you are still in the IP list you can click the `Edit` button with the `pencil icon` in the `Actions` column.
-Now you select a `object` and the assignment is done. The `IP list` is immediately updated.
+Since you are still in the IP list you can click the `Edit` button with the `pencil icon` in the `Actions` column.<br>
+Now you select a `object` and the assignment is done. The `IP list` is immediately updated.<br>
 The `link button` will open the `object` in a new tab.
 
 [![IP list view](/img/screenshots/ipam/assign-client.png)](/img/screenshots/ipam/assign-client.png)
@@ -106,25 +109,23 @@ If you manually assigned a IP address, the `Configuration` column will set to `S
 
 ## 5. Network overview
 
-At the `Network overview` you can see details and statistics about your networks.
-
+At the `Network overview` you can see details and statistics about your networks.<br>
 The overview for `All networks` displays the IP addresses usage details for all networks and also displays all networks.
 
-[![TEXT](/img/screenshots/ipam/allnet-overview.png)](/img/screenshots/ipam/allnet-overview.png)
+[![All networks](/img/screenshots/ipam/allnet-overview.png)](/img/screenshots/ipam/allnet-overview.png)
 
-The overview for a `Section` displays the IP addresses usage details for the networks in the `Section` and the all networks.
+The overview displays the IP addresses usage details for the selected network.
 
-[![TEXT](/img/screenshots/ipam/sec-overview.png)](/img/screenshots/ipam/sec-overview.png)
+[![Network Section](/img/screenshots/ipam/sec-overview.png)](/img/screenshots/ipam/sec-overview.png)
 
 The overview for a `Network` will display the usage detail details for the selected network, a Donut chart and the IP addresses.
 
-[![TEXT](/img/screenshots/ipam/net-overview.png)](/img/screenshots/ipam/net-overview.png)
+TODO need new screenshots because of ne expand button
+[![Network Usage](/img/screenshots/ipam/net-overview.png)](/img/screenshots/ipam/net-overview.png)
 
-
-For later use
 ### IP list category
 
-The IP list category provides a comprehensive overview of each net. All IP addresses are listed, including `IP address range` with `counter` and the `Configuration` of the IP address.
+The IP list category provides a comprehensive overview of each net. All IP addresses are listed, including `IP address range` with `counter` and the `Configuration` of the IP address.<br>
 Here you can assign a IP address by click the `Edit` button with the `pencil icon`.
 
-[![TEXT](/img/screenshots/ipam/ip-list.png)](/img/screenshots/ipam/ip-list.png)
+[![IP list](/img/screenshots/ipam/ip-list.png)](/img/screenshots/ipam/ip-list.png)
