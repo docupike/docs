@@ -1,9 +1,9 @@
 ---
 site_name: docupike docs
 site_url: https://docs.docupike.com/
-site_description: Documentation of things with docupike
+site_description: The easy cloud based documentation
 site_author: synetics GmbH
-copyright: Copyright &copy; 2019-22 synetics GmbH
+copyright: Copyright &copy; 2019-23 synetics GmbH
 repo_url: https://github.com/docupike/docs
 edit_uri: edit/main/docs/
 strict: true
@@ -30,9 +30,12 @@ theme:
   language: en
   favicon: favicon.ico
   features:
-    - search.suggest
+    - content.action.edit
+    - content.code.copy
+    - navigation.footer
     - navigation.sections
     - navigation.top
+    - search.suggest
 extra_javascript:
   - js/status.js
 extra_css:
@@ -97,6 +100,8 @@ nav:
           - Classes: user/basics/classes.md
           - Collections: user/basics/collections.md
           - Categories and attributes: user/basics/categories-and-attributes.md
+          - Enable or disable attributes: user/basics/enable-disable-attributes.md
+          - Menu bar: user/basics/menubar.md
           - Objects: user/basics/objects.md
       - Finder:
           - Inline editing: user/finder/inline-editing.md
@@ -108,19 +113,34 @@ nav:
       - Imports:
           - CSV: user/imports/csv.md
       - Use cases:
+          - Documentation and naming conventions: user/usecases/it-documentation-and-naming-conventions.md
+          - How to Start: user/usecases/how-to-start.md
+          - Import your first csv file: user/usecases/import-data.md
+          - Locations: user/usecases/locations.md
           - IP address management: user/usecases/ipam.md
           - Quick Edit in Lists: user/usecases/quick-edit-in-lists.md
-          - Locations: user/usecases/locations.md
           - Rights assignment: user/usecases/rights-assignment.md
+          - Reports: user/usecases/reports.md
           - Workplace documentation: user/usecases/workplace-documentation.md
   - Admin guide:
-      - Createing custom Categories: admin/custom-categories.md
+      - Creating custom Categories: admin/custom-categories.md
       - Create custom classes: admin/custom-classes.md
       - Export Data: admin/export-data.md
       - Rights and permissions: admin/rights-and-permissions.md
       - Users, groups and roles: admin/users-groups-roles.md
   - Developer guide:
       - API: dev/api.md
+      - Add-ons:
+          - Introduction: dev/addon/introduction.md
+          - Getting Started: dev/addon/quick-start.md
+          - Frontend: dev/addon/frontend.md
+          - JS Interface: dev/addon/js-api.md
+          - CMDB Structures: dev/addon/cmdb-structures.md
+          - API-CRUD: dev/addon/api-crud.md
+          - Settings: dev/addon/settings.md
+          - Add-on Endpoints: dev/addon/addon-endpoints.md
+          - Licensing: dev/addon/licensing.md
+          - Useful Resources: dev/addon/useful-resources.md
   - Technical reference:
       - System requirements: ref/system-requirements.md
       - Version history: ref/version-history.md

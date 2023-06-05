@@ -141,7 +141,7 @@ Have you found misspellings, grammar mistakes, logical gaps? Have not you found 
 This project comes with some useful NPM scripts. List all of them:
 
 ~~~ {.bash}
-npm run info
+npm run
 ~~~
 
 ## Further readings

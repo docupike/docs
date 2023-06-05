@@ -11,3 +11,9 @@ allow:
   - simple
   - crash
   - period
+  - color
+  - easy
+  # Development-related:
+  - hook
+  - hooks
+  - spa

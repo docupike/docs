@@ -1,11 +1,25 @@
 ---
-version: "3.8"
-
 services:
 
-  website:
+  env:
     build:
-      context: "./"
-    restart: on-failure
-    ports:
-      - 8001:80
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USER_ID: 1000
+        GROUP_ID: 1000
+    image: ${REGISTRY_PREFIX:-}docs/environment:main
+    volumes:
+      - "${PWD}:/runner/"
+      - home:/home/runner
+    cap_drop:
+      - ALL
+    privileged: false
+    group_add:
+      - ${DOCKER_GID:-998}
+    read_only: true
+    tmpfs:
+      - /tmp
+
+volumes:
+  home:

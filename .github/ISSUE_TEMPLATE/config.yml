@@ -3,10 +3,10 @@ blank_issues_enabled: false
 contact_links:
   - name: Website
     url: https://docupike.com/
-    about: Documentation of things with docupike
+    about: The easy cloud based documentation
   - name: Docs
     url: https://docs.docupike.com/
-    about: Documentation of things with docupike
+    about: The easy cloud based documentation
   - name: Status
     url: https://status.docupike.com/
     about: Status page
