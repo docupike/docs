@@ -90,7 +90,7 @@ As mentioned properties are an embedded part of the category definition. A prope
 
 The following section describes the most common types:
 
-* `text` - simple text input
+* `text`: Simple text input
 * `multiline-text`: Multi-line text input with larger capacity and better handling in the UI
 * `number`: Simple number field - can hold integers and floats
 * `bool`: Simple Yes/No field to query boolean information
@@ -128,6 +128,15 @@ Classifications are also manageable by `CMDB Structures`. You can define them in
                 "categories": [
                     "cmdb.access",
                     "cmdb.formfactor"
+                ],
+                # List of objects for defined class
+                "objects": [
+                    "object-id-1": {
+                        "title": "Example object1"
+                    },
+                    "object-id-2": {
+                        "title": "Example object2"
+                    }
                 ]
             }
         ]
@@ -139,6 +148,47 @@ Classifications are also manageable by `CMDB Structures`. You can define them in
 * `title`: The `title` attribute defines its naming in the UI and is the human-readable presentation of the class
 * `icon`: The `icon` cannot refer to external resources and have to reference built-in resources from docupike
 * `categories`: Definition of assigned categories by using full ids of categories
+* `objects`: Definition of objects for class
+
+#### Objects
+
+The CMDB feature allows add-on developer to predefine objects. The objects can be added to defined classes.
+The most simple example is an object with a title (see above). Also, it's possible to define entries within object using `data` key:
+
+```json
+{
+    "object-id-1": {
+        "title": "Example object1",
+        "data": {
+            "cmdb.address": {
+                "one": {
+                    "streetAddress": "Musterstr 9",
+                    "postCode": "40234",
+                    "country": "Germany",
+                    "city": "Düsseldorf"
+                }
+            },
+            "cmdb.cpu": {
+                "one": {
+                    "cores": 2,
+                    "vendor": "Intel",
+                    "model": "i123"
+                },
+                "two": {
+                    "cores": 2,
+                    "vendor": "Intel",
+                    "model": "i123"
+                }
+            }
+        }
+    },
+    "example-id-2": {
+        "title": "Example object2"
+    }
+}
+```
+
+* `data`: The `data` attribute defines entries for some categories ("cmdb.address" and "cmdb.cpu" in this example). The data for every entry includes the values for the properties.
 
 #### Updating existing classes
 
