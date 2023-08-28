@@ -5,6 +5,7 @@ backend
 Behat
 Bitbucket
 boolean
+Bugfixing
 changelog
 checkbox
 checkboxes
@@ -17,6 +18,7 @@ CSS
 CSV
 CVE
 DESK-456
+DSN
 docupike
 docupike.cloud
 dropdown
@@ -69,6 +71,7 @@ sexualized
 ShareAlike
 subdomain
 subnetmask
+subnetwork
 Symfony
 synetics
 tbd
