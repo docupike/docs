@@ -1,6 +1,6 @@
 ---
 title: Rights assignment
-description: How to assign Rights to different user groups
+description: How to assign rights to different user groups
 lang: en
 ---
 
@@ -76,8 +76,8 @@ We log in with our created user "Alex Accounting".
 | When calling an object, only the categories General, Accounting and Location should now display information. When trying to edit the category Location, it should be displayed that the user does not have sufficient permissions. | [![TEXT](/img/screenshots/rights-assignment/no-permissions.png)](/img/screenshots/rights-assignment/no-permissions.png)|
 
 !!!info
-    **Difference between Rights and Permissions** 
-    i-doit distinguishes between functional _rights_ and _permissions_ to access specific information in the documentation.
+
+    **Difference between Rights and Permissions:** docupike distinguishes between functional _rights_ and _permissions_ to access specific information in the documentation.
 
     **Rights:** A right allows a user to use a certain function or to define administrative settings.
 
