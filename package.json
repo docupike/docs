@@ -38,7 +38,7 @@
         "rapidoc": "^9",
         "remark-cli": "^11.0.0",
         "remark-frontmatter": "^4.0.1",
-        "remark-gfm": "^3.0.1",
+        "remark-gfm": "^4.0.0",
         "remark-lint": "^9.1.2",
         "remark-lint-match-punctuation": "^0.2.1",
         "remark-lint-no-dead-urls": "^1.1.0",
