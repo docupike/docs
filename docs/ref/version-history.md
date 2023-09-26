@@ -10,6 +10,7 @@ lang: en
 
 | Version           | Date          | Release Notes                             | Changelog                                 |
 | ----------------- | ------------- | ----------------------------------------- | ----------------------------------------- |
+| `2.0.0`           | 2023-09-26    | [Release notes](release-notes/v2.0.0.md)  | [Changelog](changelog.md#200-2023-09-26)  |
 | `1.0.6`           | 2023-05-24    | [Release notes](release-notes/v1.0.6.md)  | [Changelog](changelog.md#106-2023-05-24)  |
 | `1.0.5`           | 2023-04-19    | [Release notes](release-notes/v1.0.5.md)  | [Changelog](changelog.md#105-2023-04-26)  |
 | `1.0.4`           | 2023-04-19    | [Release notes](release-notes/v1.0.4.md)  | [Changelog](changelog.md#104-2023-04-19)  |
