@@ -9,6 +9,77 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.0.0 – 2023-09-26
+
+### Added
+
+-   Create Entry: Enable user to add new MV entry in Finder (`ID2-4655`)
+-   Inline editing: Show additional actions of the control on hover (`ID2-4656`)
+-   Multi-Tenancy: Create tenant overview table in settings area (`ID2-4562`)
+-   Multi-Tenancy: Implement create tenant on manage tenants page (`ID2-4565`)
+-   Multi-Tenancy: Add possibility to assign tenant(s) while creating user (`ID2-4573`)
+-   Onboarding wizard for new users: Create an on-boarding journey for finder (`ID2-4585`)
+-   Onboarding wizard for new users: Create an on-boarding journey for Object Details Page (`ID2-4586`)
+-   Onboarding wizard for new users: Create an on-boarding journey for Report (`ID2-4587`)
+-   Onboarding wizard for new users: Create an on-boarding journey for Settings (`ID2-4588`)
+-   Onboarding wizard for new users: Create a general introduction (`ID2-4589`)
+-   Onboarding wizard for new users: Create a general outro (`ID2-4590`)
+-   Onboarding wizard for new users: Open Help-Center (`ID2-4591`)
+
+### Changed
+
+-   Duplicate objects: Allow user to duplicate object in finder (`ID2-4716`)
+-   UI components: Select whole text when user focuses combobox (`ID2-4644`)
+
+### Fixed
+
+-   IPAM - Manage IP Address Table: Add missing open object button in IP table (`ID2-4696`)
+-   Object browser: Show assigned classes in the object browser, even if no object of the class exists (`ID2-4604`)
+-   Reports Main Feature: Fix loading data on report view (`ID2-4700`)
+-   Settings: Fix retrieving user settings (`ID2-4611`)
+
+## 1.1.0 – 2023-09-08
+
+### Added
+
+-   Add-ons: Add general loading state for loading add-on resources (`ID2-4504`)
+-   Add-ons: Allow add-ons to register docupike widgets (`ID2-4624`)
+-   Object browser: Add combobox to object browser (`ID2-4505`)
+-   Object browser: Enable user to add new object in Object Browser (`ID2-4515`)
+-   Settings: Add Help section to menu (`ID2-3806`)
+-   UI form fields: Allow user to resize textarea fields (`ID2-4525`)
+
+### Changed
+
+-   IPAM - Network Overview: Show network statistic for network itself or underlying networks (`ID2-4204`)
+-   IPAM - Network Overview: Improve visual grouping of network page (`ID2-4500`)
+-   UT 20210317 Find, Create, Connect: Implement Attribute Search on Object Details Page (`ID2-3393`)
+-   UT - 20220321 Create and Connect Infrastructure: Make empty table state dynamic in finder (`ID2-3385`)
+
+### Fixed
+
+-   Categories and attributes: Correctly calculate overall costs per period for assigned objects (`ID2-4078`)
+-   IPAM - Bugfixing: Add open object button to IP networking category (`ID2-4110`)
+-   IPAM - Bugfixing: Fix and adjust colors in IPAM Map (`ID2-4142`)
+-   Object details: Fix losing selected category on ODP after reloading the page (`ID2-4583`)
+-   Object search and filter: Fix search for categories and attributes on ODP (`ID2-4498`)
+-   Object search and filter: Clean up search index when object is removed (`ID2-4499`)
+-   Reports Main Feature: Show only selected attributes in create/edit report modal (`ID2-4002`)
+-   Settings: Fix retrieving user settings (`ID2-4611`)
+-   UT 20220530 Find / create / connect objects: Avoid endless loop in search of object browser (`ID2-4130`)
+
+## 1.0.7 – 2023-07-07
+
+### Added
+
+-   Add-ons: Add general loading state for loading add-on resources (`ID2-4504`)
+-   Settings: Add Help section to menu (`ID2-3806`)
+
+### Fixed
+
+-   UI buttons: Allow user to click open object button (`ID2-4528`)
+-   UI Dialog+ Improvements: Show error message when user fills dialog plus field with more than 500 chars (`ID2-4527`)
+
 ## 1.0.6 – 2023-05-24
 
 ### Added
@@ -68,7 +139,7 @@ _tbd_
 -   IPAM - Manage IP Address Table: Change default sorting to "ascending" in network & IP address table (`ID2-4178`)
 -   Registration : Log in user when they set new password (`ID2-4289`)
 -   Settings Refactoring: Add new table component to user area in settings (`ID2-3361`)
--   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for Inline Form Field Single Select Pulldown (`ID2-1259`)
+-   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for Inline Form Field Single Select Pulldowns (`ID2-1259`)
 -   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for Inline Form Field Multi Select Pulldown (`ID2-1260`)
 -   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for  Inline Form Field Single Select Combobox (`ID2-1261`)
 
@@ -127,13 +198,13 @@ _tbd_
 -   History: Show the documentation state for objects in History (`ID2-3742`)
 -   IPAM - Bugfixing: Do not allow limited user to see overview of other sections (`ID2-4113`)
 -   IPAM - Bugfixing: Allow to open in new tab action in network view in Firefox (`ID2-4180`)
--   IPAM - Bugfixing: Fix duplicate behavior for network objects (`ID2-4181`)
+-   IPAM - Bugfixing: Fix duplicate behaviour for network objects (`ID2-4181`)
 -   IPAM - Bugfixing: Add missing background on network segment dropdown (`ID2-4183`)
 -   IPAM - Bugfixing: Allow to switch networks tab when statistics are hidden (`ID2-4208`)
 -   IPAM - Edit Object Assignment / IP List: Show a single scope in bar graph  (`ID2-4189`)
 -   Navigation: Make all objects class string bold again (`ID2-3416`)
 -   Navigation: Make Inventory menu button responsive to close (`ID2-3666`)
--   Object ranking: Do not highlight pagination when object state is adjusted from Object details page (`ID2-3595`)
+-   Object ranking: Do not highlight pagination when object state is adjusted from ODP (`ID2-3595`)
 -   Object search and filter: Fix the layout when there is a validation error in date quick filters (`ID2-3727`)
 -   Product Plans and Feature Sets: Change Date column of the Invoice table to use created date (`ID2-4201`)
 -   QA Launch-check : Disable "Show Results" button until a valid filter is selected (`ID2-3861`)
