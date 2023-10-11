@@ -18,10 +18,10 @@ CSS
 CSV
 CVE
 DESK-456
-DSN
 docupike
 docupike.cloud
 dropdown
+DSN
 duplicatable
 DVCS
 e.g.
@@ -52,6 +52,7 @@ Node.js
 NPM
 OpenAPI
 OpenPGP
+outro
 packagist
 PC-123
 PHP
