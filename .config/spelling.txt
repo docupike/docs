@@ -53,6 +53,7 @@ NPM
 ODP
 OpenAPI
 OpenPGP
+outro
 packagist
 PC-123
 PHP

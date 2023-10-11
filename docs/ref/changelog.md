@@ -9,6 +9,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.0.0 – 2023-09-26
+
+### Added
+
+-   Create Entry: Enable user to add new MV entry in Finder (`ID2-4655`)
+-   Inline editing: Show additional actions of the control on hover (`ID2-4656`)
+-   Multi-Tenancy: Create tenant overview table in settings area (`ID2-4562`)
+-   Multi-Tenancy: Implement create tenant on manage tenants page (`ID2-4565`)
+-   Multi-Tenancy: Add possibility to assign tenant(s) while creating user (`ID2-4573`)
+-   Onboarding wizard for new users: Create an on-boarding journey for finder (`ID2-4585`)
+-   Onboarding wizard for new users: Create an on-boarding journey for Object Details Page (`ID2-4586`)
+-   Onboarding wizard for new users: Create an on-boarding journey for Report (`ID2-4587`)
+-   Onboarding wizard for new users: Create an on-boarding journey for Settings (`ID2-4588`)
+-   Onboarding wizard for new users: Create a general introduction (`ID2-4589`)
+-   Onboarding wizard for new users: Create a general outro (`ID2-4590`)
+-   Onboarding wizard for new users: Open Help-Center (`ID2-4591`)
+
+### Changed
+
+-   Duplicate objects: Allow user to duplicate object in finder (`ID2-4716`)
+-   UI components: Select whole text when user focuses combobox (`ID2-4644`)
+
+### Fixed
+
+-   IPAM - Manage IP Address Table: Add missing open object button in IP table (`ID2-4696`)
+-   Object browser: Show assigned classes in the object browser, even if no object of the class exists (`ID2-4604`)
+-   Reports Main Feature: Fix loading data on report view (`ID2-4700`)
+-   Settings: Fix retrieving user settings (`ID2-4611`)
+
 ## 1.1.0 – 2023-09-08
 
 ### Added
