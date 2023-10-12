@@ -14,7 +14,7 @@ You can access your docupike.cloud instance with the following URL schema:
 https://<your_subdomain>.docupike.cloud/
 ~~~
 
-Your subdomain is initially requested by your administrator when ordering docupike.cloud and is assigned at the time of installation and usually matches your organization's name. If you don't know your organization's subdomain contact your administrator or the [docupike.cloud support][helpdesk].
+Your subdomain is initially requested by your administrator when ordering a `docupike.cloud` instance and usually matches your organization's name. If you don't know your organization's subdomain contact your administrator or the [docupike.cloud support][helpdesk].
 
 Point your Web browser to the Web UI of docupike to see the login screen:
 
@@ -22,8 +22,11 @@ Point your Web browser to the Web UI of docupike to see the login screen:
 
 [helpdesk]: mailto:help@docupike.com
 
+!!! info "Login with"
+    Login with Google or Microsoft is available when your E-Mail address is linked to a user
+
 !!! info "No default login"
-    docupike has no default login like an admin user called `admin` with a trivial password like `admin`. Instead, during the installation the first individual user will be created automatically. This user has the admin role with all rights and permissions.
+    docupike has no default login data. Instead, during the installation the first individual user will be created automatically. You will receive a E-Mail with a link to create a password. This user has the admin role with all rights and permissions.
 
 !!! info "Reset password"
-    If you forgot your password or simply need to change it, you can contact our support. If wrong credentials are used for login, you will also be shown a link to contact our support, who will be pleased to help you.
+    If you forgot your password or simply need to change it, you can use the `Reset Password` Button on the login Screen.
