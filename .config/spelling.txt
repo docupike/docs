@@ -18,10 +18,10 @@ CSS
 CSV
 CVE
 DESK-456
-DSN
 docupike
 docupike.cloud
 dropdown
+DSN
 duplicatable
 DVCS
 e.g.
@@ -67,6 +67,7 @@ resized
 scrollable
 searchbar
 SEO
+servereye
 sexualized
 ShareAlike
 subdomain

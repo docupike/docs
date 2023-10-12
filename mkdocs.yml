@@ -127,6 +127,7 @@ nav:
       - Export Data: admin/export-data.md
       - Rights and permissions: admin/rights-and-permissions.md
       - Users, groups and roles: admin/users-groups-roles.md
+      - servereye: admin/servereye.md
   - Developer guide:
       - API: dev/api.md
       - Add-ons:
