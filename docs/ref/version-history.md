@@ -6,7 +6,7 @@ lang: en
 
 # Version history
 
-[:material-rss: Subscribe](/releases.atom)
+[:material-rss: Subscribe](../releases.atom)
 
 | Version | Date       | Release Notes                            | Changelog                                |
 | ------- | ---------- | ---------------------------------------- | ---------------------------------------- |

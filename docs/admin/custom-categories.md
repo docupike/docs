@@ -17,7 +17,7 @@ To assign custom Categories to Classes you need the `Rights > CMDB > Manage Clas
 
 Custom categories are created at `Settings > Categories` there you need to Click on the `New Category` Button. You need to fill out a `Name` for the Category and you need to select a `Category Type` either `Single value` or `Multi value`.
 Each custom category will have a unique `Constant` to identify the Category.
-Custom Categories must be [assigned to a Class](link to classes) to be displayed there.
+Custom Categories must be [assigned to a Class](../user/basics/classes.md) to be displayed there.
 
 ## Single or Multi value Categories
 

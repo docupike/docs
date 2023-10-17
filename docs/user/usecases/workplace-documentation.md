@@ -21,10 +21,10 @@ This makes docupike the optimal solution for documenting and linking assets.
 In the left navigation you will find all the classes that you can use to create new objects / devices. In docupike, an object represents an asset. An object can therefore be a building, a notebook or other device, a person or a contract.
 Depending on the class in which an object is created, different information is requested from the user via the activated categories.
 
-[![For buildings, e.g. important contacts and current contracts are available as categories](/img/screenshots/create-buildings-rooms-and-workplaces/image001.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image001.png)
+[![For buildings, e.g. important contacts and current contracts are available as categories](../../img/screenshots/create-buildings-rooms-and-workplaces/image001.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image001.png)
 **Building Object:** For buildings, e.g. important contacts and current contracts are available as categories.
 
-[![Contacts and contracts can also be linked in client objects, but the focus here is also on technical information](/img/screenshots/create-buildings-rooms-and-workplaces/image002.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image002.png)
+[![Contacts and contracts can also be linked in client objects, but the focus here is also on technical information](../../img/screenshots/create-buildings-rooms-and-workplaces/image002.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image002.png)
 **Client Object:** Contacts and contracts can also be linked in client objects, but the focus here is also on technical information.
 
 !!!tip
@@ -33,7 +33,7 @@ Depending on the class in which an object is created, different information is r
 
 We are now creating a new building called "Branch". In the left navigation, we select the class "Building". Now we click on the button "New object" to create a new building. We assign the name "Branch" and save the object.
 
-[![Creating new assets is super quick with docupike](/img/screenshots/create-buildings-rooms-and-workplaces/image003.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image003.png) Creating new assets is super quick with docupike
+[![Creating new assets is super quick with docupike](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png) Creating new assets is super quick with docupike
 
 ### Create and assign rooms
 
@@ -41,7 +41,7 @@ Next, the rooms of the building are created. For this, you can either create the
 
 Via the left navigation, we switch to the class "Room".
 
-[![Edit locations](/img/screenshots/create-buildings-rooms-and-workplaces/image004.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image004.png)
+[![Edit locations](../../img/screenshots/create-buildings-rooms-and-workplaces/image004.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image004.png)
 
 Here we now create 5 rooms. The number of rooms to be created can be freely varied in the input mask. In this example, we create 5 new rooms with 2 fixed numbers.
 
@@ -49,15 +49,15 @@ We activate the tick for all 5 rooms and click on the button "Edit".
 
 Here we change to the category "Location" and can adjust the location of all rooms. Here we choose as a location our building that we have created.
 
-[![Menu](/img/screenshots/create-buildings-rooms-and-workplaces/image005.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image005.png)
+[![Menu](../../img/screenshots/create-buildings-rooms-and-workplaces/image005.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image005.png)
 
 The location can be accessed via the "Inventory" button in the upper navigation.
 
-[![Locations](/img/screenshots/create-buildings-rooms-and-workplaces/image006.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image006.png)
+[![Locations](../../img/screenshots/create-buildings-rooms-and-workplaces/image006.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image006.png)
 
 The branch is now displayed with the subordinate rooms in the left navigation.
 
-[![Location view](/img/screenshots/create-buildings-rooms-and-workplaces/image007.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image007.png)
+[![Location view](../../img/screenshots/create-buildings-rooms-and-workplaces/image007.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image007.png)
 
 The creation of the organizational objects is thus completed.
 
@@ -65,23 +65,23 @@ The creation of the organizational objects is thus completed.
 
 To create objects via CSV files, you can use any CSV files. The import is done in the respective class via the import icon. Upload your CSV file and configure in the next step whether your table uses columns headers and which separator is used.
 
-[![Import csv](/img/screenshots/create-buildings-rooms-and-workplaces/image008.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image008.png)
+[![Import csv](../../img/screenshots/create-buildings-rooms-and-workplaces/image008.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image008.png)
 
 In the next step, select the class in which new objects are to be created.
 
-[![Select Class](/img/screenshots/create-buildings-rooms-and-workplaces/image009.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image009.png)
+[![Select Class](../../img/screenshots/create-buildings-rooms-and-workplaces/image009.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image009.png)
 
 In the last step, you have to select which column should be used for which attribute. In our example we choose for the first column for the name and the second column for the location.
 
-[![Attribute mapping](/img/screenshots/create-buildings-rooms-and-workplaces/image010.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image010.png)
+[![Attribute mapping](../../img/screenshots/create-buildings-rooms-and-workplaces/image010.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image010.png)
 
 Since these are new objects, the question "Do you want to update data of already existing objects?" can be left at No. Changes are necessary here if already existing objects are to be updated.
 
-[![Inventory](/img/screenshots/create-buildings-rooms-and-workplaces/image011.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image011.png)
+[![Inventory](../../img/screenshots/create-buildings-rooms-and-workplaces/image011.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image011.png)
 
 The location can be accessed via the **"Inventory"** button in the top navigation.
 
-[![Location view](/img/screenshots/create-buildings-rooms-and-workplaces/image012.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image012.png)
+[![Location view](../../img/screenshots/create-buildings-rooms-and-workplaces/image012.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image012.png)
 
 The Branch is now displayed with its child rooms in the left navigation.
 
@@ -110,33 +110,33 @@ In this example, we will import the following list of people.
 
 To do this, we switch to the "Person" class and select the CSV import.
 
-[![Finder](/img/screenshots/create-buildings-rooms-and-workplaces/image013.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image013.png)
+[![Finder](../../img/screenshots/create-buildings-rooms-and-workplaces/image013.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image013.png)
 
 Here we upload our CSV file.
 
-[![Data view when the separator is correct](/img/screenshots/create-buildings-rooms-and-workplaces/image014.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image014.png)
+[![Data view when the separator is correct](../../img/screenshots/create-buildings-rooms-and-workplaces/image014.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image014.png)
 
 The data should now be displayed in a structured way. If you select an incorrect separator, the data will not be displayed correctly. In this case you should check your CSV file or select another separator.
 
-[![Data-view when you select the wrong separator](/img/screenshots/create-buildings-rooms-and-workplaces/image015.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image015.png)
+[![Data-view when you select the wrong separator](../../img/screenshots/create-buildings-rooms-and-workplaces/image015.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image015.png)
 
 Data-view when you select the wrong separator
 
 The next step is to map the columns to the data fields. To do this, we now map the values from our CSV file to the category fields in docupike. The result looks like this:
 
-[![Attribute mapping](/img/screenshots/create-buildings-rooms-and-workplaces/image016.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image016.png)
+[![Attribute mapping](../../img/screenshots/create-buildings-rooms-and-workplaces/image016.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image016.png)
 
 ## Step-3: Document the Workplace
 
 A new workstation can now be created via the "Workplace" class. Alternatively, a workstation can also be created directly in the respective room via the Location view. To do this, navigate to one of the created rooms and click on the "New object" button.
 
-[![Create new object from Location view](/img/screenshots/create-buildings-rooms-and-workplaces/image017.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image017.png)
+[![Create new object from Location view](../../img/screenshots/create-buildings-rooms-and-workplaces/image017.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image017.png)
 
 The Workplace is now automatically linked to the room. In the left navigation we now select the category "Contacts". In this category, users, administrators and other important contacts can be entered.
 
 Via the button "New entry" we now link our created user "George Smith" and assign the role "User".
 
-[![Create user](/img/screenshots/create-buildings-rooms-and-workplaces/image018.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image018.png)
+[![Create user](../../img/screenshots/create-buildings-rooms-and-workplaces/image018.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image018.png)
 
 ### Linked objects
 
@@ -144,11 +144,11 @@ By linking the workstation with the person "George Smith", an entry for the work
 
 If you now open the object "George Smith" in the class "Person", you will see all objects in which George Smith is entered as a contact in the category "Contacts (linked Objects)". Thus one always has a two-sided linkage of information.
 
-[![TEXT](/img/screenshots/create-buildings-rooms-and-workplaces/image019.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image019.png)
+[![TEXT](../../img/screenshots/create-buildings-rooms-and-workplaces/image019.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image019.png)
 
 If you open the room to which you have assigned the Workplace, you will also find an entry for George Smith's Workplace in the "location (linked objects)" category. Here there is a physical connection, so this relationship is shown in the category "location (linked objects" and not in "contacts(linked objects)".
 
-[![TEXT](/img/screenshots/create-buildings-rooms-and-workplaces/image020.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image020.png)
+[![TEXT](../../img/screenshots/create-buildings-rooms-and-workplaces/image020.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image020.png)
 
 ### Create workstation devices
 
@@ -156,7 +156,7 @@ The creation of the organizational objects is now complete. Now we need to add t
 
 We switch to the "Client" class in the left navigation or go back to the Location-view and select the created workstation.
 
-[![Inventory](/img/screenshots/create-buildings-rooms-and-workplaces/image021.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image021.png)
+[![Inventory](../../img/screenshots/create-buildings-rooms-and-workplaces/image021.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image021.png)
 
 Here we now create a new client via the button "New entry".
 
@@ -166,7 +166,7 @@ The General category contains general information about the object. It is automa
 
 Using the gear icon, the fields to be displayed can be customized in each category. This way the view can be customized and limited to the necessary minimum.
 
-[![Configure attributes](/img/screenshots/create-buildings-rooms-and-workplaces/image022.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image022.png)
+[![Configure attributes](../../img/screenshots/create-buildings-rooms-and-workplaces/image022.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image022.png)
 
 By activating or deactivating the respective attributes, they are shown or hidden in the overview. In this example we have activated the attributes for Object-ID, Created by and Changed by.
 
@@ -175,7 +175,7 @@ By activating or deactivating the respective attributes, they are shown or hidde
     **Created by:** Shows the name of the user who created the object.
     **Changed by:** Shows the name of the user who last changed the object.
 
-[![Edit attributes](/img/screenshots/create-buildings-rooms-and-workplaces/image023.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image023.png)
+[![Edit attributes](../../img/screenshots/create-buildings-rooms-and-workplaces/image023.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image023.png)
 
 As a name, we now assign an appropriate designation for the notebook. In this example, we name the device "Notebook Smith".
 
@@ -183,7 +183,7 @@ As a system ID, we can now assign our own **identification number** (if availabl
 
 If necessary, a purpose can be defined in the attribute field "Purpose". To do this, we double-click on the field and create a new purpose via the list icon.
 
-[![TEXT](/img/screenshots/create-buildings-rooms-and-workplaces/image024.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image024.png)
+[![TEXT](../../img/screenshots/create-buildings-rooms-and-workplaces/image024.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image024.png)
 
 All objects can be tagged in order to group them additionally and to be able to evaluate them specifically.
 
@@ -191,17 +191,17 @@ All objects can be tagged in order to group them additionally and to be able to 
 
 In the left navigation, additional information can be selected from the enabled categories for the respective class.
 
-[![TEXT](/img/screenshots/create-buildings-rooms-and-workplaces/image025.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image025.png)
+[![TEXT](../../img/screenshots/create-buildings-rooms-and-workplaces/image025.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image025.png)
 
 In the category Accounting, financial information about the device can be entered. Here, among other things, the inventory number, the cost center, the cost unit, the investment costs, the operating costs and the purchase are documented.
 
 Other interesting categories for capturing client information include the following:
 
-[![Edit warranty](/img/screenshots/create-buildings-rooms-and-workplaces/image026.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image026.png)
+[![Edit warranty](../../img/screenshots/create-buildings-rooms-and-workplaces/image026.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image026.png)
 
 **Warranty:** The Warranty category can be used to record warranty claims and times.
 
-[![Create new invoice](/img/screenshots/create-buildings-rooms-and-workplaces/image027.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image027.png)
+[![Create new invoice](../../img/screenshots/create-buildings-rooms-and-workplaces/image027.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image027.png)
 
 **Invoices:** Invoices for the device can be entered in the Invoices category.
 
@@ -215,40 +215,40 @@ To enter the CPU, we switch to the CPU category in the left navigation. Here, ph
 
 Besides the manufacturer and model, the CPU frequency, the number of CPU cores and, if required, the SMT multiplier can also be documented here.
 
-[![Create cpu entry](/img/screenshots/create-buildings-rooms-and-workplaces/image028.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image028.png)
+[![Create cpu entry](../../img/screenshots/create-buildings-rooms-and-workplaces/image028.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image028.png)
 
 ### Memory
 
 In the Memory category, the size and type of the RAM, the slot used, and the manufacturer and model can be documented.
 
-[![Create memory entry](/img/screenshots/create-buildings-rooms-and-workplaces/image029.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image029.png)
+[![Create memory entry](../../img/screenshots/create-buildings-rooms-and-workplaces/image029.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image029.png)
 
 A separate slot should be specified for each installed module.
 
-[![Create separate slots](/img/screenshots/create-buildings-rooms-and-workplaces/image030.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image03.png)
+[![Create separate slots](../../img/screenshots/create-buildings-rooms-and-workplaces/image030.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png)
 
 ## Document periphery
 
 Exactly as we added the client to the Workplace, we can add a monitor in the "Display" class.
 Again, we select the created Workplace as the location and enter all the necessary information in the Display category.
 
-[![Category display](/img/screenshots/create-buildings-rooms-and-workplaces/image031.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image031.png)
+[![Category display](../../img/screenshots/create-buildings-rooms-and-workplaces/image031.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image031.png)
 
 Please also fill in the Accounting category, we will evaluate this information later.
 
-[![Category accounting](/img/screenshots/create-buildings-rooms-and-workplaces/image032.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image032.png)
+[![Category accounting](../../img/screenshots/create-buildings-rooms-and-workplaces/image032.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image032.png)
 
 ## Create new class for docking stations
 
 For your documentation, you may want to create your own classes to document specific devices or systems. In this example, we will create our own class for docking stations and add a device of this class to our workstation.
 
-[![Settings](/img/screenshots/create-buildings-rooms-and-workplaces/image033.png)](/img/screenshots/create-buildings-rooms-and-workplaces/FILimage033ENAME.png)
+[![Settings](../../img/screenshots/create-buildings-rooms-and-workplaces/image033.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image033.png)
 
 We switch to the settings via the upper right navigation.
 
 Here we see in the left navigation the menu item CMDB Configuration -\> Classes. In the next step we create a new class via the button "New Class" for docking stations. We now select "Infrastructure" as the collection. We can always change the collection at a later time. More about this later.
 
-[![Create new class](/img/screenshots/create-buildings-rooms-and-workplaces/image034.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image034.png)
+[![Create new class](../../img/screenshots/create-buildings-rooms-and-workplaces/image034.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image034.png)
 
 For docking stations, the investment costs are to be recorded and a fixed location is to be assigned. To do this, we now activate the categories "Location" and "Accounting" via the "Add category" button.
 
@@ -256,7 +256,7 @@ If necessary, we can now select a separate icon for the display in the class ove
 
 We can leave the item "Location Class" on Disable. This option must only be activated if we want the class to be used as a location for other objects. Examples for this would be floors, cabinets, workshops or similar.
 
-[![Classes overview](/img/screenshots/create-buildings-rooms-and-workplaces/image035.png)](/img/screenshots/create-buildings-rooms-and-workplaces/image035.png)
+[![Classes overview](../../img/screenshots/create-buildings-rooms-and-workplaces/image035.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image035.png)
 
 Now we switch back to the CMDB Finder and call up the Collection Infrastructure. Here we find our new docking station class and can create a new device.
 
