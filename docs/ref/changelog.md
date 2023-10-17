@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.0.1 – 2023-10-17
+
+### Fixed
+
+-   Multi-Tenancy: Fix tenant migration to not update removed users (`ID2-4759`)
+
 ## 2.0.0 – 2023-09-26
 
 ### Added
@@ -61,8 +67,8 @@ _tbd_
 -   Categories and attributes: Correctly calculate overall costs per period for assigned objects (`ID2-4078`)
 -   IPAM - Bugfixing: Add open object button to IP networking category (`ID2-4110`)
 -   IPAM - Bugfixing: Fix and adjust colors in IPAM Map (`ID2-4142`)
--   Object details: Fix losing selected category on Object details page after reloading the page (`ID2-4583`)
--   Object search and filter: Fix search for categories and attributes on Object details page (`ID2-4498`)
+-   Object details: Fix losing selected category on ODP after reloading the page (`ID2-4583`)
+-   Object search and filter: Fix search for categories and attributes on ODP (`ID2-4498`)
 -   Object search and filter: Clean up search index when object is removed (`ID2-4499`)
 -   Reports Main Feature: Show only selected attributes in create/edit report modal (`ID2-4002`)
 -   Settings: Fix retrieving user settings (`ID2-4611`)
@@ -139,7 +145,7 @@ _tbd_
 -   IPAM - Manage IP Address Table: Change default sorting to "ascending" in network & IP address table (`ID2-4178`)
 -   Registration : Log in user when they set new password (`ID2-4289`)
 -   Settings Refactoring: Add new table component to user area in settings (`ID2-3361`)
--   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for Inline Form Field Single Select Pulldown (`ID2-1259`)
+-   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for Inline Form Field Single Select Pulldowns (`ID2-1259`)
 -   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for Inline Form Field Multi Select Pulldown (`ID2-1260`)
 -   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for  Inline Form Field Single Select Combobox (`ID2-1261`)
 
@@ -198,13 +204,13 @@ _tbd_
 -   History: Show the documentation state for objects in History (`ID2-3742`)
 -   IPAM - Bugfixing: Do not allow limited user to see overview of other sections (`ID2-4113`)
 -   IPAM - Bugfixing: Allow to open in new tab action in network view in Firefox (`ID2-4180`)
--   IPAM - Bugfixing: Fix duplicate behavior for network objects (`ID2-4181`)
+-   IPAM - Bugfixing: Fix duplicate behaviour for network objects (`ID2-4181`)
 -   IPAM - Bugfixing: Add missing background on network segment dropdown (`ID2-4183`)
 -   IPAM - Bugfixing: Allow to switch networks tab when statistics are hidden (`ID2-4208`)
 -   IPAM - Edit Object Assignment / IP List: Show a single scope in bar graph  (`ID2-4189`)
 -   Navigation: Make all objects class string bold again (`ID2-3416`)
 -   Navigation: Make Inventory menu button responsive to close (`ID2-3666`)
--   Object ranking: Do not highlight pagination when object state is adjusted from Object details page (`ID2-3595`)
+-   Object ranking: Do not highlight pagination when object state is adjusted from ODP (`ID2-3595`)
 -   Object search and filter: Fix the layout when there is a validation error in date quick filters (`ID2-3727`)
 -   Product Plans and Feature Sets: Change Date column of the Invoice table to use created date (`ID2-4201`)
 -   QA Launch-check : Disable "Show Results" button until a valid filter is selected (`ID2-3861`)
