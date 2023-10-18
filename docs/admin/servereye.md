@@ -1,56 +1,56 @@
 ---
-title: servereye configuration
+title: servereye integration
 description: Admin basics for using the servereye Add-on in Docupike
 lang: en
 ---
 
-## servereye with docupike
+# servereye integration
 
 The servereye Add-on is designed to synchronize all data from servereye to docupike. The Add-on is passed ready configured.
 
 ## Overview
 
--   Add-on configuration is not needed
--   The synchronization is executed 3 times a day
--   The synchronization can be triggered manually
+-   No Add-on configuration is needed
+-   Synchronization occurs multiple times a day
+-   Manual synchronization triggering is possible
 -   Customer companies are synchronized as tenant
--   User are synchronized as user
--   User are assigned to tenant/s
--   Each user is assigned to group "servereye reader"
--   The group "servereye reader" is only permitted to read data
+-   Users are synchronized as individuals
+-   Users are assigned to tenant/s
+-   Each user is assigned to the "servereye reader" group
+-   The "servereye reader" group is only permitted to read data
 -   Objects are synchronized for each tenant
 -   Categories are synchronized for each Object
 
 ## Login
 
 This gives you an oversight how-to login for the first time.<br>
-You can access your docupike.cloud instance with the following URL schema:
+Access your docupike.cloud instance using the following URL schema:
 
 ~~~
 https://<your_subdomain>.docupike.cloud/
 ~~~
 
-Point your Web browser to the Web UI of docupike to see the login screen:
+Navigate to the Web UI of docupike to view the login screen:
+
+You can log in either through servereye or by using your username and password. This grants you access to the default tenant, which is not associated with any specific customer.
 
 [![Login screen](../img/screenshots/admin/servereye/login.png)](../img/screenshots/admin/servereye/login.png)
 
 [helpdesk]: mailto:help@docupike.com
 
-You can log in either through servereye or by using your username and password. This will grant you access to the default tenant, which is not associated with any specific customer.
-
 !!! info "No default login"
-    docupike has no default login. Instead, during the installation the first individual user will be created automatically. This user has the admin role with all rights and permissions.
+    docupike has no default login. Instead, during installation, the first individual user will be created automatically. This user has the admin role with all rights and permissions.
 
 !!! info "Reset password"
-    If you forgot your password or simply need to change it, you can use the `Reset Password` Button on the login Screen.
+    If you forget your password or need to change it, use the `Reset Password` button on the login screen.
 
-After the login you will find a, with servereye, synchronized docupike. The servereye Add-on is already configured and does not need any further configuration.
+After logging in, the servereye Add-on is already configured and does not need further setup. It also automatically performs synchronization of the servereye data.
 
 ## Rights in docupike
 
-As admin you have the capability to view all tenants and configure docupike.
+As an admin, you can view all tenants and configure docupike.
 
-However, synchronized users possess only the rights to view their designated tenant, **with permissions limited to reading all objects and categories**. You have the option to assign create, edit and additional [permissions](rights-and-permissions.md) as needed.
+However, synchronized users only the rights to view their designated tenant, **with permissions limited to reading all objects and categories**. You have the option to assign create, edit and additional [permissions](rights-and-permissions.md) as needed.
 
 ## Tenants
 
@@ -62,10 +62,10 @@ Each user, which have at least access to one tenant, is synchronized from server
 
 ## Objects and categories
 
-Objects are imported into the class **servereye import**, in the corresponding tenant. Users are able to change the class of the objects.
+Objects are imported into the class **servereye import**, in the corresponding tenant. Users can change the class of the objects.
 
-Categories which are synchronized are **CPU**, **IP**, **Memory**, **Model**, **Storage Devices** and **Storage Volumes**.
-The entries in the listed categories undergo updates through the servereye sync. **Manual alterations to synchronized entries are overridden**, as there is mapping to both objects and category entries.
+Synchronized categories are **CPU**, **IP**, **Memory**, **Model**, **Storage Devices**, and **Storage Volumes**.
+Entries in the listed categories undergo updates through the servereye sync. **Manual alterations to synchronized entries are overridden**, as there is a mapping to both objects and category entries.
 
 ## servereye synchronization
 
