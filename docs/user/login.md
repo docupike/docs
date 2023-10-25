@@ -29,4 +29,4 @@ Point your Web browser to the Web UI of docupike to see the login screen:
     docupike has no default login data. Instead, during the installation the first individual user will be created automatically. You will receive a E-Mail with a link to create a password. This user has the admin role with all rights and permissions.
 
 !!! info "Reset password"
-    If you forgot your password or simply need to change it, you can use the `Reset Password` Button on the login Screen.
+    If you forgot your password or simply need to change it, you can use the `Reset Password` button on the login screen.
