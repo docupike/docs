@@ -1,11 +1,17 @@
 FROM ubuntu:23.04
 
+ARG DEBIAN_FRONTEND=noninteractive
+ARG HTTP_PROXY
+ARG HTTPS_PROXY
+ARG NO_PROXY
+ARG http_proxy
+ARG https_proxy
+ARG no_proxy
+
 LABEL org.opencontainers.image.vendor="synetics GmbH"
 LABEL org.opencontainers.image.title="docs/environment"
 LABEL org.opencontainers.image.description="Docs environment"
 LABEL org.opencontainers.image.documentation="https://docs.docupike.com/"
-
-ARG DEBIAN_FRONTEND=noninteractive
 
 SHELL ["/bin/bash", "-euxo", "pipefail", "-c"]
 
@@ -37,35 +43,29 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 # Run this container as current host user:
-ARG USER_ID
-ARG GROUP_ID
+ARG USER_ID=1000
+ARG GROUP_ID=1000
 RUN touch /var/mail/ubuntu; \
     chown ubuntu /var/mail/ubuntu; \
     userdel -r ubuntu; \
     groupadd -g "${GROUP_ID}" runner; \
-    useradd -l -u "${USER_ID}" -g runner runner; \
+    useradd -l -u "${USER_ID}" -g "${GROUP_ID}" runner; \
     install -d -m 0750 -o runner -g runner /home/runner; \
     chown "${USER_ID}":"${GROUP_ID}" -R /home/runner
 
 WORKDIR /tmp/
 
-# Node.js and NPM:
-RUN curl -OfsSL \
-        https://raw.githubusercontent.com/tj/n/master/bin/n; \
-    install -m 0755 -o root -g root n /usr/local/bin/; \
-    rm n; \
-    n lts; \
-    npm install -g npm@latest
-
 # hadolint:
+# renovate: datasource=github-releases depName=hadolint/hadolint
 ARG HADOLINT_VERSION=2.12.0
 RUN curl -OfsSL \
         "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64"; \
-    install -m 0755 -o root -g root hadolint-Linux-x86_64 /usr/local/bin/hadolint; \
+    install -m 755 -o root -g root hadolint-Linux-x86_64 /usr/local/bin/hadolint; \
     rm hadolint-Linux-x86_64
 
 # Docker:
-ARG DOCKER_VERSION_BRANCH=23
+# renovate: datasource=github-releases depName=moby/moby
+ARG DOCKER_VERSION=24.0.6
 RUN curl -fsSL \
         https://download.docker.com/linux/ubuntu/gpg | \
         gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
@@ -80,21 +80,17 @@ RUN curl -fsSL \
     } >> /etc/apt/sources.list.d/docker.sources; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
-        docker-ce \
-        docker-ce-cli \
+        docker-ce="5:${DOCKER_VERSION}-1~ubuntu.$(lsb_release -rs)~$(lsb_release -cs)" \
+        docker-ce-cli="5:${DOCKER_VERSION}-1~ubuntu.$(lsb_release -rs)~$(lsb_release -cs)" \
         containerd.io \
     ;\
-    { \
-        echo "Package: docker-ce*"; \
-        echo "Pin: version ${DOCKER_VERSION_BRANCH}.*"; \
-        echo "Pin-Priority: 999"; \
-    } >> /etc/apt/preferences.d/docker; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/*; \
     usermod -a -G docker runner
 
 # Docker Compose:
-ARG DOCKER_COMPOSE_VERSION=2.17.3
+# renovate: datasource=github-releases depName=docker/compose
+ARG DOCKER_COMPOSE_VERSION=2.22.0
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \
@@ -109,7 +105,8 @@ RUN curl -OfsSL \
         checksums.txt
 
 # editorconfig-checker (ec):
-ARG EC_VERSION=2.7.0
+# renovate: datasource=github-releases depName=editorconfig-checker/editorconfig-checker
+ARG EC_VERSION=2.7.2
 RUN curl -OfsSL \
         "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/${EC_VERSION}/ec-linux-amd64.tar.gz"; \
     tar -xzf ec-linux-amd64.tar.gz; \
@@ -117,6 +114,16 @@ RUN curl -OfsSL \
     rm -r \
         ec-linux-amd64.tar.gz \
         bin/
+
+# Node.js and NPM:
+# renovate: datasource=github-releases depName=npm/cli
+ARG NPM_VERSION=10.2.0
+RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
+    -o /usr/local/bin/n; \
+    chmod 0755 /usr/local/bin/n; \
+    n lts; \
+    npm install -g "npm@$NPM_VERSION"; \
+    npm completion > /etc/bash_completion.d/npm
 
 # Upgrade pip:
 RUN pip3 install --upgrade --no-cache-dir --break-system-packages \
@@ -137,12 +144,18 @@ RUN pip3 install \
         --upgrade --no-cache-dir --break-system-packages \
         --requirement requirements.txt \
     ; \
-    rm requirements.txt
+    rm -rf \
+        requirements.txt \
+        /usr/local/bin/__pycache__ \
+    ; \
+    ln -s /usr/bin/python3 /usr/bin/python
 
-USER runner
+RUN echo "source /usr/share/bash-completion/bash_completion" >> /etc/bash.bashrc
 
 ENV PATH="/home/runner/.local/bin:${PATH}"
 
 WORKDIR /runner
+
+USER runner
 
 CMD ["bash"]
