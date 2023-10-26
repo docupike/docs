@@ -145,7 +145,7 @@ _tbd_
 -   IPAM - Manage IP Address Table: Change default sorting to "ascending" in network & IP address table (`ID2-4178`)
 -   Registration : Log in user when they set new password (`ID2-4289`)
 -   Settings Refactoring: Add new table component to user area in settings (`ID2-3361`)
--   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for Inline Form Field Single Select Pulldowns (`ID2-1259`)
+-   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for Inline Form Field Single Select Pulldown (`ID2-1259`)
 -   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for Inline Form Field Multi Select Pulldown (`ID2-1260`)
 -   UI Form Field Pulldown: Adjust Inline Edit specific keyboard controls for  Inline Form Field Single Select Combobox (`ID2-1261`)
 
@@ -204,7 +204,7 @@ _tbd_
 -   History: Show the documentation state for objects in History (`ID2-3742`)
 -   IPAM - Bugfixing: Do not allow limited user to see overview of other sections (`ID2-4113`)
 -   IPAM - Bugfixing: Allow to open in new tab action in network view in Firefox (`ID2-4180`)
--   IPAM - Bugfixing: Fix duplicate behaviour for network objects (`ID2-4181`)
+-   IPAM - Bugfixing: Fix duplicate behavior for network objects (`ID2-4181`)
 -   IPAM - Bugfixing: Add missing background on network segment dropdown (`ID2-4183`)
 -   IPAM - Bugfixing: Allow to switch networks tab when statistics are hidden (`ID2-4208`)
 -   IPAM - Edit Object Assignment / IP List: Show a single scope in bar graph  (`ID2-4189`)
