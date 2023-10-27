@@ -9,6 +9,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.1.0 – 2023-10-27
+
+### Added
+
+-   API: Create async batch API to perform requests via messenger (`ID2-4773`)
+-   Create Entry: Enable user to create multiple MV entries at once (`ID2-4621`)
+-   Duplication of MV entries: Enable user to duplicate MV entries in Finder (`ID2-4659`)
+-   Duplication of MV entries: Enable user to duplicate MV entries on Edit page (`ID2-4661`)
+
+### Changed
+
+-   UI replace table component: Use UI-kit table in Roles (`ID2-4618`)
+-   UI replace table component: Use UI-kit table in Rights (`ID2-4619`)
+-   UI replace table component: Use UI-kit table in Permissions (`ID2-4620`)
+
+### Fixed
+
+-   CMDB CRUD: Emit entry data set events only if something has changed (`ID2-4770`)
+-   Finder: Prevent opening multiple context menus in finder (`ID2-4692`)
+-   Finder: Fix double loading of the finder results (`ID2-4707`)
+-   Multi-Tenancy: Fix tenant migration to not update removed users (`ID2-4759`)
+-   Rights and permissions: Clean up rights on removal users/roles/groups (`ID2-4767`)
+
 ## 2.0.1 – 2023-10-17
 
 ### Fixed
@@ -67,8 +90,8 @@ _tbd_
 -   Categories and attributes: Correctly calculate overall costs per period for assigned objects (`ID2-4078`)
 -   IPAM - Bugfixing: Add open object button to IP networking category (`ID2-4110`)
 -   IPAM - Bugfixing: Fix and adjust colors in IPAM Map (`ID2-4142`)
--   Object details: Fix losing selected category on ODP after reloading the page (`ID2-4583`)
--   Object search and filter: Fix search for categories and attributes on ODP (`ID2-4498`)
+-   Object details: Fix losing selected category on Object details page after reloading the page (`ID2-4583`)
+-   Object search and filter: Fix search for categories and attributes on Object details page (`ID2-4498`)
 -   Object search and filter: Clean up search index when object is removed (`ID2-4499`)
 -   Reports Main Feature: Show only selected attributes in create/edit report modal (`ID2-4002`)
 -   Settings: Fix retrieving user settings (`ID2-4611`)
@@ -210,7 +233,7 @@ _tbd_
 -   IPAM - Edit Object Assignment / IP List: Show a single scope in bar graph  (`ID2-4189`)
 -   Navigation: Make all objects class string bold again (`ID2-3416`)
 -   Navigation: Make Inventory menu button responsive to close (`ID2-3666`)
--   Object ranking: Do not highlight pagination when object state is adjusted from ODP (`ID2-3595`)
+-   Object ranking: Do not highlight pagination when object state is adjusted from Object details page (`ID2-3595`)
 -   Object search and filter: Fix the layout when there is a validation error in date quick filters (`ID2-3727`)
 -   Product Plans and Feature Sets: Change Date column of the Invoice table to use created date (`ID2-4201`)
 -   QA Launch-check : Disable "Show Results" button until a valid filter is selected (`ID2-3861`)
