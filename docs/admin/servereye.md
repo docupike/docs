@@ -1,16 +1,16 @@
 ---
 title: servereye integration
-description: Admin basics for using the servereye Add-on in Docupike
+description: Admin basics for using the servereye Add-on in docupike
 lang: en
 ---
 
 # servereye integration
 
-The servereye Add-on is designed to synchronize all data from servereye to docupike. The Add-on is passed ready configured.
+The servereye Add-on is designed to synchronize all data from servereye to docupike. The Add-on configuration will happen automatically during registration procedure.
 
 ## Overview
 
--   No Add-on configuration is needed
+-   Automatic configuration during add-on registration
 -   Synchronization occurs multiple times a day
 -   Manual synchronization triggering is possible
 -   Customer companies are synchronized as tenant
@@ -50,30 +50,33 @@ After logging in, the servereye Add-on is already configured and does not need f
 
 As an admin, you can view all tenants and configure docupike.
 
-However, synchronized users only the rights to view their designated tenant, **with permissions limited to reading all objects and categories**. You have the option to assign create, edit and additional [permissions](rights-and-permissions.md) as needed.
+However, synchronized users only have the rights to view tenant assigned to them, **with permissions limited to reading all objects and categories**. You have the option to assign create, edit and additional [permissions](rights-and-permissions.md) as needed.
+
+!!! note ""
+    Do not directly change the permissions of the 'servereye reader group', otherwise there may be problems with synchronization.
 
 ## Tenants
 
-A separate tenant is created for each customer. Access these tenants through the dropdown menu located at the top left, next to the Docupike logo.
+A separate tenant is created for each customer. Access these tenants through the dropdown menu located at the top left, next to the docupike logo.
 
 ## User
 
-Each user, which have at least access to one tenant, is synchronized from servereye. The [Users](users-groups-roles.md) can be found via `Settings > User management >> Users`. Users are matched via E-Mail address.
+Each user, which have at least access to one tenant, is synchronized from servereye. The [Users](users-groups-roles.md) can be found via `Settings > User management > Users`. Users are matched via E-Mail address.
 
 ## Objects and categories
 
-Objects are imported into the class **servereye import**, in the corresponding tenant. Users can change the class of the objects.
+Objects are unclassified initially and will be imported into the class **servereye import**. The classification needs to be done by the user.
 
 Synchronized categories are **CPU**, **IP**, **Memory**, **Model**, **Storage Devices**, and **Storage Volumes**.
-Entries in the listed categories undergo updates through the servereye sync. **Manual alterations to synchronized entries are overridden**, as there is a mapping to both objects and category entries.
+Entries in the listed categories undergo updates through the servereye sync. **Manual alterations to synchronized entries are overridden** by each synchronization procedure.
 
 ## servereye synchronization
 
 You can check the servereye synchronization via `Add-ons > servereye settings`. Here you will find a **Sync**, **Refresh** and **Recent imports** button.
-The **Sync** button will execute a complete Sync for user and objects.The **Refresh** button refreshes the page, while the **Recent Imports** button opens the "servereye Import" class view.
+The **Sync** button will execute a complete Sync for user and objects.The **Refresh** button refreshes the page, while the **Recent imports** button opens the "servereye import" class view.
 
 ## Widget
 
-Docupike has a [Widget](../user/finder/widgets.md) view.
+docupike has a [Widget](../user/finder/widgets.md) view.
 
-There is a servereye widget, which displays "Last sync" with date/time and a Link to the object in servereye.
+This widget allows to see date of the last synchronization and also allows jumping into the corresponding servereye asset.
