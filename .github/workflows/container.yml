@@ -1,0 +1,62 @@
+---
+name: Container
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  REGISTRY_DOMAIN: ${{ secrets.REGISTRY_DOMAIN }}
+  REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
+  REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
+  CONTAINER_IMAGE: ${{ secrets.REGISTRY_DOMAIN }}/docs/environment
+  TAG: ${{ env.GITHUB_REF_NAME }}
+
+jobs:
+  build:
+    name: Build and push container image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.0
+        with:
+          fetch-depth: 1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3.0.0
+      - name: Login into container registry
+        uses: docker/login-action@v3.0.0
+        with:
+          registry: ${{ secrets.REGISTRY_DOMAIN }}
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+      - name: Get user environment
+        run: |
+          echo "USER_ID=$(id -u)" >> $GITHUB_ENV
+          echo "GROUP_ID=$(id -g)" >> $GITHUB_ENV
+      - name: Build container image and push it to registry
+        uses: docker/build-push-action@v5.0.0
+        id: build-and-push
+        with:
+          context: .
+          file: Dockerfile
+          build-args: |
+            USER_ID=${{ env.USER_ID }}
+            GROUP_ID=${{ env.GROUP_ID }}
+          pull: true
+          push: true
+          tags: ${{ env.CONTAINER_IMAGE }}:${{ env.TAG }}
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@v3.1.2
+      - name: Sign container image
+        env:
+          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
+          COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
+          DIGEST: ${{ steps.build-and-push.outputs.digest }}
+        run: >
+          cosign
+          sign
+          --yes
+          --key env://COSIGN_PRIVATE_KEY
+          --tlog-upload=false
+          "${CONTAINER_IMAGE}@${DIGEST}"

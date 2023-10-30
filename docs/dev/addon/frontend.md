@@ -117,4 +117,4 @@ docu.Routing.generate(routeName: string, params: Record<string, any>)
 External add-ons can access more internal API then `docu.Routing`.
 Furthermore you can also access CMDB data directly from docupike using `docu.Models` without calling add-on specific endpoints.
 
-Please check [JS Interface](/dev/addon/js-api.html) for further information.
+Please check [JS Interface](js-api.md) for further information.
