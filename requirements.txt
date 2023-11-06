@@ -1,7 +1,7 @@
 cryptography ~= 41.0.5
 cyclonedx-bom == 3.11.5
 Jinja2 ~= 3.1.2
-Markdown ~= 3.5.0
+Markdown ~= 3.5.1
 mkdocs == 1.5.3
 mkdocs-git-revision-date-localized-plugin ~= 1.2.1
 mkdocs-macros-plugin ~= 1.0.4
