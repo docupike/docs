@@ -11,7 +11,7 @@ env:
   REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
   REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
   CONTAINER_IMAGE: ${{ secrets.REGISTRY_DOMAIN }}/docs/environment
-  TAG: ${{ env.GITHUB_REF_NAME }}
+  TAG: main
 
 jobs:
   build:
