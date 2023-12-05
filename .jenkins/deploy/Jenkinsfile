@@ -1,14 +1,8 @@
 pipeline {
     agent any
     environment {
-        USER_ID = """${sh(
-                returnStdout: true,
-                script: 'id -u'
-            ).trim()}"""
-        GROUP_ID = """${sh(
-                returnStdout: true,
-                script: 'id -g'
-            ).trim()}"""
+        USER_ID = "${sh(script: 'id -u', returnStdout: true).trim()}"
+        GROUP_ID = "${sh(script: 'id -g', returnStdout: true).trim()}"
         REGISTRY_DOMAIN = 'registry.on.ops.docupike.net'
         REGISTRY_PREFIX = "${REGISTRY_DOMAIN}/"
         REGISTRY_CREDS = credentials('OPS_REGISTRY_CREDS')
@@ -16,7 +10,6 @@ pipeline {
     stages {
         stage('Pre-build') {
             steps {
-                bitbucketStatusNotify(buildState: 'INPROGRESS')
                 sh("docker-compose \
                     build \
                     --pull \
@@ -62,6 +55,7 @@ pipeline {
         }
         failure {
             slackSend(channel: '#jenkins', color: 'danger', message: "FAILED - ${env.BUILD_URL}")
+            slackSend(channel: '#monitoring-cloud', color: 'danger', message: "FAILED - ${env.BUILD_URL}")
         }
         unstable {
             slackSend(channel: '#jenkins', color: 'warning', message: "UNSTABLE - ${env.BUILD_URL}")
