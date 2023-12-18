@@ -9,6 +9,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.2.0 – 2023-12-18
+
+### Added
+
+-   Add-ons: Be able to define Add-on rights in add-on (`ID2-4801`)
+-   CMDB configuration: Show usage of classes through tenants in CMDB settings (`ID2-4761`)
+-   CMDB configuration: Show usage of categories through tenants in CMDB settings (`ID2-4762`)
+-   Metrics of users are collected: Expose metrics about objects per class (`ID2-2874`)
+-   Metrics of users are collected: Expose metrics about events per categories (`ID2-2876`)
+-   Metrics of users are collected: Expose metrics about users (`ID2-2877`)
+
+### Changed
+
+-   CMDB configuration: Adjust usage details for classes/categories to use tabs (`ID2-4792`)
+-   CQRS: Add category information to entry events (`ID2-4780`)
+-   Documents creator: Extract the Attribute Selector from Report attributes (`ID2-4875`)
+-   Edit: Enable user always to be able to Save on Edit objects page (`ID2-4713`)
+-   Edit: Preselect all objects in edit mask (`ID2-4752`)
+-   Multi-Tenancy: See assigned tenants on user details page (`ID2-4784`)
+-   Multi-Tenancy: Change default tenant on user details page (`ID2-4786`)
+-   Multi-Tenancy: Unassign tenant(s) from user (`ID2-4787`)
+
+### Fixed
+
+-   Add-ons: Use actual state of the routes provided by add-ons (`ID2-4866`)
+-   API: Do not keep persistent session for API-token requests (`ID2-4774`)
+-   Categories and attributes: Allow to enter values in boolean fields (`ID2-4803`)
+-   Multi-Tenancy: Fix scrolling of tenant selector (`ID2-4766`)
+-   Multi-Tenancy: Deleting default tenant leads to no tenants (`ID2-4769`)
+-   UI form fields: Allow to set time for custom datetime attribute (`ID2-4841`)
+-   UI replace table component: Use backend sorting for permissions table (`ID2-4781`)
+
 ## 2.1.0 – 2023-10-27
 
 ### Added
