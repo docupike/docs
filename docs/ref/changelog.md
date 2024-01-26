@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.2.1 – 2024-01-26
+
+### Fixed
+
+-   Scalable SaaS services: Improve performance of references (`ID2-4964`)
+
 ## 2.2.0 – 2023-12-18
 
 ### Added
