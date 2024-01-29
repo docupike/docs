@@ -1,9 +1,8 @@
-***
-
+---
 title: Documents Creator
-description: Create user-friendly documents
+description: Create user-friendly PDF documents
 lang: en
---------
+---
 
 # Documents Creator
 
@@ -47,7 +46,7 @@ To fill a chapter with data you can choose from a list of sections:
 The `Headline` is added by default. In the `Text` section you can use supported [Markdown](https://www.markdownguide.org/basic-syntax/) to build high quality documents. Also sections can be reordered or deleted.
 
 !!! tip "Text editor"
-If you click on the `Text editor` button you can easily edit your text in the `Text editor` popup with a Toolbar and preview.
+    If you click on the `Text editor` button you can easily edit your text in the `Text editor` popup with a Toolbar and preview.
 
 In the `Object details` section the attributes are displayed per row.
 The `Custom Table` section displays the result like a table.´
