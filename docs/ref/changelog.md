@@ -9,6 +9,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.3.0 – 2024-02-05
+
+### Added
+
+-   Documents creator: Add "Custom Table" section to chapter (`ID2-4815`)
+-   Documents creator: Show scheduled mailings of the selected document (`ID2-4826`)
+-   Documents creator: Open/Access documents creator feature (`ID2-4845`)
+-   Documents creator: Provide onboarding for new users (`ID2-4869`)
+-   Documents creator: Rights to manage documents (`ID2-4871`)
+-   Documents creator: Provide object text API (`ID2-4880`)
+-   Documents creator: Create automation domain (`ID2-4884`)
+
+### Changed
+
+-   Create Entry: Change order of attributes in CPU New Entry Modal (`ID2-4929`)
+-   Documents creator: Extract the Condition Selector from the Report conditions modal (`ID2-4878`)
+-   Improvements of IP networking: Make IP Ranges more understandable on Network Details Page (`ID2-4941`)
+-   Location view: Adjust sorting in location table to always show container objects on top (`ID2-4946`)
+-   Product plans and feature sets: Improve Manage plan page (`ID2-4983`)
+-   Reports UI is improved: Add "select all" to attribute selector (`ID2-4794`)
+
+### Fixed
+
+-   CMDB CRUD: Fix missing creator of CI objects (`ID2-4910`)
+-   Documents creator: Prevent unfocusing searchbox in attribute selector (`ID2-4914`)
+-   Multi-Tenancy: Sync tenants in selector on assigning/unassigning tenants (`ID2-4888`)
+-   Object browser: Show new object in object browser (`ID2-4873`)
+
+## 2.2.1 – 2024-01-26
+
+### Fixed
+
+-   Scalable SaaS services: Improve performance of references (`ID2-4964`)
+
 ## 2.2.0 – 2023-12-18
 
 ### Added
