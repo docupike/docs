@@ -126,6 +126,7 @@ nav:
   - Admin guide:
       - Creating custom Categories: admin/custom-categories.md
       - Create custom classes: admin/custom-classes.md
+      - Attribute validation: admin/attribute-validation.md
       - Export Data: admin/export-data.md
       - Rights and permissions: admin/rights-and-permissions.md
       - Users, groups and roles: admin/users-groups-roles.md

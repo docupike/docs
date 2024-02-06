@@ -260,7 +260,7 @@ _tbd_
 -   IPAM - Bugfixing: Fix range selector for DHCP scoping (`ID2-4341`)
 -   IPAM - Bugfixing: Show correct error message in network definition category (`ID2-4353`)
 -   IPAM - Object Details Page: Add spacing between New Network Buttons in onboarding PopUp (`ID2-4345`)
--   Object search and filter: Do not show multiple recent filter tags in the searchbar dropdown (`ID2-3791`)
+-   Object search and filter: Do not show multiple recent filter tags in the search bar dropdown (`ID2-3791`)
 -   Presets: Make custom preset defined as default the default preset for selected class (`ID2-3737`)
 -   Product Upgrade / Downgrade : Display correct success message when changing plan (`ID2-4274`)
 -   QA Launch-check : Fix scroll container in saved filter modal (`ID2-3894`)
