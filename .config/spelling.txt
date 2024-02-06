@@ -67,7 +67,8 @@ ReactDOM
 resizable
 resized
 scrollable
-searchbar
+PCRE
+CMP
 SEO
 servereye
 sexualized
