@@ -47,6 +47,7 @@ plugins:
       minify_html: true
   - git-revision-date-localized:
       type: iso_date
+      strict: false
   - macros:
       module_name: announcements
       include_yaml:
@@ -110,6 +111,7 @@ nav:
           - Views and presets: user/finder/views-and-presets.md
           - Widgets: user/finder/widgets.md
       - Reporting: user/reporting.md
+      - Documents Creator: user/basics/documents-creator.md
       - Imports:
           - CSV: user/imports/csv.md
       - Use cases:
