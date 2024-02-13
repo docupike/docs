@@ -19,6 +19,7 @@ RUN apt-get update; \
     apt-get full-upgrade -y; \
     apt-get install -y --no-install-recommends \
         apt-transport-https \
+        bash-completion \
         ca-certificates \
         curl \
         git \
@@ -65,7 +66,7 @@ RUN curl -OfsSL \
 
 # Docker:
 # renovate: datasource=github-releases depName=moby/moby
-ARG DOCKER_VERSION=24.0.7
+ARG DOCKER_VERSION=25.0.3
 RUN curl -fsSL \
         https://download.docker.com/linux/ubuntu/gpg | \
         gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
@@ -90,7 +91,7 @@ RUN curl -fsSL \
 
 # Docker Compose:
 # renovate: datasource=github-releases depName=docker/compose
-ARG DOCKER_COMPOSE_VERSION=2.23.3
+ARG DOCKER_COMPOSE_VERSION=2.24.5
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \
@@ -106,7 +107,7 @@ RUN curl -OfsSL \
 
 # editorconfig-checker (ec):
 # renovate: datasource=github-releases depName=editorconfig-checker/editorconfig-checker
-ARG EC_VERSION=2.7.2
+ARG EC_VERSION=2.8.0
 RUN curl -OfsSL \
         "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/${EC_VERSION}/ec-linux-amd64.tar.gz"; \
     tar -xzf ec-linux-amd64.tar.gz; \
@@ -116,12 +117,14 @@ RUN curl -OfsSL \
         bin/
 
 # Node.js and NPM:
+# renovate: datasource=github-releases depName=nodejs/node
+ARG NODE_VERSION=20.11.0
 # renovate: datasource=github-releases depName=npm/cli
-ARG NPM_VERSION=10.2.4
+ARG NPM_VERSION=10.4.0
 RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     -o /usr/local/bin/n; \
     chmod 0755 /usr/local/bin/n; \
-    n lts; \
+    n "$NODE_VERSION"; \
     npm install -g "npm@$NPM_VERSION"; \
     npm completion > /etc/bash_completion.d/npm
 

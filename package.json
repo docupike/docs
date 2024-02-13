@@ -33,7 +33,7 @@
         "cspell": "^8.3.2",
         "husky": "^9.0.10",
         "jscpd": "^3.5.10",
-        "npm-groovy-lint": "^14.2.0",
+        "npm-groovy-lint": "^14.2.1",
         "npm-run-all": "^4.1.5",
         "remark-cli": "^12.0.0",
         "remark-frontmatter": "^5.0.0",
@@ -52,6 +52,7 @@
     },
     "scripts": {
         "docs:build": "mkdocs build",
+        "docs:deploy": "rsync --archive --delete-after site/ docs.docupike.com:/var/www/docs/",
         "docs:serve": "mkdocs serve",
         "pre-commit": "run-s pre-commit:*",
         "pre-commit:no-main-branches": "echo main | grep -v -w -q $(git rev-parse --abbrev-ref HEAD)",
@@ -60,7 +61,7 @@
         "pre-push:system": "npm run system",
         "pre-push:test": "npm test",
         "prepare": "run-s prepare:*",
-        "prepare:husky": "husky install",
+        "prepare:husky": "husky",
         "sort-word-list": "sort --unique --output=.config/spelling.txt .config/spelling.txt",
         "stats:cloc": "cloc --vcs git",
         "system": "run-s system:*",
@@ -86,7 +87,7 @@
         "sbom": "run-s sbom:*",
         "sbom:dir": "mkdir -p _sbom/",
         "sbom:npm": "cyclonedx-npm --output-format JSON --output-file _sbom/npm.json",
-        "sbom:pip": "cyclonedx-py --environment --format json --output _sbom/pip.json --force"
+        "sbom:pip": "cyclonedx-py environment --output-format JSON --outfile _sbom/pip.json"
     },
     "os": [
         "darwin",
