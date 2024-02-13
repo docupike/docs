@@ -6,6 +6,7 @@ pipeline {
         REGISTRY_DOMAIN = 'registry.on.ops.docupike.net'
         REGISTRY_PREFIX = "${REGISTRY_DOMAIN}/"
         REGISTRY_CREDS = credentials('OPS_REGISTRY_CREDS')
+        SSH_KEY_DOCS = '~/.ssh/id_ecdsa'
     }
     stages {
         stage('Pre-build') {
@@ -30,7 +31,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh('scp -r site/* docs.docupike.com:/var/www/docs')
+                sh('docker-compose run env npm run docs:deploy')
             }
         }
         stage('Push') {

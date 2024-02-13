@@ -26,6 +26,7 @@ RUN apt-get update; \
         gnupg \
         locales \
         lsb-release \
+        openssh-client \
         openssl \
         python3 \
         python3-apt \
@@ -33,6 +34,7 @@ RUN apt-get update; \
         python3-pip \
         python3-setuptools \
         python3-venv \
+        rsync \
         tar \
     ;\
     apt-get clean; \
@@ -152,6 +154,12 @@ RUN pip3 install \
         /usr/local/bin/__pycache__ \
     ; \
     ln -s /usr/bin/python3 /usr/bin/python
+
+# OpenSSH client:
+COPY data/ssh/config /etc/ssh/ssh_config.d/env.conf
+COPY data/ssh/known_hosts /etc/ssh/ssh_known_hosts
+RUN chmod 0644 /etc/ssh/ssh_config.d/env.conf; \
+    chmod 0644 /etc/ssh/ssh_known_hosts
 
 RUN echo "source /usr/share/bash-completion/bash_completion" >> /etc/bash.bashrc
 
