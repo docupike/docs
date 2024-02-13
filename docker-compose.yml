@@ -2,21 +2,23 @@
 services:
 
   env:
+    hostname: docs
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        USER_ID: 1000
-        GROUP_ID: 1000
     image: ${REGISTRY_PREFIX:-}docs/environment:main
+    environment:
+      SSH_AUTH_SOCK: /ssh-agent
     volumes:
       - "${PWD}:/runner/"
       - home:/home/runner
+      - "${SSH_KEY_DOCS:-~/.ssh/cloud-production}:/etc/ssh/keys/docs:ro"
+      - "${SSH_KEY_DOCS:-~/.ssh/cloud-production}.pub:/etc/ssh/keys/docs.pub:ro"
+      - ${SSH_AUTH_SOCK:-/bin/true}:/ssh-agent
+      - /var/run/docker.sock:/var/run/docker.sock
     cap_drop:
       - ALL
     privileged: false
-    group_add:
-      - ${DOCKER_GID:-998}
     read_only: true
     tmpfs:
       - /tmp
