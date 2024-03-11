@@ -35,7 +35,7 @@ jobs:
           echo "USER_ID=$(id -u)" >> $GITHUB_ENV
           echo "GROUP_ID=$(id -g)" >> $GITHUB_ENV
       - name: Build container image and push it to registry
-        uses: docker/build-push-action@v5.1.0
+        uses: docker/build-push-action@v5.2.0
         id: build-and-push
         with:
           context: .
