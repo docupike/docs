@@ -1,4 +1,4 @@
-FROM ubuntu:mantic-20231128
+FROM ubuntu:mantic-20240216
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG HTTP_PROXY
@@ -19,12 +19,14 @@ RUN apt-get update; \
     apt-get full-upgrade -y; \
     apt-get install -y --no-install-recommends \
         apt-transport-https \
+        bash-completion \
         ca-certificates \
         curl \
         git \
         gnupg \
         locales \
         lsb-release \
+        openssh-client \
         openssl \
         python3 \
         python3-apt \
@@ -32,6 +34,7 @@ RUN apt-get update; \
         python3-pip \
         python3-setuptools \
         python3-venv \
+        rsync \
         tar \
     ;\
     apt-get clean; \
@@ -65,7 +68,7 @@ RUN curl -OfsSL \
 
 # Docker:
 # renovate: datasource=github-releases depName=moby/moby
-ARG DOCKER_VERSION=24.0.7
+ARG DOCKER_VERSION=25.0.3
 RUN curl -fsSL \
         https://download.docker.com/linux/ubuntu/gpg | \
         gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
@@ -90,7 +93,7 @@ RUN curl -fsSL \
 
 # Docker Compose:
 # renovate: datasource=github-releases depName=docker/compose
-ARG DOCKER_COMPOSE_VERSION=2.23.3
+ARG DOCKER_COMPOSE_VERSION=2.24.5
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \
@@ -106,7 +109,7 @@ RUN curl -OfsSL \
 
 # editorconfig-checker (ec):
 # renovate: datasource=github-releases depName=editorconfig-checker/editorconfig-checker
-ARG EC_VERSION=2.7.2
+ARG EC_VERSION=2.8.0
 RUN curl -OfsSL \
         "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/${EC_VERSION}/ec-linux-amd64.tar.gz"; \
     tar -xzf ec-linux-amd64.tar.gz; \
@@ -116,12 +119,14 @@ RUN curl -OfsSL \
         bin/
 
 # Node.js and NPM:
+# renovate: datasource=github-releases depName=nodejs/node
+ARG NODE_VERSION=20.11.0
 # renovate: datasource=github-releases depName=npm/cli
-ARG NPM_VERSION=10.2.4
+ARG NPM_VERSION=10.4.0
 RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     -o /usr/local/bin/n; \
     chmod 0755 /usr/local/bin/n; \
-    n lts; \
+    n "$NODE_VERSION"; \
     npm install -g "npm@$NPM_VERSION"; \
     npm completion > /etc/bash_completion.d/npm
 
@@ -149,6 +154,12 @@ RUN pip3 install \
         /usr/local/bin/__pycache__ \
     ; \
     ln -s /usr/bin/python3 /usr/bin/python
+
+# OpenSSH client:
+COPY data/ssh/config /etc/ssh/ssh_config.d/env.conf
+COPY data/ssh/known_hosts /etc/ssh/ssh_known_hosts
+RUN chmod 0644 /etc/ssh/ssh_config.d/env.conf; \
+    chmod 0644 /etc/ssh/ssh_known_hosts
 
 RUN echo "source /usr/share/bash-completion/bash_completion" >> /etc/bash.bashrc
 

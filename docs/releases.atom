@@ -3,8 +3,30 @@
     <link type="text/html" rel="alternate" href="https://docs.docupike.com/ref/version-history.html"/>
     <link type="application/atom+xml" rel="self" href="https://docs.docupike.com/releases.atom"/>
     <title>docupike releases</title>
-    <updated>2023-12-18T12:06:07Z</updated>
+    <updated>2024-02-05T09:06:36Z</updated>
     <id>releases.docupike.com:docupike</id>
+    <entry>
+        <updated>2024-02-05T00:00:00+00:00</updated>
+        <link rel="alternate" type="text/html" href="https://docs.docupike.com/ref/release-notes/v2.3.0.html"/>
+        <title>v2.3.0</title>
+        <content type="html">&lt;a href=&#34;https://docs.docupike.com/ref/changelog.html#230-2024-02-05&#34;&gt;Changelog&lt;/a&gt;</content>
+        <author>
+            <name>docupike team</name>
+        </author>
+        <media:thumbnail height="32" width="32" url="https://docs.docupike.com/img/favicon-32x32.png"/>
+        <id>releases.docupike.com:docupike:v2.3.0</id>
+    </entry>
+    <entry>
+        <updated>2024-01-26T00:00:00+00:00</updated>
+        <link rel="alternate" type="text/html" href="https://docs.docupike.com/ref/release-notes/v2.2.1.html"/>
+        <title>v2.2.1</title>
+        <content type="html">&lt;a href=&#34;https://docs.docupike.com/ref/changelog.html#221-2024-01-26&#34;&gt;Changelog&lt;/a&gt;</content>
+        <author>
+            <name>docupike team</name>
+        </author>
+        <media:thumbnail height="32" width="32" url="https://docs.docupike.com/img/favicon-32x32.png"/>
+        <id>releases.docupike.com:docupike:v2.2.1</id>
+    </entry>
     <entry>
         <updated>2023-12-18T00:00:00+00:00</updated>
         <link rel="alternate" type="text/html" href="https://docs.docupike.com/ref/release-notes/v2.2.0.html"/>
@@ -92,27 +114,5 @@
         </author>
         <media:thumbnail height="32" width="32" url="https://docs.docupike.com/img/favicon-32x32.png"/>
         <id>releases.docupike.com:docupike:v1.0.5</id>
-    </entry>
-    <entry>
-        <updated>2023-04-19T00:00:00+00:00</updated>
-        <link rel="alternate" type="text/html" href="https://docs.docupike.com/ref/release-notes/v1.0.4.html"/>
-        <title>v1.0.4</title>
-        <content type="html">&lt;a href=&#34;https://docs.docupike.com/ref/changelog.html#104-2023-04-19&#34;&gt;Changelog&lt;/a&gt;</content>
-        <author>
-            <name>docupike team</name>
-        </author>
-        <media:thumbnail height="32" width="32" url="https://docs.docupike.com/img/favicon-32x32.png"/>
-        <id>releases.docupike.com:docupike:v1.0.4</id>
-    </entry>
-    <entry>
-        <updated>2023-02-13T00:00:00+00:00</updated>
-        <link rel="alternate" type="text/html" href="https://docs.docupike.com/ref/release-notes/v1.0.3.html"/>
-        <title>v1.0.3</title>
-        <content type="html">&lt;a href=&#34;https://docs.docupike.com/ref/changelog.html#103-2023-02-13&#34;&gt;Changelog&lt;/a&gt;</content>
-        <author>
-            <name>docupike team</name>
-        </author>
-        <media:thumbnail height="32" width="32" url="https://docs.docupike.com/img/favicon-32x32.png"/>
-        <id>releases.docupike.com:docupike:v1.0.3</id>
     </entry>
 </feed>
