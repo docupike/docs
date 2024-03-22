@@ -18,3 +18,8 @@ allow:
   - hooks
   - spa
   - execution
+  #GDPR
+  - European
+  - european
+  - fire
+  - burns
