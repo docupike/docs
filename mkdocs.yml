@@ -111,6 +111,7 @@ nav:
           - Views and presets: user/finder/views-and-presets.md
           - Widgets: user/finder/widgets.md
       - Reporting: user/reporting.md
+      - Data protection: user/basics/gdpr.md
       - Documents Creator: user/basics/documents-creator.md
       - Imports:
           - CSV: user/imports/csv.md

@@ -1,6 +1,6 @@
 ---
-title: GDPR / Data protection
-description: Create GDPR / Data protection
+title: Data protection / GDPR
+description: Create Data protection / GDPR
 lang: en
 ---
 
@@ -12,39 +12,39 @@ Risks and measures need to be documented, too. Measures for the risks can then b
 
 ## Global
 
-- Process
-  - Data Categories
-    - E-mail addresses
-      - Category of data
-  - Data transmission
+*   Process
+    *   Data Categories
+        *   E-mail addresses
+        *   Category of data
+    *   Data transmission
 
 ## Risk management
 
-- Threats
-- Measures (ToMs)
+-   Threats
+-   Measures (ToMs)
 
 ## Information Security Domain
 
 ### Threads
 
-- Fire
-- Hacker attack
+-   Fire
+-   Hacker attack
 
 ### Measures
 
-- Insurance
-  - Security measure
-    - Category e.g Organizational measure
-    - Implementation
-    - Reasons
+*   Insurance
+    *   Security measure
+        *   Category e.g Organizational measure
+        *   Implementation
+        *   Reasons
 
-- Firewall
+-   Firewall
 
 ## Quick guide
 
 All [Classes](../basics/classes.md) that belong to `Data protection` are stored in the data protection [Collection](../basics/collections.md) which can be found in the [Finder](collections.md) menu.
 
-Your first step is to create a `Organization` class like "Synetics GmbH". Also you may create one or more `Information Security Domain` classes like "Human resources ISD" or "Market ISD".
+Your first step is to create a `Organization` class like "Synetics GmbH". Also you may create one or more `Information Security Domain` classes like `Human resources ISD` or `Market ISD`.
 Now use the `Inventory > Finder > Data protection` view to create all needed classes.
 
 Begin with documenting your processes and necessary categories like `Processing`, `Processing data`, `Processors` and `Risk management (CIA)`.
@@ -54,4 +54,4 @@ Now we can document the `Threats` and the `Measures (tech/org)`.
 
 After that the `Processing activities`, `Implemented measures`, `Reviews of implemented measures` and the `Risk management (CIA)` categories can be viewed or edited in the organization class.
 
-At the end you can open the add-on via [Add-ons] menu and export the created PDF file.
+At the end you can open the add-on via \[Add-ons] menu and export the created PDF file.
