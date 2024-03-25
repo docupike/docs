@@ -61,6 +61,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
   - pymdownx.highlight:
       linenums: true
       linenums_style: table
@@ -93,6 +96,7 @@ watch:
   - docs
   - templates
   - theme
+  - overrides
 nav:
   - Overview: index.md
   - User guide:
@@ -111,18 +115,20 @@ nav:
           - Views and presets: user/finder/views-and-presets.md
           - Widgets: user/finder/widgets.md
       - Reporting: user/reporting.md
+      - Data protection: user/basics/gdpr.md
       - Documents Creator: user/basics/documents-creator.md
       - Imports:
           - CSV: user/imports/csv.md
       - Use cases:
-          - Documentation and naming conventions: user/usecases/it-documentation-and-naming-conventions.md
           - How to Start: user/usecases/how-to-start.md
+          - Documentation and naming conventions: user/usecases/it-documentation-and-naming-conventions.md
+          - Rights assignment: user/usecases/rights-assignment.md
           - Import your first csv file: user/usecases/import-data.md
           - Locations: user/usecases/locations.md
           - Quick Edit in Lists: user/usecases/quick-edit-in-lists.md
-          - Rights assignment: user/usecases/rights-assignment.md
           - Reports: user/usecases/reports.md
           - Workplace documentation: user/usecases/workplace-documentation.md
+          - Data protection: user/usecases/data-protection.md
   - Admin guide:
       - Creating custom Categories: admin/custom-categories.md
       - Create custom classes: admin/custom-classes.md
