@@ -9,6 +9,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.3.1 – 2024-03-25
+
+### Added
+
+-   CMDB configuration: Use url parameter to select the class on CMDB manage class page (`ID2-5004`)
+-   Edit: Check missing categories when changing class (`ID2-4886`)
+
+### Changed
+
+-   CMDB configuration: Change icon of class "City" (`ID2-4939`)
+-   Create Entry: Place "Number of entries" on the bottom of the add entry modals (`ID2-4928`)
+-   Create Entry: Make multi-creation of category entries configurable (`ID2-4950`)
+-   Documents creator: Support like operation for SingleSelect, Dialog+, MultiDialog+, ObjectBrowser, MultiObjectBrowser fields (`ID2-5048`)
+-   Edit: Change class of one or more objects (`ID2-4881`)
+-   Edit: Change class for an object on the object details page (`ID2-4882`)
+-   Edit: Disable inline editing of class (`ID2-5003`)
+-   Improvements of IP networking: Swap IP Address and Network in IP network category (`ID2-4924`)
+-   Improvements of IP networking: Add additional information in IP Address Browser (`ID2-4933`)
+-   Improvements of IP networking: Manage DHCP Scopes on network details page (`ID2-4935`)
+-   IPAM - Edit Object Assignment / IP List: Show user the next free IP address in a masked way (`ID2-4266`)
+-   Navigation: Add collection pulldown to finder (`ID2-4923`)
+-   Object search and filter: Use single select combobox for filters with single selection (`ID2-5035`)
+-   Reports can be shared: Adjust layout of Report overview page (`ID2-4961`)
+-   Reports can be shared: Adjust layout of Report details page (`ID2-4962`)
+
+### Fixed
+
+-   API: Support "Not supported" attribute types for object text API (`ID2-4985`)
+-   Class and attribute favorites: The hint is overlapped with the pagination in ODP Favorites (`ID2-4776`)
+-   docupike GDPR Add-on: Fix handling of assigning an empty process to organization (`ID2-5051`)
+-   Improvements of IP networking: Fix handling of "Select next free IP address" after changes in IP networking category (`ID2-4930`)
+-   IPAM - Network Overview: Correct network usage percentage wording (`ID2-4100`)
+-   Metrics of users are collected: Fix creation of sessions by async batch with API key (`ID2-5012`)
+-   Rights and permissions: Allow the user to save objects in the location permission (`ID2-4771`)
+
 ## 2.3.0 – 2024-02-05
 
 ### Added
@@ -260,7 +295,7 @@ _tbd_
 -   IPAM - Bugfixing: Fix range selector for DHCP scoping (`ID2-4341`)
 -   IPAM - Bugfixing: Show correct error message in network definition category (`ID2-4353`)
 -   IPAM - Object Details Page: Add spacing between New Network Buttons in onboarding PopUp (`ID2-4345`)
--   Object search and filter: Do not show multiple recent filter tags in the search bar dropdown (`ID2-3791`)
+-   Object search and filter: Do not show multiple recent filter tags in the searchbar dropdown (`ID2-3791`)
 -   Presets: Make custom preset defined as default the default preset for selected class (`ID2-3737`)
 -   Product Upgrade / Downgrade : Display correct success message when changing plan (`ID2-4274`)
 -   QA Launch-check : Fix scroll container in saved filter modal (`ID2-3894`)
