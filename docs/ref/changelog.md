@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.3.2 – 2024-03-28
+
+### Fixed
+
+-   Setup/update: Update should fail on failing update models (`ID2-5091`)
+
 ## 2.3.1 – 2024-03-25
 
 ### Added
