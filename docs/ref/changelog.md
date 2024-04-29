@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.3.3 – 2024-04-29
+
+### Fixed
+
+-   Setup/update: Fix creation of custom properties on docupike update (`ID2-5119`)
+
 ## 2.3.2 – 2024-03-28
 
 ### Fixed
