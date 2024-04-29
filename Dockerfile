@@ -1,4 +1,4 @@
-FROM ubuntu:mantic-20240405
+FROM ubuntu:mantic-20240416
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG HTTP_PROXY
