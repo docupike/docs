@@ -124,7 +124,7 @@ RUN curl -OfsSL \
 # renovate: datasource=github-releases depName=nodejs/node
 ARG NODE_VERSION=20.11.0
 # renovate: datasource=github-releases depName=npm/cli
-ARG NPM_VERSION=10.4.0
+ARG NPM_VERSION=10.7.0
 RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     -o /usr/local/bin/n; \
     chmod 0755 /usr/local/bin/n; \
