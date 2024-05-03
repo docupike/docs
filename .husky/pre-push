@@ -1,1 +1,0 @@
-docker compose run --no-TTY env npm run pre-push
