@@ -95,7 +95,7 @@ RUN curl -fsSL \
 
 # Docker Compose:
 # renovate: datasource=github-releases depName=docker/compose
-ARG DOCKER_COMPOSE_VERSION=2.24.5
+ARG DOCKER_COMPOSE_VERSION=2.27.0
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \
