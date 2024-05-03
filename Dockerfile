@@ -26,6 +26,8 @@ RUN apt-get update; \
         gnupg \
         locales \
         lsb-release \
+        # Required by npm-groovy-lint:
+        openjdk-17-jre \
         openssh-client \
         openssl \
         python3 \
