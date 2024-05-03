@@ -71,6 +71,7 @@
         "system:pip:outdated": "pip list --outdated",
         "test": "run-s test:*",
         "test:markdown": "remark --rc-path .config/remark.json --ignore-path .gitignore .",
+        "test:shell": "git ls-files | grep -e '\\.sh$' | xargs shellcheck",
         "test:spelling": "cspell '**/*.md' --config .config/cspell.json --gitignore --no-progress --relative --show-context",
         "test:wording": "alex",
         "test:ec": "ec",
