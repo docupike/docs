@@ -122,7 +122,7 @@ RUN curl -OfsSL \
 
 # Node.js and NPM:
 # renovate: datasource=github-releases depName=nodejs/node
-ARG NODE_VERSION=20.11.0
+ARG NODE_VERSION=20.12.2
 # renovate: datasource=github-releases depName=npm/cli
 ARG NPM_VERSION=10.7.0
 RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
