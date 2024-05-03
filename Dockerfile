@@ -111,9 +111,9 @@ RUN curl -OfsSL \
 
 # editorconfig-checker (ec):
 # renovate: datasource=github-releases depName=editorconfig-checker/editorconfig-checker
-ARG EC_VERSION=2.8.0
+ARG EC_VERSION=3.0.1
 RUN curl -OfsSL \
-        "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/${EC_VERSION}/ec-linux-amd64.tar.gz"; \
+        "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/v${EC_VERSION}/ec-linux-amd64.tar.gz"; \
     tar -xzf ec-linux-amd64.tar.gz; \
     install -m 755 -o root -g root bin/ec-linux-amd64 /usr/local/bin/ec; \
     rm -r \
