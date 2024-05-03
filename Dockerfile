@@ -132,22 +132,9 @@ RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     npm install -g "npm@$NPM_VERSION"; \
     npm completion > /etc/bash_completion.d/npm
 
-# Upgrade pip:
-RUN pip3 install --upgrade --no-cache-dir --break-system-packages \
-        pip \
-        setuptools \
-        wheel \
-    ; \
-    apt-get remove -y \
-        python3-pip \
-        python3-setuptools \
-        python3-wheel \
-    ; \
-    apt-get autoremove -y
-
 # pip:
 COPY requirements.txt /tmp/
-RUN pip3 install \
+RUN pip install \
         --upgrade --no-cache-dir --break-system-packages \
         --requirement requirements.txt \
     ; \
