@@ -6,5 +6,5 @@ ignored:
   - DL3013
   # Ignore version pinning in alpine's apk add:
   - DL3018
-  # Allow multiple consecutive RUN statements:
-  - DL3059
+trustedRegistries:
+  - docker.io
