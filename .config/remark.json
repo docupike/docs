@@ -1,8 +1,14 @@
 {
     "settings": {},
     "plugins": [
-        "lint",
-        "lint-no-empty-sections",
+        "remark-lint",
+        "remark-preset-lint-recommended",
+        "remark-preset-lint-consistent",
+        [
+            "remark-lint-code-block-style",
+            "fenced"
+        ],
+        "remark-lint-no-empty-sections",
         [
             "remark-frontmatter",
             {
@@ -34,7 +40,16 @@
                 }
             ]
         ],
-        "remark-preset-lint-consistent",
-        "remark-preset-lint-recommended"
+        [
+            "remark-lint-list-item-indent",
+            "tab"
+        ],
+        [
+            "remark-lint-emphasis-marker",
+            "_"
+        ],
+        "remark-gfm",
+        "remark-normalize-headings"
     ]
 }
+
