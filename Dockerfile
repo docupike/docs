@@ -70,7 +70,7 @@ RUN curl -OfsSL \
 
 # Docker:
 # renovate: datasource=github-releases depName=moby/moby
-ARG DOCKER_VERSION=25.0.3
+ARG DOCKER_VERSION=26.1.1
 RUN curl -fsSL \
         https://download.docker.com/linux/ubuntu/gpg | \
         gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
