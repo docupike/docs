@@ -38,6 +38,7 @@ RUN apt-get update; \
         python3-venv \
         rsync \
         tar \
+        xz-utils \
     ;\
     apt-get clean; \
     rm -rf /var/lib/apt/lists/*
@@ -59,6 +60,17 @@ RUN touch /var/mail/ubuntu; \
     chown "${USER_ID}":"${GROUP_ID}" -R /home/runner
 
 WORKDIR /tmp/
+
+# shellcheck:
+# renovate: datasource=github-releases depName=koalaman/shellcheck
+ARG SHELLCHECK_VERSION=0.10.0
+RUN curl -OfsSL \
+        "https://github.com/koalaman/shellcheck/releases/download/v${SHELLCHECK_VERSION}/shellcheck-v${SHELLCHECK_VERSION}.linux.x86_64.tar.xz"; \
+    tar -xf "shellcheck-v${SHELLCHECK_VERSION}.linux.x86_64.tar.xz"; \
+    install -m 755 -o root -g root "shellcheck-v${SHELLCHECK_VERSION}/shellcheck" /usr/local/bin/; \
+    rm -r \
+        "shellcheck-v${SHELLCHECK_VERSION}/" \
+        "shellcheck-v${SHELLCHECK_VERSION}.linux.x86_64.tar.xz"
 
 # hadolint:
 # renovate: datasource=github-releases depName=hadolint/hadolint
