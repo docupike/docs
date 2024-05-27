@@ -9,6 +9,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.4.0 – 2024-05-27
+
+### Added
+
+-   Condition Builder: Add an inline Condition builder to reports edit page (`ID2-5050`)
+-   Condition Builder: Add "Quick filter" to Add conditions block of reports (`ID2-5049`)
+-   Documentation of software and installations: Add documentation for software/OS classes (`ID2-5096`)
+-   Reports can be shared: Implement Export Report as CSV API (`ID2-4958`)
+-   Reports can be shared: Export Reports as CSV (`ID2-4905`)
+-   User Management: Manage users of existing role (`ID2-4991`)
+
+### Changed
+
+-   User Management: Add multiple users to a role when creating a role (`ID2-4990`)
+
+### Fixed
+
+-   API: TextApi fails when request criteria contains not existing category (`ID2-5017`)
+-   CMDB configuration: Usage details shows "no access" banner in case when user has tenant access (`ID2-4844`)
+-   Improvements of IP networking: Adjust Category Domain do not change order of hidden attributes on category update (`ID2-4984`)
+-   Multi-Tenancy: Fix unassignment of users on deletion of tenant (`ID2-5092`)
+-   Reports Main Feature: Show error notification on saving report with errors (`ID2-5130`)
+
 ## 2.3.3 – 2024-04-29
 
 ### Fixed
