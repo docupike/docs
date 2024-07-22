@@ -44,7 +44,7 @@
         "remark-lint-no-empty-sections": "4.0.0",
         "remark-lint-no-long-code": "0.1.3",
         "remark-lint-no-repeat-punctuation": "0.1.4",
-        "remark-lint-no-trailing-spaces": "2.0.1",
+        "remark-lint-no-trailing-spaces": "3.0.2",
         "remark-lint-write-good": "1.2.0",
         "remark-normalize-headings": "4.0.0",
         "remark-preset-lint-consistent": "6.0.0",
