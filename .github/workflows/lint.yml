@@ -33,10 +33,6 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Pull container base image
-        run: >
-          docker compose
-          pull
       - name: Re-use container image layers
         uses: jpribyl/action-docker-layer-caching@v0.1.1
         continue-on-error: true
