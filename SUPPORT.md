@@ -1,95 +1,129 @@
 # Support resources
 
-Do you like to get in touch with us? No problem. Here is a list of common questions and where to find good answers.
+Do you like to get in touch with us? No problem.
+Here is a list of common questions and where to find good answers.
 
-## What is i-doit?
+## Docupike
 
-i-doit ("I document IT") is a fully-featured Web application for CMDB (Configuration Management Databases), IT asset management (ITAM) and IT documentation. i-doit is maintained by the company synetics GmbH, located in Düsseldorf/Germany.
+### What is Docupike?
 
-## What is the difference between i-doit `v1` and `v2`?
+docupike is the cloud based documentation that holds all technical and administrative information in your organization in one place.
+It thus serves as the single source of truth when it comes to optimizing and automating your business processes.
 
-`v1` is the stable branch of i-doit while `v2` will be in public beta soon.
+### How do I use Docupike?
 
-## What is the difference between i-doit pro and open?
+Visit [Docupike's documentation website][docs].
+
+### I found a typo or misleading information in the docs. Who will fix it?
+
+Help us [making the docs a better place for everyone][docs-contribution].
+
+### I found a bug in Docupike. Who will resolve it?
+
+Write us an [e-mail](mailto:help@docupike.com).
+
+### Where can I get commercial support for Docupike?
+
+Write us an [e-mail](mailto:help@docupike.com).
+
+### Where can I get more information about Docupike?
+
+Take a look at our [website][docupike-website].
+
+## i-doit
+
+### What is i-doit?
+
+i-doit ("I document IT") is a fully-featured Web application for CMDB (Configuration Management Databases), IT asset management (ITAM) and IT documentation.
+
+### What is the difference between i-doit pro and open?
 
 i-doit comes in two editions:
 
 -   [i-doit open][open] is the community edition which is free and open source software.
--   [i-doit pro][website] is the commercial edition with enterprise features. See the differences in the [feature comparison][comparison].
+-   [i-doit pro][i-doit-website] is the commercial edition with enterprise features.
 
-## I found a bug in i-doit. Who will resolve it?
+Learn more about all differences in the [feature comparison][comparison].
+
+### I found a bug in i-doit. Who will resolve it?
 
 Raise a new issue [in our help center][help].
 
-## I found a typo or misleading information in the docs. Who will fix it?
+### I found a typo or misleading information in the knowledge base. Who will fix it?
 
-[Help us][contributing] to make the docs a better place.
+Help us [making the knowledge base a better place for everyone][kb-contribution].
 
-## I did not find what I am looking for in the docs. Who will answer my question?
-
-Raise a [new issue][issues] in the GitHub repository.
-
-## Where can I discuss my experience with i-doit?
+### Where can I discuss my experience with i-doit?
 
 Share your thoughts with the [i-doit community][community].
 
-## How do I install and maintain i-doit `v2`?
+### How can I extend i-doit?
 
-Read our [administrator guide][docs].
+i-doit can be extended by [add-ons][i-doit-website].
 
-## How do I configure i-doit `v2` and use it in my daily work?
+### How can I develop my own i-doit add-on?
 
-Read our [user guide][docs].
+Become a developing partner (for free!) and read our [developer guide lines][kb].
 
-## Is there a reference of the i-doit `v2` API?
+### How can I test i-doit?
 
-Yes, read the [API reference][docs].
+[Test i-doit][i-doit-website] 30 days for free or explore our [demo environment][demo].
 
-## How can I extend i-doit?
+### Where can I get commercial support for i-doit?
 
-Both versions `v1` and `v2` can be extended by add-ons. For `v1` add-ons refer to the [knowledge base][kb]. And for `v2` add-ons refer to the [docs][docs].
+You can get commercial support for i-doit either directly [from synetics][help] or from one of [our partners][i-doit-website].
 
-## How can I develop my own i-doit `v2` add-on?
+### What are the plans for i-doit and its add-ons?
 
-Become a developing partner (for free!) and read our [developer guide lines][docs].
+See a [full list of plans][i-doit-website] which suits your needs.
+Most of our software products are either for free or subscription based.
 
-## Where can I get consulting for/training for my documentation project?
+## About us
 
-We have a [growing list of partners][partners] who will support you with [in-house consulting and trainings][trainings].
+### Who is synetics?
 
-## How can I test i-doit `v1`?
+Docupike and i-doit are both maintained by the company synetics GmbH, located in Düsseldorf/Germany.
+Learn more about [us][about-us] on our website.
 
-[Test i-doit `v1`][trail] 30 days for free or explore our [demo environment][demo].
+### Where can I get professional consulting/trainings for my documentation project?
 
-## Where can I get commercial support for i-doit?
+We have a [growing list of partners][i-doit-website] who will support you with [in-house consulting and trainings][i-doit-website].
 
-You can get commercial support for i-doit either directly [from synetics][help] or from one of [our partners][partners].
+### I found a security issue in Docupike/i-doit. Who is responsible for that?
 
-## What are the plans for i-doit and its add-ons?
+We covered everything in our [security policy][security].
 
-See a [full list of plans][plans] which suits your needs. Most of our software products are either for free or subscription based.
+### Are you on social media?
 
-## Where can I download release packages and license keys?
+Yes, for sure.
+Find us on:
 
-Download release packages of i-doit/its add-ons and needed license keys from [our customer portal][portal].
+-   [Facebook][facebook]
+-   [Google][google]
+-   [Instagram][instagram]
+-   [LinkedIn][linkedin]
+-   [YouTube (docupike)][docupike-youtube]/[(i-doit)][i-doit-youtube]
+-   [X][x]
+-   [Xing][xing]
 
-## Where can I find i-doit-related tutorials and webinar recordings?
-
-All recordings are available on our [YouTube channel][youtube].
-
+[about-us]: https://www.i-doit.com/en/synetics/
 [community]: https://community.i-doit.com/
 [comparison]: https://www.i-doit.org/cmdb-it-documentation/
-[contributing]: CONTRIBUTING.md
-[portal]: https://login.i-doit.com/
 [demo]: https://demo.i-doit.com/
-[docs]: https://docs.i-doit.com
+[docs]: https://docs.docupike.com/
+[docs-contribution]: https://github.com/docupike/docs/blob/main/CONTRIBUTING.md
 [help]: https://help.i-doit.com/
 [kb]: https://kb.i-doit.com/
-[issues]: https://github.com/i-doit/docs/issues
+[kb-contribution]: https://github.com/i-doit/knowledge-base/blob/main/CONTRIBUTING.md
 [open]: https://i-doit.org/
-[partners]: https://www.i-doit.com/en/partner/
-[plans]: https://www.i-doit.com/en/i-doit/price-overview/
-[trail]: https://www.i-doit.com/en/i-doit/i-doit-30-day-free-trial-download/
-[trainings]: https://www.i-doit.com/en/support/producttrainings/
-[website]: https://i-doit.com/
-[youtube]: https://www.youtube.com/user/smartitsm
+[i-doit-website]: https://i-doit.com/
+[docupike-website]: https://docupike.com/
+[security]: SECURITY.md
+[facebook]: https://facebook.com/itdokumentation/
+[google]: https://g.page/synetics-gmbh/review
+[instagram]: https://www.instagram.com/i_doit.cmdb/
+[linkedin]: https://www.linkedin.com/company/i-doit/
+[x]: https://x.com/i_doit
+[xing]: https://www.xing.com/communities/groups/i-doit-dokumentation-und-cmdb-1064322
+[i-doit-youtube]: https://www.youtube.com/@it-dokumentation
+[docupike-youtube]: https://www.youtube.com/@docupike-jo2kc
