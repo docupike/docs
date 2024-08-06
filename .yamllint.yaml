@@ -3,10 +3,16 @@ extends: default
 
 locale: en_US.UTF-8
 
+ignore-from-file: .gitignore
+
 rules:
+  braces:
+    min-spaces-inside: 0
+    max-spaces-inside: 1
   comments:
     require-starting-space: true
     min-spaces-from-content: 1
+  comments-indentation: false
   line-length:
     level: warning
     max: 120
