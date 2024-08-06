@@ -20,7 +20,10 @@
         [
             "remark-lint-no-dead-urls",
             {
-                "skipLocalhost": true
+                "skipLocalhost": true,
+                "gotOptions": {
+                    "timeout": 5000
+                }
             }
         ],
         [
