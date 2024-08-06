@@ -35,24 +35,24 @@ jobs:
             ${{ runner.os }}-node-
       - name: Pull container base image
         run: >
-          docker-compose
+          docker compose
           pull
       - name: Re-use container image layers
         uses: jpribyl/action-docker-layer-caching@v0.1.1
         continue-on-error: true
       - name: Build container image
         run: >
-          docker-compose
+          docker compose
           build
           --build-arg USER_ID="$(id -u)"
           --build-arg GROUP_ID="$(id -g)"
       - name: Install toolchain
         run: >
-          docker-compose
+          docker compose
           run env
           npm ci
       - name: Run script
         run: >
-          docker-compose
+          docker compose
           run env
           npm run test:${{ matrix.script }}
