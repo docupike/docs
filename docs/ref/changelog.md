@@ -9,6 +9,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.5.0 – 2024-08-14
+
+### Added
+
+-   UI Dialog+ Improvements: Add “Select all” Checkbox to MV Dialog+ Modal (`ID2-2495`)
+-   Update and maintenance information: Show public messages on login to docupike (`ID2-5129`)
+-   User Management: Manage users of existing user group (`ID2-4988`)
+-   User Management: Manage role on a user details page (`ID2-4992`)
+
+### Changed
+
+-   Development/maintenance: Support PHP 8.3 for docupike (`ID2-4536`)
+-   Location view: Show all objects in All objects of Location view (`ID2-5018`)
+-   Location view: Add badge information to container objects in location tree with number of included objects (`ID2-4944`)
+-   Update React to v18: Update "react-router-dom" to v6 (`ID2-3057`)
+-   User Management: Manage user groups on a user details page (`ID2-4989`)
+
+### Fixed
+
+-   Category Builder: Fix updating options of properties (`ID2-5117`)
+-   Development/maintenance: Messenger ram usage too high (`ID2-5125`)
+-   Object ranking: Set last change when archiving object (`ID2-5042`)
+-   Servereye integration: Deletion of object with many entries leads to errors (`ID2-5163`)
+-   Setup/update: Fix update of the instances with dependent entries (`ID2-5166`)
+
 ## 2.4.0 – 2024-05-27
 
 ### Added

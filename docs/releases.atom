@@ -3,8 +3,19 @@
     <link type="text/html" rel="alternate" href="https://docs.docupike.com/ref/version-history.html"/>
     <link type="application/atom+xml" rel="self" href="https://docs.docupike.com/releases.atom"/>
     <title>docupike releases</title>
-    <updated>2024-05-27T09:27:05Z</updated>
+    <updated>2024-08-14T10:48:42Z</updated>
     <id>releases.docupike.com:docupike</id>
+    <entry>
+        <updated>2024-08-14T00:00:00+00:00</updated>
+        <link rel="alternate" type="text/html" href="https://docs.docupike.com/ref/release-notes/v2.5.0.html"/>
+        <title>v2.5.0</title>
+        <content type="html">&lt;a href=&#34;https://docs.docupike.com/ref/changelog.html#250-2024-08-14&#34;&gt;Changelog&lt;/a&gt;</content>
+        <author>
+            <name>docupike team</name>
+        </author>
+        <media:thumbnail height="32" width="32" url="https://docs.docupike.com/img/favicon-32x32.png"/>
+        <id>releases.docupike.com:docupike:v2.5.0</id>
+    </entry>
     <entry>
         <updated>2024-05-27T00:00:00+00:00</updated>
         <link rel="alternate" type="text/html" href="https://docs.docupike.com/ref/release-notes/v2.4.0.html"/>
@@ -103,16 +114,5 @@
         </author>
         <media:thumbnail height="32" width="32" url="https://docs.docupike.com/img/favicon-32x32.png"/>
         <id>releases.docupike.com:docupike:v2.0.1</id>
-    </entry>
-    <entry>
-        <updated>2023-09-26T00:00:00+00:00</updated>
-        <link rel="alternate" type="text/html" href="https://docs.docupike.com/ref/release-notes/v2.0.0.html"/>
-        <title>v2.0.0</title>
-        <content type="html">&lt;a href=&#34;https://docs.docupike.com/ref/changelog.html#200-2023-09-26&#34;&gt;Changelog&lt;/a&gt;</content>
-        <author>
-            <name>docupike team</name>
-        </author>
-        <media:thumbnail height="32" width="32" url="https://docs.docupike.com/img/favicon-32x32.png"/>
-        <id>releases.docupike.com:docupike:v2.0.0</id>
     </entry>
 </feed>
