@@ -1,4 +1,4 @@
-FROM ubuntu:noble-20240407.1
+FROM ubuntu:noble-20240827.1
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG HTTP_PROXY
