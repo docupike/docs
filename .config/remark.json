@@ -21,7 +21,7 @@
             "remark-lint-no-dead-urls",
             {
                 "skipLocalhost": true,
-                "gotOptions": {
+                "deadOrAliveOptions": {
                     "timeout": 5000
                 }
             }
