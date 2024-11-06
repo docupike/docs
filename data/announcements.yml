@@ -4,6 +4,10 @@
 # "title" is optional and defaults to first characters of "content".
 # "content" is required and will be parsed from Markdown.
 announcements:
+  - data: 2024-09-02
+    title: Open public beta of i-doit cloud
+    content: >
+      [Registration](https://i-doit.com/) for i-doit cloud is open for evalution purposes.
   - date: 2023-01-19
     title: General availability
     content: >

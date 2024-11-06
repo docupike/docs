@@ -67,7 +67,7 @@
         "system:npm:doctor": "npm doctor",
         "system:npm:outdated": "npm outdated",
         "system:pip": "run-s system:pip:*",
-        "system:pip:audit": "mkdir _tmpdir && TMPDIR=_tmpdir/ pip-audit --requirement requirements.txt --progress-spinner off --strict && rm -rf _tmpdir/",
+        "system:pip:audit": "pip-audit --requirement requirements.txt --progress-spinner off --strict --no-deps --disable-pip",
         "system:pip:outdated": "pip list --outdated",
         "test": "run-s test:*",
         "test:markdown": "remark --rc-path .config/remark.json --ignore-path .gitignore .",
@@ -92,7 +92,7 @@
         "linux"
     ],
     "engines": {
-        "node": "^20.0.0",
+        "node": "^22.0.0",
         "npm": "^10.0.0"
     }
 }
