@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.6.0 – 2024-11-18
+
+### Changed
+
+-   Categories and attributes: Improve read mode of password field (`ID2-5165`)
+-   Categories and attributes: Use URL Field type for Access -> Url attribute (`ID2-5164`)
+-   Development/maintenance: Update symfony cache to be compatible with Redis 6.1.0 (`ID2-5180`)
+
+### Fixed
+
+-   Cloud 3rd Party Login: Fix return URL after successful OAuth auth (`ID2-5173`)
+
 ## 2.5.0 – 2024-08-14
 
 ### Added
