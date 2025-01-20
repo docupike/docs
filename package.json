@@ -26,7 +26,7 @@
     "license": "CC-BY-SA-4.0",
     "author": "synetics GmbH <info@i-doit.com> (https://docupike.com/)",
     "devDependencies": {
-        "@cyclonedx/cyclonedx-npm": "1.19.3",
+        "@cyclonedx/cyclonedx-npm": "1.20.0",
         "@prantlf/jsonlint": "16.0.0",
         "alex": "11.0.1",
         "cloc": "2.2.0-cloc",
