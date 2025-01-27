@@ -48,7 +48,7 @@
         "remark-lint-write-good": "1.2.0",
         "remark-normalize-headings": "4.0.0",
         "remark-preset-lint-consistent": "6.0.0",
-        "remark-preset-lint-recommended": "7.0.0"
+        "remark-preset-lint-recommended": "7.0.1"
     },
     "scripts": {
         "docs:build": "mkdocs build",
