@@ -29,7 +29,7 @@
         "@cyclonedx/cyclonedx-npm": "2.0.0",
         "@prantlf/jsonlint": "16.0.0",
         "alex": "11.0.1",
-        "cloc": "2.2.0-cloc",
+        "cloc": "2.11.0",
         "cspell": "8.17.3",
         "husky": "9.1.7",
         "jscpd": "4.0.5",
