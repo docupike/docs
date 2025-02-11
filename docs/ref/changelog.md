@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.6.1 – 2025-02-11
+
+### Changed
+
+-   Update and maintenance information: Use mailer sender and reply to from environment variables (`ID2-5160`)
+
+### Fixed
+
+-   Login: Set correct tenant id when user logs in directly to ODP (`ID2-5185`)
+-   Update and maintenance information: Improve stability of updates on bigger instances (`ID2-5190`)
+
 ## 2.6.0 – 2024-11-18
 
 ### Changed
