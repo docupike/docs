@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.6.2 – 2025-03-05
+
+### Fixed
+
+-   Setup/update: Fix update for duplicated references (`ID2-5202`)
+
 ## 2.6.1 – 2025-02-11
 
 ### Changed
