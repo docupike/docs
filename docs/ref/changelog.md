@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.6.3 – 2025-04-01
+
+### Fixed
+
+-   Rights and permissions: Clean up permissions as soon as the user group or role are removed (`ID2-5205`)
+-   Update and maintenance information: Fix handling of creating add-on data with no tenant assigned to user (`ID2-5204`)
+
 ## 2.6.2 – 2025-03-05
 
 ### Fixed
