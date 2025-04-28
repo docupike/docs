@@ -30,7 +30,7 @@
         "@prantlf/jsonlint": "16.0.0",
         "alex": "11.0.1",
         "cloc": "2.11.0",
-        "cspell": "8.19.2",
+        "cspell": "8.19.3",
         "husky": "9.1.7",
         "jscpd": "4.0.5",
         "npm-groovy-lint": "15.1.0",
