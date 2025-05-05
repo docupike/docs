@@ -12,4 +12,4 @@ pip-audit == 2.9.0
 Pygments == 2.19.1
 pymdown-extensions == 10.15
 PyOpenSSL == 25.0.0
-yamllint == 1.37.0
+yamllint == 1.37.1
