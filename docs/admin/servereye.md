@@ -6,13 +6,12 @@ lang: en
 
 # servereye integration
 
-The servereye Add-on is designed to synchronize all data from servereye to docupike. The Add-on configuration will happen automatically during registration procedure.
+The servereye Add-on is designed to synchronize data from servereye to docupike. The Add-on configuration will happen automatically during registration procedure.
 
 ## Overview
 
 -   Automatic configuration during add-on registration
 -   Synchronization occurs multiple times a day
--   Manual synchronization triggering is possible
 -   Customer companies are synchronized as tenant
 -   Users are synchronized as individuals
 -   Users are assigned to tenant/s
@@ -26,9 +25,9 @@ The servereye Add-on is designed to synchronize all data from servereye to docup
 This gives you an oversight how-to login for the first time.<br>
 Access your docupike.cloud instance using the following URL schema:
 
-~~~
+```
 https://<your_subdomain>.docupike.cloud/
-~~~
+```
 
 Navigate to the Web UI of docupike to view the login screen:
 
@@ -72,8 +71,7 @@ Entries in the listed categories undergo updates through the servereye sync. **M
 
 ## servereye synchronization
 
-You can check the servereye synchronization via `Add-ons > servereye settings`. Here you will find a **Sync**, **Refresh** and **Recent imports** button.
-The **Sync** button will execute a complete Sync for user and objects.The **Refresh** button refreshes the page, while the **Recent imports** button opens the "servereye import" class view.
+You can check the servereye synchronization via `Add-ons > servereye settings`. Here you can see the synchronization logs and their status.
 
 ## Widget
 
