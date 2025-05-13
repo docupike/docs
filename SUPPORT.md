@@ -103,27 +103,25 @@ Find us on:
 -   [Instagram][instagram]
 -   [LinkedIn][linkedin]
 -   [YouTube (docupike)][docupike-youtube]/[(i-doit)][i-doit-youtube]
--   [X][x]
 -   [Xing][xing]
 
-[about-us]: https://www.i-doit.com/en/synetics/
+[about-us]: https://www.i-doit.com/en/resources/about-us
 [community]: https://community.i-doit.com/
-[comparison]: https://www.i-doit.org/cmdb-it-documentation/
+[comparison]: https://i-doit.org/cmdb-it-documentation/
 [demo]: https://demo.i-doit.com/
 [docs]: https://docs.docupike.com/
 [docs-contribution]: https://github.com/docupike/docs/blob/main/CONTRIBUTING.md
 [help]: https://help.i-doit.com/
-[kb]: https://kb.i-doit.com/
+[kb]: https://kb.i-doit.com/en/
 [kb-contribution]: https://github.com/i-doit/knowledge-base/blob/main/CONTRIBUTING.md
 [open]: https://i-doit.org/
-[i-doit-website]: https://i-doit.com/
-[docupike-website]: https://docupike.com/
+[i-doit-website]: https://www.i-doit.com/
+[docupike-website]: https://www.docupike.com/
 [security]: SECURITY.md
 [facebook]: https://facebook.com/itdokumentation/
 [google]: https://g.page/synetics-gmbh/review
 [instagram]: https://www.instagram.com/i_doit.cmdb/
 [linkedin]: https://www.linkedin.com/company/i-doit/
-[x]: https://x.com/i_doit
 [xing]: https://www.xing.com/communities/groups/i-doit-dokumentation-und-cmdb-1064322
 [i-doit-youtube]: https://www.youtube.com/@it-dokumentation
 [docupike-youtube]: https://www.youtube.com/@docupike-jo2kc

@@ -5,7 +5,7 @@
 **Note:** This repository is the source of the docupike docs.
 
 [![Build status](https://github.com/docupike/docs/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/docupike/docs/actions)
-[![Creative Commons Attribution-ShareAlike 4.0 International](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+[![Creative Commons Attribution-ShareAlike 4.0 International](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
 ## What is docupike?
 
@@ -23,6 +23,6 @@ Do you like to [get in touch with us](SUPPORT.md)?
 
 ## Copyright & License
 
-Copyright (C) 2019-23 [synetics GmbH](https://docupike.com/)
+Copyright (C) 2019-25 [synetics GmbH](https://docupike.com/)
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
