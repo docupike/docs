@@ -12,9 +12,9 @@ buildDate = datetime.now(dateutil.tz.tzutc()).isoformat()
 
 def renderFeedItem(announcement):
     announcement["title"] = announcement.get("title", announcement["content"][:23] + '…')
-    
+
     announcement["content"] = markdown.markdown(announcement["content"])
-    
+
     if "date" in announcement:
         announcement["date"] = announcement["date"].isoformat() + 'T00:00:00.0+00:00'
     else:
@@ -35,9 +35,7 @@ def on_post_build(env):
 
     feed_content = template.render(announcements=announcements, buildDate=buildDate)
 
-    site_dir = env.conf['site_dir']
-    
-    file_path = os.path.join(site_dir, 'announcements.atom')
+    file_path = os.path.join('site/announcements.atom')
 
     with open(file_path, 'w') as f:
         f.write(feed_content)

@@ -1,4 +1,4 @@
-FROM ubuntu:noble-20241118.1
+FROM ubuntu:plucky-20250415
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG HTTP_PROXY
@@ -32,6 +32,7 @@ RUN apt-get update; \
         openssl \
         python3 \
         python3-apt \
+        python3-argcomplete \
         python3-dev \
         python3-pip \
         python3-setuptools \
@@ -82,7 +83,7 @@ RUN curl -OfsSL \
 
 # Docker:
 # renovate: datasource=github-releases depName=moby/moby
-ARG DOCKER_VERSION=27.3.1
+ARG DOCKER_VERSION=28.1.1
 RUN curl -fsSL \
         https://download.docker.com/linux/ubuntu/gpg | \
         gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
@@ -107,7 +108,7 @@ RUN curl -fsSL \
 
 # Docker Compose:
 # renovate: datasource=github-releases depName=docker/compose
-ARG DOCKER_COMPOSE_VERSION=2.30.2
+ARG DOCKER_COMPOSE_VERSION=2.35.1
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \
@@ -123,7 +124,7 @@ RUN curl -OfsSL \
 
 # editorconfig-checker (ec):
 # renovate: datasource=github-releases depName=editorconfig-checker/editorconfig-checker
-ARG EC_VERSION=3.0.3
+ARG EC_VERSION=3.2.1
 RUN curl -OfsSL \
         "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/v${EC_VERSION}/ec-linux-amd64.tar.gz"; \
     tar -xzf ec-linux-amd64.tar.gz; \
@@ -134,9 +135,9 @@ RUN curl -OfsSL \
 
 # Node.js and NPM:
 # renovate: datasource=github-releases depName=nodejs/node
-ARG NODE_VERSION=22.11.0
+ARG NODE_VERSION=22.15.0
 # renovate: datasource=github-releases depName=npm/cli
-ARG NPM_VERSION=10.9.0
+ARG NPM_VERSION=11.3.0
 RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     -o /usr/local/bin/n; \
     chmod 0755 /usr/local/bin/n; \
@@ -147,14 +148,18 @@ RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
 # pip:
 COPY requirements.txt /tmp/
 RUN pip install \
-        --upgrade --no-cache-dir --break-system-packages \
+        --upgrade \
+        --no-cache-dir \
+        --break-system-packages \
+        --ignore-installed \
         --requirement requirements.txt \
     ; \
     rm -rf \
         requirements.txt \
         /usr/local/bin/__pycache__ \
     ; \
-    ln -s /usr/bin/python3 /usr/bin/python
+    ln -s /usr/bin/python3 /usr/bin/python; \
+    activate-global-python-argcomplete
 
 # OpenSSH client:
 COPY data/ssh/config /etc/ssh/ssh_config.d/env.conf

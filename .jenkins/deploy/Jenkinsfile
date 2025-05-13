@@ -9,19 +9,9 @@ pipeline {
         SSH_KEY_DOCS = '~/.ssh/id_ecdsa'
     }
     stages {
-        stage('Pre-build') {
+        stage('Setup') {
             steps {
-                sh("docker-compose \
-                    build \
-                    --pull \
-                    --build-arg USER_ID=${env.USER_ID} \
-                    --build-arg GROUP_ID=${env.GROUP_ID} \
-                ")
-            }
-        }
-        stage('Install') {
-            steps {
-                sh('docker-compose run env npm install')
+                sh('bin/setup/ci.sh')
             }
         }
         stage('Build') {

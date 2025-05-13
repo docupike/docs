@@ -21,6 +21,11 @@
             "remark-lint-no-dead-urls",
             {
                 "skipLocalhost": true,
+                "skipUrlPatterns": [
+                    "^mailto:(.*)",
+                    "^https://facebook.com(.*)",
+                    "^https://(www\\.|)xing.com(.*)"
+                ],
                 "deadOrAliveOptions": {
                     "timeout": 5000
                 }

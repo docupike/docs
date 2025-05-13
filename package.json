@@ -51,9 +51,11 @@
         "remark-preset-lint-recommended": "7.0.1"
     },
     "scripts": {
-        "docs:build": "mkdocs build",
+        "docs:build": "run-s docs:build:*",
+        "docs:build:static": "mkdir -p site/ && cp static/* site/",
+        "docs:build:en": "mkdocs build --config-file=i18n/en/mkdocs.yml",
         "docs:deploy": "rsync --archive --delete-after site/ docs.docupike.com:/var/www/docs/",
-        "docs:serve": "mkdocs serve",
+        "docs:serve:en": "mkdocs serve --config-file=i18n/en/mkdocs.yml",
         "pre-commit": "run-s pre-commit:*",
         "pre-commit:no-main-branches": "echo main | grep -v -w -q $(git rev-parse --abbrev-ref HEAD)",
         "pre-commit:test": "npm test",
@@ -72,7 +74,9 @@
         "test": "run-s test:*",
         "test:markdown": "remark --rc-path .config/remark.json --ignore-path .gitignore .",
         "test:shell": "git ls-files | grep -e '\\.sh$' | xargs shellcheck",
-        "test:spelling": "cspell '**/*.md' --config .config/cspell.json --gitignore --no-progress --relative --show-context",
+        "test:spelling": "run-s test:spelling:*",
+        "test:spelling:common": "cspell '*.md' --config i18n/en/cspell.json --gitignore --no-progress --relative --show-context",
+        "test:spelling:en": "cspell 'docs/en/**/*.md' --config i18n/en/cspell.json --gitignore --no-progress --relative --show-context",
         "test:wording": "alex --no-update-notifier",
         "test:ec": "ec",
         "test:json": "git ls-files | grep -e '\\.json$' | xargs -L 1 jsonlint --quiet",
@@ -88,11 +92,10 @@
         "sbom:pip": "cyclonedx-py environment --output-format JSON --outfile _sbom/pip.json"
     },
     "os": [
-        "darwin",
         "linux"
     ],
     "engines": {
         "node": "^22.0.0",
-        "npm": "^10.0.0"
+        "npm": "^11.0.0"
     }
 }
