@@ -16,12 +16,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh('docker-compose run env npm run docs:build')
+                sh('docker compose run env npm run docs:build')
             }
         }
         stage('Deploy') {
             steps {
-                sh('docker-compose run env npm run docs:deploy')
+                sh('docker compose run env npm run docs:deploy')
             }
         }
         stage('Push') {
@@ -35,7 +35,7 @@ pipeline {
                     --username $REGISTRY_CREDS_USR \
                     --password $REGISTRY_CREDS_PSW \
                     $REGISTRY_DOMAIN')
-                sh('docker-compose push')
+                sh('docker compose push')
                 sh('docker logout $REGISTRY_DOMAIN')
             }
         }
