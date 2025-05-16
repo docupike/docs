@@ -9,6 +9,7 @@ Bugfixing
 changelog
 checkbox
 checkboxes
+CLA
 CMDB
 CodeHilite
 combobox

@@ -16,6 +16,8 @@ services:
       - "${SSH_KEY_DOCS:-~/.ssh/cloud-production}.pub:/etc/ssh/keys/docs.pub:ro"
       - ${SSH_AUTH_SOCK:-/bin/true}:/ssh-agent
       - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 127.0.0.1:8000:8000
     cap_drop:
       - ALL
     privileged: false
