@@ -107,7 +107,7 @@ Find us on:
 
 [about-us]: https://www.i-doit.com/en/resources/about-us
 [community]: https://community.i-doit.com/
-[comparison]: https://i-doit.org/cmdb-it-documentation/
+[comparison]: https://i-doit.org/en/features
 [demo]: https://demo.i-doit.com/
 [docs]: https://docs.docupike.com/
 [docs-contribution]: https://github.com/docupike/docs/blob/main/CONTRIBUTING.md

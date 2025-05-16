@@ -50,7 +50,7 @@ For example, if you define `detail/{id}`, your component will receive a `params`
 `name` - unique name of the route. Each defined route creates a unique route name like `addons.{my-company}.{addon}.{name}`.
 For example, if you define an `index` as the name of your route, the corresponding `addons.my-company.my-addon.index` route will be created.
 
-You can find all available routes by requesting `https://your-docupike-instance.docupike.com/api/js/routing`.
+You can find all available routes by requesting `https://example.docupike.cloud/api/js/routing`.
 
 `type` - type of the route. Currently, there is only `spa` option available.
 

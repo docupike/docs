@@ -24,7 +24,10 @@
                 "skipUrlPatterns": [
                     "^mailto:(.*)",
                     "^https://facebook.com(.*)",
-                    "^https://(www\\.|)xing.com(.*)"
+                    "^https://(www\\.|)xing.com(.*)",
+                    "^https://www.php\\.net",
+                    "^https://example\\.docupike\\.cloud",
+                    "^https://bitbucket\\.org/synetics(.*)"
                 ],
                 "deadOrAliveOptions": {
                     "timeout": 5000
