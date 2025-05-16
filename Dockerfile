@@ -175,4 +175,6 @@ WORKDIR /runner
 
 USER runner
 
+EXPOSE 8000
+
 CMD ["bash"]

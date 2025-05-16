@@ -84,6 +84,7 @@ extra:
   dc:
     language: en-US
 use_directory_urls: false
+dev_addr: 0.0.0.0:8000
 watch:
   - ../../docs/en
   - ../../data

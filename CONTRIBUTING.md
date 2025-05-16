@@ -93,7 +93,6 @@ You need a modern Web browser (should be no problem, right?)
 Instructions depends on the operating system you are using.
 These are many examples which work sufficiently:
 
--   Atom
 -   VIM
 -   Visual Studio Code (VSCode)
 
@@ -101,32 +100,61 @@ All listed editors can be extended to provide you an excellent writing environme
 
 ## Setup your own environment
 
-An own environment is useful to develop on new features, fix bugs, write documentation snippets or run tests locally.
-This is for advanced users.
+This project provides a pre-defined container image which includes all necessary tools and some basic configuration settings, e.g. environment variables.
+In most cases it makes sense to keep your local environment as clean as possible.
 
-Before you start make sure all required tools are installed and configured properly:
+### Requirements
 
--   [Git][git]
--   Python **3** (2 does not work) with [PIP][pip]
--   GCC to compile some required Python packages
--   [NPM](https://docs.npmjs.com/), version `>= 6.7.0`
--   [Node.js](https://nodejs.org/en/docs/), version `>= 14.16.0`
+Please meet the following requirements on your workstation.
 
-This works on a GNU/Linux or a MacOS host:
+#### Apps
+
+-   [Git](https://git-scm.com/), version `>= 2.34.0`
+-   [Docker](https://docs.docker.com/get-started/get-docker/), version `>= 23.0.0`
+-   [Docker Compose](https://docs.docker.com/compose/), version `>= 2.0.0`
+
+#### Operating system (OS)
+
+-   Tested on GNU/Linux
+-   Untested but should work on MacOS and Windows, too
+-   Direct outgoing HTTP connections to internal and external Web services (no proxy)
+
+#### Hardware
+
+-   1 CPU core (the more the better)
+-   Ca. 1 GByte of RAM
+-   Ca. 5 GBytes of storage
+-   No known limitations on CPU architectures
+
+### Clone the repository
 
 ~~~ {.bash}
 git clone git@github.com:docupike/docs.git
 cd docs
-npm install
-pip install -U -r requirements.txt
 ~~~
+
+### Setup your environment
+
+~~~ {.bash}
+bin/setup/dev.sh
+~~~
+
+## Need a shell?
+
+Bash is available within the container image:
+
+~~~ {.bash}
+docker compose run env
+~~~
+
+Auto-completion is enabled where possible.
 
 ## Build the site
 
 Build the static website:
 
 ~~~ {.bash}
-npm run docs:build
+docker compose run env npm run docs:build
 ~~~
 
 The result will be located within the `site/` directory.
@@ -138,7 +166,7 @@ Whenever you add a new file or update an existing one your Web browser reloads t
 Start the Web server:
 
 ~~~ {.bash}
-npm run docs:serve:<lang>
+docker compose run -P env npm run docs:serve:<lang>
 ~~~
 
 Open `http://localhost:8000` in your Web browser.
@@ -149,7 +177,7 @@ You should see the home page.
 To test all available languages at once incl. static files (located in `static/`) build the site and run a pre-configured Web server in another container:
 
 ~~~ {.bash}
-npm run docs:build
+docker compose run env npm run docs:build
 docker compose up --watch web
 ~~~
 
@@ -159,6 +187,11 @@ Open `http://localhost:8080` in your Web browser.
 
 Do you like to know how to write good articles?
 Please follow our [writing guidelines](GUIDELINES.md).
+
+## Code of conduct
+
+We like you to read and follow our [code of conduct](CODE_OF_CONDUCT.md) before contributing.
+Thank you.
 
 ## Add another language
 
@@ -172,10 +205,26 @@ While English is the default language you can add more languages:
 -   Add sitemap to `static/robots.txt`
 -   Add language to `static/humans.txt`
 
-## Code of conduct
+## Commit
 
-We like you to read and follow our [code of conduct](CODE_OF_CONDUCT.md) before contributing.
-Thank you.
+Your Git commits must be signed using your private OpenPGP/GPG key.
+You can achieve this by adding the following settings to your Git configuration:
+
+~~~ {.ini}
+[user]
+    signingkey = <your key id>
+[commit]
+    gpgsign = true
+[tag]
+    gpgsign = true
+~~~
+
+As a contributor you are required to sign the contributor license agreement (CLA) [Developer Certificate of Origin](https://developercertificate.org/) by adding a Signed-off-by line to all commit messages.
+Git provides the `-s`/`--signoff` command line option to append that automatically to your commit messages:
+
+~~~ {.bash}
+git commit -s
+~~~
 
 ## Report bugs
 
@@ -193,7 +242,7 @@ This project comes with some useful NPM scripts.
 List all of them:
 
 ~~~ {.bash}
-npm run
+docker compose run env npm run
 ~~~
 
 ## Further readings
