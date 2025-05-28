@@ -40,7 +40,7 @@ Wir erstellen nun ein neues Gebäude namens "Filiale". In der linken Navigation 
 
 <!--TODO[![Mit docupike lassen sich neue Assets superschnell erstellen](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png){:target="_blank"}-->
 
- Mit docupike lassen sich neue Assets superschnell erstellen
+Mit docupike lassen sich neue Assets superschnell erstellen
 
 ### Räume erstellen und zuweisen
 
