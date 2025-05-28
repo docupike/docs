@@ -18,7 +18,7 @@ Markieren Sie das Feld als erforderlich, damit es nicht leer bleiben kann.
 
 Markieren Sie das Feld als eindeutig. Jeder angegebene Wert muss für dieses Attribut eindeutig sein.
 
-## Bedienervalidierungen
+## Validierung mit Operatoren
 
 Nicht alle Operatoren sind für alle Attributtypen verfügbar. Hier können Sie **Mindestlänge** und  **Höchstlänge**, **Später als** und  **Früher als**, **Von** und  **Bis**, **Größer als** und   **Kleiner als**, **Gleich** und  **Ungleich**, **Von** und **Bis** für eine Reihe von Attributen festlegen.
 

@@ -13,7 +13,7 @@ plugins:
     lang: de
 extra:
   dc:
-    language: de-DE
+    language: de_DE
 nav:
   - Übersicht: index.md
   - Benutzerhandbuch:
@@ -68,6 +68,3 @@ nav:
           - Licensing: dev/addon/licensing.md
           - Useful Resources: dev/addon/useful-resources.md
 not_in_nav: |
-  security.md
-  ref/changelog.md
-  ref/release-notes/v*.md

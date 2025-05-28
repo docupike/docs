@@ -40,7 +40,7 @@ Der erste Schritt besteht darin, den grundlegenden Zugriff auf Anlagen zu defini
 
 <!--TODO[![Berechtigungen erstellen](../../img/screenshots/rights-assignment/create-new-permission-accounting.png)](../../img/screenshots/rights-assignment/create-new-permission-accounting.png){:target="_blank"}-->
 
-Wir erstellen eine neue Berechtigung, die für "Kategorie- und Attributeinträge" gilt.
+Wir erstellen eine neue Berechtigung, die für "Kategorie- und Attributseinträge" gilt.
 
 Als Benutzergruppe wählen wir "Buchhaltung" und als Geltungsbereich "Alle Objekte".
 
