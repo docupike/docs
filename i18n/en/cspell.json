@@ -1,8 +1,8 @@
 {
-    "language": "en_US",
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+    "language": "en_US,de",
     "minWordLength": 3,
     "dictionaries": [
-        "en_US",
         "project"
     ],
     "dictionaryDefinitions": [

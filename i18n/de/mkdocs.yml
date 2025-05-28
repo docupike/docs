@@ -1,0 +1,70 @@
+---
+INHERIT: ../mkdocs.yml
+site_name: docupike docs
+site_url: https://docs.docupike.com/de/
+site_description: The easy cloud based documentation
+edit_uri: edit/main/docs/de
+docs_dir: ../../docs/de
+site_dir: ../../site/de
+theme:
+  language: de
+plugins:
+  search:
+    lang: de
+extra:
+  dc:
+    language: de_DE
+nav:
+  - Übersicht: index.md
+  - Benutzerhandbuch:
+      - Anmelden: user/login.md
+      - Grundlagen der Dokumentation:
+          - Menüleiste: user/basics/menubar.md
+          - Objekte: user/basics/objects.md
+          - Klassen: user/basics/classes.md
+          - Klassen und Attribute: user/basics/categories-and-attributes.md
+          - Attribute aktivieren oder deaktivieren: user/basics/enable-disable-attributes.md
+          - Kollektionen: user/basics/collections.md
+      - Finder:
+          - Zeilenbearbeitung: user/finder/inline-editing.md
+          - Mehrfachbearbeitung: user/finder/multi-editing.md
+          - Suchfilter und Berichte: user/finder/search-filters-and-reports.md
+          - Ansichten und Voreinstellungen: user/finder/views-and-presets.md
+          - Widgets: user/finder/widgets.md
+      - Berichte: user/reporting.md
+      - Data protection: user/basics/gdpr.md
+      - Documents Creator: user/basics/documents-creator.md
+      - Importe:
+          - CSV: user/imports/csv.md
+      - Anwendungsfälle:
+          - Wie fange ich an?: user/usecases/how-to-start.md
+          - Dokumentation und Namenskonventionen: user/usecases/it-documentation-and-naming-conventions.md
+          - Rechteübertragung: user/usecases/rights-assignment.md
+          - Importieren Sie Ihre erste CSV-Datei: user/usecases/import-data.md
+          - Standorte: user/usecases/locations.md
+          - Schnellbearbeitung in Listen: user/usecases/quick-edit-in-lists.md
+          - Auswertungen: user/usecases/reports.md
+          - Dokumentation am Arbeitsplatz: user/usecases/workplace-documentation.md
+          - Data protection: user/usecases/data-protection.md
+  - Administratorhandbuch:
+      - Benutzerdefinierte Kategorien erstellen: admin/custom-categories.md
+      - Benutzerdefinierte Klassen erstellen: admin/custom-classes.md
+      - Attributvalidierung: admin/attribute-validation.md
+      - Daten exportieren: admin/export-data.md
+      - Rechte und Berechtigungen: admin/rights-and-permissions.md
+      - Benutzer, Gruppen und Rollen: admin/users-groups-roles.md
+      - servereye Integration: admin/servereye.md
+  - Entwicklerhandbuch:
+      - API: dev/api.md
+      - Add-ons:
+          - Introduction: dev/addon/introduction.md
+          - Getting Started: dev/addon/quick-start.md
+          - Frontend: dev/addon/frontend.md
+          - JS Interface: dev/addon/js-api.md
+          - CMDB Structures: dev/addon/cmdb-structures.md
+          - API-CRUD: dev/addon/api-crud.md
+          - Settings: dev/addon/settings.md
+          - Add-on Endpoints: dev/addon/addon-endpoints.md
+          - Licensing: dev/addon/licensing.md
+          - Useful Resources: dev/addon/useful-resources.md
+not_in_nav: |

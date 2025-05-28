@@ -8,5 +8,5 @@ Location: Düsseldorf, Europe
 
 /* SITE */
 Last update: see each page
-Languages: English
+Languages: English, Deutsch
 Components: mkdocs, mkdocs-material
