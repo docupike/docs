@@ -79,7 +79,7 @@
         "test:spelling": "run-s test:spelling:*",
         "test:spelling:common": "cspell '*.md' --config i18n/en/cspell.json --gitignore --no-progress --relative --show-context",
         "test:spelling:en": "cspell 'docs/en/**/*.md' --config i18n/en/cspell.json --gitignore --no-progress --relative --show-context",
-        "test:spelling:de": "cspell 'docs/de/**/*.md' --config i18n/en/cspell.json --gitignore --no-progress --relative --show-context",
+        "test:spelling:de": "cspell 'docs/de/**/*.md' --config i18n/de/cspell.json --gitignore --no-progress --relative --show-context",
         "test:wording": "alex --no-update-notifier",
         "test:ec": "ec",
         "test:json": "git ls-files | grep -e '\\.json$' | xargs -L 1 jsonlint --quiet",

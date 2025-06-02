@@ -1,0 +1,25 @@
+{
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+    "language": "de",
+    "minWordLength": 3,
+    "dictionaries": [
+        "de",
+        "project"
+    ],
+    "dictionaryDefinitions": [
+        {
+            "name": "project",
+            "path": "./spelling.txt"
+        }
+    ],
+    "ignoreRegExpList": [
+        "/(~~~+)\\s?[\\s\\S]+?\\1/g",
+        "/(```+)\\s?[\\s\\S]+?\\1/g",
+        "/`(.+)`/g",
+        "/{{ (.+) }}/g",
+        "/{% (.+) %}/g"
+    ],
+    "ignorePaths": [
+        "mkdocs.yml"
+    ]
+}
