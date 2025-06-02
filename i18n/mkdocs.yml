@@ -49,6 +49,7 @@ plugins:
   git-revision-date-localized:
     type: iso_date
     strict: false
+    fallback_to_build_date: true
   macros:
     module_name: ../../macros/announcements
     include_yaml:
