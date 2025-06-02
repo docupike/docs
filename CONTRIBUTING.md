@@ -200,7 +200,13 @@ While English is the default language you can add more languages:
 -   Add content directory under `docs/<lang>`
 -   Add configuration directory `i18n/<lang>` and adapt all files from another language
 -   Add language to `extra.alternate` and `watch` in `i18n/mkdocs.yml`
+-   [Find and install the dictionary to check the spelling](https://github.com/streetsidesoftware/cspell-dicts):
+
+    ~~~ {.bash}
+    docker compose run env npm install --save-dev @cspell/dict-<lang>@<version>
+    ~~~
 -   Add NPM scripts `docs:build:<lang>`, `docs:serve:<lang>`, `test:spelling:<lang>` to `package.json`
+-   Add content directory as ignore path to `.alexignore`
 -   Add language to mapping and as location to `web/default.conf`
 -   Add sitemap to `static/robots.txt`
 -   Add language to `static/humans.txt`
