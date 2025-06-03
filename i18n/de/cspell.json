@@ -1,8 +1,12 @@
 {
     "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
-    "language": "en_us",
+    "language": "de-de,en_us",
+    "import": [
+        "./node_modules/@cspell/dict-de-de/cspell-ext.json"
+    ],
     "minWordLength": 3,
     "dictionaries": [
+        "de",
         "project"
     ],
     "dictionaryDefinitions": [
@@ -19,6 +23,6 @@
         "/{% (.+) %}/g"
     ],
     "ignorePaths": [
-        "**/changelog.md"
+        "mkdocs.yml"
     ]
 }
