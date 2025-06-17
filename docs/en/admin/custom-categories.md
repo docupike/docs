@@ -37,3 +37,5 @@ Available field types are:
 | Boolean | The `Boolean` field is for selecting yes or no |
 | Password | In the `Password` field is a masked field |
 | Color | With the `Color` field you are able to insert a hex color code or select a color via the color picker by clicking on the palette within the edit mode |
+
+### I am a test Header
