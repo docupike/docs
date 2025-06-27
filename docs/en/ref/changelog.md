@@ -9,6 +9,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.7.0 – 2025-06-27
+
+### Added
+
+-   Finder Improvements 2025: Extend pagination options and also default applied pagination limit (`ID2-5248`)
+-   Finder Improvements 2025: Hide classes with no objects in list (`ID2-5221`)
+-   Location View 2025: Use class icons for location objects (`ID2-5224`)
+-   MiB: Multi Language Support: Create a selection for how to display date formats (`ID2-5211`)
+-   MiB: Multi Language Support: Create a language selection in the top bar that allows to pick between all available languages (`ID2-5210`)
+-   MiB: Multi Language Support: Create a language selection on the login screen that allows to pick between all available languages (`ID2-5209`)
+-   MiB: Multi Language Support: Pass locale settings to the Add-on proxy request (`ID2-5228`)
+-   MiB: Multi Language Support: Create number format setting and a helper to use it in FE (`ID2-5225`)
+-   ODP 2025: Show details about existing data in categories (`ID2-5222`)
+
+### Changed
+
+-   Development/maintenance: Make docupike compatible with mongodb driver v2 (`ID2-5234`)
+-   Location View 2025: Improve the navigation tree experience (`ID2-5223`)
+-   MiB: Multi Language Support: Use translations for docupike E-mails (`ID2-5256`)
+-   Update React to v18: Update react-redux and redux-toolkit in docupike (`ID2-5057`)
+
+### Fixed
+
+-   MiB: Multi Language Support: Support criterias of translatable string fields (`ID2-5229`)
+-   Product upgrade / downgrade: Fix 500 error when open Subscription page (`ID2-5246`)
+
 ## 2.6.3 – 2025-04-01
 
 ### Fixed
