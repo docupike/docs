@@ -1,4 +1,4 @@
-FROM ubuntu:plucky-20250521
+FROM ubuntu:plucky-20250619
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG HTTP_PROXY
