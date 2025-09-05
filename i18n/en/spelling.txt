@@ -78,7 +78,6 @@ subdomain
 subnetmask
 subnetwork
 Symfony
-synetics
 tbd
 timestamp
 tl

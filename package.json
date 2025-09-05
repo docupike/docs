@@ -24,7 +24,7 @@
         "url": "https://github.com/docupike/docs/issues"
     },
     "license": "CC-BY-SA-4.0",
-    "author": "synetics GmbH <info@i-doit.com> (https://docupike.com/)",
+    "author": "i-doit GmbH <info@i-doit.com> (https://i-doit.com/)",
     "devDependencies": {
         "@cyclonedx/cyclonedx-npm": "4.0.0",
         "@prantlf/jsonlint": "16.0.0",

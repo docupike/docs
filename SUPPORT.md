@@ -71,7 +71,7 @@ Become a developing partner (for free!) and read our [developer guide lines][kb]
 
 ### Where can I get commercial support for i-doit?
 
-You can get commercial support for i-doit either directly [from synetics][help] or from one of [our partners][i-doit-website].
+You can get commercial support for i-doit either directly [from i-doit][help] or from one of [our partners][i-doit-website].
 
 ### What are the plans for i-doit and its add-ons?
 
@@ -80,9 +80,9 @@ Most of our software products are either for free or subscription based.
 
 ## About us
 
-### Who is synetics?
+### Who are we?
 
-Docupike and i-doit are both maintained by the company synetics GmbH, located in Düsseldorf/Germany.
+Docupike and i-doit are both maintained by the company i-doit GmbH, located in Düsseldorf/Germany.
 Learn more about [us][about-us] on our website.
 
 ### Where can I get professional consulting/trainings for my documentation project?

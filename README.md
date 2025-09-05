@@ -9,9 +9,9 @@
 
 ## What is docupike?
 
-docupike is the easy cloud based documentation that holds all technical and administrative information in your organization in one place.
+[docupike](https://docupike.com/) is the easy cloud based documentation that holds all technical and administrative information in your organization in one place.
 It thus serves as the single source of truth when it comes to optimizing and automating your business processes.
-docupike is operated on secure cloud servers by synetics GmbH, located in Düsseldorf/Germany.
+docupike is operated on secure cloud servers by i-doit GmbH, located in Düsseldorf/Germany.
 
 ## Contribute!
 
@@ -23,6 +23,6 @@ Do you like to [get in touch with us](SUPPORT.md)?
 
 ## Copyright & License
 
-Copyright (C) 2019-25 [synetics GmbH](https://docupike.com/)
+Copyright (C) 2019-25 [i-doit GmbH](https://i-doit.com/)
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
