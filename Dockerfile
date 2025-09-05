@@ -8,7 +8,7 @@ ARG http_proxy
 ARG https_proxy
 ARG no_proxy
 
-LABEL org.opencontainers.image.vendor="synetics GmbH"
+LABEL org.opencontainers.image.vendor="i-doit GmbH"
 LABEL org.opencontainers.image.title="docs/environment"
 LABEL org.opencontainers.image.description="Docs environment"
 LABEL org.opencontainers.image.documentation="https://docs.docupike.com/"

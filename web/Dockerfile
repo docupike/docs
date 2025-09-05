@@ -1,5 +1,5 @@
 FROM nginx:stable-alpine
-LABEL org.opencontainers.image.vendor="synetics GmbH"
+LABEL org.opencontainers.image.vendor="i-doit GmbH"
 LABEL org.opencontainers.image.version="0.0.0-dev"
 LABEL org.opencontainers.image.title="docs web"
 LABEL org.opencontainers.image.description="Web server for pre-generated static site"
