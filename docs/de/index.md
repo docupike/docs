@@ -13,9 +13,9 @@ Da wir regelmäßig neue Versionen von docupike veröffentlichen, halten wir die
 
 ## Über
 
-docupike ist eine einfache, cloudbasierte Dokumentationslösung, die alle technischen und administrativen Informationen Ihres Unternehmens an einem Ort zusammenfasst.
+[docupike](https://docupike.com/) ist eine einfache, cloudbasierte Dokumentationslösung, die alle technischen und administrativen Informationen Ihres Unternehmens an einem Ort zusammenfasst.
 Damit dient sie als zentrale Informationsquelle für die Optimierung und Automatisierung Ihrer Geschäftsprozesse.
-docupike wird auf sicheren Cloud-Servern der synetics GmbH mit Sitz in Düsseldorf betrieben.
+docupike wird auf sicheren Cloud-Servern der i-doit GmbH mit Sitz in Düsseldorf betrieben.
 
 ## Support
 

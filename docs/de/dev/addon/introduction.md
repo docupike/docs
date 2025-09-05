@@ -78,8 +78,8 @@ The manifest file needs be named `addon.json` and has to look like this by defau
     "title": "Add-on name",
     "identifier": "example",
     "product": "example-addon",
-    "vendor": "synetics",
-    "author": "Synetics HmbH",
+    "vendor": "i-doit",
+    "author": "i-doit GmbH",
     "version": "1.0.0",
     "description": "Example add-on that demonstrates the possibilities of add-ons"
 }
