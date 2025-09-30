@@ -9,6 +9,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 2.8.0 – 2025-09-30
+
+### Added
+
+-   Density Mode: Use density mode for all tables that used ObjectTable (`ID2-5276`)
+-   Density Mode: Integrate density mode selection in docupike top navbar (`ID2-5275`)
+-   Design Rework: Adept UI and background color for new i-doit up design (`ID2-5347`)
+-   Location View 2025: Create an area for classes groups in Location-Dashboard (`ID2-5297`)
+-   MIW Finder-Search 2025: Show suggestion for the search in results suggestion pulldown (`ID2-5372`)
+-   MIW Finder-Search 2025: Show recently viewed objects in empty search suggestion pulldown (`ID2-5370`)
+-   MIW Finder-Search 2025: Show recent searches in empty search suggestion pulldown (`ID2-5329`)
+-   MIW Finder-Search 2025: Show multiple matches for the search result (`ID2-5327`)
+-   MIW Finder-Search 2025: Adjust search filters in search results suggestion pulldown (`ID2-5324`)
+-   MIW Finder-Search 2025: Show tabs with amount of search results per Class in results suggestion pulldown (`ID2-5323`)
+-   Relocation/Move objects: Move objects into current location (`ID2-5264`)
+-   Relocation/Move objects: Move out objects from current location (`ID2-5263`)
+
+### Changed
+
+-   Development/maintenance: Make docupike compatible with PHP 8.4 (`ID2-5281`)
+-   docupike SFM / Cloud: Be able to skip rebuild projection for specific versions of i-doit up (`ID2-5402`)
+-   i-doit up rebranding: Change Login image (`ID2-5341`)
+-   MIW Finder-Search 2025: Show saved searches in empty search suggestion pulldown (`ID2-5375`)
+-   ODP 2025: To move favorite action outside Fields in ODP/SV Attributes (`ID2-5287`)
+-   ODP 2025: Update layout of ODP/SV Attributes to have its fields in 2 columns (`ID2-5286`)
+-   ODP 2025: Add border to fields in ODP/SV Attributes (`ID2-5285`)
+
+### Fixed
+
+-   CSV Import (Fixing and Performance): Support CSV import of networks (`ID2-5282`)
+-   MiB: Multi Language Support: Fix low hanging translation findings (`ID2-5315`)
+-   MiB: Multi Language Support: Fix untranslated validation error messages for custom categories (`ID2-5313`)
+-   MiB: Multi Language Support: Fix missing translation findings (`ID2-5295`)
+
 ## 2.7.0 – 2025-06-27
 
 ### Added
