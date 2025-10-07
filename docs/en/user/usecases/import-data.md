@@ -1,7 +1,7 @@
 
 # How do I get existing data imported
 
-The way to import existing Data into docupike is to use the CSV Import. Before you start, you should know what information you want to import and whether the attribute can be documented in a category.
+The way to import existing Data into i-doit up is to use the CSV Import. Before you start, you should know what information you want to import and whether the attribute can be documented in a category.
 
 ## Requirements
 

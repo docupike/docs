@@ -1,6 +1,6 @@
 ---
 title: Categories and attributes
-description: Documentation basics about categories and attributes in docupike
+description: Documentation basics about categories and attributes in i-doit up
 lang: en
 ---
 
@@ -10,4 +10,4 @@ Attributes are the smallest entity of the documentation. They are identifiers th
 
 Categories are containers for attributes. They bundle the information that belongs together in terms of content. For example, the accounting category compiles all attributes that belong to the accounting topics such as cost center or date of acquisition.
 
-docupike ships with lots of predefined categories and attributes but you can still create your own categories and attributes if there is something missing for you.
+i-doit up ships with lots of predefined categories and attributes but you can still create your own categories and attributes if there is something missing for you.

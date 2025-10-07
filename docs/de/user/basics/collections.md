@@ -1,12 +1,12 @@
 ---
 title: Kollektionen
-description: Grundlagen zur Dokumentation von Kollektionen in docupike
+description: Grundlagen zur Dokumentation von Kollektionen in i-doit up
 lang: de
 ---
 
 # Kollektionen
 
-Kollektionen sind Zusammenstellungen von Klassen. Sie werden vom Systemadministrator definiert, docupike wird mit einem vordefinierten Satz von Kollektionen ausgeliefert. Ihr Vorteil besteht darin, dass Klassen in Kollektionen eingeordnet werden, die für den Benutzer leichter zu finden sind.
+Kollektionen sind Zusammenstellungen von Klassen. Sie werden vom Systemadministrator definiert, i-doit up wird mit einem vordefinierten Satz von Kollektionen ausgeliefert. Ihr Vorteil besteht darin, dass Klassen in Kollektionen eingeordnet werden, die für den Benutzer leichter zu finden sind.
 
 Klassen werden direkt unter dem Menü "Finder" in der Symbolleiste angezeigt, und jeder Benutzer kann Klassen, die nicht häufig verwendet werden, individuell ausblenden. Sie sind für den Benutzer weiterhin über die Schaltfläche "Mehr" unten im Klassendialog verfügbar.
 

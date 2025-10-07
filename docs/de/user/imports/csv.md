@@ -6,8 +6,7 @@ lang: de
 
 # CSV-Import
 
-
-Mit dem CSV-Import können Sie beliebige CSV-Dateien in docupike hochladen und importieren. CSV steht für "Comma Separated Values" (durch Kommas getrennte Werte).
+Mit dem CSV-Import können Sie beliebige CSV-Dateien in i-doit up hochladen und importieren. CSV steht für "Comma Separated Values" (durch Kommas getrennte Werte).
 
 ## Voraussetzungen
 
@@ -19,6 +18,8 @@ Mit dem CSV-Import können Sie beliebige CSV-Dateien in docupike hochladen und i
 ## Schritt 1
 
 In der Symbolleiste finden Sie das Symbol "Aus CSV-Datei importieren", mit dem Sie den CSV-Importdialog öffnen können. Dieser Dialog führt Sie in sechs Schritten durch den Importvorgang. Hier können Sie eine gültige CSV-Datei auswählen und hochladen. Nach erfolgreichem Hochladen können Sie mit Schritt 2 fortfahren.
+
+[![Import button](../../img/screenshots/user/imports/csv.png)](../../img/screenshots/user/imports/csv.png){:target="_blank"}
 
 ## Schritt 2
 
@@ -36,7 +37,7 @@ Wählen Sie nun das entsprechende Attribut aus und klicken Sie auf "Speichern", 
 
 ## Schritt 5
 
-Hier können Sie optional auswählen, ob Sie bereits vorhandene Objekte "aktualisieren" oder nur "neue Objekte erstellen" möchten. Wenn Sie Objekte aktualisieren möchten, sollten Sie eine oder mehrere "Identifikatoren" hinzufügen, um vorhandene Objekte anhand eines qualifizierten zugewiesenen Attributs zuzuordnen. Nun müssen Sie auswählen, ob Sie vorhandene Werte in docupike "beibehalten" oder "löschen" möchten. Zuletzt legen Sie fest, ob bei Multi Value Kategorien "hinzugefügt" werden oder den vorhandenen Inhalt vollständig "ersetzen".
+Hier können Sie optional auswählen, ob Sie bereits vorhandene Objekte "aktualisieren" oder nur "neue Objekte erstellen" möchten. Wenn Sie Objekte aktualisieren möchten, sollten Sie eine oder mehrere "Identifikatoren" hinzufügen, um vorhandene Objekte anhand eines qualifizierten zugewiesenen Attributs zuzuordnen. Nun müssen Sie auswählen, ob Sie vorhandene Werte in i-doit up "beibehalten" oder "löschen" möchten. Zuletzt legen Sie fest, ob bei Multi Value Kategorien "hinzugefügt" werden oder den vorhandenen Inhalt vollständig "ersetzen".
 
 ## Schritt 6
 

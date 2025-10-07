@@ -6,7 +6,7 @@ lang: en
 
 # Custom Categories
 
-Besides having standard Categories docupike makes it possible to create custom Categories in order to document additional Attributes, which are not included in standard Categories.
+Besides having standard Categories i-doit up makes it possible to create custom Categories in order to document additional Attributes, which are not included in standard Categories.
 
 ## Rights
 
@@ -30,10 +30,10 @@ To customize your category you can add any number of attributes with the `New at
 
 Available field types are:
 
-| Field Type  | Description |
-| --- | --- |
-| Text | The `Text` field is for entering plain text |
-| Number | In the `Number` field you can insert decimal numbers |
-| Boolean | The `Boolean` field is for selecting yes or no |
-| Password | In the `Password` field is a masked field |
-| Color | With the `Color` field you are able to insert a hex color code or select a color via the color picker by clicking on the palette within the edit mode |
+| Field Type | Description                                                                                                                                           |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Text       | The `Text` field is for entering plain text                                                                                                           |
+| Number     | In the `Number` field you can insert decimal numbers                                                                                                  |
+| Boolean    | The `Boolean` field is for selecting yes or no                                                                                                        |
+| Password   | In the `Password` field is a masked field                                                                                                             |
+| Color      | With the `Color` field you are able to insert a hex color code or select a color via the color picker by clicking on the palette within the edit mode |

@@ -1,6 +1,6 @@
 ---
 title: Klassen
-description: Grundlagen der Dokumentation zu Klassen in docupike
+description: Grundlagen der Dokumentation zu Klassen in i-doit up
 lang: de
 ---
 
@@ -16,4 +16,4 @@ Sie dienen zwei Zwecken:
 !!! info "Beispiel"
     Verwenden Sie die Objektklasse "Person", um Adressdaten, Telefonnummern und E-Mail-Adressen zu dokumentieren.
 
-Da Sie die Dokumentation erweitern und an Ihre Bedürfnisse anpassen können, kann eine Objektklasse alles sein, was Sie definieren. docupike enthält jedoch standardmäßig eine Reihe von Klassen, die für die meisten Benutzer geeignet sind.
+Da Sie die Dokumentation erweitern und an Ihre Bedürfnisse anpassen können, kann eine Objektklasse alles sein, was Sie definieren. i-doit up enthält jedoch standardmäßig eine Reihe von Klassen, die für die meisten Benutzer geeignet sind.

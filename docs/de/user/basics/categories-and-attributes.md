@@ -1,6 +1,6 @@
 ---
 title: Kategorien und Attribute
-description: Grundlagen der Dokumentation zu Kategorien und Attributen in docupike
+description: Grundlagen der Dokumentation zu Kategorien und Attributen in i-doit up
 lang: de
 ---
 
@@ -10,9 +10,9 @@ Attribute sind die kleinsten Einheiten der Dokumentation. Sie sind Identifikator
 
 Kategorien sind Container für Attribute. Sie bündeln Informationen, die inhaltlich zusammengehören. Die Kategorie "Buchhaltung" fasst beispielsweise alle Attribute zusammen, die zum Thema Buchhaltung gehören, wie Kostenstelle oder Anschaffungsdatum.
 
-docupike wird mit vielen vordefinierten Kategorien und Attributen ausgeliefert, aber Sie können auch eigene Kategorien und Attribute erstellen, wenn Ihnen etwas fehlt.
+i-doit up wird mit vielen vordefinierten Kategorien und Attributen ausgeliefert, aber Sie können auch eigene Kategorien und Attribute erstellen, wenn Ihnen etwas fehlt.
 
-Für einfache Informationen wie den Namen oder den Standort eines Objekts verwendet docupike Single Value Kategorien. Für komplexere Informationen wie z.B. CPUs, bei denen jede CPU eigene Eigenschaften mitbringt (z.B. Hersteller oder Modell) stellt docupike Multi Value Kategorien bereit.
+Für einfache Informationen wie den Namen oder den Standort eines Objekts verwendet i-doit up Single Value Kategorien. Für komplexere Informationen wie z.B. CPUs, bei denen jede CPU eigene Eigenschaften mitbringt (z.B. Hersteller oder Modell) stellt i-doit up Multi Value Kategorien bereit.
 
 
 ## Favoriten

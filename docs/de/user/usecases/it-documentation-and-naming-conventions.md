@@ -56,7 +56,7 @@ Bei der Entwicklung einer Namenskonvention für IT-Assets sind mehrere Faktoren 
 
 Neben der Verwendung einer einheitlichen Namenskonvention ist es wichtig, über ein System zum Suchen und Auffinden von IT-Assets zu verfügen. Dies kann insbesondere in größeren Unternehmen mit vielen zu verwaltenden Assets von Vorteil sein. Hier sind einige Tipps für eine effektive Asset-Suche:
 
-- [ ] Verwenden Sie ein zentrales System: Zentralisierte Systeme wie docupike sind nicht nur für wenige Personen zugänglich, sondern für viele verfügbar und machen die darin enthaltenen Informationen allgemein zugänglich.
+- [ ] Verwenden Sie ein zentrales System: Zentralisierte Systeme wie i-doit up sind nicht nur für wenige Personen zugänglich, sondern für viele verfügbar und machen die darin enthaltenen Informationen allgemein zugänglich.
 
 - [ ] Verwenden Sie klare und aussagekräftige Namen: Durch die Verwendung klarer und aussagekräftiger Namen für Assets lassen sich diese mithilfe von Suchfunktionen leichter finden.
 
@@ -64,4 +64,4 @@ Neben der Verwendung einer einheitlichen Namenskonvention ist es wichtig, über 
 
 - [ ] Verwenden Sie erweiterte Suchfunktionen: Viele Suchwerkzeuge, beispielsweise in Tabellenkalkulationen oder Datenbanken, bieten erweiterte Suchfunktionen, mit denen Sie nach bestimmten Kriterien wie Asset-Typ oder Standort suchen können.
 
-Wenn Sie diese Tipps befolgen und eine Kombination aus einheitlichen Namenskonventionen und effektiven Suchfunktionen wie denen von docupike verwenden, können Sie Ihre IT-Assets effektiv verwalten und finden und so die Kommunikation und Produktivität in Ihrem Unternehmen verbessern.
+Wenn Sie diese Tipps befolgen und eine Kombination aus einheitlichen Namenskonventionen und effektiven Suchfunktionen wie denen von i-doit up verwenden, können Sie Ihre IT-Assets effektiv verwalten und finden und so die Kommunikation und Produktivität in Ihrem Unternehmen verbessern.

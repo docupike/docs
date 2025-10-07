@@ -1,26 +1,33 @@
+---
+title: Menu bar
+description: The menu bar allows quick navigation through various functions.
+lang: en
+---
+
 The menu bar enables quick navigation through various functions.
+
+[![menu bar](../../img/screenshots/user/basics/menubar/menubar.png)](../../img/screenshots/user/basics/menubar/menubar.png){:target="_blank"}
 
 ## Logo
 
-If you are working with docupike and you want to get back to the docupike main page, you can click on the logo to reach it.
+If you are working with i-doit up and you want to get back to the i-doit up main page, you can click on the logo to reach it.
+
+## Tenant switcher
+
+If you are working in multiple tenants, you can switch between the tenants via the [tenant switcher].
 
 ## Inventory
 
-Clicking on the inventory button, you can see 3 options.
+The Inventory displays functions. Using the [**Finder**](../finder/search-filters-and-reports.md), you can select from your collections (collections.md), which display all the objects you have defined in your collections. The [**Locations**](../usecases/locations.md) show all documented location objects and objects assigned to a location. The [Networks] overview shows all networks and how their IPv4 and IPv6 addresses are used. The [**Data Protection Add-on**](../usecases/data-protection.md) is also located here.
 
-The finder lets you select from your collections, that display all objects, that you defined in your collection.
-The locations show all documented location objects and objects that are assigned to a location.
-Network shows all networks and the usage of their IPv4 and IPv6 addresses.
+## Reporting
 
-## Reports
-
-The reports area is where you can create and see all reports.
+The reports area is where you can create and see all [**reports**](../reporting.md) or [**documents**](../documents-creator.md).
 
 ## History
 
-The history shows you the history of your latest changes. By opening the complete history view, you can filter by type, creator and category.
+The history shows you the [**History**](objects.md#history) of your latest changes. By opening the complete history view, you can filter by type, creator and category.
 
 ## Settings
 
-By pressing on your profile picture, you can open the settings.
-This is where you can configure everything about the classes and categories but also manage your users and administrate billing and subscription.
+By pressing on your profile picture, you can open the [Settings], give feedback, access the [Add-on administration] or [Logout]. This is where you can configure everything about the [**classes**](classes.md) and [**categories**](categories-and-attributes.md) but also manage your users and administrate [billing] and [subscription].

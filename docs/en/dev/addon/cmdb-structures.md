@@ -1,13 +1,13 @@
-`CMDB Structures` is a useful feature of docupike's add-on architecture.
+`CMDB Structures` is a useful feature of i-doit up's add-on architecture.
 It allows add-ons to require several CMDB structures to function correctly without the necessity to send the corresponding API calls manually.
 
 ## Advantages
 
 The main reason of introducing `CMDB Structures` was to make it as easy as possible to require CMDB structures for add-ons.
 Nevertheless, it is still possible to create these resources over the API during the registration procedure for example.
-Unfortunately this requires knowledge of docupike's backend API and impedes the accessibility of such structures.
+Unfortunately this requires knowledge of i-doit up's backend API and impedes the accessibility of such structures.
 Another disadvantage for add-on developers is that they have to react on API changes which might happen in the future and would require an update
-of their add-on. By using `CMDB Structures` this responsibility can be shifted to docupike to not be forced to react on these changes.
+of their add-on. By using `CMDB Structures` this responsibility can be shifted to i-doit up to not be forced to react on these changes.
 Another valuable feature of `CMDB Structures` is its ability to perform updates on these structures safely.
 
 ## Supported Structures
@@ -20,8 +20,8 @@ Add-ons can require the following CMDB structures:
 
 ## How to use?
 
-CMDB structures are placed in `addon.json`. During registration and update procedure the `addon.json` will be interpreted by docupike.
-If docupike finds a `cmdb` section it will start a procedure to reflect these definitions to its CMDB structures.
+CMDB structures are placed in `addon.json`. During registration and update procedure the `addon.json` will be interpreted by i-doit up.
+If i-doit up finds a `cmdb` section it will start a procedure to reflect these definitions to its CMDB structures.
 
 ```json
 {
@@ -96,8 +96,8 @@ The following section describes the most common types:
 * `bool`: Simple Yes/No field to query boolean information
 * `object`: Allows references between two objects
 
-A full list of possible types can be retrieved over docupike's API: `http://my.docupike.com/api/v2/property-type`.
-As result, you will get all available property types in your docupike instance.
+A full list of possible types can be retrieved over i-doit up's API: `http://my.docupike.com/api/v2/property-type`.
+As result, you will get all available property types in your i-doit up instance.
 
 #### Limitations
 
@@ -146,7 +146,7 @@ Classifications are also manageable by `CMDB Structures`. You can define them in
 
 * `id`: The `id` of the class - the final `id` will consist of `addon.vendor`.`addon.id`.`class.id`
 * `title`: The `title` attribute defines its naming in the UI and is the human-readable presentation of the class
-* `icon`: The `icon` cannot refer to external resources and have to reference built-in resources from docupike
+* `icon`: The `icon` cannot refer to external resources and have to reference built-in resources from i-doit up
 * `categories`: Definition of assigned categories by using full ids of categories
 * `objects`: Definition of objects for class
 
@@ -192,8 +192,8 @@ The most simple example is an object with a title (see above). Also, it's possib
 
 #### Updating existing classes
 
-There is also the possibility to update existing classes of docupike by using `ref_id`. A common use case for this case is to
-add a custom category to docupike's stock classes. In this case all defined categories will be added to the existing assignments.
+There is also the possibility to update existing classes of i-doit up by using `ref_id`. A common use case for this case is to
+add a custom category to i-doit up's stock classes. In this case all defined categories will be added to the existing assignments.
 The `ref_id` should include the class constant. To find out the constant of a class you can use the API and open `http://my.docupike.cloud/api/v2/class`.
 This will give you a full list of all available classes and also the `constant` information.
 
@@ -223,7 +223,7 @@ Collections can be also created and updated in a declarative way. The following 
 
 #### Updating existing collections
 
-Like classes, collections can also reference stock resources of docupike to update its attributes. You can use `ref_id`, which is simply the title
+Like classes, collections can also reference stock resources of i-doit up to update its attributes. You can use `ref_id`, which is simply the title
 of the collection. You can get a list of all collection's and their ids over the API: `http://my.docupike.cloud/api/v2/collection`
 
 #### Limitations

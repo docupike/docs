@@ -1,14 +1,14 @@
 ---
 
 title: Benutzerdefinierte Klassen erstellen
-description: docupike anpassen und benutzerdefinierte Klassen erstellen
+description: i-doit up anpassen und benutzerdefinierte Klassen erstellen
 lang: de
 
 ---
 
 # Benutzerdefinierte Klassen
 
-Klassen in docupike bilden die Grundlage Ihrer IT-Dokumentation. docupike wird mit einer Reihe vordefinierter Klassen ausgeliefert, die Ihnen den Einstieg in die Dokumentation erleichtern sollen.
+Klassen in i-doit up bilden die Grundlage Ihrer IT-Dokumentation. i-doit up wird mit einer Reihe vordefinierter Klassen ausgeliefert, die Ihnen den Einstieg in die Dokumentation erleichtern sollen.
 
 # Benutzerdefinierte Klassen hinzufügen
 

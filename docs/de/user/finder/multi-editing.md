@@ -1,6 +1,6 @@
 ---
 title: Mehrfachbearbeitung
-description: Mehrere Objekte in Docupike gleichzeitig bearbeiten
+description: Mehrere Objekte in i-doit up gleichzeitig bearbeiten
 lang: de
 ---
 

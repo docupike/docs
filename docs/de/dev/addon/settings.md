@@ -32,7 +32,7 @@ For example, let's create some settings for our add-on:
 }
 ```
 
-In order to receive the changes in docupike, you should register the add-on again. docupike finds these changes and applies them to the add-on.
+In order to receive the changes in i-doit up, you should register the add-on again. i-doit up finds these changes and applies them to the add-on.
 
 ```shell
 bin/console docu:addons:register http://127.0.0.1:9000
@@ -46,7 +46,7 @@ Usually, you have to increase the version of your add-on to show that it contain
 You can enforce the registration process for your add-on with the same version by passing `--force` flag to the register command.
 </details>
 
-**Beware**, not to store sensible data in the settings. User can change the settings in docupike.
+**Beware**, not to store sensible data in the settings. User can change the settings in i-doit up.
 If you need to store credentials or other information for the business logic for the tenant, prefer to store it in your application by tenant id.
 
 ## Receive the settings in your add-on
@@ -101,7 +101,7 @@ echo json_encode($settings);
 ```
 </details>
 
-Now, when we log in into docupike and call some add-on URL (for example, `/a/your-company/myapp/`), we will see the response:
+Now, when we log in into i-doit up and call some add-on URL (for example, `/a/your-company/myapp/`), we will see the response:
 
 ```json
 {

@@ -1,5 +1,5 @@
 
-docupike can help you start, run, and grow your business. This guide helps you to understand which model matches the best your business model.
+i-doit up can help you start, run, and grow your business. This guide helps you to understand which model matches the best your business model.
 
 ## Init the project
 
@@ -52,7 +52,7 @@ The vendor and identifier pair is the unique identifier of your add-on.
 
 The add-on has to provide a web server.
 
-docupike registers an add-on with by the URL and forwards the add-on's specific request to your add-on.
+i-doit up registers an add-on with by the URL and forwards the add-on's specific request to your add-on.
 
 Here are some examples, how you can run the web server. You are free to use the technology you prefer.
 
@@ -135,9 +135,9 @@ npm start
 
 In order to check that server returns correct result, open the `http://127.0.0.1:9000/addon.json` in browser. You should see the content of the `addon.json` file.
 
-Now, we have the server running, so we can register the add-on in docupike.
+Now, we have the server running, so we can register the add-on in i-doit up.
 
-In order to do it, you should open the terminal of your docupike instance and run the register command:
+In order to do it, you should open the terminal of your i-doit up instance and run the register command:
 
 ```shell
 bin/console docu:addons:register http://127.0.0.1:9000
@@ -154,7 +154,7 @@ As result, you should receive a success message:
 <details>
     <summary>Tips to URL</summary>
 
-The URL depends on your configuration. If you use docker installation of docupike, you might connect to the host system using:
+The URL depends on your configuration. If you use docker installation of i-doit up, you might connect to the host system using:
 
 ```shell
 cd docker
@@ -163,7 +163,6 @@ cd docker
 
 </details>
 
-Now we can log in into docupike and call the URL of the add-on: `/a/your-company/myapp/addon.json`. We should see the same content of `addon.json` file.
+Now we can log in into i-doit up and call the URL of the add-on: `/a/your-company/myapp/addon.json`. We should see the same content of `addon.json` file.
 
 All the URLs starting with `/a/your-company/myapp/` are forwarded to your add-on.
-

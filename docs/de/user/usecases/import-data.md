@@ -1,12 +1,12 @@
 ---
 title: Wie importiere ich vorhandene Daten?
-description: Um vorhandene Daten in docupike zu importieren, verwenden Sie den CSV-Import. Bevor Sie beginnen, sollten Sie wissen, welche Informationen Sie importieren möchten und ob das Attribut in einer Kategorie dokumentiert werden kann.
+description: Um vorhandene Daten in i-doit up zu importieren, verwenden Sie den CSV-Import. Bevor Sie beginnen, sollten Sie wissen, welche Informationen Sie importieren möchten und ob das Attribut in einer Kategorie dokumentiert werden kann.
 lang: de
 ---
 
 # Wie importiere ich vorhandene Daten?
 
-Um vorhandene Daten in docupike zu importieren, verwenden Sie den CSV-Import. Bevor Sie beginnen, sollten Sie wissen, welche Informationen Sie importieren möchten und ob das Attribut in einer Kategorie dokumentiert werden kann.
+Um vorhandene Daten in i-doit up zu importieren, verwenden Sie den CSV-Import. Bevor Sie beginnen, sollten Sie wissen, welche Informationen Sie importieren möchten und ob das Attribut in einer Kategorie dokumentiert werden kann.
 
 ## Anforderungen
 
