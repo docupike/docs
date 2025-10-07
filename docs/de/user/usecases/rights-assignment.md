@@ -1,10 +1,10 @@
 ---
-title: Rechteübertragung
-description: Wie man Rechte verschiedenen Benutzergruppen zuweist
+title: Rechtezuweisung
+description: Wie man Rechte verschiedenen Benutzern und Gruppen zuweist
 lang: de
 ---
 
-In diesem Anwendungsfall zeigen wir Ihnen, wie Sie Berechtigungen für verschiedene Benutzergruppen konfigurieren können. Der Zugriff auf Informationen muss in der Regel genau kontrolliert werden. Mit Docupike können Sie den Zugriff auf Informationen für Benutzer, Gruppen und sogar Rollen konfigurieren.
+In diesem Anwendungsfall zeigen wir Ihnen, wie Sie Berechtigungen für verschiedene Benutzergruppen konfigurieren können. Der Zugriff auf Informationen muss in der Regel genau kontrolliert werden. Mit i-doit up können Sie den Zugriff auf Informationen für Benutzer, Gruppen und sogar Rollen konfigurieren.
 
 In diesem Anwendungsfall zeigen wir Ihnen, wie Sie den Zugriff für drei verschiedene Gruppen konfigurieren können.
 
@@ -20,94 +20,89 @@ In der zweiten Gruppe sollen **externe Dienstleister** Zugriff auf die Informati
 
 In Gruppe 3 sollten die **Anwendungsadministratoren** nur Objekte der Klasse "Server" bearbeiten können. Alle anderen Objekte sollten weder lesbar noch bearbeitbar sein.
 
-# Fall 1: Zugriff auf Daten festlegen
+## Fall 1: Zugriff auf Daten festlegen
 
 Berechtigungen können für einzelne Benutzer, für definierte Rollen und Gruppen vergeben werden. Auch Kombinationen von Rollen und Gruppen sind möglich. Sowohl Rollen als auch Gruppen sind Container, denen Benutzer hinzugefügt werden können und für die **unterschiedliche Berechtigungen** vergeben werden können.
 
 Wir erstellen nun eine neue Gruppe und eine Person, die Lesezugriff auf alle Objekte hat, aber nur Einträge in der Kategorie "Buchhaltung" sehen und bearbeiten kann.
 
-Wir wechseln zu den Einstellungen und erstellen unter Benutzerverwaltung -> Benutzergruppen eine neue Gruppe mit dem Namen **"Buchhaltung"**. Hier werden wir später alle Benutzer hinzufügen, die in der Buchhaltung arbeiten.
+Wir wechseln zu den Einstellungen und erstellen unter Benutzerverwaltung -> Benutzergruppen eine neue Gruppe mit dem Namen **"Accounting"**. Hier werden wir später alle Benutzer hinzufügen, die in der Buchhaltung arbeiten.
 
-<!--TODO[![Benutzer erstellen](../../img/screenshots/user/usecases/rights-assignment/c1-createUsergroup.png)](../../img/screenshots/user/usecases/rights-assignment/c1-createUsergroup.png){:target="_blank"}-->
+[![Create a Group](../../img/screenshots/user/usecases/rights-assignment/c1-create-new-user-group-accounting.png)](../../img/screenshots/user/usecases/rights-assignment/c1-create-new-user-group-accounting.png)
 
 Nun erstellen wir unter Benutzerverwaltung -> Benutzer einen **neuen Benutzer**.
 
-<!--TODO[![Benutzer erstellen](../../img/screenshots/user/usecases/rights-assignment/c1-createUser.png)](../../img/screenshots/user/usecases/rights-assignment/c1-createUser.png){:target="_blank"}-->
+[![Create a User](../../img/screenshots/user/usecases/rights-assignment/c1-create-new-user.png)](../../img/screenshots/user/usecases/rights-assignment/c1-create-new-user.png)
 
-Nun konfigurieren wir die Berechtigungen unter Benutzerverwaltung -> Berechtigungen. für die Benutzergruppe **"Buchhaltung"**. Diese sollte Buchhaltungsdaten lesen, erstellen und ändern können. Außerdem sollte sie den Standort von Anlagen ermitteln können. Alle anderen Informationen sollten für diese Gruppe nicht sichtbar sein.
+Nun konfigurieren wir die Berechtigungen unter Benutzerverwaltung -> Berechtigungen. für die Benutzergruppe **"Accounting"**. Diese sollte Buchhaltungsdaten lesen, erstellen und ändern können. Außerdem sollte sie den Standort von Anlagen ermitteln können. Alle anderen Informationen sollten für diese Gruppe nicht sichtbar sein.
 
 Der erste Schritt besteht darin, den grundlegenden Zugriff auf Anlagen zu definieren. Zu diesem Zweck erstellen wir eine neue Berechtigung. Hier gewähren wir Lesezugriff auf alle Objekte in der Kategorie "Allgemein". Dies ist erforderlich, damit grundlegende Anlageninformationen wie der Name sichtbar sind.
 
-<!--TODO[![Berechtigungen erstellen](../../img/screenshots/rights-assignment/create-new-permission-accounting.png)](../../img/screenshots/rights-assignment/create-new-permission-accounting.png){:target="_blank"}-->
+[![Create general permissions](../../img/screenshots/user/usecases/rights-assignment/c1-create-new-permission-accounting.png)](../../img/screenshots/user/usecases/rights-assignment/c1-create-new-permission-accounting.png)
 
-Wir erstellen eine neue Berechtigung, die für "Kategorie- und Attributseinträge" gilt.
-
-Als Benutzergruppe wählen wir "Buchhaltung" und als Geltungsbereich "Alle Objekte".
-
+Wir erstellen eine neue Berechtigung, die für "Kategorie- und Attributseinträge" gilt. Als Benutzergruppe wählen wir "Accounting" und als Geltungsbereich "Alle Objekte".
 Jetzt erteilen wir für die Kategorie "Buchhaltung" für alle Attribute die Berechtigungen zum Erstellen, Lesen und Bearbeiten. Vorhandene Daten dürfen nicht gelöscht werden.
 
-<!--TODO[![Berechtigungen erstellen](../../img/screenshots/rights-assignment/create-new-permission-accounting-2.png)](../../img/screenshots/rights-assignment/create-new-permission-accounting-2.png){:target="_blank"}-->
+[![Create accounting permissions](../../img/screenshots/user/usecases/rights-assignment/c1-create-new-permission-accounting-2.png)](../../img/screenshots/user/usecases/rights-assignment/c1-create-new-permission-accounting-2.png)
 
 Zuletzt möchten wir noch die Leseberechtigung für den Standort der Geräte vergeben. Dies ist nicht unerheblich, da die Mitarbeiter der Buchhaltung auch überprüfen müssen, wo sich die Geräte befinden.
 
-<!--TODO[![Berechtigungen erstellen](../../img/screenshots/rights-assignment/create-new-permission-location.png)](../../img/screenshots/rights-assignment/create-new-permission-location.png){:target="_blank"}-->
+[![Create location permissions](../../img/screenshots/user/usecases/rights-assignment/c1-create-new-permission-location.png)](../../img/screenshots/user/usecases/rights-assignment/c1-create-new-permission-location.png)
 
-Damit ist die Konfiguration für die Benutzergruppe "Buchhaltung" abgeschlossen und wir können nun die Berechtigungen testen.
+Damit ist die Konfiguration für die Benutzergruppe "Accounting" abgeschlossen und wir können nun die Berechtigungen testen. Am einfachsten können Sie die Berechtigungen testen, indem Sie einen neuen Benutzer anlegen, ihn der entsprechenden Benutzergruppe hinzufügen und sich mit ihm anmelden. Wir melden uns mit unserem angelegten Benutzer "Alex Accounty" an.
 
-<!--TODO[![Berechtigungen erstellen](../../img/screenshots/rights-assignment/permissions-config-accounting.gif)](../../img/screenshots/rights-assignment/permissions-config-accounting.gif){:target="_blank"}-->
+[![Login via new user](../../img/screenshots/user/usecases/rights-assignment/c1-test-permissions.png)](../../img/screenshots/user/usecases/rights-assignment/c1-test-permissions.png)
 
-# Berechtigungen testen
+| **Test**                                                                                                                                                                                                                                                                         | **Ergebnis**                                                                                                                                                                                 |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Beim Versuch, ein neues Objekt in einer beliebigen Klasse zu erstellen oder zu löschen, wird die Meldung angezeigt, dass Sie nicht über ausreichende Berechtigungen für diese Aktion verfügen.                                                                                   | [![limited](../../img/screenshots/user/usecases/rights-assignment/c1-table-limited-permissions.png)](../../img/screenshots/user/usecases/rights-assignment/c1-table-limited-permissions.png) |
+| Beim Aufruf eines Objekts sollten nun nur noch die Kategorien "Allgemein", "Buchhaltung" und "Standort" Informationen anzeigen. Beim Versuch, die Kategorie "Standort" zu bearbeiten, sollte angezeigt werden, dass der Benutzer nicht über ausreichende Berechtigungen verfügt. | [![no permissions](../../img/screenshots/user/usecases/rights-assignment/c1-table-no-permissions.png)](../../img/screenshots/user/usecases/rights-assignment/c1-table-no-permissions.png)    |
 
-Am einfachsten können Sie die Berechtigungen testen, indem Sie einen neuen Benutzer anlegen, ihn der entsprechenden Benutzergruppe hinzufügen und sich mit ihm anmelden. Wir melden uns mit unserem angelegten Benutzer "Alex Buchhaltung" an.
+!!! info
 
-<!--TODO[![Anmeldung mit neuem Benutzer](../../img/screenshots/rights-assignment/test-permissions.png)](../../img/screenshots/rights-assignment/test-permissions.png){:target="_blank"}-->
+    **Unterschied zwischen Rechten und Berechtigungen:** i-doit up unterscheidet zwischen funktionalen _Rechten_ und _Berechtigungen_ für den Zugriff auf bestimmte Informationen in der Dokumentation.
 
-| **Test**                                                                                                                                                                                                                                                                         | **Ergebnis**                                                                                                                                                              |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Beim Versuch, ein neues Objekt in einer beliebigen Klasse zu erstellen oder zu löschen, wird die Meldung angezeigt, dass Sie nicht über ausreichende Berechtigungen für diese Aktion verfügen.                                                                                   | <!--TODO[![TEXT](../../img/screenshots//rights-assignment/limited-permissions.png)](../../img/screenshots/rights-assignment/limited-permissions.png){:target="_blank"}--> |
-| Beim Aufruf eines Objekts sollten nun nur noch die Kategorien "Allgemein", "Buchhaltung" und "Standort" Informationen anzeigen. Beim Versuch, die Kategorie "Standort" zu bearbeiten, sollte angezeigt werden, dass der Benutzer nicht über ausreichende Berechtigungen verfügt. | <!--TODO[![TEXT](../../img/screenshots/rights-assignment/no-permissions.png)](../../img/screenshots/rights-assignment/no-permissions.png){:target="_blank"}-->            |
-
-!!!info
-    **Unterschied zwischen Rechten und Berechtigungen:** docupike unterscheidet zwischen funktionalen _Rechten_ und _Berechtigungen_ für den Zugriff auf bestimmte Informationen in der Dokumentation.
     **Rechte:** Ein Recht ermöglicht es einem Benutzer, eine bestimmte Funktion zu nutzen oder administrative Einstellungen vorzunehmen.
-    **Berechtigung:** Eine Berechtigung gewährt einem Benutzer Zugriff auf einen bestimmten Satz dokumentierter Informationen. |
+
+    **Berechtigung:** Eine Berechtigung gewährt einem Benutzer Zugriff auf einen bestimmten Satz dokumentierter Informationen.
 
 Beim Zugriff auf Kategorien, für die keine Berechtigungen konfiguriert wurden, wird anstelle der Informationen nur die Meldung "Keine Berechtigung" angezeigt.
 
-<!--TODO[![TEXT](../../img/screenshots/rights-assignment/display-with-no-permission.png)](../../img/screenshots/rights-assignment/display-with-no-permission.png){:target="_blank"}-->
+[![No permission](../../img/screenshots/user/usecases/rights-assignment/c1-display-with-no-permission.png)](../../img/screenshots/user/usecases/rights-assignment/c1-display-with-no-permission.png)
 
-# Fall 2: Zugriff auf Informationen für externe Parteien freigeben
 
-In einigen Fällen möchten Sie möglicherweise externen Dienstleistern oder anderen Unternehmen Zugriff auf Informationen gewähren. Dazu können Sie einfach eine separate Gruppe in docupike erstellen und spezielle Berechtigungen dafür konfigurieren.
+### Zusatz: Berichtsrechte konfigurieren
 
-Wir erstellen eine neue Gruppe für "Externe" in Benutzergruppen.
+Wie Sie wahrscheinlich bereits bemerkt haben, hat der neue Benutzer keinen Zugriff auf Berichte. Das liegt daran, dass wir dafür noch keine Berechtigung erteilt haben. Wir wechseln zurück zu den Einstellungen und gehen in der Benutzerverwaltung zum Menüpunkt **"Rechte"**. Hier gehen wir zum Punkt "Berichte" und erstellen ein neues Recht.
 
-<!--TODO[![TEXT](../../img/screenshots/rights-assignment/create-new-user-group.png)](../../img/screenshots/rights-assignment/create-new-user-group.png){:target="_blank"}-->
+Wieder wählen wir unsere Gruppe "Accounting" aus und aktivieren alle Rechte. Nun ist die Funktion "Berichte" für die Benutzergruppe "Accounting" verfügbar und Sie können vorhandene Berichte verwenden oder eigene erstellen.
 
-Nun konfigurieren wir die Berechtigung für diese neue Benutzergruppe. Dazu wechseln wir zum Menüpunkt Berechtigungen.
+[![Report rights](../../img/screenshots/user/usecases/rights-assignment/c1-rights-reports.png)](../../img/screenshots/user/usecases/rights-assignment/c1-rights-reports.png)
 
-Hier **erstellen wir eine neue Berechtigung** für die Gruppe Externe über die Schaltfläche "Neue Berechtigung".
+## Fall 2: Zugriff auf Informationen für externe Parteien freigeben
+
+In einigen Fällen möchten Sie möglicherweise externen Dienstleistern oder anderen Unternehmen Zugriff auf Informationen gewähren. Dazu können Sie einfach eine separate Gruppe in i-doit up erstellen und spezielle Berechtigungen dafür konfigurieren.
+
+Wir erstellen eine neue Gruppe für "Extern" in Benutzergruppen.
+
+[![Create new user group](../../img/screenshots/user/usecases/rights-assignment/c2-create-new-user-group.png)](../../img/screenshots/user/usecases/rights-assignment/c2-create-new-user-group.png)
+
+Nun konfigurieren wir die Berechtigung für diese neue Benutzergruppe. Dazu wechseln wir zum Menüpunkt Berechtigungen. Hier **erstellen wir eine neue Berechtigung** für die Gruppe Extern über die Schaltfläche "Neue Berechtigung".
 
 Sie können einen bestimmten Standort auswählen und dann konfigurieren, ob auch alle untergeordneten Standorte einbezogen werden sollen (z. B. Zweigstelle + alle zugehörigen Räume).
 
-<!--TODO[![TEXT](../../img/screenshots/rights-assignment/create-new-user-group.png)](../../img/screenshots/rights-assignment/create-new-user-group.png){:target="_blank"}-->
+[![Create new user group](../../img/screenshots/user/usecases/rights-assignment/c2-create-new-permission-group.png)](../../img/screenshots/user/usecases/rights-assignment/c2-create-new-permission-group.png)
 
-# Fall 3: Zugriff auf bestimmte Klassen
+## Fall 3: Zugriff auf bestimmte Klassen
 
 In einigen Fällen möchten Sie möglicherweise, dass Personen oder Gruppen nur Zugriff auf bestimmte Klassen haben. In diesem Fall können Sie wie folgt vorgehen.
 
 Erstellen Sie eine neue Benutzergruppe, in unserem Fall nennen wir sie "Anwendungsadministrator".
 
-<!--TODO[![TEXT](../../img/screenshots/rights-assignment/edit-user-group.png)](../../img/screenshots/rights-assignment/edit-user-group.png){:target="_blank"}-->
+[![Create user group](../../img/screenshots/user/usecases/rights-assignment/c3-create-new-user-group.png)](../../img/screenshots/user/usecases/rights-assignment/c3-create-new-user-group.png)
 
 Nun konfigurieren wir die Berechtigung für diese neue Benutzergruppe. Dazu wechseln wir zum Menüpunkt Berechtigung.
 
 Hier **erstellen wir eine neue Berechtigung** für die Gruppe "Anwendungsadministrator" über die Schaltfläche "Neue Berechtigung".
 
-<!--TODO[![TEXT](../../img/screenshots/rights-assignment/edit-user-group.png)](../../img/screenshots/rights-assignment/edit-user-group.png){:target="_blank"}-->
-
-# Zugriff auf Funktionen konfigurieren
-
-Wie Sie wahrscheinlich bereits bemerkt haben, hat der neue Benutzer keinen Zugriff auf Berichte. Das liegt daran, dass wir dafür noch keine Berechtigung erteilt haben. Wir wechseln zurück zu den Einstellungen und gehen in der Benutzerverwaltung zum Menüpunkt **"Rechte"**. Hier gehen wir zum Punkt "Berichte" und erstellen ein neues Recht.
-
-Wieder wählen wir unsere Gruppe "Buchhaltung" aus und aktivieren alle Rechte. Nun ist die Funktion "Berichte" für die Benutzergruppe "Buchhaltung" verfügbar und Sie können vorhandene Berichte verwenden oder eigene erstellen.
+[![Create new permissions](../../img/screenshots/user/usecases/rights-assignment/c3-create-new-permission-application-admin.png)](../../img/screenshots/user/usecases/rights-assignment/c3-create-new-permission-application-admin.png)
