@@ -13,7 +13,7 @@ The Data protection addon is available for all **trial** users for 30 days.
 It is fully available for **Premium** and **Pro** users.
 
 Risks and measures need to be documented, too. Measures for the risks can then be stored in the organization. In addition, the status of the implementation of measures and a review can be viewed.
-All [Classes](../basics/classes.md) that belong to **Data protection** are stored in the data protection [Collection](../basics/collections.md) which can be found in the [Finder](../finder/views-and-presets.md) menu.
+All [Classes](basics/classes.md) that belong to **Data protection** are stored in the data protection [Collection](basics/collections.md) which can be found in the [Finder](finder/views-and-presets.md) menu.
 
 ## Rights
 
@@ -21,14 +21,14 @@ You should check the Rights and alter them to fit your needs. The rights current
 
 ## Quick guide
 
-All [Classes](../basics/classes.md) that belong to **Data protection** are stored in the **Data protection** [Collection](../basics/collections.md) which can be found in the [Finder](../finder/views-and-presets.md) menu.
+All [Classes](basics/classes.md) that belong to **Data protection** are stored in the **Data protection** [Collection](basics/collections.md) which can be found in the [Finder](finder/views-and-presets.md) menu.
 Click on `Finder → Data protection`. The `Data protection` overview is located at `Inventory → Data protection`.
 
 Let's start with the overview of the add-on. Essentially, we distinguish between two organizational units that can be used to carry out the GDPR documentation. One is **Organization** and the other is **Information Security Domain**. **Organization** are usually the entire company or several companies for which you want to document information security, while **Information Security Domain** are sub-units, for example, if you have different information security requirements that are divided into different departments, such as `Administration` and `Production`, you want to make different documentation here.
 
 In the **Processing activities** and **Implemented measures (TOMs)** section, the respective objects must be created and all information displayed via the **Actions** button must be filled in.
 
-[More detailed use case](../usecases/data-protection.md){ .md-button .md-button--primary }
+[More detailed use case](usecases/data-protection.md){ .md-button .md-button--primary }
 
 ### Processing activities
 
