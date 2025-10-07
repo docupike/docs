@@ -12,7 +12,7 @@ Die Dokumente können als Dokumentationsgrundlage für Audits, Konformitätsprü
 
 ## Rechte
 
-Sie sollten die [Rechte](../../admin/rights-and-permissions.md) überprüfen und an Ihre Bedürfnisse anpassen. Die derzeit verfügbaren Rechte umfassen "Herunterladen", "Dokumente verwalten" und "Mailing verwalten". Darüber hinaus gibt es eine Option, um alle verfügbaren Rechte (einschließlich zukünftiger Updates) zuzuweisen.
+Sie sollten die [Rechte](../admin/rights-and-permissions.md) überprüfen und an Ihre Bedürfnisse anpassen. Die derzeit verfügbaren Rechte umfassen "Herunterladen", "Dokumente verwalten" und "Mailing verwalten". Darüber hinaus gibt es eine Option, um alle verfügbaren Rechte (einschließlich zukünftiger Updates) zuzuweisen.
 
 ## Design your documents
 
