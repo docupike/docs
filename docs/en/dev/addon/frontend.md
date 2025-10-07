@@ -1,7 +1,7 @@
 
-Add-ons can extend UI of docupike.
+Add-ons can extend UI of i-doit up.
 
-Add-on can define the frontend routes, create own pages and seamlessly add new functionality into docupike.
+Add-on can define the frontend routes, create own pages and seamlessly add new functionality into i-doit up.
 
 ## How to add new frontend routes?
 
@@ -64,7 +64,7 @@ For example, if you define `"component": "docu.addon.my-company.my-addon.MyPage"
 docu.Registry.registerComponent('docu.addon.my-company.my-addon.MyPage', MyPage);
 ```
 
-`resources` - an array of resources to be loaded in docupike when the page is opened.
+`resources` - an array of resources to be loaded in i-doit up when the page is opened.
 
 `menu` - if the page should have a link in the top navigation. Beware, only to define a `menu` property for the pages without parameters.
 
@@ -72,17 +72,17 @@ docu.Registry.registerComponent('docu.addon.my-company.my-addon.MyPage', MyPage)
 
 ### Building resources
 
-Your JS file(s) should be built as UMD. React/ReactDOM should be used as external resources from docupike. You should not pack React/ReactDOM in your JS file.
+Your JS file(s) should be built as UMD. React/ReactDOM should be used as external resources from i-doit up. You should not pack React/ReactDOM in your JS file.
 
 ### Creating components
 
-The components in docupike add-ons should be standard React components.
+The components in i-doit up add-ons should be standard React components.
 
 In order to register components, you should call:
 ```
 docu.Registry.registerComponent(uniqueName: string, component: ComponentType)
 ```
-This allows you to integrate your components seamless into docupike. The component itself can be structured as you like.
+This allows you to integrate your components seamless into i-doit up. The component itself can be structured as you like.
 
 While opening the page, the route and query parameters are passed as a `params` object.
 
@@ -115,6 +115,6 @@ docu.Routing.generate(routeName: string, params: Record<string, any>)
 ### Access the data models
 
 External add-ons can access more internal API then `docu.Routing`.
-Furthermore you can also access CMDB data directly from docupike using `docu.Models` without calling add-on specific endpoints.
+Furthermore you can also access CMDB data directly from i-doit up using `docu.Models` without calling add-on specific endpoints.
 
 Please check [JS Interface](js-api.md) for further information.

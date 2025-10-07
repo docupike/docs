@@ -104,5 +104,4 @@ Wir tragen das **Überprüfungsdatum**, den Namen der Person, die die Überprüf
 
 Sie öffnen das Add-on über das Menü "Inventar → Datenschutz" und klicken auf die Schaltfläche "PDF exportieren" oder "Vorschau".
 
-Die Schaltfläche "Vorschau" öffnet die PDF-Vorschau in docupike und die Schaltfläche "PDF exportieren" lädt die PDF-Datei herunter.
-
+Die Schaltfläche "Vorschau" öffnet die PDF-Vorschau in i-doit up und die Schaltfläche "PDF exportieren" lädt die PDF-Datei herunter.

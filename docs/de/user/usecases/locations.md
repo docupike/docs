@@ -6,9 +6,9 @@ lang: de
 
 # Standorte
 
-Die Position von Hardware und anderen Komponenten ist ein wesentlicher Bestandteil von docupike. Dieser Artikel erklärt die Dokumentation von Standorten und wie Sie Objekte platzieren.
+Die Position von Hardware und anderen Komponenten ist ein wesentlicher Bestandteil von i-doit up. Dieser Artikel erklärt die Dokumentation von Standorten und wie Sie Objekte platzieren.
 
-Die Standardinstallation von docupike enthält bereits Klassen, die für die Dokumentation von Standorten geeignet sind. Sie können diese verwenden oder ausblenden:
+Die Standardinstallation von i-doit up enthält bereits Klassen, die für die Dokumentation von Standorten geeignet sind. Sie können diese verwenden oder ausblenden:
 
 - **Land**
 - **Stadt**

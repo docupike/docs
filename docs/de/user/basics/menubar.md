@@ -6,25 +6,29 @@ lang: de
 
 Die Menüleiste ermöglicht eine schnelle Navigation durch verschiedene Funktionen.
 
-[![Menüleiste](../../img/screenshots/user/basics/menubar.png)](../../img/screenshots/user/basics/menubar.png){:target="_blank"}
+[![menu bar](../../img/screenshots/user/basics/menubar/menubar.png)](../../img/screenshots/user/basics/menubar/menubar.png){:target="_blank"}
 
 ## Logo
 
-Wenn Sie mit docupike arbeiten und zur docupike-Hauptseite zurückkehren möchten, können Sie auf das Logo klicken, um dorthin zu gelangen.
+Wenn Sie mit i-doit up arbeiten und zur i-doit up-Hauptseite zurückkehren möchten, können Sie auf das Logo klicken, um dorthin zu gelangen.
+
+## Mandantenauswahl
+
+Wenn Sie in mehreren Mandanten arbeiten, können Sie über die [Mandantenauswahl] zwischen den Mandanten wechseln.
 
 ## Inventar
 
-Über die Schaltfläche "Inventar", werden Ihnen Funktionen angezeigt. Mit dem [Finder] können Sie aus Ihren [Kollektionen] auswählen, die alle Objekte anzeigen, die Sie in Ihrer Kollektionen definiert haben.
-Die [Standorte] zeigen alle dokumentierten Standortobjekte und Objekte, die einem Standort zugeordnet sind. [Netzwerke] zeigt alle Netzwerke und die Verwendung ihrer IPv4- und IPv6-Adressen an.
+Das Inventar zeigt Funktionen an. Mit dem [**Finder**](../finder/search-filters-and-reports.md) können Sie aus Ihren Sammlungen (collections.md) auswählen, die alle Objekte anzeigen, die Sie in Ihren Sammlungen definiert haben. Die [**Standorte**](../usecases/locations.md) zeigen alle dokumentierten Standortobjekte und Objekte, die einem Standort zugeordnet sind. Die [Netzwerke]-Übersicht zeigt alle Netzwerke und wie deren IPv4- und IPv6-Adressen verwendet werden. Das [**Datenschutz-Add-on**](../usecases/data-protection.md) befindet sich ebenfalls hier.
 
-## Berichte
+## Reporting
 
-Im Bereich [Berichte] können Sie alle Berichte erstellen und anzeigen.
+Im Bereich Reporting können Sie [**Berichte**](../reporting.md) und [**Dokumente**](../documents-creator.md) erstellen und anzeigen.
 
 ## Verlauf
 
-Der [Verlauf] zeigt Ihnen die Historie Ihrer letzten Änderungen. Wenn Sie die vollständigen Verlauf öffnen, können Sie nach "Änderungstyp", "Geändert von" und "Betroffene Kategorien" filtern.
+Der [**Verlauf**](objects.md#verlauf) zeigt Ihnen die Historie Ihrer letzten Änderungen. Wenn Sie die vollständigen Verlauf öffnen, können Sie nach "Änderungstyp", "Geändert von" und "Betroffene Kategorien" filtern.
 
 ## Einstellungen
 
-Durch klicken auf Ihr Profilbild können Sie die [Einstellungen] öffnen. Hier können Sie alles über die Klassen und Kategorien konfigurieren, aber auch Ihre Benutzer verwalten und die Abrechnung und das Abonnement verwalten.
+Durch anklicken Ihres Profilbildes können Sie die [Einstellungen] öffnen, Feedback geben, die [Add-ons] administrieren oder sich [Abmelden].
+In den Einstellungen können Sie alles rund um die [**Klassen**](classes.md) und [**Kategorien**](categories-and-attributes.md) konfigurieren, aber auch Ihre Benutzer verwalten und die [Abrechnung] und das [Abonnement] verwalten.

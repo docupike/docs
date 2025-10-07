@@ -1,13 +1,13 @@
 ---
 
 title: create custom classes
-description: customize docupike and create custom classes
+description: customize i-doit up and create custom classes
 lang: en
 
 ---
 
 # Custom Classes
-Classes in docupike are the basis of your it documentation. docupike is delivered with a number of predefined classes, which should help you to get started quickly with it documentation.
+Classes in i-doit up are the basis of your it documentation. i-doit up is delivered with a number of predefined classes, which should help you to get started quickly with it documentation.
 
 # Add Custom Classes
 But we give you the possibility to define your own classes.

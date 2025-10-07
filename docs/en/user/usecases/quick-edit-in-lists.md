@@ -1,6 +1,6 @@
 # Create and edit objects quickly
 
-With docupike you can create and edit objects to update the information. This is possible through the lists of your documented content and you do not have to access every object one by one.
+With i-doit up you can create and edit objects to update the information. This is possible through the lists of your documented content and you do not have to access every object one by one.
 
 ## Precondition
 

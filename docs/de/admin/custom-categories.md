@@ -6,7 +6,7 @@ lang: de
 
 # Benutzerdefinierte Kategorien
 
-Neben den Standardkategorien bietet docupike die Möglichkeit, benutzerdefinierte Kategorien zu erstellen, um zusätzliche Attribute zu dokumentieren, die nicht in den Standardkategorien enthalten sind.
+Neben den Standardkategorien bietet i-doit up die Möglichkeit, benutzerdefinierte Kategorien zu erstellen, um zusätzliche Attribute zu dokumentieren, die nicht in den Standardkategorien enthalten sind.
 
 ## Rechte
 
@@ -29,10 +29,10 @@ Um Ihre Kategorie anzupassen, können Sie mit der Schaltfläche "Neues Attribut"
 
 Verfügbare Feldtypen sind:
 
-| Feldtyp  | Beschreibung |
-| --- | --- |
-| Text | Das Feld "Text" dient zur Eingabe von reinem Text. |
-| Zahl | Im Feld "Zahl" können Sie Dezimalzahlen eingeben. |
-| Boolesche Werte | Das Feld "Boolean" dient zur Auswahl von Ja oder Nein. |
-| Password | Im Feld "Password" befindet sich ein maskiertes Feld. |
-| Farbe | Im Feld "Farbe" können Sie einen Hex-Farbcode eingeben oder über die Farbauswahl eine Farbe auswählen, indem Sie im Bearbeitungsmodus auf die Palette klicken.. |
+| Feldtyp         | Beschreibung                                                                                                                                                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Text            | Das Feld "Text" dient zur Eingabe von reinem Text.                                                                                                              |
+| Zahl            | Im Feld "Zahl" können Sie Dezimalzahlen eingeben.                                                                                                               |
+| Boolesche Werte | Das Feld "Boolean" dient zur Auswahl von Ja oder Nein.                                                                                                          |
+| Password        | Im Feld "Password" befindet sich ein maskiertes Feld.                                                                                                           |
+| Farbe           | Im Feld "Farbe" können Sie einen Hex-Farbcode eingeben oder über die Farbauswahl eine Farbe auswählen, indem Sie im Bearbeitungsmodus auf die Palette klicken.. |

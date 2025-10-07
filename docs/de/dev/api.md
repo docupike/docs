@@ -1,16 +1,16 @@
 ---
 title: API
-description: Auf die docupike REST-API zugreifen
+description: Auf die i-doit up REST-API zugreifen
 lang: de
 ---
 
 # API
 
-Auf die Docupike-REST-API zugreifen
+Auf die i-doit up-REST-API zugreifen
 
 ## Format
 
-docupike verfügt über eine RESTful-API, die dem [OpenAPI `v3`-Standard](https://www.openapis.org/) entspricht. HTTP-Anfragen müssen den HTTP-Header `Content-Type: application/json` enthalten.
+i-doit up verfügt über eine RESTful-API, die dem [OpenAPI `v3`-Standard](https://www.openapis.org/) entspricht. HTTP-Anfragen müssen den HTTP-Header `Content-Type: application/json` enthalten.
 
 ## Versionierung und Support
 
@@ -22,7 +22,7 @@ Die meisten API-Anfragen erfordern ein authentifiziertes Benutzerkonto. Die bevo
 
 ## Automatisch generierte Referenz
 
-Jede Docupike-Instanz wird mit einer integrierten Referenz ausgeliefert. Aus Sicherheitsgründen müssen Sie authentifiziert sein, um darauf zugreifen zu können. Die Referenz ist in zwei Formaten verfügbar:
+Jede i-doit up-Instanz wird mit einer integrierten Referenz ausgeliefert. Aus Sicherheitsgründen müssen Sie authentifiziert sein, um darauf zugreifen zu können. Die Referenz ist in zwei Formaten verfügbar:
 
 === "HTML"
     `https://<Ihre_Subdomain>.docupike.cloud/api/v2/docs.html`
@@ -34,4 +34,3 @@ Jede Docupike-Instanz wird mit einer integrierten Referenz ausgeliefert. Aus Sic
     `https://<Ihre_Subdomain>.docupike.cloud/api/v2/docs.yaml`
 
 Die Referenz wird automatisch generiert und ist immer auf dem neuesten Stand.
-

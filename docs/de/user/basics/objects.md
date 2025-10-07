@@ -1,25 +1,25 @@
 ---
 title: Objekte
-description: Grundlagen der Dokumentation zu Objekten in docupike
+description: Grundlagen der Dokumentation zu Objekten in i-doit up
 lang: de
 ---
 
 # Objekte
 
-Ein Informationssatz für ein bestimmtes Asset wird als Objekt bezeichnet. Damit die Informationen vergleichbar sind, die du dokumentierst, verwendet docupike Klassen und Kategorien. Klassen definieren den Typ des Assets (z.B. Laptops) und haben einen festen Satz von Kategorien (z.B. CPU, Modell, IP-Netzwerk). Wie bei den Kollektionen stellen wir dir ein vordefiniertes Schema für die Daten zur Verfügung aber du kannst alles nach deinen Bedürfnissen anpassen.
+Ein Informationssatz für ein bestimmtes Asset wird als Objekt bezeichnet. Damit die Informationen vergleichbar sind, die du dokumentierst, verwendet i-doit up Klassen und Kategorien. Klassen definieren den Typ des Assets (z.B. Laptops) und haben einen festen Satz von Kategorien (z.B. CPU, Modell, IP-Netzwerk). Wie bei den Kollektionen stellen wir dir ein vordefiniertes Schema für die Daten zur Verfügung aber du kannst alles nach deinen Bedürfnissen anpassen.
 
 ## Vergleich zu Assets/Konfigurationselementen
 
-Ein Objekt entspricht einem Asset in der Asset-Verwaltung oder einem Konfigurationselement (CI). In docupike nennen wir es Objekt, weil wir die Dinge gerne einfach halten.
+Ein Objekt entspricht einem Asset in der Asset-Verwaltung oder einem Konfigurationselement (CI). In i-doit up nennen wir es Objekt, weil wir die Dinge gerne einfach halten.
 Ein Objekt kann entweder ein physisches Gerät sein, z. B. ein Server, ein Router, ein Laptop usw., oder es kann sich um eine logische Information handeln, wie z. B. ein Wartungsvertrag oder sogar eine Person mit Kontaktdaten.
 
 Die Entität selbst kann viele Informationen enthalten, die in Attributen und Werten gespeichert sind. Es gibt keine Begrenzung für die Anzahl der Informationen, die in einer einzelnen Entität gespeichert werden können.
 
-Was ein einzelnes Objekt in Ihrer IT-Dokumentation darstellt, legen letztendlich Sie selbst fest. docupike enthält jedoch einen vordefinierten Standardsatz.
+Was ein einzelnes Objekt in Ihrer IT-Dokumentation darstellt, legen letztendlich Sie selbst fest. i-doit up enthält jedoch einen vordefinierten Standardsatz.
 
 !!! info "Objekt oder Attribut?"
     Benutzer fragen oft, ob beispielsweise eine einzelne Festplatte ein Objekt oder ein Attribut ist.
-    In dem mit docupike gelieferten vordefinierten Satz ist eine Festplatte ein Attribut. Wenn Sie jedoch der Meinung sind, dass es für Sie sehr wichtig ist, alle Ihre Festplatten im Detail zu verfolgen, können Sie eine eigene Klasse für Festplatten erstellen.
+    In dem mit i-doit up gelieferten vordefinierten Satz ist eine Festplatte ein Attribut. Wenn Sie jedoch der Meinung sind, dass es für Sie sehr wichtig ist, alle Ihre Festplatten im Detail zu verfolgen, können Sie eine eigene Klasse für Festplatten erstellen.
 
 Die Behandlung von Festplatten als dedizierte Objekte bietet Ihnen mehrere Vorteile bei der Handhabung in der Software. So ist es beispielsweise einfacher, ihren Standort zu verfolgen.
 

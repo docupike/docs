@@ -14,13 +14,13 @@ Um später Geräte, Verträge, Personen und andere Assets zu Gebäuden und Räum
 
 Wenn Sie keine Gebäude und Räume eingeben möchten, sondern die Dokumentation ausschließlich auf deren Geräte beschränken möchten, können Sie diesen Schritt überspringen oder zu einem späteren Zeitpunkt durchführen.
 
-Die Beziehungen zwischen verschiedenen Objekten können in docupike jederzeit hinzugefügt, aufgelöst, geändert oder gelöscht werden.
+Die Beziehungen zwischen verschiedenen Objekten können in i-doit up jederzeit hinzugefügt, aufgelöst, geändert oder gelöscht werden.
 
-Damit ist docupike die optimale Lösung für die Dokumentation und Verknüpfung von Assets.
+Damit ist i-doit up die optimale Lösung für die Dokumentation und Verknüpfung von Assets.
 
 ### Gebäude erstellen
 
-In der linken Navigation finden Sie alle Klassen, mit denen Sie neue Objekte/Geräte erstellen können. In docupike stellt ein Objekt ein Asset dar. Ein Objekt kann also ein Gebäude, ein Notebook oder ein anderes Gerät, eine Person oder ein Vertrag sein.
+In der linken Navigation finden Sie alle Klassen, mit denen Sie neue Objekte/Geräte erstellen können. In i-doit up stellt ein Objekt ein Asset dar. Ein Objekt kann also ein Gebäude, ein Notebook oder ein anderes Gerät, eine Person oder ein Vertrag sein.
 
 Je nach Klasse, in der ein Objekt erstellt wird, werden über die aktivierten Kategorien unterschiedliche Informationen vom Benutzer abgefragt.
 
@@ -38,9 +38,9 @@ Je nach Klasse, in der ein Objekt erstellt wird, werden über die aktivierten Ka
 
 Wir erstellen nun ein neues Gebäude namens "Filiale". In der linken Navigation wählen wir die Klasse "Gebäude" aus. Nun klicken wir auf die Schaltfläche "Neues Objekt", um ein neues Gebäude zu erstellen. Wir vergeben den Namen "Filiale" und speichern das Objekt.
 
-<!--TODO[![Mit docupike lassen sich neue Assets superschnell erstellen](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png){:target="_blank"}-->
+<!--TODO[![Mit i-doit up lassen sich neue Assets superschnell erstellen](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png){:target="_blank"}-->
 
-Mit docupike lassen sich neue Assets superschnell erstellen
+Mit i-doit up lassen sich neue Assets superschnell erstellen
 
 ### Räume erstellen und zuweisen
 
@@ -102,16 +102,16 @@ In diesem Beispiel importieren wir die folgende Liste von Personen.
 <!-- cSpell:disable -->
 | **Mitarbeiter-ID** | **Name**             | **Berufsbezeichnung**  | **Geschäftliche E-Mail-Adresse** | **Telefonnummer** |
 | ------------------ | -------------------- | ---------------------- | -------------------------------- | ----------------- |
-| `E001`             | `Ambrose Tretgall`   | CEO                    | `tretgall@docupike.com`          | `+49211699310`    |
-| `E002`             | `Audrey Blondcrew`   | CFO                    | `blondcrew@docupike.com`         | `+49211699310`    |
-| `E003`             | `Channing Wheatend`  | CMO                    | `wheatend@docupike.com`          | `+49211699310`    |
-| `E004`             | `Clarissa Baudstaff` | IT-Managerin           | `baudstaff@docupike.com`         | `+49211699310`    |
-| `E005`             | `Davin Silvercocke`  | Vertriebsbuchhalter    | `silvercocke@docupike.com`       | `+49211699310`    |
-| `E006`             | `Dorian Glewrodger`  | Vertriebsbuchhalter    | `glewrodger@docupike.com`        | `+49211699310`    |
-| `E007`             | `Ethan Groomstone`   | Vertriebsbuchhalter    | `groomstone@docupike.com`        | `+49211699310`    |
-| `E008`             | `George Smith`       | Leitender IT-Ingenieur | `smith@docupike.com`             | `+49211699310`    |
-| `E009`             | `Fabian Prickflour`  | IT-Ingenieur           | `prickflour@docupike.com`        | `+49211699310`    |
-| `E010`             | `Fenton Wrightley`   | Vertriebsbuchhalter    | `wrightley@docupike.com`         | `+49211699310`    |
+| `E001`             | `Ambrose Tretgall`   | CEO                    | `tretgall@i-doit up.com`         | `+49211699310`    |
+| `E002`             | `Audrey Blondcrew`   | CFO                    | `blondcrew@i-doit up.com`        | `+49211699310`    |
+| `E003`             | `Channing Wheatend`  | CMO                    | `wheatend@i-doit up.com`         | `+49211699310`    |
+| `E004`             | `Clarissa Baudstaff` | IT-Managerin           | `baudstaff@i-doit up.com`        | `+49211699310`    |
+| `E005`             | `Davin Silvercocke`  | Vertriebsbuchhalter    | `silvercocke@i-doit up.com`      | `+49211699310`    |
+| `E006`             | `Dorian Glewrodger`  | Vertriebsbuchhalter    | `glewrodger@i-doit up.com`       | `+49211699310`    |
+| `E007`             | `Ethan Groomstone`   | Vertriebsbuchhalter    | `groomstone@i-doit up.com`       | `+49211699310`    |
+| `E008`             | `George Smith`       | Leitender IT-Ingenieur | `smith@i-doit up.com`            | `+49211699310`    |
+| `E009`             | `Fabian Prickflour`  | IT-Ingenieur           | `prickflour@i-doit up.com`       | `+49211699310`    |
+| `E010`             | `Fenton Wrightley`   | Vertriebsbuchhalter    | `wrightley@i-doit up.com`        | `+49211699310`    |
 <!-- cSpell:enable -->
 ### Personen über CSV-Import erstellen
 
@@ -130,7 +130,7 @@ Die Daten sollten nun strukturiert angezeigt werden. Wenn Sie ein falsches Trenn
 
 Datenansicht bei Auswahl des falschen Trennzeichens
 
-Im nächsten Schritt werden die Spalten den Datenfeldern zugeordnet. Dazu ordnen wir nun die Werte aus unserer CSV-Datei den Felder in docupike zu. Das Ergebnis sieht wie folgt aus:
+Im nächsten Schritt werden die Spalten den Datenfeldern zugeordnet. Dazu ordnen wir nun die Werte aus unserer CSV-Datei den Felder in i-doit up zu. Das Ergebnis sieht wie folgt aus:
 
 <!--TODO[![Attribut Zuordnung](../../img/screenshots/create-buildings-rooms-and-workplaces/image016.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image016.png){:target="_blank"}-->
 

@@ -1,7 +1,7 @@
 ---
 
 title: Multi editing
-description: Edit several objects in docupike at once
+description: Edit several objects in i-doit up at once
 lang: en
 
 ---

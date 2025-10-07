@@ -1,16 +1,16 @@
 ---
 title: API
-description: Access the docupike REST API
+description: Access the i-doit up REST API
 lang: en
 ---
 
 # API
 
-Access the docupike REST API
+Access the i-doit up REST API
 
 ## Format
 
-docupike has a RESTful API following the [OpenAPI `v3` standard](https://www.openapis.org/). HTTP requests must include the HTTP header `Content-Type: application/json`.
+i-doit up has a RESTful API following the [OpenAPI `v3` standard](https://www.openapis.org/). HTTP requests must include the HTTP header `Content-Type: application/json`.
 
 ## Versioning and support
 
@@ -24,7 +24,7 @@ Each user account can have multiple API tokens at once. You can manage API token
 
 ## Auto-generated reference
 
-Each docupike instance is shipped with a built-in reference. Because of security reasons you must be authenticated to access it. The reference comes in two formats:
+Each i-doit up instance is shipped with a built-in reference. Because of security reasons you must be authenticated to access it. The reference comes in two formats:
 
 === "HTML"
 

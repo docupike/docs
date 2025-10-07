@@ -34,7 +34,7 @@ Es ist kein Zufall, dass sich Menschen mit dem Thema IT-Dokumentation beschäfti
 
 Die Forderung nach einer IT-Dokumentation in der IT-Organisation kommt entweder aus der IT-Abteilung selbst, von höheren Ebenen, vom Management oder von außen (Compliance).
 
-Bevor Sie sich mit Tools wie docupike beschäftigen, sollten folgende Fragen geklärt sein: Welche Ziele möchten Sie mit der IT-Dokumentation erreichen oder unterstützen? Haben die Administratoren den Überblick über die Infrastruktur verloren? Möchte die Geschäftsleitung (IT-)Dienstleistungen festlegen, die den internen Abteilungen und/oder Kunden angeboten werden sollen? Gibt es Gesetze, Normen oder Richtlinien, die eine IT-Dokumentation vorschreiben?
+Bevor Sie sich mit Tools wie i-doit up beschäftigen, sollten folgende Fragen geklärt sein: Welche Ziele möchten Sie mit der IT-Dokumentation erreichen oder unterstützen? Haben die Administratoren den Überblick über die Infrastruktur verloren? Möchte die Geschäftsleitung (IT-)Dienstleistungen festlegen, die den internen Abteilungen und/oder Kunden angeboten werden sollen? Gibt es Gesetze, Normen oder Richtlinien, die eine IT-Dokumentation vorschreiben?
 
 Es gibt verschiedene Ansätze: Top-Down beschreibt, wie die Anforderungen in einem Prozess von oben nach unten aufgeschlüsselt werden. Das gilt auch für die Dokumentation: Bevor Sie sich mit den Details einzelner IT-Komponenten befassen, erstellen Sie ein Gesamtbild. Bottom-up ist das Gegenstück: Auf der Grundlage einer detaillierten Infrastruktur können Sie Services modellieren, Wartungsverträge vergeben oder Notfallpläne erstellen. In gewissem Maße kommen die Anforderungen jedoch gleichzeitig von allen Seiten. Bevor Sie also auch nur eine IP-Adresse dokumentieren oder eine Server-Spezifikation auslesen, sollten Sie diese Anforderungen kanalisieren und in durchdachte Strukturen bringen.
 
@@ -44,7 +44,7 @@ Eine der wichtigsten Fragen lautet: Wer arbeitet mit der IT-Dokumentation? Wer p
 
 ## Kennen Sie Ihre bestehende Dokumentation
 
-Selten fängt man wirklich bei Null an. Grob geschätzt verwenden etwa 100 Prozent unserer Kunden das Konkurrenzprodukt von docupike namens Excel. Listen mit IP-Adressen, Raum- und Kontaktlisten, Rack-Pläne ... wir haben schon alles in zweidimensionaler Form dokumentiert gesehen. Vielleicht haben Sie auch andere Spezialtools, die die aktuelle ITSM-Landschaft prägen. Möchten Sie diese durch docupike ersetzen? Können gesammelte Daten wiederverwendet werden? Gibt es Exporte oder Schnittstellen? In diesem Zusammenhang ist Datenintegration ein wichtiges Stichwort.
+Selten fängt man wirklich bei Null an. Grob geschätzt verwenden etwa 100 Prozent unserer Kunden das Konkurrenzprodukt von i-doit up namens Excel. Listen mit IP-Adressen, Raum- und Kontaktlisten, Rack-Pläne ... wir haben schon alles in zweidimensionaler Form dokumentiert gesehen. Vielleicht haben Sie auch andere Spezialtools, die die aktuelle ITSM-Landschaft prägen. Möchten Sie diese durch i-doit up ersetzen? Können gesammelte Daten wiederverwendet werden? Gibt es Exporte oder Schnittstellen? In diesem Zusammenhang ist Datenintegration ein wichtiges Stichwort.
 Aber müssen Sie die Daten in jedem Fall manuell eingeben oder können sie automatisch verarbeitet werden?
 
 ## Kennen Sie Ihre IT
@@ -63,7 +63,7 @@ Ergo: Jedes Projekt hat einen definierten Anfang und ein definiertes Ende. Dazwi
 
 ## Kennen Sie Ihre Prozesse
 
-IT-Dokumentation ist nur dann nachhaltig, wenn sie stets auf dem neuesten Stand ist und fest in den Arbeitsprozessen Ihrer Mitarbeiter verankert ist. Nur aktuelle Informationen sind nützlich. Veraltete oder falsche Informationen sollten Sie in jedem Fall vermeiden. Bevor Sie den "Schalter umlegen" und Ihre IT-Dokumentation im Live-Betrieb implementieren, sollten Sie alle Prozesse identifizieren, in denen IT-Dokumentation relevant ist. Ein Beispiel: Wenn docupike in den gesamten Lebenszyklus einer IT-Komponente integriert wird, angefangen bei der Planung über die Beschaffung und Inbetriebnahme bis hin zur Entsorgung, hat dies entscheidende Auswirkungen auf viele Prozesse (und andere Tools). In diesem Zusammenhang sprechen wir von einem "Leitsystem".
+IT-Dokumentation ist nur dann nachhaltig, wenn sie stets auf dem neuesten Stand ist und fest in den Arbeitsprozessen Ihrer Mitarbeiter verankert ist. Nur aktuelle Informationen sind nützlich. Veraltete oder falsche Informationen sollten Sie in jedem Fall vermeiden. Bevor Sie den "Schalter umlegen" und Ihre IT-Dokumentation im Live-Betrieb implementieren, sollten Sie alle Prozesse identifizieren, in denen IT-Dokumentation relevant ist. Ein Beispiel: Wenn i-doit up in den gesamten Lebenszyklus einer IT-Komponente integriert wird, angefangen bei der Planung über die Beschaffung und Inbetriebnahme bis hin zur Entsorgung, hat dies entscheidende Auswirkungen auf viele Prozesse (und andere Tools). In diesem Zusammenhang sprechen wir von einem "Leitsystem".
 
 ## Nehmen Sie sich Zeit
 
@@ -71,13 +71,13 @@ Sie können nicht morgen mit der IT-Dokumentation beginnen und erwarten, dass si
 
 ## Dokumentieren Sie Ihre Dokumentation
 
-Es führt kein Weg daran vorbei, die für die IT-Dokumentation wichtigen Dinge festzuhalten: Wie sieht das Design der IT-Dokumentation aus? Welche Prozesse sind definiert? Daher ist es sinnvoll, ein Wiki mit genau denselben Informationen wie docupike zu führen. Glücklicherweise ist ein Wiki oder Dokumentenmanagementsystem in den meisten Fällen bereits vorhanden und kann somit für diesen Zweck genutzt werden.
+Es führt kein Weg daran vorbei, die für die IT-Dokumentation wichtigen Dinge festzuhalten: Wie sieht das Design der IT-Dokumentation aus? Welche Prozesse sind definiert? Daher ist es sinnvoll, ein Wiki mit genau denselben Informationen wie i-doit up zu führen. Glücklicherweise ist ein Wiki oder Dokumentenmanagementsystem in den meisten Fällen bereits vorhanden und kann somit für diesen Zweck genutzt werden.
 
 ## Über den Tellerrand hinausschauen
 
-Wer Inspiration sucht oder aus einem Erfahrungsschatz schöpfen möchte, ist bei uns genau richtig. Neben regionalen Anwendertreffen und bundesweiten Anwenderkonferenzen bieten wir Ihnen zahlreiche Kontaktmöglichkeiten, um sich über docupike und IT-Dokumentation auszutauschen.
+Wer Inspiration sucht oder aus einem Erfahrungsschatz schöpfen möchte, ist bei uns genau richtig. Neben regionalen Anwendertreffen und bundesweiten Anwenderkonferenzen bieten wir Ihnen zahlreiche Kontaktmöglichkeiten, um sich über i-doit up und IT-Dokumentation auszutauschen.
 
-Und wenn Sie einen starken (Service-)Partner benötigen, bieten wir und unsere Partner Ihnen Workshops, Pakete und vieles mehr, die ideal für die Startphase von docupike geeignet sind.
+Und wenn Sie einen starken (Service-)Partner benötigen, bieten wir und unsere Partner Ihnen Workshops, Pakete und vieles mehr, die ideal für die Startphase von i-doit up geeignet sind.
 
 ## Fazit
 

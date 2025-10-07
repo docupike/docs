@@ -6,7 +6,7 @@ lang: de
 
 # Rechte und Berechtigungen
 
-docupike unterscheidet zwischen funktionalen _Rechten_ und _Berechtigungen_ für den Zugriff auf bestimmte Informationen in der Dokumentation.
+i-doit up unterscheidet zwischen funktionalen _Rechten_ und _Berechtigungen_ für den Zugriff auf bestimmte Informationen in der Dokumentation.
 
 ## Additiv und vererbbar
 

@@ -4,18 +4,18 @@ description: Übersicht
 lang: de
 ---
 
-# docupike – The easy cloud based documentation
+# i-doit up – The easy cloud based documentation
 
-Dies ist das Online-Handbuch zu Ihrem docupike.
+Dies ist das Online-Handbuch zu Ihrem i-doit up.
 Hier finden Sie die Richtlinien für Benutzer, Administratoren und Entwickler sowie einige technische Hinweise.
 
-Da wir regelmäßig neue Versionen von docupike veröffentlichen, halten wir dieses Handbuch ständig auf dem neuesten Stand, um Sie über neue und geänderte Funktionen zu informieren.
+Da wir regelmäßig neue Versionen von i-doit up veröffentlichen, halten wir dieses Handbuch ständig auf dem neuesten Stand, um Sie über neue und geänderte Funktionen zu informieren.
 
 ## Über
 
-[docupike](https://docupike.com/) ist eine einfache, cloudbasierte Dokumentationslösung, die alle technischen und administrativen Informationen Ihres Unternehmens an einem Ort zusammenfasst.
+[i-doit up](https://docupike.com/) ist eine einfache, cloudbasierte Dokumentationslösung, die alle technischen und administrativen Informationen Ihres Unternehmens an einem Ort zusammenfasst.
 Damit dient sie als zentrale Informationsquelle für die Optimierung und Automatisierung Ihrer Geschäftsprozesse.
-docupike wird auf sicheren Cloud-Servern der i-doit GmbH mit Sitz in Düsseldorf betrieben.
+i-doit up wird auf sicheren Cloud-Servern der i-doit GmbH mit Sitz in Düsseldorf betrieben.
 
 ## Support
 
