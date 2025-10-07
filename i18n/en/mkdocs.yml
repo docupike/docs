@@ -25,6 +25,8 @@ nav:
           - Collections: user/basics/collections.md
           - Categories and attributes: user/basics/categories-and-attributes.md
           - Enable or disable attributes: user/basics/enable-disable-attributes.md
+          - Documents Creator: user/basics/documents-creator.md
+          - Data Protection: user/basics/gdpr.md
           - Widgets: user/basics/widgets.md
       - Finder:
           - Inline editing: user/finder/inline-editing.md
