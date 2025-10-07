@@ -75,6 +75,6 @@ You can check the servereye synchronization via `Add-ons > servereye settings`. 
 
 ## Widget
 
-docupike has a [Widget](../user/finder/widgets.md) view.
+docupike has a [Widget](../user/basics/widgets.md) view.
 
 This widget allows to see date of the last synchronization and also allows jumping into the corresponding servereye asset.
