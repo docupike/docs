@@ -102,16 +102,16 @@ In diesem Beispiel importieren wir die folgende Liste von Personen.
 <!-- cSpell:disable -->
 | **Mitarbeiter-ID** | **Name**             | **Berufsbezeichnung**  | **Geschäftliche E-Mail-Adresse** | **Telefonnummer** |
 | ------------------ | -------------------- | ---------------------- | -------------------------------- | ----------------- |
-| `E001`             | `Ambrose Tretgall`   | CEO                    | `tretgall@i-doit up.com`         | `+49211699310`    |
-| `E002`             | `Audrey Blondcrew`   | CFO                    | `blondcrew@i-doit up.com`        | `+49211699310`    |
-| `E003`             | `Channing Wheatend`  | CMO                    | `wheatend@i-doit up.com`         | `+49211699310`    |
-| `E004`             | `Clarissa Baudstaff` | IT-Managerin           | `baudstaff@i-doit up.com`        | `+49211699310`    |
-| `E005`             | `Davin Silvercocke`  | Vertriebsbuchhalter    | `silvercocke@i-doit up.com`      | `+49211699310`    |
-| `E006`             | `Dorian Glewrodger`  | Vertriebsbuchhalter    | `glewrodger@i-doit up.com`       | `+49211699310`    |
-| `E007`             | `Ethan Groomstone`   | Vertriebsbuchhalter    | `groomstone@i-doit up.com`       | `+49211699310`    |
-| `E008`             | `George Smith`       | Leitender IT-Ingenieur | `smith@i-doit up.com`            | `+49211699310`    |
-| `E009`             | `Fabian Prickflour`  | IT-Ingenieur           | `prickflour@i-doit up.com`       | `+49211699310`    |
-| `E010`             | `Fenton Wrightley`   | Vertriebsbuchhalter    | `wrightley@i-doit up.com`        | `+49211699310`    |
+| `E001`             | `Ambrose Tretgall`   | CEO                    | `tretgall@docupike.com`          | `+49211699310`    |
+| `E002`             | `Audrey Blondcrew`   | CFO                    | `blondcrew@docupike.com`         | `+49211699310`    |
+| `E003`             | `Channing Wheatend`  | CMO                    | `wheatend@docupike.com`          | `+49211699310`    |
+| `E004`             | `Clarissa Baudstaff` | IT-Managerin           | `baudstaff@docupike.com`         | `+49211699310`    |
+| `E005`             | `Davin Silvercocke`  | Vertriebsbuchhalter    | `silvercocke@docupike.com`       | `+49211699310`    |
+| `E006`             | `Dorian Glewrodger`  | Vertriebsbuchhalter    | `glewrodger@docupike.com`        | `+49211699310`    |
+| `E007`             | `Ethan Groomstone`   | Vertriebsbuchhalter    | `groomstone@docupike.com`        | `+49211699310`    |
+| `E008`             | `George Smith`       | Leitender IT-Ingenieur | `smith@docupike.com`             | `+49211699310`    |
+| `E009`             | `Fabian Prickflour`  | IT-Ingenieur           | `prickflour@docupike.com`        | `+49211699310`    |
+| `E010`             | `Fenton Wrightley`   | Vertriebsbuchhalter    | `wrightley@docupike.com`         | `+49211699310`    |
 <!-- cSpell:enable -->
 ### Personen über CSV-Import erstellen
 

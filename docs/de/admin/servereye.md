@@ -35,7 +35,7 @@ Sie können sich entweder über servereye oder mit Ihrem Benutzernamen und Passw
 
 <!--TODO[![Anmeldebildschirm](../img/screenshots/admin/servereye/login.png)](../img/screenshots/admin/servereye/login.png){:target="_blank"}-->
 
-[helpdesk]: mailto:help@i-doit up.com
+[helpdesk]: mailto:help@docupike.com
 
 !!! info "Keine Standardanmeldung"
     i-doit up hat keine Standardanmeldung. Stattdessen wird während der Installation automatisch der erste einzelne Benutzer:in erstellt. Dieser Benutzer:in hat die Administratorrolle mit allen Rechten und Berechtigungen.
