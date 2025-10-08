@@ -28,6 +28,14 @@ Im Bereich Reporting können Sie [**Berichte**](../reporting.md) und [**Dokument
 
 Der [**Verlauf**](objects.md#verlauf) zeigt Ihnen die Historie Ihrer letzten Änderungen. Wenn Sie die vollständigen Verlauf öffnen, können Sie nach "Änderungstyp", "Geändert von" und "Betroffene Kategorien" filtern.
 
+## Hilfe
+
+In diesem Menü können Sie die integrierte [Anleitung erkunden] oder auf die Dokumentation zugreifen.
+
+## Density Mode
+
+Der Density Mode wird verwendet, um den Abstand der Benutzeroberfläche zu ändern. Sie können zwischen zwei Modi wählen: Kompakt und Komfortabel.
+
 ## Einstellungen
 
 Durch anklicken Ihres Profilbildes können Sie die [Einstellungen] öffnen, Feedback geben, die [Add-ons] administrieren oder sich [Abmelden].

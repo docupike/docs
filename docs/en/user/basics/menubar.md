@@ -18,7 +18,7 @@ If you are working in multiple tenants, you can switch between the tenants via t
 
 ## Inventory
 
-The Inventory displays functions. Using the [**Finder**](../finder/search-filters-and-reports.md), you can select from your collections (collections.md), which display all the objects you have defined in your collections. The [**Locations**](../usecases/locations.md) show all documented location objects and objects assigned to a location. The [Networks] overview shows all networks and how their IPv4 and IPv6 addresses are used. The [**Data Protection Add-on**](../usecases/data-protection.md) is also located here.
+The Inventory displays functions. Using the [**Finder**](../finder/search-filters-and-reports.md), you can select from your [collections](collections.md), which display all the objects you have defined in your collections. The [**Locations**](../usecases/locations.md) show all documented location objects and objects assigned to a location. The [Networks] overview shows all networks and how their IPv4 and IPv6 addresses are used. The [**Data Protection Add-on**](../usecases/data-protection.md) is also located here.
 
 ## Reporting
 
@@ -27,6 +27,14 @@ The reports area is where you can create and see all [**reports**](../reporting.
 ## History
 
 The history shows you the [**History**](objects.md#history) of your latest changes. By opening the complete history view, you can filter by type, creator and category.
+
+## Help
+
+In this menu, you can view the integrated [Explore guide] or access the Documentation.
+
+## Density Mode
+
+The density mode is used to change the spacing of the user interface. You can choose between two modes: Compact and Comfortable.
 
 ## Settings
 
