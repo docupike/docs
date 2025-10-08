@@ -16,7 +16,7 @@ All you need to do to install it is described in the [`README.md`](https://bitbu
 In case you read this documentation carefully you know that the only way to interact with i-doit up is its API. Because of this you should have
 a general idea of the API and its functionalities especially if you plan to implement complex use cases.
 
-For this purpose you can refer to the API documentation on your own instance which is accessible under [https://your-i-doit up-instance.docupike.com/api/v2/docs.html].
+For this purpose you can refer to the API documentation on your own instance which is accessible under [https://your-docupike-instance.docupike.com/api/v2/docs.html].
 It is strongly advised to read the "General Section" which will give you an overall understanding of the API and its capabilities.
 
 
