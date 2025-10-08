@@ -1,12 +1,12 @@
 ---
 title: servereye integration
-description: Admin basics for using the servereye Add-on in docupike
+description: Admin basics for using the servereye Add-on in i-doit up
 lang: en
 ---
 
 # servereye integration
 
-The servereye Add-on is designed to synchronize data from servereye to docupike. The Add-on configuration will happen automatically during registration procedure.
+The servereye Add-on is designed to synchronize data from servereye to i-doit up. The Add-on configuration will happen automatically during registration procedure.
 
 ## Overview
 
@@ -23,13 +23,13 @@ The servereye Add-on is designed to synchronize data from servereye to docupike.
 ## Login
 
 This gives you an oversight how-to login for the first time.<br>
-Access your docupike.cloud instance using the following URL schema:
+Access your i-doit up cloud instance using the following URL schema:
 
 ```
 https://<your_subdomain>.docupike.cloud/
 ```
 
-Navigate to the Web UI of docupike to view the login screen:
+Navigate to the Web UI of i-doit up to view the login screen:
 
 You can log in either through servereye or by using your username and password. This grants you access to the default tenant, which is not associated with any specific customer.
 
@@ -38,16 +38,16 @@ You can log in either through servereye or by using your username and password. 
 [helpdesk]: mailto:help@docupike.com
 
 !!! info "No default login"
-    docupike has no default login. Instead, during installation, the first individual user will be created automatically. This user has the admin role with all rights and permissions.
+    i-doit up has no default login. Instead, during installation, the first individual user will be created automatically. This user has the admin role with all rights and permissions.
 
 !!! info "Reset password"
     If you forget your password or need to change it, use the `Reset Password` button on the login screen.
 
 After logging in, the servereye Add-on is already configured and does not need further setup. It also automatically performs synchronization of the servereye data.
 
-## Rights in docupike
+## Rights in i-doit up
 
-As an admin, you can view all tenants and configure docupike.
+As an admin, you can view all tenants and configure i-doit up.
 
 However, synchronized users only have the rights to view tenant assigned to them, **with permissions limited to reading all objects and categories**. You have the option to assign create, edit and additional [permissions](rights-and-permissions.md) as needed.
 
@@ -56,7 +56,7 @@ However, synchronized users only have the rights to view tenant assigned to them
 
 ## Tenants
 
-A separate tenant is created for each customer. Access these tenants through the dropdown menu located at the top left, next to the docupike logo.
+A separate tenant is created for each customer. Access these tenants through the dropdown menu located at the top left, next to the i-doit up logo.
 
 ## User
 
@@ -75,6 +75,6 @@ You can check the servereye synchronization via `Add-ons > servereye settings`. 
 
 ## Widget
 
-docupike has a [Widget](../user/basics/widgets.md) view.
+i-doit up has a [Widget](../user/basics/widgets.md) view.
 
 This widget allows to see date of the last synchronization and also allows jumping into the corresponding servereye asset.

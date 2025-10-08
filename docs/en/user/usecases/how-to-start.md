@@ -1,4 +1,4 @@
-# docupike - how to start
+# i-doit up - how to start
 
 * Know your Requirements
 * Know your Users
@@ -28,11 +28,11 @@ In this article we would like to map out what the reasons for these questions ar
 
 ## Know your Requirements
 
-It is not by chance that people deal with the subject of IT documentation. It doesn’t work on its own and doesn’t serve as an end in itself. 
+It is not by chance that people deal with the subject of IT documentation. It doesn’t work on its own and doesn’t serve as an end in itself.
 
-Either the request to establish IT documentation in the IT organization is made by the IT department itself, by more senior levels, by the management or from the outside (compliance). 
+Either the request to establish IT documentation in the IT organization is made by the IT department itself, by more senior levels, by the management or from the outside (compliance).
 
-Before you deal with tools like docupike, the following issues should be clarified: What targets do you want to achieve or support with IT documentation? Have the administrators lost track of the infrastructure? Does the management want to specify (IT) services to be offered to in-house departments and/ or to customers? Are there laws, standards or guidelines which stipulate that there has to be IT documentation?
+Before you deal with tools like i-doit up, the following issues should be clarified: What targets do you want to achieve or support with IT documentation? Have the administrators lost track of the infrastructure? Does the management want to specify (IT) services to be offered to in-house departments and/ or to customers? Are there laws, standards or guidelines which stipulate that there has to be IT documentation?
 
 There are various approaches: Top down describes how the requirements are broken down in a process from top to bottom. This also applies to the documentation: Before you elaborate on details of single IT components, you map out the full picture. Bottom up is the counterpart: Based on a detailed infrastructure, you can model services, assign maintenance contracts or create disaster recovery plans. But to some extent, the requirements come from all sides at the same time. So, before you document even one IP address or read out a server specification, you should channel these requirements and bring them into well-considered structures.
 
@@ -42,7 +42,7 @@ One of the most important questions is: Who works with the IT documentation? Who
 
 ## Know your Existing Documentation
 
-Seldom is it the case that you really start from scratch. At a rough estimate, approximately 100 percent of our customers use the rival product of docupike called Excel. Lists of IP addresses, lists of rooms and contacts, rack plans … we have seen it all documented in a two-dimensional form. Perhaps you also have other specialized tools which create the current ITSM landscape. Do you want them to be replaced by docupike? Can collected data be reused? Are there exports or interfaces? In this context, data integration is an important keyword.
+Seldom is it the case that you really start from scratch. At a rough estimate, approximately 100 percent of our customers use the rival product of i-doit up called Excel. Lists of IP addresses, lists of rooms and contacts, rack plans … we have seen it all documented in a two-dimensional form. Perhaps you also have other specialized tools which create the current ITSM landscape. Do you want them to be replaced by i-doit up? Can collected data be reused? Are there exports or interfaces? In this context, data integration is an important keyword.
 
 But in each case, do you have to enter the data manually or can it be processed automatically?
 
@@ -62,7 +62,7 @@ Ergo: Each project has a defined beginning and a defined end. In between, there 
 
 ## Know your Processes
 
-IT documentation is only sustainable when it is always kept up to date and deeply rooted in the working processes of your employees. Only information which is up-to-date is useful. In any case, you should avoid outdated or wrong information. Before you “flip the switch” and implement your IT documentation in live operation, you should identify all processes where IT documentation is relevant. An example: when docupike is incorporated into the complete life cycle of an IT component, starting with planning, purchasing, putting into operation until disposal, it has crucial consequences for many processes (and other tools). In this connection we speak of a “leading system”.
+IT documentation is only sustainable when it is always kept up to date and deeply rooted in the working processes of your employees. Only information which is up-to-date is useful. In any case, you should avoid outdated or wrong information. Before you “flip the switch” and implement your IT documentation in live operation, you should identify all processes where IT documentation is relevant. An example: when i-doit up is incorporated into the complete life cycle of an IT component, starting with planning, purchasing, putting into operation until disposal, it has crucial consequences for many processes (and other tools). In this connection we speak of a “leading system”.
 
 ## Take your Time
 
@@ -70,13 +70,13 @@ You don’t start with IT documentation tomorrow and expect it to be ready the d
 
 ## Document your Documentation
 
-There’s no way around it to write down the things which are important for IT documentation: what is the design of the IT documentation? Which processes are defined? Therefore, it is a good idea to maintain a Wiki with the very same information as docupike. Fortunately, a Wiki or document management system is already present in most cases and thus can be used for this purpose.
+There’s no way around it to write down the things which are important for IT documentation: what is the design of the IT documentation? Which processes are defined? Therefore, it is a good idea to maintain a Wiki with the very same information as i-doit up. Fortunately, a Wiki or document management system is already present in most cases and thus can be used for this purpose.
 
 ## Think Outside the Box
 
-Those who seek inspiration or want to draw on a reservoir of experiences don’t need to look further. Besides regional user meetings and nationwide user conferences, we offer many contact points where you can exchange views and experiences concerning docupike and IT documentation.
+Those who seek inspiration or want to draw on a reservoir of experiences don’t need to look further. Besides regional user meetings and nationwide user conferences, we offer many contact points where you can exchange views and experiences concerning i-doit up and IT documentation.
 
-And when a strong (service) partner is required, we and our partners offer workshops and packages etc. which are ideally suited for the starting phase of docupike.
+And when a strong (service) partner is required, we and our partners offer workshops and packages etc. which are ideally suited for the starting phase of i-doit up.
 
 ## Bottom Line
 

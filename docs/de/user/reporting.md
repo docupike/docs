@@ -1,14 +1,16 @@
 ---
-title: Berichterstattung
+title: Berichtsmanager
 description: Berichte über Objekte
 lang: de
 ---
 
-# Berichterstellung
+# Berichtsmanager
 
 Mit einem Bericht können Sie Dokumentationsdaten gezielt filtern und zusammenfassen. Er ähnelt in vielerlei Hinsicht der [Such- und Filterfunktion des Finders](finder/search-filters-and-reports.md), bietet jedoch mehr Möglichkeiten, Bedingungen mit der formatierten Ausgabe zu kombinieren.
 
-Der Report-Manager von docupike ist der einfache Weg, die richtigen Antworten zu finden. Filtere zuerst, welche Objekte im Bericht angezeigt werden sollen. Du kannst jedes Attribut für die Filterung verwenden. Als Ergebnis werden die gefilterten Objekte in Tabellenform verarbeitet, und es liegt an dir, zu definieren, welche Attribute in den Spalten angezeigt werden sollen.
+Der Report-Manager von i-doit up ist der einfache Weg, die richtigen Antworten zu finden. Filtere zuerst, welche Objekte im Bericht angezeigt werden sollen. Du kannst jedes Attribut für die Filterung verwenden. Als Ergebnis werden die gefilterten Objekte in Tabellenform verarbeitet, und es liegt an dir, zu definieren, welche Attribute in den Spalten angezeigt werden sollen.
+
+!!! tip "Ein Anwendungsbeispiel findest du [hier](usecases/reports.md)."
 
 ## Spalten
 

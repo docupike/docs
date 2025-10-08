@@ -50,10 +50,10 @@ There are several factors to consider when developing a naming convention for IT
 
 In addition to following a consistent naming convention, it is important to have a system in place for searching and locating IT assets. This can be particularly useful in larger organizations where there are many assets to manage. Here are some tips for effective asset search:
 
-- [ ] Use a centralized system: Centralized systems like docupike can be accessed not only by few, they are available for many and make the information they hold widely accessible.
+- [ ] Use a centralized system: Centralized systems like i-doit up can be accessed not only by few, they are available for many and make the information they hold widely accessible.
 
 - [ ] Use clear and descriptive names: By using clear and descriptive names for assets, it will be easier to locate them using search functions.
 - [ ] Use tags and categories: Consider using tags or categories to further organize and classify assets. This can make it easier to narrow down search results.
 - [ ] Use advanced search functions: Many search tools, such as those found in spreadsheets or databases, offer advanced search functions that allow you to search for specific criteria, such as asset type or location.
 
-By following these tips and using a combination of consistent naming conventions and effective search like it is part of docupike, you can effectively manage and locate your IT assets, improving communication and productivity within your organization.
+By following these tips and using a combination of consistent naming conventions and effective search like it is part of i-doit up, you can effectively manage and locate your IT assets, improving communication and productivity within your organization.

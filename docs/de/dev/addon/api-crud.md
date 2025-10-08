@@ -1,16 +1,16 @@
-In general all add-ons have the ability to access the docupike API.
+In general all add-ons have the ability to access the i-doit up API.
 With the API it is possible to interact or change the data of the application.
 In this section we will describe how the add-on can gain access to it.
 
-## Install the docupike API-Client
+## Install the i-doit up API-Client
 
-To install the docupike API-Client it can be done via `composer require docupike/api-client:^v1.0.0`.
-After it has been installed the add-on can use the docupike API client which contains all necessary
-methods to interact with the data of the docupike application.
+To install the i-doit up API-Client it can be done via `composer require docupike/api-client:^v1.0.0`.
+After it has been installed the add-on can use the i-doit up API client which contains all necessary
+methods to interact with the data of the i-doit up application.
 
 ## Connector to the API
 
-The docupike API has an factory method which creates an object of the API. Here is a simple example which 
+The i-doit up API has an factory method which creates an object of the API. Here is a simple example which
 creates an API object.
 
 ```php
@@ -32,7 +32,7 @@ class ApiConnector
 
 ## Basic examples of the API CRUD for (Object, Entry)
 
-The docupike API contains topics and in each topic all CRUD operations can be called.
+The i-doit up API contains topics and in each topic all CRUD operations can be called.
 
 ### Objects
 ```php
@@ -61,7 +61,7 @@ $api->object->delete('object-id');
 ...
 // Create an entry in a category
 $id = $api->entry->create(
-    'category-id', 
+    'category-id',
     ['property01' => 'value01']
 );
 

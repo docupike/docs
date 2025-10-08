@@ -20,4 +20,4 @@ Sie müssen über die [Rechte zum Exportieren von Daten](rights-and-permissions.
 Sie können Ihre Daten über "Einstellungen > Exportieren" exportieren. Nachdem Sie auf die Schaltfläche "Exportieren" geklickt haben, müssen Sie bestätigen, dass Sie den Export aller Ihrer Daten starten möchten.
 Nachdem die Exportdatei erstellt wurde, können Sie die Datei über die Schaltfläche "Datei herunterladen" herunterladen. Sie können die Datei löschen, indem Sie auf die Schaltfläche "Datei löschen" klicken.
 
-Die Datei wird als ZIP-Datei mit dem Namen "docupike_export_<Datum+Uhrzeit>" gespeichert, z. B. "docupike_export_2022-07-13_12-55-50_UTC.zip".
+Die Datei wird als ZIP-Datei mit dem Namen "i-doit_up_export_<Datum+Uhrzeit>" gespeichert, z. B. "i-doit_up_export_2022-07-13_12-55-50_UTC.zip".

@@ -10,7 +10,7 @@ Your contribution is highly welcome!
 
 This security policy is related to:
 
--   **docupike** incl. all its sub-projects and public systems
+-   **i-doit up** incl. all its sub-projects and public systems
 -   **i-doit** incl. all its sub-projects and public systems
 
 ## Supported versions
@@ -20,14 +20,14 @@ If you find any security issues in an older version of our software application 
 
 ## About us
 
-Both docupike and i-doit are maintained by the [i-doit GmbH](https://i-doit.com/), located in Düsseldorf/Germany.
+Both i-doit up and i-doit are maintained by the [i-doit GmbH](https://i-doit.com/), located in Düsseldorf/Germany.
 
 ## What are security-related issues?
 
 These are examples for security-related issues:
 
 -   Vulnerability in one of our public systems, e.g. our websites
--   Vulnerability in one of our software applications, e.g. docupike
+-   Vulnerability in one of our software applications, e.g. i-doit up
 -   Disclosure of private information, e.g. user data and secrets
 
 These issues affect the availability, confidentiality and/or integrity of our systems, software applications and the data we must protect.

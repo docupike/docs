@@ -1,12 +1,12 @@
 ---
 title: Objekte schnell erstellen und bearbeiten
-description: Mit docupike können Sie Objekte erstellen und bearbeiten, um die Informationen zu aktualisieren. Dies ist über die Listen Ihrer dokumentierten Inhalte möglich, ohne dass Sie jedes Objekt einzeln aufrufen müssen.
+description: Mit i-doit up können Sie Objekte erstellen und bearbeiten, um die Informationen zu aktualisieren. Dies ist über die Listen Ihrer dokumentierten Inhalte möglich, ohne dass Sie jedes Objekt einzeln aufrufen müssen.
 lang: de
 ---
 
 # Objekte schnell erstellen und bearbeiten
 
-Mit docupike können Sie Objekte erstellen und bearbeiten, um die Informationen zu aktualisieren. Dies ist über die Listen Ihrer dokumentierten Inhalte möglich, ohne dass Sie jedes Objekt einzeln aufrufen müssen.
+Mit i-doit up können Sie Objekte erstellen und bearbeiten, um die Informationen zu aktualisieren. Dies ist über die Listen Ihrer dokumentierten Inhalte möglich, ohne dass Sie jedes Objekt einzeln aufrufen müssen.
 
 ## Voraussetzung
 

@@ -6,9 +6,9 @@ lang: en
 
 # Locations
 
-The location of hardware and other components is an essential part of docupike. This article explains the documentation of locations and how you place objects.
+The location of hardware and other components is an essential part of i-doit up. This article explains the documentation of locations and how you place objects.
 
-The default installation docupike already supplies classes which are suitable for the documentation of locations - you can use them or hide them:
+The default installation i-doit up already supplies classes which are suitable for the documentation of locations - you can use them or hide them:
 
 - **Country**
 - **City**

@@ -1,10 +1,12 @@
 ---
 title: Views and presets
-description: Views and presets in the docupike Finder
+description: Views and presets in the i-doit up Finder
 lang: en
 ---
 
 # Views and presets
+
+[![Views and presets](../../img/screenshots/user/finder/views-and-presets.png)](../../img/screenshots/user/finder/views-and-presets.png){:target="_blank"}
 
 The `Finder` shows your documentation in the form of customized tables. These tables offer different views on the documented data. The current view on the data can be adjusted by adding, removing or re-arranging [attribute](../basics/categories-and-attributes.md) columns.
 
@@ -20,5 +22,5 @@ If a `View preset` has a global context it can be used for all object classes or
 
 ## Classes or locations
 
-In the navigation bar at the top you can switch between the `Finder` and the `Locations` view. This switch completely changes the way you are navigating through your information.  
+In the navigation bar at the top you can switch between the `Finder` and the `Locations` view. This switch completely changes the way you are navigating through your information.
 For both views, you can use a pagination at the bottom. Here, you are able to define the results per page and select the desired page.

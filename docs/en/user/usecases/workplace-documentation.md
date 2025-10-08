@@ -13,12 +13,12 @@ In this use case, we will create a building, assign different rooms to this buil
 In order to be able to add devices, contracts, people and other assets to buildings and rooms later, they must be created first.
 If you do not want to enter buildings and rooms, but want to limit the documentation purely to their devices, you can skip this step or do it at a later time.
 
-The relationships between different objects can be added, resolved, modified or deleted in docupike at any time.
-This makes docupike the optimal solution for documenting and linking assets.
+The relationships between different objects can be added, resolved, modified or deleted in i-doit up at any time.
+This makes i-doit up the optimal solution for documenting and linking assets.
 
 ### Create building
 
-In the left navigation you will find all the classes that you can use to create new objects / devices. In docupike, an object represents an asset. An object can therefore be a building, a notebook or other device, a person or a contract.
+In the left navigation you will find all the classes that you can use to create new objects / devices. In i-doit up, an object represents an asset. An object can therefore be a building, a notebook or other device, a person or a contract.
 Depending on the class in which an object is created, different information is requested from the user via the activated categories.
 
 [![For buildings, e.g. important contacts and current contracts are available as categories](../../img/screenshots/create-buildings-rooms-and-workplaces/image001.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image001.png)
@@ -33,7 +33,7 @@ Depending on the class in which an object is created, different information is r
 
 We are now creating a new building called "Branch". In the left navigation, we select the class "Building". Now we click on the button "New object" to create a new building. We assign the name "Branch" and save the object.
 
-[![Creating new assets is super quick with docupike](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png) Creating new assets is super quick with docupike
+[![Creating new assets is super quick with i-doit up](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image003.png) Creating new assets is super quick with i-doit up
 
 ### Create and assign rooms
 
@@ -93,18 +93,18 @@ Often, however, you want to create a large number of people initially. Whether a
 
 In this example, we will import the following list of people.
 
-| **Employee ID** | **Name** | **Job Title** | **Business e-mail** | **Telephone** |
-| --- | --- | --- | --- | --- |
-| `E001` | `Ambrose Tretgall` | CEO | `tretgall@docupike.com` | `+49211699310` |
-| `E002` | `Audrey Blondcrew` | CFO | `blondcrew@docupike.com` | `+49211699310` |
-| `E003` | `Channing Wheatend` | CMO | `wheatend@docupike.com` | `+49211699310` |
-| `E004` | `Clarissa Baudstaff` | IT Manager | `baudstaff@docupike.com` | `+49211699310` |
-| `E005` | `Davin Silvercocke` | Sales Accountant | `silvercocke@docupike.com` | `+49211699310` |
-| `E006` | `Dorian Glewrodger` | Sales Accountant | `glewrodger@docupike.com` | `+49211699310` |
-| `E007` | `Ethan Groomstone` | Sales Accountant | `groomstone@docupike.com` | `+49211699310` |
-| `E008` | `George Smith` | Senior IT Engineer | `smith@docupike.com` | `+49211699310` |
-| `E009` | `Fabian Prickflour` | IT Engineer | `prickflour@docupike.com` | `+49211699310` |
-| `E010` | `Fenton Wrightley` | Sales Accountant | `wrightley@docupike.com` | `+49211699310` |
+| **Employee ID** | **Name**             | **Job Title**      | **Business e-mail**        | **Telephone**  |
+| --------------- | -------------------- | ------------------ | -------------------------- | -------------- |
+| `E001`          | `Ambrose Tretgall`   | CEO                | `tretgall@docupike.com`    | `+49211699310` |
+| `E002`          | `Audrey Blondcrew`   | CFO                | `blondcrew@docupike.com`   | `+49211699310` |
+| `E003`          | `Channing Wheatend`  | CMO                | `wheatend@docupike.com`    | `+49211699310` |
+| `E004`          | `Clarissa Baudstaff` | IT Manager         | `baudstaff@docupike.com`   | `+49211699310` |
+| `E005`          | `Davin Silvercocke`  | Sales Accountant   | `silvercocke@docupike.com` | `+49211699310` |
+| `E006`          | `Dorian Glewrodger`  | Sales Accountant   | `glewrodger@docupike.com`  | `+49211699310` |
+| `E007`          | `Ethan Groomstone`   | Sales Accountant   | `groomstone@docupike.com`  | `+49211699310` |
+| `E008`          | `George Smith`       | Senior IT Engineer | `smith@docupike.com`       | `+49211699310` |
+| `E009`          | `Fabian Prickflour`  | IT Engineer        | `prickflour@docupike.com`  | `+49211699310` |
+| `E010`          | `Fenton Wrightley`   | Sales Accountant   | `wrightley@docupike.com`   | `+49211699310` |
 
 ### Create persons via CSV import
 
@@ -122,7 +122,7 @@ The data should now be displayed in a structured way. If you select an incorrect
 
 Data-view when you select the wrong separator
 
-The next step is to map the columns to the data fields. To do this, we now map the values from our CSV file to the category fields in docupike. The result looks like this:
+The next step is to map the columns to the data fields. To do this, we now map the values from our CSV file to the category fields in i-doit up. The result looks like this:
 
 [![Attribute mapping](../../img/screenshots/create-buildings-rooms-and-workplaces/image016.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image016.png)
 

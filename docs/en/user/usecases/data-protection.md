@@ -92,4 +92,4 @@ We fill in the **Review date**, who has done the review and the result of the re
 ## Export or Preview the data protection protocol
 
 You open the add-on via the `Inventory → Data protection` menu and click on the `Export PDF` or `Preview` button.
-The `Preview` button will open the PDF preview in docupike and the `Export PDF` button will download the PDF file.
+The `Preview` button will open the PDF preview in i-doit up and the `Export PDF` button will download the PDF file.

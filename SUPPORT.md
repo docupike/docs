@@ -3,30 +3,30 @@
 Do you like to get in touch with us? No problem.
 Here is a list of common questions and where to find good answers.
 
-## Docupike
+## i-doit up
 
-### What is Docupike?
+### What is i-doit up?
 
-docupike is the cloud based documentation that holds all technical and administrative information in your organization in one place.
+i-doit up is the cloud based documentation that holds all technical and administrative information in your organization in one place.
 It thus serves as the single source of truth when it comes to optimizing and automating your business processes.
 
-### How do I use Docupike?
+### How do I use i-doit up?
 
-Visit [Docupike's documentation website][docs].
+Visit [i-doit up's documentation website][docs].
 
 ### I found a typo or misleading information in the docs. Who will fix it?
 
 Help us [making the docs a better place for everyone][docs-contribution].
 
-### I found a bug in Docupike. Who will resolve it?
+### I found a bug in i-doit up. Who will resolve it?
 
 Write us an [e-mail](mailto:help@docupike.com).
 
-### Where can I get commercial support for Docupike?
+### Where can I get commercial support for i-doit up?
 
 Write us an [e-mail](mailto:help@docupike.com).
 
-### Where can I get more information about Docupike?
+### Where can I get more information about i-doit up?
 
 Take a look at our [website][docupike-website].
 
@@ -82,14 +82,14 @@ Most of our software products are either for free or subscription based.
 
 ### Who are we?
 
-Docupike and i-doit are both maintained by the company i-doit GmbH, located in Düsseldorf/Germany.
+i-doit up and i-doit are both maintained by the company i-doit GmbH, located in Düsseldorf/Germany.
 Learn more about [us][about-us] on our website.
 
 ### Where can I get professional consulting/trainings for my documentation project?
 
 We have a [growing list of partners][i-doit-website] who will support you with [in-house consulting and trainings][i-doit-website].
 
-### I found a security issue in Docupike/i-doit. Who is responsible for that?
+### I found a security issue in i-doit up/i-doit. Who is responsible for that?
 
 We covered everything in our [security policy][security].
 

@@ -1,6 +1,6 @@
-The following section will describe docupike's internal interface exposed to add-ons.
+The following section will describe i-doit up's internal interface exposed to add-ons.
 
-With these methods, the add-on developer can work with the standard docupike entities in the same way as the application does.
+With these methods, the add-on developer can work with the standard i-doit up entities in the same way as the application does.
 When working through the Model API, changes made through the add-on will be immediately applied throughout the application
 The methods described below are available for all model types.
 

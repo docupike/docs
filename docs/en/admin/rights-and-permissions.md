@@ -6,7 +6,7 @@ lang: en
 
 # Rights and permissions
 
-docupike distinguishes between functional _rights_ and _permissions_ to access specific information in the documentation.
+i-doit up distinguishes between functional _rights_ and _permissions_ to access specific information in the documentation.
 
 ## Additive and inherited
 

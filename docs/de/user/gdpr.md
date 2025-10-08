@@ -15,7 +15,7 @@ Die **Datenschutz-Grundverordnung (DSGVO)** legt detaillierte Anforderungen für
 
 Risiken und Maßnahmen müssen ebenfalls dokumentiert werden. Maßnahmen für die Risiken können dann in der Organisation gespeichert werden. Zusätzlich kann der Status der Umsetzung der Maßnahmen und eine Überprüfung eingesehen werden.
 
-Alle [Klassen](./basics/classes.md), die zu **Datenschutz** gehören, werden in der [Kollektionen](./basics/collections.md) "Datenschutz" gespeichert, die im Menü [Finder](./finder/views-and-presets.md) zu finden ist.
+Alle [Klassen](basics/classes.md), die zu **Datenschutz** gehören, werden in der [Kollektionen](basics/collections.md) "Datenschutz" gespeichert, die im Menü [Finder](finder/views-and-presets.md) zu finden ist.
 
 ## Rechte
 
@@ -24,6 +24,7 @@ Sie sollten die Rechte überprüfen und an Ihre Bedürfnisse anpassen. Derzeit s
 ## Kurzanleitung
 
 Alle [Klassen](./basics/classes.md), die zu **Datenschutz** gehören, werden in der [Kollektionen](./basics/collections.md) **Datenschutz** gespeichert, die Sie im Menü [Finder](./finder/views-and-presets.md) finden.
+
 Klicken Sie auf "Finder → Datenschutz". Die Übersicht "Datenschutz" finden Sie unter "Inventar → Datenschutz".
 
 Beginnen wir mit der Übersicht über das Add-on. Grundsätzlich unterscheiden wir zwischen zwei Organisationseinheiten, die zur Durchführung der DSGVO-Dokumentation verwendet werden können. Die eine ist die **Organisation** und die andere die **Informationssicherheitsdomäne**. **Organisation** sind in der Regel das gesamte Unternehmen oder mehrere Unternehmen, für die Sie die Informationssicherheit dokumentieren möchten, während **Informationssicherheitsdomänen** Untereinheiten sind, z. B. wenn Sie unterschiedliche Anforderungen an die Informationssicherheit haben, die in verschiedene Abteilungen wie "Verwaltung" und "Produktion" unterteilt sind, möchten Sie hier unterschiedliche Dokumentationen erstellen.

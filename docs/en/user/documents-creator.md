@@ -8,7 +8,7 @@ lang: en
 
 The Documents Creator converts your documentation data into user-friendly PDF documents. This allows you to reach a diverse audience - from tech-savvy stakeholders to the less digitally fluent decision-makers.
 
-The documents can serve as a documentation basis for audits, conformity checks and customer reporting.The Documents Creator is available in the submenu of "Reports" in the main navigation bar.
+The documents can serve as a documentation basis for audits, conformity checks and customer reporting.The Documents Creator is available in the submenu of `Reports` in the main navigation bar.
 
 ## Rights
 
@@ -49,7 +49,7 @@ The `Headline` is added by default. In the `Text` section you can use supported 
     If you click on the `Text editor` button you can easily edit your text in the `Text editor` popup with a Toolbar and preview.
 
 In the `Object details` section the attributes are displayed per row.
-The `Custom Table` section displays the result like a table.´
+The `Custom Table` section displays the result like a table.
 
 When editing the `Objects shown in section` and defining conditions you can narrow down the result set. Also you define the displayed `Attributes`.
 
@@ -59,9 +59,4 @@ Accelerate your communication: Instead of manually crafting and distributing doc
 
 ### Mailings
 
-Each entry needs a title, recipient(s) which can also be added by direct input, a subject and a message.
-After that you can set a execution date and configure if the mailing should be done in an interval.
-When you check `Repeat execution` you can select a `End date of execution` and an interval.
-
-When the configuration is done you see the mailing list with all configured mailings.
-Here you can alter a mailing, pause the mailing or check the `Logs of execution` for errors.
+Each entry needs a title, recipient(s) which can also be added by direct input, a subject and a message. After that you can set a execution date and configure if the mailing should be done in an interval. When you check `Repeat execution` you can select a `End date of execution` and an interval. When the configuration is done you see the mailing list with all configured mailings. Here you can alter a mailing, pause the mailing or check the `Logs of execution` for errors.

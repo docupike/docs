@@ -1,12 +1,12 @@
 ---
 title: servereye Integration
-description: Grundlagen der Verwaltung für die Verwendung des Servereye-Add-ons in docupike
+description: Grundlagen der Verwaltung für die Verwendung des Servereye-Add-ons in i-doit up
 lang: de
 ---
 
 # servereye Integration
 
-Das Servereye-Add-on dient zur Synchronisierung aller Daten aus Servereye mit docupike. Die Konfiguration des Add-ons erfolgt automatisch während des Registrierungsvorgangs.
+Das Servereye-Add-on dient zur Synchronisierung aller Daten aus Servereye mit i-doit up. Die Konfiguration des Add-ons erfolgt automatisch während des Registrierungsvorgangs.
 
 ## Übersicht
 
@@ -23,13 +23,13 @@ Das Servereye-Add-on dient zur Synchronisierung aller Daten aus Servereye mit do
 
 ## Anmeldung
 
-Hier finden Sie eine Übersicht über die erste Anmeldung. Greifen Sie über das folgende URL-Schema auf Ihre docupike.cloud-Instanz zu:
+Hier finden Sie eine Übersicht über die erste Anmeldung. Greifen Sie über das folgende URL-Schema auf Ihre i-doit up cloud-Instanz zu:
 
 ~~~
 https://<Ihre_Subdomain>.docupike.cloud/
 ~~~
 
-Navigieren Sie zur Weboberfläche von docupike, um den Anmeldebildschirm anzuzeigen:
+Navigieren Sie zur Weboberfläche von i-doit up, um den Anmeldebildschirm anzuzeigen:
 
 Sie können sich entweder über servereye oder mit Ihrem Benutzernamen und Passwort anmelden. Damit erhalten Sie Zugriff auf den Standard-Mandanten, der keinem bestimmten Kunden zugeordnet ist.
 
@@ -38,23 +38,23 @@ Sie können sich entweder über servereye oder mit Ihrem Benutzernamen und Passw
 [helpdesk]: mailto:help@docupike.com
 
 !!! info "Keine Standardanmeldung"
-    docupike hat keine Standardanmeldung. Stattdessen wird während der Installation automatisch der erste einzelne Benutzer:in erstellt. Dieser Benutzer:in hat die Administratorrolle mit allen Rechten und Berechtigungen.
+    i-doit up hat keine Standardanmeldung. Stattdessen wird während der Installation automatisch der erste einzelne Benutzer:in erstellt. Dieser Benutzer:in hat die Administratorrolle mit allen Rechten und Berechtigungen.
 
 !!! info "Passwort zurücksetzen"
     Wenn Sie Ihr Passwort vergessen haben oder es ändern möchten, verwenden Sie die Schaltfläche "Passwort zurücksetzen" auf dem Anmeldebildschirm.
 
 Nach der Anmeldung ist das servereye-Add-on bereits konfiguriert und muss nicht weiter eingerichtet werden. Es führt auch automatisch die Synchronisierung der servereye-Daten durch.
 
-## Rechte in docupike
+## Rechte in i-doit up
 
-Als Administrator können Sie alle Mandanten anzeigen und docupike konfigurieren. Synchronisierte Benutzer haben jedoch nur das Recht, den ihnen zugewiesenen Mandanten anzuzeigen, **wobei die Berechtigungen auf das Lesen aller Objekte und Kategorien beschränkt sind**. Sie haben die Möglichkeit, nach Bedarf Berechtigungen zum Erstellen, Bearbeiten und zusätzliche [Berechtigungen](rights-and-permissions.md) zuzuweisen.
+Als Administrator können Sie alle Mandanten anzeigen und i-doit up konfigurieren. Synchronisierte Benutzer haben jedoch nur das Recht, den ihnen zugewiesenen Mandanten anzuzeigen, **wobei die Berechtigungen auf das Lesen aller Objekte und Kategorien beschränkt sind**. Sie haben die Möglichkeit, nach Bedarf Berechtigungen zum Erstellen, Bearbeiten und zusätzliche [Berechtigungen](rights-and-permissions.md) zuzuweisen.
 
 !!! Hinweis ""
     Ändern Sie nicht direkt die Berechtigungen der "servereye reader group", da es sonst zu Problemen bei der Synchronisierung kommen kann.
 
 ## Mandanten
 
-Für jeden Kunden wird ein separater Mandant angelegt. Sie können über das Dropdown-Menü oben links neben dem Docupike-Logo auf diese Mandanten zugreifen.
+Für jeden Kunden wird ein separater Mandant angelegt. Sie können über das Dropdown-Menü oben links neben dem i-doit up-Logo auf diese Mandanten zugreifen.
 
 ## Benutzer
 
@@ -70,4 +70,4 @@ Sie können die Synchronisierung von Servereye über "Add-ons > Servereye-Einste
 
 ## Widget
 
-docupike verfügt über eine [Widget](../user/basics/widgets.md)-Ansicht. Dieses Widget ermöglicht es, das Datum der letzten Synchronisierung anzuzeigen und zum entsprechenden Servereye-Asset zu springen.
+i-doit up verfügt über eine [Widget](../user/basics/widgets.md)-Ansicht. Dieses Widget ermöglicht es, das Datum der letzten Synchronisierung anzuzeigen und zum entsprechenden Servereye-Asset zu springen.

@@ -1,6 +1,6 @@
 ---
 title: Zeilenbearbeitung
-description: Zeilenbearbeitung im docupike Finder
+description: Zeilenbearbeitung im i-doit up Finder
 lang: de
 ---
 
