@@ -12,11 +12,7 @@ Die Dokumente können als Dokumentationsgrundlage für Audits, Konformitätsprü
 
 ## Rechte
 
-<<<<<<< HEAD
-Sie sollten die [Rechte](../admin/rights-and-permissions.md) überprüfen und an Ihre Bedürfnisse anpassen. Die derzeit verfügbaren Rechte umfassen "Herunterladen", "Dokumente verwalten" und "Mailing verwalten". Darüber hinaus gibt es eine Option, um alle verfügbaren Rechte (einschließlich zukünftiger Updates) zuzuweisen.
-=======
 Sie sollten die [Rechte](../admin/rights-and-permissions.md) überprüfen und an Ihre Bedürfnisse anpassen. Die derzeit verfügbaren Rechte umfassen `Herunterladen`, `Dokumente verwalten` und `Mailing verwalten`. Darüber hinaus gibt es eine Option, um alle verfügbaren Rechte (einschließlich zukünftiger Updates) zuzuweisen.
->>>>>>> 8dc0441 (Rebrand to i-doit up)
 
 ## Design your documents
 
