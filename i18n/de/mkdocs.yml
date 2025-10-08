@@ -1,6 +1,6 @@
 ---
 INHERIT: ../mkdocs.yml
-site_name: docupike docs
+site_name: i-doit up docs
 site_url: https://docs.docupike.com/de/
 site_description: The easy cloud based documentation
 edit_uri: edit/main/docs/de
@@ -22,24 +22,24 @@ nav:
           - Menüleiste: user/basics/menubar.md
           - Objekte: user/basics/objects.md
           - Klassen: user/basics/classes.md
-          - Klassen und Attribute: user/basics/categories-and-attributes.md
-          - Attribute aktivieren oder deaktivieren: user/basics/enable-disable-attributes.md
           - Kollektionen: user/basics/collections.md
+          - Attribute aktivieren oder deaktivieren: user/basics/enable-disable-attributes.md
+          - Klassen und Attribute: user/basics/categories-and-attributes.md
+          - Widgets: user/basics/widgets.md
       - Finder:
           - Zeilenbearbeitung: user/finder/inline-editing.md
           - Mehrfachbearbeitung: user/finder/multi-editing.md
           - Suchfilter und Berichte: user/finder/search-filters-and-reports.md
           - Ansichten und Voreinstellungen: user/finder/views-and-presets.md
-          - Widgets: user/finder/widgets.md
-      - Berichte: user/reporting.md
-      - Data protection: user/basics/gdpr.md
-      - Documents Creator: user/basics/documents-creator.md
+      - Berichtsmanager: user/reporting.md
+      - Data protection: user/gdpr.md
+      - Documents Creator: user/documents-creator.md
       - Importe:
           - CSV: user/imports/csv.md
       - Anwendungsfälle:
           - Wie fange ich an?: user/usecases/how-to-start.md
           - Dokumentation und Namenskonventionen: user/usecases/it-documentation-and-naming-conventions.md
-          - Rechteübertragung: user/usecases/rights-assignment.md
+          - Berechtigungen: user/usecases/rights-assignment.md
           - Importieren Sie Ihre erste CSV-Datei: user/usecases/import-data.md
           - Standorte: user/usecases/locations.md
           - Schnellbearbeitung in Listen: user/usecases/quick-edit-in-lists.md

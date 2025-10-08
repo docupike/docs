@@ -1,6 +1,6 @@
 ---
 INHERIT: ../mkdocs.yml
-site_name: docupike docs
+site_name: i-doit up docs
 site_url: https://docs.docupike.com/en/
 site_description: The easy cloud based documentation
 edit_uri: edit/main/docs/en
@@ -19,21 +19,21 @@ nav:
   - User guide:
       - Login: user/login.md
       - Documentation basics:
+          - Menu bar: user/basics/menubar.md
+          - Objects: user/basics/objects.md
           - Classes: user/basics/classes.md
           - Collections: user/basics/collections.md
           - Categories and attributes: user/basics/categories-and-attributes.md
           - Enable or disable attributes: user/basics/enable-disable-attributes.md
-          - Menu bar: user/basics/menubar.md
-          - Objects: user/basics/objects.md
+          - Widgets: user/basics/widgets.md
       - Finder:
           - Inline editing: user/finder/inline-editing.md
           - Multi editing: user/finder/multi-editing.md
           - Search filters and reports: user/finder/search-filters-and-reports.md
           - Views and presets: user/finder/views-and-presets.md
-          - Widgets: user/finder/widgets.md
       - Reporting: user/reporting.md
-      - Data protection: user/basics/gdpr.md
-      - Documents Creator: user/basics/documents-creator.md
+      - Data protection: user/gdpr.md
+      - Documents Creator: user/documents-creator.md
       - Imports:
           - CSV: user/imports/csv.md
       - Use cases:

@@ -12,7 +12,7 @@ The documents can serve as a documentation basis for audits, conformity checks a
 
 ## Rights
 
-You should check the [Rights](../../admin/rights-and-permissions.md) and alter them to fit your needs. The rights currently available include Download, Manage documents, and Manage mailing. Additionally, there is an option to assign All available Rights (including future updates).
+You should check the [Rights](../admin/rights-and-permissions.md) and alter them to fit your needs. The rights currently available include Download, Manage documents, and Manage mailing. Additionally, there is an option to assign All available Rights (including future updates).
 
 ## Design your documents
 

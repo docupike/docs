@@ -70,4 +70,4 @@ Sie können die Synchronisierung von Servereye über "Add-ons > Servereye-Einste
 
 ## Widget
 
-docupike verfügt über eine [Widget](../user/finder/widgets.md)-Ansicht. Dieses Widget ermöglicht es, das Datum der letzten Synchronisierung anzuzeigen und zum entsprechenden Servereye-Asset zu springen.
+docupike verfügt über eine [Widget](../user/basics/widgets.md)-Ansicht. Dieses Widget ermöglicht es, das Datum der letzten Synchronisierung anzuzeigen und zum entsprechenden Servereye-Asset zu springen.
