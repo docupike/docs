@@ -4,7 +4,7 @@ description: Overview
 lang: en
 ---
 
-# i-doit up – The easy cloud based documentation
+# i-doit up formerly known as docupike – The easy cloud based documentation
 
 This is the online manual to your i-doit up.
 Here you will find the guidelines for users, administrators and developers plus some technical references.

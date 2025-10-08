@@ -4,7 +4,7 @@ description: Übersicht
 lang: de
 ---
 
-# i-doit up – The easy cloud based documentation
+# i-doit up früher bekannt als docupike – The easy cloud based documentation
 
 Dies ist das Online-Handbuch zu Ihrem i-doit up.
 Hier finden Sie die Richtlinien für Benutzer, Administratoren und Entwickler sowie einige technische Hinweise.
