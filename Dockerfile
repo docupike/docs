@@ -1,4 +1,4 @@
-FROM ubuntu:plucky-20251001
+FROM ubuntu:questing-20251007
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG HTTP_PROXY
@@ -44,7 +44,8 @@ RUN apt-get update; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/*
 
-RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+RUN touch /usr/share/locale/locale.alias; \
+    localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
@@ -83,7 +84,7 @@ RUN curl -OfsSL \
 
 # Docker:
 # renovate: datasource=github-releases depName=moby/moby
-ARG DOCKER_VERSION=28.1.1
+ARG DOCKER_VERSION=28.5.2
 RUN curl -fsSL \
         https://download.docker.com/linux/ubuntu/gpg | \
         gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
@@ -101,6 +102,7 @@ RUN curl -fsSL \
         docker-ce="5:${DOCKER_VERSION}-1~ubuntu.$(lsb_release -rs)~$(lsb_release -cs)" \
         docker-ce-cli="5:${DOCKER_VERSION}-1~ubuntu.$(lsb_release -rs)~$(lsb_release -cs)" \
         containerd.io \
+        docker-buildx-plugin \
     ;\
     apt-get clean; \
     rm -rf /var/lib/apt/lists/*; \
@@ -135,9 +137,9 @@ RUN curl -OfsSL \
 
 # Node.js and NPM:
 # renovate: datasource=github-releases depName=nodejs/node
-ARG NODE_VERSION=22.15.0
+ARG NODE_VERSION=24.11.1
 # renovate: datasource=github-releases depName=npm/cli
-ARG NPM_VERSION=11.3.0
+ARG NPM_VERSION=11.6.2
 RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     -o /usr/local/bin/n; \
     chmod 0755 /usr/local/bin/n; \
