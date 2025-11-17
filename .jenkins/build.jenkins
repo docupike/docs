@@ -1,0 +1,20 @@
+#!/usr/bin/env groovy
+
+pipelineJob('i-doit-up-docs-build') {
+    description('i-doit up docs: lint, build, release, audit and more')
+
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url('https://github.com/docupike/docs.git')
+                        credentials('github')
+                    }
+                    branch('main')
+                }
+            }
+            scriptPath('.jenkins/build/Jenkinsfile')
+        }
+    }
+}
