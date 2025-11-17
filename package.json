@@ -88,7 +88,7 @@
         "test:cpd": "jscpd --config .config/jscpd.json",
         "test:docker-compose": "git ls-files | grep -e 'docker-compose.*\\.yml$' | xargs -I file docker compose -f file config > /dev/null",
         "test:dockerfile": "git ls-files | grep -e 'Dockerfile$' | xargs hadolint --config .hadolint.yaml",
-        "test:jenkinsfile": "npm-groovy-lint --config .config/groovylint.json --ignorepattern '**/node_modules/**' --failon error '**/Jenkinsfile*'",
+        "test:jenkins": "npm-groovy-lint --config .config/groovylint.json --ignorepattern '**/node_modules/**' --failon error '**/Jenkinsfile' '**/*.jenkins'",
         "wtf": "! git grep --line-number --column --heading -E '(WORKAROUND|TODO|FIXME) '",
         "sbom": "run-s sbom:*",
         "sbom:dir": "mkdir -p _sbom/",
