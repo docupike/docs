@@ -20,7 +20,7 @@ jobs:
           - cpd
           - docker-compose
           - dockerfile
-          - jenkinsfile
+          - jenkins
           - shell
     runs-on: ubuntu-latest
     steps:
