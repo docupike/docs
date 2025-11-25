@@ -65,7 +65,7 @@ WORKDIR /tmp/
 
 # shellcheck:
 # renovate: datasource=github-releases depName=koalaman/shellcheck
-ARG SHELLCHECK_VERSION=0.10.0
+ARG SHELLCHECK_VERSION=0.11.0
 RUN curl -OfsSL \
         "https://github.com/koalaman/shellcheck/releases/download/v${SHELLCHECK_VERSION}/shellcheck-v${SHELLCHECK_VERSION}.linux.x86_64.tar.xz"; \
     tar -xf "shellcheck-v${SHELLCHECK_VERSION}.linux.x86_64.tar.xz"; \
@@ -76,7 +76,7 @@ RUN curl -OfsSL \
 
 # hadolint:
 # renovate: datasource=github-releases depName=hadolint/hadolint
-ARG HADOLINT_VERSION=2.12.0
+ARG HADOLINT_VERSION=2.14.0
 RUN curl -OfsSL \
         "https://github.com/hadolint/hadolint/releases/download/v${HADOLINT_VERSION}/hadolint-Linux-x86_64"; \
     install -m 755 -o root -g root hadolint-Linux-x86_64 /usr/local/bin/hadolint; \
@@ -84,7 +84,7 @@ RUN curl -OfsSL \
 
 # Docker:
 # renovate: datasource=github-releases depName=moby/moby
-ARG DOCKER_VERSION=28.5.2
+ARG DOCKER_VERSION=29.0.4
 RUN curl -fsSL \
         https://download.docker.com/linux/ubuntu/gpg | \
         gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
@@ -110,7 +110,7 @@ RUN curl -fsSL \
 
 # Docker Compose:
 # renovate: datasource=github-releases depName=docker/compose
-ARG DOCKER_COMPOSE_VERSION=2.35.1
+ARG DOCKER_COMPOSE_VERSION=2.40.3
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \
@@ -126,7 +126,7 @@ RUN curl -OfsSL \
 
 # editorconfig-checker (ec):
 # renovate: datasource=github-releases depName=editorconfig-checker/editorconfig-checker
-ARG EC_VERSION=3.2.1
+ARG EC_VERSION=3.4.1
 RUN curl -OfsSL \
         "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/v${EC_VERSION}/ec-linux-amd64.tar.gz"; \
     tar -xzf ec-linux-amd64.tar.gz; \
@@ -158,7 +158,7 @@ RUN curl -OfsSL \
 # renovate: datasource=github-releases depName=nodejs/node
 ARG NODE_VERSION=24.11.1
 # renovate: datasource=github-releases depName=npm/cli
-ARG NPM_VERSION=11.6.2
+ARG NPM_VERSION=11.6.3
 RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     -o /usr/local/bin/n; \
     chmod 0755 /usr/local/bin/n; \
