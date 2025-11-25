@@ -135,6 +135,25 @@ RUN curl -OfsSL \
         ec-linux-amd64.tar.gz \
         bin/
 
+# gitleaks:
+# renovate: datasource=github-releases depName=gitleaks/gitleaks
+ARG GITLEAKS_VERSION=8.29.1
+RUN curl -OfsSL \
+        "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"; \
+    curl -OfsSL \
+        "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_checksums.txt"; \
+    sha256sum --check --strict --ignore-missing "gitleaks_${GITLEAKS_VERSION}_checksums.txt"; \
+    tar -xzf \
+        "gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"; \
+    install -m 755 -o root -g root gitleaks /usr/local/bin/; \
+    rm \
+        LICENSE \
+        README.md \
+        gitleaks \
+        "gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz" \
+        "gitleaks_${GITLEAKS_VERSION}_checksums.txt"; \
+    gitleaks completion bash > /etc/bash_completion.d/gitleaks
+
 # Node.js and NPM:
 # renovate: datasource=github-releases depName=nodejs/node
 ARG NODE_VERSION=24.11.1

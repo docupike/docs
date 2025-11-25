@@ -19,6 +19,7 @@ jobs:
           - system:pip:audit
           - system:pip:outdated
           - wtf
+          - audit:leaks
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
