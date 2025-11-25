@@ -7,7 +7,6 @@ pipeline {
         GROUP_ID = "${sh(script: 'id -g', returnStdout: true).trim()}"
         REGISTRY_DOMAIN = 'registry.on.ops.docupike.net'
         REGISTRY_PREFIX = "${REGISTRY_DOMAIN}/"
-        REGISTRY_CREDS = credentials('harbor')
         SSH_KEY_DOCS = '/usr/local/share/jenkins-agent/jenkins-ops'
         TEAMS_WEBHOOK = credentials('teams-webhook-tops')
     }
@@ -25,16 +24,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh('docker compose run env npm run docs:deploy')
-            }
-        }
-        stage('Push') {
-            steps {
-                sh('docker login \
-                    --username $REGISTRY_CREDS_USR \
-                    --password $REGISTRY_CREDS_PSW \
-                    $REGISTRY_DOMAIN')
-                sh('docker compose push')
-                sh('docker logout $REGISTRY_DOMAIN')
             }
         }
     }
