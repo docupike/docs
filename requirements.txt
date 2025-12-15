@@ -8,8 +8,8 @@ mkdocs-macros-plugin == 1.5.0
 mkdocs-material == 9.6.23
 mkdocs-material-extensions == 1.3.1
 mkdocs-minify-plugin == 0.8.0
-pip-audit == 2.9.0
+pip-audit == 2.10.0
 Pygments == 2.19.2
-pymdown-extensions == 10.17.1
+pymdown-extensions == 10.18
 PyOpenSSL == 25.3.0
 yamllint == 1.37.1
