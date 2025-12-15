@@ -3,7 +3,7 @@
 
 /* TEAM */
 Owned by: i-doit GmbH
-Contact: https://docupike.com/
+Contact: https://i-doit.com/
 Location: Düsseldorf, Europe
 
 /* SITE */

@@ -1,0 +1,16 @@
+[extend]
+
+useDefault = true
+
+[allowlist]
+paths = [
+    '''_(.+)''',
+    '''(.+).log''',
+    '''(.+).backup''',
+    '''(.+).bak''',
+    '''.env''',
+    '''node_modules/''',
+    '''site/''',
+    '''(.+).lock''',
+    '''.config/gitleaks-baseline-report.json'''
+]
