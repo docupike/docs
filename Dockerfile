@@ -1,4 +1,4 @@
-FROM ubuntu:questing-20251029
+FROM ubuntu:questing-20251217
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG HTTP_PROXY
