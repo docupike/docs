@@ -9,6 +9,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 3.0.0 – 2026-01-21
+
+### Added
+
+-   MIW Soft-Validation: ODP: show validation errors on SV category view (`ID2-5411`)
+-   MIW Soft-Validation: ODP: show overview of the validation errors (`ID2-5410`)
+-   MIW Soft-Validation: Show information in finder about validation errors (`ID2-5390`)
+-   Relocation/Move objects: Move out objects from current location (`ID2-5263`)
+
+### Changed
+
+-   MIW Finder-Search 2025: Use MongoDB for search index (`ID2-5469`)
+-   MIW Soft-Validation: Edit page: Show validation errors (`ID2-5419`)
+-   MIW Soft-Validation: Improve changing password process (`ID2-5409`)
+-   MIW Soft-Validation: Save inline-edit fields on outside-click (`ID2-5322`)
+-   MIW Soft-Validation: Save inline-edit on click out in CMDB context (`ID2-5283`)
+
+### Fixed
+
+-   MIB Finder-Search 2025: Fix handling of dynamic properties in SearchIndex (`ID2-5424`)
+-   MIW Soft-Validation: Show correct placeholders of the fields in category builder (`ID2-5431`)
+-   UI Dialog+ Improvements: Do not show ‘No permission’ for the dialog+ attribute In view mode (`ID2-5553`)
+
 ## 2.8.0 – 2025-09-30
 
 ### Added
