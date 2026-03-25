@@ -17,3 +17,9 @@ allow:
   - hook
   - hooks
   - spa
+  - execution
+  # GDPR:
+  - European
+  - european
+  - fire
+  - burns

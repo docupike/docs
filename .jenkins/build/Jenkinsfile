@@ -1,0 +1,54 @@
+pipeline {
+    agent {
+        label 'linux'
+    }
+    environment {
+        USER_ID = "${sh(script: 'id -u', returnStdout: true).trim()}"
+        GROUP_ID = "${sh(script: 'id -g', returnStdout: true).trim()}"
+        REGISTRY_DOMAIN = 'registry.on.ops.docupike.net'
+        REGISTRY_PREFIX = "${REGISTRY_DOMAIN}/"
+        SSH_KEY_DOCS = '/usr/local/share/jenkins-agent/jenkins-ops'
+        TEAMS_WEBHOOK = credentials('teams-webhook-tops')
+    }
+    stages {
+        stage('Setup') {
+            steps {
+                sh('bin/setup/ci.sh')
+            }
+        }
+        stage('Build') {
+            steps {
+                sh('docker compose run env npm run docs:build')
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh('docker compose run env npm run docs:deploy')
+            }
+        }
+    }
+    post {
+        always {
+            sh('docker compose down --remove-orphans --volumes')
+            deleteDir()
+        }
+        failure {
+            office365ConnectorSend webhookUrl: '${env.TEAMS_WEBHOOK}',
+                status: "${currentBuild.currentResult.toLowerCase()}",
+                message: 'Jenkins kindly asks for your attention',
+                adaptiveCards: true
+        }
+        unstable {
+            office365ConnectorSend webhookUrl: '${env.TEAMS_WEBHOOK}',
+                status: "${currentBuild.currentResult.toLowerCase()}",
+                message: 'Jenkins kindly asks for your attention',
+                adaptiveCards: true
+        }
+        aborted {
+            office365ConnectorSend webhookUrl: '${env.TEAMS_WEBHOOK}',
+                status: "${currentBuild.currentResult.toLowerCase()}",
+                message: 'Jenkins kindly asks for your attention',
+                adaptiveCards: true
+        }
+    }
+}

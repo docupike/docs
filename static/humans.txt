@@ -1,0 +1,12 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+Owned by: i-doit GmbH
+Contact: https://i-doit.com/
+Location: Düsseldorf, Europe
+
+/* SITE */
+Last update: see each page
+Languages: English, Deutsch
+Components: mkdocs, mkdocs-material
