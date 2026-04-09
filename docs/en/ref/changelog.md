@@ -9,6 +9,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 3.1.0 – 2026-04-09
+
+### Added
+
+-   MIW Preset Configuration 2025: Open manage current preset (`ID2-5438`)
+-   n8n integration: Support Tenant deleted webhook trigger (`ID2-5607`)
+-   n8n integration: Support Tenant updated webhook trigger (`ID2-5606`)
+-   n8n integration: Create webhook domain in i-doit up (`ID2-5472`)
+-   n8n integration: Support User update webhook trigger (`ID2-5595`)
+-   n8n integration: Support User deleted webhook trigger (`ID2-5480`)
+-   n8n integration: Support User created webhook trigger (`ID2-5479`)
+-   n8n integration: Support Entry updated webhook trigger (`ID2-5477`)
+
+### Changed
+
+-   MIW Preset Configuration 2025: Change order of columns in presets (`ID2-5450`)
+-   MIW Preset Configuration 2025: Adjusting multiple columns in presets (`ID2-5449`)
+-   MIW Preset Configuration 2025: Creation of user based custom presets (`ID2-5446`)
+-   MIW Preset Configuration 2025: Keeping current preset (`ID2-5439`)
+
+### Fixed
+
+-   MIB Finder-Search 2025: Smoothen search results (`ID2-5429`)
+-   MIB Herr Klaus: Fix loading state in i-doit up (`ID2-5567`)
+-   MIB Soft-Validation: Show hard validation in Dialog+ model (`ID2-5575`)
+-   Fix issues with Push Object API: Fix untranslated value of object text API of dialog entries (`ID2-5627`)
+-   Fix issues with Push Object API: Correct sub-object processing order in Object Push API (`ID2-5608`)
+
 ## 3.0.0 – 2026-01-21
 
 ### Added
