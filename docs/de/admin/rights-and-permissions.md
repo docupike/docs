@@ -1,46 +1,50 @@
----
-title: Rechte und Genehmigungen
-description: Benutzer, Gruppen und Rollen autorisieren
-lang: de
----
-
 # Rechte und Berechtigungen
 
-i-doit up unterscheidet zwischen funktionalen _Rechten_ und _Berechtigungen_ für den Zugriff auf bestimmte Informationen in der Dokumentation.
+i-doit up nutzt zwei sich ergänzende Konzepte, um zu steuern, was Benutzer tun können.
 
-## Additiv und vererbbar
+- **Rechte** sind globale Kennzeichen, die festlegen, auf welche Benutzeroberflächen und Massenaktionen ein Benutzer zugreifen darf.
+  Beispiele: *Benutzer verwalten*, *Mandanten verwalten*, *Kategorien verwalten*, *Konfiguration bearbeiten*.
+  Sie werden Rollen, Gruppen oder einzelnen Benutzern zugewiesen.
+- **Berechtigungen** sind Regeln auf Objekt- und Klassenebene, die festlegen, was ein Benutzer an den Daten selbst lesen, bearbeiten, archivieren oder löschen darf.
+  Sie werden bei jeder Aktion ausgewertet und mit den Rechten kombiniert.
 
-Sowohl Rechte als auch Berechtigungen können jeder [Benutzerin, jeder Gruppe oder Rolle](users-groups-roles.md) hinzugefügt werden. Sie können ein Recht/eine Berechtigung direkt einer Benutzerin hinzufügen. Andernfalls fügen Sie ein Recht/eine Berechtigung indirekt einer Gruppe oder Rolle hinzu, um es/sie an verknüpfte Benutzer*innen zu vererben.
+## Wo man sie verwaltet
 
-!!! info "Beispiel"
-    Auch komplexe Konfigurationen sind möglich: Verwenden Sie die Rolle `admin`, die bereits über alle Rechte und Berechtigungen verfügt. Erstellen Sie eine Gruppe `NetzwerktechnikerInnen` und verknüpfen Sie diese mit der Rolle `admin`. Erstellen Sie dann den Benutzer `Jane Doe` und verknüpfen Sie ihn mit der Gruppe `NetzwerktechnikerInnen`. Am Ende verfügt `Jane Doe` über alle Rechte/Berechtigungen, die von der Rolle `admin` vererbt wurden.
+Beide Oberflächen finden Sie unter **Einstellungen ▸ Benutzerverwaltung** in der Seitenleiste (zu öffnen über das Benutzermenü oben rechts):
 
-## Rechte
+| Seite | Zweck |
+|---|---|
+| Benutzer | Benutzer anlegen, bearbeiten, deaktivieren; Rollen, Gruppen und Standard-Tenant zuweisen. |
+| Benutzergruppen | Sammlungen von Benutzern; einer Gruppe gewährte Rechte gelten für jedes Mitglied. |
+| Rollen | Wiederverwendbare, benannte Rechtebündel. Die Zuweisung einer Rolle an einen Benutzer (direkt oder über eine Gruppe) gewährt alle Rechte der Rolle. |
+| Rechte | Die flache Liste aller Rechte in der Instanz. Verwenden Sie sie, um einzelne Rechte einer Rolle oder direkt einem Benutzer zu gewähren. |
+| Berechtigungen | Bereichsspezifische Regeln (z. B. *Benutzer X kann den Objektlebenszyklus für alle Objekte lesen*), die detaillierte Berechtigungstabelle pro Objekt. |
 
-Ein Recht ermöglicht es einem Benutzer, eine bestimmte Funktion zu nutzen oder administrative Einstellungen vorzunehmen. Gehen Sie zu "Einstellungen > Rechte", um Rechte zu konfigurieren.
+Informationen zu den täglichen Arbeitsabläufen finden Sie unter [Benutzerverwaltung](user-management.md).
 
-!!! info "Beispiele"
-    -   Der Gruppe "Support" wird das Recht erteilt, [Berichte](../user/reporting.md) zu verwenden.
-    -   Der/die Benutzer/in "Bob" wird das Recht erteilt, [Objekte zu löschen](../user/basics/objects.md).
+## Wie sie sich ergänzen
 
-## Zugriffsrechte
+Ein Benutzer darf etwas tun, wenn **alle** der folgenden Bedingungen zutreffen:
 
-Ein Zugriffsrecht gewährt einer Person Zugriff auf einen bestimmten Satz dokumentierter Informationen. Gehen Sie zu "Einstellungen > Zugriffsrechte", um Zugriffsrechte zu konfigurieren.
-Zugriffsrechte werden immer durchgesetzt, unabhängig davon, in welchem Kontext sich die Person befindet. Sie wirken sich beispielsweise auf die in [Berichten](../user/reporting.md) angezeigten Ergebnisse und auf die Antworten der [API](../dev/api.md) aus.
+1. Der Benutzer verfügt über das **Recht**, das die Aktion ermöglicht (z. B. *Kategorien verwalten*, um den Kategorie-Generator zu öffnen).
+2. Die entsprechende **Berechtigung** erlaubt die Aktion im jeweiligen Objektbereich (z. B. *Lesen* im Bereich *Alle Objekte* oder für ein bestimmtes Objekt).
 
-Es gibt zwei Arten von Berechtigungen: **Kategorie- und Attributberechtigungen** definieren die Parameter, mit denen ein Benutzer auf Informationen innerhalb von Objekten zugreifen kann, die als [Kategorien und Attribute](../user/basics/categories-and-attributes.md) verfügbar sind, während **Objektlebenszyklusberechtigungen** definieren, ob Benutzerinnen und Benutzer Objekte [erstellen, archivieren, wiederherstellen oder löschen](../user/basics/objects.md) dürfen.
+Rechte sind kumulativ; sie ergeben sich aus direkten Zuweisungen, Gruppenzugehörigkeiten und Rollen.
+Es gibt keine Möglichkeit, die Verweigerung außer Kraft zu setzen.
 
-### Kategorie- und Attributberechtigungen
+## Beispiel für Vererbung
 
-Der erste Teil dieser Art von Berechtigung ist die Definition eines Bereichs von Objekten, für die die Berechtigung gilt. Der Bereich kann entweder
+Die Benutzerin *Jane* ist Mitglied der Gruppe *Netzwerktechniker*, der die Rolle *Admin* zugewiesen ist.
+Jane erhält über die Gruppe *Netzwerktechniker* alle Rechte der Rolle *Admin*.
+Eine direkte Zuweisung von Rechten ist nicht erforderlich.
 
--   **Alle Objekte:** Die Berechtigung gilt für alle Objekte in der gesamten Dokumentation.
--   **Objekte in der Klasse:** Die Berechtigung gilt für alle Objekte, die sich in einer bestimmten Klasse befinden.
--   **Bestimmtes Objekt:** Die Berechtigung gilt für ein einzelnes ausgewähltes Objekt.
--   **Objekte an einem Ort:** Die Berechtigung gilt für alle Objekte, die sich an einem definierten Ort (oder sogar an einem hierarchisch darunter liegenden Ort) befinden.
--   **Eigene Objekte:** Die Berechtigung gilt für alle Objekte, die vom Benutzer selbst erstellt wurden.
+## Geltungsbereich für Mandant
 
-Der zweite Teil ist die Auswahl der Kategorien und Attribute, für die die Berechtigung gelten soll, sowie der Aktionen, die speziell erlaubt sind. Sie können entweder eine bestimmte Kategorie oder alle Kategorien auswählen. Dasselbe gilt für Attribute. Sie können entweder alle Attribute oder ein bestimmtes Attribut auswählen. Der letzte Teil ist die Definition der zulässigen Aktionen, die der Benutzer ausführen darf: entweder Informationen erstellen, lesen, bearbeiten oder löschen oder eine beliebige Kombination davon.
+Berechtigungen und Rechte werden innerhalb des **derzeit aktiven Mandanten** geprüft: siehe [Mandanten](tenants.md) und [Zwischen Mandanten wechseln](../user/basics/tenant-switcher.md).
+Ein Benutzer, der in Mandant A über bestimmte Rechte verfügt, hat nicht automatisch dieselben Rechte in Mandant B.
 
-!!! info "Beispiel"
-    Die Gruppe "Kundensupport" darf alle Attribute in der Kategorie "Modell" für alle Objekte bearbeiten, die sich in der [Objektklasse](../user/basics/classes.md) "Drucker" befinden.
+## Siehe auch
+
+- [Benutzerverwaltung](user-management.md)
+- [Mandanten](tenants.md)
+- [Zwischen Mandanten wechseln](../user/basics/tenant-switcher.md)

@@ -1,39 +1,39 @@
----
-title: Custom Categories and Attributes
-description: Documentation basics about custom Categories and Attributes
-lang: en
----
+# Creating custom categories
 
-# Custom Categories
+Custom categories let you add data to objects that the built-in model does not cover, for example *Maintenance contract details* or *Compliance attestations*.
 
-Besides having standard Categories i-doit up makes it possible to create custom Categories in order to document additional Attributes, which are not included in standard Categories.
+The page describes the high-level workflow.
+For the actual builder UI see [Category Builder](category-builder.md).
 
 ## Rights
 
-To create new custom Categories you need to have the `Rights > CMDB > Manage Categories` right.
-To assign custom Categories to Classes you need the `Rights > CMDB > Manage Classes` right.
+Creating or editing a category needs the *Manage Categories* right under *CMDB*.
+Assigning a category to a class needs *Manage Classes*.
+See [Rights and permissions](rights-and-permissions.md).
 
-## How to create a custom Category
+## Workflow
 
-Custom categories are created at `Settings > Categories` there you need to Click on the `New Category` Button. You need to fill out a `Name` for the Category and you need to select a `Category Type` either `Single value` or `Multi value`.
-Each custom category will have a unique `Constant` to identify the Category.
-Custom Categories must be [assigned to a Class](../user/basics/classes.md) to be displayed there.
+1. Open **Settings ▸ CMDB Configuration ▸ Categories**.
+2. Click **New category +** to open the [Category Builder](category-builder.md).
+3. Choose a **Name** and a **Category type**: *Single value* (one set of values per object) or *Multi value* (a table of entries).
+4. Add attributes.
+   Each attribute has a **Name** and a **Type** (text, number, date, boolean, single-select, object reference, …).
+5. Save the category.
+6. Assign it to one or more [classes](../user/basics/classes.md).
+   The category only shows up on objects of those classes.
 
-## Single or Multi value Categories
+## Editing a custom category
 
-If you wish to use attributes which are unique in their combination, the configuration as `Single value` category will be sufficient.
-If you want to use the values multiple times, you will need a `Multi value` category. This way it is possible to save multiple entries in one category.
+Click the category name in the list to reopen the Category Builder for it.
+Most fields can be changed at any time; the category type is fixed once data has been saved against the category.
 
-## Custom Attributes
+## Deleting a custom category
 
-To customize your category you can add any number of attributes with the `New attribute` button. You will need the type in a `Name` for the attribute field and select a `Type` for the field.
+Custom categories can be deleted when they have no values stored.
+See [Manage classes and collections](class-collection-management.md) for the bulk-delete behaviour and warnings.
 
-Available field types are:
+## Further readings
 
-| Field Type | Description                                                                                                                                           |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Text       | The `Text` field is for entering plain text                                                                                                           |
-| Number     | In the `Number` field you can insert decimal numbers                                                                                                  |
-| Boolean    | The `Boolean` field is for selecting yes or no                                                                                                        |
-| Password   | In the `Password` field is a masked field                                                                                                             |
-| Color      | With the `Color` field you are able to insert a hex color code or select a color via the color picker by clicking on the palette within the edit mode |
+- [Category Builder](category-builder.md)
+- [Categories and attributes](../user/basics/categories-and-attributes.md)
+- [Manage classes and collections](class-collection-management.md)

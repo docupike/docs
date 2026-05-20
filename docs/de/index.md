@@ -1,22 +1,27 @@
----
-title: The easy cloud based documentation
-description: Übersicht
-lang: de
----
+# i-doit-Dokumentation
 
-# i-doit up früher bekannt als docupike – The easy cloud based documentation
+Willkommen bei der lokal erstellten Dokumentation zu „i-doit up“.
+Dies ist eine Arbeitsversion, die zur Überprüfung dient, bevor der Inhalt auf der öffentlichen Dokumentationsseite veröffentlicht wird.
 
-Dies ist das Online-Handbuch zu Ihrem i-doit up.
-Hier finden Sie die Richtlinien für Benutzer, Administratoren und Entwickler sowie einige technische Hinweise.
+## Was ist drin?
 
-Da wir regelmäßig neue Versionen von i-doit up veröffentlichen, halten wir dieses Handbuch ständig auf dem neuesten Stand, um Sie über neue und geänderte Funktionen zu informieren.
+Die Seiten auf der linken Seite sind nach Zielgruppen geordnet:
 
-## Über
+- **Benutzerhandbuch, Grundlagen** erklärt, wie man mit Objekten, Klassen und Standorten arbeitet sowie mit den Funktionen, die jeder Benutzer nutzt: Favoriten, IP-Adressen, Netzwerke.
+- **Benutzerhandbuch, Finder** behandelt den tabellenförmigen Browser im Zentrum der Anwendung: Spaltenvoreinstellungen, gespeicherte Suchanfragen, Filter, Massenaktionen.
+- **Benutzerhandbuch, Berichterstellung** beschreibt, wie man Berichte in der CMDB speichert und erneut ausführt.
+- **Administratorhandbuch** fasst alles zusammen, wofür Administratorrechte erforderlich sind: Mandanten, Klassen-/Kategorienverwaltung, den Bereich zur Benutzerverwaltung und die Add-ons-Oberfläche.
 
-[i-doit up](https://docupike.com/) ist eine einfache, cloudbasierte Dokumentationslösung, die alle technischen und administrativen Informationen Ihres Unternehmens an einem Ort zusammenfasst.
-Damit dient sie als zentrale Informationsquelle für die Optimierung und Automatisierung Ihrer Geschäftsprozesse.
-i-doit up wird auf sicheren Cloud-Servern der i-doit GmbH mit Sitz in Düsseldorf betrieben.
+## Wie man diese Website liest
 
-## Support
+Jede Seite ist in sich abgeschlossen.
+Die Liste „Siehe auch“ am Ende jeder Seite verlinkt verwandte Themen.
 
-Falls Sie hier keine Antwort auf Ihre Frage gefunden haben oder uns Tipps zur Verbesserung unserer Dokumentation geben möchten, wenden Sie sich bitte direkt an uns unter [`help@docupike.com`](mailto:help@docupike.com).
+Sollten Sie etwas entdecken, das nicht mit der Live-Anwendung übereinstimmt, markieren Sie die Seite bitte, damit dies beim nächsten Durchlauf korrigiert werden kann.
+
+## Siehe auch
+
+- [Objekte](user/basics/objects.md)
+- [Finder](user/finder/finder.md)
+- [Mandanten](admin/tenants.md)
+- [Benutzerverwaltung](admin/user-management.md)

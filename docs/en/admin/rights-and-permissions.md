@@ -1,60 +1,50 @@
----
-title: Rights and permissions
-description: Authorize users, groups and roles
-lang: en
----
-
 # Rights and permissions
 
-i-doit up distinguishes between functional _rights_ and _permissions_ to access specific information in the documentation.
+i-doit up uses two complementary concepts to control what users can do.
 
-## Additive and inherited
+- **Rights** are global flags that decide which UI surfaces and bulk actions a user can reach.
+  Examples: *Manage Users*, *Manage Tenants*, *Manage Categories*, *Edit configuration*.
+  They are assigned to roles, groups, or individual users.
+- **Permissions** are object- and class-level rules that decide what a user can read, edit, archive, or delete on the data itself.
+  They are evaluated at every action and combined with rights.
 
-Both rights and permissions can be add to any [user, group or role](users-groups-roles.md). You can add a right/permission directly to a user. Otherwise, add a right/permission indirectly to a group or role to inherit it to linked users.
+## Where to manage them
 
-!!! info "Example"
+Both surfaces live under **Settings ▸ User management** in the sidebar (open via the user menu at the top right):
 
-    Even complex configurations are possible: Use the role `admin` which already has all rights and permissions. Create a group `Network engineers` and link it to the role `admin`. Then, create the user `Jane Doe` and link it to the group `Network engineers`. In the end, `Jane Doe` has all rights/permissions inherited from the role `admin`.
+| Page | Purpose |
+|---|---|
+| Users | Create, edit, deactivate users; assign roles, groups, default tenant. |
+| User groups | Bundles of users; rights granted on a group apply to every member. |
+| Roles | Reusable named rights bundles. Assigning a role to a user (directly or via a group) grants every right in the role. |
+| Rights | The flat list of all rights in the instance. Use it to grant single rights to a role or directly to a user. |
+| Permissions | Per-scope rules (e.g. *user X can read Object lifecycle on All Objects*), the granular per-object permission table. |
 
-## Rights
+See [User management](user-management.md) for day-to-day workflows.
 
-A right allows a user to use a certain function or to define administrative settings. Go to `Settings > Rights` to configure rights.
+## How they combine
 
-!!! info "Examples"
+A user is allowed to do something if **all** the following are true:
 
-    -   Group `Support` is given the right to use [reporting](../user/reporting.md).
-    -   User `Bob` is given the right to [purge objects](../user/basics/objects.md).
+1. The user has the **right** that gates the action (for example *Manage Categories* to open Category Builder).
+2. The relevant **permission** allows the action on the affected object scope (for example *Read* on the *All Objects* scope or on the specific object).
 
-## Permissions
+Rights are additive, they accumulate from direct assignments, group memberships, and roles.
+There is no deny override.
 
-A permission grants a user access to a specific set of documented information. Got to `Settings > Permissions` to configure permissions.
+## Inheritance example
 
-Permissions are always enforced – no matter which context the user is in. For example, they affect the results shown in [reports](../user/reporting.md) and responses from the [API](../dev/api.md).
+User *Jane* is a member of group *Network engineers*, which is assigned the role *Admin*.
+Jane inherits every right of *Admin* through *Network engineers*.
+She does not need any direct right assignment.
 
-Permissions come in two flavors: **Category and attribute permissions** define the parameters in which a user can access information within objects available as [categories and attributes](../user/basics/categories-and-attributes.md), whereas **object lifecycle permissions** define whether users are allowed to [create, archive, restore or delete objects](../user/basics/objects.md).
+## Tenant scope
 
-### Category and attribute permissions
+Permissions and rights are evaluated within the **currently active tenant**: see [Tenants](tenants.md) and [Switch between tenants](../user/basics/tenant-switcher.md).
+A user with rights in tenant A does not automatically have the same rights in tenant B.
 
-The first part for this kind of permission is the definition of a scope of objects where the permission applies to. The scope can be either
+## Further readings
 
--   **All objects:** Permission applies to all objects in the whole documentation.
--   **Objects in class:** Permission applies to all objects that are within a specific class
--   **Specific object:** Permission applies to a single selected object.
--   **Objects in location:** Permission applies to all objects that reside in a defined location (or even in a location hierarchically below).
--   **Own created objects:** Permission applies to all objects that are created by the user itself.
-
-The second part is the selection of categories and attributes the permission should apply to and of actions which are particularly allowed. You can either choose a specific category or all categories. The same applies to attributes. You can either choose all attributes or a specific one.
-
-The last part is the definition of the permitted actions that the user is allowed to execute: either create, read, edit or delete information or any combination of them.
-
-!!! info "Example"
-
-    The group `Customer support` is allowed to edit all attributes in the category `Model` for all objects that are in the [object class](../user/basics/classes.md) `Printer`.
-
-### Object lifecycle permissions
-
-This kind of permissions are needed to enable a user to create, archive, restore or delete objects. You need to define which class (or all classes) a permission applies to and which permission actions the user is allowed to execute. These actions can also be combined.
-
-!!! info "Example"
-
-    As an network engineer the user `Jane Doe` is allowed to create, archive and delete objects within the [object class](../user/basics/classes.md) `Switch`.
+- [User management](user-management.md)
+- [Tenants](tenants.md)
+- [Switch between tenants](../user/basics/tenant-switcher.md)
