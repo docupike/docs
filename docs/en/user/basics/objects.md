@@ -1,7 +1,7 @@
 # Objects
 
 An **object** is the core unit of documentation in i-doit up.
-Every server, person, location, network, license, contract, organisation, and so on is stored as an object that belongs to a [class](classes.md) and is grouped into one or more [collections](collections.md).
+Every server, person, location, network, license, contract, organization, and so on is stored as an object that belongs to a [class](classes.md) and is grouped into one or more [collections](collections.md).
 
 ## Anatomy of an object
 

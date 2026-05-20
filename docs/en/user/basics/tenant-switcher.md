@@ -1,6 +1,6 @@
 # Switch between tenants
 
-The **tenant switcher** is the dropdown at the top-left of every page, just to the right of the *i-doit up* logo.
+The **tenant switcher** is the dropdown at the top-left of every page, directly to the right of the *i-doit up* logo.
 It shows the name of the tenant you are currently working in (for example **CareBears Inc.**) with the label *Tenant* underneath.
 
 ## When the switcher appears

@@ -10,7 +10,7 @@ For the History feed see the *History* section in [Top bar reference](top-bar.md
 Every toast appears in the **bottom-left** corner of the page.
 A toast has:
 
-- a coloured icon, usually a green check mark for success, a red triangle for errors;
+- a colored icon, usually a green check mark for success, a red triangle for errors;
 - a **headline** in bold;
 - an optional **body** with details;
 - optional **action buttons** that perform a follow-up action;
@@ -61,7 +61,7 @@ The body is empty; the toast disappears automatically.
 
 This message is shown as a red banner inside the modal rather than as a bottom-left toast.
 
-## Behaviour notes
+## Behavior notes
 
 - Multiple toasts stack vertically; older ones fade out first.
 - Action buttons inside a toast remain clickable until the toast is dismissed or auto-fades.

@@ -4,7 +4,7 @@ A **category** is a group of related fields on an object, *General*, *Location*,
 The fields inside a category are called **attributes**.
 
 Each [class](classes.md) defines which categories an object exposes.
-A *Server* has *Form factor*, *CPU*, *Memory*, *IP networking*, *Network device*; a *Person* has *Address and contact*, *Employee*; a *Network* has *Network definition*, *IP addresses*, *DHCP scopes*, *Subnetworks*.
+A *Server* has *Form factor*, *CPU*, *Memory*, *IP networking*, *Network device*; a *Person* has *Address and contact*, *Employee*; a *Network* has *Network definition*, *IP addresses*, *DHCP scopes*, *Subnets*.
 
 ## Single-value vs multi-value categories
 

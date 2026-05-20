@@ -3,7 +3,7 @@
 The **Suite+ bridge** keeps the objects in i-doit up and the assets in **Suite+**, the separate GRC product by Synetics, in step.
 Once the bridge is connected for your tenant, objects you create in i-doit up appear as assets in Suite+ and assets you create in Suite+ appear as i-doit up objects, so the same items do not need to be maintained in two places.
 
-This page describes the i-doit up side of the bridge, the *Suite+* settings surface, the per-object jump action, the single-sign-on behaviour, and how data flows in both directions.
+This page describes the i-doit up side of the bridge, the *Suite+* settings surface, the per-object jump action, the single-sign-on behavior, and how data flows in both directions.
 
 ## What the bridge does
 
@@ -36,7 +36,7 @@ The page is a single table.
 | Column | Notes |
 |---|---|
 | **Actions** | A **Sync** icon button per row. Not actionable in the current release: the icon is always rendered in the disabled state, see *Sync* below for the background. |
-| **Company** | The tenant the row represents. A vertical colour bar on the left shows the latest bridge state: **green** means *connected and the last sync succeeded*. |
+| **Company** | The tenant the row represents. A vertical color bar on the left shows the latest bridge state: **green** means *connected and the last sync succeeded*. |
 
 A third, intentionally empty column is reserved for additional indicators.
 

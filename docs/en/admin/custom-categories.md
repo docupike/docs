@@ -30,7 +30,7 @@ Most fields can be changed at any time; the category type is fixed once data has
 ## Deleting a custom category
 
 Custom categories can be deleted when they have no values stored.
-See [Manage classes and collections](class-collection-management.md) for the bulk-delete behaviour and warnings.
+See [Manage classes and collections](class-collection-management.md) for the bulk-delete behavior and warnings.
 
 ## Further readings
 

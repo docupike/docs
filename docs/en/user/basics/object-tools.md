@@ -18,7 +18,7 @@ The per-object **History** lists every change made to this object, who did it, w
 | User | Who made the change. |
 | Timestamp | When the change happened (tenant timezone). |
 
-The same data is summarised in the **History** widget that the right-pane *Widgets* panel of the object detail page shows by default.
+The same data is summarized in the **History** widget that the right-pane *Widgets* panel of the object detail page shows by default.
 
 The global **History** popup at the top right of the page (see [Top bar reference](top-bar.md)) is a tenant-wide feed; this per-object page is the same data scoped to one object.
 

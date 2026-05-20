@@ -10,7 +10,7 @@ The page loads at `/object/{id}`.
 
 Use the **`←`** back arrow at the top left to return to the Finder.
 
-The first time you open an object, a **Quick tour** dialog walks you through three slides, *Details of your assets*, single-value vs. multi-value categories, and a hint that categories can be customised in the settings area.
+The first time you open an object, a **Quick tour** dialog walks you through three slides, *Details of your assets*, single-value vs. multi-value categories, and a hint that categories can be customized in the settings area.
 Use **Next** to step through, or **Skip tour** on the last slide to dismiss it.
 The tour is shown once per user account.
 
@@ -86,14 +86,14 @@ The pagination control (`{n} entries`, `1 / 1`, page-size selector) sits at the 
 ## Favorites
 
 Mark attributes as favorites by clicking the **★ Add to favorites** star next to the attribute.
-The **★ Favorites** entry at the top of the category sidebar then shows just your favored attributes for this object.
+The **★ Favorites** entry at the top of the category sidebar then shows only your favored attributes for this object.
 
 For favoring whole classes and the **Favorites** collection in the Finder sidebar, see [Favorites](favorites.md).
 
 ## Lifecycle state
 
 Every object has a **Lifecycle stage** (a required attribute on the **General** category), for example *In operation*.
-The current state is also shown as a coloured pill (for example green **Active**) in the page header.
+The current state is also shown as a colored pill (for example green **Active**) in the page header.
 Change the lifecycle by opening the **General** category and editing the **Lifecycle stage** field.
 
 ## Search inside the object

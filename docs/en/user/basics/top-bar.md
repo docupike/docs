@@ -78,7 +78,7 @@ A check mark (✓) shows the active mode.
 
 ## User menu (avatar)
 
-The avatar circle (your initial on a coloured background) opens the **user menu**: see [User menu](user-menu.md).
+The avatar circle (your initial on a colored background) opens the **user menu**: see [User menu](user-menu.md).
 
 ## Further readings
 

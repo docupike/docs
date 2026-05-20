@@ -33,7 +33,7 @@ The drawer shows two side-by-side lists.
 A category-grouped tree of every attribute that *could* be added to the preset.
 
 - Each category row shows a **+ Add 1 category** action at the right edge that adds every attribute of that category to the preset.
-- Each attribute row shows a **+ Add 1 attribute** action that adds just that attribute.
+- Each attribute row shows a **+ Add 1 attribute** action that adds only that attribute.
 - Two icon buttons above the list, **Expand all** and **Collapse all**: toggle the category tree open or closed.
 
 ### Right list, Columns in table (n)

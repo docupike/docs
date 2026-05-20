@@ -27,7 +27,7 @@ A table of every Network object with the columns:
 | **Usage %** | Used addresses as a percentage of the total range. |
 
 Use **New network +** above the table to create a network or **Edit ⌄** for bulk actions on selected rows.
-The left sidebar mirrors the table as a hierarchical **All networks** tree, clicking a parent network drills down into its subnetworks.
+The left sidebar mirrors the table as a hierarchical **All networks** tree, clicking a parent network drills down into its subnets.
 
 ### IP addresses usage details
 
@@ -43,44 +43,44 @@ Use the **Hide ⌄** / **Show ⌄** toggle to collapse or expand the section.
 
 Click a network in the *All networks* sidebar tree (or the row arrow in the table) to open its detail page.
 
-The page header shows the network name, the class label, and the address range (for example *Network (10.10.10.0 - 10.10.10.255)*), plus a small **open-in-new** icon that links to the object's full categorised detail page.
+The page header shows the network name, the class label, and the address range (for example *Network (10.10.10.0 - 10.10.10.255)*), plus a small **open-in-new** icon that links to the object's full categorized detail page.
 
 Three tabs sit below the header:
 
 - **IP addresses**: the same table described in *Open the IP addresses table* above.
   After a Network definition is saved, the table is pre-populated with reserved entries (the network address itself, the default router, and broadcast) plus any addresses you assign.
-  Each row has a pencil **Edit** action; the **Configuration** column shows a coloured indicator (for example a black bar for *Network address*) plus a status text.
+  Each row has a pencil **Edit** action; the **Configuration** column shows a colored indicator (for example a black bar for *Network address*) plus a status text.
 - **DHCP scopes**: DHCP-managed ranges defined for this network.
-- **Networks**: the network's subnetworks.
+- **Networks**: the network's subnets.
 
-### Networks tab (subnetworks)
+### Networks tab (subnets)
 
 The **Networks** tab on a network detail page lists every Network object whose address range falls inside the parent.
-A subnetwork is just a regular Network object, it has its own *Network definition*, IP addresses table, and donut chart.
+A subnet is a regular Network object, it has its own *Network definition*, IP addresses table, and donut chart.
 
 The tab shows the same columns as the all-networks table:
 
 | Column | Notes |
 |---|---|
-| **Actions** | Per-row actions including opening the subnetwork's detail page. |
-| **Network definition** | Name and address range of the subnetwork. |
-| **Address range** | Start to end of the subnetwork. |
-| **Usage total** | Number of addresses currently used inside the subnetwork. |
-| **Usage %** | Used addresses as a percentage of the subnetwork's range. |
+| **Actions** | Per-row actions including opening the subnet's detail page. |
+| **Network definition** | Name and address range of the subnet. |
+| **Address range** | Start to end of the subnet. |
+| **Usage total** | Number of addresses currently used inside the subnet. |
+| **Usage %** | Used addresses as a percentage of the subnet's range. |
 
 A **New network +** button above the table creates a child network, the parent's address range is pre-filled in the new network definition so you only need to narrow it.
 
-The same hierarchy appears in the left **All networks** sidebar tree on the all-networks overview: clicking a parent network expands its subnetworks; clicking a leaf opens its detail page.
+The same hierarchy appears in the left **All networks** sidebar tree on the all-networks overview: clicking a parent network expands its subnets; clicking a leaf opens its detail page.
 
 ### Usage details (with donut chart)
 
-![Usage details panel on a Network detail page: a table with rows Total, In DHCP scopes, Not in DHCP scopes, columns IP addresses / Total / Used / Usage %, plus a donut chart on the right that visualises the same breakdown.](../../img/user/basics/ipam-donut.png)
+![Usage details panel on a Network detail page: a table with rows Total, In DHCP scopes, Not in DHCP scopes, columns IP addresses / Total / Used / Usage %, plus a donut chart on the right that visualizes the same breakdown.](../../img/user/basics/ipam-donut.png)
 
-A **Usage details** section sits below the table on the *IP addresses* tab and is the one place in IPAM that shows a graphical visualisation:
+A **Usage details** section sits below the table on the *IP addresses* tab and is the one place in IPAM that shows a graphical visualization:
 
 - A **Usage of IP addresses** table with the rows **Total**, **In DHCP scopes**, **Not in DHCP scopes** and the columns **IP addresses** / **Total** / **Used** / **Usage %**.
-- A **donut chart** on the right that visualises the same breakdown.
-  The chart's legend matches the table rows; segments fill in as addresses get assigned, so an empty network shows the chart in a single neutral colour while a populated network shows distinct slices for each row.
+- A **donut chart** on the right that visualizes the same breakdown.
+  The chart's legend matches the table rows; segments fill in as addresses get assigned, so an empty network shows the chart in a single neutral color while a populated network shows distinct slices for each row.
 - A **Hide ⌄** / **Show ⌄** toggle on the section header collapses or expands the whole panel.
 
 ## Rights
@@ -151,7 +151,7 @@ Already unassigned rows in your selection are ignored.
 In addition to **IP addresses** and **Network definition**, a Network object exposes:
 
 - **DHCP scopes**: DHCP-managed address ranges.
-- **Subnetworks**: child networks contained within this network.
+- **Subnets**: child networks contained within this network.
 
 ## Further readings
 

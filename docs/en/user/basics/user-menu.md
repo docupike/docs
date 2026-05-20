@@ -1,6 +1,6 @@
 # User menu
 
-The **user menu** is the dropdown that opens when you click your avatar (the coloured circle with your initial) at the far top-right of every page.
+The **user menu** is the dropdown that opens when you click your avatar (the colored circle with your initial) at the far top-right of every page.
 
 ## Entries
 
@@ -18,7 +18,7 @@ A thin horizontal divider sits between **Add-ons** and **Logout** to set *Logout
 
 - The menu closes when you click outside the panel or press **Escape**.
 - The avatar's letter is the first letter of your first name (or username).
-  The colour is generated from your account and is stable across sessions.
+  The color is generated from your account and is stable across sessions.
 
 ## Related entry points
 
