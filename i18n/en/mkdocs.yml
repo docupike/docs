@@ -11,27 +11,56 @@ theme:
 plugins:
   search:
     lang: en
+  redirects:
+    redirect_maps:
+      user/basics/menubar.md: user/basics/top-bar.md
+      user/basics/enable-disable-attributes.md: user/basics/categories-and-attributes.md
+      user/basics/widgets.md: user/basics/object-details.md
+      user/finder/views-and-presets.md: user/finder/preset-configuration.md
+      user/finder/inline-editing.md: user/finder/bulk-actions.md
+      user/finder/multi-editing.md: user/finder/bulk-actions.md
+      admin/users-groups-roles.md: admin/user-management.md
 extra:
   dc:
     language: en-US
 nav:
   - Overview: index.md
+  - Installation guide:
+      - Overview: installation/index.md
   - User guide:
       - Login: user/login.md
       - Documentation basics:
-          - Menu bar: user/basics/menubar.md
           - Objects: user/basics/objects.md
+          - Object details page: user/basics/object-details.md
+          - Object Tools: user/basics/object-tools.md
+          - Create an object: user/basics/create-object.md
           - Classes: user/basics/classes.md
           - Collections: user/basics/collections.md
           - Categories and attributes: user/basics/categories-and-attributes.md
-          - Enable or disable attributes: user/basics/enable-disable-attributes.md
-          - Widgets: user/basics/widgets.md
+          - Favorites: user/basics/favorites.md
+          - IP networking: user/basics/ip-networking.md
+          - IP address management: user/basics/ipam.md
+          - DHCP scopes: user/basics/dhcp-scopes.md
+          - Locations: user/basics/locations.md
+          - Top bar reference: user/basics/top-bar.md
+          - User menu: user/basics/user-menu.md
+          - Notifications: user/basics/notifications.md
+          - Empty states: user/basics/empty-states.md
+          - Quick tours: user/basics/quick-tours.md
+          - Switch between tenants: user/basics/tenant-switcher.md
+          - Your profile: user/basics/profile.md
       - Finder:
-          - Inline editing: user/finder/inline-editing.md
-          - Multi editing: user/finder/multi-editing.md
+          - Finder: user/finder/finder.md
+          - Class list: user/finder/class-list.md
           - Search filters and reports: user/finder/search-filters-and-reports.md
-          - Views and presets: user/finder/views-and-presets.md
-      - Reporting: user/reporting.md
+          - Filter the Finder: user/finder/set-filter.md
+          - Save search: user/finder/saved-views.md
+          - Preset configuration: user/finder/preset-configuration.md
+          - Bulk actions: user/finder/bulk-actions.md
+          - Bulk-action modals: user/finder/bulk-modals.md
+      - Reporting:
+          - Reporting overview: user/reporting.md
+          - Report Manager: user/reporting/report-manager.md
       - Data protection: user/gdpr.md
       - Documents Creator: user/documents-creator.md
       - Imports:
@@ -47,13 +76,25 @@ nav:
           - Workplace documentation: user/usecases/workplace-documentation.md
           - Data protection: user/usecases/data-protection.md
   - Admin guide:
-      - Creating custom Categories: admin/custom-categories.md
-      - Create custom classes: admin/custom-classes.md
-      - Attribute validation: admin/attribute-validation.md
-      - Export Data: admin/export-data.md
-      - Rights and permissions: admin/rights-and-permissions.md
-      - Users, groups and roles: admin/users-groups-roles.md
-      - servereye integration: admin/servereye.md
+      - CMDB configuration:
+          - Category Builder: admin/category-builder.md
+          - Creating custom categories: admin/custom-categories.md
+          - Create custom classes: admin/custom-classes.md
+          - Manage classes and collections: admin/class-collection-management.md
+          - Attribute validation: admin/attribute-validation.md
+      - Users and access:
+          - User management: admin/user-management.md
+          - Rights and permissions: admin/rights-and-permissions.md
+          - Permissions: admin/permissions.md
+      - Tenant and subscription:
+          - Tenants: admin/tenants.md
+          - Subscription, billing, and upgrade: admin/subscription.md
+          - Add-ons: admin/addons.md
+      - Data:
+          - Export Data: admin/export-data.md
+      - Integrations:
+          - Suite+ bridge: admin/suite-plus.md
+          - servereye integration: admin/servereye.md
   - Developer guide:
       - API: dev/api.md
       - Add-ons:

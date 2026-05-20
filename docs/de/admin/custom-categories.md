@@ -1,38 +1,39 @@
----
-title: Benutzerdefinierte Kategorien und Attribute
-description: Grundlagen der Dokumentation zu benutzerdefinierten Kategorien und Attributen
-lang: de
----
+# Benutzerdefinierte Kategorien erstellen
 
-# Benutzerdefinierte Kategorien
+Mit benutzerdefinierten Kategorien können Sie Objekten Daten hinzufügen, die vom integrierten Modell nicht abgedeckt werden, zum Beispiel *Details zu Wartungsverträgen* oder *Konformitätsbescheinigungen*.
 
-Neben den Standardkategorien bietet i-doit up die Möglichkeit, benutzerdefinierte Kategorien zu erstellen, um zusätzliche Attribute zu dokumentieren, die nicht in den Standardkategorien enthalten sind.
+Auf dieser Seite wird der allgemeine Arbeitsablauf beschrieben.
+Die eigentliche Benutzeroberfläche des Generators finden Sie unter [Kategorien-Generator](category-builder.md).
 
 ## Rechte
 
-Um neue benutzerdefinierte Kategorien zu erstellen, benötigen Sie die Berechtigung "Rechte > CMDB > Kategorien verwalten".
-Um benutzerdefinierte Kategorien Klassen zuzuweisen, benötigen Sie die Berechtigung "Rechte > CMDB > Klassen verwalten".
+Zum Erstellen oder Bearbeiten einer Kategorie ist die Berechtigung *Kategorien verwalten* unter *CMDB* erforderlich.
+Zum Zuweisen einer Kategorie zu einer Klasse ist die Berechtigung *Klassen verwalten* erforderlich.
+Siehe [Rechte und Berechtigungen](rights-and-permissions.md).
 
-## So erstellen Sie eine benutzerdefinierte Kategorie
+## Arbeitsablauf
 
-Benutzerdefinierte Kategorien werden unter "Einstellungen > Kategorien" erstellt. Klicken Sie dort auf die Schaltfläche "Neue Kategorie". Geben Sie einen Namen für die Kategorie ein und wählen Sie einen "Kategorietyp" aus: "Einzelwert" oder "Mehrfachwert". Jede benutzerdefinierte Kategorie erhält eine eindeutige "Konstante" zur Identifizierung der Kategorie. Benutzerdefinierte Kategorien müssen einer Klasse zugewiesen werden, damit sie dort angezeigt werden.
+1. Öffnen Sie **Einstellungen ▸ CMDB-Konfiguration ▸ Kategorien**.
+2. Klicken Sie auf **Neue Kategorie +**, um den [Kategorien-Generator](category-builder.md) zu öffnen.
+3. Wählen Sie einen **Namen** und einen **Kategorietyp**: *Einzelwert* (ein Wertesatz pro Objekt) oder *Mehrfachwert* (eine Tabelle mit Einträgen).
+4. Fügen Sie Attribute hinzu.
+    Jedes Attribut hat einen **Namen** und einen **Typ** (Text, Zahl, Datum, Boolescher Wert, Einfachauswahl, Objektreferenz, …).
+5. Speichern Sie die Kategorie.
+6. Weisen Sie sie einer oder mehreren [Klassen](../user/basics/classes.md) zu.
+    Die Kategorie wird nur bei Objekten dieser Klassen angezeigt.
 
-## Kategorien mit einem oder mehreren Werten
+## Eine benutzerdefinierte Kategorie bearbeiten
 
-Wenn Sie Attribute verwenden möchten, die in ihrer Kombination eindeutig sind, reicht die Konfiguration als Kategorie "Einzelwert" aus.
+Klicken Sie in der Liste auf den Namen der Kategorie, um den Kategoriedesigner dafür erneut zu öffnen.
+Die meisten Felder können jederzeit geändert werden; der Kategorietyp ist jedoch fest vorgegeben, sobald Daten für die Kategorie gespeichert wurden.
 
-Wenn Sie die Werte mehrfach verwenden möchten, benötigen Sie eine Kategorie "Mehrfachwert". Auf diese Weise können mehrere Einträge in einer Kategorie gespeichert werden.
+## Eine benutzerdefinierte Kategorie löschen
 
-## Benutzerdefinierte Attribute
+Benutzerdefinierte Kategorien können gelöscht werden, wenn keine Werte darin gespeichert sind.
+Informationen zum Verhalten beim Massenlöschen und zu den Warnmeldungen finden Sie unter [Klassen und Sammlungen verwalten](class-collection-management.md).
 
-Um Ihre Kategorie anzupassen, können Sie mit der Schaltfläche "Neues Attribut" beliebig viele Attribute hinzufügen. Sie müssen den Typ in ein "Name"-Feld für das Attribut eingeben und einen "Typ" für das Feld auswählen.
+## Siehe auch
 
-Verfügbare Feldtypen sind:
-
-| Feldtyp         | Beschreibung                                                                                                                                                    |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Text            | Das Feld "Text" dient zur Eingabe von reinem Text.                                                                                                              |
-| Zahl            | Im Feld "Zahl" können Sie Dezimalzahlen eingeben.                                                                                                               |
-| Boolesche Werte | Das Feld "Boolean" dient zur Auswahl von Ja oder Nein.                                                                                                          |
-| Password        | Im Feld "Password" befindet sich ein maskiertes Feld.                                                                                                           |
-| Farbe           | Im Feld "Farbe" können Sie einen Hex-Farbcode eingeben oder über die Farbauswahl eine Farbe auswählen, indem Sie im Bearbeitungsmodus auf die Palette klicken.. |
+- [Kategorien-Generator](category-builder.md)
+- [Kategorien und Attribute](../user/basics/categories-and-attributes.md)
+- [Klassen und Sammlungen verwalten](class-collection-management.md)

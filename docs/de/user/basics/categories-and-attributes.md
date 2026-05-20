@@ -1,24 +1,31 @@
----
-title: Kategorien und Attribute
-description: Grundlagen der Dokumentation zu Kategorien und Attributen in i-doit up
-lang: de
----
-
 # Kategorien und Attribute
 
-Attribute sind die kleinsten Einheiten der Dokumentation. Sie sind Identifikatoren, die dabei helfen, die Dokumentation zu strukturieren. Ein Attribut (z. B. "Seriennummer") kann einen oder mehrere Werte haben. Attribute gibt es in verschiedenen Feldtypen, die die Speicherung unterschiedlicher Informationen ermöglichen. Je nach Feldtyp können bestimmte Einschränkungen für ein Attribut gelten. Das Attribut "IP-Adresse" unterliegt beispielsweise strengen Formatierungsregeln.
+Eine **Kategorie** ist eine Gruppe verwandter Felder zu einem Objekt, z. B. *Allgemein*, *Standort*, *IP-Netzwerk*, *Verträge*, *DHCP-Bereiche* usw.
+Die Felder innerhalb einer Kategorie werden als **Attribute** bezeichnet.
 
-Kategorien sind Container für Attribute. Sie bündeln Informationen, die inhaltlich zusammengehören. Die Kategorie "Buchhaltung" fasst beispielsweise alle Attribute zusammen, die zum Thema Buchhaltung gehören, wie Kostenstelle oder Anschaffungsdatum.
+Jede [Klasse](classes.md) legt fest, welche Kategorien ein Objekt bereitstellt.
+Ein *Server* verfügt über *Formfaktor*, *CPU*, *Arbeitsspeicher*, *IP-Netzwerk*, *Netzwerkgerät*; eine *Person* verfügt über *Adresse und Kontaktdaten*, *Mitarbeiter*; ein *Netzwerk* verfügt über *Netzwerkdefinition*, *IP-Adressen*, *DHCP-Bereiche*, *Subnetze*.
 
-i-doit up wird mit vielen vordefinierten Kategorien und Attributen ausgeliefert, aber Sie können auch eigene Kategorien und Attribute erstellen, wenn Ihnen etwas fehlt.
+## Einwertige vs. mehrwertige Kategorien
 
-Für einfache Informationen wie den Namen oder den Standort eines Objekts verwendet i-doit up Single Value Kategorien. Für komplexere Informationen wie z.B. CPUs, bei denen jede CPU eigene Eigenschaften mitbringt (z.B. Hersteller oder Modell) stellt i-doit up Multi Value Kategorien bereit.
+Eine **Einzelwert**-Kategorie enthält genau einen Satz von Attributwerten pro Objekt, zum Beispiel *Allgemein*.
+Eine **Mehrwert**-Kategorie enthält mehrere Einträge pro Objekt; zum Beispiel listet *IP-Netzwerk* alle einem Server zugewiesenen IP-Adressen auf.
 
+Auf der [Objektdetailseite](object-details.md) werden die beiden unterschiedlich dargestellt: Kategorien mit einem einzigen Wert werden als Stapel dargestellt; Kategorien mit mehreren Werten werden als Tabelle angezeigt, die Sie sortieren, filtern und um Zeilen erweitern können.
 
-## Favoriten
+## Benutzerdefinierte Kategorien
 
-Behalte die Daten im Blick, die du wirklich brauchst. Informationen sind wichtig, aber manche sind wichtiger als andere und werden häufiger benötigt. Markiere relevante Informationen als Favoriten und erstelle deine eigene Übersicht. So behältst du alles im Blick.
+Administratoren können eigene Kategorien erstellen, um Daten zu erfassen, die das Standardmodell nicht abdeckt; siehe [Category Builder](../../admin/category-builder.md) und [Erstellen benutzerdefinierter Kategorien](../../admin/custom-categories.md).
+Benutzerdefinierte Kategorien unterliegen denselben Regeln wie die vorinstallierten; mit dem *Category Builder* können Sie Attributtypen aus einer Liste auswählen (Text, Zahl, Datum, Boolescher Wert, Einfachauswahl, Objektreferenz, …).
 
-## Widgets und Werkzeuge
+## Auswahl der angezeigten Attribute
 
-Widgets liefern zusätzliche Informationen und Werkzeuge zu einem Objekt. Sie liefern kompakte Informationen zu Dingen wie der Objekt-Historie oder wer Berechtigungen darauf hat.
+Im Finder bestimmt die aktive [Spaltenvorlage](../finder/preset-configuration.md), welche Attribute als Spalten angezeigt werden.
+Auf der Detailseite eines Objekts können Sie über das Zahnrad-Symbol neben *Übersicht* in der Seitenleiste ganze Kategorien für jeden Benutzer ein- oder ausblenden.
+
+## Siehe auch
+
+- [Objektdetailseite](object-details.md)
+- [Voreingestellte Konfiguration](../finder/preset-configuration.md)
+- [Kategorien-Generator](../../admin/category-builder.md)
+- [Benutzerdefinierte Kategorien erstellen](../../admin/custom-categories.md)

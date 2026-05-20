@@ -23,3 +23,9 @@ allow:
   - european
   - fire
   - burns
+  # UI terms used verbatim from i-doit up (button states, colour bars):
+  - invalid
+  - black
+  - bigger
+  - colored
+  - coloured

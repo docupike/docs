@@ -58,7 +58,7 @@ Für jeden Kunden wird ein separater Mandant angelegt. Sie können über das Dro
 
 ## Benutzer
 
-Jeder Benutzer, der mindestens Zugriff auf einen Mandanten hat, wird von Servereye synchronisiert. Die [Benutzer](users-groups-roles.md) finden Sie unter "Einstellungen > Benutzerverwaltung > Benutzer". Benutzer werden anhand ihrer E-Mail-Adresse zugeordnet.
+Jeder Benutzer, der mindestens Zugriff auf einen Mandanten hat, wird von Servereye synchronisiert. Die [Benutzer](user-management.md) finden Sie unter "Einstellungen > Benutzerverwaltung > Benutzer". Benutzer werden anhand ihrer E-Mail-Adresse zugeordnet.
 
 ## Objekte und Kategorien
 
@@ -70,4 +70,4 @@ Sie können die Synchronisierung von Servereye über "Add-ons > Servereye-Einste
 
 ## Widget
 
-i-doit up verfügt über eine [Widget](../user/basics/widgets.md)-Ansicht. Dieses Widget ermöglicht es, das Datum der letzten Synchronisierung anzuzeigen und zum entsprechenden Servereye-Asset zu springen.
+i-doit up verfügt über eine [Widget](../user/basics/object-details.md)-Ansicht. Dieses Widget ermöglicht es, das Datum der letzten Synchronisierung anzuzeigen und zum entsprechenden Servereye-Asset zu springen.

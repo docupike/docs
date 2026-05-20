@@ -19,6 +19,16 @@
         "/{% (.+) %}/g"
     ],
     "ignorePaths": [
-        "**/changelog.md"
+        "**/changelog.md",
+        "**/CHANGELOG.md",
+        "**/release-notes.md",
+        "**/RELEASE-NOTES.md",
+        "**/RELEASENOTES.md",
+        "**/CONTRIBUTING.md",
+        "**/GUIDELINES.md",
+        "**/SUPPORT.md",
+        "**/README.md",
+        "**/SECURITY.md",
+        "**/CODE_OF_CONDUCT.md"
     ]
 }

@@ -11,28 +11,57 @@ theme:
 plugins:
   search:
     lang: de
+  redirects:
+    redirect_maps:
+      user/basics/menubar.md: user/basics/top-bar.md
+      user/basics/enable-disable-attributes.md: user/basics/categories-and-attributes.md
+      user/basics/widgets.md: user/basics/object-details.md
+      user/finder/views-and-presets.md: user/finder/preset-configuration.md
+      user/finder/inline-editing.md: user/finder/bulk-actions.md
+      user/finder/multi-editing.md: user/finder/bulk-actions.md
+      admin/users-groups-roles.md: admin/user-management.md
 extra:
   dc:
     language: de_DE
 nav:
   - Übersicht: index.md
+  - Installationsanleitung:
+      - Überblick: installation/index.md
   - Benutzerhandbuch:
       - Anmelden: user/login.md
       - Grundlagen der Dokumentation:
-          - Menüleiste: user/basics/menubar.md
           - Objekte: user/basics/objects.md
+          - Objektdetailseite: user/basics/object-details.md
+          - Objekt-Tools: user/basics/object-tools.md
+          - Objekt erstellen: user/basics/create-object.md
           - Klassen: user/basics/classes.md
           - Kollektionen: user/basics/collections.md
-          - Attribute aktivieren oder deaktivieren: user/basics/enable-disable-attributes.md
-          - Klassen und Attribute: user/basics/categories-and-attributes.md
-          - Widgets: user/basics/widgets.md
+          - Kategorien und Attribute: user/basics/categories-and-attributes.md
+          - Favoriten: user/basics/favorites.md
+          - IP-Vernetzung: user/basics/ip-networking.md
+          - IP-Adressverwaltung: user/basics/ipam.md
+          - DHCP-Bereiche: user/basics/dhcp-scopes.md
+          - Standorte: user/basics/locations.md
+          - Obere Leiste: user/basics/top-bar.md
+          - Benutzermenü: user/basics/user-menu.md
+          - Benachrichtigungen: user/basics/notifications.md
+          - Leere Zustände: user/basics/empty-states.md
+          - Schnelltouren: user/basics/quick-tours.md
+          - Zwischen Mandanten wechseln: user/basics/tenant-switcher.md
+          - Ihr Profil: user/basics/profile.md
       - Finder:
-          - Zeilenbearbeitung: user/finder/inline-editing.md
-          - Mehrfachbearbeitung: user/finder/multi-editing.md
+          - Finder: user/finder/finder.md
+          - Klassenliste: user/finder/class-list.md
           - Suchfilter und Berichte: user/finder/search-filters-and-reports.md
-          - Ansichten und Voreinstellungen: user/finder/views-and-presets.md
-      - Berichtsmanager: user/reporting.md
-      - Data protection: user/gdpr.md
+          - Finder filtern: user/finder/set-filter.md
+          - Suche speichern: user/finder/saved-views.md
+          - Voreinstellungen konfigurieren: user/finder/preset-configuration.md
+          - Massenaktionen: user/finder/bulk-actions.md
+          - Massenaktion-Dialoge: user/finder/bulk-modals.md
+      - Berichte:
+          - Berichte Übersicht: user/reporting.md
+          - Berichtsmanager: user/reporting/report-manager.md
+      - Datenschutz: user/gdpr.md
       - Documents Creator: user/documents-creator.md
       - Importe:
           - CSV: user/imports/csv.md
@@ -45,15 +74,27 @@ nav:
           - Schnellbearbeitung in Listen: user/usecases/quick-edit-in-lists.md
           - Auswertungen: user/usecases/reports.md
           - Dokumentation am Arbeitsplatz: user/usecases/workplace-documentation.md
-          - Data protection: user/usecases/data-protection.md
+          - Datenschutz: user/usecases/data-protection.md
   - Administratorhandbuch:
-      - Benutzerdefinierte Kategorien erstellen: admin/custom-categories.md
-      - Benutzerdefinierte Klassen erstellen: admin/custom-classes.md
-      - Attributvalidierung: admin/attribute-validation.md
-      - Daten exportieren: admin/export-data.md
-      - Rechte und Berechtigungen: admin/rights-and-permissions.md
-      - Benutzer, Gruppen und Rollen: admin/users-groups-roles.md
-      - servereye Integration: admin/servereye.md
+      - CMDB-Konfiguration:
+          - Kategorie-Builder: admin/category-builder.md
+          - Benutzerdefinierte Kategorien erstellen: admin/custom-categories.md
+          - Benutzerdefinierte Klassen erstellen: admin/custom-classes.md
+          - Klassen und Kollektionen verwalten: admin/class-collection-management.md
+          - Attributvalidierung: admin/attribute-validation.md
+      - Benutzer und Zugriff:
+          - Benutzerverwaltung: admin/user-management.md
+          - Rechte und Berechtigungen: admin/rights-and-permissions.md
+          - Berechtigungen: admin/permissions.md
+      - Mandant und Abonnement:
+          - Mandanten: admin/tenants.md
+          - Abonnement, Abrechnung und Upgrade: admin/subscription.md
+          - Add-ons: admin/addons.md
+      - Daten:
+          - Daten exportieren: admin/export-data.md
+      - Integrationen:
+          - Suite+ Bridge: admin/suite-plus.md
+          - servereye Integration: admin/servereye.md
   - Entwicklerhandbuch:
       - API: dev/api.md
       - Add-ons:
@@ -67,4 +108,3 @@ nav:
           - Add-on Endpoints: dev/addon/addon-endpoints.md
           - Licensing: dev/addon/licensing.md
           - Useful Resources: dev/addon/useful-resources.md
-not_in_nav: |

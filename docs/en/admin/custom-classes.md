@@ -1,33 +1,42 @@
----
+# Create custom classes
 
-title: create custom classes
-description: customize i-doit up and create custom classes
-lang: en
+The classes shipped with i-doit up cover most IT documentation needs.
+When the standard model is missing a concept, an administrator can define a **custom class**: a new object type with its own icon, its own attached categories, and its own collection memberships.
 
----
+## Rights
 
-# Custom Classes
-Classes in i-doit up are the basis of your it documentation. i-doit up is delivered with a number of predefined classes, which should help you to get started quickly with it documentation.
+Creating or editing a class needs the *Manage Classes* right under *Administration*.
+See [Rights and permissions](rights-and-permissions.md).
 
-# Add Custom Classes
-But we give you the possibility to define your own classes.
+## Open the class editor
 
-Go to `Settings > CMDB Configuration > Classes` and click on the New Class button.
+1. Open **Settings** from the user menu (top-right avatar).
+2. Go to **CMDB Configuration ▸ Classes**.
+3. Click **New class +** above the list.
 
-In the mask that opens, you can now enter a name for the new class and confirm with `Save`.
-After that the new class is available and can be used.
+## Class details
 
-# Customizing Custom Classes
-Under `Settings > CMDB Configuration > Classes > New class name` you can make further adjustments to the created class:
+The class form asks for:
 
-`Title`
-Here you can change the name of the class
+| Field | Notes |
+|---|---|
+| **Name** | Display name shown in the Finder sidebar, the All-classes dropdown, and on every object's details page header. |
+| **Icon** | Pick from a predefined icon set. The icon shows next to the class name everywhere. |
+| **Collections** | One or more [collections](../user/basics/collections.md) the class belongs to. |
+| **Categories** | The set of [categories](../user/basics/categories-and-attributes.md) attached to the class. Add built-in or [custom categories](custom-categories.md). |
 
-`Icon`
-Here you can select another icon for the class
+Save to create the class.
+New classes immediately appear in the Finder.
 
-`Location Class`
-Here you can change the class to a location class. This way objects of this class type become locations and can be used in the location tree.
+## Edit and delete
 
-`Containing categories`
-Here you can further define the class and add categories to this class.
+Open an existing class from the list to change its icon, collection memberships, or category set.
+See [Manage classes and collections](class-collection-management.md) for the delete flow and the implications when objects of that class still exist.
+
+## Further readings
+
+- [Classes](../user/basics/classes.md)
+- [Collections](../user/basics/collections.md)
+- [Categories and attributes](../user/basics/categories-and-attributes.md)
+- [Manage classes and collections](class-collection-management.md)
+- [Creating custom categories](custom-categories.md)

@@ -1,15 +1,43 @@
----
-title: Search and filter
-description: Search filter in the i-doit up Finder
-lang: en
----
+# Search, filters, and reports
 
-# Search and filter
+The Finder offers three layered ways to narrow down the objects you see, from quickest to most reusable.
 
-The main search bar in Finder is the easiest way to search for information. Simply enter text in the bar and press Enter to perform a full-text search. Before you press Enter, a window with search suggestions will open, showing you links to recent searches.
+## 1. Search
 
-To the right of the search bar is a **filter** button that allows you to search for values of selected attributes. You can navigate through all available attributes and set a search condition for each selected attribute.
+The **search box** at the top of the Finder accepts free text.
+Press **Enter** to filter the table by every object whose name (or content, depending on the configured indexer) contains the search term.
 
-All **filters** are displayed as "filter bubbles" in the search bar, allowing you to narrow your search or change specific parts of your search.
+Click the **×** in the search box to clear the term.
 
-Your **search queries** can be saved for later reuse. This can be useful if you use a particular search query very frequently.
+## 2. Filters
+
+The **Filters** button to the right of the search box opens the [Set filter](set-filter.md) dialog.
+A filter is an attribute-level rule, for example *Lifecycle stage is "In operation"* or *Class is "Server"*.
+Multiple filters combine with logical AND.
+
+Filters are temporary by default; they apply only to the current view.
+
+## 3. Saved searches and reports
+
+When you want to re-use a search later, store it.
+
+- A **saved search** keeps the term, the filters, and the active column preset under a name and is private to your user.
+    See [Save search](saved-views.md).
+- A **report** is a stored filter and column set, accessible via [Report Manager](../reporting/report-manager.md).
+    Reports can be shared and run repeatedly.
+
+## Choosing the right tool
+
+| If you want to … | Use |
+|---|---|
+| Quickly narrow the table for the current minute | the search box |
+| Apply attribute-level rules right now | the [Filters](set-filter.md) dialog |
+| Re-run the same query for yourself later | a [saved search](saved-views.md) |
+| Re-run the same query repeatedly, possibly across users | a [report](../reporting/report-manager.md) |
+
+## Further readings
+
+- [Set filter](set-filter.md)
+- [Save search](saved-views.md)
+- [Report Manager](../reporting/report-manager.md)
+- [Preset configuration](preset-configuration.md)
