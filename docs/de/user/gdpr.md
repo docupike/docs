@@ -15,7 +15,7 @@ Die **Datenschutz-Grundverordnung (DSGVO)** legt detaillierte Anforderungen für
 
 Risiken und Maßnahmen müssen ebenfalls dokumentiert werden. Maßnahmen für die Risiken können dann in der Organisation gespeichert werden. Zusätzlich kann der Status der Umsetzung der Maßnahmen und eine Überprüfung eingesehen werden.
 
-Alle [Klassen](basics/classes.md), die zu **Datenschutz** gehören, werden in der [Kollektionen](basics/collections.md) "Datenschutz" gespeichert, die im Menü [Finder](finder/views-and-presets.md) zu finden ist.
+Alle [Klassen](basics/classes.md), die zu **Datenschutz** gehören, werden in der [Kollektionen](basics/collections.md) "Datenschutz" gespeichert, die im Menü [Finder](finder/finder.md) zu finden ist.
 
 ## Rechte
 
@@ -23,7 +23,7 @@ Sie sollten die Rechte überprüfen und an Ihre Bedürfnisse anpassen. Derzeit s
 
 ## Kurzanleitung
 
-Alle [Klassen](./basics/classes.md), die zu **Datenschutz** gehören, werden in der [Kollektionen](./basics/collections.md) **Datenschutz** gespeichert, die Sie im Menü [Finder](./finder/views-and-presets.md) finden.
+Alle [Klassen](./basics/classes.md), die zu **Datenschutz** gehören, werden in der [Kollektionen](./basics/collections.md) **Datenschutz** gespeichert, die Sie im Menü [Finder](./finder/finder.md) finden.
 
 Klicken Sie auf "Finder → Datenschutz". Die Übersicht "Datenschutz" finden Sie unter "Inventar → Datenschutz".
 
