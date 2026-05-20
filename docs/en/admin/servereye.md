@@ -60,7 +60,7 @@ A separate tenant is created for each customer. Access these tenants through the
 
 ## User
 
-Each user, which have at least access to one tenant, is synchronized from servereye. The [Users](users-groups-roles.md) can be found via `Settings > User management > Users`. Users are matched via E-Mail address.
+Each user, which have at least access to one tenant, is synchronized from servereye. The [Users](user-management.md) can be found via `Settings > User management > Users`. Users are matched via E-Mail address.
 
 ## Objects and categories
 
@@ -75,6 +75,6 @@ You can check the servereye synchronization via `Add-ons > servereye settings`. 
 
 ## Widget
 
-i-doit up has a [Widget](../user/basics/widgets.md) view.
+i-doit up has a [Widget](../user/basics/object-details.md) view.
 
 This widget allows to see date of the last synchronization and also allows jumping into the corresponding servereye asset.
