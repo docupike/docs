@@ -27,3 +27,5 @@ allow:
   - invalid
   - black
   - bigger
+  - colored
+  - coloured
