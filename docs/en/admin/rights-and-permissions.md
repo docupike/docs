@@ -36,7 +36,7 @@ There is no deny override.
 
 User *Jane* is a member of group *Network engineers*, which is assigned the role *Admin*.
 Jane inherits every right of *Admin* through *Network engineers*.
-She does not need any direct right assignment.
+No direct right assignment is needed.
 
 ## Tenant scope
 
