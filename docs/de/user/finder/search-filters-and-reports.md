@@ -22,9 +22,9 @@ Filter sind standardmäßig temporär; sie gelten nur für die aktuelle Ansicht.
 Wenn Sie eine Suche später wiederverwenden möchten, speichern Sie sie.
 
 - Eine **gespeicherte Suche** speichert den Suchbegriff, die Filter und die aktive Spaltenkonfiguration unter einem Namen und ist nur für Ihren Benutzer sichtbar.
-  Siehe [Suche speichern](saved-views.md).
+    Siehe [Suche speichern](saved-views.md).
 - Ein **Bericht** ist eine gespeicherte Kombination aus Filtern und Spalten, auf die über den [Berichtsmanager](../reporting/report-manager.md) zugegriffen werden kann.
-  Berichte können freigegeben und wiederholt ausgeführt werden.
+    Berichte können freigegeben und wiederholt ausgeführt werden.
 
 ## Die Wahl des richtigen Werkzeugs
 

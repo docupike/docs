@@ -17,10 +17,10 @@ Siehe [Rechte und Berechtigungen](rights-and-permissions.md).
 2. Klicken Sie auf **Neue Kategorie +**, um den [Kategorien-Generator](category-builder.md) zu öffnen.
 3. Wählen Sie einen **Namen** und einen **Kategorietyp**: *Einzelwert* (ein Wertesatz pro Objekt) oder *Mehrfachwert* (eine Tabelle mit Einträgen).
 4. Fügen Sie Attribute hinzu.
-   Jedes Attribut hat einen **Namen** und einen **Typ** (Text, Zahl, Datum, Boolescher Wert, Einfachauswahl, Objektreferenz, …).
+    Jedes Attribut hat einen **Namen** und einen **Typ** (Text, Zahl, Datum, Boolescher Wert, Einfachauswahl, Objektreferenz, …).
 5. Speichern Sie die Kategorie.
 6. Weisen Sie sie einer oder mehreren [Klassen](../user/basics/classes.md) zu.
-   Die Kategorie wird nur bei Objekten dieser Klassen angezeigt.
+    Die Kategorie wird nur bei Objekten dieser Klassen angezeigt.
 
 ## Eine benutzerdefinierte Kategorie bearbeiten
 

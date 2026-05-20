@@ -15,7 +15,7 @@ Ein Objekt hat:
 ## Tägliche Arbeitsabläufe
 
 - **Objekte durchsuchen und finden** im [Finder](../finder/class-list.md).
-  Filtern Sie die Liste mit [Filter festlegen](../finder/set-filter.md) oder speichern Sie eine Suche über [Suche speichern](../finder/saved-views.md).
+    Filtern Sie die Liste mit [Filter festlegen](../finder/set-filter.md) oder speichern Sie eine Suche über [Suche speichern](../finder/saved-views.md).
 - **Ein Objekt hinzufügen** mit [Objekt erstellen](create-object.md).
 - **Ein einzelnes Objekt anzeigen und bearbeiten** auf dessen [Detailseite](object-details.md).
 - **Änderungen auf mehrere Objekte gleichzeitig anwenden** mit [Massenaktionen](../finder/bulk-actions.md).

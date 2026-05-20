@@ -3,10 +3,10 @@
 i-doit up uses two complementary concepts to control what users can do.
 
 - **Rights** are global flags that decide which UI surfaces and bulk actions a user can reach.
-  Examples: *Manage Users*, *Manage Tenants*, *Manage Categories*, *Edit configuration*.
-  They are assigned to roles, groups, or individual users.
+    Examples: *Manage Users*, *Manage Tenants*, *Manage Categories*, *Edit configuration*.
+    They are assigned to roles, groups, or individual users.
 - **Permissions** are object- and class-level rules that decide what a user can read, edit, archive, or delete on the data itself.
-  They are evaluated at every action and combined with rights.
+    They are evaluated at every action and combined with rights.
 
 ## Where to manage them
 

@@ -34,7 +34,7 @@ The notification has two action buttons:
 
 - **Filter**: applies a temporary filter so only the just-created object(s) remain in the Finder list.
 - **Open**: opens the object's [details page](object-details.md) directly.
-  When you create more than one object at once, **Open** is hidden because there is no single object to navigate to.
+    When you create more than one object at once, **Open** is hidden because there is no single object to navigate to.
 
 The new object is added to the Finder list under its class.
 

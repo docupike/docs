@@ -31,7 +31,7 @@ Das Steuerelement für den Klassenfavoriten wird **nachdem** Sie eine bestimmte 
 Um eine Klasse zu bevorzugen:
 
 1. Klicken Sie im Finder in der linken Seitenleiste auf die Klasse (z. B. **Server**).
-   Die URL wechselt zu `/finder?class=<class-id>`, und die Überschrift neben dem Button *New object* ändert sich von *All objects* auf den Klassennamen (zum Beispiel **Server**).
+    Die URL wechselt zu `/finder?class=<class-id>`, und die Überschrift neben dem Button *New object* ändert sich von *All objects* auf den Klassennamen (zum Beispiel **Server**).
 2. Klicken Sie auf das umrandete Sternsymbol **★** neben der Überschrift.
 
 Der Stern wird ausgefüllt, sobald die Klasse zu den Favoriten hinzugefügt wurde.

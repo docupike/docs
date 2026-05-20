@@ -13,7 +13,7 @@ Out of the box i-doit up ships with collections for *Hardware*, *Network devices
 ## Working with collections
 
 - A class can belong to **more than one** collection.
-  Adding or removing the assignment is an admin action.
+    Adding or removing the assignment is an admin action.
 - Deleting a collection only removes the grouping, the classes themselves stay in place.
 
 ## Further readings

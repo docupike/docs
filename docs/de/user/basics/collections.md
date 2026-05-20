@@ -14,7 +14,7 @@ i-doit up wird standardmäßig mit Sammlungen für *Hardware*, *Netzwerkgeräte*
 ## Arbeiten mit Sammlungen
 
 - Eine Klasse kann zu **mehr als einer** Sammlung gehören.
-  Das Hinzufügen oder Entfernen der Zuordnung ist eine Administratoraktion.
+    Das Hinzufügen oder Entfernen der Zuordnung ist eine Administratoraktion.
 - Durch das Löschen einer Sammlung wird lediglich die Gruppierung entfernt; die Klassen selbst bleiben bestehen.
 
 ## Siehe auch

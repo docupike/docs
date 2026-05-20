@@ -18,7 +18,7 @@ A thin horizontal divider sits between **Add-ons** and **Logout** to set *Logout
 
 - The menu closes when you click outside the panel or press **Escape**.
 - The avatar's letter is the first letter of your first name (or username).
-  The color is generated from your account and is stable across sessions.
+    The color is generated from your account and is stable across sessions.
 
 ## Related entry points
 

@@ -35,7 +35,7 @@ A **Search** box at the top right of the dialog filters columns 1 and 2 by name 
 ## Buttons
 
 - **Show results**: applies all the filters you have set and closes the dialog.
-  The button is disabled until at least one filter has a value.
+    The button is disabled until at least one filter has a value.
 - **Cancel**: closes the dialog without changing the table.
 
 ## Combining filters

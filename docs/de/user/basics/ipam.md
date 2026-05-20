@@ -48,8 +48,8 @@ In der Kopfzeile der Seite werden der Netzwerkname, die Klassenbezeichnung und d
 Unter der Kopfzeile befinden sich drei Registerkarten:
 
 - **IP-Adressen**: dieselbe Tabelle, die oben unter *IP-Adressentabelle öffnen* beschrieben wurde.
-  Nachdem eine Netzwerkdefinition gespeichert wurde, wird die Tabelle automatisch mit reservierten Einträgen (der Netzwerkadresse selbst, dem Standard-Router und der Broadcast-Adresse) sowie allen von Ihnen zugewiesenen Adressen vorbelegt.
-  Jede Zeile verfügt über eine Bleistift-Schaltfläche zum **Bearbeiten**; die Spalte **Konfiguration** zeigt einen farbigen Indikator (z. B. einen schwarzen Balken für *Netzwerkadresse*) sowie einen Statustext an.
+    Nachdem eine Netzwerkdefinition gespeichert wurde, wird die Tabelle automatisch mit reservierten Einträgen (der Netzwerkadresse selbst, dem Standard-Router und der Broadcast-Adresse) sowie allen von Ihnen zugewiesenen Adressen vorbelegt.
+    Jede Zeile verfügt über eine Bleistift-Schaltfläche zum **Bearbeiten**; die Spalte **Konfiguration** zeigt einen farbigen Indikator (z. B. einen schwarzen Balken für *Netzwerkadresse*) sowie einen Statustext an.
 - **DHCP-Bereiche**: Für dieses Netzwerk definierte, von DHCP verwaltete Adressbereiche.
 - **Netzwerke**: Die Subnetze des Netzwerks.
 
@@ -81,7 +81,7 @@ Unterhalb der Tabelle auf der Registerkarte *IP-Adressen* befindet sich der Absc
 
 - Eine Tabelle **Verwendung von IP-Adressen** mit den Zeilen **Gesamt**, **In DHCP-Bereichen**, **Nicht in DHCP-Bereichen** und den Spalten **IP-Adressen** / **Gesamt** / **Verwendet** / **Verwendungsanteil**.
 - Ein **Donut-Chart** auf der rechten Seite, das dieselbe Aufschlüsselung visualisiert.
-  Die Legende des Diagramms entspricht den Zeilen der Tabelle; die Segmente füllen sich, sobald Adressen zugewiesen werden, sodass ein leeres Netzwerk im Diagramm in einer einzigen neutralen Farbe dargestellt wird, während ein belegtes Netzwerk für jede Zeile eigene Segmente anzeigt.
+    Die Legende des Diagramms entspricht den Zeilen der Tabelle; die Segmente füllen sich, sobald Adressen zugewiesen werden, sodass ein leeres Netzwerk im Diagramm in einer einzigen neutralen Farbe dargestellt wird, während ein belegtes Netzwerk für jede Zeile eigene Segmente anzeigt.
 - Ein Umschaltknopf **Ausblenden ⌄** / **Einblenden ⌄** in der Abschnittsüberschrift blendet das gesamte Fenster ein oder aus.
 
 ## Rechte

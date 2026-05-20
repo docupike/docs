@@ -24,8 +24,8 @@ In der Schublade sind zwei nebeneinander angeordnete Listen zu sehen.
 
 - Der Titel der Schublade lautet **Voreinstellung konfigurieren**, ganz rechts befindet sich eine Schaltfläche **Schließen** (×).
 - Unterhalb des Titels wird der Name der aktiven Voreinstellung angezeigt (zum Beispiel **Standard der Klasse**), gefolgt von:
-  - **Voreinstellung umbenennen**: Bleistift-Symbol.
-  - **Löschen**: Papierkorb-Symbol (nur für benutzerdefinierte Voreinstellungen aktiviert, nicht für integrierte).
+    - **Voreinstellung umbenennen**: Bleistift-Symbol.
+    - **Löschen**: Papierkorb-Symbol (nur für benutzerdefinierte Voreinstellungen aktiviert, nicht für integrierte).
 - Ein Kombinationsfeld für den Klassenkontext (z. B. **Alle Attribute ⌄**) und ein Eingabefeld **Nach Attributen suchen** filtern die in den Listen angezeigten Elemente.
 
 ### Linke Liste, verfügbare Attribute (n)
@@ -42,9 +42,9 @@ Die derzeit in der Voreinstellung enthaltenen Attribute, in der Reihenfolge ihre
 
 - In jeder Zeile befindet sich eine kleine **× (Schließen)**-Schaltfläche, mit der das Attribut aus der Voreinstellung entfernt wird.
 - Oben rechts in der Liste befinden sich drei Schaltflächen zum Anordnen:
-  - **↕**: Die ausgewählte Zeile nach oben oder unten verschieben.
-  - **↑-Leiste**: Die ausgewählte Zeile an den Anfang verschieben.
-  - **↓-Leiste**: Die ausgewählte Zeile an das Ende verschieben.
+    - **↕**: Die ausgewählte Zeile nach oben oder unten verschieben.
+    - **↑-Leiste**: Die ausgewählte Zeile an den Anfang verschieben.
+    - **↓-Leiste**: Die ausgewählte Zeile an das Ende verschieben.
 - Die Reihen können auch per **Drag & Drop** neu angeordnet werden: Jede Reihe ist`draggable`  und kann direkt angefasst werden.
 
 ### Ganz unten in der Schublade

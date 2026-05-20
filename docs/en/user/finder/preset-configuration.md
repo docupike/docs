@@ -24,8 +24,8 @@ The drawer shows two side-by-side lists.
 
 - The drawer title is **Configure preset** with a **Close** (×) button at the far right.
 - Below the title the active preset name is shown (for example **Class default**), followed by:
-  - **Rename preset**: pencil icon.
-  - **Delete**: trash icon (only enabled for custom presets, not built-ins).
+    - **Rename preset**: pencil icon.
+    - **Delete**: trash icon (only enabled for custom presets, not built-ins).
 - A class-context combobox (for example **All attributes ⌄**) and a **Search for attributes** input filter what appears in the lists.
 
 ### Left list, Available attributes (n)
@@ -42,9 +42,9 @@ The attributes currently in the preset, in display order.
 
 - Each row shows a small **× (Close)** action that removes the attribute from the preset.
 - Three reorder buttons sit at the top right of the list:
-  - **↕**: move the selected row up or down.
-  - **↑-bar**: move the selected row to the top.
-  - **↓-bar**: move the selected row to the bottom.
+    - **↕**: move the selected row up or down.
+    - **↑-bar**: move the selected row to the top.
+    - **↓-bar**: move the selected row to the bottom.
 - Rows can also be reordered with **drag and drop**: every row is `draggable` and can be picked up directly.
 
 ### Bottom of the drawer

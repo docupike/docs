@@ -22,9 +22,9 @@ Filters are temporary by default; they apply only to the current view.
 When you want to re-use a search later, store it.
 
 - A **saved search** keeps the term, the filters, and the active column preset under a name and is private to your user.
-  See [Save search](saved-views.md).
+    See [Save search](saved-views.md).
 - A **report** is a stored filter and column set, accessible via [Report Manager](../reporting/report-manager.md).
-  Reports can be shared and run repeatedly.
+    Reports can be shared and run repeatedly.
 
 ## Choosing the right tool
 

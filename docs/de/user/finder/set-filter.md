@@ -35,7 +35,7 @@ Bei Attributen mit begrenzten Auswahlmöglichkeiten wird das Eingabefeld zu eine
 ## Schaltflächen
 
 - **Ergebnisse anzeigen**: Wendet alle von Ihnen festgelegten Filter an und schließt das Dialogfeld.
-  Die Schaltfläche ist deaktiviert, bis mindestens ein Filter einen Wert enthält.
+    Die Schaltfläche ist deaktiviert, bis mindestens ein Filter einen Wert enthält.
 - **Abbrechen**: Schließt das Dialogfeld, ohne die Tabelle zu ändern.
 
 ## Filter kombinieren

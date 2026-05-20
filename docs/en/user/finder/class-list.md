@@ -10,16 +10,16 @@ Three controls sit below the header:
 
 - **Sort 9-0**: toggles between alphabetical (A,Z) sort and reverse sort.
 - A **show/hide empty classes** toggle (eye icon).
-  When the icon shows an open eye, classes with zero objects are visible.
-  When the icon shows an eye with a strike-through, empty classes are hidden, the tooltip then reads *Show empty classes* because that is what clicking will do.
+    When the icon shows an open eye, classes with zero objects are visible.
+    When the icon shows an eye with a strike-through, empty classes are hidden, the tooltip then reads *Show empty classes* because that is what clicking will do.
 - A **Search** icon.
-  Click it to open an inline search box and filter the class list by name.
-  Click the **×** inside the box to clear the filter.
+    Click it to open an inline search box and filter the class list by name.
+    Click the **×** inside the box to clear the filter.
 
 Below the controls comes the actual list:
 
 - **All objects**: a synthetic entry that selects every object across every class.
-  Highlighted by default.
+    Highlighted by default.
 - One row per class, showing the class icon, the class name, and the number of objects in that class.
 
 ## Filter the Finder by class

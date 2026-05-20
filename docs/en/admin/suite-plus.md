@@ -15,7 +15,7 @@ With an active bridge you get:
 - **Jump from a Suite+ asset to its i-doit up object** via an *Edit in i-doit up* action on the Suite+ asset detail page.
 - **Embedded i-doit up documentation inside Suite+**: a selection of attributes is shown live on the Suite+ asset detail page.
 - **Single sign-on** in both directions: a user logged in to Suite+ is automatically logged in to i-doit up on jump, and vice-versa.
-  The user's i-doit up rights and permissions apply.
+    The user's i-doit up rights and permissions apply.
 
 The exact catalogue of synced objects, plus the field-level mapping, is defined by the middleware and the Suite+ side; treat the bullets above as the user-visible contract.
 

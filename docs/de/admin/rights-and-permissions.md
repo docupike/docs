@@ -3,10 +3,10 @@
 i-doit up nutzt zwei sich ergänzende Konzepte, um zu steuern, was Benutzer tun können.
 
 - **Rechte** sind globale Kennzeichen, die festlegen, auf welche Benutzeroberflächen und Massenaktionen ein Benutzer zugreifen darf.
-  Beispiele: *Benutzer verwalten*, *Mandanten verwalten*, *Kategorien verwalten*, *Konfiguration bearbeiten*.
-  Sie werden Rollen, Gruppen oder einzelnen Benutzern zugewiesen.
+    Beispiele: *Benutzer verwalten*, *Mandanten verwalten*, *Kategorien verwalten*, *Konfiguration bearbeiten*.
+    Sie werden Rollen, Gruppen oder einzelnen Benutzern zugewiesen.
 - **Berechtigungen** sind Regeln auf Objekt- und Klassenebene, die festlegen, was ein Benutzer an den Daten selbst lesen, bearbeiten, archivieren oder löschen darf.
-  Sie werden bei jeder Aktion ausgewertet und mit den Rechten kombiniert.
+    Sie werden bei jeder Aktion ausgewertet und mit den Rechten kombiniert.
 
 ## Wo man sie verwaltet
 

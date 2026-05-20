@@ -16,7 +16,7 @@ Mit aktiver Bridge erhalten Sie:
 - **Sprung vom Suite+-Asset zum i-doit-up-Objekt** über die Aktion *In i-doit up bearbeiten* auf der Suite+-Asset-Detailseite.
 - **Eingebettete i-doit-up-Dokumentation in Suite+**: ausgewählte Attribute werden live auf der Suite+-Asset-Detailseite eingeblendet.
 - **Single Sign-On** in beide Richtungen: Wer in Suite+ angemeldet ist, ist beim Sprung auch in i-doit up angemeldet und umgekehrt.
-  Ihre i-doit-up-Rechte und -Berechtigungen gelten.
+    Ihre i-doit-up-Rechte und -Berechtigungen gelten.
 
 Welche Objekte konkret synchronisiert werden und wie das Field-Mapping aussieht, definieren die Middleware und die Suite+-Seite.
 Die Liste oben beschreibt den für den Benutzer sichtbaren Vertrag.

@@ -17,9 +17,9 @@ The Finder has four regions:
 - **Search**: type in the top search box; press **Enter** to filter the table, see [Save search](saved-views.md) to save the result.
 - **Filter**: click **Filters** to apply attribute filters, see [Filter the Finder](set-filter.md).
 - **Pick a class**: click a class in the sidebar or use the *All classes* dropdown.
-  The page URL becomes `/finder?class=<id>` and a **★** star appears next to the class name for [favoriting](../basics/favorites.md).
+    The page URL becomes `/finder?class=<id>` and a **★** star appears next to the class name for [favoriting](../basics/favorites.md).
 - **Open an object**: click the right-arrow on a row.
-  The detail page loads at `/object/<id>/<category-id>`, see [Object details page](../basics/object-details.md).
+    The detail page loads at `/object/<id>/<category-id>`, see [Object details page](../basics/object-details.md).
 - **Edit attributes inline**: click any cell in the table to reveal the inline editor (pencil) and the *More options* (meatballs) menu.
 - **Bulk-edit**: tick rows and use the [Edit dropdown](bulk-actions.md).
 - **Customize columns**: click the *Edit* icon to open [Preset configuration](preset-configuration.md).

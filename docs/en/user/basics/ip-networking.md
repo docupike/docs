@@ -31,8 +31,8 @@ The category contains the following five attributes:
 4. Choose the **Network** the address belongs to.
 5. Enter the **IP address**.
 6. Optionally enter the **Subnetmask**.
-   You can write the value either as a plain number (`24`) or with a leading slash (`/24`).
-   Both notations are accepted.
+    You can write the value either as a plain number (`24`) or with a leading slash (`/24`).
+    Both notations are accepted.
 7. Save the entry.
 
 ## Network definition

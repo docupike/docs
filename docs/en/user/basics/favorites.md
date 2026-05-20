@@ -31,7 +31,7 @@ The class favorite control is shown next to the class name in the Finder header 
 To favor a class:
 
 1. In the Finder, click the class in the left sidebar (for example **Server**).
-   The URL updates to `/finder?class=<class-id>` and the heading next to the *New object* button changes from *All objects* to the class name (for example **Server**).
+    The URL updates to `/finder?class=<class-id>` and the heading next to the *New object* button changes from *All objects* to the class name (for example **Server**).
 2. Click the outlined **★** star icon next to the heading.
 
 The star fills in once the class is favored.

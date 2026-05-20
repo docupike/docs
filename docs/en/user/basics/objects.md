@@ -15,7 +15,7 @@ An object has:
 ## Day-to-day workflows
 
 - **Browse and find objects** in the [Finder](../finder/class-list.md).
-  Filter the list down with [Set filter](../finder/set-filter.md) or save a search via [Save search](../finder/saved-views.md).
+    Filter the list down with [Set filter](../finder/set-filter.md) or save a search via [Save search](../finder/saved-views.md).
 - **Add an object** with [Create an object](create-object.md).
 - **Read and edit a single object** on its [details page](object-details.md).
 - **Apply changes to many objects at once** with [bulk actions](../finder/bulk-actions.md).

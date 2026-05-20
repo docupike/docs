@@ -18,7 +18,7 @@ Zwischen **Add-ons** und **Abmelden** sitzt eine schmale horizontale Trennlinie,
 
 - Das Menü schließt sich, wenn Sie außerhalb des Panels klicken oder **Escape** drücken.
 - Der Buchstabe auf dem Avatar ist der erste Buchstabe Ihres Vornamens (oder Benutzernamens).
-  Die Farbe wird aus Ihrem Konto abgeleitet und bleibt sitzungsübergreifend stabil.
+    Die Farbe wird aus Ihrem Konto abgeleitet und bleibt sitzungsübergreifend stabil.
 
 ## Verwandte Einstiegspunkte
 

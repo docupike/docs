@@ -34,7 +34,7 @@ Die Benachrichtigung verfügt über zwei Aktionsschaltflächen:
 
 - **Filter**: Wendet einen temporären Filter an, sodass nur die soeben erstellten Objekte in der Finder-Liste verbleiben.
 - **Öffnen**: Öffnet direkt die [Detailseite](object-details.md) des Objekts.
-  Wenn Sie mehrere Objekte gleichzeitig erstellen, wird **Öffnen** ausgeblendet, da es kein einzelnes Objekt gibt, zu dem Sie navigieren könnten.
+    Wenn Sie mehrere Objekte gleichzeitig erstellen, wird **Öffnen** ausgeblendet, da es kein einzelnes Objekt gibt, zu dem Sie navigieren könnten.
 
 Das neue Objekt wird in der Finder-Liste unter seiner Klasse hinzugefügt.
 

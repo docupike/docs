@@ -31,8 +31,8 @@ Die Kategorie umfasst die folgenden fünf Attribute:
 4. Wählen Sie das **Netzwerk** aus, zu dem die Adresse gehört.
 5. Geben Sie die **IP-Adresse** ein.
 6. Geben Sie optional die **Subnetzmaske** ein.
-   Sie können den Wert entweder als reine Zahl (`24`) oder mit einem vorangestellten Schrägstrich (`/24`) eingeben.
-   Beide Schreibweisen werden akzeptiert.
+    Sie können den Wert entweder als reine Zahl (`24`) oder mit einem vorangestellten Schrägstrich (`/24`) eingeben.
+    Beide Schreibweisen werden akzeptiert.
 7. Speichern Sie den Eintrag.
 
 ## Netzwerkdefinition

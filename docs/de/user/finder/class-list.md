@@ -10,16 +10,16 @@ Unterhalb der Kopfzeile befinden sich drei Steuerelemente:
 
 - **Sortierung 9-0**: Wechselt zwischen alphabetischer Sortierung (A bis Z) und umgekehrter Sortierung.
 - Ein Schalter zum **Ein-/Ausblenden leerer Klassen** (Augensymbol).
-  Wenn das Symbol ein offenes Auge zeigt, sind Klassen ohne Objekte sichtbar.
-  Wenn das Symbol ein durchgestrichenes Auge anzeigt, sind leere Klassen ausgeblendet; der Tooltip lautet dann *Leere Klassen anzeigen*, da dies die Funktion des Klicks ist.
+    Wenn das Symbol ein offenes Auge zeigt, sind Klassen ohne Objekte sichtbar.
+    Wenn das Symbol ein durchgestrichenes Auge anzeigt, sind leere Klassen ausgeblendet; der Tooltip lautet dann *Leere Klassen anzeigen*, da dies die Funktion des Klicks ist.
 - Ein **Suchen**-Symbol.
-  Klicken Sie darauf, um ein Inline-Suchfeld zu öffnen und die Klassenliste nach Namen zu filtern.
-  Klicken Sie auf das **×** im Feld, um den Filter zu löschen.
+    Klicken Sie darauf, um ein Inline-Suchfeld zu öffnen und die Klassenliste nach Namen zu filtern.
+    Klicken Sie auf das **×** im Feld, um den Filter zu löschen.
 
 Unterhalb der Bedienelemente folgt die eigentliche Liste:
 
 - **Alle Objekte**: Ein synthetischer Eintrag, der alle Objekte aus allen Klassen auswählt.
-  Standardmäßig markiert.
+    Standardmäßig markiert.
 - Eine Zeile pro Klasse, in der das Klassensymbol, der Klassenname und die Anzahl der Objekte in dieser Klasse angezeigt werden.
 
 ## Den Finder nach Klassen filtern

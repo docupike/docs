@@ -48,8 +48,8 @@ The page header shows the network name, the class label, and the address range (
 Three tabs sit below the header:
 
 - **IP addresses**: the same table described in *Open the IP addresses table* above.
-  After a Network definition is saved, the table is pre-populated with reserved entries (the network address itself, the default router, and broadcast) plus any addresses you assign.
-  Each row has a pencil **Edit** action; the **Configuration** column shows a colored indicator (for example a black bar for *Network address*) plus a status text.
+    After a Network definition is saved, the table is pre-populated with reserved entries (the network address itself, the default router, and broadcast) plus any addresses you assign.
+    Each row has a pencil **Edit** action; the **Configuration** column shows a colored indicator (for example a black bar for *Network address*) plus a status text.
 - **DHCP scopes**: DHCP-managed ranges defined for this network.
 - **Networks**: the network's subnets.
 
@@ -80,7 +80,7 @@ A **Usage details** section sits below the table on the *IP addresses* tab and i
 
 - A **Usage of IP addresses** table with the rows **Total**, **In DHCP scopes**, **Not in DHCP scopes** and the columns **IP addresses** / **Total** / **Used** / **Usage %**.
 - A **donut chart** on the right that visualizes the same breakdown.
-  The chart's legend matches the table rows; segments fill in as addresses get assigned, so an empty network shows the chart in a single neutral color while a populated network shows distinct slices for each row.
+    The chart's legend matches the table rows; segments fill in as addresses get assigned, so an empty network shows the chart in a single neutral color while a populated network shows distinct slices for each row.
 - A **Hide ⌄** / **Show ⌄** toggle on the section header collapses or expands the whole panel.
 
 ## Rights

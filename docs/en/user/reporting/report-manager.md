@@ -31,9 +31,9 @@ Above the table:
 
 1. Click **Add +**.
 2. Pick the attributes you want to **filter by**.
-   You can use any attribute from any category as a filter; an object qualifies for the report if it matches every filter you set.
+    You can use any attribute from any category as a filter; an object qualifies for the report if it matches every filter you set.
 3. Pick the attributes you want to **show as columns**.
-   This works the same way as [Preset configuration](../finder/preset-configuration.md).
+    This works the same way as [Preset configuration](../finder/preset-configuration.md).
 4. Give the report a name and save.
 
 The new report appears in the list and can be opened, edited, or duplicated.

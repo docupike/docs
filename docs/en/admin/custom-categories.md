@@ -17,10 +17,10 @@ See [Rights and permissions](rights-and-permissions.md).
 2. Click **New category +** to open the [Category Builder](category-builder.md).
 3. Choose a **Name** and a **Category type**: *Single value* (one set of values per object) or *Multi value* (a table of entries).
 4. Add attributes.
-   Each attribute has a **Name** and a **Type** (text, number, date, boolean, single-select, object reference, …).
+    Each attribute has a **Name** and a **Type** (text, number, date, boolean, single-select, object reference, …).
 5. Save the category.
 6. Assign it to one or more [classes](../user/basics/classes.md).
-   The category only shows up on objects of those classes.
+    The category only shows up on objects of those classes.
 
 ## Editing a custom category
 

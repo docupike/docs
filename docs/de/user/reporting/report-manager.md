@@ -31,9 +31,9 @@ Die Seite besteht aus einer einzigen Tabelle innerhalb einer Karte mit dem Titel
 
 1. Klicken Sie auf **Hinzufügen +**.
 2. Wählen Sie die Attribute aus, nach denen Sie **filtern** möchten.
-   Sie können jedes Attribut aus jeder Kategorie als Filter verwenden; ein Objekt wird für den Bericht berücksichtigt, wenn es allen von Ihnen festgelegten Filtern entspricht.
+    Sie können jedes Attribut aus jeder Kategorie als Filter verwenden; ein Objekt wird für den Bericht berücksichtigt, wenn es allen von Ihnen festgelegten Filtern entspricht.
 3. Wählen Sie die Attribute aus, die Sie **als Spalten anzeigen** möchten.
-   Dies funktioniert genauso wie bei [Voreingestellte Konfiguration](../finder/preset-configuration.md).
+    Dies funktioniert genauso wie bei [Voreingestellte Konfiguration](../finder/preset-configuration.md).
 4. Geben Sie dem Bericht einen Namen und speichern Sie ihn.
 
 Der neue Bericht wird in der Liste angezeigt und kann geöffnet, bearbeitet oder dupliziert werden.
