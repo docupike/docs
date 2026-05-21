@@ -1,13 +1,13 @@
 # Suite+ bridge
 
-The **Suite+ bridge** keeps the objects in i-doit up and the assets in **Suite+**, the separate GRC product by Synetics, in step.
+The **Suite+ bridge** keeps the objects in i-doit up and the assets in **Suite+**, the separate GRC product by i-doit GmbH, in step.
 Once the bridge is connected for your tenant, objects you create in i-doit up appear as assets in Suite+ and assets you create in Suite+ appear as i-doit up objects, so the same items do not need to be maintained in two places.
 
 This page describes the i-doit up side of the bridge, the *Suite+* settings surface, the per-object jump action, the single-sign-on behavior, and how data flows in both directions.
 
 ## What the bridge does
 
-The bridge is a Synetics-operated middleware that connects one i-doit up tenant to one Suite+ workspace.
+The bridge is a i-doit GmbH-operated middleware that connects one i-doit up tenant to one Suite+ workspace.
 With an active bridge you get:
 
 - **Asset / object sync** in both directions, kept in step by webhook-driven create / update / delete events.
@@ -23,7 +23,6 @@ The exact catalogue of synced objects, plus the field-level mapping, is defined 
 
 Open the [user menu](../user/basics/user-menu.md) (avatar at the top-right) → **Settings**.
 At the bottom of the left sidebar, below *Administration*: sits the **Suite+** group with a single entry **Settings**.
-The page lives at `/a/synetics/suite-plus/` and carries the heading *Settings of i-doit up <-> Suite+*.
 
 Like every other settings surface, the page is scoped to the active tenant, see [Switch between tenants](../user/basics/tenant-switcher.md).
 
@@ -52,7 +51,7 @@ Day-to-day sync runs entirely on webhooks:
 - user and tenant create / update / delete events flow both ways (registered when the bridge add-on is installed).
 
 So once the bridge is connected, you should not need a manual sync.
-If your tenant ever drifts out of step, contact your Synetics representative.
+If your tenant ever drifts out of step, contact your i-doit GmbH representative.
 
 ## Per-object jump (Open in Suite+)
 
@@ -104,7 +103,7 @@ The bridge passes the locale (for example `_locale=de` or `_locale=en`) on every
 
 The *Suite+* sidebar group is contributed by the bridge add-on and is only visible on tenants that have the bridge licensed.
 If your tenant does not show the group, the URL above returns a *Page not found*: see [Empty states](../user/basics/empty-states.md).
-To activate the bridge, contact your Synetics representative; the underlying connection (endpoint URL, credentials) is *not* configured from this page.
+To activate the bridge, contact your i-doit GmbH representative; the underlying connection (endpoint URL, credentials) is *not* configured from this page.
 
 ## Further readings
 

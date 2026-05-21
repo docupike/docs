@@ -4,6 +4,7 @@
     "import": [
         "./node_modules/@cspell/dict-de-de/cspell-ext.json"
     ],
+    "allowCompoundWords": true,
     "minWordLength": 3,
     "dictionaries": [
         "de",

@@ -18,7 +18,7 @@ Diese werden nach der Installation des Add-ons unter **Berechtigungen > Add-ons*
 ## Ein Add-on installieren
 
 !!! Info
-    In der SaaS-Version von i-doit up wird die Installation von Add-ons von synetics übernommen.
+    In der SaaS-Version von i-doit up wird die Installation von Add-ons von i-doit GmbH übernommen.
     Wenden Sie sich an den Support, um ein Add-on anzufordern.
 
 Nach der Installation wird das Add-on automatisch registriert, und seine Menüeinträge, Widgets und CMDB-Strukturen stehen sofort zur Verfügung.
@@ -35,7 +35,7 @@ Durch das Deaktivieren eines Add-ons werden dessen Menüeinträge ausgeblendet u
 ## Rechte an Add-ons
 
 Add-ons beschränken den Zugriff auf ihre Funktionen mithilfe des Standardberechtigungssystems.
-Nach der Installation werden die add-onspezifischen Berechtigungen im Abschnitt **Berechtigungen > Add-ons** angezeigt.
+Nach der Installation werden die Add-on-spezifischen Berechtigungen im Abschnitt **Berechtigungen > Add-ons** angezeigt.
 
 Weisen Sie Benutzern, Gruppen oder Rollen Add-on-Rechte auf dieselbe Weise zu wie Standardrechte.
 Weitere Informationen finden Sie unter [Rechte und Berechtigungen](rights-and-permissions.md).
