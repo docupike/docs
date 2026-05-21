@@ -11,6 +11,10 @@ Sie deckt den Weg vom Download über die Konfiguration bis zum ersten Start ab u
 
 Getestet mit Version 3.1.0 auf Debian 13 (amd64).
 
+!!! info
+    Diese Seite beschreibt die **Self-Hosted-Installation** per Docker Compose.
+    Wenn Sie das **Suite+ Bundle** (Suite+ inklusive i-doit up) einrichten, folgen Sie stattdessen der [Suite+-Anleitung zur i-doit-up-Einrichtung](https://suiteplus-wikijs.i-doit.com/de/integration/i-doit-up-einrichtung).
+
 ## Voraussetzungen
 
 | Anforderung | Hinweis |
@@ -206,3 +210,4 @@ docker compose down --rmi all --volumes
 - [Abonnement, Abrechnung und Upgrade](../admin/subscription.md)
 - [Benutzerverwaltung](../admin/user-management.md)
 - [Rechte und Berechtigungen](../admin/rights-and-permissions.md)
+- [Suite+-Anleitung zur i-doit-up-Einrichtung](https://suiteplus-wikijs.i-doit.com/de/integration/i-doit-up-einrichtung): Installation als Teil des Suite+ Bundles

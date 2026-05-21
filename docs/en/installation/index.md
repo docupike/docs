@@ -25,6 +25,10 @@ Tested with version 3.1.0 on Debian 13 (amd64).
 
 A comfortable setup needs at least **4 CPU cores** and **6 GB RAM**.
 
+!!! info
+    This page describes the **self-hosted installation** via Docker Compose.
+    If you are setting up the **Suite+ bundle** (Suite+ including i-doit up), follow the [Suite+ guide to setting up i-doit up](https://suiteplus-wikijs.i-doit.com/de/integration/i-doit-up-einrichtung) instead.
+
 ## Step 1: Find the current version
 
 Fetch the current release identifier:
@@ -206,3 +210,4 @@ docker compose down --rmi all --volumes
 - [Subscription, billing, and upgrade](../admin/subscription.md)
 - [User management](../admin/user-management.md)
 - [Rights and permissions](../admin/rights-and-permissions.md)
+- [Suite+ guide to setting up i-doit up](https://suiteplus-wikijs.i-doit.com/de/integration/i-doit-up-einrichtung): installation as part of the Suite+ bundle.

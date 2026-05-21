@@ -5,6 +5,10 @@ Once the bridge is connected for your tenant, objects you create in i-doit up ap
 
 This page describes the i-doit up side of the bridge, the *Suite+* settings surface, the per-object jump action, the single-sign-on behavior, and how data flows in both directions.
 
+!!! info
+    This page describes the i-doit up side of a bridge that is **already set up**.
+    The initial installation of i-doit up as part of the Suite+ bundle runs through the [Suite+ guide to setting up i-doit up](https://suiteplus-wikijs.i-doit.com/de/integration/i-doit-up-einrichtung).
+
 ## What the bridge does
 
 The bridge is a i-doit GmbH-operated middleware that connects one i-doit up tenant to one Suite+ workspace.
@@ -112,4 +116,5 @@ To activate the bridge, contact your i-doit GmbH representative; the underlying 
 - [Notifications](../user/basics/notifications.md), the toast catalog where bridge events surface.
 - [Rights and permissions](rights-and-permissions.md), controls who can reach the Suite+ settings page.
 - [Object details page](../user/basics/object-details.md), host of the *Open in Suite+* widget.
+- [Suite+ guide to setting up i-doit up](https://suiteplus-wikijs.i-doit.com/de/integration/i-doit-up-einrichtung): installation of i-doit up as part of the Suite+ bundle.
 - [Suite+ documentation for the i-doit up bridge](https://suiteplus-wikijs.i-doit.com/de/integration/i-doit-up-bridge), the Suite+ side of the same integration.
