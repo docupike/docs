@@ -18,7 +18,7 @@ Diese werden nach der Installation des Add-ons unter **Berechtigungen > Add-ons*
 ## Ein Add-on installieren
 
 !!! Info
-    In der SaaS-Version von i-doit up wird die Installation von Add-ons von synetics übernommen.
+    In der SaaS-Version von i-doit up wird die Installation von Add-ons von i-doit GmbH übernommen.
     Wenden Sie sich an den Support, um ein Add-on anzufordern.
 
 Nach der Installation wird das Add-on automatisch registriert, und seine Menüeinträge, Widgets und CMDB-Strukturen stehen sofort zur Verfügung.

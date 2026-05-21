@@ -18,7 +18,7 @@ Open **Settings** from the user menu and go to **User management > Rights** to c
 ## Install an add-on
 
 !!! info
-    In the SaaS version of i-doit up, add-on installation is handled by Synetics.
+    In the SaaS version of i-doit up, add-on installation is handled by i-doit GmbH.
     Contact support to request an add-on.
 
 After installation, the add-on is automatically registered and its menu entries, widgets, and CMDB structures become available immediately.

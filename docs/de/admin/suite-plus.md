@@ -1,6 +1,6 @@
 # Suite+ Bridge
 
-Die **Suite+ Bridge** hält Objekte in i-doit up und Assets in **Suite+** (dem separaten GRC-Produkt von Synetics) synchron.
+Die **Suite+ Bridge** hält Objekte in i-doit up und Assets in **Suite+** (dem separaten GRC-Produkt von i-doit GmbH) synchron.
 Sobald die Bridge für Ihren Mandanten eingerichtet ist, erscheinen Objekte, die Sie in i-doit up anlegen, als Assets in Suite+, und Assets, die Sie in Suite+ anlegen, erscheinen als i-doit-up-Objekte.
 So müssen Sie dieselben Einträge nicht an zwei Stellen pflegen.
 
@@ -8,7 +8,7 @@ Diese Seite beschreibt die i-doit-up-Seite der Bridge: die *Suite+*-Einstellungs
 
 ## Was die Bridge leistet
 
-Die Bridge ist eine von Synetics betriebene Middleware, die einen i-doit-up-Mandanten mit einem Suite+-Workspace verbindet.
+Die Bridge ist eine von i-doit GmbH betriebene Middleware, die einen i-doit-up-Mandanten mit einem Suite+-Workspace verbindet.
 Mit aktiver Bridge erhalten Sie:
 
 - **Asset- und Objekt-Synchronisierung** in beide Richtungen, getrieben durch Webhooks bei Anlage, Aktualisierung und Löschung.
@@ -25,8 +25,6 @@ Die Liste oben beschreibt den für den Benutzer sichtbaren Vertrag.
 
 Öffnen Sie das [Benutzermenü](../user/basics/user-menu.md) (Avatar oben rechts) → **Einstellungen**.
 Am unteren Ende der linken Seitenleiste, unterhalb von *Verwaltung*, finden Sie die Gruppe **Suite+** mit dem einzigen Eintrag **Einstellungen**.
-
-Die Seite liegt unter `/a/synetics/suite-plus/` und trägt die Überschrift *Einstellungen von i-doit up <-> Suite+*.
 
 Wie jede andere Einstellungsoberfläche bezieht sich auch diese Seite auf den aktiven Mandanten; siehe [Mandant wechseln](../user/basics/tenant-switcher.md).
 
@@ -54,7 +52,7 @@ Der Sync läuft im Tagesbetrieb komplett über Webhooks:
 - Anlage, Änderung und Löschung von Benutzern und Mandanten fließen in beide Richtungen (die zugehörigen Webhooks werden bei der Installation des Bridge-Add-ons registriert).
 
 Solange die Bridge verbunden ist, sollten Sie nie manuell synchronisieren müssen.
-Sollte Ihr Mandant trotzdem aus dem Tritt geraten, wenden Sie sich an Ihren Synetics-Ansprechpartner.
+Sollte Ihr Mandant trotzdem aus dem Tritt geraten, wenden Sie sich an Ihren i-doit GmbH-Ansprechpartner.
 
 ## Sprung zum Suite+-Objekt
 
@@ -106,7 +104,7 @@ Die Bridge übergibt bei jedem Datenabruf das Locale (zum Beispiel `_locale=de` 
 
 Die Sidebar-Gruppe *Suite+* wird vom Bridge-Add-on beigesteuert und ist nur auf Mandanten sichtbar, für die die Bridge lizenziert ist.
 Zeigt Ihr Mandant die Gruppe nicht, liefert die URL oben *Page not found*; siehe [Leere Zustände](../user/basics/empty-states.md).
-Zum Aktivieren der Bridge wenden Sie sich an Ihren Synetics-Ansprechpartner; die zugrunde liegende Verbindung (Endpunkt-URL, Credentials) wird *nicht* von dieser Seite aus konfiguriert.
+Zum Aktivieren der Bridge wenden Sie sich an Ihren i-doit GmbH-Ansprechpartner; die zugrunde liegende Verbindung (Endpunkt-URL, Credentials) wird *nicht* von dieser Seite aus konfiguriert.
 
 ## Siehe auch
 
