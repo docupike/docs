@@ -8,7 +8,7 @@ pipeline {
         REGISTRY_DOMAIN = 'registry.on.ops.docupike.net'
         REGISTRY_PREFIX = "${REGISTRY_DOMAIN}/"
         SSH_KEY_DOCS = '/usr/local/share/jenkins-agent/jenkins-ops'
-        TEAMS_WEBHOOK = credentials('teams-webhook-tops')
+        GOOGLE_CHAT_WEBHOOK = credentials('google-chat-webhook-jenkins')
     }
     stages {
         stage('Setup') {
@@ -31,24 +31,16 @@ pipeline {
         always {
             sh('docker compose down --remove-orphans --volumes')
             deleteDir()
-        }
-        failure {
-            office365ConnectorSend webhookUrl: '${env.TEAMS_WEBHOOK}',
-                status: "${currentBuild.currentResult.toLowerCase()}",
-                message: 'Jenkins kindly asks for your attention',
-                adaptiveCards: true
-        }
-        unstable {
-            office365ConnectorSend webhookUrl: '${env.TEAMS_WEBHOOK}',
-                status: "${currentBuild.currentResult.toLowerCase()}",
-                message: 'Jenkins kindly asks for your attention',
-                adaptiveCards: true
-        }
-        aborted {
-            office365ConnectorSend webhookUrl: '${env.TEAMS_WEBHOOK}',
-                status: "${currentBuild.currentResult.toLowerCase()}",
-                message: 'Jenkins kindly asks for your attention',
-                adaptiveCards: true
+            googlechatnotification(
+                url: "${env.GOOGLE_CHAT_WEBHOOK}",
+                notifyAborted: true,
+                notifyFailure: true,
+                notifyNotBuilt: true,
+                notifyUnstable: true,
+                message:
+                    "<${env.BUILD_URL}|${currentBuild.fullDisplayName}> " +
+                    "*${currentBuild.currentResult}*"
+            )
         }
     }
 }
