@@ -6,6 +6,10 @@ So müssen Sie dieselben Einträge nicht an zwei Stellen pflegen.
 
 Diese Seite beschreibt die i-doit-up-Seite der Bridge: die *Suite+*-Einstellungsoberfläche, den Sprung zum Suite+-Objekt, das Single-Sign-On-Verhalten und den Datenfluss in beide Richtungen.
 
+!!! info
+    Diese Seite beschreibt die i-doit-up-Seite einer **bereits eingerichteten** Bridge.
+    Die initiale Installation von i-doit up als Teil des Suite+ Bundles erfolgt über die [Suite+-Anleitung zur i-doit-up-Einrichtung](https://suiteplus-wikijs.i-doit.com/de/integration/i-doit-up-einrichtung).
+
 ## Was die Bridge leistet
 
 Die Bridge ist eine von i-doit GmbH betriebene Middleware, die einen i-doit-up-Mandanten mit einem Suite+-Workspace verbindet.
@@ -113,4 +117,5 @@ Zum Aktivieren der Bridge wenden Sie sich an Ihren i-doit GmbH-Ansprechpartner; 
 - [Benachrichtigungen](../user/basics/notifications.md): hier erscheinen Bridge-Toasts.
 - [Rechte und Berechtigungen](rights-and-permissions.md): regeln, wer die Suite+-Einstellungsseite öffnen darf.
 - [Objektdetailseite](../user/basics/object-details.md): Host des Widgets *In Suite+ öffnen*.
+- [Suite+-Anleitung zur i-doit-up-Einrichtung](https://suiteplus-wikijs.i-doit.com/de/integration/i-doit-up-einrichtung): Installation von i-doit up als Teil des Suite+ Bundles.
 - [Suite+-Dokumentation zur i-doit up Bridge](https://suiteplus-wikijs.i-doit.com/de/integration/i-doit-up-bridge): die Suite+-Seite derselben Integration.
