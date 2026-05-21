@@ -15,7 +15,7 @@ Zeigt die aktuelle Stufe (z. B. *Free*, *Standard*, *Plus*) und die damit verbun
 
 ### Rechnungsstellung
 
-Die **Rechnungs**-Karte wird angezeigt:
+Die **Rechnungs-Karte** wird angezeigt:
 
 - die hinterlegte **Zahlungsmethode** (Kreditkarte, SEPA-Einzugsermächtigung, Rechnung, je nach Region);
 - die auf jeder Rechnung angegebene **Rechnungsadresse**;

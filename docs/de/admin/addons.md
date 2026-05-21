@@ -35,7 +35,7 @@ Durch das Deaktivieren eines Add-ons werden dessen Menüeinträge ausgeblendet u
 ## Rechte an Add-ons
 
 Add-ons beschränken den Zugriff auf ihre Funktionen mithilfe des Standardberechtigungssystems.
-Nach der Installation werden die add-onspezifischen Berechtigungen im Abschnitt **Berechtigungen > Add-ons** angezeigt.
+Nach der Installation werden die Add-on-spezifischen Berechtigungen im Abschnitt **Berechtigungen > Add-ons** angezeigt.
 
 Weisen Sie Benutzern, Gruppen oder Rollen Add-on-Rechte auf dieselbe Weise zu wie Standardrechte.
 Weitere Informationen finden Sie unter [Rechte und Berechtigungen](rights-and-permissions.md).
