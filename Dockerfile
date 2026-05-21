@@ -1,4 +1,4 @@
-FROM ubuntu:questing-20251217
+FROM ubuntu:resolute-20260421
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG HTTP_PROXY
@@ -27,7 +27,7 @@ RUN apt-get update; \
         locales \
         lsb-release \
         # Required by npm-groovy-lint:
-        openjdk-17-jre \
+        openjdk-21-jre \
         openssh-client \
         openssl \
         python3 \
@@ -84,7 +84,7 @@ RUN curl -OfsSL \
 
 # Docker:
 # renovate: datasource=github-releases depName=moby/moby
-ARG DOCKER_VERSION=29.0.4
+ARG DOCKER_VERSION=29.5.2
 RUN curl -fsSL \
         https://download.docker.com/linux/ubuntu/gpg | \
         gpg --dearmor > /etc/apt/keyrings/docker.gpg; \
@@ -110,7 +110,7 @@ RUN curl -fsSL \
 
 # Docker Compose:
 # renovate: datasource=github-releases depName=docker/compose
-ARG DOCKER_COMPOSE_VERSION=2.40.3
+ARG DOCKER_COMPOSE_VERSION=5.1.4
 RUN curl -OfsSL \
         "https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-x86_64"; \
     curl -OfsSL \
@@ -126,7 +126,7 @@ RUN curl -OfsSL \
 
 # editorconfig-checker (ec):
 # renovate: datasource=github-releases depName=editorconfig-checker/editorconfig-checker
-ARG EC_VERSION=3.4.1
+ARG EC_VERSION=3.6.1
 RUN curl -OfsSL \
         "https://github.com/editorconfig-checker/editorconfig-checker/releases/download/v${EC_VERSION}/ec-linux-amd64.tar.gz"; \
     tar -xzf ec-linux-amd64.tar.gz; \
@@ -137,7 +137,7 @@ RUN curl -OfsSL \
 
 # gitleaks:
 # renovate: datasource=github-releases depName=gitleaks/gitleaks
-ARG GITLEAKS_VERSION=8.29.1
+ARG GITLEAKS_VERSION=8.30.1
 RUN curl -OfsSL \
         "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"; \
     curl -OfsSL \
@@ -156,9 +156,9 @@ RUN curl -OfsSL \
 
 # Node.js and NPM:
 # renovate: datasource=github-releases depName=nodejs/node
-ARG NODE_VERSION=24.11.1
+ARG NODE_VERSION=24.15.0
 # renovate: datasource=github-releases depName=npm/cli
-ARG NPM_VERSION=11.6.3
+ARG NPM_VERSION=11.15.0
 RUN curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n \
     -o /usr/local/bin/n; \
     chmod 0755 /usr/local/bin/n; \
