@@ -1,4 +1,4 @@
-FROM ubuntu:resolute-20260421
+FROM ubuntu:resolute-20260610
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG HTTP_PROXY
