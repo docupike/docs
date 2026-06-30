@@ -95,6 +95,7 @@ nav:
       - Integrationen:
           - Suite+ Bridge: admin/suite-plus.md
           - servereye Integration: admin/servereye.md
+          - Model Context Protocol (MCP): admin/mcp.md
   - Entwicklerhandbuch:
       - API: dev/api.md
       - Add-ons:
