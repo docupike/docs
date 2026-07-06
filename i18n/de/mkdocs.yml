@@ -65,6 +65,13 @@ nav:
       - Documents Creator: user/documents-creator.md
       - Importe:
           - CSV: user/imports/csv.md
+      - Flows:
+          - Überblick: user/flows/index.md
+          - Auslöser, Bedingungen und Aktionen: user/flows/reference.md
+          - Auslöser – Anwendungsfälle: user/flows/triggers.md
+          - Bedingungen – Anwendungsfälle: user/flows/conditions.md
+          - Aktionen – Anwendungsfälle: user/flows/actions.md
+          - Durchgängiges Beispiel: user/flows/end-to-end.md
       - Anwendungsfälle:
           - Wie fange ich an?: user/usecases/how-to-start.md
           - Dokumentation und Namenskonventionen: user/usecases/it-documentation-and-naming-conventions.md
