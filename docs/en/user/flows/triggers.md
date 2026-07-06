@@ -17,8 +17,7 @@ single click.
 
 - Choose the **Button** trigger and set **Button name** to "Issue notebook".
 - Optionally assign a button group ("IT onboarding") and an icon.
-- Under **Where the button appears**, choose the visibility: all objects, selected object classes, or
-  selected objects — and optionally limit it to specific category views.
+- Under **Where the button appears**, choose the visibility: all objects, selected object classes, or selected objects — and optionally limit it to specific category views.
 
 [![The Button trigger with name, icon, groups, and placement options](../../img/screenshots/flows/trigger-button.png)](../../img/screenshots/flows/trigger-button.png)
 **Button trigger:** name, icon, groups, and placement and visibility options.
@@ -38,10 +37,8 @@ single click.
 
 **Scenario:** whenever an object is created anywhere, an external compliance system should be notified.
 
-- Choose the **Object event** trigger and select the **Created** event (others: updated, deleted, archived,
-  restored).
-- Under **Add event to**, set the scope: all objects, selected object classes, or selected objects (the last
-  option is not offered for **Created**).
+- Choose the **Object event** trigger and select the **Created** event (others: updated, deleted, archived, restored).
+- Under **Add event to**, set the scope: all objects, selected object classes, or selected objects (the last option is not offered for **Created**).
 
 [![The Object event trigger with event type and object scope](../../img/screenshots/flows/trigger-object.png)](../../img/screenshots/flows/trigger-object.png)
 **Object event trigger:** the event type and the affected object scope.
@@ -50,10 +47,8 @@ single click.
 
 **Scenario:** when an entry in the network category is created or updated, a follow-up step should run.
 
-- Choose the **Category event** trigger and select the events (created, updated, deleted) under
-  **Run when a category entry is…**.
-- Limit **Categories** (empty means any category); then add individual **Attributes** as a condition (for
-  created and updated events).
+- Choose the **Category event** trigger and select the events (created, updated, deleted) under **Run when a category entry is…**.
+- Limit **Categories** (empty means any category); then add individual **Attributes** as a condition (for created and updated events).
 
 [![The Category event trigger with events and category or attribute scope](../../img/screenshots/flows/trigger-category.png)](../../img/screenshots/flows/trigger-category.png)
 **Category event trigger:** events and the category or attribute scope.

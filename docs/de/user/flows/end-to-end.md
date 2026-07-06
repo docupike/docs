@@ -29,8 +29,7 @@ Wählen Sie die Aktion **API aufrufen**, Methode **POST**, die URL des Ticketsys
 Platzhaltern:
 
 ```json
-{ "objekt": "{{object-name}}", "id": "{{object-id}}",
-  "gemeldet_von": "{{users-name}}", "ticket": "#{{counter}}" }
+{ "objekt": "{{object-name}}", "id": "{{object-id}}", "gemeldet_von": "{{users-name}}", "ticket": "#{{counter}}" }
 ```
 
 ## Schritt 4: speichern und aktivieren

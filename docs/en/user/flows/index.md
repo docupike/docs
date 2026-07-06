@@ -40,10 +40,8 @@ hold the **Select Flow Operator** right, you can also choose which flow user the
 Access is governed by the standard i-doit up rights system under **User management > Rights > Add-on rights >
 Flows**. The add-on contributes two rights:
 
-- **Manage Flows** — full access to the add-on. Without it, the **Flows** entry is hidden and the add-on API
-  answers with a permission error. The admin role receives this right automatically on installation.
-- **Select Flow Operator** — lets a user choose which flow user a flow runs as, and opens the **Flow users**
-  settings page.
+- **Manage Flows** — full access to the add-on. Without it, the **Flows** entry is hidden and the add-on API answers with a permission error. The admin role receives this right automatically on installation.
+- **Select Flow Operator** — lets a user choose which flow user a flow runs as, and opens the **Flow users** settings page.
 
 The **Manage Flows** right governs access to the interface only. Whether an active flow runs depends solely
 on its trigger, regardless of who triggers it.

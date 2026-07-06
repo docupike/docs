@@ -14,8 +14,7 @@ reason in the Logs. See [Triggers, conditions, and actions](reference.md) for th
 **Scenario:** a flow should run only when the trigger object has a specific CMDB status or attribute value.
 
 - Choose the **Object-based** condition.
-- Build a rule in the filter builder with **Add filter** and **Select operation** (for example, "CMDB status
-  is in operation"); several filters are joined with _And_.
+- Build a rule in the filter builder with **Add filter** and **Select operation** (for example, "CMDB status is in operation"); several filters are joined with _And_.
 
 [![The object-based condition with a visual filter builder](../../img/screenshots/flows/condition-object.png)](../../img/screenshots/flows/condition-object.png)
 **Object-based condition:** a visual filter builder with _And_ logic and operations.

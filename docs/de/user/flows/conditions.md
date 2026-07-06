@@ -16,8 +16,7 @@ _Übersprungen_ mit Begründung im Log festgehalten. Die vollständige Referenz 
 Attributwert hat.
 
 - Wählen Sie die Bedingung **Objektbasiert**.
-- Bauen Sie eine Regel im Filterbauer mit **Filter hinzufügen** und **Operation wählen** (zum Beispiel
-  „CMDB-Status ist in Betrieb“); mehrere Filter werden mit _Und_ verknüpft.
+- Bauen Sie eine Regel im Filterbauer mit **Filter hinzufügen** und **Operation wählen** (zum Beispiel „CMDB-Status ist in Betrieb“); mehrere Filter werden mit _Und_ verknüpft.
 
 [![Die objektbasierte Bedingung mit visuellem Filterbauer](../../img/screenshots/flows/condition-object.png)](../../img/screenshots/flows/condition-object.png)
 **Objektbasierte Bedingung:** ein visueller Filterbauer mit _Und_-Verknüpfung und Operationen.
@@ -38,8 +37,7 @@ Attributwert hat.
 **Szenario:** Der Flow soll nur laufen, wenn ein Mitglied der Gruppe „IT-Team“ ihn auslöst.
 
 - Wählen Sie die Bedingung **Benutzer / Benutzergruppe**.
-- Wählen Sie Benutzer und Benutzergruppen aus der Liste (die Gruppenmitgliedschaft wird automatisch
-  aufgelöst).
+- Wählen Sie Benutzer und Benutzergruppen aus der Liste (die Gruppenmitgliedschaft wird automatisch aufgelöst).
 
 [![Die Benutzer- und Benutzergruppen-Bedingung](../../img/screenshots/flows/condition-user.png)](../../img/screenshots/flows/condition-user.png)
 **Benutzer- / Benutzergruppen-Bedingung:** grenzt ein, wer den Flow auslösen darf.

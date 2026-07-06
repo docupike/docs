@@ -16,8 +16,7 @@ aufrufen. Mehrere Aktionen laufen der Reihe nach. Die vollständige Referenz fin
 **Szenario:** Der Button-Flow legt ein Notebook an, dessen Titel einen Zähler und das Auslöser-Objekt
 enthält.
 
-- Wählen Sie die Aktion **Objekt anlegen** und die **Objektklasse** aus der durchsuchbaren Liste (jede Option
-  zeigt ihr Typ-Icon).
+- Wählen Sie die Aktion **Objekt anlegen** und die **Objektklasse** aus der durchsuchbaren Liste (jede Option zeigt ihr Typ-Icon).
 - Setzen Sie den **Objekttitel** mit Platzhaltern, zum Beispiel `Notebook {{counter}} für {{object-name}}`.
 - Setzen Sie Felder über **Attribute hinzufügen** (der Attribut-Picker gruppiert sie nach Kategorie).
 
@@ -28,10 +27,8 @@ enthält.
 
 **Szenario:** Bei einer Kategorie-Änderung soll ein Datum „zuletzt geprüft“ gesetzt werden.
 
-- Wählen Sie die Aktion **Objekt aktualisieren**. Wählen Sie unter **Aktion anwenden auf** entweder
-  **Im Auslöser referenziertes Objekt** (Standard) oder **Ausgewählte Objekte**.
-- Wählen Sie Attribute über den Picker; bei Datumsfeldern setzen Sie **Datum der Ausführung verwenden**. Eine
-  Mehrwert-Kategorie erhält pro Lauf einen neuen Eintrag.
+- Wählen Sie die Aktion **Objekt aktualisieren**. Wählen Sie unter **Aktion anwenden auf** entweder **Im Auslöser referenziertes Objekt** (Standard) oder **Ausgewählte Objekte**.
+- Wählen Sie Attribute über den Picker; bei Datumsfeldern setzen Sie **Datum der Ausführung verwenden**. Eine Mehrwert-Kategorie erhält pro Lauf einen neuen Eintrag.
 
 [![Die Aktion Objekt aktualisieren mit Ziel und Attributen](../../img/screenshots/flows/action-update.png)](../../img/screenshots/flows/action-update.png)
 **Objekt aktualisieren:** das Ziel (Auslöser-Objekt oder ausgewählte Objekte) und dessen Attribute.
@@ -50,10 +47,8 @@ enthält.
 
 **Szenario:** Ein zeitbasierter Flow sendet eine formatierte Erinnerung.
 
-- Wählen Sie die Aktion **E-Mail senden** und setzen Sie **Empfänger** (kommagetrennt) und einen **Betreff**
-  (beides Pflicht).
-- Schreiben Sie den **Text** im Markdown-Editor — links die Eingabe, rechts die Live-Vorschau. Betreff und
-  Text akzeptieren Platzhalter.
+- Wählen Sie die Aktion **E-Mail senden** und setzen Sie **Empfänger** (kommagetrennt) und einen **Betreff** (beides Pflicht).
+- Schreiben Sie den **Text** im Markdown-Editor — links die Eingabe, rechts die Live-Vorschau. Betreff und Text akzeptieren Platzhalter.
 
 [![Die Aktion E-Mail senden mit Markdown-Editor und Vorschau](../../img/screenshots/flows/action-email.png)](../../img/screenshots/flows/action-email.png)
 **E-Mail senden:** Empfänger, Betreff und ein Markdown-Editor mit Vorschau.
@@ -66,10 +61,8 @@ enthält.
 
 **Szenario:** Ein neu angelegtes Objekt wird per HTTP-POST an ein anderes System gemeldet.
 
-- Wählen Sie die Aktion **API aufrufen** und setzen Sie die **Methode** (GET, POST, PUT, PATCH, DELETE) und
-  die **URL**.
-- Füllen Sie den **Body** mit Platzhaltern, zum Beispiel `{"neu":"{{object-name}}","id":"{{object-id}}"}`.
-  Ausgehende Aufrufe lassen sich über einen Proxy leiten.
+- Wählen Sie die Aktion **API aufrufen** und setzen Sie die **Methode** (GET, POST, PUT, PATCH, DELETE) und die **URL**.
+- Füllen Sie den **Body** mit Platzhaltern, zum Beispiel `{"neu":"{{object-name}}","id":"{{object-id}}"}`. Ausgehende Aufrufe lassen sich über einen Proxy leiten.
 
 [![Die Aktion API aufrufen mit Methode, URL und Body](../../img/screenshots/flows/action-callapi.png)](../../img/screenshots/flows/action-callapi.png)
 **API aufrufen:** die Methode, die URL und ein optionaler Body mit Platzhaltern.

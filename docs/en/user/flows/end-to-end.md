@@ -28,8 +28,7 @@ placement **Any object** (the button appears on every object).
 Choose the **Call API** action, method **POST**, the ticket-system URL, and a body with placeholders:
 
 ```json
-{ "object": "{{object-name}}", "id": "{{object-id}}",
-  "reported_by": "{{users-name}}", "ticket": "#{{counter}}" }
+{ "object": "{{object-name}}", "id": "{{object-id}}", "reported_by": "{{users-name}}", "ticket": "#{{counter}}" }
 ```
 
 ## Step 4: save and activate

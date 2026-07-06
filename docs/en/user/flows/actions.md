@@ -14,8 +14,7 @@ in order. See [Triggers, conditions, and actions](reference.md) for the full ref
 
 **Scenario:** the button flow creates a notebook whose title contains a counter and the trigger object.
 
-- Choose the **Create object** action and pick the **Object class** from the searchable list (each option
-  shows its type icon).
+- Choose the **Create object** action and pick the **Object class** from the searchable list (each option shows its type icon).
 - Set the **Object title** with placeholders, for example `Notebook {{counter}} for {{object-name}}`.
 - Use **Add attributes** to set fields (the attribute picker groups them by category).
 
@@ -26,10 +25,8 @@ in order. See [Triggers, conditions, and actions](reference.md) for the full ref
 
 **Scenario:** on a category change, a "last reviewed" date should be set.
 
-- Choose the **Update object** action. Under **Apply action to**, pick **Object referred to in trigger**
-  (default) or **Selected objects**.
-- Select attributes through the picker; for date fields, tick **Use date of execution**. A multi-value
-  category gains a new entry per run.
+- Choose the **Update object** action. Under **Apply action to**, pick **Object referred to in trigger** (default) or **Selected objects**.
+- Select attributes through the picker; for date fields, tick **Use date of execution**. A multi-value category gains a new entry per run.
 
 [![The Update object action with target and attributes](../../img/screenshots/flows/action-update.png)](../../img/screenshots/flows/action-update.png)
 **Update object:** the target (trigger object or selected objects) and its attributes.
@@ -48,10 +45,8 @@ in order. See [Triggers, conditions, and actions](reference.md) for the full ref
 
 **Scenario:** a time-based flow sends a formatted reminder.
 
-- Choose the **Send e-mail** action and set **Recipients** (comma-separated) and a **Subject** (both
-  required).
-- Write the **Body** in the Markdown editor — input on the left, live preview on the right. Subject and body
-  accept placeholders.
+- Choose the **Send e-mail** action and set **Recipients** (comma-separated) and a **Subject** (both required).
+- Write the **Body** in the Markdown editor — input on the left, live preview on the right. Subject and body accept placeholders.
 
 [![The Send e-mail action with a Markdown editor and preview](../../img/screenshots/flows/action-email.png)](../../img/screenshots/flows/action-email.png)
 **Send e-mail:** recipients, subject, and a Markdown editor with preview.
@@ -64,8 +59,7 @@ in order. See [Triggers, conditions, and actions](reference.md) for the full ref
 **Scenario:** a newly created object is reported to another system with an HTTP POST.
 
 - Choose the **Call API** action and set the **Method** (GET, POST, PUT, PATCH, DELETE) and the **URL**.
-- Fill the **Body** with placeholders, for example `{"new":"{{object-name}}","id":"{{object-id}}"}`. Outbound
-  calls can be routed through a proxy.
+- Fill the **Body** with placeholders, for example `{"new":"{{object-name}}","id":"{{object-id}}"}`. Outbound calls can be routed through a proxy.
 
 [![The Call API action with method, URL, and body](../../img/screenshots/flows/action-callapi.png)](../../img/screenshots/flows/action-callapi.png)
 **Call API:** the method, URL, and an optional body with placeholders.

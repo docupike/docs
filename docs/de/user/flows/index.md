@@ -12,8 +12,7 @@ lineare Kette:
 **Auslöser → Bedingungen (optional) → Aktion(en)**
 
 - **Auslöser** — was den Flow startet (genau einer, Pflicht).
-- **Bedingungen** — zusätzliche Voraussetzungen, die _alle_ erfüllt sein müssen, sonst wird der Lauf
-  übersprungen (optional).
+- **Bedingungen** — zusätzliche Voraussetzungen, die _alle_ erfüllt sein müssen, sonst wird der Lauf übersprungen (optional).
 - **Aktionen** — was der Flow tut (mindestens eine; mehrere Aktionen laufen von oben nach unten).
 
 Die Oberfläche folgt der Sprache von i-doit up (Deutsch oder Englisch) und erscheint unter **Add-ons** in der
@@ -44,11 +43,8 @@ läuft.
 Der Zugriff wird über das Rechtesystem von i-doit up gesteuert, unter **Benutzerverwaltung > Rechte >
 Add-on-Rechte > Flows**. Das Add-on bringt zwei Rechte mit:
 
-- **Flows verwalten** — Vollzugriff auf das Add-on. Ohne dieses Recht ist der Eintrag **Flows** ausgeblendet
-  und die Add-on-API antwortet mit einem Rechtefehler. Die Admin-Rolle erhält das Recht bei der Installation
-  automatisch.
-- **Flow-Operator wählen** — erlaubt die Wahl des Flow-Users, als der ein Flow läuft, und öffnet die Seite
-  **Flow-Users**.
+- **Flows verwalten** — Vollzugriff auf das Add-on. Ohne dieses Recht ist der Eintrag **Flows** ausgeblendet und die Add-on-API antwortet mit einem Rechtefehler. Die Admin-Rolle erhält das Recht bei der Installation automatisch.
+- **Flow-Operator wählen** — erlaubt die Wahl des Flow-Users, als der ein Flow läuft, und öffnet die Seite **Flow-Users**.
 
 Das Recht **Flows verwalten** steuert nur den Zugang zur Oberfläche. Ob ein aktiver Flow läuft, hängt allein
 von seinem Auslöser ab, unabhängig davon, wer ihn auslöst.
