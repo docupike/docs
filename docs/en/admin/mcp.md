@@ -53,10 +53,10 @@ You do not have to assemble the URL or headers by hand.
 ![The How to connect tab in i-doit up. Step 1 selects the connection method "Authorization header, Streamable HTTP (recommended)", step 2 has a field for the app token, and step 3 shows the generated "claude mcp add" terminal command and an equivalent .mcp.json config block, both pre-filled with the MCP server URL and the i-doit up tenant URL.](../img/admin/mcp-how-to-connect.png)
 
 1. In **Step 1**, leave the connection method on *Authorization header, Streamable HTTP (recommended)*.
-   Streamable HTTP is the current transport.
-   The dropdown also offers a legacy SSE method, see [Connection methods](#connection-methods) below.
+    Streamable HTTP is the current transport.
+    The dropdown also offers a legacy SSE method, see [Connection methods](#connection-methods) below.
 2. In **Step 2**, paste the [app token](#create-an-app-token) you created.
-   The token is only used to build the command and is never stored by the page.
+    The token is only used to build the command and is never stored by the page.
 3. In **Step 3**, copy either the one-line terminal command for Claude Code or the equivalent configuration block for a `.mcp.json` file or Claude Desktop.
 
 The generated command already contains your MCP server URL and your i-doit up URL.
@@ -64,22 +64,22 @@ The i-doit up URL is sent in the `X-Idoit-Url` header and identifies your tenant
 
 ```bash
 claude mcp add --transport http idoit https://mcp.example.com/mcp \
-  --header "Authorization: Bearer YOUR_APP_TOKEN" \
-  --header "X-Idoit-Url: https://your-instance.example.com"
+    --header "Authorization: Bearer YOUR_APP_TOKEN" \
+    --header "X-Idoit-Url: https://your-instance.example.com"
 ```
 
 ```json
 {
-  "mcpServers": {
-    "idoit": {
-      "type": "http",
-      "url": "https://mcp.example.com/mcp",
-      "headers": {
-        "Authorization": "Bearer YOUR_APP_TOKEN",
-        "X-Idoit-Url": "https://your-instance.example.com"
-      }
+    "mcpServers": {
+        "idoit": {
+            "type": "http",
+            "url": "https://mcp.example.com/mcp",
+            "headers": {
+                "Authorization": "Bearer YOUR_APP_TOKEN",
+                "X-Idoit-Url": "https://your-instance.example.com"
+            }
+        }
     }
-  }
 }
 ```
 

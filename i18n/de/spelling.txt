@@ -241,3 +241,6 @@ Tournamen
 Validierungsfehler
 Verlaufsansicht
 WSL
+MCP
+mcp
+claude
