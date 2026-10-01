@@ -118,3 +118,5 @@ Accounty
 MCP
 mcp
 Streamable
+EHOSTUNREACH
+ENOTFOUND
