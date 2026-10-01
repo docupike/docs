@@ -16,40 +16,27 @@ Der Node **i-doit up Actions** bietet die folgenden Aktionen:
 
 ## Voraussetzungen
 
-- Eine selbst betriebene n8n-Instanz, die Sie verwalten, zum Beispiel n8n in Docker.
+- Eine bestehende, selbst betriebene n8n-Instanz, die Sie verwalten, zum Beispiel n8n in Docker.
   In n8n Cloud sind die i-doit-up-Nodes derzeit nicht verfügbar.
+- Node.js 22 oder neuer mit npm auf dem Rechner, auf dem Sie das Node-Paket bauen.
 - Netzwerkzugriff von n8n auf Ihre i-doit-up-URL.
 - Ein i-doit-up-Benutzer, dessen Rechte alles abdecken, was der Workflow tun soll, siehe [Rechte und Berechtigungen](rights-and-permissions.md).
 
 ## Die i-doit-up-Nodes in n8n installieren
 
 Die i-doit-up-Nodes sind ein n8n-Node-Paket mit dem Namen `i-n8n-nodes`.
-n8n lädt das Paket als eigene Erweiterung (Custom Extension).
-Sie können entweder das Docker-Setup verwenden, das mit dem Paket geliefert wird, oder die Nodes in eine bestehende n8n-Instanz einbinden.
+n8n lädt das Paket als eigene Erweiterung (Custom Extension) aus einem Ordner, auf den die Umgebungsvariable `N8N_CUSTOM_EXTENSIONS` zeigt.
 
-### Docker-Setup des Pakets verwenden
-
-Das Paket enthält den Ordner `docker` mit einem Dockerfile und einer Compose-Datei.
-Damit bauen Sie ein n8n-Image, das die i-doit-up-Nodes bereits enthält.
-Führen Sie im Ordner des Pakets den folgenden Befehl aus:
-
-```bash
-docker compose -f docker/docker-compose.yml up --build
-```
-
-n8n lauscht danach auf Port 5678.
-Die Compose-Datei ist für einen lokalen Test unter `http://localhost:5678` eingerichtet.
-Für den produktiven Einsatz passen Sie `N8N_EDITOR_BASE_URL`, `WEBHOOK_URL` und `N8N_SECURE_COOKIE` an Ihre Umgebung an, siehe die [n8n-Dokumentation](https://docs.n8n.io).
-
-### Nodes in eine bestehende n8n-Instanz einbinden
-
-Für n8n in Docker bauen Sie ein eigenes Image auf Basis des offiziellen n8n-Images und kopieren das Paket hinein:
-
-1. Bauen Sie das Paket mit `npm ci`, `npm run build` und `npm pack`.
-   Das Ergebnis ist eine Datei wie `i-n8n-nodes-1.0.0.tgz`.
-2. Entpacken Sie die Datei in einen Ordner im n8n-Image, zum Beispiel `/home/node/i-n8n-nodes`.
+1. Bauen Sie das Paket im Ordner des Pakets mit `npm ci`, `npm run build` und `npm pack`.
+   Das Ergebnis ist die Datei `i-n8n-nodes-1.0.0.tgz`.
+2. Entpacken Sie die Datei in einen Ordner, den n8n lesen kann, zum Beispiel `/home/node/i-n8n-nodes`.
+   Das Archiv enthält einen Ordner `package`, dessen Inhalt in diesen Ordner gehört.
 3. Setzen Sie die Umgebungsvariable `N8N_CUSTOM_EXTENSIONS` auf diesen Ordner.
-4. Starten Sie n8n mit dem neuen Image.
+4. Starten Sie n8n neu.
+
+Für n8n in Docker bauen Sie ein eigenes Image auf Basis des offiziellen n8n-Images.
+Speichern Sie das folgende Dockerfile neben der Datei `i-n8n-nodes-1.0.0.tgz`.
+Ersetzen Sie `stable` durch die n8n-Version, die Sie aktuell betreiben.
 
 ```dockerfile
 FROM n8nio/n8n:stable
@@ -63,42 +50,50 @@ USER node
 ENV N8N_CUSTOM_EXTENSIONS=/home/node/i-n8n-nodes
 ```
 
+Bauen Sie das Image in diesem Ordner mit `docker build -t n8n-idoit-up .`.
+Starten Sie das neue Image anschließend mit demselben Volume und denselben Umgebungsvariablen wie Ihren bisherigen n8n-Container, damit Ihre Workflows und Credentials erhalten bleiben.
+
 Suchen Sie nach dem Neustart im Node-Bereich von n8n nach *i-doit up*.
-Der Node heißt **i-doit up Actions**, und der Credential-Typ heißt **i-doit up API**.
+Im Node-Bereich heißt der Eintrag **i-doit up Action Selector**, auf der Arbeitsfläche heißt der Node **i-doit up Actions**.
+Der Credential-Typ heißt **i-doit up API**.
 
 ## App-Token erstellen
 
 n8n authentifiziert sich mit einem **App-Token** von i-doit up.
 Ein Token gehört zu genau einem Benutzer und trägt dessen Rechte, erstellen Sie es also auf dem Konto, als das n8n handeln soll.
 
-1. Gehen Sie zu **Einstellungen → Benutzer** und öffnen Sie den Benutzer, als der n8n handeln soll.
-2. Wechseln Sie auf den Reiter **Apps** und klicken Sie auf **Add app**.
-3. Geben Sie einen Namen ein, zum Beispiel *n8n*, und klicken Sie auf **Save**.
-4. Klicken Sie im Dialog *Copy token* auf **Copy token** und bewahren Sie das Token sicher auf.
+1. Öffnen Sie oben rechts das Benutzermenü und wählen Sie **Einstellungen**.
+2. Wählen Sie **Benutzerverwaltung → Benutzer** und öffnen Sie den Benutzer, als der n8n handeln soll.
+3. Wählen Sie in der linken Navigation des Benutzers **Apps** und klicken Sie auf **App hinzufügen**.
+4. Geben Sie einen Namen ein, zum Beispiel *n8n*, und klicken Sie auf **Speichern**.
+5. Kopieren Sie das Token im folgenden Dialog und bewahren Sie es sicher auf.
 
-![Der Dialog Add app in i-doit up. Im Hintergrund ist der Reiter Apps eines Benutzers geöffnet, im Dialog steht im Feld Name der Wert "n8n", darunter die Buttons Cancel und Save.](../img/n8n/n8n_add_app.png)
+![Der Dialog Add app in i-doit up. Im Hintergrund ist die Seite Apps eines Benutzers geöffnet, im Dialog steht im Feld Name der Wert "n8n", darunter die Buttons Cancel und Save.](../img/n8n/n8n_add_app.png)
 
-![Der Dialog Copy token in i-doit up. Der Text lautet "Your token for app n8n screenshot was generated", darunter das maskierte Token und der Hinweis, dass das Token nur einmal angezeigt wird, mit den Buttons Copy token und Close.](../img/n8n/n8n_app_token.png)
+![Der Dialog Copy token in i-doit up. Der Text lautet "Your token for app n8n screenshot was generated", darunter das Token, im Screenshot maskiert, und der Hinweis, dass das Token nur einmal angezeigt wird, mit den Buttons Copy token und Close.](../img/n8n/n8n_app_token.png)
 
 Das Token wird **nur einmal** angezeigt.
 Wenn Sie es verlieren, löschen Sie die App und legen Sie eine neue an.
 
-Um n8n den Zugriff später zu entziehen, fahren Sie im Reiter **Apps** mit der Maus über die App, klicken Sie auf das Papierkorb-Symbol und bestätigen Sie *Delete Application*.
+Um n8n den Zugriff später zu entziehen, fahren Sie auf der Seite **Apps** mit der Maus über die App, klicken Sie auf das Papierkorb-Symbol und bestätigen Sie das Löschen.
 
-![Der Reiter Apps eines Benutzers in i-doit up mit dem Button Add app und einer Tabelle, die eine App mit dem Namen "n8n" enthält.](../img/n8n/n8n_apps_tab.png)
+![Die Seite Apps eines Benutzers in i-doit up mit dem Button Add app und einer Tabelle, die eine App mit dem Namen "n8n" enthält.](../img/n8n/n8n_apps_tab.png)
 
 Da das Token die Rechte des Benutzers trägt, verwenden Sie besser einen dedizierten Benutzer mit nur den Rechten, die der Workflow braucht, statt eines Administratorkontos.
 
 ## Credential in n8n anlegen
 
-1. Öffnen Sie in n8n die **Overview**, wechseln Sie auf den Reiter **Credentials** und klicken Sie auf **Create credential**.
-2. Suchen Sie nach **i-doit up API** und wählen Sie den Eintrag aus.
-3. Geben Sie unter **URL** die Basis-URL Ihrer eigenen i-doit-up-Instanz ein, zum Beispiel `https://your-instance.example.com`.
+1. Klicken Sie in n8n oben links auf **+** und wählen Sie **New credential**.
+   Alternativ öffnen Sie die **Overview**, wechseln auf den Reiter **Credentials** und klicken auf **Create credential**.
+   In einer neuen n8n-Instanz erscheint der Reiter **Credentials** erst, wenn ein Workflow oder ein Credential existiert.
+2. Suchen Sie nach **i-doit up API**, wählen Sie den Eintrag aus und klicken Sie auf **Continue**.
+3. Geben Sie unter **URL** die Basis-URL Ihrer i-doit-up-Instanz ohne abschließenden Schrägstrich ein, zum Beispiel `https://your-instance.example.com`.
 4. Fügen Sie unter **API Token** das App-Token ein.
 5. Klicken Sie auf **Save**.
 
 n8n testet das Credential beim Speichern.
 Der Test liest einen Mandanten über die i-doit-up-API, und n8n zeigt *Connection tested successfully* an, wenn URL und Token stimmen.
+Schlägt der Test fehl, zeigt n8n *Couldn't connect with these settings* an, und unter **More details** steht die Fehlermeldung.
 
 Der Screenshot zeigt im Feld **URL** die Adresse eines Testsystems.
 Tragen Sie dort stattdessen die URL Ihrer eigenen i-doit-up-Instanz ein.
@@ -112,9 +107,10 @@ Der Node sendet das Token bei jeder Anfrage im Header `X-API-TOKEN`.
 | Symptom | Ursache und Lösung |
 |---|---|
 | Der Test des Credentials schlägt mit *Unauthorized* fehl. | Das Token ist falsch oder die App wurde gelöscht. Legen Sie eine neue App an und fügen Sie das neue Token ein. |
-| Der Test des Credentials schlägt fehl, obwohl das Token stimmt. | Die URL ist falsch. Geben Sie nur die Basis-URL Ihrer i-doit-up-Instanz mit Protokoll ein, zum Beispiel `https://your-instance.example.com`, ohne API-Pfad. |
-| Der Test des Credentials schlägt mit einem Verbindungsfehler wie *EHOSTUNREACH*, *ENOTFOUND* oder einer Zeitüberschreitung fehl. | n8n erreicht Ihre i-doit-up-Instanz nicht. Prüfen Sie, ob eine Firewall oder ein Proxy die Verbindung vom n8n-Server zu Ihrer i-doit-up-URL blockiert. |
-| Der Test des Credentials ist erfolgreich, aber die i-doit-up-Nodes melden *The resource you are requesting could not be found*. | Die URL zeigt auf einen anderen Dienst oder endet mit mehr als einem Schrägstrich. Geben Sie die Basis-URL Ihrer i-doit-up-Instanz mit höchstens einem abschließenden Schrägstrich ein. |
+| Der Test des Credentials schlägt mit *Not Found* oder *ERR_INVALID_URL* fehl. | Die URL ist falsch. Geben Sie nur die Basis-URL Ihrer i-doit-up-Instanz mit Protokoll ein, zum Beispiel `https://your-instance.example.com`, ohne API-Pfad. |
+| Der Test des Credentials schlägt mit einem Verbindungsfehler wie *EHOSTUNREACH*, *ENOTFOUND*, *ECONNREFUSED* oder *ETIMEDOUT* fehl. | n8n erreicht Ihre i-doit-up-Instanz nicht. Prüfen Sie Hostnamen und Port in der URL und ob eine Firewall oder ein Proxy die Verbindung vom n8n-Server zu Ihrer i-doit-up-URL blockiert. |
+| Der Test des Credentials ist erfolgreich, aber die i-doit-up-Nodes melden *The resource you are requesting could not be found*. | Die URL zeigt auf einen anderen Dienst oder endet mit mehr als einem Schrägstrich. Geben Sie die Basis-URL Ihrer i-doit-up-Instanz ohne abschließenden Schrägstrich ein. |
+| Die i-doit-up-Nodes erscheinen nicht im Node-Bereich. | n8n hat das Paket nicht geladen. Prüfen Sie, ob `N8N_CUSTOM_EXTENSIONS` auf den Ordner zeigt, der die Datei `package.json` des Pakets enthält, und starten Sie n8n neu. |
 
 ## Siehe auch
 
