@@ -16,14 +16,32 @@ Der Node **i-doit up Actions** bietet die folgenden Aktionen:
 
 ## Voraussetzungen
 
-- Eine n8n-Instanz, die Sie selbst verwalten und die eigene Nodes laden kann, zum Beispiel ein selbst betriebenes n8n in Docker.
+- Eine selbst betriebene n8n-Instanz, die Sie verwalten, zum Beispiel n8n in Docker.
+  In n8n Cloud sind die i-doit-up-Nodes derzeit nicht verfügbar.
 - Netzwerkzugriff von n8n auf Ihre i-doit-up-URL.
 - Ein i-doit-up-Benutzer, dessen Rechte alles abdecken, was der Workflow tun soll, siehe [Rechte und Berechtigungen](rights-and-permissions.md).
 
 ## Die i-doit-up-Nodes in n8n installieren
 
-Die i-doit-up-Nodes sind ein n8n-Community-Node-Paket mit dem Namen `i-n8n-nodes`.
-Installieren Sie es als eigene Erweiterung (Custom Extension) in Ihrer n8n-Instanz.
+Die i-doit-up-Nodes sind ein n8n-Node-Paket mit dem Namen `i-n8n-nodes`.
+n8n lädt das Paket als eigene Erweiterung (Custom Extension).
+Sie können entweder das Docker-Setup verwenden, das mit dem Paket geliefert wird, oder die Nodes in eine bestehende n8n-Instanz einbinden.
+
+### Docker-Setup des Pakets verwenden
+
+Das Paket enthält den Ordner `docker` mit einem Dockerfile und einer Compose-Datei.
+Damit bauen Sie ein n8n-Image, das die i-doit-up-Nodes bereits enthält.
+Führen Sie im Ordner des Pakets den folgenden Befehl aus:
+
+```bash
+docker compose -f docker/docker-compose.yml up --build
+```
+
+n8n lauscht danach auf Port 5678.
+Die Compose-Datei ist für einen lokalen Test unter `http://localhost:5678` eingerichtet.
+Für den produktiven Einsatz passen Sie `N8N_EDITOR_BASE_URL`, `WEBHOOK_URL` und `N8N_SECURE_COOKIE` an Ihre Umgebung an, siehe die [n8n-Dokumentation](https://docs.n8n.io).
+
+### Nodes in eine bestehende n8n-Instanz einbinden
 
 Für n8n in Docker bauen Sie ein eigenes Image auf Basis des offiziellen n8n-Images und kopieren das Paket hinein:
 

@@ -16,14 +16,32 @@ The node **i-doit up Actions** offers the following actions:
 
 ## Prerequisites
 
-- An n8n instance that you administer and that can load custom nodes, for example a self-hosted n8n in Docker.
+- A self-hosted n8n instance that you administer, for example n8n in Docker.
+  The i-doit up nodes are currently not available in n8n Cloud.
 - Network access from n8n to your i-doit up URL.
 - An i-doit up user whose rights cover what the workflow should do, see [Rights and permissions](rights-and-permissions.md).
 
 ## Install the i-doit up nodes in n8n
 
-The i-doit up nodes are an n8n community node package called `i-n8n-nodes`.
-Install it as a custom extension in your n8n instance.
+The i-doit up nodes are an n8n node package called `i-n8n-nodes`.
+n8n loads the package as a custom extension.
+You can either use the Docker setup that comes with the package or add the nodes to an existing n8n instance.
+
+### Use the Docker setup of the package
+
+The package contains the folder `docker` with a Dockerfile and a compose file.
+They build an n8n image that already contains the i-doit up nodes.
+Run the following command in the package folder:
+
+```bash
+docker compose -f docker/docker-compose.yml up --build
+```
+
+n8n then listens on port 5678.
+The compose file is set up for a local test on `http://localhost:5678`.
+For productive use, adjust `N8N_EDITOR_BASE_URL`, `WEBHOOK_URL`, and `N8N_SECURE_COOKIE` to your environment, see the [n8n documentation](https://docs.n8n.io).
+
+### Add the nodes to an existing n8n instance
 
 For n8n in Docker, build your own image based on the official n8n image and copy the package into it:
 
