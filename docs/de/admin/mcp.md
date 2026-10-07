@@ -32,18 +32,11 @@ Der Eintrag **Logs** wird nur Benutzern angezeigt, die das Recht *MCP Logs acces
 
 Der Client authentifiziert sich mit einem i-doit-up-**App-Token**.
 Ein Token gehört zu einem Benutzer und trägt dessen Rechte, legen Sie es also auf dem Konto an, als das der KI-Client handeln soll.
+Verwenden Sie besser einen dedizierten Benutzer mit nur den nötigen Rechten statt eines Administratorkontos.
 
-1. Gehen Sie zu **Einstellungen → Benutzer** und öffnen Sie den Benutzer, als der der Client handeln soll.
-2. Wechseln Sie auf den Reiter **Apps** und klicken Sie auf **Add app**.
-3. Vergeben Sie einen Namen (zum Beispiel *Claude MCP*) und speichern Sie.
-4. Kopieren Sie das Token aus dem Dialog.
-
-Das Token wird **nur einmal** angezeigt.
-Wenn Sie es verlieren, löschen Sie die App und legen Sie eine neue an, um ein frisches Token zu erhalten.
-
-Das Token läuft nicht von selbst ab.
-Um einen verbundenen Client später zu widerrufen, löschen Sie seine App im Reiter **Apps** und bestätigen Sie *Delete Application*, das Token wird dann innerhalb weniger Minuten ungültig.
-Da das Token die Rechte des Benutzers trägt, verwenden Sie besser einen dedizierten Benutzer mit nur den nötigen Rechten statt eines Administratorkontos.
+[Erstellen Sie ein App-Token](app-tokens.md#app-token-erstellen) für diesen Benutzer, zum Beispiel mit dem Namen *Claude MCP*, und [kopieren Sie das Token](app-tokens.md#token-kopieren).
+Das Token wird nur einmal angezeigt.
+Um einen verbundenen Client später zu widerrufen, [löschen Sie seine App](app-tokens.md#app-loschen-und-token-widerrufen).
 
 ## KI-Client verbinden
 
@@ -145,5 +138,5 @@ Siehe [Rechte und Berechtigungen](rights-and-permissions.md).
 - [Add-ons](addons.md): Der MCP-Server wird als Add-on ausgeliefert und mit Ihrer i-doit-up-Instanz registriert.
 - [Rechte und Berechtigungen](rights-and-permissions.md): regeln, wer das Zugriffsprotokoll öffnen und leeren darf.
 - [Mandanten](tenants.md): jede i-doit-up-URL ist ein eigener MCP-Mandant mit eigenem Zugriffsprotokoll.
-- [Benutzerverwaltung](user-management.md): hier wird das App-Token auf einem Benutzerkonto erstellt.
+- [App-Tokens](app-tokens.md): App-Tokens erstellen, kopieren und löschen.
 - [Model Context Protocol](https://modelcontextprotocol.io): der offene Standard, den das Add-on implementiert.

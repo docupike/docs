@@ -32,18 +32,11 @@ The **Logs** entry is shown only to users who hold the *MCP Logs access* right, 
 
 The client authenticates with an i-doit up **app token**.
 A token belongs to one user and carries that user's rights, so create it on the account the AI client should act as.
+Prefer a dedicated user with only the rights the client needs over an administrator account.
 
-1. Go to **Settings → Users** and open the user you want the client to act as.
-2. Switch to the **Apps** tab and click **Add app**.
-3. Give the app a name (for example *Claude MCP*) and save.
-4. Copy the token from the dialog.
-
-The token is shown **only once**.
-If you lose it, delete the app and create a new one to get a fresh token.
-
-The token does not expire on its own.
-To revoke a connected client later, delete its app on the **Apps** tab and confirm *Delete Application*, the token then stops working within a few minutes.
-Because the token carries the user's rights, prefer a dedicated user with only the rights the client needs over an administrator account.
+[Create an app token](app-tokens.md#create-an-app-token) for that user, for example with the name *Claude MCP*, and [copy the token](app-tokens.md#copy-the-token).
+The token is shown only once.
+To revoke a connected client later, [delete its app](app-tokens.md#delete-an-app-and-revoke-its-token).
 
 ## Connect your AI client
 
@@ -145,5 +138,5 @@ See [Rights and permissions](rights-and-permissions.md).
 - [Add-ons](addons.md), the MCP server is an add-on registered with your i-doit up instance.
 - [Rights and permissions](rights-and-permissions.md), control who can open the access log and clear it.
 - [Tenants](tenants.md), each i-doit up URL is a separate MCP tenant with its own access log.
-- [User management](user-management.md), where the app token is created on a user account.
+- [App tokens](app-tokens.md), how to create, copy, and delete app tokens.
 - [Model Context Protocol](https://modelcontextprotocol.io), the open standard the add-on implements.
