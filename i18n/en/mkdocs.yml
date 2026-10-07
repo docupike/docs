@@ -84,6 +84,7 @@ nav:
           - Attribute validation: admin/attribute-validation.md
       - Users and access:
           - User management: admin/user-management.md
+          - App tokens: admin/app-tokens.md
           - Rights and permissions: admin/rights-and-permissions.md
           - Permissions: admin/permissions.md
       - Tenant and subscription:
