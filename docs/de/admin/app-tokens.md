@@ -14,6 +14,8 @@ Verwenden Sie dafür besser einen eigenen Benutzer mit nur den Rechten, die der 
 In der Benutzeroberfläche erscheint jedes Token als App im Reiter **Apps** seines Benutzers.
 In der Dokumentation der [API](../dev/api.md) heißen App-Tokens auch API-Tokens.
 
+![Der Reiter Apps des Benutzers admin in i-doit up. Die Liste enthält eine App mit dem Namen "Documentation example". Beim Überfahren der Zeile mit der Maus erscheinen links neben dem Namen das Löschen-Symbol und das Bearbeiten-Symbol. Über der Liste steht der Button "Add app".](../img/admin/app-tokens-apps-tab.png)
+
 - Ein Benutzerkonto kann mehrere Apps haben, jede mit einem eigenen Token.
 - Ein App-Token ist eine Zeichenkette aus 32 Zeichen.
 - Ein App-Token hat kein Ablaufdatum.
@@ -36,11 +38,15 @@ Für weitere App-Tokens führen Sie ein Upgrade Ihres Tarifs durch, siehe [Abonn
 3. Wechseln Sie in den Reiter **Apps** und klicken Sie auf **App hinzufügen**.
 4. Geben Sie einen **Name** für die App ein, zum Beispiel den Namen des Clients, und klicken Sie auf **Speichern**.
 
+![Der Dialog "Add app" in i-doit up. Das Pflichtfeld "Name" enthält "Documentation example", darunter stehen die Buttons "Save" und "Cancel".](../img/admin/app-tokens-add-app.png)
+
 Der Dialog **Token kopieren** öffnet sich und zeigt das neue Token.
 
 ## Token kopieren
 
 Klicken Sie auf **Token kopieren**, um das Token in die Zwischenablage zu kopieren, und dann auf **Schließen**.
+
+![Der Dialog "Copy token" in i-doit up. Er zeigt den Text "Your token for app Documentation example was generated", darunter das Token (in diesem Screenshot unkenntlich gemacht) und einen Hinweis, dass das Token nur einmal angezeigt wird. Unten stehen die Buttons "Copy token" und "Close".](../img/admin/app-tokens-copy-token.png)
 
 Das Token wird nur einmal angezeigt.
 i-doit up speichert nur einen Hash des Tokens und kann das Token deshalb später nicht noch einmal anzeigen.
@@ -49,7 +55,7 @@ Wenn Sie das Token verlieren, löschen Sie die App und legen Sie eine neue an, u
 ## App umbenennen
 
 1. Öffnen Sie den Reiter **Apps** des Benutzers.
-2. Klicken Sie in der Zeile der App auf das Bearbeiten-Symbol.
+2. Fahren Sie mit der Maus über die Zeile der App und klicken Sie auf das Bearbeiten-Symbol.
 3. Ändern Sie im Dialog **App bearbeiten** den **Name** und klicken Sie auf **Speichern**.
 
 Das Umbenennen einer App ändert ihr Token nicht.
@@ -61,6 +67,8 @@ Löschen Sie eine App, um ihr Token zu widerrufen, zum Beispiel wenn ein Client 
 1. Öffnen Sie den Reiter **Apps** des Benutzers.
 2. Fahren Sie mit der Maus über die Zeile der App und klicken Sie auf das Löschen-Symbol.
 3. Bestätigen Sie den Dialog **Anwendung löschen** mit **Ja, löschen**.
+
+![Der Dialog "Delete Application" in i-doit up. Er fragt "Are you sure you want to delete the application Documentation example?" und bietet ein Kontrollkästchen "Don't show again" sowie die Buttons "Yes, delete" und "Cancel".](../img/admin/app-tokens-delete-application.png)
 
 Danach kann sich niemand mehr mit dem Token anmelden.
 Clients, die das Token noch verwenden, benötigen ein neues.

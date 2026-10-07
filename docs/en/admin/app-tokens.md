@@ -14,6 +14,8 @@ Prefer a dedicated user with only the rights the client needs over an administra
 In the user interface, each token is listed as an app on the **Apps** tab of its user.
 In the [API](../dev/api.md) documentation, app tokens are also called API tokens.
 
+![The Apps tab of the user admin in i-doit up. The list contains one app named "Documentation example", and hovering over its row shows the delete icon and the edit icon to the left of the name. Above the list is the "Add app" button.](../img/admin/app-tokens-apps-tab.png)
+
 - A user account can have several apps, each with its own token.
 - An app token is a 32-character string.
 - An app token has no expiry date.
@@ -36,11 +38,15 @@ To create more app tokens, upgrade your plan, see [Subscription, billing, and up
 3. Switch to the **Apps** tab and click **Add app**.
 4. Enter a **Name** for the app, for example the name of the client, and click **Save**.
 
+![The "Add app" dialog in i-doit up. The required field "Name" contains "Documentation example", below it are the buttons "Save" and "Cancel".](../img/admin/app-tokens-add-app.png)
+
 The dialog **Copy token** opens and shows the new token.
 
 ## Copy the token
 
 Click **Copy token** to copy the token to the clipboard, then click **Close**.
+
+![The "Copy token" dialog in i-doit up. It reads "Your token for app Documentation example was generated", followed by the token (masked in this screenshot) and a note that the token is shown only once. At the bottom are the buttons "Copy token" and "Close".](../img/admin/app-tokens-copy-token.png)
 
 The token is shown only once.
 i-doit up stores only a hash of the token, so it cannot display the token again later.
@@ -49,7 +55,7 @@ If you lose the token, delete the app and add a new one to get a new token.
 ## Rename an app
 
 1. Open the **Apps** tab of the user.
-2. Click the edit icon in the row of the app.
+2. Hover over the row of the app and click the edit icon.
 3. Change the **Name** in the dialog **Edit App** and click **Save**.
 
 Renaming an app does not change its token.
@@ -61,6 +67,8 @@ Delete an app to revoke its token, for example when a client is no longer used o
 1. Open the **Apps** tab of the user.
 2. Hover over the row of the app and click the delete icon.
 3. Confirm the dialog **Delete Application** with **Yes, delete**.
+
+![The "Delete Application" dialog in i-doit up. It asks "Are you sure you want to delete the application Documentation example?" and offers a "Don't show again" checkbox and the buttons "Yes, delete" and "Cancel".](../img/admin/app-tokens-delete-application.png)
 
 After that, the token can no longer be used to authenticate.
 Clients that still use the token need a new one.
