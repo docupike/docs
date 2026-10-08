@@ -230,9 +230,9 @@ onspezifischen
 Prüfsummenverifikation
 Qualifizierer
 Rechnungs
-Sammlungsdetails
-Sammlungsliste
-Sammlungszugehörigkeiten
+Kollektionsdetails
+Kollektionsliste
+Kollektionszugehörigkeiten
 SEPA
 sitzungsbeendende
 tabellenförmigen

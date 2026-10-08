@@ -88,7 +88,7 @@ Die Paginierung (`{n} entries`, `1 / 1`, Seitengrößen-Auswahl) sitzt am Tabell
 Markieren Sie Attribute als Favoriten, indem Sie den **★ Add to favorites**-Stern neben dem Attribut klicken.
 Der Eintrag **★ Favorites** oben in der Sidebar zeigt anschließend nur Ihre bevorzugten Attribute dieses Objekts.
 
-Für ganze Klassen und für die Sammlung **Favorites** in der Finder-Sidebar siehe [Favoriten](favorites.md).
+Für ganze Klassen und für die Kollektion **Favorites** in der Finder-Sidebar siehe [Favoriten](favorites.md).
 
 ## Lifecycle
 
