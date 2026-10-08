@@ -4,7 +4,7 @@ Eine **Kategorie** ist eine Gruppe verwandter Felder zu einem Objekt, z. B. *All
 Die Felder innerhalb einer Kategorie werden als **Attribute** bezeichnet.
 
 Jede [Klasse](classes.md) legt fest, welche Kategorien ein Objekt bereitstellt.
-Ein *Server* verfügt über *Formfaktor*, *CPU*, *Arbeitsspeicher*, *IP-Netzwerk*, *Netzwerkgerät*; eine *Person* verfügt über *Adresse und Kontaktdaten*, *Mitarbeiter*; ein *Netzwerk* verfügt über *Netzwerkdefinition*, *IP-Adressen*, *DHCP-Bereiche*, *Subnetze*.
+Ein *Server* verfügt über *Formfaktor*, *CPU*, *Arbeitsspeicher*, *IP-Netzwerk*, *Hostname*; eine *Person* verfügt über *Adresse und Kontaktdaten*, *Mitarbeiter*; ein *Netzwerk* verfügt über *Netzwerkdefinition*, *IP-Adressen*, *DHCP-Bereiche*, *Subnetze*.
 
 ## Einwertige vs. mehrwertige Kategorien
 
