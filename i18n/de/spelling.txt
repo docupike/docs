@@ -244,3 +244,4 @@ WSL
 MCP
 mcp
 claude
+Lokation

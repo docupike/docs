@@ -14,19 +14,22 @@ Siehe [Rechte und Berechtigungen](rights-and-permissions.md).
 2. Gehen Sie zu **CMDB-Konfiguration ▸ Klassen**.
 3. Klicken Sie oberhalb der Liste auf **Neue Klasse +**.
 
-## Kursdetails
+## Klassendetails
 
-Im Klassenformular werden folgende Angaben abgefragt:
+Im Formular **Neue Klasse** werden folgende Angaben abgefragt:
 
 | Feld | Anmerkungen |
 |---|---|
-| **Name** | Der in der Finder-Seitenleiste, im Dropdown-Menü „Alle Klassen“ und in der Kopfzeile der Detailseite jedes Objekts angezeigte Name. |
-| **Symbol** | Wählen Sie aus einem vordefinierten Symbolsatz. Das Symbol wird überall neben dem Klassennamen angezeigt. |
-| **Kollektionen** | Eine oder mehrere [Kollektionen](../user/basics/collections.md), zu denen die Klasse gehört. |
-| **Kategorien** | Die Menge der [Kategorien](../user/basics/categories-and-attributes.md), die der Klasse zugeordnet sind. Fügen Sie integrierte oder [benutzerdefinierte Kategorien](custom-categories.md) hinzu. |
+| **Name** | Pflichtfeld. Der in der Klassenliste des Finders und in der Kopfzeile der Detailseite jedes Objekts angezeigte Name. |
+| **Kollektion** | Eine oder mehrere [Kollektionen](../user/basics/collections.md), zu denen die Klasse gehört. Eine Klasse ohne Kollektion bleibt verborgen und Benutzer können sie nicht verwenden. |
 
-Speichern, um die Klasse zu erstellen.
-Neue Klassen werden sofort im Finder angezeigt.
+Speichern Sie, um die Klasse zu erstellen.
+Neue Klassen erscheinen im Finder, sobald sie mindestens einer Kollektion angehören.
+
+Öffnen Sie die Klasse anschließend in der Liste und vervollständigen Sie sie auf der Registerkarte **Details**:
+
+- **Symbol**: Wählen Sie aus einem vordefinierten Symbolsatz. Das Symbol wird überall neben dem Klassennamen angezeigt.
+- **Enthält Kategorien**: Klicken Sie auf **Kategorie hinzufügen**, um integrierte oder [benutzerdefinierte Kategorien](custom-categories.md) zuzuordnen, siehe [Kategorien und Attribute](../user/basics/categories-and-attributes.md).
 
 ## Bearbeiten und löschen
 

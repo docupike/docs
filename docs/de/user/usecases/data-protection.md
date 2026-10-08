@@ -17,7 +17,7 @@ Beginnen wir mit der Übersicht über das Add-on. Im Wesentlichen unterscheiden 
 
 ## Verarbeitungsaktivitäten
 
-In diesem Abschnitt sollen alle notwendigen Informationen zu allen Verarbeitungsaktivitäten dokumentiert werden. Hier erstellen wir ein Objekt der Klasse **Process** und füllen die Kategorien **Verarbeitete Daten**, **Verarbeitungszweck und -verwaltung** und gegebenenfalls die **Externe Verarbeiter** aus.
+In diesem Abschnitt sollen alle notwendigen Informationen zu allen Verarbeitungsaktivitäten dokumentiert werden. Hier erstellen wir ein Objekt der Klasse **Prozess** und füllen die Kategorien **Verarbeitete Daten**, **Verarbeitungszweck und -verwaltung** und gegebenenfalls die **Externe Verarbeiter** aus.
 
 In diesem Abschnitt möchten wir folgende Fragen beantworten:
 

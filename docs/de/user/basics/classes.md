@@ -6,17 +6,17 @@ Jedes Objekt in i-doit up gehört genau einer Klasse an, und die Klasse bestimmt
 ## Wo Klassen vorkommen
 
 - Die Seitenleiste **„Klassenliste“** im [Finder](../finder/class-list.md) listet alle Klassen samt ihrer Objektanzahl auf.
-- Das Dropdown-Menü **„Alle Klassen“** oberhalb der Suchleiste bietet dieselbe Liste mit Tastaturnavigation.
+- Das Dropdown-Menü **„Alle Klassen“** in der Suchleiste listet die [Kollektionen](collections.md) auf; wenn Sie eine wählen, zeigt die Klassenliste nur noch die Klassen dieser Kollektion.
 - Auf jeder [Objektdetailseite](object-details.md) wird die Klasse unter dem Objektnamen in der Kopfzeile angezeigt, daneben befindet sich das Klassensymbol.
 - Einstellungen ▸ CMDB-Konfiguration ▸ Klassen ist die Admin-Oberfläche zum Erstellen, Bearbeiten und Löschen von Klassen, siehe [Klassen und Kollektionen verwalten](../../admin/class-collection-management.md) und [Benutzerdefinierte Klassen erstellen](../../admin/custom-classes.md).
 
 ## Klassen und Kollektionen
 
-Jede Klasse kann einer oder mehreren [Kollektionen](collections.md) zugeordnet werden, die Klassen thematisch gruppieren (zum Beispiel *Netzwerkgeräte* oder *Software*).
+Jede Klasse kann einer oder mehreren [Kollektionen](collections.md) zugeordnet werden, die Klassen thematisch gruppieren (zum Beispiel *Netzwerkgerät* oder *Software*).
 
-## Bevorzugung einer Klasse
+## Klasse als Favorit markieren
 
-Klicken Sie im Finder auf einen Kurs und verwenden Sie das Sternsymbol **★** neben dem Kursnamen in der Kopfzeile, um ihn als Favorit zu markieren (siehe [Favoriten](favorites.md)).
+Klicken Sie im Finder auf eine Klasse und verwenden Sie das Sternsymbol **★** neben dem Klassennamen in der Kopfzeile, um ihn als Favorit zu markieren (siehe [Favoriten](favorites.md)).
 
 ## Siehe auch
 
