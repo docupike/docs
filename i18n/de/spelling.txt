@@ -244,3 +244,12 @@ WSL
 MCP
 mcp
 claude
+AKV
+ERP
+Integrationen
+Lokation
+NAS
+PDU
+Rackplanung
+Supportkontakte
+USV
