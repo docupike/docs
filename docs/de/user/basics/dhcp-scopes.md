@@ -5,7 +5,7 @@ Sobald Bereiche eingetragen sind, gruppiert die IP-Adresstabelle dynamische Bere
 
 ## Wo Sie es finden
 
-DHCP-Bereiche sind eine Kategorie der Klasse **Network**.
+DHCP-Bereiche sind eine Kategorie der Klasse **Netzwerk**.
 Sie erscheinen an zwei Stellen:
 
 - als Eintrag **DHCP scopes** in der Sidebar *All categories* eines Netzwerk-Objekts; siehe [Objektdetailseite](object-details.md).

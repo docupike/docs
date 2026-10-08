@@ -1,13 +1,13 @@
 # Klassen und Kollektionen verwalten
 
-Administratoren konfigurieren die CMDB-Struktur, indem sie im Benutzermenü (oben rechts) den Punkt **Einstellungen** öffnen und zum Abschnitt **CMDB-Konfiguration** navigieren, der die Bereiche **Sammlungen**, **Klassen** und **Kategorien** enthält.
-Diese Seite behandelt alltägliche Verwaltungsaufgaben für vorhandene Klassen, Sammlungen und Kategorien, darunter das Löschen dieser Elemente, das Aufheben von Zuordnungen zwischen ihnen und das Ändern des Klassensymbols.
+Administratoren konfigurieren die CMDB-Struktur, indem sie im Benutzermenü (oben rechts) den Punkt **Einstellungen** öffnen und zum Abschnitt **CMDB-Konfiguration** navigieren, der die Bereiche **Kollektionen**, **Klassen** und **Kategorien** enthält.
+Diese Seite behandelt alltägliche Verwaltungsaufgaben für vorhandene Klassen, Kollektionen und Kategorien, darunter das Löschen dieser Elemente, das Aufheben von Zuordnungen zwischen ihnen und das Ändern des Klassensymbols.
 Informationen zum Erstellen neuer Strukturen finden Sie unter [Benutzerdefinierte Klassen erstellen](custom-classes.md) und [Benutzerdefinierte Kategorien erstellen](custom-categories.md).
-Eine konzeptionelle Einführung finden Sie unter [Klassen](../user/basics/classes.md) und [Sammlungen](../user/basics/collections.md).
+Eine konzeptionelle Einführung finden Sie unter [Klassen](../user/basics/classes.md) und [Kollektionen](../user/basics/collections.md).
 
 ## Rechte
 
-Um Klassen, Sammlungen und Kategorien zu verwalten, benötigen Sie die entsprechenden Administratorrechte.
+Um Klassen, Kollektionen und Kategorien zu verwalten, benötigen Sie die entsprechenden Administratorrechte.
 Öffnen Sie im Benutzermenü den Punkt **Einstellungen** und navigieren Sie zu **Benutzerverwaltung > Rechte**, um diese zu konfigurieren.
 Siehe [Rechte und Berechtigungen](rights-and-permissions.md).
 
@@ -18,10 +18,10 @@ Gehen Sie zu **Einstellungen > CMDB-Konfiguration > Klassen** (Benutzermenü →
 Die Liste unterteilt die Klassen in drei Abschnitte:
 
 - **Alle Klassen**: alle Klassen in der Instanz.
-- **Klassen, die keiner Sammlung zugeordnet sind**: Klassen, die derzeit in keiner Sammlung enthalten sind.
-- **Klassen, die einer Sammlung zugeordnet sind**: Klassen, die in mindestens einer Sammlung vorkommen.
+- **Klassen, die keiner Kollektion zugeordnet sind**: Klassen, die derzeit in keiner Kollektion enthalten sind.
+- **Klassen, die einer Kollektion zugeordnet sind**: Klassen, die in mindestens einer Kollektion vorkommen.
 
-Jedes Klassenelement zeigt Tags mit den Namen der Sammlungen an, zu denen es gehört.
+Jedes Klassenelement zeigt Tags mit den Namen der Kollektionen an, zu denen es gehört.
 
 ### Eine Klasse löschen
 
@@ -57,35 +57,35 @@ Die verfügbaren Symbole sind vordefiniert.
 
 ## Bestandsverwaltung
 
-Gehen Sie zu **Einstellungen > CMDB-Konfiguration > Sammlungen**, um die Sammlungsliste zu öffnen.
+Gehen Sie zu **Einstellungen > CMDB-Konfiguration > Kollektionen**, um die Kollektionsliste zu öffnen.
 
-### Eine Sammlung löschen
+### Eine Kollektion löschen
 
-Sie können eine Sammlung entweder in der Listenansicht oder in der Detailansicht der Sammlung löschen.
+Sie können eine Kollektion entweder in der Listenansicht oder in der Detailansicht der Kollektion löschen.
 
 **Aus der Liste:**
 
-1. Bewegen Sie den Mauszeiger über die Sammlung, die Sie löschen möchten.
+1. Bewegen Sie den Mauszeiger über die Kollektion, die Sie löschen möchten.
 2. Klicken Sie auf das **Papierkorb-Symbol**, das in der Zeile erscheint.
 3. Klicken Sie im Bestätigungsdialog auf **Löschen**.
 
 **Aus der Detailansicht:**
 
-1. Öffnen Sie die Sammlung, indem Sie in der Liste auf ihren Namen klicken.
-2. Klicken Sie oben in den Sammlungsdetails auf die Schaltfläche **Fleischbällchen** (`⋮`).
+1. Öffnen Sie die Kollektion, indem Sie in der Liste auf ihren Namen klicken.
+2. Klicken Sie oben in den Kollektionsdetails auf die Schaltfläche **Fleischbällchen** (`⋮`).
 3. Wählen Sie **Löschen**.
 4. Klicken Sie im Bestätigungsdialogfeld auf **Löschen**.
 
-Die Sammlung wird gelöscht und eine Erfolgsmeldung angezeigt.
+Die Kollektion wird gelöscht und eine Erfolgsmeldung angezeigt.
 
-### Eine Klasse aus einer Sammlung entfernen
+### Eine Klasse aus einer Kollektion entfernen
 
-1. Öffnen Sie die Sammlung, indem Sie in der Liste auf ihren Namen klicken.
-2. Bewegen Sie den Mauszeiger in der Detailansicht der Sammlung über die Klasse, die Sie entfernen möchten.
+1. Öffnen Sie die Kollektion, indem Sie in der Liste auf ihren Namen klicken.
+2. Bewegen Sie den Mauszeiger in der Detailansicht der Kollektion über die Klasse, die Sie entfernen möchten.
 3. Klicken Sie auf die Schaltfläche **(X)**, die auf dem Klassenelement erscheint.
 
-Die Klasse wird aus dieser Sammlung entfernt.
-Die Klasse selbst wird nicht gelöscht, sondern lediglich ihre Zuordnung zu dieser Sammlung.
+Die Klasse wird aus dieser Kollektion entfernt.
+Die Klasse selbst wird nicht gelöscht, sondern lediglich ihre Zuordnung zu dieser Kollektion.
 
 ## Kategorie-Management
 
@@ -107,6 +107,6 @@ Bei Standardkategorien wird beim Darüberfahren mit der Maus keine Löschschaltf
 - [Benutzerdefinierte Klassen erstellen](custom-classes.md)
 - [Benutzerdefinierte Kategorien erstellen](custom-categories.md)
 - [Klassen](../user/basics/classes.md)
-- [Sammlungen](../user/basics/collections.md)
+- [Kollektionen](../user/basics/collections.md)
 - [Kategorien und Attribute](../user/basics/categories-and-attributes.md)
 - [Rechte und Berechtigungen](rights-and-permissions.md)
