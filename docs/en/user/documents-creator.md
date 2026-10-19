@@ -12,7 +12,8 @@ The documents can serve as a documentation basis for audits, conformity checks a
 
 ## Rights
 
-You should check the [Rights](../admin/rights-and-permissions.md) and alter them to fit your needs. The rights currently available include Download, Manage documents, and Manage mailing. Additionally, there is an option to assign All available Rights (including future updates).
+You should check the [Rights](../admin/rights-and-permissions.md) and alter them to fit your needs. The rights currently available include Download, Manage documents, Manage mailing, and Use AI features. Additionally, there is an option to assign All available Rights (including future updates).
+The right Use AI features unlocks the AI functions, see [Documents Creator with AI](documents-creator-ai.md).
 
 ## Design your documents
 
@@ -60,3 +61,8 @@ Accelerate your communication: Instead of manually crafting and distributing doc
 ### Mailings
 
 Each entry needs a title, recipient(s) which can also be added by direct input, a subject and a message. After that you can set a execution date and configure if the mailing should be done in an interval. When you check `Repeat execution` you can select a `End date of execution` and an interval. When the configuration is done you see the mailing list with all configured mailings. Here you can alter a mailing, pause the mailing or check the `Logs of execution` for errors.
+
+## Further readings
+
+- [Documents Creator with AI](documents-creator-ai.md), create documents, generate chapters, and improve texts with AI.
+- [Rights and permissions](../admin/rights-and-permissions.md), grant the rights of the Documents Creator.
