@@ -63,6 +63,7 @@ nav:
           - Report Manager: user/reporting/report-manager.md
       - Data protection: user/gdpr.md
       - Documents Creator: user/documents-creator.md
+      - Documents Creator with AI: user/documents-creator-ai.md
       - Imports:
           - CSV: user/imports/csv.md
       - Use cases:
@@ -96,6 +97,7 @@ nav:
           - Suite+ bridge: admin/suite-plus.md
           - servereye integration: admin/servereye.md
           - Model Context Protocol (MCP): admin/mcp.md
+          - n8n integration: admin/n8n.md
   - Developer guide:
       - API: dev/api.md
       - Add-ons:

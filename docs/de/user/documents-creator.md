@@ -12,7 +12,8 @@ Die Dokumente können als Dokumentationsgrundlage für Audits, Konformitätsprü
 
 ## Rechte
 
-Sie sollten die [Rechte](../admin/rights-and-permissions.md) überprüfen und an Ihre Bedürfnisse anpassen. Die derzeit verfügbaren Rechte umfassen `Herunterladen`, `Dokumente verwalten` und `Mailing verwalten`. Darüber hinaus gibt es eine Option, um alle verfügbaren Rechte (einschließlich zukünftiger Updates) zuzuweisen.
+Sie sollten die [Rechte](../admin/rights-and-permissions.md) überprüfen und an Ihre Bedürfnisse anpassen. Die derzeit verfügbaren Rechte umfassen `Herunterladen`, `Dokumente verwalten`, `Mailing verwalten` und `Use AI features`. Darüber hinaus gibt es eine Option, um alle verfügbaren Rechte (einschließlich zukünftiger Updates) zuzuweisen.
+Das Recht `Use AI features` schaltet die KI-Funktionen frei, siehe [Documents Creator mit KI](documents-creator-ai.md).
 
 ## Design your documents
 
@@ -57,3 +58,8 @@ Beschleunigen Sie Ihre Kommunikation: Anstatt Dokumente manuell zu erstellen und
 ### Mailings (E-Mail Versand)
 
 Jeder Eintrag benötigt einen Titel, einen oder mehrere Empfänger, die auch direkt eingegeben werden können, einen Betreff und eine Nachricht. Anschließend können Sie ein Ausführungsdatum festlegen und konfigurieren, ob die E-Mail in einem bestimmten Intervall versendet werden soll. Wenn Sie `Ausführung wiederholen` aktivieren, können Sie ein `Enddatum für die Ausführung` und ein Intervall auswählen. Nach Abschluss der Konfiguration wird die Mailingliste mit allen konfigurierten E-Mails angezeigt. Hier können Sie ein Mailing ändern, das Mailing pausieren oder die `Ausführungsprotokolle` auf Fehler überprüfen.
+
+## Weiterführende Themen
+
+- [Documents Creator mit KI](documents-creator-ai.md), Dokumente erstellen, Kapitel generieren und Texte verbessern mit KI.
+- [Rechte und Berechtigungen](../admin/rights-and-permissions.md), die Rechte des Documents Creator vergeben.
