@@ -16,42 +16,53 @@ Der Node **i-doit up Actions** bietet die folgenden Aktionen:
 
 ## Voraussetzungen
 
-- Eine bestehende, selbst betriebene n8n-Instanz, die Sie verwalten, zum Beispiel n8n in Docker.
+- Eine bestehende, selbst betriebene n8n-Instanz, die Sie verwalten, in Docker oder mit npm installiert.
   In n8n Cloud sind die i-doit-up-Nodes derzeit nicht verfügbar.
-- Node.js 22 oder neuer mit npm auf dem Rechner, auf dem Sie das Node-Paket bauen.
+- Das Release-Zip der i-doit-up-Nodes, zum Beispiel `i-doit-up-n8n-nodes-1.0.0.zip`.
 - Netzwerkzugriff von n8n auf Ihre i-doit-up-URL.
 - Ein i-doit-up-Benutzer, dessen Rechte alles abdecken, was der Workflow tun soll, siehe [Rechte und Berechtigungen](rights-and-permissions.md).
 
+Die i-doit-up-Nodes 1.0.0 wurden mit n8n 2.43.4 getestet.
+
 ## Die i-doit-up-Nodes in n8n installieren
 
-Die i-doit-up-Nodes sind ein n8n-Node-Paket mit dem Namen `i-n8n-nodes`.
-n8n lädt das Paket als eigene Erweiterung (Custom Extension) aus einem Ordner, auf den die Umgebungsvariable `N8N_CUSTOM_EXTENSIONS` zeigt.
+Das Release-Zip enthält das fertige Node-Paket im Ordner `i-n8n-nodes`, Sie müssen also nichts bauen.
+n8n lädt das Paket als eigene Erweiterung (Custom Extension) aus dem Ordner, auf den die Umgebungsvariable `N8N_CUSTOM_EXTENSIONS` zeigt.
 
-1. Bauen Sie das Paket im Ordner des Pakets mit `npm ci`, `npm run build` und `npm pack`.
-   Das Ergebnis ist die Datei `i-n8n-nodes-1.0.0.tgz`.
-2. Entpacken Sie die Datei in einen Ordner, den n8n lesen kann, zum Beispiel `/home/node/i-n8n-nodes`.
-   Das Archiv enthält einen Ordner `package`, dessen Inhalt in diesen Ordner gehört.
-3. Setzen Sie die Umgebungsvariable `N8N_CUSTOM_EXTENSIONS` auf diesen Ordner.
-4. Starten Sie n8n neu.
+**n8n in Docker**
 
-Für n8n in Docker bauen Sie ein eigenes Image auf Basis des offiziellen n8n-Images.
-Speichern Sie das folgende Dockerfile neben der Datei `i-n8n-nodes-1.0.0.tgz`.
-Ersetzen Sie `stable` durch die n8n-Version, die Sie aktuell betreiben.
+1. Entpacken Sie das Zip und kopieren Sie den Ordner `i-n8n-nodes` neben die `docker-compose.yml` Ihrer n8n-Instanz.
+2. Ergänzen Sie den n8n-Dienst um die Umgebungsvariable und das Volume:
 
-```dockerfile
-FROM n8nio/n8n:stable
-USER root
-COPY i-n8n-nodes-1.0.0.tgz /tmp/i-n8n-nodes.tgz
-RUN tar -xzf /tmp/i-n8n-nodes.tgz -C /tmp \
- && mv /tmp/package /home/node/i-n8n-nodes \
- && chown -R node:node /home/node/i-n8n-nodes \
- && rm /tmp/i-n8n-nodes.tgz
-USER node
-ENV N8N_CUSTOM_EXTENSIONS=/home/node/i-n8n-nodes
-```
+    ```yaml
+    services:
+      n8n:
+        environment:
+          N8N_CUSTOM_EXTENSIONS: /home/node/custom/i-n8n-nodes
+        volumes:
+          - ./i-n8n-nodes:/home/node/custom/i-n8n-nodes:ro
+    ```
 
-Bauen Sie das Image in diesem Ordner mit `docker build -t n8n-idoit-up .`.
-Starten Sie das neue Image anschließend mit demselben Volume und denselben Umgebungsvariablen wie Ihren bisherigen n8n-Container, damit Ihre Workflows und Credentials erhalten bleiben.
+    Behalten Sie Ihre bestehenden Einträge bei, zum Beispiel das Volume für `/home/node/.n8n`, damit Ihre Workflows und Credentials erhalten bleiben.
+
+3. Führen Sie in diesem Ordner `docker compose up -d` aus. Docker Compose erstellt den n8n-Container mit den neuen Einstellungen neu.
+
+**n8n mit npm installiert**
+
+1. Entpacken Sie das Zip und kopieren Sie den Ordner `i-n8n-nodes` in einen Ordner, den n8n lesen kann, zum Beispiel `/opt/n8n/i-n8n-nodes`.
+2. Setzen Sie die Umgebungsvariable und starten Sie n8n:
+
+    ```bash
+    export N8N_CUSTOM_EXTENSIONS=/opt/n8n/i-n8n-nodes
+    n8n start
+    ```
+
+Zeigt `N8N_CUSTOM_EXTENSIONS` bereits auf einen anderen Ordner, trennen Sie die Ordner mit `;`, zum Beispiel `/home/node/custom/other;/home/node/custom/i-n8n-nodes`.
+
+**Auf eine neue Version aktualisieren**
+
+Ersetzen Sie den Ordner `i-n8n-nodes` an derselben Stelle durch den Ordner aus dem neuen Zip und starten Sie n8n neu, in Docker mit `docker compose restart`.
+`docker compose up -d` allein startet den Container nicht neu, wenn sich die Konfiguration nicht geändert hat, n8n läuft dann mit der alten Version weiter.
 
 Suchen Sie nach dem Neustart im Node-Bereich von n8n nach *i-doit up*.
 Im Node-Bereich heißt der Eintrag **i-doit up Action Selector**, auf der Arbeitsfläche heißt der Node **i-doit up Actions**.
@@ -155,7 +166,7 @@ Berechnen Sie ihn nicht über das geparste JSON, denn beim erneuten Serialisiere
 |---|---|
 | Der Test des Credentials schlägt mit *Unauthorized* fehl. | Das Token ist falsch oder die App wurde gelöscht. Legen Sie eine neue App an und fügen Sie das neue Token ein. |
 | Der Test des Credentials schlägt mit *Not Found* oder *ERR_INVALID_URL* fehl. | Die URL ist falsch. Geben Sie nur die Basis-URL Ihrer i-doit-up-Instanz mit Protokoll ein, zum Beispiel `https://your-instance.example.com`, ohne API-Pfad. |
-| Der Test des Credentials schlägt mit einem Verbindungsfehler wie *EHOSTUNREACH*, *ENOTFOUND*, *ECONNREFUSED* oder *ETIMEDOUT* fehl. | n8n erreicht Ihre i-doit-up-Instanz nicht. Prüfen Sie Hostnamen und Port in der URL und ob eine Firewall oder ein Proxy die Verbindung vom n8n-Server zu Ihrer i-doit-up-URL blockiert. |
+| Der Test des Credentials schlägt mit einem Verbindungsfehler wie *EHOSTUNREACH*, *ENOTFOUND*, *ECONNREFUSED* oder *ETIMEDOUT* fehl. | n8n erreicht Ihre i-doit-up-Instanz nicht. Prüfen Sie Hostnamen und Port in der URL und ob eine Firewall oder ein Proxy die Verbindung vom n8n-Server zu Ihrer i-doit-up-URL blockiert. Läuft n8n in Docker, meint `localhost` den n8n-Container selbst, verwenden Sie dann den Hostnamen oder die IP-Adresse Ihres i-doit-up-Servers. |
 | **Push Object** meldet *Unable to find class with id ...*. | Unter **Class** steht ein Klassenname wie `server` statt einer Klassen-ID. Tragen Sie die ID der Klasse ein, siehe [Hinweise zu den Aktionen](#hinweise-zu-den-aktionen). |
 | **Find objects** liefert keine Items, obwohl passende Objekte existieren. | Unter **Categories** steht eine Kennung, die i-doit up nicht kennt. Prüfen Sie die Schreibweise, zum Beispiel `cmdb.general`. |
 | Die i-doit-up-Nodes erscheinen nicht im Node-Bereich. | n8n hat das Paket nicht geladen. Prüfen Sie, ob `N8N_CUSTOM_EXTENSIONS` auf den Ordner zeigt, der die Datei `package.json` des Pakets enthält, und starten Sie n8n neu. |

@@ -16,42 +16,53 @@ The node **i-doit up Actions** offers the following actions:
 
 ## Prerequisites
 
-- An existing self-hosted n8n instance that you administer, for example n8n in Docker.
+- An existing self-hosted n8n instance that you administer, in Docker or installed with npm.
   The i-doit up nodes are currently not available in n8n Cloud.
-- Node.js 22 or later with npm on the machine where you build the node package.
+- The release zip of the i-doit up nodes, for example `i-doit-up-n8n-nodes-1.0.0.zip`.
 - Network access from n8n to your i-doit up URL.
 - An i-doit up user whose rights cover what the workflow should do, see [Rights and permissions](rights-and-permissions.md).
 
+The i-doit up nodes 1.0.0 were tested with n8n 2.43.4.
+
 ## Install the i-doit up nodes in n8n
 
-The i-doit up nodes are an n8n node package called `i-n8n-nodes`.
-n8n loads the package as a custom extension from a folder that the environment variable `N8N_CUSTOM_EXTENSIONS` points to.
+The release zip contains the ready-to-use node package in the folder `i-n8n-nodes`, so you do not have to build anything.
+n8n loads the package as a custom extension from the folder that the environment variable `N8N_CUSTOM_EXTENSIONS` points to.
 
-1. Build the package in the package folder with `npm ci`, `npm run build`, and `npm pack`.
-   The result is the file `i-n8n-nodes-1.0.0.tgz`.
-2. Extract the file into a folder that n8n can read, for example `/home/node/i-n8n-nodes`.
-   The archive contains a folder `package`, whose content belongs into that folder.
-3. Set the environment variable `N8N_CUSTOM_EXTENSIONS` to that folder.
-4. Restart n8n.
+**n8n in Docker**
 
-For n8n in Docker, build your own image based on the official n8n image.
-Save the following Dockerfile next to the file `i-n8n-nodes-1.0.0.tgz`.
-Replace `stable` with the n8n version that you currently run.
+1. Extract the zip and copy the folder `i-n8n-nodes` next to the `docker-compose.yml` of your n8n instance.
+2. Add the environment variable and the volume to the n8n service:
 
-```dockerfile
-FROM n8nio/n8n:stable
-USER root
-COPY i-n8n-nodes-1.0.0.tgz /tmp/i-n8n-nodes.tgz
-RUN tar -xzf /tmp/i-n8n-nodes.tgz -C /tmp \
- && mv /tmp/package /home/node/i-n8n-nodes \
- && chown -R node:node /home/node/i-n8n-nodes \
- && rm /tmp/i-n8n-nodes.tgz
-USER node
-ENV N8N_CUSTOM_EXTENSIONS=/home/node/i-n8n-nodes
-```
+    ```yaml
+    services:
+      n8n:
+        environment:
+          N8N_CUSTOM_EXTENSIONS: /home/node/custom/i-n8n-nodes
+        volumes:
+          - ./i-n8n-nodes:/home/node/custom/i-n8n-nodes:ro
+    ```
 
-Build the image with `docker build -t n8n-idoit-up .` in that folder.
-Then start the new image with the same volume and the same environment variables as your existing n8n container, so that your workflows and credentials are kept.
+    Keep your existing entries, for example the volume for `/home/node/.n8n`, so that your workflows and credentials are kept.
+
+3. Run `docker compose up -d` in that folder. Docker Compose recreates the n8n container with the new settings.
+
+**n8n installed with npm**
+
+1. Extract the zip and copy the folder `i-n8n-nodes` to a folder that n8n can read, for example `/opt/n8n/i-n8n-nodes`.
+2. Set the environment variable and start n8n:
+
+    ```bash
+    export N8N_CUSTOM_EXTENSIONS=/opt/n8n/i-n8n-nodes
+    n8n start
+    ```
+
+If `N8N_CUSTOM_EXTENSIONS` already points to another folder, separate the folders with `;`, for example `/home/node/custom/other;/home/node/custom/i-n8n-nodes`.
+
+**Update to a new version**
+
+Replace the folder `i-n8n-nodes` in the same place with the one from the new zip and restart n8n, in Docker with `docker compose restart`.
+`docker compose up -d` alone does not restart the container when the configuration is unchanged, so n8n keeps running the old version.
 
 After the restart, search for *i-doit up* in the n8n node panel.
 The panel lists the node as **i-doit up Action Selector**, and on the canvas it is called **i-doit up Actions**.
@@ -155,7 +166,7 @@ Do not calculate it over the parsed JSON, because serializing the JSON again can
 |---|---|
 | The credential test fails with *Unauthorized*. | The token is wrong or the app was deleted. Create a new app and paste the new token. |
 | The credential test fails with *Not Found* or *ERR_INVALID_URL*. | The URL is wrong. Enter only the base URL of your i-doit up instance including the protocol, for example `https://your-instance.example.com`, without an API path. |
-| The credential test fails with a connection error such as *EHOSTUNREACH*, *ENOTFOUND*, *ECONNREFUSED*, or *ETIMEDOUT*. | n8n cannot reach your i-doit up instance. Check the host name and the port in the URL, and check that no firewall or proxy blocks the connection from the n8n server to your i-doit up URL. |
+| The credential test fails with a connection error such as *EHOSTUNREACH*, *ENOTFOUND*, *ECONNREFUSED*, or *ETIMEDOUT*. | n8n cannot reach your i-doit up instance. Check the host name and the port in the URL, and check that no firewall or proxy blocks the connection from the n8n server to your i-doit up URL. If n8n runs in Docker, `localhost` means the n8n container itself, so use the host name or IP address of your i-doit up server. |
 | **Push Object** fails with *Unable to find class with id ...*. | **Class** contains a class name such as `server` instead of a class ID. Enter the ID of the class, see [Notes on the actions](#notes-on-the-actions). |
 | **Find objects** returns no items although matching objects exist. | **Categories** contains an identifier that i-doit up does not know. Check the spelling, for example `cmdb.general`. |
 | The i-doit up nodes do not appear in the node panel. | n8n did not load the package. Check that `N8N_CUSTOM_EXTENSIONS` points to the folder that contains the file `package.json` of the package, and restart n8n. |
