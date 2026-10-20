@@ -17,7 +17,9 @@ Der Finder besteht aus vier Bereichen:
 - **Suchen**: Suchbegriff im oberen Suchfeld eingeben, **Enter** drücken.
     Das Ergebnis lässt sich unter [Suche speichern](saved-views.md) als Ansicht ablegen.
 - **Filtern**: Klick auf **Filter** legt Attributfilter an; siehe [Finder filtern](set-filter.md).
-- **Klasse wählen**: in der Sidebar eine Klasse anklicken oder das Dropdown *All classes* nutzen. Die URL wechselt nach `/finder?class=<id>`, und neben dem Klassennamen erscheint ein **★**-Stern, um die Klasse als [Favorit](../basics/favorites.md) zu markieren.
+- **Klasse wählen**: in der Sidebar eine Klasse anklicken.
+    Um die Sidebar vorher einzugrenzen, im Dropdown *All classes* eine [Kollektion](../basics/collections.md) wählen.
+    Die URL wechselt nach `/finder?class=<id>`, und neben dem Klassennamen erscheint ein **★**-Stern, um die Klasse als [Favorit](../basics/favorites.md) zu markieren.
 - **Objekt öffnen**: Rechtspfeil in einer Zeile klicken.
     Die Detailseite lädt unter `/object/<id>/<category-id>`; siehe [Objektdetailseite](../basics/object-details.md).
 - **Attribute inline bearbeiten**: in eine beliebige Zelle klicken, um den Inline-Editor (Stift) und das *Meatballs*-Menü (drei Punkte) einzublenden.

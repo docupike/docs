@@ -16,17 +16,20 @@ See [Rights and permissions](rights-and-permissions.md).
 
 ## Class details
 
-The class form asks for:
+The **New class** form asks for:
 
 | Field | Notes |
 |---|---|
-| **Name** | Display name shown in the Finder sidebar, the All-classes dropdown, and on every object's details page header. |
-| **Icon** | Pick from a predefined icon set. The icon shows next to the class name everywhere. |
-| **Collections** | One or more [collections](../user/basics/collections.md) the class belongs to. |
-| **Categories** | The set of [categories](../user/basics/categories-and-attributes.md) attached to the class. Add built-in or [custom categories](custom-categories.md). |
+| **Name** | Required. Display name shown in the Finder class list and on every object's details page header. |
+| **Collection** | One or more [collections](../user/basics/collections.md) the class belongs to. A class without a collection stays hidden and users cannot use it. |
 
 Save to create the class.
-New classes immediately appear in the Finder.
+New classes appear in the Finder as soon as they belong to at least one collection.
+
+Then open the class from the list and complete it on the **Details** tab:
+
+- **Icon**: pick from a predefined icon set. The icon shows next to the class name everywhere.
+- **Containing categories**: click **Add category** to attach built-in or [custom categories](custom-categories.md), see [Categories and attributes](../user/basics/categories-and-attributes.md).
 
 ## Edit and delete
 

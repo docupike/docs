@@ -16,7 +16,8 @@ The Finder has four regions:
 
 - **Search**: type in the top search box; press **Enter** to filter the table, see [Save search](saved-views.md) to save the result.
 - **Filter**: click **Filters** to apply attribute filters, see [Filter the Finder](set-filter.md).
-- **Pick a class**: click a class in the sidebar or use the *All classes* dropdown.
+- **Pick a class**: click a class in the sidebar.
+    To narrow the sidebar down first, pick a [collection](../basics/collections.md) in the *All classes* dropdown.
     The page URL becomes `/finder?class=<id>` and a **★** star appears next to the class name for [favoriting](../basics/favorites.md).
 - **Open an object**: click the right-arrow on a row.
     The detail page loads at `/object/<id>/<category-id>`, see [Object details page](../basics/object-details.md).

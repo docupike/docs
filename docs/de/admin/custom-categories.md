@@ -30,10 +30,10 @@ Die meisten Felder können jederzeit geändert werden; der Kategorietyp ist jedo
 ## Eine benutzerdefinierte Kategorie löschen
 
 Benutzerdefinierte Kategorien können gelöscht werden, wenn keine Werte darin gespeichert sind.
-Informationen zum Verhalten beim Massenlöschen und zu den Warnmeldungen finden Sie unter [Klassen und Sammlungen verwalten](class-collection-management.md).
+Informationen zum Verhalten beim Massenlöschen und zu den Warnmeldungen finden Sie unter [Klassen und Kollektionen verwalten](class-collection-management.md).
 
 ## Siehe auch
 
 - [Kategorien-Generator](category-builder.md)
 - [Kategorien und Attribute](../user/basics/categories-and-attributes.md)
-- [Klassen und Sammlungen verwalten](class-collection-management.md)
+- [Klassen und Kollektionen verwalten](class-collection-management.md)
