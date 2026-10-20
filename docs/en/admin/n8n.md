@@ -102,6 +102,53 @@ Enter the URL of your own i-doit up instance there instead.
 
 The node sends the token in the `X-API-TOKEN` header of every request.
 
+## Notes on the actions
+
+**Push Object**
+
+- In **Class**, enter the ID of the class, not its name.
+  To find the ID, run **Find objects** for an existing object of that class, the ID is in the field `classification.id` of the result.
+- **Data** holds one entry per category, with a strategy and the entries to write, keyed by a reference ID of the entry:
+
+    ```json
+    {
+        "cmdb.general": {
+            "strategy": "overwrite",
+            "data": {
+                "main": {
+                    "description": "Imported from the inventory tool"
+                }
+            }
+        }
+    }
+    ```
+
+- Running the action twice with the same **Reference ID** and **Reference Type** updates the object instead of creating a duplicate.
+
+**Find objects**
+
+- **Criteria** takes a filter as JSON. `field` names the category and the attribute, `type` is `eq` or `neq`, for example:
+
+    ```json
+    {"type": "eq", "field": "cmdb.general.title", "value": "web-01"}
+    ```
+
+    Leave `{}` to return all objects.
+- **Categories** limits the result to one or more categories, for example `cmdb.general`.
+  An identifier that i-doit up does not know does not stop the node, the node then returns no items.
+- Each item carries a field `_paging` with `offset`, `perPage`, and `total`.
+
+## Verify webhook calls from i-doit up
+
+i-doit up can call the URL of an n8n **Webhook** node when an event occurs, for example when an object is created.
+Webhooks are registered through the [API](../dev/api.md) with `POST /api/v2/webhook`.
+The response contains the ID and the **secret** of the webhook. Store the secret, it is shown only once.
+
+Every call carries the header `X-Signature`.
+It contains the HMAC-SHA256 of the raw request body, calculated with the secret of the webhook, as a hexadecimal string.
+To verify a call, enable the option **Raw Body** in the **Webhook** node and calculate the HMAC-SHA256 over this raw body.
+Do not calculate it over the parsed JSON, because serializing the JSON again can change the body and the signature no longer matches.
+
 ## Troubleshooting
 
 | Symptom | Cause and solution |
@@ -109,7 +156,9 @@ The node sends the token in the `X-API-TOKEN` header of every request.
 | The credential test fails with *Unauthorized*. | The token is wrong or the app was deleted. Create a new app and paste the new token. |
 | The credential test fails with *Not Found* or *ERR_INVALID_URL*. | The URL is wrong. Enter only the base URL of your i-doit up instance including the protocol, for example `https://your-instance.example.com`, without an API path. |
 | The credential test fails with a connection error such as *EHOSTUNREACH*, *ENOTFOUND*, *ECONNREFUSED*, or *ETIMEDOUT*. | n8n cannot reach your i-doit up instance. Check the host name and the port in the URL, and check that no firewall or proxy blocks the connection from the n8n server to your i-doit up URL. |
-| The credential test succeeds, but the i-doit up nodes fail with *The resource you are requesting could not be found*. | The URL points to a different service or ends with more than one slash. Enter the base URL of your i-doit up instance without a trailing slash. |
+| The credential test succeeds, but the i-doit up nodes fail with *The resource you are requesting could not be found*. | The URL points to a different service. Enter the base URL of your i-doit up instance. Trailing slashes are not the cause, the nodes remove them from the URL. |
+| **Push Object** fails with *Unable to find class with id ...*. | **Class** contains a class name such as `server` instead of a class ID. Enter the ID of the class, see [Notes on the actions](#notes-on-the-actions). |
+| **Find objects** returns no items although matching objects exist. | **Categories** contains an identifier that i-doit up does not know. Check the spelling, for example `cmdb.general`. |
 | The i-doit up nodes do not appear in the node panel. | n8n did not load the package. Check that `N8N_CUSTOM_EXTENSIONS` points to the folder that contains the file `package.json` of the package, and restart n8n. |
 
 ## Further readings

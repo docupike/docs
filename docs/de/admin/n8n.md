@@ -102,6 +102,53 @@ Tragen Sie dort stattdessen die URL Ihrer eigenen i-doit-up-Instanz ein.
 
 Der Node sendet das Token bei jeder Anfrage im Header `X-API-TOKEN`.
 
+## Hinweise zu den Aktionen
+
+**Push Object**
+
+- Tragen Sie unter **Class** die ID der Klasse ein, nicht ihren Namen.
+  Die ID finden Sie, indem Sie **Find objects** für ein vorhandenes Objekt dieser Klasse ausführen, sie steht im Ergebnis im Feld `classification.id`.
+- **Data** enthält je Kategorie einen Eintrag mit einer Strategie und den zu schreibenden Einträgen, jeweils unter einer Referenz-ID des Eintrags:
+
+    ```json
+    {
+        "cmdb.general": {
+            "strategy": "overwrite",
+            "data": {
+                "main": {
+                    "description": "Imported from the inventory tool"
+                }
+            }
+        }
+    }
+    ```
+
+- Führen Sie die Aktion zweimal mit derselben **Reference ID** und demselben **Reference Type** aus, aktualisiert sie das Objekt, statt ein Duplikat anzulegen.
+
+**Find objects**
+
+- **Criteria** erwartet einen Filter als JSON. `field` nennt Kategorie und Attribut, `type` ist `eq` oder `neq`, zum Beispiel:
+
+    ```json
+    {"type": "eq", "field": "cmdb.general.title", "value": "web-01"}
+    ```
+
+    Lassen Sie `{}` stehen, um alle Objekte zu erhalten.
+- **Categories** schränkt das Ergebnis auf eine oder mehrere Kategorien ein, zum Beispiel `cmdb.general`.
+  Eine Kennung, die i-doit up nicht kennt, stoppt den Node nicht, der Node liefert dann keine Items.
+- Jedes Item enthält ein Feld `_paging` mit `offset`, `perPage` und `total`.
+
+## Webhook-Aufrufe aus i-doit up prüfen
+
+i-doit up kann bei einem Ereignis die URL eines n8n-Nodes **Webhook** aufrufen, zum Beispiel wenn ein Objekt angelegt wird.
+Webhooks werden über die [API](../dev/api.md) mit `POST /api/v2/webhook` registriert.
+Die Antwort enthält die ID und das **Secret** des Webhooks. Bewahren Sie das Secret auf, es wird nur einmal angezeigt.
+
+Jeder Aufruf trägt den Header `X-Signature`.
+Er enthält den HMAC-SHA256 des unveränderten Anfrage-Bodys, berechnet mit dem Secret des Webhooks, als Hexadezimal-Zeichenkette.
+Um einen Aufruf zu prüfen, aktivieren Sie im Node **Webhook** die Option **Raw Body** und berechnen den HMAC-SHA256 über diesen unveränderten Body.
+Berechnen Sie ihn nicht über das geparste JSON, denn beim erneuten Serialisieren kann sich der Body ändern, und die Signatur passt dann nicht mehr.
+
 ## Fehlerbehebung
 
 | Symptom | Ursache und Lösung |
@@ -109,7 +156,9 @@ Der Node sendet das Token bei jeder Anfrage im Header `X-API-TOKEN`.
 | Der Test des Credentials schlägt mit *Unauthorized* fehl. | Das Token ist falsch oder die App wurde gelöscht. Legen Sie eine neue App an und fügen Sie das neue Token ein. |
 | Der Test des Credentials schlägt mit *Not Found* oder *ERR_INVALID_URL* fehl. | Die URL ist falsch. Geben Sie nur die Basis-URL Ihrer i-doit-up-Instanz mit Protokoll ein, zum Beispiel `https://your-instance.example.com`, ohne API-Pfad. |
 | Der Test des Credentials schlägt mit einem Verbindungsfehler wie *EHOSTUNREACH*, *ENOTFOUND*, *ECONNREFUSED* oder *ETIMEDOUT* fehl. | n8n erreicht Ihre i-doit-up-Instanz nicht. Prüfen Sie Hostnamen und Port in der URL und ob eine Firewall oder ein Proxy die Verbindung vom n8n-Server zu Ihrer i-doit-up-URL blockiert. |
-| Der Test des Credentials ist erfolgreich, aber die i-doit-up-Nodes melden *The resource you are requesting could not be found*. | Die URL zeigt auf einen anderen Dienst oder endet mit mehr als einem Schrägstrich. Geben Sie die Basis-URL Ihrer i-doit-up-Instanz ohne abschließenden Schrägstrich ein. |
+| Der Test des Credentials ist erfolgreich, aber die i-doit-up-Nodes melden *The resource you are requesting could not be found*. | Die URL zeigt auf einen anderen Dienst. Geben Sie die Basis-URL Ihrer i-doit-up-Instanz ein. Schrägstriche am Ende sind nicht die Ursache, die Nodes entfernen sie aus der URL. |
+| **Push Object** meldet *Unable to find class with id ...*. | Unter **Class** steht ein Klassenname wie `server` statt einer Klassen-ID. Tragen Sie die ID der Klasse ein, siehe [Hinweise zu den Aktionen](#hinweise-zu-den-aktionen). |
+| **Find objects** liefert keine Items, obwohl passende Objekte existieren. | Unter **Categories** steht eine Kennung, die i-doit up nicht kennt. Prüfen Sie die Schreibweise, zum Beispiel `cmdb.general`. |
 | Die i-doit-up-Nodes erscheinen nicht im Node-Bereich. | n8n hat das Paket nicht geladen. Prüfen Sie, ob `N8N_CUSTOM_EXTENSIONS` auf den Ordner zeigt, der die Datei `package.json` des Pakets enthält, und starten Sie n8n neu. |
 
 ## Siehe auch
