@@ -35,6 +35,97 @@ nav:
           - Objekt-Tools: user/basics/object-tools.md
           - Objekt erstellen: user/basics/create-object.md
           - Klassen: user/basics/classes.md
+          - Klassenreferenz:
+              - Überblick: user/basics/class-reference/index.md
+              - AKV: user/basics/class-reference/tar.md
+              - Anwendung: user/basics/class-reference/application.md
+              - Anzeige: user/basics/class-reference/display.md
+              - Arbeitsplatz: user/basics/class-reference/workplace.md
+              - Betriebssystem: user/basics/class-reference/operating-system.md
+              - Blade-Chassis: user/basics/class-reference/blade-chassis.md
+              - Blade-Server: user/basics/class-reference/blade-server.md
+              - Client: user/basics/class-reference/client.md
+              - Cluster: user/basics/class-reference/cluster.md
+              - Daemon: user/basics/class-reference/daemon.md
+              - Datenbankinstanz: user/basics/class-reference/database-instance.md
+              - Datenbankschema: user/basics/class-reference/database-schema.md
+              - DBMS: user/basics/class-reference/dbms.md
+              - Dienst: user/basics/class-reference/service.md
+              - Drucker: user/basics/class-reference/printer.md
+              - Etage: user/basics/class-reference/floor.md
+              - Fax: user/basics/class-reference/fax.md
+              - Fernseher: user/basics/class-reference/tv.md
+              - Fibre-Channel-Switch: user/basics/class-reference/fc-switch.md
+              - Firewall: user/basics/class-reference/firewall.md
+              - Fläche: user/basics/class-reference/area.md
+              - Frontplatte: user/basics/class-reference/faceplate.md
+              - Gebäude: user/basics/class-reference/building.md
+              - Gerät: user/basics/class-reference/appliance.md
+              - Headset: user/basics/class-reference/headset.md
+              - Host: user/basics/class-reference/host.md
+              - Information: user/basics/class-reference/information.md
+              - Kabel: user/basics/class-reference/cable.md
+              - Kabelrinne: user/basics/class-reference/cable-tray.md
+              - Klimaanlage: user/basics/class-reference/air-conditioning-system.md
+              - Kopfhörer: user/basics/class-reference/headphones.md
+              - Kunde: user/basics/class-reference/customer.md
+              - Land: user/basics/class-reference/country.md
+              - Lautsprecher: user/basics/class-reference/speaker.md
+              - Leerrohr: user/basics/class-reference/conduit.md
+              - Lieferant: user/basics/class-reference/supplier.md
+              - Lizenz: user/basics/class-reference/license.md
+              - Löschsysteme: user/basics/class-reference/extinguishing-system.md
+              - Maus: user/basics/class-reference/mouse.md
+              - Mikrofon: user/basics/class-reference/microphone.md
+              - Mobiltelefon: user/basics/class-reference/cellular-phone.md
+              - Multifunktionsgerät: user/basics/class-reference/multi-functional-device.md
+              - Netzwerk: user/basics/class-reference/network.md
+              - Netzwerkdose: user/basics/class-reference/network-outlet.md
+              - Notstromversorgung: user/basics/class-reference/emergency-power-system.md
+              - Organisation: user/basics/class-reference/organization.md
+              - Patchpanel: user/basics/class-reference/patch-panel.md
+              - Person: user/basics/class-reference/person.md
+              - Personengruppe: user/basics/class-reference/person-group.md
+              - Projektor: user/basics/class-reference/projector.md
+              - Prozess: user/basics/class-reference/process.md
+              - Rack: user/basics/class-reference/rack.md
+              - Rack-Montage: user/basics/class-reference/rack-mount.md
+              - Rauchansaugsysteme: user/basics/class-reference/smoke-intake-system.md
+              - Raum: user/basics/class-reference/room.md
+              - Rohranschlüsse: user/basics/class-reference/pipe-connection.md
+              - Router: user/basics/class-reference/router.md
+              - SaaS: user/basics/class-reference/saas.md
+              - SAN-Zone: user/basics/class-reference/san-zone.md
+              - Scanner: user/basics/class-reference/scanner.md
+              - Segmentiertes Subnetz: user/basics/class-reference/segmented-subnetwork.md
+              - Server: user/basics/class-reference/server.md
+              - SIM-Karte: user/basics/class-reference/sim-card.md
+              - Speichergerät: user/basics/class-reference/storage.md
+              - Stack: user/basics/class-reference/stack.md
+              - Stadt: user/basics/class-reference/city.md
+              - Standort: user/basics/class-reference/position.md
+              - Stellenbeschreibung: user/basics/class-reference/job-description.md
+              - Stromnetzkomponenten: user/basics/class-reference/power-grid-component.md
+              - Stromquelle: user/basics/class-reference/power-source.md
+              - Stromversorgungsunternehmen: user/basics/class-reference/power-company.md
+              - Stromverteilereinheit: user/basics/class-reference/power-distribution-unit.md
+              - Supernetz: user/basics/class-reference/supernetwork.md
+              - Switch: user/basics/class-reference/switch.md
+              - Systemkonto: user/basics/class-reference/system-account.md
+              - Tank: user/basics/class-reference/tank.md
+              - Tape library: user/basics/class-reference/tape-library.md
+              - Tastatur: user/basics/class-reference/keyboard.md
+              - Telefon: user/basics/class-reference/phone.md
+              - Telefonsystem: user/basics/class-reference/telephone-system.md
+              - USV: user/basics/class-reference/ups.md
+              - Verkabelungssystem: user/basics/class-reference/wiring-system.md
+              - Vertrag: user/basics/class-reference/contract.md
+              - Videoüberwachungssysteme: user/basics/class-reference/video-surveillance-system.md
+              - Virtualisierungshost: user/basics/class-reference/virtual-host.md
+              - Virtuelle Maschine: user/basics/class-reference/virtual-machine.md
+              - VLAN: user/basics/class-reference/vlan.md
+              - VoIP-Telefon: user/basics/class-reference/voip-phone.md
+              - WLAN-Access Point: user/basics/class-reference/wifi.md
           - Kollektionen: user/basics/collections.md
           - Kategorien und Attribute: user/basics/categories-and-attributes.md
           - Favoriten: user/basics/favorites.md
