@@ -138,16 +138,39 @@ Der Node sendet das Token bei jeder Anfrage im Header `X-API-TOKEN`.
 
 **Find objects**
 
-- **Criteria** erwartet einen Filter als JSON. `field` nennt Kategorie und Attribut, `type` ist `eq` oder `neq`, zum Beispiel:
+- **Criteria** erwartet einen Filter als JSON. `type` legt den Vergleich fest, `field` nennt Kategorie und Attribut, zum Beispiel:
 
     ```json
     {"type": "eq", "field": "cmdb.general.title", "value": "web-01"}
     ```
 
-    Lassen Sie `{}` stehen, um alle Objekte zu erhalten.
+    Lassen Sie `{}` stehen, um alle Objekte einzuschließen.
+    Die verfügbaren Typen stehen in der Tabelle unten.
 - **Categories** schränkt das Ergebnis auf eine oder mehrere Kategorien ein, zum Beispiel `cmdb.general`.
   Eine Kennung, die i-doit up nicht kennt, stoppt den Node nicht, der Node liefert dann keine Items.
-- Jedes Item enthält ein Feld `_paging` mit `offset`, `perPage` und `total`.
+- Ein Lauf liefert höchstens 10 Objekte. **Per Page** hat derzeit keine Wirkung.
+  Für weitere Objekte führen Sie die Aktion erneut aus und erhöhen **Offset** in Zehnerschritten (0, 10, 20 und so weiter).
+- Jedes Item enthält ein Feld `_paging` mit `offset`, `perPage` (Anzahl der Items in diesem Lauf) und `total` (Anzahl aller passenden Objekte).
+
+| Typ | Felder | Trifft auf Objekte zu, deren Attribut |
+| --- | --- | --- |
+| `eq`, `neq` | `field`, `value` | dem Wert entspricht oder nicht entspricht |
+| `lt`, `lte`, `gt`, `gte` | `field`, `value` | kleiner, kleiner oder gleich, größer oder größer oder gleich dem Wert ist. Textattribute werden als Text verglichen. |
+| `like`, `not_like` | `field`, `value` | zum Muster passt oder nicht passt, `%` ist der Platzhalter, zum Beispiel `web-%` |
+| `in`, `not_in` | `field`, `value` als Liste | einem der Werte entspricht oder keinem entspricht, zum Beispiel `["web-01", "web-02"]` |
+| `range` | `field`, `start`, `end` | zwischen `start` und `end` liegt, beide eingeschlossen |
+| `isNull`, `isNotNull` | `field` | leer oder gefüllt ist |
+| `and`, `or` | `items` als Liste von Kriterien | alle oder mindestens eines der Kriterien erfüllt |
+| `not` | `item` mit einem Kriterium | das Kriterium nicht erfüllt |
+
+Beispiel, das zwei Kriterien verknüpft:
+
+```json
+{"type": "and", "items": [
+  {"type": "like", "field": "cmdb.general.title", "value": "web-%"},
+  {"type": "isNotNull", "field": "cmdb.general.description"}
+]}
+```
 
 ## Webhook-Aufrufe aus i-doit up prüfen
 

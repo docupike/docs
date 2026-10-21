@@ -138,16 +138,39 @@ The node sends the token in the `X-API-TOKEN` header of every request.
 
 **Find objects**
 
-- **Criteria** takes a filter as JSON. `field` names the category and the attribute, `type` is `eq` or `neq`, for example:
+- **Criteria** takes a filter as JSON. `type` sets the comparison, `field` names the category and the attribute, for example:
 
     ```json
     {"type": "eq", "field": "cmdb.general.title", "value": "web-01"}
     ```
 
-    Leave `{}` to return all objects.
+    Leave `{}` to match all objects.
+    The available types are listed in the table below.
 - **Categories** limits the result to one or more categories, for example `cmdb.general`.
   An identifier that i-doit up does not know does not stop the node, the node then returns no items.
-- Each item carries a field `_paging` with `offset`, `perPage`, and `total`.
+- One run returns at most 10 objects. **Per Page** currently has no effect.
+  To get further objects, run the action again and raise **Offset** in steps of 10 (0, 10, 20, and so on).
+- Each item carries a field `_paging` with `offset`, `perPage` (the number of items in this run), and `total` (the number of all matching objects).
+
+| Type | Fields | Matches objects where the attribute |
+| --- | --- | --- |
+| `eq`, `neq` | `field`, `value` | equals or does not equal the value |
+| `lt`, `lte`, `gt`, `gte` | `field`, `value` | is less than, less than or equal to, greater than, or greater than or equal to the value. Text attributes are compared as text. |
+| `like`, `not_like` | `field`, `value` | matches or does not match the pattern, `%` is the wildcard, for example `web-%` |
+| `in`, `not_in` | `field`, `value` as a list | equals or does not equal one of the values, for example `["web-01", "web-02"]` |
+| `range` | `field`, `start`, `end` | lies between `start` and `end`, both included |
+| `isNull`, `isNotNull` | `field` | is empty or is filled |
+| `and`, `or` | `items` as a list of criteria | meets all or at least one of the criteria |
+| `not` | `item` with one criterion | does not meet the criterion |
+
+Example that combines two criteria:
+
+```json
+{"type": "and", "items": [
+  {"type": "like", "field": "cmdb.general.title", "value": "web-%"},
+  {"type": "isNotNull", "field": "cmdb.general.description"}
+]}
+```
 
 ## Verify webhook calls from i-doit up
 
