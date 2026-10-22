@@ -9,6 +9,44 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 3.2.0 – 2026-10-22
+
+### Added
+
+-   Bugs 2026: Make Search area "My saved searches" specific to each user (`ID2-5912`)
+-   MIB i-suite-it: Extend "IP Networking" Category with Import-Relevant Attributes (`ID2-5859`)
+
+### Changed
+
+-   MIB Soft-Validation: Activate category network definition for Inline edit (`ID2-5652`)
+-   MIW Mongo-based projection: Migrate projection-level of "References" domain to mongodb (`ID2-5569`)
+
+### Fixed
+
+-   CQRS: Prevent reference errors for objects that don't exist (`ID2-5761`)
+-   Settings: Remove check icon in dropdown options for Settings "Location Class" (`ID2-5698`)
+-   Validation options for custom attributes: Day of Week validation does not work properly for datetime attribute (`ID2-5195`)
+-   n8n integration: Add an HTTP timeout and retry handling to webhook delivery (`ID2-6030`)
+-   n8n integration: Fix Push Object API returning a non-existent object ID and HTTP 500 for a missing data field (`ID2-6029`)
+-   Release Findings April 2026: Fix Finder not fully translating content on language switch (`ID2-5686`)
+-   Bugs 2026: "Select next free IP address" in a network does not assign the IP and crashes the page (`ID2-6088`)
+-   Bugs 2026: Duplicating an object in the Finder creates it without a title — name is always "Unnamed" (`ID2-6085`)
+-   Bugs 2026: Name column is not in sync with other columns when scrolling (`ID2-5320`)
+-   Bugs 2026: Make the Button "Back" lead the user back to the previous view instead of navigating to the "page above" (`ID2-5954`)
+-   Bugs 2026: Do not cut off column titles in the header during the CSV import without an alternative (`ID2-5877`)
+-   Bugs 2026: Do not allow the user to save if the “DHCP entry type” field is empty (`ID2-5386`)
+-   Bugs 2026: Allow the user to show all attributes in the Network Definition category (`ID2-5385`)
+-   Bugs 2026: New user permissions not applied instantly after assignment in permissions settings (`ID2-5169`)
+-   Bugs 2026: Make sure the scope is displayed correctly in the permissions area (`ID2-5959`)
+-   Bugs 2026: Fix field Name in edit page of the categories Person group members/Contacts (linked objects) (`ID2-5200`)
+
+## 3.1.1 – 2026-05-28
+
+### Fixed
+
+-   CMDB CRUD: Do not allow creation of entry in not existing category (`ID2-5690`)
+-   Release Findings April 2026: Fix handling of unknown enum value (`ID2-5689`)
+
 ## 3.1.0 – 2026-04-09
 
 ### Added
