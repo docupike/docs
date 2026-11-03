@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 3.2.1 – 2026-11-03
+
+### Fixed
+
+-   Bugs 2026: i-suite-it loses connection to i-doit up ~24h after installation (`ID2-6095`)
+
 ## 3.2.0 – 2026-10-22
 
 ### Added
