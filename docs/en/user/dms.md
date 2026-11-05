@@ -24,18 +24,20 @@ All three open the DMS with your i-doit up account.
 You do not need a separate DMS login.
 The first time you open the DMS from i-doit up, the DMS creates your user account automatically.
 
-The add-on texts follow the language you selected in i-doit up, German or English.
+The texts of the add-on are in English.
 
 !!! todo "TODO (open questions 5 and 6)"
-    Confirm whether the embedded DMS also switches to German (the add-on does not pass the user language to the DMS yet).
-    Confirm the final names "DMS", "DMS Documents", "Documents", and "Manage in DMS" and whether the widget and the menu entry get German texts.
-    Today the menu entry **DMS**, the island title **DMS Documents**, and all texts in the widget are English only.
+    Confirm whether the add-on and the embedded DMS get German texts (the add-on does not pass the user language to the DMS yet).
+    The test of the 3.3.0 line showed English texts only; the German user interface was not tested.
+    Confirm the final names "DMS", "Documents", and "Manage in DMS".
 
 ## Open the DMS in i-doit up
 
 Select **DMS** in the navigation, group **Add-ons**.
 i-doit up shows the DMS with its folders and documents in the main area.
 You work with folders and documents the same way as in the standalone DMS.
+
+[![DMS embedded in i-doit up with two documents](../img/screenshots/user/dms/dms_embedded.png)](../img/screenshots/user/dms/dms_embedded.png)
 
 i-doit up remembers the folder that you have open in the address of the page.
 If you reload the page or bookmark it, the same folder opens again.
@@ -63,9 +65,17 @@ Here you can:
 - create folders,
 - assign existing DMS documents to the object with **Assign documents**.
 
-The table has an **Actions** column.
-Its menu contains **View details** and **Manage in DMS**, which opens the document in the standalone DMS.
-Use **Manage Access** to control who can see a document.
+The table shows name, modification date, type, size, authors, and access of each document.
+The **Actions** column has two icons: **View details** and **Manage in DMS**, which opens the document in the standalone DMS.
+Documents you have no access to show no actions.
+
+[![Documents island of a server with two assigned documents](../img/screenshots/user/dms/documents_island.png)](../img/screenshots/user/dms/documents_island.png)
+
+To upload, click **Upload** and select the files in the dialog **Upload Files**.
+A file may be up to 104.9 MB.
+
+The assignment to the object is only visible in i-doit up.
+The standalone DMS shows the document, but not the object it belongs to.
 
 !!! note
     If the island is missing, you may lack the island rights.
@@ -75,21 +85,26 @@ Use **Manage Access** to control who can see a document.
 
 1. Click **Assign documents** in the island.
 2. In the dialog **Documents for this object**, select the documents that belong to the object.
-3. Click **Save**.
+3. Click **Save**. i-doit up confirms with *Saved*.
 
 If you lack access to some of the selected documents, the DMS saves the others and reports how many were skipped.
 
 ### The Documents widget
 
 The widget **Documents** is available on the object page of every object class.
+Open it with **Widgets** at the top right of the object page.
 It lists up to 25 documents of the object with title and size.
 Click a title to open the file in a new tab.
 PDF files, images, and text files open in the browser, other files are downloaded.
 
+[![Documents widget in the widget bar of an object](../img/screenshots/user/dms/documents_widget.png)](../img/screenshots/user/dms/documents_widget.png)
+
 If no documents are assigned, the widget shows *No documents assigned to this object.*
-On a page without an object, for example the dashboard, the widget only shows the button **Manage in DMS**.
+Below the list, **Manage in DMS** opens the standalone DMS.
+On a page without an object, the widget only shows the button **Manage in DMS**.
 
 !!! todo "TODO (open question 10)"
+    The test checked the object class Server only.
     Confirm whether the widget and the island stay available for all object classes or whether this becomes configurable.
 
 ## Who sees which documents
@@ -101,12 +116,13 @@ Your rights in i-doit up are not transferred to the DMS.
 - The documents of an object are shared by everyone who works in the same tenant.
 - The list of an object shows **all** documents that are assigned to it, also documents of other users.
 - To open, download, or change a document you need access to it in the DMS.
-  Documents without access are shown with their title, grayed out, marked **No access**, and without a link.
+  Documents without access are shown with their title, grayed out, marked **No access**, and without a link or actions.
 
 When you switch the tenant in i-doit up, the DMS views switch to the documents of that tenant.
 
 !!! todo "TODO (open question 8)"
-    Confirm that users are meant to see the titles of documents they have no access to.
+    The test confirmed this behavior.
+    Confirm that it is intended that users see the titles of documents they have no access to.
 
 !!! todo "TODO (open question 7)"
     Confirm whether documents attached to the same object in Suite+ also appear here.

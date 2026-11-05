@@ -31,15 +31,19 @@ Es meldet den Benutzer mit einem kurzlebigen Token im DMS an.
 Das DMS legt den Benutzer beim ersten Aufruf an.
 
 - Benutzer aus i-doit up erhalten im DMS die Rolle *user*, auch i-doit-up-Administratoren.
+  **In DMS verwalten** meldet ebenfalls als dieser Benutzer an.
 - Rechte aus i-doit up werden nicht übertragen.
   Den Zugriff auf jedes Dokument prüft das DMS selbst.
 
 !!! todo "TODO (offene Frage 5)"
-    Klären, ob i-doit-up-Administratoren im DMS Administratorrechte erhalten und ob die Benutzersprache an das DMS übergeben wird.
+    Der Test hat die Rolle *user* für einen i-doit-up-Administrator bestätigt.
+    Klären, ob das so bleibt und ob die Benutzersprache an das DMS übergeben wird.
 
 **Mandanten und Objekte**
 
 Das DMS hält die Dokumente jeder i-doit-up-Instanz und jedes Mandanten in einem eigenen Arbeitsbereich.
+Es legt den Arbeitsbereich bei der ersten Anmeldung aus i-doit up automatisch an.
+Ein Administrator, der sich direkt im DMS anmeldet, sieht die Dokumente aus i-doit up nicht.
 Die Ansichten zeigen immer den Mandanten, der gerade in i-doit up gewählt ist, sofern der Benutzer Zugriff darauf hat.
 Dokumente werden einem Objekt über die Objekt-ID zugeordnet.
 
@@ -47,6 +51,8 @@ Dokumente werden einem Objekt über die Objekt-ID zugeordnet.
 
 - Ein laufendes DMS, das Sie administrieren.
 - i-doit up 3.3.0 oder neuer, in dem Sie Add-ons registrieren können.
+- i-doit up läuft mit HTTPS.
+  Über HTTP bleiben die eingebetteten DMS-Ansichten leer.
 - Docker und Docker Compose auf dem Host des Add-on-Dienstes.
 - Netzwerkzugriff:
     - von i-doit up zum Add-on-Dienst,
@@ -87,6 +93,9 @@ Verliert dieser Administrator die Administratorrolle oder löscht er das Token, 
 
 Der Dienst bietet die Zustandsprüfungen `/health` und `/health/ready`.
 
+Speichert das DMS Dateien auf einem lokalen Docker-Volume, muss das Upload-Volume dem Benutzer und der Gruppe `101:101` gehören.
+Sonst schlagen Uploads mit *Internal server error* fehl.
+
 Das Add-on hat in i-doit up keine Einstellungsseite.
 
 ## Add-on in i-doit up registrieren
@@ -112,12 +121,16 @@ Das Add-on hat in i-doit up keine Einstellungsseite.
 
 Die Island erscheint in der Gruppe **Islands** der Objektleiste.
 Benutzer brauchen die Island-Rechte, um sie zu sehen.
-Auf einer i-doit-up-Datenbank, die von einer älteren Version aktualisiert wurde, fehlt dem Administrator möglicherweise das Island-Recht (interne Schlüssel `worlds-and-islands`, `islands`, `access-all-islands`).
-Die Island bleibt dann unsichtbar.
-Vergeben Sie das Recht wie in [Rechte und Berechtigungen](rights-and-permissions.md) beschrieben.
+i-doit up vergibt dieses Recht nicht automatisch, auch nicht dem Administrator und auch nicht bei einer Neuinstallation.
+Ohne das Recht bleibt die Island unsichtbar.
+
+1. Vergeben Sie das Island-Recht (interne Schlüssel `worlds-and-islands`, `islands`, `access-all-islands`) wie in [Rechte und Berechtigungen](rights-and-permissions.md) beschrieben, auch sich selbst.
+2. Melden Sie sich ab und wieder an.
+   Das Recht wirkt erst nach einer neuen Anmeldung.
 
 !!! todo "TODO (offene Frage 2)"
-    Klären, ob das Update das Island-Recht automatisch vergibt, und den genauen Pfad des Rechts in der Oberfläche ergänzen.
+    Der Test hat bestätigt, dass das Recht auch bei einer Neuinstallation fehlt.
+    Den genauen Namen des Rechts in den Rechte-Einstellungen ergänzen; der Test hat das Recht ohne die Oberfläche vergeben.
 
 ## Bestehendes DMS aktualisieren
 
@@ -137,11 +150,17 @@ Das DMS kann einen Suite+-Mandanten mit einem i-doit-up-Mandanten und ein Suite+
 Dann erscheinen Dokumente, die in einem System angehängt wurden, auch im anderen.
 
 !!! todo "TODO (offene Frage 7)"
+    Der Test hat bestätigt, dass das DMS ohne Suite+ den Arbeitsbereich eines i-doit-up-Mandanten bei der ersten Anmeldung automatisch anlegt.
     Klären, ob die Verknüpfung mit Suite+ Teil des Produkts ist.
     Derzeit ist sie ein Proof of Concept: die Suite+-Middleware schiebt die Verknüpfungen nach dem Einrichten der DMS-Verbindung und einem einmaligen Abgleich an die Admin-API des DMS.
     Klären, wer Mandanten verknüpft, wenn keine Suite+-Middleware beteiligt ist.
 
 ## Fehlerbehebung
+
+**Die DMS-Ansicht oder die Island Documents bleibt leer**
+
+Prüfen Sie, dass i-doit up mit HTTPS läuft.
+Über HTTP blockiert der Browser das eingebettete DMS, und es erscheint nur der Knopf **In DMS verwalten**.
 
 **Die DMS-Ansicht zeigt den Fehler "Could not resolve the calling user"**
 
@@ -152,6 +171,11 @@ Stellen Sie sicher, dass diese URL aus dem Add-on-Container auflösbar und errei
 **Die Island Documents fehlt**
 
 Prüfen Sie die Island-Rechte, siehe [Rechte für die Island Documents](#rechte-fur-die-island-documents).
+Melden Sie sich nach dem Vergeben des Rechts ab und wieder an.
+
+**Uploads schlagen mit "Internal server error" fehl**
+
+Prüfen Sie den Besitzer des Upload-Volumes des DMS, siehe [Add-on-Dienst konfigurieren](#add-on-dienst-konfigurieren).
 
 **In DMS verwalten öffnet eine nicht erreichbare Seite**
 
@@ -162,7 +186,8 @@ Der Wert muss die Adresse des DMS sein, wie der Browser des Benutzers sie sieht,
 
 - Rechte aus i-doit up werden nicht an das DMS übertragen.
 - Dateien, die außerhalb des DMS an i-doit-up-Objekten hängen, werden nicht abgeglichen.
-- Der Menüeintrag **DMS**, der Island-Titel **DMS Documents** und die Widget-Texte sind nur englisch.
+- Der Menüeintrag **DMS**, die Island **Documents** und das Widget **Documents** sind nur englisch.
+- Die Zuordnung eines Dokuments zu einem Objekt ist nur in i-doit up sichtbar, nicht im eigenständigen DMS.
 - Island und Widget für Dokumente stehen für alle Objektklassen zur Verfügung.
 - Das DMS erkennt i-doit-up-Instanzen nur am Präfix `idoit-up-` ihrer Instanz-ID.
 

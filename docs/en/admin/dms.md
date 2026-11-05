@@ -31,15 +31,19 @@ It signs the user in to the DMS with a short-lived token.
 The DMS creates the user on the first visit.
 
 - Users from i-doit up get the DMS role *user*, also i-doit up administrators.
+  **Manage in DMS** also signs in as this user.
 - Rights from i-doit up are not transferred.
   The DMS checks access to each document itself.
 
 !!! todo "TODO (open question 5)"
-    Confirm whether i-doit up administrators get administrator rights in the DMS and whether the user language is passed to the DMS.
+    The test confirmed the role *user* for an i-doit up administrator.
+    Confirm whether this stays so and whether the user language is passed to the DMS.
 
 **Tenants and objects**
 
 The DMS keeps the documents of each i-doit up instance and tenant in a separate workspace.
+It creates the workspace automatically at the first sign-in from i-doit up.
+An administrator who signs in to the DMS directly does not see the documents from i-doit up.
 The views always show the tenant that is currently selected in i-doit up, as long as the user has access to it.
 Documents are assigned to objects by the object ID.
 
@@ -47,6 +51,8 @@ Documents are assigned to objects by the object ID.
 
 - A running DMS that you administer.
 - i-doit up 3.3.0 or later, where you can register add-ons.
+- i-doit up runs with HTTPS.
+  Over HTTP the embedded DMS views stay empty.
 - Docker and Docker Compose on the host of the add-on service.
 - Network access:
     - from i-doit up to the add-on service,
@@ -87,6 +93,9 @@ If this administrator loses the administrator role or deletes the token, new reg
 
 The service offers the health checks `/health` and `/health/ready`.
 
+If the DMS stores files on a local Docker volume, the upload volume must belong to the user and group `101:101`.
+Otherwise uploads fail with *Internal server error*.
+
 The add-on has no settings page in i-doit up.
 
 ## Register the add-on in i-doit up
@@ -112,12 +121,16 @@ The add-on has no settings page in i-doit up.
 
 The island appears in the group **Islands** of the object sidebar.
 Users need the island rights to see it.
-On an i-doit up database that was updated from an older version, the administrator may lack the island right (internal keys `worlds-and-islands`, `islands`, `access-all-islands`).
-In this case the island stays invisible.
-Assign the right as described in [Rights and permissions](rights-and-permissions.md).
+i-doit up does not grant this right automatically, not even to the administrator and not even on a new installation.
+Without the right the island stays invisible.
+
+1. Assign the island right (internal keys `worlds-and-islands`, `islands`, `access-all-islands`) as described in [Rights and permissions](rights-and-permissions.md), also to yourself.
+2. Sign out and sign in again.
+   The right takes effect only after a new sign-in.
 
 !!! todo "TODO (open question 2)"
-    Confirm whether the update grants the island right automatically and add the exact right path as shown in the UI.
+    The test confirmed that the right is missing on a new installation too.
+    Add the exact name of the right as shown in the rights settings; the test assigned the right without the user interface.
 
 ## Update an existing DMS
 
@@ -137,11 +150,17 @@ The DMS can link a Suite+ tenant with an i-doit up tenant and a Suite+ asset wit
 Then documents attached in one system also appear in the other.
 
 !!! todo "TODO (open question 7)"
+    The test confirmed that without Suite+ the DMS creates the workspace of an i-doit up tenant automatically at the first sign-in.
     Confirm whether linking with Suite+ is part of the product.
     Today it is a proof of concept: the Suite+ middleware pushes the links to the admin API of the DMS after setting up the DMS connection and running a sync once.
     Clarify who links tenants when no Suite+ middleware is involved.
 
 ## Troubleshooting
+
+**The DMS view or the Documents island stays empty**
+
+Check that i-doit up runs with HTTPS.
+Over HTTP the browser blocks the embedded DMS, and only the button **Manage in DMS** appears.
 
 **The DMS view shows the error "Could not resolve the calling user"**
 
@@ -152,6 +171,11 @@ Make sure that this URL can be resolved and reached from the add-on container.
 **The Documents island is missing**
 
 Check the island rights, see [Rights for the Documents island](#rights-for-the-documents-island).
+After assigning the right, sign out and sign in again.
+
+**Uploads fail with "Internal server error"**
+
+Check the owner of the upload volume of the DMS, see [Configure the add-on service](#configure-the-add-on-service).
 
 **Manage in DMS opens a page that cannot be reached**
 
@@ -162,7 +186,8 @@ It must be the address of the DMS as the browser of the user sees it, not the in
 
 - Rights from i-doit up are not transferred to the DMS.
 - Files that are attached to i-doit up objects outside the DMS are not synchronized.
-- The menu entry **DMS**, the island title **DMS Documents**, and the widget texts are English only.
+- The menu entry **DMS**, the island **Documents**, and the widget **Documents** are English only.
+- The assignment of a document to an object is only visible in i-doit up, not in the standalone DMS.
 - The documents island and widget are available for all object classes.
 - The DMS detects i-doit up instances only by the prefix `idoit-up-` of their instance ID.
 

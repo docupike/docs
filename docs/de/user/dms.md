@@ -24,18 +24,22 @@ Alle drei öffnen das DMS mit Ihrem i-doit-up-Konto.
 Eine eigene DMS-Anmeldung brauchen Sie nicht.
 Wenn Sie das DMS zum ersten Mal aus i-doit up öffnen, legt das DMS Ihr Benutzerkonto automatisch an.
 
-Die Texte des Add-ons folgen der Sprache, die Sie in i-doit up gewählt haben, Deutsch oder Englisch.
+Die Texte des eingebetteten DMS folgen der Sprache, die Sie in i-doit up gewählt haben, Deutsch oder Englisch.
+Der Menüeintrag **DMS**, die Island **Documents** und das Widget **Documents** sind nur englisch.
 
 !!! todo "TODO (offene Fragen 5 und 6)"
-    Klären, ob auch das eingebettete DMS auf Deutsch umschaltet (das Add-on übergibt die Benutzersprache noch nicht an das DMS).
-    Die endgültigen Namen "DMS", "DMS Documents", "Documents" und "In DMS verwalten" bestätigen und klären, ob Widget und Menüeintrag deutsche Texte bekommen.
-    Derzeit sind der Menüeintrag **DMS**, der Island-Titel **DMS Documents** und alle Texte im Widget nur englisch.
+    Klären, ob Add-on und eingebettetes DMS deutsche Texte bekommen (das Add-on übergibt die Benutzersprache noch nicht an das DMS).
+    Der Test der 3.3.0-Linie zeigte nur englische Texte; die deutsche Oberfläche wurde nicht getestet.
+    Die deutschen Bezeichnungen auf dieser Seite stammen aus den Sprachdateien des Entwicklungsstands.
+    Die endgültigen Namen "DMS", "Documents" und "In DMS verwalten" bestätigen.
 
 ## Das DMS in i-doit up öffnen
 
 Wählen Sie in der Navigation in der Gruppe **Add-ons** den Eintrag **DMS**.
 i-doit up zeigt das DMS mit seinen Ordnern und Dokumenten im Hauptbereich.
 Sie arbeiten mit Ordnern und Dokumenten wie im eigenständigen DMS.
+
+[![DMS in i-doit up eingebettet, mit zwei Dokumenten](../img/screenshots/user/dms/dms_embedded.png)](../img/screenshots/user/dms/dms_embedded.png)
 
 i-doit up merkt sich den geöffneten Ordner in der Adresse der Seite.
 Wenn Sie die Seite neu laden oder als Lesezeichen speichern, öffnet sich derselbe Ordner wieder.
@@ -63,9 +67,17 @@ Hier können Sie:
 - Ordner anlegen,
 - vorhandene DMS-Dokumente mit **Dokumente zuordnen** dem Objekt zuordnen.
 
-Die Tabelle hat eine Spalte **Aktionen**.
-Ihr Menü enthält **Details anzeigen** und **In DMS verwalten**, das das Dokument im eigenständigen DMS öffnet.
-Mit **Zugriff verwalten** legen Sie fest, wer ein Dokument sehen darf.
+Die Tabelle zeigt Name, Änderungsdatum, Typ, Größe, Autoren und Zugriff jedes Dokuments.
+Die Spalte **Aktionen** hat zwei Symbole: **Details anzeigen** und **In DMS verwalten**, das das Dokument im eigenständigen DMS öffnet.
+Dokumente ohne Zugriff haben keine Aktionen.
+
+[![Island Documents eines Servers mit zwei zugeordneten Dokumenten](../img/screenshots/user/dms/documents_island.png)](../img/screenshots/user/dms/documents_island.png)
+
+Zum Hochladen klicken Sie auf **Hochladen** und wählen die Dateien im Dialog.
+Eine Datei darf bis zu 104,9 MB groß sein.
+
+Die Zuordnung zum Objekt ist nur in i-doit up sichtbar.
+Das eigenständige DMS zeigt das Dokument, aber nicht das Objekt, zu dem es gehört.
 
 !!! note
     Fehlt die Island, fehlen Ihnen möglicherweise die Island-Rechte.
@@ -75,21 +87,26 @@ Mit **Zugriff verwalten** legen Sie fest, wer ein Dokument sehen darf.
 
 1. Klicken Sie in der Island auf **Dokumente zuordnen**.
 2. Wählen Sie im Dialog die Dokumente, die zum Objekt gehören.
-3. Klicken Sie auf **Speichern**.
+3. Klicken Sie auf **Speichern**. i-doit up bestätigt das Speichern.
 
 Fehlt Ihnen der Zugriff auf einige der gewählten Dokumente, speichert das DMS die übrigen und meldet, wie viele übersprungen wurden.
 
 ### Das Widget Documents
 
 Das Widget **Documents** steht auf der Objektseite aller Objektklassen zur Verfügung.
+Sie öffnen es mit **Widgets** oben rechts auf der Objektseite.
 Es listet bis zu 25 Dokumente des Objekts mit Titel und Größe.
 Ein Klick auf den Titel öffnet die Datei in einem neuen Tab.
 PDF-Dateien, Bilder und Textdateien öffnen sich im Browser, andere Dateien werden heruntergeladen.
 
+[![Widget Documents in der Widget-Leiste eines Objekts](../img/screenshots/user/dms/documents_widget.png)](../img/screenshots/user/dms/documents_widget.png)
+
 Sind keine Dokumente zugeordnet, zeigt das Widget *No documents assigned to this object.* (Keine Dokumente zugeordnet.)
-Auf einer Seite ohne Objekt, etwa dem Dashboard, zeigt das Widget nur den Knopf **In DMS verwalten**.
+Unter der Liste öffnet **Manage in DMS** das eigenständige DMS.
+Auf einer Seite ohne Objekt zeigt das Widget nur den Knopf **Manage in DMS**.
 
 !!! todo "TODO (offene Frage 10)"
+    Der Test hat nur die Objektklasse Server geprüft.
     Klären, ob Widget und Island dauerhaft für alle Objektklassen gelten oder ob das konfigurierbar wird.
 
 ## Wer welche Dokumente sieht
@@ -101,11 +118,12 @@ Ihre Rechte aus i-doit up werden nicht an das DMS übertragen.
 - Die Dokumente eines Objekts teilen sich alle, die im selben Mandanten arbeiten.
 - Die Liste eines Objekts zeigt **alle** ihm zugeordneten Dokumente, auch Dokumente anderer Benutzer.
 - Zum Öffnen, Herunterladen oder Ändern brauchen Sie im DMS Zugriff auf das Dokument.
-  Dokumente ohne Zugriff erscheinen mit Titel, grau dargestellt, mit dem Vermerk **No access** (kein Zugriff) und ohne Link.
+  Dokumente ohne Zugriff erscheinen mit Titel, grau dargestellt, mit dem Vermerk **No access** (kein Zugriff) und ohne Link und Aktionen.
 
 Wenn Sie in i-doit up den Mandanten wechseln, zeigen die DMS-Ansichten die Dokumente dieses Mandanten.
 
 !!! todo "TODO (offene Frage 8)"
+    Der Test hat dieses Verhalten bestätigt.
     Bestätigen, dass Benutzer die Titel von Dokumenten ohne Zugriff sehen sollen.
 
 !!! todo "TODO (offene Frage 7)"
