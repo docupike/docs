@@ -5,15 +5,12 @@ It embeds the DMS in i-doit up, adds a documents island and a documents widget t
 This page describes how the add-on works, what it needs, how to configure and register it, and what to check when it does not work.
 For the user view, see [Documents (DMS)](../user/dms.md).
 
-!!! warning "Not released yet"
-    This page describes a feature that is still in development.
-    It will be released with i-doit up 3.3.0.
-    Configuration and installation steps can change before the release.
+!!! info
+    Available as of i-doit up 3.3.0.
 
 !!! todo "TODO (open question 1)"
     The i-doit up version is confirmed (3.3.0).
     Confirm the DMS version that contains the add-on and add it as a prerequisite.
-    Remove the warning above once i-doit up 3.3.0 is released.
 
 ## How the integration works
 

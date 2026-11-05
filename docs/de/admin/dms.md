@@ -5,15 +5,12 @@ Es bettet das DMS in i-doit up ein, ergänzt die Objektseite um eine Island und 
 Diese Seite beschreibt, wie das Add-on arbeitet, was es braucht, wie Sie es konfigurieren und registrieren und was Sie prüfen, wenn es nicht funktioniert.
 Die Benutzersicht beschreibt [Dokumente (DMS)](../user/dms.md).
 
-!!! warning "Noch nicht veröffentlicht"
-    Diese Seite beschreibt eine Funktion, die sich noch in Entwicklung befindet.
-    Sie erscheint mit i-doit up 3.3.0.
-    Konfiguration und Installationsschritte können sich bis zur Veröffentlichung ändern.
+!!! info
+    Verfügbar ab i-doit up 3.3.0.
 
 !!! todo "TODO (offene Frage 1)"
     Die i-doit-up-Version ist bestätigt (3.3.0).
     Die DMS-Version klären, die das Add-on enthält, und als Voraussetzung ergänzen.
-    Den Hinweis oben entfernen, sobald i-doit up 3.3.0 veröffentlicht ist.
 
 ## So arbeitet die Integration
 

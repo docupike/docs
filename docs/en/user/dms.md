@@ -5,15 +5,12 @@ You can browse the whole DMS inside i-doit up, see and attach the documents of a
 This page describes what you see as a user and how to work with documents on objects.
 For installation and configuration, see [DMS integration](../admin/dms.md).
 
-!!! warning "Not released yet"
-    This page describes a feature that is still in development.
-    It will be released with i-doit up 3.3.0.
-    Names, texts, and behavior can change before the release.
+!!! info
+    Available as of i-doit up 3.3.0.
 
 !!! todo "TODO (open question 1)"
     The i-doit up version is confirmed (3.3.0).
     Confirm the DMS version that contains the add-on and add it as a prerequisite.
-    Remove the warning above once i-doit up 3.3.0 is released.
 
 ## What the DMS add-on offers
 
