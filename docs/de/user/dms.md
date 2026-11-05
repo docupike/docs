@@ -7,12 +7,13 @@ Installation und Konfiguration beschreibt [DMS-Integration](../admin/dms.md).
 
 !!! warning "Noch nicht veröffentlicht"
     Diese Seite beschreibt eine Funktion, die sich noch in Entwicklung befindet.
-    Sie ist für i-doit up 3.3.0 geplant.
+    Sie erscheint mit i-doit up 3.3.0.
     Namen, Texte und Verhalten können sich bis zur Veröffentlichung ändern.
 
 !!! todo "TODO (offene Frage 1)"
-    Veröffentlichung bestätigen: mit welcher DMS-Version und welcher i-doit-up-Version die Integration ausgeliefert wird.
-    Den Hinweis oben nach der Veröffentlichung entfernen.
+    Die i-doit-up-Version ist bestätigt (3.3.0).
+    Die DMS-Version klären, die das Add-on enthält, und als Voraussetzung ergänzen.
+    Den Hinweis oben entfernen, sobald i-doit up 3.3.0 veröffentlicht ist.
 
 ## Was das DMS-Add-on bietet
 
@@ -69,9 +70,9 @@ Die Tabelle hat eine Spalte **Aktionen**.
 Ihr Menü enthält **Details anzeigen** und **In DMS verwalten**, das das Dokument im eigenständigen DMS öffnet.
 Mit **Zugriff verwalten** legen Sie fest, wer ein Dokument sehen darf.
 
-!!! todo "TODO (offene Frage 2)"
-    Klären, ab welcher i-doit-up-Version Islands verfügbar sind.
-    Fehlt die Island, fehlen dem Benutzer möglicherweise die Island-Rechte, siehe [DMS-Integration](../admin/dms.md#rechte-fur-die-island-documents).
+!!! note
+    Fehlt die Island, fehlen Ihnen möglicherweise die Island-Rechte.
+    Wenden Sie sich an Ihren Administrator, siehe [DMS-Integration](../admin/dms.md#rechte-fur-die-island-documents).
 
 ### Vorhandene Dokumente zuordnen
 

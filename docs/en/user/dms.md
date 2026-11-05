@@ -7,12 +7,13 @@ For installation and configuration, see [DMS integration](../admin/dms.md).
 
 !!! warning "Not released yet"
     This page describes a feature that is still in development.
-    It is planned for i-doit up 3.3.0.
+    It will be released with i-doit up 3.3.0.
     Names, texts, and behavior can change before the release.
 
 !!! todo "TODO (open question 1)"
-    Confirm the release: in which DMS version and which i-doit up version the integration ships.
-    Remove the warning above once it is released.
+    The i-doit up version is confirmed (3.3.0).
+    Confirm the DMS version that contains the add-on and add it as a prerequisite.
+    Remove the warning above once i-doit up 3.3.0 is released.
 
 ## What the DMS add-on offers
 
@@ -69,9 +70,9 @@ The table has an **Actions** column.
 Its menu contains **View details** and **Manage in DMS**, which opens the document in the standalone DMS.
 Use **Manage Access** to control who can see a document.
 
-!!! todo "TODO (open question 2)"
-    Confirm from which i-doit up version islands are available.
-    If the island is missing, the user may lack the island rights, see [DMS integration](../admin/dms.md#rights-for-the-documents-island).
+!!! note
+    If the island is missing, you may lack the island rights.
+    Ask your administrator, see [DMS integration](../admin/dms.md#rights-for-the-documents-island).
 
 ### Assign existing documents
 

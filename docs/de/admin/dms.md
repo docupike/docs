@@ -7,12 +7,13 @@ Die Benutzersicht beschreibt [Dokumente (DMS)](../user/dms.md).
 
 !!! warning "Noch nicht veröffentlicht"
     Diese Seite beschreibt eine Funktion, die sich noch in Entwicklung befindet.
-    Sie ist für i-doit up 3.3.0 geplant.
+    Sie erscheint mit i-doit up 3.3.0.
     Konfiguration und Installationsschritte können sich bis zur Veröffentlichung ändern.
 
 !!! todo "TODO (offene Frage 1)"
-    Veröffentlichung bestätigen: mit welcher DMS-Version und welcher i-doit-up-Version die Integration ausgeliefert wird.
-    Den Hinweis oben nach der Veröffentlichung entfernen.
+    Die i-doit-up-Version ist bestätigt (3.3.0).
+    Die DMS-Version klären, die das Add-on enthält, und als Voraussetzung ergänzen.
+    Den Hinweis oben entfernen, sobald i-doit up 3.3.0 veröffentlicht ist.
 
 ## So arbeitet die Integration
 
@@ -48,8 +49,7 @@ Dokumente werden einem Objekt über die Objekt-ID zugeordnet.
 ## Voraussetzungen
 
 - Ein laufendes DMS, das Sie administrieren.
-- Eine i-doit-up-Installation, in der Sie Add-ons registrieren können.
-- Für die Island Documents: i-doit up mit Unterstützung für Islands.
+- i-doit up 3.3.0 oder neuer, in dem Sie Add-ons registrieren können.
 - Docker und Docker Compose auf dem Host des Add-on-Dienstes.
 - Netzwerkzugriff:
     - von i-doit up zum Add-on-Dienst,
@@ -58,8 +58,7 @@ Dokumente werden einem Objekt über die Objekt-ID zugeordnet.
     - vom Browser der Benutzer zur öffentlichen DMS-Adresse, für **In DMS verwalten**.
 - Eine MongoDB-Datenbank für das Add-on, etwa die MongoDB des DMS.
 
-!!! todo "TODO (offene Fragen 2 und 3)"
-    Klären, ab welcher i-doit-up-Version Islands verfügbar sind.
+!!! todo "TODO (offene Frage 3)"
     Klären, wie Kunden das Add-on erhalten: Add-on-Center, Registrierung durch den Kunden oder nur SaaS, und ob es ein offizielles Container-Image gibt.
 
 ## Add-on-Dienst konfigurieren
