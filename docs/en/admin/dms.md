@@ -114,21 +114,6 @@ Without the right the island stays invisible.
 2. Sign out and sign in again.
    The right takes effect only after a new sign-in.
 
-## Update an existing DMS
-
-The integration changes how the DMS stores the scope of documents.
-An existing DMS needs data migrations before the add-on is used.
-
-The DMS contains the migrations `2026-08-14-root-folder-sentinel`, `2026-09-17-qualify-relations`, and `2026-09-17-workspace-backfill` in the folder `apps/backend/src/migrations/`.
-
-Run the migration `2026-09-17-workspace-backfill` once:
-
-1. Create a backup of the DMS.
-2. Stop the DMS.
-3. Run the migration.
-4. Run `npm run sync-indexes`.
-5. Start the DMS.
-
 ## Troubleshooting
 
 **The DMS view or the Documents island stays empty**

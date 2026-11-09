@@ -114,21 +114,6 @@ Ohne das Recht bleibt die Island unsichtbar.
 2. Melden Sie sich ab und wieder an.
    Das Recht wirkt erst nach einer neuen Anmeldung.
 
-## Bestehendes DMS aktualisieren
-
-Die Integration ändert, wie das DMS den Geltungsbereich von Dokumenten speichert.
-Ein bestehendes DMS braucht Datenmigrationen, bevor das Add-on genutzt wird.
-
-Das DMS enthält die Migrationen `2026-08-14-root-folder-sentinel`, `2026-09-17-qualify-relations` und `2026-09-17-workspace-backfill` im Ordner `apps/backend/src/migrations/`.
-
-Führen Sie die Migration `2026-09-17-workspace-backfill` einmal aus:
-
-1. Legen Sie eine Sicherung des DMS an.
-2. Stoppen Sie das DMS.
-3. Führen Sie die Migration aus.
-4. Führen Sie `npm run sync-indexes` aus.
-5. Starten Sie das DMS.
-
 ## Fehlerbehebung
 
 **Die DMS-Ansicht oder die Island Documents bleibt leer**
