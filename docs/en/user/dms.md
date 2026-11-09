@@ -29,7 +29,7 @@ Select **DMS** in the navigation, group **Add-ons**.
 i-doit up shows the DMS with its folders and documents in the main area.
 You work with folders and documents the same way as in the standalone DMS.
 
-[![DMS embedded in i-doit up with two documents](../img/screenshots/user/dms/dms_embedded.png)](../img/screenshots/user/dms/dms_embedded.png)
+[![DMS embedded in i-doit up with three documents and the button Manage in DMS at the top right](../img/screenshots/user/dms/dms_embedded.png)](../img/screenshots/user/dms/dms_embedded.png)
 
 i-doit up remembers the folder that you have open in the address of the page.
 If you reload the page or bookmark it, the same folder opens again.
@@ -40,6 +40,8 @@ Some DMS functions are only available in the standalone DMS.
 Click **Manage in DMS** at the top of the DMS view or in the widget to open the standalone DMS in a new browser tab.
 You are signed in automatically with your i-doit up account.
 While the link is being prepared, the button shows **Opening DMS…**.
+
+[![Button Manage in DMS with the tooltip Open DMS to access additional tools for organizing and managing your documents](../img/screenshots/user/dms/manage_in_dms.png)](../img/screenshots/user/dms/manage_in_dms.png)
 
 The sign-in link is only valid for about two minutes, so i-doit up creates it at the moment you click.
 
@@ -61,10 +63,12 @@ The table shows name, modification date, type, size, authors, and access of each
 The **Actions** column has two icons: **View details** and **Manage in DMS**, which opens the document in the standalone DMS.
 Documents you have no access to show no actions.
 
-[![Documents island of a server with two assigned documents](../img/screenshots/user/dms/documents_island.png)](../img/screenshots/user/dms/documents_island.png)
+[![Documents island of a server with three assigned documents and the buttons Upload, Folder, and Assign documents](../img/screenshots/user/dms/documents_island.png)](../img/screenshots/user/dms/documents_island.png)
 
 To upload, click **Upload** and select the files in the dialog **Upload Files**.
 A file may be up to 104.9 MB.
+
+[![Dialog Upload Files with one selected PDF file](../img/screenshots/user/dms/upload_dialog.png)](../img/screenshots/user/dms/upload_dialog.png)
 
 The assignment to the object is only visible in i-doit up.
 The standalone DMS shows the document, but not the object it belongs to.
@@ -79,6 +83,8 @@ The standalone DMS shows the document, but not the object it belongs to.
 2. In the dialog **Documents for this object**, select the documents that belong to the object.
 3. Click **Save**. i-doit up confirms with *Saved*.
 
+[![Dialog Documents for this object with three selected documents and two more documents to choose from](../img/screenshots/user/dms/assign_dialog.png)](../img/screenshots/user/dms/assign_dialog.png)
+
 If you lack access to some of the selected documents, the DMS saves the others and reports how many were skipped.
 
 ### The Documents widget
@@ -89,7 +95,7 @@ It lists up to 25 documents of the object with title and size.
 Click a title to open the file in a new tab.
 PDF files, images, and text files open in the browser, other files are downloaded.
 
-[![Documents widget in the widget bar of an object](../img/screenshots/user/dms/documents_widget.png)](../img/screenshots/user/dms/documents_widget.png)
+[![Widget bar of a server with the Documents widget, three documents, and the button Manage in DMS](../img/screenshots/user/dms/documents_widget.png)](../img/screenshots/user/dms/documents_widget.png)
 
 If no documents are assigned, the widget shows *No documents assigned to this object.*
 Below the list, **Manage in DMS** opens the standalone DMS.

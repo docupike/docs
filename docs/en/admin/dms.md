@@ -110,9 +110,11 @@ Users need the island rights to see it.
 i-doit up does not grant this right automatically, not even to the administrator and not even on a new installation.
 Without the right the island stays invisible.
 
-1. Assign the island right (internal keys `worlds-and-islands`, `islands`, `access-all-islands`) as described in [Rights and permissions](rights-and-permissions.md), also to yourself.
+1. Under **Settings** > **Rights** > **Worlds and Islands** > **Islands**, assign the right **Access all Islands** (internal keys `worlds-and-islands`, `islands`, `access-all-islands`) as described in [Rights and permissions](rights-and-permissions.md), also to yourself.
 2. Sign out and sign in again.
    The right takes effect only after a new sign-in.
+
+[![Settings page Rights, section Islands, with the right Access all Islands assigned to the user admin](../img/screenshots/admin/dms/island_rights.png)](../img/screenshots/admin/dms/island_rights.png)
 
 ## Troubleshooting
 

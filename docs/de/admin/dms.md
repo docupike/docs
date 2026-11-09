@@ -27,7 +27,7 @@ Es meldet den Benutzer mit einem kurzlebigen Token im DMS an.
 Das DMS legt den Benutzer beim ersten Aufruf an.
 
 - Benutzer aus i-doit up erhalten im DMS die Rolle *user*, auch i-doit-up-Administratoren.
-  **In DMS verwalten** meldet ebenfalls als dieser Benutzer an.
+  **Manage in DMS** meldet ebenfalls als dieser Benutzer an.
 - Rechte aus i-doit up werden nicht übertragen.
   Den Zugriff auf jedes Dokument prüft das DMS selbst.
 - Das Add-on übergibt die Sprache des Benutzers nicht an das DMS.
@@ -55,7 +55,7 @@ Wenn Sie das Add-on selbst betreiben, brauchen Sie:
     - von i-doit up zum Add-on-Dienst,
     - vom Add-on-Dienst zu der i-doit-up-URL, die i-doit up dem Add-on meldet,
     - vom Add-on-Dienst zum DMS-Backend,
-    - vom Browser der Benutzer zur öffentlichen DMS-Adresse, für **In DMS verwalten**.
+    - vom Browser der Benutzer zur öffentlichen DMS-Adresse, für **Manage in DMS**.
 - Eine MongoDB-Datenbank für das Add-on, etwa die MongoDB des DMS.
 
 ## Add-on-Dienst konfigurieren
@@ -73,7 +73,7 @@ Sie konfigurieren ihn mit folgenden Umgebungsvariablen:
 | `ADDON_TITLE` | nein | Titel des Add-ons in i-doit up, Standard `DMS Add-on`. |
 | `ADDON_VERSION` | nein | Version, die das Add-on an i-doit up meldet. |
 | `DMS_BACKEND_URL` | ja | Interne Adresse des DMS-Backends, etwa `http://backend:3000`. |
-| `DMS_PUBLIC_URL` | ja | Adresse des DMS, die die Browser Ihrer Benutzer erreichen. **In DMS verwalten** öffnet diese Adresse. |
+| `DMS_PUBLIC_URL` | ja | Adresse des DMS, die die Browser Ihrer Benutzer erreichen. **Manage in DMS** öffnet diese Adresse. |
 | `DMS_BACKEND_SERVICE_TOKEN` | ja | Persönliches API-Token (`dms_...`) eines DMS-Administrators. Das Add-on meldet damit i-doit-up-Instanzen beim DMS an. |
 | `ADDON_SECRETS_KEY` | ja | Schlüssel, der die gespeicherten Anmelde-Secrets verschlüsselt. Erzeugen Sie ihn mit `openssl rand -hex 32` und bewahren Sie ihn auf. |
 | `CORS_ORIGIN` | nein | Für i-doit up nicht nötig. Lassen Sie den Wert leer. |
@@ -110,16 +110,18 @@ Benutzer brauchen die Island-Rechte, um sie zu sehen.
 i-doit up vergibt dieses Recht nicht automatisch, auch nicht dem Administrator und auch nicht bei einer Neuinstallation.
 Ohne das Recht bleibt die Island unsichtbar.
 
-1. Vergeben Sie das Island-Recht (interne Schlüssel `worlds-and-islands`, `islands`, `access-all-islands`) wie in [Rechte und Berechtigungen](rights-and-permissions.md) beschrieben, auch sich selbst.
+1. Vergeben Sie unter **Einstellungen** > **Rechte** > **Welten und Inseln** > **Inseln** das Recht **Zugriff auf alle Inseln** (interne Schlüssel `worlds-and-islands`, `islands`, `access-all-islands`) wie in [Rechte und Berechtigungen](rights-and-permissions.md) beschrieben, auch sich selbst.
 2. Melden Sie sich ab und wieder an.
    Das Recht wirkt erst nach einer neuen Anmeldung.
+
+[![Einstellungsseite Rechte, Bereich Inseln, mit dem Recht Zugriff auf alle Inseln für den Benutzer admin](../img/screenshots/admin/dms/island_rights.png)](../img/screenshots/admin/dms/island_rights.png)
 
 ## Fehlerbehebung
 
 **Die DMS-Ansicht oder die Island Documents bleibt leer**
 
 Prüfen Sie, dass i-doit up mit HTTPS läuft.
-Über HTTP blockiert der Browser das eingebettete DMS, und es erscheint nur der Knopf **In DMS verwalten**.
+Über HTTP blockiert der Browser das eingebettete DMS, und es erscheint nur der Knopf **Manage in DMS**.
 
 **Die DMS-Ansicht zeigt den Fehler "Could not resolve the calling user"**
 
@@ -136,7 +138,7 @@ Melden Sie sich nach dem Vergeben des Rechts ab und wieder an.
 
 Prüfen Sie den Besitzer des Upload-Volumes des DMS, siehe [Add-on-Dienst konfigurieren](#add-on-dienst-konfigurieren).
 
-**In DMS verwalten öffnet eine nicht erreichbare Seite**
+**Manage in DMS öffnet eine nicht erreichbare Seite**
 
 Prüfen Sie `DMS_PUBLIC_URL`.
 Der Wert muss die Adresse des DMS sein, wie der Browser des Benutzers sie sieht, nicht die interne Adresse.

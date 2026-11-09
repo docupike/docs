@@ -29,7 +29,7 @@ Wählen Sie in der Navigation in der Gruppe **Add-ons** den Eintrag **DMS**.
 i-doit up zeigt das DMS mit seinen Ordnern und Dokumenten im Hauptbereich.
 Sie arbeiten mit Ordnern und Dokumenten wie im eigenständigen DMS.
 
-[![DMS in i-doit up eingebettet, mit zwei Dokumenten](../img/screenshots/user/dms/dms_embedded.png)](../img/screenshots/user/dms/dms_embedded.png)
+[![DMS in i-doit up eingebettet, mit drei Dokumenten und dem Knopf Manage in DMS oben rechts](../img/screenshots/user/dms/dms_embedded.png)](../img/screenshots/user/dms/dms_embedded.png)
 
 i-doit up merkt sich den geöffneten Ordner in der Adresse der Seite.
 Wenn Sie die Seite neu laden oder als Lesezeichen speichern, öffnet sich derselbe Ordner wieder.
@@ -37,9 +37,11 @@ Wenn Sie die Seite neu laden oder als Lesezeichen speichern, öffnet sich dersel
 ## Das eigenständige DMS öffnen
 
 Einige DMS-Funktionen gibt es nur im eigenständigen DMS.
-Klicken Sie oben in der DMS-Ansicht oder im Widget auf **In DMS verwalten**, um das eigenständige DMS in einem neuen Browser-Tab zu öffnen.
+Klicken Sie oben in der DMS-Ansicht oder im Widget auf **Manage in DMS**, um das eigenständige DMS in einem neuen Browser-Tab zu öffnen.
 Sie sind dort automatisch mit Ihrem i-doit-up-Konto angemeldet.
-Während der Link vorbereitet wird, zeigt der Knopf **DMS wird geöffnet…**.
+Während der Link vorbereitet wird, zeigt der Knopf **Opening DMS…**.
+
+[![Knopf Manage in DMS mit dem englischen Tooltip zu den zusätzlichen Werkzeugen im DMS](../img/screenshots/user/dms/manage_in_dms.png)](../img/screenshots/user/dms/manage_in_dms.png)
 
 Der Anmeldelink gilt nur etwa zwei Minuten, deshalb erzeugt i-doit up ihn erst beim Klick.
 
@@ -55,16 +57,18 @@ Hier können Sie:
 
 - neue Dokumente hochladen, die sofort dem Objekt zugeordnet werden,
 - Ordner anlegen,
-- vorhandene DMS-Dokumente mit **Dokumente zuordnen** dem Objekt zuordnen.
+- vorhandene DMS-Dokumente mit **Assign documents** dem Objekt zuordnen.
 
 Die Tabelle zeigt Name, Änderungsdatum, Typ, Größe, Autoren und Zugriff jedes Dokuments.
-Die Spalte **Aktionen** hat zwei Symbole: **Details anzeigen** und **In DMS verwalten**, das das Dokument im eigenständigen DMS öffnet.
+Die Spalte **Actions** hat zwei Symbole: **View details** und **Manage in DMS**, das das Dokument im eigenständigen DMS öffnet.
 Dokumente ohne Zugriff haben keine Aktionen.
 
-[![Island Documents eines Servers mit zwei zugeordneten Dokumenten](../img/screenshots/user/dms/documents_island.png)](../img/screenshots/user/dms/documents_island.png)
+[![Island Documents eines Servers mit drei zugeordneten Dokumenten und den Knöpfen Upload, Folder und Assign documents](../img/screenshots/user/dms/documents_island.png)](../img/screenshots/user/dms/documents_island.png)
 
-Zum Hochladen klicken Sie auf **Hochladen** und wählen die Dateien im Dialog.
+Zum Hochladen klicken Sie auf **Upload** und wählen die Dateien im Dialog **Upload Files**.
 Eine Datei darf bis zu 104,9 MB groß sein.
+
+[![Dialog Upload Files mit einer ausgewählten PDF-Datei](../img/screenshots/user/dms/upload_dialog.png)](../img/screenshots/user/dms/upload_dialog.png)
 
 Die Zuordnung zum Objekt ist nur in i-doit up sichtbar.
 Das eigenständige DMS zeigt das Dokument, aber nicht das Objekt, zu dem es gehört.
@@ -75,9 +79,11 @@ Das eigenständige DMS zeigt das Dokument, aber nicht das Objekt, zu dem es geh�
 
 ### Vorhandene Dokumente zuordnen
 
-1. Klicken Sie in der Island auf **Dokumente zuordnen**.
-2. Wählen Sie im Dialog die Dokumente, die zum Objekt gehören.
-3. Klicken Sie auf **Speichern**. i-doit up bestätigt das Speichern.
+1. Klicken Sie in der Island auf **Assign documents**.
+2. Wählen Sie im Dialog **Documents for this object** die Dokumente, die zum Objekt gehören.
+3. Klicken Sie auf **Save**. i-doit up bestätigt das Speichern.
+
+[![Dialog Documents for this object mit drei ausgewählten Dokumenten und zwei weiteren zur Auswahl](../img/screenshots/user/dms/assign_dialog.png)](../img/screenshots/user/dms/assign_dialog.png)
 
 Fehlt Ihnen der Zugriff auf einige der gewählten Dokumente, speichert das DMS die übrigen und meldet, wie viele übersprungen wurden.
 
@@ -89,7 +95,7 @@ Es listet bis zu 25 Dokumente des Objekts mit Titel und Größe.
 Ein Klick auf den Titel öffnet die Datei in einem neuen Tab.
 PDF-Dateien, Bilder und Textdateien öffnen sich im Browser, andere Dateien werden heruntergeladen.
 
-[![Widget Documents in der Widget-Leiste eines Objekts](../img/screenshots/user/dms/documents_widget.png)](../img/screenshots/user/dms/documents_widget.png)
+[![Widget-Leiste eines Servers mit dem Widget Documents, drei Dokumenten und dem Knopf Manage in DMS](../img/screenshots/user/dms/documents_widget.png)](../img/screenshots/user/dms/documents_widget.png)
 
 Sind keine Dokumente zugeordnet, zeigt das Widget *No documents assigned to this object.* (Keine Dokumente zugeordnet.)
 Unter der Liste öffnet **Manage in DMS** das eigenständige DMS.
