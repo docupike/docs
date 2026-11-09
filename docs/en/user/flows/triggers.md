@@ -19,8 +19,7 @@ This page describes the four trigger types and how buttons appear on objects.
 To add a trigger, open the flow and click **Add trigger**.
 Choose the type on the left and fill in the form on the right.
 
-!!! example "Screenshot placeholder: flows_add_trigger_dialog.png"
-    Dialog Add trigger with the four trigger types on the left and the Button form on the right.
+[![Add trigger dialog](../../img/screenshots/user/flows/flows_add_trigger_dialog.png)](../../img/screenshots/user/flows/flows_add_trigger_dialog.png)
 
 ## Button
 
@@ -61,11 +60,9 @@ If the **Flows** widget does not appear at all, ask your administrator, see [Flo
 
 A button can also be disabled or hidden because of a condition of the flow, see [Conditions](conditions.md#conditions-and-buttons).
 
-!!! example "Screenshot placeholder: flows_widget_buttons.png"
-    Object view with the Flows widget, buttons of active flows, a button group, and the Test flows section.
+[![Flows widget in the object view](../../img/screenshots/user/flows/flows_widget_buttons.png)](../../img/screenshots/user/flows/flows_widget_buttons.png)
 
-!!! example "Screenshot placeholder: flows_button_confirmation.png"
-    Confirmation dialog with OK and Cancel after clicking a button.
+[![Confirmation dialog for a button](../../img/screenshots/user/flows/flows_button_confirmation.png)](../../img/screenshots/user/flows/flows_button_confirmation.png)
 
 ### Button groups
 

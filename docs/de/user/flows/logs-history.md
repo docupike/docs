@@ -29,8 +29,7 @@ Wurde ein Flow gelöscht, ist sein Name als **Gelöscht** markiert.
 
 Um die Ausführungen eines einzelnen Flows zu sehen, öffnen Sie den Flow und wählen Sie den Reiter **Logs**.
 
-!!! example "Platzhalter für Screenshot: flows_log_entry_panel.png"
-    Logs mit der Filterleiste und einem geöffneten Log-Eintrag mit Ausgeführt als (Flow Operator) und den Details zum Auslöser.
+[![Logs mit geöffnetem Logeintrag](../../img/screenshots/user/flows/flows_log_entry_panel.png)](../../img/screenshots/user/flows/flows_log_entry_panel.png)
 
 ## Verzögerte Ausführungen
 
@@ -60,8 +59,7 @@ Die Filterleiste bietet ein Suchfeld und Filter für die Art der Änderung, **Da
 
 Um die Änderungen eines einzelnen Flows zu sehen, öffnen Sie den Flow und wählen Sie den Reiter **Verlauf**.
 
-!!! example "Platzhalter für Screenshot: flows_history.png"
-    Verlauf mit der Filterleiste und einem geöffneten Eintrag mit den Werten vor und nach einer Bearbeitung.
+[![Verlauf mit geöffnetem Eintrag](../../img/screenshots/user/flows/flows_history.png)](../../img/screenshots/user/flows/flows_history.png)
 
 ## Weiterführende Informationen
 

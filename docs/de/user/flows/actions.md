@@ -92,8 +92,7 @@ Jedes Attribut nutzt denselben Feldtyp wie am Objekt, zum Beispiel eine Datumsau
 Bei Datumsfeldern schreibt **Ausführungsdatum verwenden** das Datum der Ausführung statt eines festen Datums.
 Datei- und Bildfelder sind hier einfache Textfelder.
 
-!!! example "Platzhalter für Screenshot: flows_attribute_picker.png"
-    Attributauswahl mit dem Typfilter, der Seitenleiste mit Kategorien und ausgewählten Attributen.
+[![Attributauswahl](../../img/screenshots/user/flows/flows_attribute_picker.png)](../../img/screenshots/user/flows/flows_attribute_picker.png)
 
 ## Platzhalter
 
@@ -125,8 +124,7 @@ Ein Klick auf einen Platzhalter fügt ihn an der Cursorposition ein.
 
 Flows kennt keine Twig-Syntax und keine Aktion, die Befehle ausführt.
 
-!!! example "Platzhalter für Screenshot: flows_insert_variable.png"
-    Aktion E-Mail senden mit dem Markdown-Editor, der Vorschau und der geöffneten Liste Variable einfügen.
+[![Aktion E-Mail senden mit der Variablenliste](../../img/screenshots/user/flows/flows_insert_variable.png)](../../img/screenshots/user/flows/flows_insert_variable.png)
 
 ## Weiterführende Informationen
 

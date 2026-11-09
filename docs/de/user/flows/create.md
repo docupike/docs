@@ -39,8 +39,7 @@ Jeder Auslöser, jede Bedingung und jede Aktion erscheint als Karte.
 Ein Klick auf den Kopf der Karte klappt sie auf und zeigt alle Details.
 Wenn Sie mit der Maus über eine Karte fahren, erscheinen **Bearbeiten** und **Entfernen**.
 
-!!! example "Platzhalter für Screenshot: flows_editor_configuration.png"
-    Flow-Ansicht mit den Einstellungen links und dem Reiter Konfiguration mit einem Auslöser, einer Bedingung und einer Aktion.
+[![Flow-Ansicht mit dem Reiter Konfiguration](../../img/screenshots/user/flows/flows_editor_configuration.png)](../../img/screenshots/user/flows/flows_editor_configuration.png)
 
 ## Änderungen speichern
 
@@ -72,8 +71,7 @@ Um ihn zu ändern, klicken Sie auf den Bearbeiten-Button neben **Flow Operator**
 Änderungen in diesem Dialog wirken erst, wenn Sie auf **Speichern** klicken.
 Flow-Benutzer und Rechte beschreibt [Rechte und Flow-Benutzer](../../admin/flows/rights.md).
 
-!!! example "Platzhalter für Screenshot: flows_flow_operator_dialog.png"
-    Dialog Flow Operator bearbeiten mit den Optionen Standard-Flow-Benutzer, Bestimmter Flow-Benutzer und Benutzerdefinierter API-Schlüssel.
+[![Dialog Flow Operator](../../img/screenshots/user/flows/flows_flow_operator_dialog.png)](../../img/screenshots/user/flows/flows_flow_operator_dialog.png)
 
 ## Einen Flow aktivieren
 

@@ -15,8 +15,7 @@ Die Logs zeigen die übersprungene Ausführung mit dem Grund, siehe [Logs und Ve
 
 Um eine Bedingung hinzuzufügen, öffnen Sie den Flow und klicken Sie auf **Bedingung hinzufügen**.
 
-!!! example "Platzhalter für Screenshot: flows_add_condition_dialog.png"
-    Dialog Bedingung hinzufügen mit den drei Bedingungstypen links und dem Formular für Zeitbasiert rechts.
+[![Dialog Bedingung hinzufügen](../../img/screenshots/user/flows/flows_add_condition_dialog.png)](../../img/screenshots/user/flows/flows_add_condition_dialog.png)
 
 ## Bedingungstypen
 

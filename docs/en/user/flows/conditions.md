@@ -15,8 +15,7 @@ The logs show the skipped run with the reason, see [Logs and history](logs-histo
 
 To add a condition, open the flow and click **Add condition**.
 
-!!! example "Screenshot placeholder: flows_add_condition_dialog.png"
-    Dialog Add condition with the three condition types on the left and the Time-based form on the right.
+[![Add condition dialog](../../img/screenshots/user/flows/flows_add_condition_dialog.png)](../../img/screenshots/user/flows/flows_add_condition_dialog.png)
 
 ## Condition types
 

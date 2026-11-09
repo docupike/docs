@@ -21,8 +21,7 @@ Der Auslösertyp **Button** heißt im Auslöser-Dialog "Button", in der Übersic
 Um einen Auslöser hinzuzufügen, öffnen Sie den Flow und klicken Sie auf **Auslöser hinzufügen**.
 Wählen Sie links den Typ und füllen Sie rechts das Formular aus.
 
-!!! example "Platzhalter für Screenshot: flows_add_trigger_dialog.png"
-    Dialog Auslöser hinzufügen mit den vier Auslösertypen links und dem Formular für Button rechts.
+[![Dialog Auslöser hinzufügen](../../img/screenshots/user/flows/flows_add_trigger_dialog.png)](../../img/screenshots/user/flows/flows_add_trigger_dialog.png)
 
 ## Button
 
@@ -63,11 +62,9 @@ Erscheint das Widget **Flows** gar nicht, wenden Sie sich an Ihren Administrator
 
 Ein Button kann auch wegen einer Bedingung des Flows deaktiviert oder ausgeblendet sein, siehe [Bedingungen](conditions.md#bedingungen-und-buttons).
 
-!!! example "Platzhalter für Screenshot: flows_widget_buttons.png"
-    Objektansicht mit dem Widget Flows, Buttons aktiver Flows, einer Button-Gruppe und dem Bereich Test-Flows.
+[![Flows-Widget in der Objektansicht](../../img/screenshots/user/flows/flows_widget_buttons.png)](../../img/screenshots/user/flows/flows_widget_buttons.png)
 
-!!! example "Platzhalter für Screenshot: flows_button_confirmation.png"
-    Bestätigungsdialog mit OK und Abbrechen nach dem Klick auf einen Button.
+[![Bestätigungsdialog für eine Schaltfläche](../../img/screenshots/user/flows/flows_button_confirmation.png)](../../img/screenshots/user/flows/flows_button_confirmation.png)
 
 ### Button-Gruppen
 

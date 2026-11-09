@@ -92,8 +92,7 @@ Each attribute uses the same field type as on the object, for example a date pic
 For date fields, **Use date of execution** writes the date of the run instead of a fixed date.
 File and image fields are plain text fields here.
 
-!!! example "Screenshot placeholder: flows_attribute_picker.png"
-    Attribute picker with the class filter, the category sidebar, and selected attributes.
+[![Attribute picker](../../img/screenshots/user/flows/flows_attribute_picker.png)](../../img/screenshots/user/flows/flows_attribute_picker.png)
 
 ## Placeholders
 
@@ -125,8 +124,7 @@ Click a placeholder to insert it at the cursor position.
 
 Flows has no Twig syntax and no action to run commands.
 
-!!! example "Screenshot placeholder: flows_insert_variable.png"
-    Send e-mail action with the Markdown editor, the preview, and the open Insert variable list.
+[![Send e-mail action with the Insert variable list](../../img/screenshots/user/flows/flows_insert_variable.png)](../../img/screenshots/user/flows/flows_insert_variable.png)
 
 ## Further readings
 

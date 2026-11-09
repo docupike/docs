@@ -39,8 +39,7 @@ Every trigger, condition, and action is shown as a card.
 Click the card header to expand it and see all details.
 Hover over a card to show **Edit** and **Remove**.
 
-!!! example "Screenshot placeholder: flows_editor_configuration.png"
-    Flow screen with the settings on the left and the Configuration tab with a trigger, a condition, and an action.
+[![Flow screen with the Configuration tab](../../img/screenshots/user/flows/flows_editor_configuration.png)](../../img/screenshots/user/flows/flows_editor_configuration.png)
 
 ## Save changes
 
@@ -72,8 +71,7 @@ To change it, click the edit button next to **Flow Operator** and choose one of 
 Changes in this dialog only take effect when you click **Save**.
 Flow users and the rights are described in [Rights and flow users](../../admin/flows/rights.md).
 
-!!! example "Screenshot placeholder: flows_flow_operator_dialog.png"
-    Dialog Edit Flow Operator with the options Default flow user, Specific flow user, and Custom API key.
+[![Flow Operator dialog](../../img/screenshots/user/flows/flows_flow_operator_dialog.png)](../../img/screenshots/user/flows/flows_flow_operator_dialog.png)
 
 ## Activate a flow
 

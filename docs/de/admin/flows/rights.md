@@ -18,10 +18,10 @@ Flows bringt zwei Add-on-Rechte mit:
 
 Die Namen der Rechte sind englisch, auch in der deutschen Oberfläche.
 
-Um ein Recht zu vergeben, öffnen Sie **Einstellungen → Rechte**, wählen Sie *Add-on rights → Flows* und klicken Sie auf **Neues Recht**.
+Um ein Recht zu vergeben, öffnen Sie **Einstellungen → Benutzerverwaltung → Rechte**, wählen Sie *Add-on rights → Flows* und klicken Sie auf **Neues Recht**.
 Wer alle Rechte des Add-ons erhält, hat beide Rechte.
 
-Das Add-on versucht bei der Installation, der Admin-Rolle **Manage Flows** zu geben. Erscheint **Flows** danach nicht unter **Add-ons**, vergeben Sie das Recht wie hier beschrieben an die Admin-Rolle.
+Nach der Registrierung von Flows vergibt ein Administrator **Manage Flows** und bei Bedarf **Select Flow Operator** wie hier beschrieben, auch an die Admin-Rolle.
 
 Benutzer mit **Manage Flows**, aber ohne **Select Flow Operator** können Flows erstellen.
 Ihre Flows behalten den aktuellen Flow Operator oder laufen als Standard-Flow-Benutzer.

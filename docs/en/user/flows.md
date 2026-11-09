@@ -49,8 +49,7 @@ The left panel of Flows shows:
 The address in the browser reflects the current view.
 You can bookmark or share a link to the overview, a flow group, the logs, or a single flow.
 
-!!! example "Screenshot placeholder: flows_overview.png"
-    Flows overview with the left panel (All flows, flow groups, Logs, History), the filter bar, and the Status column.
+[![Flows overview](../img/screenshots/user/flows/flows_overview.png)](../img/screenshots/user/flows/flows_overview.png)
 
 ## Flows overview
 

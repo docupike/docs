@@ -16,10 +16,10 @@ Flows adds two add-on rights:
 | **Manage Flows** | Access to the add-on. Users without this right do not see **Flows** under **Add-ons**. |
 | **Select Flow Operator** | Lets users choose a **Specific flow user** or a **Custom API key** for a flow, and open the **Flow users** page. |
 
-To grant a right, open **Settings → Rights**, choose *Add-on rights → Flows*, and click **New right**.
+To grant a right, open **Settings → User management → Rights**, choose *Add-on rights → Flows*, and click **New right**.
 Granting all rights of the add-on includes both rights.
 
-The add-on tries to grant **Manage Flows** to the admin role when it is installed. If **Flows** does not appear under **Add-ons** afterwards, grant the right to the admin role as described here.
+After Flows has been registered, an administrator grants **Manage Flows** and, where needed, **Select Flow Operator** as described here, also to the admin role.
 
 Users with **Manage Flows** but without **Select Flow Operator** can build flows.
 Their flows keep the current Flow Operator or run as the default flow user.

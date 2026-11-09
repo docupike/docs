@@ -28,8 +28,7 @@ If a flow has been deleted, its name is marked as **Deleted**.
 
 To see the runs of a single flow, open the flow and select the **Logs** tab.
 
-!!! example "Screenshot placeholder: flows_log_entry_panel.png"
-    Logs with the filter bar and an open log entry with Ran as (Flow Operator) and the trigger details.
+[![Logs with an open log entry](../../img/screenshots/user/flows/flows_log_entry_panel.png)](../../img/screenshots/user/flows/flows_log_entry_panel.png)
 
 ## Delayed runs
 
@@ -59,8 +58,7 @@ The filter bar offers a search field and filters for the kind of change, **Date*
 
 To see the changes of a single flow, open the flow and select the **History** tab.
 
-!!! example "Screenshot placeholder: flows_history.png"
-    History with the filter bar and an open entry with the values before and after an edit.
+[![History with an open entry](../../img/screenshots/user/flows/flows_history.png)](../../img/screenshots/user/flows/flows_history.png)
 
 ## Further readings
 

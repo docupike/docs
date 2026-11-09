@@ -49,8 +49,7 @@ Der linke Bereich von Flows zeigt:
 Die Adresse im Browser zeigt die aktuelle Ansicht.
 Sie können einen Link auf die Übersicht, eine Flow-Gruppe, die Logs oder einen einzelnen Flow als Lesezeichen speichern oder weitergeben.
 
-!!! example "Platzhalter für Screenshot: flows_overview.png"
-    Flows-Übersicht mit dem linken Bereich (Alle Flows, Flow-Gruppen, Logs, Verlauf), der Filterleiste und der Spalte Status.
+[![Flows-Übersicht](../img/screenshots/user/flows/flows_overview.png)](../img/screenshots/user/flows/flows_overview.png)
 
 ## Flows-Übersicht
 

@@ -37,7 +37,7 @@ The add-on itself follows the i-doit up language.
 ## Before users start
 
 1. Grant the right **Manage Flows** to the users who build flows.
-   The add-on tries to grant it to the admin role during installation. Check it, and grant it manually if **Flows** is missing under **Add-ons**.
+   This also applies to the admin role: after the registration, an administrator grants it under **Settings → User management → Rights**, *Add-on rights → Flows*.
 2. Give the default flow user the access it needs.
    The first time an administrator with the right **Select Flow Operator** opens Flows, a dialog offers to do this.
 3. Optionally add more flow users and grant **Select Flow Operator**.
