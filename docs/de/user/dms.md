@@ -8,10 +8,6 @@ Installation und Konfiguration beschreibt [DMS-Integration](../admin/dms.md).
 !!! info
     Verfügbar ab i-doit up 3.3.0.
 
-!!! todo "TODO (offene Frage 1)"
-    Die i-doit-up-Version ist bestätigt (3.3.0).
-    Die DMS-Version klären, die das Add-on enthält, und als Voraussetzung ergänzen.
-
 ## Was das DMS-Add-on bietet
 
 Nachdem ein Administrator das Add-on installiert hat, zeigt i-doit up das DMS an drei Stellen:
@@ -24,14 +20,8 @@ Alle drei öffnen das DMS mit Ihrem i-doit-up-Konto.
 Eine eigene DMS-Anmeldung brauchen Sie nicht.
 Wenn Sie das DMS zum ersten Mal aus i-doit up öffnen, legt das DMS Ihr Benutzerkonto automatisch an.
 
-Die Texte des eingebetteten DMS folgen der Sprache, die Sie in i-doit up gewählt haben, Deutsch oder Englisch.
-Der Menüeintrag **DMS**, die Island **Documents** und das Widget **Documents** sind nur englisch.
-
-!!! todo "TODO (offene Fragen 5 und 6)"
-    Klären, ob Add-on und eingebettetes DMS deutsche Texte bekommen (das Add-on übergibt die Benutzersprache noch nicht an das DMS).
-    Der Test der 3.3.0-Linie zeigte nur englische Texte; die deutsche Oberfläche wurde nicht getestet.
-    Die deutschen Bezeichnungen auf dieser Seite stammen aus den Sprachdateien des Entwicklungsstands.
-    Die endgültigen Namen "DMS", "Documents" und "In DMS verwalten" bestätigen.
+Die Texte des Add-ons sind englisch.
+Das Add-on übergibt die Sprache, die Sie in i-doit up gewählt haben, nicht an das DMS.
 
 ## Das DMS in i-doit up öffnen
 
@@ -105,10 +95,6 @@ Sind keine Dokumente zugeordnet, zeigt das Widget *No documents assigned to this
 Unter der Liste öffnet **Manage in DMS** das eigenständige DMS.
 Auf einer Seite ohne Objekt zeigt das Widget nur den Knopf **Manage in DMS**.
 
-!!! todo "TODO (offene Frage 10)"
-    Der Test hat nur die Objektklasse Server geprüft.
-    Klären, ob Widget und Island dauerhaft für alle Objektklassen gelten oder ob das konfigurierbar wird.
-
 ## Wer welche Dokumente sieht
 
 i-doit up teilt dem DMS mit, wer Sie sind und in welchem Mandanten Sie arbeiten.
@@ -121,14 +107,6 @@ Ihre Rechte aus i-doit up werden nicht an das DMS übertragen.
   Dokumente ohne Zugriff erscheinen mit Titel, grau dargestellt, mit dem Vermerk **No access** (kein Zugriff) und ohne Link und Aktionen.
 
 Wenn Sie in i-doit up den Mandanten wechseln, zeigen die DMS-Ansichten die Dokumente dieses Mandanten.
-
-!!! todo "TODO (offene Frage 8)"
-    Der Test hat dieses Verhalten bestätigt.
-    Bestätigen, dass Benutzer die Titel von Dokumenten ohne Zugriff sehen sollen.
-
-!!! todo "TODO (offene Frage 7)"
-    Klären, ob Dokumente, die in Suite+ am selben Objekt hängen, hier ebenfalls erscheinen.
-    Der Entwicklungsstand kann Mandanten und Objekte von Suite+ und i-doit up verknüpfen, das ist aber ein Proof of Concept.
 
 ## Bekannte Einschränkungen
 

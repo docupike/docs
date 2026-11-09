@@ -8,10 +8,6 @@ For installation and configuration, see [DMS integration](../admin/dms.md).
 !!! info
     Available as of i-doit up 3.3.0.
 
-!!! todo "TODO (open question 1)"
-    The i-doit up version is confirmed (3.3.0).
-    Confirm the DMS version that contains the add-on and add it as a prerequisite.
-
 ## What the DMS add-on offers
 
 After an administrator has installed the add-on, i-doit up shows the DMS in three places:
@@ -25,11 +21,7 @@ You do not need a separate DMS login.
 The first time you open the DMS from i-doit up, the DMS creates your user account automatically.
 
 The texts of the add-on are in English.
-
-!!! todo "TODO (open questions 5 and 6)"
-    Confirm whether the add-on and the embedded DMS get German texts (the add-on does not pass the user language to the DMS yet).
-    The test of the 3.3.0 line showed English texts only; the German user interface was not tested.
-    Confirm the final names "DMS", "Documents", and "Manage in DMS".
+The add-on does not pass the language that you selected in i-doit up to the DMS.
 
 ## Open the DMS in i-doit up
 
@@ -103,10 +95,6 @@ If no documents are assigned, the widget shows *No documents assigned to this ob
 Below the list, **Manage in DMS** opens the standalone DMS.
 On a page without an object, the widget only shows the button **Manage in DMS**.
 
-!!! todo "TODO (open question 10)"
-    The test checked the object class Server only.
-    Confirm whether the widget and the island stay available for all object classes or whether this becomes configurable.
-
 ## Who sees which documents
 
 i-doit up tells the DMS who you are and which tenant you are working in.
@@ -119,14 +107,6 @@ Your rights in i-doit up are not transferred to the DMS.
   Documents without access are shown with their title, grayed out, marked **No access**, and without a link or actions.
 
 When you switch the tenant in i-doit up, the DMS views switch to the documents of that tenant.
-
-!!! todo "TODO (open question 8)"
-    The test confirmed this behavior.
-    Confirm that it is intended that users see the titles of documents they have no access to.
-
-!!! todo "TODO (open question 7)"
-    Confirm whether documents attached to the same object in Suite+ also appear here.
-    The current development state can link tenants and objects of Suite+ and i-doit up, but this is a proof of concept.
 
 ## Known limitations
 

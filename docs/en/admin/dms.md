@@ -8,10 +8,6 @@ For the user view, see [Documents (DMS)](../user/dms.md).
 !!! info
     Available as of i-doit up 3.3.0.
 
-!!! todo "TODO (open question 1)"
-    The i-doit up version is confirmed (3.3.0).
-    Confirm the DMS version that contains the add-on and add it as a prerequisite.
-
 ## How the integration works
 
 The integration is an external i-doit up add-on with the vendor `synetics` and the ID `dms`.
@@ -34,10 +30,7 @@ The DMS creates the user on the first visit.
   **Manage in DMS** also signs in as this user.
 - Rights from i-doit up are not transferred.
   The DMS checks access to each document itself.
-
-!!! todo "TODO (open question 5)"
-    The test confirmed the role *user* for an i-doit up administrator.
-    Confirm whether this stays so and whether the user language is passed to the DMS.
+- The add-on does not pass the language of the user to the DMS.
 
 **Tenants and objects**
 
@@ -48,6 +41,10 @@ The views always show the tenant that is currently selected in i-doit up, as lon
 Documents are assigned to objects by the object ID.
 
 ## Prerequisites
+
+The DMS add-on is available for i-doit up Cloud and On-Premises.
+In i-doit up Cloud, add-on installation is handled by i-doit GmbH, see [Add-ons](addons.md#install-an-add-on).
+If you run the add-on yourself, you need:
 
 - A running DMS that you administer.
 - i-doit up 3.3.0 or later, where you can register add-ons.
@@ -60,9 +57,6 @@ Documents are assigned to objects by the object ID.
     - from the add-on service to the DMS backend,
     - from the browser of the users to the public DMS address, for **Manage in DMS**.
 - A MongoDB database for the add-on, for example the MongoDB of the DMS.
-
-!!! todo "TODO (open question 3)"
-    Confirm how customers get the add-on: Add-on Center, registration by the customer, or SaaS only, and whether there is an official container image.
 
 ## Configure the add-on service
 
@@ -88,9 +82,6 @@ The DMS has no service accounts.
 The add-on therefore acts with the token of the administrator who created it.
 If this administrator loses the administrator role or deletes the token, new registrations fail.
 
-!!! todo "TODO (open question 4)"
-    Confirm whether the personal administrator token stays the final solution or whether a service account follows.
-
 The service offers the health checks `/health` and `/health/ready`.
 
 If the DMS stores files on a local Docker volume, the upload volume must belong to the user and group `101:101`.
@@ -112,11 +103,6 @@ The add-on has no settings page in i-doit up.
 
 4. Open i-doit up and check that **DMS** appears in the navigation, group **Add-ons**.
 
-!!! todo "TODO (open question 3)"
-    Replace this section with the official installation path.
-    The command `docu:addons:register` was used during development and testing; it is not yet confirmed as the customer installation path.
-    For SaaS, see [Add-ons](addons.md#install-an-add-on).
-
 ### Rights for the Documents island
 
 The island appears in the group **Islands** of the object sidebar.
@@ -128,32 +114,20 @@ Without the right the island stays invisible.
 2. Sign out and sign in again.
    The right takes effect only after a new sign-in.
 
-!!! todo "TODO (open question 2)"
-    The test confirmed that the right is missing on a new installation too.
-    Add the exact name of the right as shown in the rights settings; the test assigned the right without the user interface.
-
 ## Update an existing DMS
 
 The integration changes how the DMS stores the scope of documents.
 An existing DMS needs data migrations before the add-on is used.
 
-!!! todo "TODO (open question 9)"
-    Add the official list of migrations and their order.
-    The development state contains the migrations `2026-08-14-root-folder-sentinel`, `2026-09-17-qualify-relations`, and `2026-09-17-workspace-backfill`.
-    The workspace migration has no npm script yet.
-    Planned procedure: create a backup, stop the DMS, run the migration, run `npm run sync-indexes`, start the DMS.
+The DMS contains the migrations `2026-08-14-root-folder-sentinel`, `2026-09-17-qualify-relations`, and `2026-09-17-workspace-backfill` in the folder `apps/backend/src/migrations/`.
 
-## Link tenants and objects with Suite+
+Run the migration `2026-09-17-workspace-backfill` once:
 
-Without further configuration, Suite+ and i-doit up see separate documents in the DMS, even for the same customer and the same asset.
-The DMS can link a Suite+ tenant with an i-doit up tenant and a Suite+ asset with an i-doit up object.
-Then documents attached in one system also appear in the other.
-
-!!! todo "TODO (open question 7)"
-    The test confirmed that without Suite+ the DMS creates the workspace of an i-doit up tenant automatically at the first sign-in.
-    Confirm whether linking with Suite+ is part of the product.
-    Today it is a proof of concept: the Suite+ middleware pushes the links to the admin API of the DMS after setting up the DMS connection and running a sync once.
-    Clarify who links tenants when no Suite+ middleware is involved.
+1. Create a backup of the DMS.
+2. Stop the DMS.
+3. Run the migration.
+4. Run `npm run sync-indexes`.
+5. Start the DMS.
 
 ## Troubleshooting
 
