@@ -81,6 +81,8 @@ Teilen sich zwei oder mehr Buttons eine Gruppe, zeigt das Widget **Flows** sie a
 Das Gruppen-Icon gilt für die ganze Gruppe: Ändern oder leeren Sie es an einem Button, ändert es sich für alle Buttons der Gruppe.
 Ohne Gruppen-Icon zeigt der Gruppen-Button ein Play-Icon.
 
+[![Gruppen-Button "Review" im Flows-Widget](../../img/screenshots/user/flows/flows_widget_button_group.png)](../../img/screenshots/user/flows/flows_widget_button_group.png)
+
 ## Zeitbasiert
 
 Ein zeitbasierter Auslöser startet den Flow nach Zeitplan.

@@ -79,6 +79,8 @@ When two or more buttons share a group, the **Flows** widget shows them as one b
 The group icon applies to the whole group: when you change or clear it for one button, it changes for all buttons of the group.
 Without a group icon, the group button shows a play icon.
 
+[![Group button "Review" in the Flows widget](../../img/screenshots/user/flows/flows_widget_button_group.png)](../../img/screenshots/user/flows/flows_widget_button_group.png)
+
 ## Time-based
 
 A time-based trigger starts the flow on a schedule.
