@@ -19,7 +19,7 @@ Flows adds two add-on rights:
 To grant a right, open **Settings → Rights**, choose *Add-on rights → Flows*, and click **New right**.
 Granting all rights of the add-on includes both rights.
 
-The admin role gets **Manage Flows** automatically when the add-on is installed.
+The add-on tries to grant **Manage Flows** to the admin role when it is installed. If **Flows** does not appear under **Add-ons** afterwards, grant the right to the admin role as described here.
 
 Users with **Manage Flows** but without **Select Flow Operator** can build flows.
 Their flows keep the current Flow Operator or run as the default flow user.
@@ -27,8 +27,7 @@ Their flows keep the current Flow Operator or run as the default flow user.
 The rights control access to the add-on interface.
 They do not control whether a flow runs: an active flow runs whenever its trigger fires, no matter who clicked a button or changed an object.
 
-!!! example "Screenshot placeholder: flows_addon_rights.png"
-    Settings → Rights with Add-on rights → Flows and the rights Manage Flows and Select Flow Operator.
+[![Add-on rights for Flows](../../img/screenshots/admin/flows/flows_addon_rights.png)](../../img/screenshots/admin/flows/flows_addon_rights.png)
 
 ## Flow users
 
@@ -42,7 +41,7 @@ When the add-on is enabled, it creates the service user "Flows" and sets it as t
 Every flow runs as this user unless another Flow Operator is selected.
 
 The add-on does not grant this user any access to objects.
-The first time an administrator who can manage permissions opens Flows, the dialog **Set up permissions for your default flow user** appears:
+The first time an administrator with the right **Select Flow Operator** opens Flows, the dialog **Set up permissions for your default flow user** appears:
 
 - **Grant full access**: gives the default flow user access to all objects, classes, and categories.
 - **Configure manually**: opens the **Flow users** page.
@@ -53,8 +52,7 @@ The first time an administrator who can manage permissions opens Flows, the dial
 Choose an option and click **Continue**.
 Users who cannot manage permissions do not see the dialog.
 
-!!! example "Screenshot placeholder: flows_permission_prompt.png"
-    Dialog Set up permissions for your default flow user with the four options.
+[![Permission prompt for the default flow user](../../img/screenshots/admin/flows/flows_permission_prompt.png)](../../img/screenshots/admin/flows/flows_permission_prompt.png)
 
 ### Manage flow users
 
@@ -73,8 +71,7 @@ The page needs the right **Select Flow Operator**.
 
 Tokens are never shown.
 
-!!! example "Screenshot placeholder: flows_flow_users.png"
-    Settings → Flows → Flow users with the column Used by default and the button New flow user.
+[![Flow users](../../img/screenshots/admin/flows/flows_flow_users.png)](../../img/screenshots/admin/flows/flows_flow_users.png)
 
 ## Further readings
 

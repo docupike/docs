@@ -37,9 +37,9 @@ Das Add-on selbst folgt der Sprache von i-doit up.
 ## Bevor Benutzer loslegen
 
 1. Vergeben Sie das Recht **Manage Flows** an die Benutzer, die Flows erstellen.
-   Die Admin-Rolle hat es automatisch.
+   Das Add-on versucht bei der Installation, es der Admin-Rolle zu geben. Prüfen Sie das und vergeben Sie es von Hand, wenn **Flows** unter **Add-ons** fehlt.
 2. Geben Sie dem Standard-Flow-Benutzer den Zugriff, den er braucht.
-   Wenn ein Administrator Flows zum ersten Mal öffnet, bietet ein Dialog das an.
+   Wenn ein Administrator mit dem Recht **Select Flow Operator** Flows zum ersten Mal öffnet, bietet ein Dialog das an.
 3. Fügen Sie optional weitere Flow-Benutzer hinzu und vergeben Sie **Select Flow Operator**.
 
 Alle drei Schritte beschreibt [Rechte und Flow-Benutzer](flows/rights.md).

@@ -21,7 +21,7 @@ Die Namen der Rechte sind englisch, auch in der deutschen Oberfläche.
 Um ein Recht zu vergeben, öffnen Sie **Einstellungen → Rechte**, wählen Sie *Add-on rights → Flows* und klicken Sie auf **Neues Recht**.
 Wer alle Rechte des Add-ons erhält, hat beide Rechte.
 
-Die Admin-Rolle erhält **Manage Flows** automatisch, wenn das Add-on installiert wird.
+Das Add-on versucht bei der Installation, der Admin-Rolle **Manage Flows** zu geben. Erscheint **Flows** danach nicht unter **Add-ons**, vergeben Sie das Recht wie hier beschrieben an die Admin-Rolle.
 
 Benutzer mit **Manage Flows**, aber ohne **Select Flow Operator** können Flows erstellen.
 Ihre Flows behalten den aktuellen Flow Operator oder laufen als Standard-Flow-Benutzer.
@@ -29,8 +29,7 @@ Ihre Flows behalten den aktuellen Flow Operator oder laufen als Standard-Flow-Be
 Die Rechte steuern den Zugriff auf die Oberfläche des Add-ons.
 Sie steuern nicht, ob ein Flow läuft: Ein aktiver Flow läuft, sobald sein Auslöser auslöst, egal wer einen Button geklickt oder ein Objekt geändert hat.
 
-!!! example "Platzhalter für Screenshot: flows_addon_rights.png"
-    Einstellungen → Rechte mit Add-on rights → Flows und den Rechten Manage Flows und Select Flow Operator.
+[![Add-on-Rechte für Flows](../../img/screenshots/admin/flows/flows_addon_rights.png)](../../img/screenshots/admin/flows/flows_addon_rights.png)
 
 ## Flow-Benutzer
 
@@ -44,7 +43,7 @@ Wenn das Add-on aktiviert wird, legt es den Servicebenutzer "Flows" an und setzt
 Jeder Flow läuft als dieser Benutzer, solange kein anderer Flow Operator gewählt ist.
 
 Das Add-on gibt diesem Benutzer keinen Zugriff auf Objekte.
-Wenn ein Administrator, der Berechtigungen verwalten darf, Flows zum ersten Mal öffnet, erscheint der Dialog **Berechtigungen für Ihren Standard-Flow-Benutzer einrichten**:
+Wenn ein Administrator mit dem Recht **Select Flow Operator** Flows zum ersten Mal öffnet, erscheint der Dialog **Berechtigungen für Ihren Standard-Flow-Benutzer einrichten**:
 
 - **Vollständigen Zugriff gewähren**: gibt dem Standard-Flow-Benutzer Zugriff auf alle Objekte, Objekttypen und Kategorien.
 - **Manuell konfigurieren**: öffnet die Seite **Flow users**.
@@ -55,8 +54,7 @@ Wenn ein Administrator, der Berechtigungen verwalten darf, Flows zum ersten Mal 
 Wählen Sie eine Option und klicken Sie auf **Weiter**.
 Benutzer, die keine Berechtigungen verwalten dürfen, sehen den Dialog nicht.
 
-!!! example "Platzhalter für Screenshot: flows_permission_prompt.png"
-    Dialog Berechtigungen für Ihren Standard-Flow-Benutzer einrichten mit den vier Optionen.
+[![Berechtigungsabfrage für den Standard-Flow-Benutzer](../../img/screenshots/admin/flows/flows_permission_prompt.png)](../../img/screenshots/admin/flows/flows_permission_prompt.png)
 
 ### Flow-Benutzer verwalten
 
@@ -75,8 +73,7 @@ Die Seite trägt in der deutschen Oberfläche die Überschrift **Flow-Benutzer**
 
 Tokens werden nie angezeigt.
 
-!!! example "Platzhalter für Screenshot: flows_flow_users.png"
-    Einstellungen → Flows → Flow users mit der Spalte Standardmäßig verwendet und dem Button Neuer Flow-Benutzer.
+[![Flow-Benutzer](../../img/screenshots/admin/flows/flows_flow_users.png)](../../img/screenshots/admin/flows/flows_flow_users.png)
 
 ## Weiterführende Informationen
 
