@@ -27,7 +27,7 @@ The add-on does not pass the language that you selected in i-doit up to the DMS.
 
 Select **DMS** in the navigation, group **Add-ons**.
 i-doit up shows the DMS with its folders and documents in the main area.
-You work with folders and documents the same way as in the standalone DMS.
+You work with folders and documents the same way as in the standalone DMS, see [Working with the DMS](dms/basics.md).
 
 [![DMS embedded in i-doit up with three documents and the button Manage in DMS at the top right](../img/screenshots/user/dms/dms_embedded.png)](../img/screenshots/user/dms/dms_embedded.png)
 
@@ -124,6 +124,7 @@ When you switch the tenant in i-doit up, the DMS views switch to the documents o
 
 ## Further readings
 
+- [Working with the DMS](dms/basics.md)
 - [DMS integration](../admin/dms.md) for administrators
 - [Add-ons](../admin/addons.md)
 - [Suite+ bridge](../admin/suite-plus.md)

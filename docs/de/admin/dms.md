@@ -36,7 +36,7 @@ Das DMS legt den Benutzer beim ersten Aufruf an.
 
 Das DMS hält die Dokumente jeder i-doit-up-Instanz und jedes Mandanten in einem eigenen Arbeitsbereich.
 Es legt den Arbeitsbereich bei der ersten Anmeldung aus i-doit up automatisch an.
-Ein Administrator, der sich direkt im DMS anmeldet, sieht die Dokumente aus i-doit up nicht.
+Ein Administrator, der sich direkt im DMS anmeldet, sieht die Dokumente aus i-doit up nicht, siehe [DMS-Administration](dms/administration.md#administratorkonto).
 Die Ansichten zeigen immer den Mandanten, der gerade in i-doit up gewählt ist, sofern der Benutzer Zugriff darauf hat.
 Dokumente werden einem Objekt über die Objekt-ID zugeordnet.
 
@@ -111,8 +111,8 @@ i-doit up vergibt dieses Recht nicht automatisch, auch nicht dem Administrator u
 Ohne das Recht bleibt die Island unsichtbar.
 
 1. Vergeben Sie unter **Einstellungen** > **Rechte** > **Welten und Inseln** > **Inseln** das Recht **Zugriff auf alle Inseln** (interne Schlüssel `worlds-and-islands`, `islands`, `access-all-islands`) wie in [Rechte und Berechtigungen](rights-and-permissions.md) beschrieben, auch sich selbst.
-2. Melden Sie sich ab und wieder an.
-   Das Recht wirkt erst nach einer neuen Anmeldung.
+2. Laden Sie die Seite im Browser neu.
+   Die Island erscheint ohne neue Anmeldung.
 
 [![Einstellungsseite Rechte, Bereich Inseln, mit dem Recht Zugriff auf alle Inseln für den Benutzer admin](../img/screenshots/admin/dms/island_rights.png)](../img/screenshots/admin/dms/island_rights.png)
 
@@ -132,7 +132,7 @@ Stellen Sie sicher, dass diese URL aus dem Add-on-Container auflösbar und errei
 **Die Island Documents fehlt**
 
 Prüfen Sie die Island-Rechte, siehe [Rechte für die Island Documents](#rechte-fur-die-island-documents).
-Melden Sie sich nach dem Vergeben des Rechts ab und wieder an.
+Laden Sie die Seite nach dem Vergeben des Rechts neu.
 
 **Uploads schlagen mit "Internal server error" fehl**
 
@@ -155,6 +155,7 @@ Der Wert muss die Adresse des DMS sein, wie der Browser des Benutzers sie sieht,
 ## Siehe auch
 
 - [Dokumente (DMS)](../user/dms.md)
+- [DMS-Administration](dms/administration.md)
 - [Add-ons](addons.md)
 - [Rechte und Berechtigungen](rights-and-permissions.md)
 - [Suite+ Bridge](suite-plus.md)

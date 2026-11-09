@@ -27,7 +27,7 @@ Das Add-on übergibt die Sprache, die Sie in i-doit up gewählt haben, nicht an 
 
 Wählen Sie in der Navigation in der Gruppe **Add-ons** den Eintrag **DMS**.
 i-doit up zeigt das DMS mit seinen Ordnern und Dokumenten im Hauptbereich.
-Sie arbeiten mit Ordnern und Dokumenten wie im eigenständigen DMS.
+Sie arbeiten mit Ordnern und Dokumenten wie im eigenständigen DMS, siehe [Mit dem DMS arbeiten](dms/basics.md).
 
 [![DMS in i-doit up eingebettet, mit drei Dokumenten und dem Knopf Manage in DMS oben rechts](../img/screenshots/user/dms/dms_embedded.png)](../img/screenshots/user/dms/dms_embedded.png)
 
@@ -124,6 +124,7 @@ Wenn Sie in i-doit up den Mandanten wechseln, zeigen die DMS-Ansichten die Dokum
 
 ## Siehe auch
 
+- [Mit dem DMS arbeiten](dms/basics.md)
 - [DMS-Integration](../admin/dms.md) für Administratoren
 - [Add-ons](../admin/addons.md)
 - [Suite+ Bridge](../admin/suite-plus.md)

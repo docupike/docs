@@ -63,7 +63,13 @@ nav:
           - Report Manager: user/reporting/report-manager.md
       - Data protection: user/gdpr.md
       - Documents Creator: user/documents-creator.md
-      - Documents (DMS): user/dms.md
+      - Documents (DMS):
+          - DMS in i-doit up: user/dms.md
+          - Working with the DMS: user/dms/basics.md
+          - Files and folders: user/dms/files.md
+          - Editing and versions: user/dms/editing.md
+          - Sharing and access: user/dms/sharing.md
+          - Approvals: user/dms/approvals.md
       - Imports:
           - CSV: user/imports/csv.md
       - Use cases:
@@ -97,7 +103,9 @@ nav:
           - Suite+ bridge: admin/suite-plus.md
           - servereye integration: admin/servereye.md
           - Model Context Protocol (MCP): admin/mcp.md
-          - DMS integration: admin/dms.md
+          - DMS:
+              - DMS integration: admin/dms.md
+              - DMS administration: admin/dms/administration.md
   - Developer guide:
       - API: dev/api.md
       - Add-ons:

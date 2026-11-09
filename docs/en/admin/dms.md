@@ -36,7 +36,7 @@ The DMS creates the user on the first visit.
 
 The DMS keeps the documents of each i-doit up instance and tenant in a separate workspace.
 It creates the workspace automatically at the first sign-in from i-doit up.
-An administrator who signs in to the DMS directly does not see the documents from i-doit up.
+An administrator who signs in to the DMS directly does not see the documents from i-doit up, see [DMS administration](dms/administration.md#administrator-account).
 The views always show the tenant that is currently selected in i-doit up, as long as the user has access to it.
 Documents are assigned to objects by the object ID.
 
@@ -111,8 +111,8 @@ i-doit up does not grant this right automatically, not even to the administrator
 Without the right the island stays invisible.
 
 1. Under **Settings** > **Rights** > **Worlds and Islands** > **Islands**, assign the right **Access all Islands** (internal keys `worlds-and-islands`, `islands`, `access-all-islands`) as described in [Rights and permissions](rights-and-permissions.md), also to yourself.
-2. Sign out and sign in again.
-   The right takes effect only after a new sign-in.
+2. Reload the page in the browser.
+   The island appears without a new sign-in.
 
 [![Settings page Rights, section Islands, with the right Access all Islands assigned to the user admin](../img/screenshots/admin/dms/island_rights.png)](../img/screenshots/admin/dms/island_rights.png)
 
@@ -132,7 +132,7 @@ Make sure that this URL can be resolved and reached from the add-on container.
 **The Documents island is missing**
 
 Check the island rights, see [Rights for the Documents island](#rights-for-the-documents-island).
-After assigning the right, sign out and sign in again.
+After assigning the right, reload the page.
 
 **Uploads fail with "Internal server error"**
 
@@ -155,6 +155,7 @@ It must be the address of the DMS as the browser of the user sees it, not the in
 ## Further readings
 
 - [Documents (DMS)](../user/dms.md)
+- [DMS administration](dms/administration.md)
 - [Add-ons](addons.md)
 - [Rights and permissions](rights-and-permissions.md)
 - [Suite+ bridge](suite-plus.md)
