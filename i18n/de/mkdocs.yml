@@ -63,6 +63,14 @@ nav:
           - Berichtsmanager: user/reporting/report-manager.md
       - Datenschutz: user/gdpr.md
       - Documents Creator: user/documents-creator.md
+      - Flows:
+          - Flows: user/flows.md
+          - Flows erstellen und bearbeiten: user/flows/create.md
+          - Auslöser: user/flows/triggers.md
+          - Bedingungen: user/flows/conditions.md
+          - Aktionen und Platzhalter: user/flows/actions.md
+          - Logs und Verlauf: user/flows/logs-history.md
+          - Export und Import: user/flows/export-import.md
       - Importe:
           - CSV: user/imports/csv.md
       - Anwendungsfälle:
@@ -96,6 +104,10 @@ nav:
           - Suite+ Bridge: admin/suite-plus.md
           - servereye Integration: admin/servereye.md
           - Model Context Protocol (MCP): admin/mcp.md
+          - Flows:
+              - Flows-Add-on: admin/flows.md
+              - Rechte und Flow-Benutzer: admin/flows/rights.md
+              - Flows selbst betreiben: admin/flows/self-hosting.md
   - Entwicklerhandbuch:
       - API: dev/api.md
       - Add-ons:
