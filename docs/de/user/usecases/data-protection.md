@@ -9,7 +9,7 @@ lang: de
 
 Das Add-on **Datenschutz** finden Sie in der Navigation unter **Bestandsaufnahme**.
 
-Die Klassen des Add-ons finden Sie unter "Finder → Datenschutz". Dies ist eine Sammlung, die alle Klassen enthält, die für eine DSGVO-konforme Dokumentation erforderlich sind.
+Die Klassen des Add-ons finden Sie unter "Finder → Datenschutz". Dies ist eine Kollektion, die alle Klassen enthält, die für eine DSGVO-konforme Dokumentation erforderlich sind.
 
 Das Add-on **Datenschutz** bietet zwei wichtige Bereiche: die **Verarbeitungsaktivitäten** (Datenverarbeitung von Informationen) und die **Implementierten Maßnahmen** (implementierte Maßnahmen TOMS).
 
@@ -17,7 +17,7 @@ Beginnen wir mit der Übersicht über das Add-on. Im Wesentlichen unterscheiden 
 
 ## Verarbeitungsaktivitäten
 
-In diesem Abschnitt sollen alle notwendigen Informationen zu allen Verarbeitungsaktivitäten dokumentiert werden. Hier erstellen wir ein Objekt der Klasse **Process** und füllen die Kategorien **Verarbeitete Daten**, **Verarbeitungszweck und -verwaltung** und gegebenenfalls die **Externe Verarbeiter** aus.
+In diesem Abschnitt sollen alle notwendigen Informationen zu allen Verarbeitungsaktivitäten dokumentiert werden. Hier erstellen wir ein Objekt der Klasse **Prozess** und füllen die Kategorien **Verarbeitete Daten**, **Verarbeitungszweck und -verwaltung** und gegebenenfalls die **Externe Verarbeiter** aus.
 
 In diesem Abschnitt möchten wir folgende Fragen beantworten:
 

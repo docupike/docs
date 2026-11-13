@@ -1,13 +1,14 @@
 # Collections
 
 A **collection** is a thematic grouping of [classes](classes.md).
-Collections give the Finder its high-level structure, when *Show empty classes* is on, the class list is grouped by collection so it is easier to find the class you need.
+Collections give the Finder its high-level structure: pick a collection to narrow the class list down to the classes you need.
 
-Out of the box i-doit up ships with collections for *Hardware*, *Network devices*, *Software*, *People & organizations*, *Locations*, *Networking*, and similar.
+Out of the box i-doit up ships with these collections: *Contact*, *Infrastructure*, *Hardware*, *Information*, *Network*, *Software*, *Input output device*, *Display Device*, *End user system*, *Network device*, *Protection system*, *Supply*, and *Location*.
 
 ## Where collections appear
 
-- In the **class list** sidebar of the [Finder](../finder/class-list.md), classes are grouped by their collection.
+- In the [Finder](../finder/finder.md), the *All classes* dropdown in the search bar lists the collections.
+    Picking a collection limits the [class list](../finder/class-list.md) to the classes of that collection.
 - The Settings ▸ CMDB Configuration ▸ Collections page is the admin surface, see [Manage classes and collections](../../admin/class-collection-management.md).
 
 ## Working with collections

@@ -1,17 +1,20 @@
 # Klassenliste
 
 Die **Klassenliste** ist die linke Seitenleiste des Finders.
-Sie zeigt alle Klassen in der Instanz mit der Anzahl der Objekte in jeder einzelnen an und ist die wichtigste Möglichkeit, die Findertabelle nach Klassen zu filtern.
+Sie zeigt alle Klassen der gewählten Kollektion mit der Anzahl der Objekte in jeder einzelnen an und ist die wichtigste Möglichkeit, die Findertabelle nach Klassen zu filtern.
 
 ## Layout
 
-Die Kopfzeile der Seitenleiste trägt die Bezeichnung **Alle Kurse**.
+Die Kopfzeile der Seitenleiste trägt die Bezeichnung **Alle Klassen** oder zeigt den Namen der Kollektion, die Sie im Dropdown-Menü *Alle Klassen* gewählt haben.
 Unterhalb der Kopfzeile befinden sich drei Steuerelemente:
 
-- **Sortierung 9-0**: Wechselt zwischen alphabetischer Sortierung (A bis Z) und umgekehrter Sortierung.
+- **Sort**: Öffnet ein Menü mit vier Sortierreihenfolgen.
+    Unter *Nach Anzahl der Objekte sortieren* finden Sie *Höchste bis niedrigste* (Standard) und *Niedrigste bis höchste*, unter *Alphabetisch sortieren* finden Sie *A-Z* und *Z-A*.
+    Das Symbol neben **Sort** zeigt die aktive Reihenfolge.
 - Ein Schalter zum **Ein-/Ausblenden leerer Klassen** (Augensymbol).
     Wenn das Symbol ein offenes Auge zeigt, sind Klassen ohne Objekte sichtbar.
-    Wenn das Symbol ein durchgestrichenes Auge anzeigt, sind leere Klassen ausgeblendet; der Tooltip lautet dann *Leere Klassen anzeigen*, da dies die Funktion des Klicks ist.
+    Wenn das Symbol ein durchgestrichenes Auge anzeigt, sind leere Klassen ausgeblendet.
+    Der Tooltip nennt, was ein Klick bewirkt: *Leere Klassen ausblenden* oder *Leere Klassen anzeigen*.
 - Ein **Suchen**-Symbol.
     Klicken Sie darauf, um ein Inline-Suchfeld zu öffnen und die Klassenliste nach Namen zu filtern.
     Klicken Sie auf das **×** im Feld, um den Filter zu löschen.
@@ -20,7 +23,8 @@ Unterhalb der Bedienelemente folgt die eigentliche Liste:
 
 - **Alle Objekte**: Ein synthetischer Eintrag, der alle Objekte aus allen Klassen auswählt.
     Standardmäßig markiert.
-- Eine Zeile pro Klasse, in der das Klassensymbol, der Klassenname und die Anzahl der Objekte in dieser Klasse angezeigt werden.
+- Ihre Favoriten-Klassen unter der Überschrift **Favoriten**, danach die übrigen Klassen.
+    Jede Klassenzeile zeigt das Klassensymbol, den Klassennamen und die Anzahl der Objekte in dieser Klasse.
 
 ## Den Finder nach Klassen filtern
 
@@ -30,15 +34,16 @@ Die Überschrift im rechten Fensterbereich ändert sich von *Alle Objekte* in de
 
 Klicken Sie auf **Alle Objekte**, um den Filter zu deaktivieren und wieder alle Objekte anzuzeigen.
 
-## Dropdown-Menü für den Klassenbereich
+## Dropdown-Menü für Kollektionen
 
-Das Dropdown-Menü **Alle Klassen (n)** oberhalb der Suchleiste bietet eine alternative Möglichkeit zur Auswahl einer Klasse; es listet alle Klassen mit ihrer Objektanzahl auf und unterstützt die Navigation per Tastatur.
-Die Auswahl einer Klasse aus diesem Dropdown-Menü hat denselben Effekt wie das Anklicken der Klasse in der Seitenleiste.
+Das Dropdown-Menü **Alle Klassen (n)** in der Suchleiste listet keine Klassen, sondern [Kollektionen](../basics/collections.md) auf.
+Es bietet *Alle Klassen*, *Favoriten*, Ihre Kollektionen, ein Untermenü *Mehr* mit verborgenen Kollektionen und *Konfigurieren*, um festzulegen, welche Kollektionen angezeigt oder verborgen werden.
+Wenn Sie eine Kollektion wählen, zeigt die Klassenliste nur noch die Klassen dieser Kollektion, und das Dropdown-Menü zeigt dann den Namen der Kollektion.
 
 ## Leere Klassen ausblenden und einblenden
 
-Standardmäßig blendet die Seitenleiste Klassen aus, die keine Objekte enthalten, damit die Liste übersichtlich bleibt.
-Klicken Sie auf das Augensymbol, um alle Klassen unabhängig von ihrer Anzahl anzuzeigen, oder klicken Sie erneut darauf, um leere Klassen wieder auszublenden.
+Standardmäßig zeigt die Seitenleiste alle Klassen an, auch Klassen ohne Objekte.
+Klicken Sie auf das Augensymbol, um leere Klassen auszublenden, damit die Liste übersichtlich bleibt, oder klicken Sie erneut darauf, um wieder alle Klassen anzuzeigen.
 Der aktuelle Status wird durch das Symbol selbst angezeigt (offenes Auge = leere Klassen sichtbar, durchgestrichenes Auge = leere Klassen ausgeblendet).
 
 ## Siehe auch
