@@ -2,6 +2,7 @@
 
 Eine **Klasse** ist der Typ eines Objekts, z. B. *Server*, *Person*, *Netzwerk*, *Gebäude*, *Switch* usw.
 Jedes Objekt in i-doit up gehört genau einer Klasse an, und die Klasse bestimmt, welche Kategorien das Objekt bereitstellt und welche Attribute diese Kategorien enthalten können.
+Die [Klassenreferenz](class-reference/index.md) beschreibt jede Standardklasse mit ihren Kollektionen und zugewiesenen Kategorien.
 
 ## Wo Klassen vorkommen
 
