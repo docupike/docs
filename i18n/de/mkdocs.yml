@@ -66,6 +66,13 @@ nav:
       - Welten und Inseln:
           - Welten und Inseln: user/worlds-and-islands.md
           - Lizenz-Welt und Lizenz-Insel: user/license-world-and-island.md
+      - Dokumente (DMS):
+          - DMS in i-doit up: user/dms.md
+          - Mit dem DMS arbeiten: user/dms/basics.md
+          - Dateien und Ordner: user/dms/files.md
+          - Bearbeiten und Versionen: user/dms/editing.md
+          - Teilen und Zugriff: user/dms/sharing.md
+          - Freigaben: user/dms/approvals.md
       - Importe:
           - CSV: user/imports/csv.md
       - Anwendungsfälle:
@@ -99,6 +106,9 @@ nav:
           - Suite+ Bridge: admin/suite-plus.md
           - servereye Integration: admin/servereye.md
           - Model Context Protocol (MCP): admin/mcp.md
+          - DMS:
+              - DMS-Integration: admin/dms.md
+              - DMS-Administration: admin/dms/administration.md
   - Entwicklerhandbuch:
       - API: dev/api.md
       - Add-ons:
