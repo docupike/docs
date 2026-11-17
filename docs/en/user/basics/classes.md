@@ -7,13 +7,13 @@ The [class reference](class-reference/index.md) describes every default class wi
 ## Where classes appear
 
 - The **class list** sidebar on the [Finder](../finder/class-list.md) lists every class plus its object count.
-- The **All classes** dropdown above the search bar offers the same list with keyboard navigation.
+- The **All classes** dropdown in the search bar lists the [collections](collections.md), picking one limits the class list to the classes of that collection.
 - On every [object details page](object-details.md) the class is shown under the object name in the header, with the class icon next to it.
 - Settings ▸ CMDB Configuration ▸ Classes is the admin surface for creating, editing, and deleting classes, see [Manage classes and collections](../../admin/class-collection-management.md) and [Create custom classes](../../admin/custom-classes.md).
 
 ## Classes and collections
 
-Each class can be assigned to one or more [collections](collections.md), which group classes thematically (for example *Network devices* or *Software*).
+Each class can be assigned to one or more [collections](collections.md), which group classes thematically (for example *Network device* or *Software*).
 
 ## Favoring a class
 

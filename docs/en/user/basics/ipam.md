@@ -90,7 +90,7 @@ See [Rights and permissions](../../admin/rights-and-permissions.md).
 
 ## Open the IP addresses table
 
-1. Open a Network object, for example by selecting the **Network** class from the *All classes* dropdown above the Finder table and clicking an entry.
+1. Open a Network object, for example by picking the **Network** collection in the *All classes* dropdown of the Finder, selecting the **Network** class in the class list, and clicking an entry.
 2. In the object's category sidebar (under **All categories**), choose **IP addresses**.
 
 ## Network definition is a prerequisite
