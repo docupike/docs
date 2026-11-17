@@ -50,8 +50,16 @@ Bei einer Kategorie mit mehreren Einträgen fügt jede Ausführung einen neuen E
 
 ## Objekt einstufen
 
-Unter **Aktion anwenden auf** wählen Sie das Objekt wie bei **Objekt aktualisieren**.
-Unter **Status setzen auf** wählen Sie **Normal**, **Archiviert** oder **Gelöscht**.
+Die Aktion ändert den Lebenszyklus-Status (Normal, Archiviert, Gelöscht) eines Objekts.
+
+1. Unter **Aktion anwenden auf** wählen Sie das Objekt:
+    - **Im Auslöser referenziertes Objekt**: das Objekt, das den Flow gestartet hat.
+      Das ist die Voreinstellung.
+    - **Ausgewählte Objekte**: ein Objekt, das Sie im Feld **Objekt** auswählen.
+2. Unter **Status setzen auf** wählen Sie **Normal**, **Archiviert** oder **Gelöscht**.
+   Voreingestellt ist **Archiviert**.
+
+[![Dialog Aktion hinzufügen mit der Aktion Objekt einstufen, der Option Ausgewählte Objekte und der geöffneten Liste Objekt](../../img/screenshots/user/flows/flows_rank_object.png)](../../img/screenshots/user/flows/flows_rank_object.png)
 
 ## E-Mail senden
 

@@ -56,7 +56,8 @@ There are no rights for single Worlds or single Islands.
 A user with **Access all Islands** sees every Island that belongs to the class of the opened object, including Islands of add-ons.
 
 !!! info "Only the admin role has the rights by default"
-    Since i-doit up 3.3.0, the admin role receives both rights automatically.
+    Since i-doit up 3.3.0, the admin role receives all rights for Worlds and Islands automatically.
+    The list of rights shows **All rights** for the role.
     This applies to new installations and to updates.
     Grant the rights to every other role, group, or user that works with Worlds and Islands.
 
@@ -65,16 +66,16 @@ To grant a right:
 1. Open **Settings** from the user menu and go to **User management** > **Rights**.
 2. Under **Worlds and Islands**, click **Worlds** or **Islands**.
 3. Click **New right**.
+   The dialog **Create new right** opens.
 4. Select the user, role, or group in **User / Role / Group**.
-5. Select the right in **Right**.
+5. Under **Rights**, select the check box **Access all Worlds** or **Access all Islands**.
+   Alternatively, select **All available Rights (Including future updates)**.
+   This option also covers rights that later versions add to the method.
+6. Click **Save**.
 
-[![Rights page with the topic Worlds and Islands, the method Worlds, and the right Access all Worlds granted to admin](../img/screenshots/admin/worlds-and-islands/rights_worlds.png)](../img/screenshots/admin/worlds-and-islands/rights_worlds.png)
+[![Dialog Create new right of the method Worlds with the option All available Rights and the check box Access all Worlds](../img/screenshots/admin/worlds-and-islands/rights_worlds_new_right.png)](../img/screenshots/admin/worlds-and-islands/rights_worlds_new_right.png)
 
-The list **Right** offers only one right per method.
-
-[![Open list Right of the method Worlds with the only entry Access all Worlds](../img/screenshots/admin/worlds-and-islands/rights_worlds_dropdown.png)](../img/screenshots/admin/worlds-and-islands/rights_worlds_dropdown.png)
-
-[![Open list Right of the method Islands with the only entry Access all Islands](../img/screenshots/admin/worlds-and-islands/rights_islands_dropdown.png)](../img/screenshots/admin/worlds-and-islands/rights_islands_dropdown.png)
+[![Dialog Create new right of the method Islands with the option All available Rights and the check box Access all Islands](../img/screenshots/admin/worlds-and-islands/rights_islands_new_right.png)](../img/screenshots/admin/worlds-and-islands/rights_islands_new_right.png)
 
 Granting and removing these rights takes effect when the user reloads the page.
 A new login is not necessary.

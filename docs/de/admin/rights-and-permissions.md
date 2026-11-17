@@ -56,7 +56,8 @@ Rechte für einzelne Welten oder einzelne Inseln gibt es nicht.
 Ein Benutzer mit **Zugriff auf alle Inseln** sieht jede Insel, die zur Klasse des geöffneten Objekts gehört, auch Inseln von Add-ons.
 
 !!! info "Nur die Admin-Rolle hat die Rechte von Anfang an"
-    Seit i-doit up 3.3.0 erhält die Admin-Rolle beide Rechte automatisch.
+    Seit i-doit up 3.3.0 erhält die Admin-Rolle alle Rechte für Welten und Inseln automatisch.
+    Die Liste der Rechte zeigt für die Rolle **Alle Rechte**.
     Das gilt für neue Installationen und für Updates.
     Vergeben Sie die Rechte an jede andere Rolle, Gruppe oder jeden Benutzer, die mit Welten und Inseln arbeiten.
 
@@ -65,16 +66,16 @@ So vergeben Sie ein Recht:
 1. Öffnen Sie **Einstellungen** über das Benutzermenü und gehen Sie zu **Benutzerverwaltung** > **Rechte**.
 2. Klicken Sie unter **Welten und Inseln** auf **Welten** oder **Inseln**.
 3. Klicken Sie auf **Neues Recht**.
+   Der Dialog **Neues Recht erstellen** öffnet sich.
 4. Wählen Sie unter **Benutzer / Rolle / Gruppe** den Benutzer, die Rolle oder die Gruppe.
-5. Wählen Sie unter **Recht** das Recht.
+5. Aktivieren Sie unter **Rechte** das Kontrollkästchen **Zugriff auf alle Welten** oder **Zugriff auf alle Inseln**.
+   Alternativ wählen Sie **Alle verfügbaren Rechte (einschließlich zukünftiger Updates)**.
+   Diese Option umfasst auch Rechte, die spätere Versionen der Methode hinzufügen.
+6. Klicken Sie auf **Speichern**.
 
-[![Rechte-Seite mit dem Bereich Welten und Inseln, der Methode Welten und dem an admin vergebenen Recht Zugriff auf alle Welten](../img/screenshots/admin/worlds-and-islands/rights_worlds.png)](../img/screenshots/admin/worlds-and-islands/rights_worlds.png)
+[![Dialog Neues Recht erstellen der Methode Welten mit der Option Alle verfügbaren Rechte und dem Kontrollkästchen Zugriff auf alle Welten](../img/screenshots/admin/worlds-and-islands/rights_worlds_new_right.png)](../img/screenshots/admin/worlds-and-islands/rights_worlds_new_right.png)
 
-Die Liste **Recht** bietet je Methode nur ein Recht an.
-
-[![Geöffnete Liste Recht der Methode Welten mit dem einzigen Eintrag Zugriff auf alle Welten](../img/screenshots/admin/worlds-and-islands/rights_worlds_dropdown.png)](../img/screenshots/admin/worlds-and-islands/rights_worlds_dropdown.png)
-
-[![Geöffnete Liste Recht der Methode Inseln mit dem einzigen Eintrag Zugriff auf alle Inseln](../img/screenshots/admin/worlds-and-islands/rights_islands_dropdown.png)](../img/screenshots/admin/worlds-and-islands/rights_islands_dropdown.png)
+[![Dialog Neues Recht erstellen der Methode Inseln mit der Option Alle verfügbaren Rechte und dem Kontrollkästchen Zugriff auf alle Inseln](../img/screenshots/admin/worlds-and-islands/rights_islands_new_right.png)](../img/screenshots/admin/worlds-and-islands/rights_islands_new_right.png)
 
 Vergeben und Entziehen dieser Rechte wirkt, sobald der Benutzer die Seite neu lädt.
 Eine neue Anmeldung ist nicht nötig.

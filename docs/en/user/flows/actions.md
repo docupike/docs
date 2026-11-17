@@ -50,8 +50,16 @@ For a multi-value category, every run adds a new entry.
 
 ## Rank object
 
-Under **Apply action to**, choose the object as for **Update object**.
-Under **Set state to**, choose **Normal**, **Archived**, or **Deleted**.
+The action changes the lifecycle state (Normal, Archived, Deleted) of an object.
+
+1. Under **Apply action to**, choose the object:
+    - **Object referred to in trigger**: the object that started the flow.
+      This is the default.
+    - **Selected objects**: an object you select in the field **Object**.
+2. Under **Set state to**, choose **Normal**, **Archived**, or **Deleted**.
+   The default is **Archived**.
+
+[![Add action dialog with the action Rank object, the option Selected objects, and the open list Object](../../img/screenshots/user/flows/flows_rank_object.png)](../../img/screenshots/user/flows/flows_rank_object.png)
 
 ## Send e-mail
 
