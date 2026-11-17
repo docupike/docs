@@ -55,10 +55,10 @@ Ein Benutzer, der in Mandant A über bestimmte Rechte verfügt, hat nicht automa
 Rechte für einzelne Welten oder einzelne Inseln gibt es nicht.
 Ein Benutzer mit **Zugriff auf alle Inseln** sieht jede Insel, die zur Klasse des geöffneten Objekts gehört, auch Inseln von Add-ons.
 
-!!! info "Zuerst die Rechte vergeben"
-    i-doit up vergibt diese Rechte an niemanden, auch nicht an den Administrator.
+!!! info "Nur die Admin-Rolle hat die Rechte von Anfang an"
+    Seit i-doit up 3.3.0 erhält die Admin-Rolle beide Rechte automatisch.
     Das gilt für neue Installationen und für Updates.
-    Vergeben Sie die Rechte, bevor Sie oder Ihre Benutzer mit Welten und Inseln arbeiten.
+    Vergeben Sie die Rechte an jede andere Rolle, Gruppe oder jeden Benutzer, die mit Welten und Inseln arbeiten.
 
 So vergeben Sie ein Recht:
 

@@ -14,7 +14,8 @@ Add-ons can add further Islands, for example the island **Documents** of the DMS
 ## Before you start
 
 Worlds and Islands are protected by two rights: **Access all Worlds** and **Access all Islands**.
-i-doit up does not grant these rights automatically, not even to the administrator.
+Since i-doit up 3.3.0, the admin role receives both rights automatically, on new installations and on updates.
+All other roles, groups, and users need the rights granted explicitly.
 Without the rights, the menu item **Worlds** and the group **Islands** do not appear at all.
 
 Ask your administrator to grant the rights, or grant them yourself if you manage rights.

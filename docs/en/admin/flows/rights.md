@@ -19,13 +19,16 @@ Flows adds two add-on rights:
 To grant a right, open **Settings → User management → Rights**, choose *Add-on rights → Flows*, and click **New right**.
 Granting all rights of the add-on includes both rights.
 
-After Flows has been registered, an administrator grants **Manage Flows** and, where needed, **Select Flow Operator** as described here, also to the admin role.
+When Flows is installed, the admin role receives **Manage Flows** and **Select Flow Operator** automatically.
+All other roles, groups, and users receive the rights as described here.
 
 Users with **Manage Flows** but without **Select Flow Operator** can build flows.
 Their flows keep the current Flow Operator or run as the default flow user.
 
 The rights control access to the add-on interface.
-They do not control whether a flow runs: an active flow runs whenever its trigger fires, no matter who clicked a button or changed an object.
+An active flow with an object or category trigger runs whenever its trigger fires, no matter who changed the object.
+A button runs its flow only if the flow is active or in test mode, the button is shown for this object, the conditions of the flow allow the user, and the user can read the object.
+Test runs require **Manage Flows**.
 
 [![Add-on rights for Flows](../../img/screenshots/admin/flows/flows_addon_rights.png)](../../img/screenshots/admin/flows/flows_addon_rights.png)
 

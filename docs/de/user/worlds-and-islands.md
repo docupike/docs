@@ -16,7 +16,8 @@ Add-ons können weitere Inseln hinzufügen, zum Beispiel die Insel **Documents**
 ## Voraussetzungen
 
 Welten und Inseln sind durch zwei Rechte geschützt: **Zugriff auf alle Welten** und **Zugriff auf alle Inseln**.
-i-doit up vergibt diese Rechte nicht automatisch, auch nicht an den Administrator.
+Seit i-doit up 3.3.0 erhält die Admin-Rolle beide Rechte automatisch, bei neuen Installationen und bei Updates.
+Allen anderen Rollen, Gruppen und Benutzern müssen Sie die Rechte ausdrücklich vergeben.
 Ohne die Rechte erscheinen der Menüpunkt **Worlds** und die Gruppe **Islands** überhaupt nicht.
 
 Bitten Sie Ihren Administrator, Ihnen die Rechte zu geben, oder vergeben Sie sie selbst, wenn Sie Rechte verwalten.

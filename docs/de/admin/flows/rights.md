@@ -21,13 +21,16 @@ Die Namen der Rechte sind englisch, auch in der deutschen Oberfläche.
 Um ein Recht zu vergeben, öffnen Sie **Einstellungen → Benutzerverwaltung → Rechte**, wählen Sie *Add-on rights → Flows* und klicken Sie auf **Neues Recht**.
 Wer alle Rechte des Add-ons erhält, hat beide Rechte.
 
-Nach der Registrierung von Flows vergibt ein Administrator **Manage Flows** und bei Bedarf **Select Flow Operator** wie hier beschrieben, auch an die Admin-Rolle.
+Bei der Installation von Flows erhält die Admin-Rolle **Manage Flows** und **Select Flow Operator** automatisch.
+Alle anderen Rollen, Gruppen und Benutzer erhalten die Rechte wie hier beschrieben.
 
 Benutzer mit **Manage Flows**, aber ohne **Select Flow Operator** können Flows erstellen.
 Ihre Flows behalten den aktuellen Flow Operator oder laufen als Standard-Flow-Benutzer.
 
 Die Rechte steuern den Zugriff auf die Oberfläche des Add-ons.
-Sie steuern nicht, ob ein Flow läuft: Ein aktiver Flow läuft, sobald sein Auslöser auslöst, egal wer einen Button geklickt oder ein Objekt geändert hat.
+Ein aktiver Flow mit Objekt- oder Kategorie-Auslöser läuft, sobald sein Auslöser auslöst, egal wer das Objekt geändert hat.
+Ein Button startet seinen Flow nur, wenn der Flow aktiv oder im Testmodus ist, der Button für dieses Objekt angezeigt wird, die Bedingungen des Flows den Benutzer zulassen und der Benutzer das Objekt lesen darf.
+Testläufe erfordern **Manage Flows**.
 
 [![Add-on-Rechte für Flows](../../img/screenshots/admin/flows/flows_addon_rights.png)](../../img/screenshots/admin/flows/flows_addon_rights.png)
 

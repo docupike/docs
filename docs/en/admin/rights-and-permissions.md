@@ -55,10 +55,10 @@ A user with rights in tenant A does not automatically have the same rights in te
 There are no rights for single Worlds or single Islands.
 A user with **Access all Islands** sees every Island that belongs to the class of the opened object, including Islands of add-ons.
 
-!!! info "Grant the rights first"
-    i-doit up does not grant these rights to anybody, not even to the administrator.
+!!! info "Only the admin role has the rights by default"
+    Since i-doit up 3.3.0, the admin role receives both rights automatically.
     This applies to new installations and to updates.
-    Grant the rights before you or your users can work with Worlds and Islands.
+    Grant the rights to every other role, group, or user that works with Worlds and Islands.
 
 To grant a right:
 

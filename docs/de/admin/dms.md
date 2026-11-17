@@ -107,10 +107,11 @@ Das Add-on hat in i-doit up keine Einstellungsseite.
 
 Die Island erscheint in der Gruppe **Islands** der Objektleiste.
 Benutzer brauchen die Island-Rechte, um sie zu sehen.
-i-doit up vergibt dieses Recht nicht automatisch, auch nicht dem Administrator und auch nicht bei einer Neuinstallation.
+Seit i-doit up 3.3.0 erhält die Admin-Rolle **Zugriff auf alle Inseln** automatisch, bei neuen Installationen und bei Updates.
+Allen anderen Rollen, Gruppen und Benutzern müssen Sie das Recht ausdrücklich vergeben.
 Ohne das Recht bleibt die Island unsichtbar.
 
-1. Vergeben Sie unter **Einstellungen** > **Rechte** > **Welten und Inseln** > **Inseln** das Recht **Zugriff auf alle Inseln** (interne Schlüssel `worlds-and-islands`, `islands`, `access-all-islands`) wie in [Rechte und Berechtigungen](rights-and-permissions.md) beschrieben, auch sich selbst.
+1. Vergeben Sie unter **Einstellungen** > **Rechte** > **Welten und Inseln** > **Inseln** das Recht **Zugriff auf alle Inseln** (interne Schlüssel `worlds-and-islands`, `islands`, `access-all-islands`) wie in [Rechte und Berechtigungen](rights-and-permissions.md) beschrieben an jede Rolle und jeden Benutzer ohne Admin-Rolle.
 2. Laden Sie die Seite im Browser neu.
    Die Island erscheint ohne neue Anmeldung.
 
