@@ -172,6 +172,12 @@ nav:
           - Actions and placeholders: user/flows/actions.md
           - Logs and history: user/flows/logs-history.md
           - Export and import: user/flows/export-import.md
+          - Triggers, conditions, and actions: user/flows/reference.md
+          - Use cases:
+              - Triggers: user/flows/use-cases/triggers.md
+              - Conditions: user/flows/use-cases/conditions.md
+              - Actions: user/flows/use-cases/actions.md
+              - End-to-end example: user/flows/use-cases/end-to-end.md
       - Imports:
           - CSV: user/imports/csv.md
       - Use cases:

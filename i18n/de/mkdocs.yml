@@ -172,6 +172,12 @@ nav:
           - Aktionen und Platzhalter: user/flows/actions.md
           - Logs und Verlauf: user/flows/logs-history.md
           - Export und Import: user/flows/export-import.md
+          - Auslöser, Bedingungen und Aktionen: user/flows/reference.md
+          - Anwendungsfälle:
+              - Auslöser: user/flows/use-cases/triggers.md
+              - Bedingungen: user/flows/use-cases/conditions.md
+              - Aktionen: user/flows/use-cases/actions.md
+              - Durchgängiges Beispiel: user/flows/use-cases/end-to-end.md
       - Importe:
           - CSV: user/imports/csv.md
       - Anwendungsfälle:
