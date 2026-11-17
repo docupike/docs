@@ -121,6 +121,7 @@ nav:
               - Flows add-on: admin/flows.md
               - Rights and flow users: admin/flows/rights.md
               - Run Flows yourself: admin/flows/self-hosting.md
+          - n8n integration: admin/n8n.md
   - Developer guide:
       - API: dev/api.md
       - Add-ons:

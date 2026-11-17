@@ -251,3 +251,7 @@ Kategorieereignis
 Kategorieereignissen
 kommagetrennt
 ungespeicherten
+EHOSTUNREACH
+ENOTFOUND
+ECONNREFUSED
+ETIMEDOUT
