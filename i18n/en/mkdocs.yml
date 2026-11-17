@@ -73,6 +73,14 @@ nav:
           - Editing and versions: user/dms/editing.md
           - Sharing and access: user/dms/sharing.md
           - Approvals: user/dms/approvals.md
+      - Flows:
+          - Flows: user/flows.md
+          - Create and edit flows: user/flows/create.md
+          - Triggers: user/flows/triggers.md
+          - Conditions: user/flows/conditions.md
+          - Actions and placeholders: user/flows/actions.md
+          - Logs and history: user/flows/logs-history.md
+          - Export and import: user/flows/export-import.md
       - Imports:
           - CSV: user/imports/csv.md
       - Use cases:
@@ -109,6 +117,10 @@ nav:
           - DMS:
               - DMS integration: admin/dms.md
               - DMS administration: admin/dms/administration.md
+          - Flows:
+              - Flows add-on: admin/flows.md
+              - Rights and flow users: admin/flows/rights.md
+              - Run Flows yourself: admin/flows/self-hosting.md
   - Developer guide:
       - API: dev/api.md
       - Add-ons:

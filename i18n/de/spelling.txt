@@ -244,3 +244,10 @@ WSL
 MCP
 mcp
 claude
+Attributauswahl
+Auslösertyp
+Auslösertypen
+Kategorieereignis
+Kategorieereignissen
+kommagetrennt
+ungespeicherten
