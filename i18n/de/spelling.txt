@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
->>>>>>> refs/pr/780
 AKV
 Accounty
 Administratoraktion
@@ -39,12 +36,14 @@ EHOSTUNREACH
 ENOTFOUND
 ERP
 ETIMEDOUT
+Eintragsereignisse
 Findertabelle
 FullHD
 GPG
 GRC
 GitHub
 GmbH
+HMAC
 IPAM
 IPv4
 IPv6
@@ -56,6 +55,7 @@ JS
 Kaskadenansicht
 Kategoriebaumstruktur
 Kategorieberechtigungen
+Kategoriedaten
 Kategoriedesigner
 Kategorieeinträge
 Kategorieereignis

@@ -1,7 +1,12 @@
+---
+render_macros: false
+---
+
 # n8n-Integration
 
 [n8n](https://n8n.io) ist ein Werkzeug zur Workflow-Automatisierung, das Anwendungen über visuelle Workflows verbindet.
 Diese Seite beschreibt, wie Sie n8n an i-doit up anbinden: die i-doit-up-Nodes in n8n installieren, ein App-Token erstellen und das Credential in n8n einrichten.
+Danach beschreibt sie die Aktionen des Nodes und wie Sie einen Workflow über einen Webhook aus i-doit up starten.
 
 ## Was die Integration leistet
 
@@ -68,6 +73,8 @@ Suchen Sie nach dem Neustart im Node-Bereich von n8n nach *i-doit up*.
 Im Node-Bereich heißt der Eintrag **i-doit up Action Selector**, auf der Arbeitsfläche heißt der Node **i-doit up Actions**.
 Der Credential-Typ heißt **i-doit up API**.
 
+![Der Node-Bereich von n8n mit "i-doit" im Suchfeld. Die Ergebnisliste zeigt den Node "i-doit up Action Selector".](../img/n8n/n8n_node_panel.png)
+
 ## App-Token erstellen
 
 n8n authentifiziert sich mit einem **App-Token** von i-doit up.
@@ -113,30 +120,24 @@ Tragen Sie dort stattdessen die URL Ihrer eigenen i-doit-up-Instanz ein.
 
 Der Node sendet das Token bei jeder Anfrage im Header `X-API-TOKEN`.
 
-## Hinweise zu den Aktionen
+## Aktionen des Nodes
 
-**Push Object**
+Fügen Sie den Node **i-doit up Action Selector** einem Workflow hinzu und wählen Sie eine **Action**.
+Die Felder unter der Aktion ändern sich mit der Auswahl.
 
-- Tragen Sie unter **Class** die ID der Klasse ein, nicht ihren Namen.
-  Die ID finden Sie, indem Sie **Find objects** für ein vorhandenes Objekt dieser Klasse ausführen, sie steht im Ergebnis im Feld `classification.id`.
-- **Data** enthält je Kategorie einen Eintrag mit einer Strategie und den zu schreibenden Einträgen, jeweils unter einer Referenz-ID des Eintrags:
+![Die Parameter des Nodes "i-doit up Actions" in n8n. Das Credential "i-doit up" ist ausgewählt, die Aktion ist "Find objects", die Kategorie "cmdb.general" ist eingetragen, das Feld "Criteria" enthält einen Ausdruck, und "Offset", "Per Page" und "Sort" stehen auf 0, 50 und "title:asc".](../img/n8n/n8n_node_parameters.png)
 
-    ```json
-    {
-        "cmdb.general": {
-            "strategy": "overwrite",
-            "data": {
-                "main": {
-                    "description": "Imported from the inventory tool"
-                }
-            }
-        }
-    }
-    ```
+### Find objects
 
-- Führen Sie die Aktion zweimal mit derselben **Reference ID** und demselben **Reference Type** aus, aktualisiert sie das Objekt, statt ein Duplikat anzulegen.
+Sucht Objekte des aktiven Mandanten.
 
-**Find objects**
+| Feld | Bedeutung |
+|---|---|
+| **Categories** | Eine oder mehrere Kategorie-Kennungen, deren Daten mit jedem Objekt zurückgegeben werden, zum Beispiel `cmdb.general`. |
+| **Criteria** | Filter als JSON, siehe unten. Lassen Sie `{}` stehen, um alle Objekte einzuschließen. |
+| **Offset** | Anzahl der zu überspringenden Objekte. |
+| **Per Page** | Anzahl der Objekte je Lauf. Das Feld hat derzeit keine Wirkung, siehe unten. |
+| **Sort** | Sortierfeld und Richtung, zum Beispiel `title:asc`. |
 
 - **Criteria** erwartet einen Filter als JSON. `type` legt den Vergleich fest, `field` nennt Kategorie und Attribut, zum Beispiel:
 
@@ -144,13 +145,12 @@ Der Node sendet das Token bei jeder Anfrage im Header `X-API-TOKEN`.
     {"type": "eq", "field": "cmdb.general.title", "value": "web-01"}
     ```
 
-    Lassen Sie `{}` stehen, um alle Objekte einzuschließen.
     Die verfügbaren Typen stehen in der Tabelle unten.
-- **Categories** schränkt das Ergebnis auf eine oder mehrere Kategorien ein, zum Beispiel `cmdb.general`.
-  Eine Kennung, die i-doit up nicht kennt, stoppt den Node nicht, der Node liefert dann keine Items.
+- Eine Kennung unter **Categories**, die i-doit up nicht kennt, stoppt den Node nicht, der Node liefert dann keine Items.
 - Ein Lauf liefert höchstens 10 Objekte. **Per Page** hat derzeit keine Wirkung.
   Für weitere Objekte führen Sie die Aktion erneut aus und erhöhen **Offset** in Zehnerschritten (0, 10, 20 und so weiter).
-- Jedes Item enthält ein Feld `_paging` mit `offset`, `perPage` (Anzahl der Items in diesem Lauf) und `total` (Anzahl aller passenden Objekte).
+- Der Node gibt je Objekt ein Item mit dem Objekt und seinen Kategoriedaten zurück.
+  Jedes Item enthält ein Feld `_paging` mit `offset`, `perPage` (Anzahl der Items in diesem Lauf) und `total` (Anzahl aller passenden Objekte).
 
 | Typ | Felder | Trifft auf Objekte zu, deren Attribut |
 | --- | --- | --- |
@@ -172,16 +172,131 @@ Beispiel, das zwei Kriterien verknüpft:
 ]}
 ```
 
-## Webhook-Aufrufe aus i-doit up prüfen
+### Get tenants
 
-i-doit up kann bei einem Ereignis die URL eines n8n-Nodes **Webhook** aufrufen, zum Beispiel wenn ein Objekt angelegt wird.
-Webhooks werden über die [API](../dev/api.md) mit `POST /api/v2/webhook` registriert.
-Die Antwort enthält die ID und das **Secret** des Webhooks. Bewahren Sie das Secret auf, es wird nur einmal angezeigt.
+Gibt die Mandanten zurück, auf die der Token-Benutzer zugreifen kann.
+
+| Feld | Bedeutung |
+|---|---|
+| **Limit** | Anzahl der zurückgegebenen Mandanten. |
+| **Offset** | Anzahl der zu überspringenden Mandanten. |
+| **ID** | Nur den Mandanten mit dieser ID zurückgeben. |
+| **Sort By** | Sortierfeld und Richtung, zum Beispiel `title:asc`. |
+| **Filter** | Filter als JSON. |
+
+### Push Object
+
+Legt ein Objekt an oder aktualisiert es, wenn ein Objekt mit derselben Referenz bereits existiert.
+Die Referenz besteht aus einer **Reference ID** und einem **Reference Type** Ihrer Wahl, zum Beispiel der ID eines Datensatzes im Quellsystem und dem Namen dieses Systems.
+Führen Sie die Aktion zweimal mit derselben Referenz aus, aktualisiert sie also das Objekt, statt ein Duplikat anzulegen.
+
+| Feld | Bedeutung |
+|---|---|
+| **Title** | Titel des Objekts. |
+| **Class** | ID der [Klasse](../user/basics/classes.md), nicht ihr Name. |
+| **Reference ID** | Externe ID, die das Objekt im Quellsystem identifiziert. |
+| **Reference Type** | Name des Quellsystems oder ein anderer Qualifizierer der Reference ID. |
+| **Data** | Kategoriedaten als JSON, nach Kategorie-Kennung gegliedert. |
+
+Die ID einer Klasse finden Sie, indem Sie **Find objects** für ein vorhandenes Objekt dieser Klasse ausführen, sie steht im Ergebnis im Feld `classification.id`.
+
+**Data** enthält je Kategorie einen Eintrag mit einer Strategie und den zu schreibenden Einträgen, jeweils unter einer Referenz-ID des Eintrags:
+
+```json
+{
+    "cmdb.general": {
+        "strategy": "overwrite",
+        "data": {
+            "main": {
+                "description": "Imported from the inventory tool"
+            }
+        }
+    }
+}
+```
+
+### Create user
+
+Legt ein Benutzerkonto in i-doit up an, siehe [Benutzerverwaltung](user-management.md).
+
+| Feld | Bedeutung |
+|---|---|
+| **Username** | Anmeldename. |
+| **Name** | Anzeigename. |
+| **Email** | E-Mail-Adresse. |
+| **Password**, **Password Confirmation** | 8 bis 64 Zeichen mit mindestens einem Kleinbuchstaben, einem Großbuchstaben und einer Ziffer. |
+| **User Status** | *Enabled* oder *Disabled*. |
+| **Role** | *User* oder *Admin*. |
+
+## Workflow aus i-doit up starten
+
+i-doit up hat keinen eigenen n8n-Node, der auf Ereignisse wartet.
+Stattdessen ruft i-doit up bei einem Ereignis eine **Webhook**-URL auf, und der **Webhook**-Node von n8n nimmt den Aufruf entgegen.
+
+### Webhook in i-doit up registrieren
+
+Webhooks werden über die [API](../dev/api.md) verwaltet.
+Senden Sie die Anfrage mit dem App-Token des Benutzers, als der der Workflow handelt, und mit dem Header `x-tenant` des zu überwachenden Mandanten:
+
+```bash
+curl --request POST https://your-instance.example.com/api/v2/webhook \
+    --header "X-API-TOKEN: YOUR_APP_TOKEN" \
+    --header "x-tenant: YOUR_TENANT_ID" \
+    --header "Content-Type: application/json" \
+    --data '{
+        "title": "n8n: object created",
+        "webhookUrl": "https://n8n.example.com/webhook/idoit-up-object-created",
+        "enabled": true,
+        "triggerInfo": { "type": "cmdb.object.created", "class": null, "tenant": null }
+    }'
+```
+
+Die Antwort enthält die ID und das **Secret** des Webhooks.
+Bewahren Sie das Secret auf, es wird nur einmal angezeigt, und Ihr Workflow braucht es, um zu prüfen, dass ein Aufruf wirklich von i-doit up kam.
+
+`triggerInfo` wählt das Ereignis.
+Die Objekt- und Eintragsereignisse nehmen unter `class` optional eine Liste von Klassen-Kennungen an, um nur auf Objekte dieser Klassen zu reagieren.
+Die Eintragsereignisse nehmen zusätzlich die zu überwachende `category` an.
+
+| `type` | Löst aus, wenn |
+|---|---|
+| `cmdb.object.created` | ein Objekt angelegt wurde |
+| `cmdb.object.deleted` | ein Objekt gelöscht wurde |
+| `cmdb.entry.created` | ein Kategorieeintrag angelegt wurde, `category` nennt die Kategorie |
+| `cmdb.entry.updated` | ein Kategorieeintrag geändert wurde, `category` nennt die Kategorie |
+| `system.user.created`, `system.user.updated`, `system.user.deleted` | ein Benutzerkonto angelegt, geändert oder gelöscht wurde |
+| `system.tenant.created`, `system.tenant.updated`, `system.tenant.deleted` | ein Mandant angelegt, geändert oder gelöscht wurde |
+
+`GET /api/v2/webhook` listet die Webhooks des Mandanten, `PUT /api/v2/webhook/{id}` ändert einen, und `DELETE /api/v2/webhook/{id}` entfernt ihn.
+Jeder Aufruf wird mit seinem Ergebnis protokolliert, `GET /api/v2/webhook-log` liefert diese Einträge.
+
+### Was i-doit up sendet
+
+i-doit up sendet eine `POST`-Anfrage mit einem JSON-Body an die Webhook-URL.
+Der Body nennt das Ereignis in `type` und trägt die Daten des Ereignisses, bei einem Objekt zum Beispiel `id`, `title`, `class`, `tenantId` und `time`.
 
 Jeder Aufruf trägt den Header `X-Signature`.
 Er enthält den HMAC-SHA256 des unveränderten Anfrage-Bodys, berechnet mit dem Secret des Webhooks, als Hexadezimal-Zeichenkette.
-Um einen Aufruf zu prüfen, aktivieren Sie im Node **Webhook** die Option **Raw Body** und berechnen den HMAC-SHA256 über diesen unveränderten Body.
+Um einen Aufruf zu prüfen, aktivieren Sie im Node **Webhook** die Option **Raw Body** und berechnen den HMAC-SHA256 über diesen unveränderten Body, zum Beispiel in einem **Code**-Node.
 Berechnen Sie ihn nicht über das geparste JSON, denn beim erneuten Serialisieren kann sich der Body ändern, und die Signatur passt dann nicht mehr.
+
+### Beispiel-Workflow
+
+1. Fügen Sie einen **Webhook**-Node hinzu, setzen Sie **HTTP Method** auf *POST* und tragen Sie einen **Path** ein, zum Beispiel `idoit-up-object-created`.
+    Der Node zeigt die Produktions-URL, die Sie in i-doit up registrieren.
+2. Fügen Sie den Node **i-doit up Action Selector** hinzu, wählen Sie das Credential und die Aktion **Find objects**.
+3. Tragen Sie unter **Categories** `cmdb.general` und unter **Criteria** den folgenden Ausdruck ein, damit der Node das Objekt lädt, das den Aufruf ausgelöst hat:
+
+    ```text
+    {{ JSON.stringify({ type: "eq", field: "id", value: $json.body.id }) }}
+    ```
+
+4. Fügen Sie die Nodes hinzu, die das Objekt weiterverarbeiten, zum Beispiel einen Mail- oder Ticket-Node.
+5. Veröffentlichen Sie den Workflow.
+
+![Ein Workflow im n8n-Editor mit zwei Nodes. Der Node "i-doit up webhook" links ist mit "POST" markiert und mit dem Node "i-doit up Actions" rechts verbunden, dessen Untertitel "findObjects" lautet.](../img/n8n/n8n_workflow.png)
+
+Sobald im überwachten Mandanten ein Objekt angelegt wird, ruft i-doit up den Webhook auf, n8n führt den Workflow aus, und der i-doit-up-Node liefert das Objekt mit seinen Kategoriedaten.
 
 ## Fehlerbehebung
 
@@ -190,7 +305,7 @@ Berechnen Sie ihn nicht über das geparste JSON, denn beim erneuten Serialisiere
 | Der Test des Credentials schlägt mit *Unauthorized* fehl. | Das Token ist falsch oder die App wurde gelöscht. Legen Sie eine neue App an und fügen Sie das neue Token ein. |
 | Der Test des Credentials schlägt mit *Not Found* oder *ERR_INVALID_URL* fehl. | Die URL ist falsch. Geben Sie nur die Basis-URL Ihrer i-doit-up-Instanz mit Protokoll ein, zum Beispiel `https://your-instance.example.com`, ohne API-Pfad. |
 | Der Test des Credentials schlägt mit einem Verbindungsfehler wie *EHOSTUNREACH*, *ENOTFOUND*, *ECONNREFUSED* oder *ETIMEDOUT* fehl. | n8n erreicht Ihre i-doit-up-Instanz nicht. Prüfen Sie Hostnamen und Port in der URL und ob eine Firewall oder ein Proxy die Verbindung vom n8n-Server zu Ihrer i-doit-up-URL blockiert. Läuft n8n in Docker, meint `localhost` den n8n-Container selbst, verwenden Sie dann den Hostnamen oder die IP-Adresse Ihres i-doit-up-Servers. |
-| **Push Object** meldet *Unable to find class with id ...*. | Unter **Class** steht ein Klassenname wie `server` statt einer Klassen-ID. Tragen Sie die ID der Klasse ein, siehe [Hinweise zu den Aktionen](#hinweise-zu-den-aktionen). |
+| **Push Object** meldet *Unable to find class with id ...*. | Unter **Class** steht ein Klassenname wie `server` statt einer Klassen-ID. Tragen Sie die ID der Klasse ein, siehe [Push Object](#push-object). |
 | **Find objects** liefert keine Items, obwohl passende Objekte existieren. | Unter **Categories** steht eine Kennung, die i-doit up nicht kennt. Prüfen Sie die Schreibweise, zum Beispiel `cmdb.general`. |
 | Die i-doit-up-Nodes erscheinen nicht im Node-Bereich. | n8n hat das Paket nicht geladen. Prüfen Sie, ob `N8N_CUSTOM_EXTENSIONS` auf den Ordner zeigt, der die Datei `package.json` des Pakets enthält, und starten Sie n8n neu. |
 
@@ -199,5 +314,6 @@ Berechnen Sie ihn nicht über das geparste JSON, denn beim erneuten Serialisiere
 - [API](../dev/api.md): Authentifizierung und die eingebaute API-Referenz Ihrer Instanz.
 - [Benutzerverwaltung](user-management.md): hier wird das App-Token auf einem Benutzerkonto erstellt.
 - [Rechte und Berechtigungen](rights-and-permissions.md): regeln, was der Token-Benutzer und damit der Workflow tun darf.
+- [Mandanten](tenants.md): Webhooks und der Node arbeiten innerhalb eines Mandanten.
 - [Model Context Protocol (MCP)](mcp.md): eine weitere Integration, die App-Tokens verwendet.
 - [n8n-Dokumentation](https://docs.n8n.io): Workflows in n8n bauen, veröffentlichen und ausführen.

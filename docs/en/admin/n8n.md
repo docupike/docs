@@ -1,7 +1,12 @@
+---
+render_macros: false
+---
+
 # n8n integration
 
 [n8n](https://n8n.io) is a workflow automation tool that connects applications through visual workflows.
 This page describes how to connect n8n with i-doit up: install the i-doit up nodes in n8n, create an app token, and set up the credential in n8n.
+It then describes the actions of the node and how to start a workflow from an i-doit up webhook.
 
 ## What the integration does
 
@@ -68,6 +73,8 @@ After the restart, search for *i-doit up* in the n8n node panel.
 The panel lists the node as **i-doit up Action Selector**, and on the canvas it is called **i-doit up Actions**.
 The credential type is called **i-doit up API**.
 
+![The node panel of n8n with "i-doit" entered in the search field. The result list shows the node "i-doit up Action Selector".](../img/n8n/n8n_node_panel.png)
+
 ## Create an app token
 
 n8n authenticates with an i-doit up **app token**.
@@ -113,30 +120,24 @@ Enter the URL of your own i-doit up instance there instead.
 
 The node sends the token in the `X-API-TOKEN` header of every request.
 
-## Notes on the actions
+## Actions of the node
 
-**Push Object**
+Add the node **i-doit up Action Selector** to a workflow and choose an **Action**.
+The fields below the action change with the selection.
 
-- In **Class**, enter the ID of the class, not its name.
-  To find the ID, run **Find objects** for an existing object of that class, the ID is in the field `classification.id` of the result.
-- **Data** holds one entry per category, with a strategy and the entries to write, keyed by a reference ID of the entry:
+![The parameters of the node "i-doit up Actions" in n8n. The credential "i-doit up" is selected, the action is "Find objects", the category "cmdb.general" is entered, the field "Criteria" holds an expression, and "Offset", "Per Page", and "Sort" are set to 0, 50, and "title:asc".](../img/n8n/n8n_node_parameters.png)
 
-    ```json
-    {
-        "cmdb.general": {
-            "strategy": "overwrite",
-            "data": {
-                "main": {
-                    "description": "Imported from the inventory tool"
-                }
-            }
-        }
-    }
-    ```
+### Find objects
 
-- Running the action twice with the same **Reference ID** and **Reference Type** updates the object instead of creating a duplicate.
+Searches objects of the active tenant.
 
-**Find objects**
+| Field | Meaning |
+|---|---|
+| **Categories** | One or more category identifiers whose data is returned with each object, for example `cmdb.general`. |
+| **Criteria** | Filter as JSON, see below. Leave `{}` to match all objects. |
+| **Offset** | Number of objects to skip. |
+| **Per Page** | Number of objects per run. This field currently has no effect, see below. |
+| **Sort** | Sort field and direction, for example `title:asc`. |
 
 - **Criteria** takes a filter as JSON. `type` sets the comparison, `field` names the category and the attribute, for example:
 
@@ -144,13 +145,12 @@ The node sends the token in the `X-API-TOKEN` header of every request.
     {"type": "eq", "field": "cmdb.general.title", "value": "web-01"}
     ```
 
-    Leave `{}` to match all objects.
     The available types are listed in the table below.
-- **Categories** limits the result to one or more categories, for example `cmdb.general`.
-  An identifier that i-doit up does not know does not stop the node, the node then returns no items.
+- An identifier in **Categories** that i-doit up does not know does not stop the node, the node then returns no items.
 - One run returns at most 10 objects. **Per Page** currently has no effect.
   To get further objects, run the action again and raise **Offset** in steps of 10 (0, 10, 20, and so on).
-- Each item carries a field `_paging` with `offset`, `perPage` (the number of items in this run), and `total` (the number of all matching objects).
+- The node returns one item per object, with the object and its category data.
+  Each item carries a field `_paging` with `offset`, `perPage` (the number of items in this run), and `total` (the number of all matching objects).
 
 | Type | Fields | Matches objects where the attribute |
 | --- | --- | --- |
@@ -172,16 +172,131 @@ Example that combines two criteria:
 ]}
 ```
 
-## Verify webhook calls from i-doit up
+### Get tenants
 
-i-doit up can call the URL of an n8n **Webhook** node when an event occurs, for example when an object is created.
-Webhooks are registered through the [API](../dev/api.md) with `POST /api/v2/webhook`.
-The response contains the ID and the **secret** of the webhook. Store the secret, it is shown only once.
+Returns the tenants that the token user can access.
+
+| Field | Meaning |
+|---|---|
+| **Limit** | Number of tenants to return. |
+| **Offset** | Number of tenants to skip. |
+| **ID** | Return only the tenant with this ID. |
+| **Sort By** | Sort field and direction, for example `title:asc`. |
+| **Filter** | Filter as JSON. |
+
+### Push Object
+
+Creates an object, or updates it when an object with the same reference already exists.
+The reference consists of a **Reference ID** and a **Reference Type** of your choice, for example the ID of a record in the source system and the name of that system.
+Running the action twice with the same reference therefore updates the object instead of creating a duplicate.
+
+| Field | Meaning |
+|---|---|
+| **Title** | Title of the object. |
+| **Class** | ID of the [class](../user/basics/classes.md), not its name. |
+| **Reference ID** | External ID that identifies the object in the source system. |
+| **Reference Type** | Name of the source system or another qualifier of the reference ID. |
+| **Data** | Category data as JSON, keyed by category identifier. |
+
+To find the ID of a class, run **Find objects** for an existing object of that class, the ID is in the field `classification.id` of the result.
+
+**Data** holds one entry per category, with a strategy and the entries to write, keyed by a reference ID of the entry:
+
+```json
+{
+    "cmdb.general": {
+        "strategy": "overwrite",
+        "data": {
+            "main": {
+                "description": "Imported from the inventory tool"
+            }
+        }
+    }
+}
+```
+
+### Create user
+
+Creates a user account in i-doit up, see [User management](user-management.md).
+
+| Field | Meaning |
+|---|---|
+| **Username** | Login name. |
+| **Name** | Display name. |
+| **Email** | Email address. |
+| **Password**, **Password Confirmation** | 8 to 64 characters with at least one lowercase letter, one uppercase letter, and one digit. |
+| **User Status** | *Enabled* or *Disabled*. |
+| **Role** | *User* or *Admin*. |
+
+## Start a workflow from i-doit up
+
+i-doit up has no n8n node of its own that waits for events.
+Instead, i-doit up calls a **webhook** URL when an event occurs, and the **Webhook** node of n8n receives the call.
+
+### Register a webhook in i-doit up
+
+Webhooks are managed through the [API](../dev/api.md).
+Send the request with the app token of the user that the workflow acts as and with the `x-tenant` header of the tenant to watch:
+
+```bash
+curl --request POST https://your-instance.example.com/api/v2/webhook \
+    --header "X-API-TOKEN: YOUR_APP_TOKEN" \
+    --header "x-tenant: YOUR_TENANT_ID" \
+    --header "Content-Type: application/json" \
+    --data '{
+        "title": "n8n: object created",
+        "webhookUrl": "https://n8n.example.com/webhook/idoit-up-object-created",
+        "enabled": true,
+        "triggerInfo": { "type": "cmdb.object.created", "class": null, "tenant": null }
+    }'
+```
+
+The response contains the ID and the **secret** of the webhook.
+Store the secret, it is shown only once, and your workflow needs it to verify that a call really came from i-doit up.
+
+`triggerInfo` selects the event.
+The object and entry events accept an optional list of class identifiers under `class` to react only to objects of those classes.
+The entry events additionally take the `category` to watch.
+
+| `type` | Fires when |
+|---|---|
+| `cmdb.object.created` | an object was created |
+| `cmdb.object.deleted` | an object was deleted |
+| `cmdb.entry.created` | a category entry was created, `category` names the category |
+| `cmdb.entry.updated` | a category entry was changed, `category` names the category |
+| `system.user.created`, `system.user.updated`, `system.user.deleted` | a user account was created, changed, or deleted |
+| `system.tenant.created`, `system.tenant.updated`, `system.tenant.deleted` | a tenant was created, changed, or deleted |
+
+`GET /api/v2/webhook` lists the webhooks of the tenant, `PUT /api/v2/webhook/{id}` changes one, and `DELETE /api/v2/webhook/{id}` removes it.
+Every call is recorded with its result, and `GET /api/v2/webhook-log` returns these records.
+
+### What i-doit up sends
+
+i-doit up sends a `POST` request with a JSON body to the webhook URL.
+The body names the event in `type` and carries the data of the event, for an object for example its `id`, `title`, `class`, `tenantId`, and `time`.
 
 Every call carries the header `X-Signature`.
 It contains the HMAC-SHA256 of the raw request body, calculated with the secret of the webhook, as a hexadecimal string.
-To verify a call, enable the option **Raw Body** in the **Webhook** node and calculate the HMAC-SHA256 over this raw body.
+To verify a call, enable the option **Raw Body** in the **Webhook** node and calculate the HMAC-SHA256 over this raw body, for example in a **Code** node.
 Do not calculate it over the parsed JSON, because serializing the JSON again can change the body and the signature no longer matches.
+
+### Example workflow
+
+1. Add a **Webhook** node, set **HTTP Method** to *POST*, and enter a **Path**, for example `idoit-up-object-created`.
+    The node shows the production URL that you register in i-doit up.
+2. Add the node **i-doit up Action Selector**, select the credential, and choose the action **Find objects**.
+3. Enter `cmdb.general` under **Categories** and the following expression under **Criteria**, so that the node loads the object that triggered the call:
+
+    ```text
+    {{ JSON.stringify({ type: "eq", field: "id", value: $json.body.id }) }}
+    ```
+
+4. Add the nodes that process the object, for example a mail or ticket node.
+5. Publish the workflow.
+
+![A workflow in the n8n editor with two nodes. The "i-doit up webhook" node on the left is marked "POST" and connected to the "i-doit up Actions" node on the right, whose subtitle reads "findObjects".](../img/n8n/n8n_workflow.png)
+
+Whenever an object is created in the watched tenant, i-doit up calls the webhook, n8n runs the workflow, and the i-doit up node returns the object with its category data.
 
 ## Troubleshooting
 
@@ -190,7 +305,7 @@ Do not calculate it over the parsed JSON, because serializing the JSON again can
 | The credential test fails with *Unauthorized*. | The token is wrong or the app was deleted. Create a new app and paste the new token. |
 | The credential test fails with *Not Found* or *ERR_INVALID_URL*. | The URL is wrong. Enter only the base URL of your i-doit up instance including the protocol, for example `https://your-instance.example.com`, without an API path. |
 | The credential test fails with a connection error such as *EHOSTUNREACH*, *ENOTFOUND*, *ECONNREFUSED*, or *ETIMEDOUT*. | n8n cannot reach your i-doit up instance. Check the host name and the port in the URL, and check that no firewall or proxy blocks the connection from the n8n server to your i-doit up URL. If n8n runs in Docker, `localhost` means the n8n container itself, so use the host name or IP address of your i-doit up server. |
-| **Push Object** fails with *Unable to find class with id ...*. | **Class** contains a class name such as `server` instead of a class ID. Enter the ID of the class, see [Notes on the actions](#notes-on-the-actions). |
+| **Push Object** fails with *Unable to find class with id ...*. | **Class** contains a class name such as `server` instead of a class ID. Enter the ID of the class, see [Push Object](#push-object). |
 | **Find objects** returns no items although matching objects exist. | **Categories** contains an identifier that i-doit up does not know. Check the spelling, for example `cmdb.general`. |
 | The i-doit up nodes do not appear in the node panel. | n8n did not load the package. Check that `N8N_CUSTOM_EXTENSIONS` points to the folder that contains the file `package.json` of the package, and restart n8n. |
 
@@ -199,5 +314,6 @@ Do not calculate it over the parsed JSON, because serializing the JSON again can
 - [API](../dev/api.md), authentication and the built-in API reference of your instance.
 - [User management](user-management.md), where the app token is created on a user account.
 - [Rights and permissions](rights-and-permissions.md), control what the token user and therefore the workflow can do.
+- [Tenants](tenants.md), webhooks and the node act within one tenant.
 - [Model Context Protocol (MCP)](mcp.md), another integration that uses app tokens.
 - [n8n documentation](https://docs.n8n.io), how to build, publish, and run workflows in n8n.

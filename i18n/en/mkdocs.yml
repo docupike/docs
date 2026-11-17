@@ -154,6 +154,7 @@ nav:
           - Report Manager: user/reporting/report-manager.md
       - Data protection: user/gdpr.md
       - Documents Creator: user/documents-creator.md
+      - Documents Creator with AI: user/documents-creator-ai.md
       - Worlds and Islands:
           - Worlds and Islands: user/worlds-and-islands.md
           - License World and License Island: user/license-world-and-island.md
