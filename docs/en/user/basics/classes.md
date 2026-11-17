@@ -2,6 +2,7 @@
 
 A **class** is the type of an object, *Server*, *Person*, *Network*, *Building*, *Switch*, and so on.
 Every object in i-doit up belongs to exactly one class, and the class controls which categories the object exposes and which attributes those categories can hold.
+The [class reference](class-reference/index.md) describes every default class with its collections and assigned categories.
 
 ## Where classes appear
 

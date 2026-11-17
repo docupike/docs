@@ -255,3 +255,12 @@ EHOSTUNREACH
 ENOTFOUND
 ECONNREFUSED
 ETIMEDOUT
+AKV
+ERP
+Integrationen
+Lokation
+NAS
+PDU
+Rackplanung
+Supportkontakte
+USV
