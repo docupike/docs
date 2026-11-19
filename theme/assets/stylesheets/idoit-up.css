@@ -1,0 +1,62 @@
+/* i-doit up corporate design, values taken from the i-doit up app stylesheet */
+@font-face { font-family: "Inter"; src: url("../fonts/Inter-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("../fonts/Inter-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("../fonts/Inter-SemiBold.woff2") format("woff2"); font-weight: 600 700; font-style: normal; font-display: swap; }
+
+:root {
+    --idup-dark: #212121;
+    --idup-gray: #5a5a5a;
+    --idup-line: #e4e4e4;
+    --idup-blue: #414adc;
+    --idup-blue-deep: #0c15b3;
+    --idup-blue-soft: #eaf1ff;
+    --idup-red: #e3000f;
+    --md-text-font: "Inter";
+    --md-code-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color: var(--idup-dark);
+    --md-primary-fg-color--light: #3a3a3a;
+    --md-primary-fg-color--dark: #000;
+    --md-accent-fg-color: var(--idup-blue);
+    --md-accent-fg-color--transparent: rgb(65 74 220 / 10%);
+    --md-default-fg-color: var(--idup-dark);
+    --md-default-fg-color--light: var(--idup-gray);
+    --md-typeset-color: var(--idup-dark);
+    --md-typeset-a-color: var(--idup-blue-deep);
+}
+
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: var(--idup-dark);
+    --md-primary-fg-color--light: #3a3a3a;
+    --md-primary-fg-color--dark: #000;
+    --md-accent-fg-color: #8f95f0;
+    --md-typeset-a-color: #aab0ff;
+}
+
+body, input { font-family: "Inter", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+/* Header and tabs: dark bar like the app's top navigation, red marker for the active tab */
+.md-header, .md-tabs { background-color: var(--idup-dark); }
+.md-tabs__link { opacity: 1; color: #cbcbcb; font-weight: 400; }
+.md-tabs__link:hover, .md-tabs__item--active .md-tabs__link { color: #fff; }
+.md-tabs__item--active .md-tabs__link { box-shadow: inset 0 -3px 0 var(--idup-red); padding-bottom: .4rem; }
+
+/* Sidebar: active entry like the app's sidebar */
+.md-nav__link--active, .md-nav__item .md-nav__link--active {
+    color: var(--idup-blue);
+    font-weight: 600;
+}
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__link--active {
+    background-color: var(--idup-blue-soft);
+    border-radius: 0 4px 4px 0;
+    padding: 0 .4rem;
+    margin-left: -.4rem;
+}
+[data-md-color-scheme="slate"] .md-nav__link--active { color: #aab0ff; }
+
+/* Headings and buttons */
+.md-typeset h1, .md-typeset h2, .md-typeset h3 { font-weight: 600; color: var(--md-default-fg-color); }
+.md-typeset .md-button--primary { background-color: var(--idup-blue); border-color: var(--idup-blue); color: #fff; }
+.md-typeset .md-button--primary:hover { background-color: var(--idup-blue-deep); border-color: var(--idup-blue-deep); }

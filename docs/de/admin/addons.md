@@ -27,10 +27,15 @@ Nach der Installation wird das Add-on automatisch registriert, und seine Menüei
 
 Öffnen Sie im Benutzermenü (oben rechts) den Punkt **Add-ons**, um alle installierten Add-ons und ihren aktuellen Status anzuzeigen.
 
-### Ein Add-on aktivieren oder deaktivieren
+### Ein Add-on installieren oder deinstallieren
 
-Wählen Sie ein Add-on aus und aktivieren oder deaktivieren Sie es über den Schalter.
-Durch das Deaktivieren eines Add-ons werden dessen Menüeinträge ausgeblendet und seine Funktionen deaktiviert, ohne dass gespeicherte Daten gelöscht werden.
+Wählen Sie ein Add-on aus und klicken Sie auf **Install** oder **Uninstall**.
+Beim Deinstallieren fragt i-doit up nach einer Bestätigung und löscht dann alle Daten des Add-ons.
+Beim Add-on Flows sind das alle Flows, Flow-Gruppen, Logs und der Verlauf.
+
+!!! warning "Deinstallieren löscht Daten"
+    Gelöschte Daten lassen sich nicht wiederherstellen.
+    Exportieren Sie vor dem Deinstallieren, was Sie behalten möchten, für Flows siehe [Flows exportieren und importieren](../user/flows/export-import.md).
 
 ## Rechte an Add-ons
 

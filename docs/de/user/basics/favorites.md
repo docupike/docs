@@ -4,7 +4,7 @@
 i-doit up unterstützt zwei Arten von Favoriten:
 
 - **Attribut-Favoriten**: einzelne Attribute innerhalb eines Objekts markieren, damit sie im Eintrag **★ Favoriten** oben in der Sidebar der [Objektdetailseite](object-details.md) erscheinen.
-- **Klassen-Favoriten**: ganze Klassen markieren, damit ihre Objekte gemeinsam in einer persönlichen **Favoriten**-Sammlung im Finder erscheinen.
+- **Klassen-Favoriten**: ganze Klassen markieren, damit ihre Objekte gemeinsam in einer persönlichen **Favoriten**-Kollektion im Finder erscheinen.
 
 Favoriten sind persönlich; Ihre Auswahl beeinflusst andere Benutzer nicht.
 
@@ -41,4 +41,4 @@ Klicken Sie erneut auf den ausgefüllten Stern, um die Klasse aus Ihren Favorite
 
 - [Objekt-Detailseite](object-details.md)
 - [Klassen](classes.md)
-- [Sammlungen](collections.md)
+- [Kollektionen](collections.md)

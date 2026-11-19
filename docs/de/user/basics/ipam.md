@@ -47,7 +47,7 @@ In der Kopfzeile der Seite werden der Netzwerkname, die Klassenbezeichnung und d
 
 Unter der Kopfzeile befinden sich drei Registerkarten:
 
-- **IP-Adressen**: dieselbe Tabelle, die oben unter *IP-Adressentabelle öffnen* beschrieben wurde.
+- **IP-Adressen**: dieselbe Tabelle, die oben unter *Die Tabelle mit den IP-Adressen öffnen* beschrieben wurde.
     Nachdem eine Netzwerkdefinition gespeichert wurde, wird die Tabelle automatisch mit reservierten Einträgen (der Netzwerkadresse selbst, dem Standard-Router und der Broadcast-Adresse) sowie allen von Ihnen zugewiesenen Adressen vorbelegt.
     Jede Zeile verfügt über eine Bleistift-Schaltfläche zum **Bearbeiten**; die Spalte **Konfiguration** zeigt einen farbigen Indikator (z. B. einen schwarzen Balken für *Netzwerkadresse*) sowie einen Statustext an.
 - **DHCP-Bereiche**: Für dieses Netzwerk definierte, von DHCP verwaltete Adressbereiche.
@@ -91,7 +91,7 @@ Siehe [Rechte und Berechtigungen](../../admin/rights-and-permissions.md).
 
 ## Die Tabelle mit den IP-Adressen öffnen
 
-1. Öffnen Sie ein Netzwerkobjekt, indem Sie beispielsweise die Klasse **Netzwerk** aus der Dropdown-Liste *Alle Klassen* oberhalb der Finder-Tabelle auswählen und auf einen Eintrag klicken.
+1. Öffnen Sie ein Netzwerkobjekt, indem Sie beispielsweise im Finder die Kollektion **Netzwerk** aus der Dropdown-Liste *Alle Klassen* wählen, in der Klassenliste die Klasse **Netzwerk** auswählen und auf einen Eintrag klicken.
 2. Wählen Sie in der Seitenleiste „Kategorien“ des Objekts (unter **Alle Kategorien**) die Option **IP-Adressen** aus.
 
 ## Die Definition des Netzwerks ist eine Voraussetzung

@@ -255,7 +255,7 @@ Für Ihre Dokumentation möchten Sie möglicherweise eigene Klassen erstellen, u
 
 Wir wechseln über die Navigation oben rechts zu den Einstellungen.
 
-Hier sehen wir in der linken Navigation den Menüpunkt CMDB-Konfiguration -> Klassen. Im nächsten Schritt erstellen wir über die Schaltfläche "Neue Klasse" eine neue Klasse für Dockingstationen. Als Sammlung wählen wir nun "Infrastruktur" aus. Die Sammlung können wir später jederzeit ändern. Mehr dazu später.
+Hier sehen wir in der linken Navigation den Menüpunkt CMDB-Konfiguration -> Klassen. Im nächsten Schritt erstellen wir über die Schaltfläche "Neue Klasse" eine neue Klasse für Dockingstationen. Als Kollektion wählen wir nun "Infrastruktur" aus. Die Kollektion können wir später jederzeit ändern. Mehr dazu später.
 
 <!--TODO[![Neue Klasse erstellen](../../img/screenshots/create-buildings-rooms-and-workplaces/image034.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image034.png){:target="_blank"}-->
 
@@ -267,7 +267,7 @@ Den Punkt "Standortklasse" können wir auf "Deaktiviert" belassen. Diese Option 
 
 <!--TODO[![Klassenübersicht](../../img/screenshots/create-buildings-rooms-and-workplaces/image035.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image035.png){:target="_blank"}-->
 
-Nun wechseln wir zurück zum CMDB-Finder und rufen die Sammlung "Infrastruktur" auf. Hier finden wir unsere neue Dockingstation-Klasse und können ein neues Gerät anlegen.
+Nun wechseln wir zurück zum CMDB-Finder und rufen die Kollektion "Infrastruktur" auf. Hier finden wir unsere neue Dockingstation-Klasse und können ein neues Gerät anlegen.
 
 Hier können wir nun die Investitionskosten eingeben und den Arbeitsplatz von George Smith über die Kategorie "Standort" verknüpfen.
 
