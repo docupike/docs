@@ -43,8 +43,48 @@ Eine direkte Zuweisung von Rechten ist nicht erforderlich.
 Berechtigungen und Rechte werden innerhalb des **derzeit aktiven Mandanten** geprüft: siehe [Mandanten](tenants.md) und [Zwischen Mandanten wechseln](../user/basics/tenant-switcher.md).
 Ein Benutzer, der in Mandant A über bestimmte Rechte verfügt, hat nicht automatisch dieselben Rechte in Mandant B.
 
+## Rechte für Welten und Inseln
+
+[Welten und Inseln](../user/worlds-and-islands.md) sind durch zwei Rechte im Bereich **Welten und Inseln** geschützt:
+
+| Methode | Recht | Gewährt |
+|---|---|---|
+| Welten | Zugriff auf alle Welten | Den Menüpunkt **Worlds** und jede Welt, zum Beispiel die Lizenz-Welt. |
+| Inseln | Zugriff auf alle Inseln | Die Gruppe **Islands** in der Seitenleiste von Objekten und jede Insel, zum Beispiel die Lizenz-Insel. |
+
+Rechte für einzelne Welten oder einzelne Inseln gibt es nicht.
+Ein Benutzer mit **Zugriff auf alle Inseln** sieht jede Insel, die zur Klasse des geöffneten Objekts gehört, auch Inseln von Add-ons.
+
+!!! info "Nur die Admin-Rolle hat die Rechte von Anfang an"
+    Seit i-doit up 3.3.0 erhält die Admin-Rolle alle Rechte für Welten und Inseln automatisch.
+    Die Liste der Rechte zeigt für die Rolle **Alle Rechte**.
+    Das gilt für neue Installationen und für Updates.
+    Vergeben Sie die Rechte an jede andere Rolle, Gruppe oder jeden Benutzer, die mit Welten und Inseln arbeiten.
+
+So vergeben Sie ein Recht:
+
+1. Öffnen Sie **Einstellungen** über das Benutzermenü und gehen Sie zu **Benutzerverwaltung** > **Rechte**.
+2. Klicken Sie unter **Welten und Inseln** auf **Welten** oder **Inseln**.
+3. Klicken Sie auf **Neues Recht**.
+    Der Dialog **Neues Recht erstellen** öffnet sich.
+4. Wählen Sie unter **Benutzer / Rolle / Gruppe** den Benutzer, die Rolle oder die Gruppe.
+5. Aktivieren Sie unter **Rechte** das Kontrollkästchen **Zugriff auf alle Welten** oder **Zugriff auf alle Inseln**.
+    Alternativ wählen Sie **Alle verfügbaren Rechte (einschließlich zukünftiger Updates)**.
+    Diese Option umfasst auch Rechte, die spätere Versionen der Methode hinzufügen.
+6. Klicken Sie auf **Speichern**.
+
+[![Dialog Neues Recht erstellen der Methode Welten mit der Option Alle verfügbaren Rechte und dem Kontrollkästchen Zugriff auf alle Welten](../img/screenshots/admin/worlds-and-islands/rights_worlds_new_right.png)](../img/screenshots/admin/worlds-and-islands/rights_worlds_new_right.png)
+
+[![Dialog Neues Recht erstellen der Methode Inseln mit der Option Alle verfügbaren Rechte und dem Kontrollkästchen Zugriff auf alle Inseln](../img/screenshots/admin/worlds-and-islands/rights_islands_new_right.png)](../img/screenshots/admin/worlds-and-islands/rights_islands_new_right.png)
+
+Vergeben und Entziehen dieser Rechte wirkt, sobald der Benutzer die Seite neu lädt.
+Eine neue Anmeldung ist nicht nötig.
+Ohne **Zugriff auf alle Welten** verschwindet der Menüpunkt **Worlds**, und eine Welt-Seite zeigt eine Meldung, die mit "You shall not see!" beginnt.
+Ohne **Zugriff auf alle Inseln** verschwindet die Gruppe **Islands** aus der Seitenleiste von Objekten.
+
 ## Siehe auch
 
 - [Benutzerverwaltung](user-management.md)
 - [Mandanten](tenants.md)
 - [Zwischen Mandanten wechseln](../user/basics/tenant-switcher.md)
+- [Welten und Inseln](../user/worlds-and-islands.md)

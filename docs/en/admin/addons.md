@@ -27,10 +27,15 @@ After installation, the add-on is automatically registered and its menu entries,
 
 Open **Add-ons** in the user menu (top right) to see all installed add-ons and their current status.
 
-### Activate or deactivate an add-on
+### Install or uninstall an add-on
 
-Select an add-on and use the toggle to activate or deactivate it.
-Deactivating an add-on hides its menu entries and disables its features without removing any stored data.
+Select an add-on and click **Install** or **Uninstall**.
+Uninstalling asks for confirmation and then deletes all data of the add-on.
+For the Flows add-on, this includes all flows, flow groups, logs, and history.
+
+!!! warning "Uninstalling deletes data"
+    Uninstalled data cannot be restored.
+    Export what you want to keep before you uninstall an add-on, for flows see [Export and import flows](../user/flows/export-import.md).
 
 ## Add-on rights
 

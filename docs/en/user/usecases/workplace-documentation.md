@@ -229,7 +229,7 @@ A separate slot should be specified for each installed module.
 
 ## Document periphery
 
-Exactly as we added the client to the Workplace, we can add a monitor in the "Display" class.
+Exactly as we added the client to the Workplace, we can add a monitor in the "Monitor" class.
 Again, we select the created Workplace as the location and enter all the necessary information in the Display category.
 
 [![Category display](../../img/screenshots/create-buildings-rooms-and-workplaces/image031.png)](../../img/screenshots/create-buildings-rooms-and-workplaces/image031.png)
