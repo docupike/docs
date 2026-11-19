@@ -8,7 +8,6 @@ Sie beginnt mit den Neuerungen des aktuellen Release und zeigt dann, wo Sie anfa
 - **Welten und Inseln** ergänzen i-doit up um spezialisierte Ansichten.
   Die erste Welt und Insel drehen sich um Lizenzen, siehe [Welten und Inseln](user/worlds-and-islands.md) und [Lizenz-Welt und Lizenz-Insel](user/license-world-and-island.md).
 - **Flows** automatisieren wiederkehrende Aufgaben mit Auslösern, Bedingungen und Aktionen, siehe [Flows](user/flows.md).
-- **Dokumente (DMS)** speichert und verwaltet Dokumente direkt an den Objekten, siehe [Dokumente (DMS)](user/dms.md) und [DMS-Integration](admin/dms.md).
 - **Rechte der Admin-Rolle**: Die Admin-Rolle erhält alle Rechte für Welten und Inseln automatisch, siehe [Rechte und Berechtigungen](admin/rights-and-permissions.md).
 - **Add-ons** werden in der Add-on-Übersicht installiert und deinstalliert.
   Beim Deinstallieren werden alle Daten des Add-ons gelöscht, siehe [Add-ons](admin/addons.md).

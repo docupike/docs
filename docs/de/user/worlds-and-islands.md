@@ -11,7 +11,7 @@ In der deutschen Oberfläche heißen der Menüpunkt und die Gruppe derzeit noch 
 
 i-doit up 3.3.0 bringt eine Welt und eine Insel mit, beide zum Thema Lizenzen.
 Ihre Widgets und die Daten, die sie brauchen, beschreibt [Lizenz-Welt und Lizenz-Insel](license-world-and-island.md).
-Add-ons können weitere Inseln hinzufügen, zum Beispiel die Insel **Documents** des DMS-Add-ons.
+Add-ons können weitere Inseln hinzufügen.
 
 ## Voraussetzungen
 

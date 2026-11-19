@@ -9,7 +9,7 @@ Worlds and Islands are dashboards with widgets that summarize your documentation
 
 i-doit up 3.3.0 ships one World and one Island, both about licenses.
 See [License World and License Island](license-world-and-island.md) for their widgets and the data they need.
-Add-ons can add further Islands, for example the island **Documents** of the DMS add-on.
+Add-ons can add further Islands.
 
 ## Before you start
 

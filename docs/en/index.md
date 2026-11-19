@@ -8,7 +8,6 @@ It starts with what is new in the current release, then shows where to begin and
 - **Worlds and Islands** add specialized views to i-doit up.
   The first World and Island are about licenses, see [Worlds and Islands](user/worlds-and-islands.md) and [License World and License Island](user/license-world-and-island.md).
 - **Flows** automate recurring tasks with triggers, conditions, and actions, see [Flows](user/flows.md).
-- **Documents (DMS)** stores and manages documents directly at the objects, see [Documents (DMS)](user/dms.md) and [DMS integration](admin/dms.md).
 - **Rights for the admin role**: the admin role receives all rights for Worlds and Islands automatically, see [Rights and permissions](admin/rights-and-permissions.md).
 - **Add-ons** are installed and uninstalled in the add-on overview.
   Uninstalling deletes all data of the add-on, see [Add-ons](admin/addons.md).
