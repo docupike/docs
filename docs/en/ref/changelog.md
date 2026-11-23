@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _tbd_
 
+## 3.3.0 – 2026-11-23
+
+### Added
+
+-   MIW License documentation: Create "License changes" category (`ID2-5609`)
+-   MIW License documentation: Create new category "License assignment" and corresponding attributes (`ID2-5585`)
+-   MIW License documentation: Create new category "License details" and corresponding attributes (`ID2-5574`)
+
 ## 3.2.1 – 2026-11-03
 
 ### Fixed
