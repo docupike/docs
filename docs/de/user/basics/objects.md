@@ -1,7 +1,7 @@
 # Objekte
 
 Ein **Objekt** ist die grundlegende Einheit der Dokumentation in i-doit up.
-Jeder Server, jede Person, jeder Standort, jedes Netzwerk, jede Lizenz, jeder Vertrag, jede Organisation usw. wird als Objekt gespeichert, das zu einer [Klasse](classes.md) gehört und in einer oder mehreren [Sammlungen](collections.md) zusammengefasst ist.
+Jeder Server, jede Person, jeder Standort, jedes Netzwerk, jede Lizenz, jeder Vertrag, jede Organisation usw. wird als Objekt gespeichert, das zu einer [Klasse](classes.md) gehört und in einer oder mehreren [Kollektionen](collections.md) zusammengefasst ist.
 
 ## Aufbau eines Objekts
 
@@ -30,6 +30,6 @@ Sie können den Status über das [Dropdown-Menü „Bearbeiten“](../finder/bul
 ## Siehe auch
 
 - [Klassen](classes.md)
-- [Sammlungen](collections.md)
+- [Kollektionen](collections.md)
 - [Kategorien und Attribute](categories-and-attributes.md)
 - [Objektdetailseite](object-details.md)

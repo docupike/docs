@@ -43,8 +43,48 @@ No direct right assignment is needed.
 Permissions and rights are evaluated within the **currently active tenant**: see [Tenants](tenants.md) and [Switch between tenants](../user/basics/tenant-switcher.md).
 A user with rights in tenant A does not automatically have the same rights in tenant B.
 
+## Rights for Worlds and Islands
+
+[Worlds and Islands](../user/worlds-and-islands.md) are protected by two rights in the topic **Worlds and Islands**:
+
+| Method | Right | Grants |
+|---|---|---|
+| Worlds | Access all Worlds | The menu item **Worlds** and every World, for example the License World. |
+| Islands | Access all Islands | The group **Islands** in the object sidebar and every Island, for example the License Island. |
+
+There are no rights for single Worlds or single Islands.
+A user with **Access all Islands** sees every Island that belongs to the class of the opened object, including Islands of add-ons.
+
+!!! info "Only the admin role has the rights by default"
+    Since i-doit up 3.3.0, the admin role receives all rights for Worlds and Islands automatically.
+    The list of rights shows **All rights** for the role.
+    This applies to new installations and to updates.
+    Grant the rights to every other role, group, or user that works with Worlds and Islands.
+
+To grant a right:
+
+1. Open **Settings** from the user menu and go to **User management** > **Rights**.
+2. Under **Worlds and Islands**, click **Worlds** or **Islands**.
+3. Click **New right**.
+    The dialog **Create new right** opens.
+4. Select the user, role, or group in **User / Role / Group**.
+5. Under **Rights**, select the check box **Access all Worlds** or **Access all Islands**.
+    Alternatively, select **All available Rights (Including future updates)**.
+    This option also covers rights that later versions add to the method.
+6. Click **Save**.
+
+[![Dialog Create new right of the method Worlds with the option All available Rights and the check box Access all Worlds](../img/screenshots/admin/worlds-and-islands/rights_worlds_new_right.png)](../img/screenshots/admin/worlds-and-islands/rights_worlds_new_right.png)
+
+[![Dialog Create new right of the method Islands with the option All available Rights and the check box Access all Islands](../img/screenshots/admin/worlds-and-islands/rights_islands_new_right.png)](../img/screenshots/admin/worlds-and-islands/rights_islands_new_right.png)
+
+Granting and removing these rights takes effect when the user reloads the page.
+A new login is not necessary.
+Without **Access all Worlds**, the menu item **Worlds** disappears and a World page shows a message that starts with "You shall not see!".
+Without **Access all Islands**, the group **Islands** disappears from the object sidebar.
+
 ## Further readings
 
 - [User management](user-management.md)
 - [Tenants](tenants.md)
 - [Switch between tenants](../user/basics/tenant-switcher.md)
+- [Worlds and Islands](../user/worlds-and-islands.md)

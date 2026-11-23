@@ -13,15 +13,15 @@ theme:
   custom_dir: ../../theme
   palette:
     - scheme: default
-      primary: black
-      accent: red
+      primary: custom
+      accent: custom
       media: "(prefers-color-scheme: light)"
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: slate
-      primary: black
-      accent: red
+      primary: custom
+      accent: custom
       media: "(prefers-color-scheme: dark)"
       toggle:
         icon: material/weather-night
@@ -35,12 +35,14 @@ theme:
     - content.code.copy
     - navigation.footer
     - navigation.sections
+    - navigation.tabs
     - navigation.top
     - search.suggest
 extra_javascript:
   - assets/javascripts/status.js
 extra_css:
   - assets/stylesheets/status.css
+  - assets/stylesheets/idoit-up.css
 plugins:
   search:
     lang: en
